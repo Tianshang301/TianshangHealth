@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">सेवा की शर्तें</string>
+    <string name="privacy_title">गोपनीयता नीति</string>
+    <string name="accept_terms">मैंने पढ़ लिया है और स्वीकार करता हूँ</string>
+    <string name="app_lock_title">ऐप लॉक</string>
+    <string name="enter_pin">पासवर्ड</string>
+    <string name="unlock">अनलॉक करें</string>
+    <string name="invalid_pin">अमान्य पासवर्ड</string>
+    <string name="app_lock_setup_title">ऐप लॉक पासवर्ड सेट करें</string>
+    <string name="set_pin">पासवर्ड सेट करें</string>
+    <string name="confirm_pin">पासवर्ड की पुष्टि करें</string>
+    <string name="set_password">पासवर्ड सेट करें</string>
+    <string name="pin_empty_error">पासवर्ड खाली नहीं हो सकता</string>
+    <string name="pin_mismatch_error">पासवर्ड मेल नहीं खाते</string>
+    <string name="pin_length_error">पासवर्ड कम से कम %d अक्षर का होना चाहिए</string>
+    <string name="calendar_title">कैलेंडर</string>
+    <string name="current_cycle_day">चक्र का दिन %d</string>
+    <string name="days_until_next_period">अगला मासिक धर्म %d दिनों में</string>
+    <string name="no_period_data">कोई मासिक धर्म डेटा नहीं</string>
+    <string name="tap_date_to_record">रिकॉर्ड करने के लिए टैप करें</string>
+    <string name="period">मासिक धर्म</string>
+    <string name="predicted_period">अनुमानित मासिक धर्म</string>
+    <string name="ovulation">ओवुलेशन</string>
+    <string name="fertile_window">उपजाऊ अवधि</string>
+    <string name="record_title">रिकॉर्ड</string>
+    <string name="start_period">मासिक धर्म शुरू करें</string>
+    <string name="end_period">मासिक धर्म समाप्त करें</string>
+    <string name="flow_level">प्रवाह</string>
+    <string name="pain_level">दर्द</string>
+    <string name="symptoms">लक्षण</string>
+    <string name="sexual_activity">यौन गतिविधि</string>
+    <string name="ovulation_test">ओवुलेशन टेस्ट</string>
+    <string name="cervical_mucus">गर्भाशय ग्रीवा बलगम</string>
+    <string name="body_temperature">शरीर का तापमान</string>
+    <string name="notes">नोट्स</string>
+    <string name="save">सहेजें</string>
+    <string name="analysis_title">विश्लेषण</string>
+    <string name="cycle_statistics">आँकड़े</string>
+    <string name="avg_cycle_length">औसत चक्र</string>
+    <string name="avg_period_length">औसत मासिक धर्म</string>
+    <string name="cycle_regularity">नियमितता</string>
+    <string name="total_cycles">कुल चक्र</string>
+    <string name="pain_trend">दर्द की प्रवृत्ति</string>
+    <string name="symptom_frequency">लक्षण आवृत्ति</string>
+    <string name="predictions">भविष्यवाणियाँ</string>
+    <string name="reminder_title">अनुस्मारक</string>
+    <string name="period_reminder">मासिक धर्म अनुस्मारक</string>
+    <string name="ovulation_reminder">ओवुलेशन अनुस्मारक</string>
+    <string name="pms_reminder">PMS अनुस्मारक</string>
+    <string name="profile_title">प्रोफ़ाइल</string>
+    <string name="theme_customization">थीम</string>
+    <string name="theme_color">थीम रंग</string>
+    <string name="app_lock">ऐप लॉक</string>
+    <string name="language">भाषा</string>
+    <string name="recycle_bin">रीसाइकिल बिन</string>
+    <string name="recycle_bin_title">रीसाइकिल बिन</string>
+    <string name="backup_restore">बैकअप</string>
+    <string name="backup_restore_title">बैकअप &amp; पुनर्स्थापना</string>
+    <string name="export_backup">बैकअप निर्यात करें</string>
+    <string name="import_backup">बैकअप आयात करें</string>
+    <string name="export_csv">CSV निर्यात करें</string>
+    <string name="about">बारे में</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">जोड़ें</string>
+    <string name="height_cm">ऊँचाई (सेमी)</string>
+    <string name="weight_kg">वज़न (किग्रा)</string>
+    <string name="latest_bmi">वर्तमान BMI</string>
+    <string name="bmi_history">इतिहास</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="dark_mode_description">थीम बदलें</string>
+    <string name="no_deleted_records">कोई हटाए गए रिकॉर्ड नहीं</string>
+    <string name="security_settings">सुरक्षा</string>
+    <string name="data_security">डेटा सुरक्षा</string>
+    <string name="database_encryption">डेटाबेस एन्क्रिप्शन</string>
+    <string name="encrypted">एन्क्रिप्टेड (AES-256)</string>
+    <string name="unencrypted">एन्क्रिप्टेड नहीं</string>
+    <string name="migrate_to_encrypted">एन्क्रिप्टेड डेटाबेस में माइग्रेट करें</string>
+    <string name="migration_success">माइग्रेशन सफल! डेटाबेस अब एन्क्रिप्टेड है।</string>
+    <string name="migration_failed">माइग्रेशन विफल: %s। आपका डेटा मूल स्थिति में बहाल कर दिया गया है।</string>
+    <string name="background_lock_delay">बैकग्राउंड के बाद लॉक करें</string>
+    <string name="lock_immediately">तुरंत</string>
+    <string name="lock_after_seconds">%d सेकंड</string>
+    <string name="custom_reminders">कस्टम अनुस्मारक</string>
+    <string name="add_custom_reminder">कस्टम अनुस्मारक जोड़ें</string>
+    <string name="no_custom_reminders">अभी तक कोई कस्टम अनुस्मारक नहीं</string>
+    <string name="reminder_title_label">अनुस्मारक शीर्षक</string>
+    <string name="reminder_title_required">शीर्षक आवश्यक है</string>
+    <string name="reminder_message_label">संदेश (वैकल्पिक)</string>
+    <string name="reminder_date">अनुस्मारक तिथि</string>
+    <string name="select_time">समय चुनें</string>
+    <string name="hue">रंग</string>
+    <string name="saturation">संतृप्ति</string>
+    <string name="lightness">चमक</string>
+    <string name="apply_color">रंग लागू करें</string>
+    <string name="custom_color">कस्टम रंग</string>
+    <string name="color_preview">रंग पूर्वावलोकन</string>
+    <string name="apply">लागू करें</string>
+    <string name="preset_colors">पूर्व निर्धारित रंग</string>
+    <string name="add_symptom">लक्षण जोड़ें</string>
+    <string name="symptom_name">लक्षण का नाम</string>
+    <string name="symptom_name_required">लक्षण का नाम आवश्यक है</string>
+    <string name="prediction_explanation">पिछले %1$d चक्रों के आधार पर अनुकूली भविष्यवाणी (औसत %2$s दिन/चक्र, %3$s दिन/मासिक धर्म)</string>
+    <string name="record_date">रिकॉर्ड तिथि</string>
+    <string name="select_date">तिथि चुनें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="delete">हटाएँ</string>
+    <string name="delete_record">रिकॉर्ड हटाएँ</string>
+    <string name="delete_record_confirm">क्या आप वाकई इस तिथि का रिकॉर्ड हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।</string>
+    <string name="week_sun">रवि</string>
+    <string name="week_mon">सोम</string>
+    <string name="week_tue">मंगल</string>
+    <string name="week_wed">बुध</string>
+    <string name="week_thu">गुरु</string>
+    <string name="week_fri">शुक्र</string>
+    <string name="week_sat">शनि</string>
+    <string name="calendar_today">आज</string>
+    <string name="back">वापस</string>
+    <string name="symptom_headache">सिरदर्द</string>
+    <string name="symptom_bloating">सूजन</string>
+    <string name="symptom_breast_tenderness">स्तन में कोमलता</string>
+    <string name="symptom_backache">पीठ दर्द</string>
+    <string name="symptom_fatigue">थकान</string>
+    <string name="symptom_mood_swings">मूड स्विंग्स</string>
+    <string name="symptom_acne">मुँहासे</string>
+    <string name="symptom_increased_appetite">बढ़ी हुई भूख</string>
+    <string name="symptom_insomnia">अनिद्रा</string>
+    <string name="symptom_nausea">मतली</string>
+    <string name="flow_light">हल्का</string>
+    <string name="flow_medium">मध्यम</string>
+    <string name="flow_heavy">भारी</string>
+    <string name="pain_none">कोई नहीं</string>
+    <string name="pain_mild">हल्का</string>
+    <string name="pain_moderate">मध्यम</string>
+    <string name="pain_severe">गंभीर</string>
+    <string name="unit_days">दिन</string>
+    <string name="predicted_period_label">अनुमानित मासिक धर्म: %1$s - %2$s</string>
+    <string name="ovulation_date_label">ओवुलेशन: %s</string>
+    <string name="confidence_label">विश्वास: %1$s (%2$d चक्रों पर आधारित)</string>
+    <string name="reminder_days_before">दिन पहले</string>
+    <string name="reminder_time">अनुस्मारक समय</string>
+    <string name="enabled">सक्षम</string>
+    <string name="disabled">अक्षम</string>
+    <string name="color_pink">गुलाबी</string>
+    <string name="color_dark_pink">गहरा गुलाबी</string>
+    <string name="color_peach">आड़ू</string>
+    <string name="color_light_purple">हल्का बैंगनी</string>
+    <string name="color_medium_purple">मध्यम बैंगनी</string>
+    <string name="unit_cm">सेमी</string>
+    <string name="unit_kg">किग्रा</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">कम वजन</string>
+    <string name="bmi_category_normal">सामान्य</string>
+    <string name="bmi_category_overweight">अधिक वजन</string>
+    <string name="bmi_category_obese">मोटापा</string>
+    <string name="bmi_standard_note">चीनी BMI मानक पर आधारित</string>
+    <string name="backup_success">बैकअप सफल</string>
+    <string name="backup_fail">बैकअप विफल</string>
+    <string name="restore_success">पुनर्स्थापना सफल</string>
+    <string name="restore_fail">पुनर्स्थापना विफल</string>
+    <string name="export_success">निर्यात सफल</string>
+    <string name="export_fail">निर्यात विफल</string>
+    <string name="backup_export_desc">डेटाबेस को ZIP बैकअप फ़ाइल के रूप में निर्यात करें</string>
+    <string name="backup_import_desc">बैकअप फ़ाइल से डेटा पुनर्स्थापित करें</string>
+    <string name="backup_csv_desc">रिकॉर्ड को CSV स्प्रेडशीट के रूप में निर्यात करें</string>
+    <string name="deleted_time">हटाया गया: %s</string>
+    <string name="in_progress">प्रगति पर</string>
+    <string name="terms_countdown">कृपया %d सेकंड प्रतीक्षा करें</string>
+    <string name="auth_failed">प्रमाणीकरण विफल: %s</string>
+    <string name="auth_failed_generic">प्रमाणीकरण विफल</string>
+    <string name="biometric_init_failed">बायोमेट्रिक आरंभीकरण विफल</string>
+    <string name="lockout_message">बहुत अधिक प्रयास। कृपया %d सेकंड प्रतीक्षा करें।</string>
+    <string name="chart_title_cycle_length_trend">चक्र लंबाई प्रवृत्ति</string>
+    <string name="chart_title_pain_trend">दर्द प्रवृत्ति</string>
+    <string name="chart_title_symptom_distribution">लक्षण वितरण</string>
+    <string name="chart_cycle_label">चक्र %d</string>
+    <string name="chart_cycle_length_label">चक्र लंबाई : %d</string>
+    <string name="chart_pain_level_label">दर्द स्तर</string>
+    <string name="regularity_regular">नियमित</string>
+    <string name="regularity_somewhat_regular">कुछ हद तक नियमित</string>
+    <string name="regularity_irregular">अनियमित</string>
+    <string name="regularity_insufficient_data">अपर्याप्त डेटा</string>
+    <string name="confidence_high">उच्च</string>
+    <string name="confidence_medium">मध्यम</string>
+    <string name="confidence_low">निम्न</string>
+    <string name="confidence_insufficient">अपर्याप्त डेटा</string>
+    <string name="analysis_no_data_title">अभी तक कोई डेटा नहीं</string>
+    <string name="analysis_no_data_hint">यहाँ विश्लेषण और भविष्यवाणियाँ देखने के लिए अपना मासिक धर्म रिकॉर्ड करना शुरू करें</string>
+    <string name="section_appearance">दिखावट</string>
+    <string name="section_health">स्वास्थ्य</string>
+    <string name="section_data">डेटा</string>
+    <string name="section_other">अन्य</string>
+    <string name="open">खोलें</string>
+    <string name="retry">पुनः प्रयास करें</string>
+    <string name="profile_theme_description">ऐप रंगों को अनुकूलित करें</string>
+    <string name="profile_language_description">ऐप भाषा बदलें</string>
+    <string name="profile_bmi_description">अपने बॉडी मास इंडेक्स को ट्रैक करें</string>
+    <string name="profile_app_lock_description">ऐप खोलने के लिए प्रमाणीकरण आवश्यक है</string>
+    <string name="screenshot_protection_title">स्क्रीनशॉट सुरक्षा</string>
+    <string name="screenshot_protection_description">स्क्रीनशॉट और स्क्रीन रिकॉर्डिंग को रोकें</string>
+    <string name="profile_backup_description">सभी डेटा का एन्क्रिप्टेड बैकअप और पुनर्स्थापना</string>
+    <string name="profile_recycle_bin_description">हटाए गए रिकॉर्ड देखें और पुनर्स्थापित करें</string>
+    <string name="profile_version">संस्करण 1.0.0</string>
+    <string name="profile_app_description">गोपनीयता को केंद्र में रखने वाला एक व्यापक स्वास्थ्य ट्रैकिंग ऐप।</string>
+    <string name="custom_theme">कस्टम थीम</string>
+    <string name="language_description">अपनी पसंदीदा भाषा चुनें। परिवर्तन लागू करने के लिए ऐप पुनः प्रारंभ होगा।</string>
+    <string name="language_changed_restart">भाषा बदली गई, पुनः प्रारंभ हो रहा है&#8230;</string>
+    <string name="bmi_empty_text">अभी तक कोई वज़न रिकॉर्ड नहीं। अपनी पहली वज़न प्रविष्टि जोड़ें।</string>
+    <string name="save_height">ऊँचाई सहेजें</string>
+    <string name="bmi_category_label">श्रेणी</string>
+    <string name="height_label">ऊँचाई</string>
+    <string name="update_height">ऊँचाई अपडेट करें</string>
+    <string name="add_weight_record_title">वज़न रिकॉर्ड जोड़ें</string>
+    <string name="add_weight_record_text">आज के लिए अपना वज़न दर्ज करें।</string>
+    <string name="recycle_bin_description">हटाए गए रिकॉर्ड स्थायी रूप से हटाए जाने से पहले 30 दिनों तक रखे जाते हैं।</string>
+    <string name="recycle_bin_empty">रीसाइकिल बिन खाली है</string>
+    <string name="recycle_bin_empty_title">रीसाइकिल बिन खाली करें</string>
+    <string name="recycle_bin_empty_confirm">सभी हटाए गए रिकॉर्ड स्थायी रूप से हटा दिए जाएँगे। यह क्रिया पूर्ववत नहीं की जा सकती।</string>
+    <string name="recycle_bin_empty_action">खाली करें</string>
+    <string name="recycle_bin_restore">पुनर्स्थापित करें</string>
+    <string name="recycle_bin_delete_forever">हमेशा के लिए हटाएँ</string>
+    <string name="add_record">रिकॉर्ड जोड़ें</string>
+    <string name="period_tracking_title">मासिक धर्म ट्रैकिंग</string>
+    <string name="prediction_explanation_title">भविष्यवाणी स्पष्टीकरण</string>
+    <string name="reminder_period_desc">आपके मासिक धर्म शुरू होने से पहले सूचना प्राप्त करें</string>
+    <string name="reminder_ovulation_desc">ओवुलेशन से पहले सूचना प्राप्त करें</string>
+    <string name="reminder_pms_desc">PMS लक्षणों के बारे में सूचना प्राप्त करें</string>
+    <string name="cycle_status_title">चक्र स्थिति</string>
+    <string name="cycle_day_label">चक्र दिन</string>
+    <string name="days_until_label">दिन शेष</string>
+    <string name="period_active_text">मासिक धर्म सक्रिय</string>
+    <string name="next_period_label">अगला मासिक धर्म</string>
+    <string name="not_enough_data">अपर्याप्त डेटा</string>
+    <string name="cycle_length_label">चक्र लंबाई</string>
+    <string name="chart_no_data">चार्ट प्रदर्शित करने के लिए अपर्याप्त डेटा</string>
+    <string name="chart_no_pain_data">कोई दर्द डेटा रिकॉर्ड नहीं किया गया</string>
+    <string name="chart_pain_unknown">अज्ञात</string>
+    <string name="chart_total_records">कुल रिकॉर्ड</string>
+    <string name="record_for_date">%s के लिए रिकॉर्ड</string>
+    <string name="save_record">रिकॉर्ड सहेजें</string>
+    <string name="male_health_trend">स्वास्थ्य रुझान</string>
+    <string name="male_health_description">मासिक धर्म विश्लेषण पुरुष उपयोगकर्ताओं के लिए लागू नहीं है। नीचे सामान्य स्वास्थ्य डेटा दिखाया गया है।</string>
+    <string name="steps_overview">कदम अवलोकन</string>
+    <string name="steps_today">आज के कदम</string>
+    <string name="steps_weekly_avg_label">7-दिवसीय औसत कदम</string>
+    <string name="steps_record_days">रिकॉर्ड किए गए दिन</string>
+    <string name="steps_weekly_trend_label">7-दिवसीय कदम प्रवृत्ति</string>
+    <string name="steps_title">कदम ट्रैकिंग</string>
+    <string name="steps_daily_goal">दैनिक लक्ष्य</string>
+    <string name="steps_update_goal">लक्ष्य अपडेट करें</string>
+    <string name="steps_this_week">इस सप्ताह</string>
+    <string name="steps_total">कुल</string>
+    <string name="steps_average">औसत</string>
+    <string name="steps_days_label">दिन</string>
+    <string name="steps_weekly_trend">साप्ताहिक प्रवृत्ति</string>
+    <string name="steps_goal_format">%d कदम</string>
+    <string name="steps_weekly_avg_format">साप्ताहिक औसत %d कदम/दिन</string>
+    <string name="steps_history_title">कदम इतिहास</string>
+    <string name="steps_tab_week">सप्ताह</string>
+    <string name="steps_tab_month">महीना</string>
+    <string name="steps_tab_year">वर्ष</string>
+    <string name="steps_tab_all">सभी</string>
+    <string name="steps_30d_total">30-दिवसीय कुल</string>
+    <string name="steps_avg">दैनिक औसत</string>
+    <string name="steps_best">सर्वश्रेष्ठ दिन</string>
+    <string name="steps_weekly_label">साप्ताहिक विवरण</string>
+    <string name="steps_daily_trend">दैनिक प्रवृत्ति</string>
+    <string name="steps_monthly_label">मासिक विवरण</string>
+    <string name="steps_total_label">कुल कदम</string>
+    <string name="steps_period_total">अवधि कुल</string>
+    <string name="steps_weekly_avg">साप्ताहिक औसत</string>
+    <string name="steps_monthly_avg">मासिक औसत</string>
+    <string name="steps_best_month">सर्वश्रेष्ठ महीना</string>
+    <string name="steps_tab_day">दिन</string>
+    <string name="steps_label">कदम</string>
+    <string name="steps_calories_label">कैलोरी</string>
+    <string name="steps_yearly_label">वार्षिक विवरण</string>
+    <string name="dashboard_title">स्वास्थ्य डैशबोर्ड</string>
+    <string name="dashboard_quick_actions">त्वरित क्रियाएँ</string>
+    <string name="dashboard_retry">पुनः प्रयास करें</string>
+    <string name="dashboard_insights">स्वास्थ्य अंतर्दृष्टि</string>
+    <string name="dashboard_insights_empty">व्यक्तिगत अंतर्दृष्टि के लिए अधिक स्वास्थ्य डेटा रिकॉर्ड करें</string>
+    <string name="dashboard_period_status">मासिक धर्म स्थिति</string>
+    <string name="dashboard_period_active">मासिक धर्म सक्रिय</string>
+    <string name="dashboard_follicular_phase">फॉलिक्युलर चरण</string>
+    <string name="dashboard_no_data">कोई डेटा नहीं</string>
+    <string name="dashboard_today_steps">आज के कदम</string>
+    <string name="dashboard_goal_format">लक्ष्य: %d</string>
+    <string name="dashboard_cycle_day_format">दिन %1$d</string>
+    <string name="dashboard_record_period">मासिक धर्म रिकॉर्ड करें</string>
+    <string name="dashboard_record_steps">कदम रिकॉर्ड करें</string>
+    <string name="dashboard_record_health">स्वास्थ्य विश्लेषण</string>
+    <string name="gender_welcome">TianshangHealth में आपका स्वागत है</string>
+    <string name="gender_instruction">व्यक्तिगत स्वास्थ्य ट्रैकिंग के लिए अपना लिंग चुनें</string>
+    <string name="gender_male">पुरुष</string>
+    <string name="gender_male_desc">मासिक धर्म ट्रैकिंग सुविधाओं को छिपाता है</string>
+    <string name="gender_female">महिला</string>
+    <string name="gender_female_desc">मासिक धर्म ट्रैकिंग सहित सभी सुविधाएँ दिखाता है</string>
+    <string name="gender_other">अन्य</string>
+    <string name="gender_other_desc">सभी सुविधाएँ दिखाता है</string>
+    <string name="gender_footnote">आप इसे बाद में सेटिंग्स में बदल सकते हैं</string>
+    <string name="gender_setting_title">लिंग</string>
+    <string name="gender_setting_description">सुविधा मॉड्यूल समायोजित करने के लिए अपना लिंग बदलें</string>
+    <string name="select_gender">लिंग चुनें</string>
+    <string name="app_lock_health_data_protected">आपका स्वास्थ्य डेटा सुरक्षित है</string>
+    <string name="app_lock_set_password_title">पासवर्ड सेट करें</string>
+    <string name="app_lock_password_label">पासवर्ड</string>
+    <string name="app_lock_confirm_password_label">पासवर्ड की पुष्टि करें</string>
+    <string name="app_lock_enter_password_title">पासवर्ड दर्ज करें</string>
+    <string name="app_lock_use_biometric">बायोमेट्रिक का उपयोग करें</string>
+    <string name="terms_privacy_title">सेवा की शर्तें &amp; गोपनीयता नीति</string>
+    <string name="terms_service_title">सेवा की शर्तें</string>
+    <string name="privacy_policy_title">गोपनीयता नीति</string>
+    <string name="terms_service_declaration">1. सेवा घोषणा\n\nTianshangHealth एक व्यापक स्वास्थ्य ट्रैकिंग एप्लिकेशन है जो उपयोगकर्ता की गोपनीयता और डेटा सुरक्षा को प्राथमिकता देता है। सभी डेटा मजबूत एन्क्रिप्शन के साथ आपके डिवाइस पर स्थानीय रूप से संग्रहीत किया जाता है।\n\n2. डेटा गोपनीयता\n\nहम आपके किसी भी व्यक्तिगत स्वास्थ्य डेटा को एकत्र, अपलोड या साझा नहीं करते हैं। एप्लिकेशन शून्य नेटवर्क अनुमतियों के साथ पूरी तरह से ऑफ़लाइन संचालित होता है।\n\n3. उपयोगकर्ता जिम्मेदारी\n\nआपके द्वारा दर्ज किए गए स्वास्थ्य डेटा की सटीकता के लिए आप जिम्मेदार हैं। प्रदान की गई भविष्यवाणियाँ और विश्लेषण केवल संदर्भ के लिए हैं और चिकित्सा सलाह का गठन नहीं करते हैं।\n\n4. डेटा सुरक्षा\n\nआपका डेटा SQLCipher AES-256 एन्क्रिप्शन के साथ सुरक्षित है। एन्क्रिप्शन कुंजी हार्डवेयर-स्तरीय सुरक्षा के लिए Android Keystore के माध्यम से प्रबंधित की जाती है।</string>
+    <string name="privacy_policy_body">1. मूल सिद्धांत: डेटा स्थानीयकरण\n\nआपका सभी स्वास्थ्य डेटा, जिसमें मासिक धर्म चक्र, लक्षण और अन्य स्वास्थ्य मीट्रिक शामिल हैं, केवल आपके डिवाइस पर एन्क्रिप्टेड डेटाबेस में संग्रहीत किया जाता है।\n\n2. एकत्रित जानकारी\n\nहम केवल उस जानकारी को संसाधित करते हैं जिसे आप मैन्युअल रूप से एप्लिकेशन में दर्ज करते हैं। कोई स्वचालित डेटा संग्रह नहीं होता है।\n\n3. डेटा एन्क्रिप्शन\n\nसभी संवेदनशील डेटा SQLCipher के साथ AES-256 एन्क्रिप्शन का उपयोग करके एन्क्रिप्ट किया जाता है। एन्क्रिप्शन कुंजी Android Keystore में सुरक्षित रूप से संग्रहीत की जाती है।\n\n4. कोई तृतीय-पक्ष पहुँच नहीं\n\nहम किसी भी तृतीय-पक्ष विश्लेषण, विज्ञापन या ट्रैकिंग सेवाओं का उपयोग नहीं करते हैं। आपका डेटा कभी भी आपके डिवाइस को नहीं छोड़ता है।\n\n5. डेटा निर्यात\n\nआप किसी भी समय मानक प्रारूपों (CSV, एन्क्रिप्टेड बैकअप) में अपना डेटा निर्यात कर सकते हैं। आपका अपने डेटा पर पूर्ण नियंत्रण है।\n\n6. डेटा हटाना\n\nआप किसी भी समय अपने किसी भी या सभी डेटा को हटा सकते हैं। हटाया गया डेटा डिवाइस से स्थायी रूप से हटा दिया जाता है।</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">अज्ञात त्रुटि</string>
+    <string name="error_failed_add_record">रिकॉर्ड जोड़ने में विफल</string>
+    <string name="error_failed_update_record">रिकॉर्ड अपडेट करने में विफल</string>
+    <string name="error_failed_delete_record">रिकॉर्ड हटाने में विफल</string>
+    <string name="error_failed_record">रिकॉर्ड करने में विफल</string>
+    <string name="error_failed_set_password">पासवर्ड सेट करने में विफल</string>
+    <string name="error_password_not_set">पासवर्ड सेट नहीं</string>
+    <string name="error_incorrect_password">गलत पासवर्ड</string>
+    <string name="error_verification_failed">सत्यापन विफल</string>
+    <string name="error_failed_load_settings">सेटिंग्स लोड करने में विफल</string>
+    <string name="error_failed_update_settings">सेटिंग्स अपडेट करने में विफल</string>
+    <string name="error_failed_save_gender">लिंग सहेजने में विफल</string>
+    <string name="error_failed_update_goal">लक्ष्य अपडेट करने में विफल</string>
+    <string name="error_failed_restore">रिकॉर्ड पुनर्स्थापित करने में विफल</string>
+    <string name="error_failed_to_delete">रिकॉर्ड हटाने में विफल</string>
+    <string name="error_failed_empty_bin">रीसाइकिल बिन खाली करने में विफल</string>
+    <string name="loading">लोड हो रहा है...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">मासिक धर्म अनुस्मारक</string>
+    <string name="notification_channel_period_desc">मासिक धर्म ट्रैकिंग के लिए अनुस्मारक</string>
+    <string name="notification_period_title">मासिक धर्म ट्रैकिंग अनुस्मारक</string>
+    <string name="notification_period_body">आज अपना मासिक धर्म डेटा लॉग करना न भूलें!</string>
+    <string name="notification_channel_ovulation">ओवुलेशन अनुस्मारक</string>
+    <string name="notification_channel_ovulation_desc">ओवुलेशन ट्रैकिंग के लिए अनुस्मारक</string>
+    <string name="notification_ovulation_title">ओवुलेशन विंडो नजदीक आ रही है</string>
+    <string name="notification_ovulation_body">आपकी उपजाऊ अवधि जल्द ही आ रही है!</string>
+    <string name="notification_channel_pms">PMS अनुस्मारक</string>
+    <string name="notification_channel_pms_desc">PMS लक्षणों के लिए अनुस्मारक</string>
+    <string name="notification_pms_title">PMS लक्षणों की उम्मीद</string>
+    <string name="notification_pms_body">PMS लक्षण कुछ दिनों में शुरू हो सकते हैं। अपना ख्याल रखें!</string>
+    <string name="notification_channel_steps">कदम काउंटर</string>
+    <string name="notification_channel_steps_desc">कदम काउंटर सेवा सूचना</string>
+    <string name="notification_steps_body">आज के कदम: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">डैशबोर्ड</string>
+    <string name="nav_period">मासिक धर्म</string>
+    <string name="nav_fitness">फ़िटनेस</string>
+    <string name="nav_analysis">विश्लेषण</string>
+    <string name="nav_profile">प्रोफ़ाइल</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">प्रारंभ तिथि,समाप्ति तिथि,प्रवाह स्तर,दर्द स्तर,नोट्स</string>
+    <string name="backup_exported_success">बैकअप सफलतापूर्वक निर्यात किया गया</string>
+    <string name="import_success_format">%d रिकॉर्ड सफलतापूर्वक आयात किए गए</string>
+    <string name="csv_exported_success">CSV सफलतापूर्वक निर्यात किया गया</string>
+    <string name="csv_export_failed">CSV निर्यात विफल</string>
+    <string name="password_export_title">बैकअप एन्क्रिप्ट करें</string>
+    <string name="password_import_title">बैकअप डिक्रिप्ट करें</string>
+    <string name="password_export_desc">अपनी बैकअप फ़ाइल को एन्क्रिप्ट करने के लिए पासवर्ड दर्ज करें।</string>
+    <string name="password_import_desc">इस बैकअप फ़ाइल को एन्क्रिप्ट करने के लिए उपयोग किया गया पासवर्ड दर्ज करें।</string>
+    <string name="password_label">पासवर्ड</string>
+    <string name="proceed">आगे बढ़ें</string>
+    <string name="password_short_error">पासवर्ड बहुत छोटा है</string>
+    <string name="password_mismatch_error">पासवर्ड मेल नहीं खाते</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">मासिक धर्म सक्रिय</string>
+    <string name="insight_follicular_phase">फॉलिक्युलर चरण</string>
+    <string name="insight_luteal_phase">ल्यूटियल चरण</string>
+    <string name="insight_cycle_day">चक्र दिन %d</string>
+    <string name="insight_steps_stable_title">चक्र भर में स्थिर गतिविधि</string>
+    <string name="insight_steps_stable_desc">आपकी कदम संख्या चक्र चरणों में सुसंगत बनी रहती है, अच्छी व्यायाम आदत बनी हुई है।</string>
+    <string name="insight_mood_drop_title">ल्यूटियल चरण में मूड में गिरावट</string>
+    <string name="insight_mood_drop_desc">ल्यूटियल चरण में औसत मूड स्कोर कम है, मूड प्रबंधन पर विचार करें</string>
+    <string name="insight_mood_rise_title">ल्यूटियल चरण में बेहतर मूड</string>
+    <string name="insight_mood_rise_desc">ल्यूटियल चरण में औसत मूड स्कोर अधिक है, आप बहुत अच्छा कर रहे हैं</string>
+    <string name="insight_sleep_drop_title">ल्यूटियल चरण में नींद की गुणवत्ता में गिरावट</string>
+    <string name="insight_sleep_drop_desc">ल्यूटियल चरण के दौरान नींद की गुणवत्ता कम हो जाती है, विश्राम व्यायाम आज़माएँ</string>
+    <string name="insight_sleep_rise_title">ल्यूटियल चरण में बेहतर नींद</string>
+    <string name="insight_sleep_rise_desc">ल्यूटियल चरण में नींद की गुणवत्ता अधिक है, अच्छी दिनचर्या बनाए रखें</string>
+    <string name="insight_stress_period_title">मासिक धर्म के दौरान उच्च तनाव</string>
+    <string name="insight_stress_period_desc">मासिक धर्म के दौरान तनाव का स्तर %s अंक अधिक है, तीव्र गतिविधियों को कम करने पर विचार करें</string>
+    <string name="insight_mood_today_low_title">आज मूड कम है</string>
+    <string name="insight_mood_today_low_desc">आपका मूड स्कोर आज कम है, कोई ऐसी चीज़ करने की कोशिश करें जिसमें आपको आनंद आता हो</string>
+    <string name="insight_stress_today_high_title">आज तनाव अधिक है</string>
+    <string name="insight_stress_today_high_desc">आज तनाव का स्तर अधिक है, गहरी साँस लेना या ध्यान आज़माएँ</string>
+    <string name="insight_sleep_last_night_low_title">कल रात खराब नींद</string>
+    <string name="insight_sleep_last_night_low_desc">कल रात नींद की गुणवत्ता कम थी, आज रात जल्दी सोने की कोशिश करें</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">ल्यूटियल चरण में गतिविधि काफी कम हो जाती है</string>
+    <string name="insight_luteal_increase">ल्यूटियल चरण में गतिविधि बढ़ जाती है</string>
+    <string name="insight_luteal_rest">ल्यूटियल चरण के दौरान उचित रूप से आराम करें, योग जैसे हल्के व्यायाम की सिफारिश की जाती है</string>
+    <string name="insight_luteal_nutrition">गतिविधि में वृद्धि बहुत अच्छी है, पोषण बनाए रखना याद रखें</string>
+    <string name="insight_luteal_activity_low_title">ल्यूटियल चरण में कम गतिविधि</string>
+    <string name="insight_luteal_activity_low_desc">फॉलिक्युलर चरण की तुलना में ल्यूटियल चरण के कदम %d%% कम हुए। टहलने जैसी हल्की गतिविधि की सिफारिश की जाती है।</string>
+    <string name="insight_luteal_activity_high_title">ल्यूटियल चरण में उच्च गतिविधि</string>
+    <string name="insight_luteal_activity_high_desc">फॉलिक्युलर चरण की तुलना में ल्यूटियल चरण के कदम %d%% बढ़े। आराम करना और पोषण बनाए रखना याद रखें।</string>
+    <string name="insight_activity_stable_title">चक्र भर में सुसंगत गतिविधि</string>
+    <string name="insight_activity_stable_desc">कदम संख्या चक्र चरणों में स्थिर रहती है। अच्छी व्यायाम आदतें बनी हुई हैं।</string>
+    <string name="insight_mood_luteal_drop_title">ल्यूटियल चरण में मूड में गिरावट</string>
+    <string name="insight_mood_luteal_drop_desc">ल्यूटियल चरण में औसत मूड स्कोर %s अंक कम है। मूड प्रबंधन पर विचार करें।</string>
+    <string name="insight_mood_luteal_rise_title">ल्यूटियल चरण में बेहतर मूड</string>
+    <string name="insight_mood_luteal_rise_desc">ल्यूटियल चरण में औसत मूड स्कोर %s अंक अधिक है। आप बहुत अच्छा कर रहे हैं!</string>
+    <string name="insight_sleep_luteal_drop_title">ल्यूटियल चरण में नींद की गुणवत्ता में गिरावट</string>
+    <string name="insight_sleep_luteal_drop_desc">ल्यूटियल चरण में नींद की गुणवत्ता %s अंक कम हुई। सोने से पहले विश्राम व्यायाम आज़माएँ।</string>
+    <string name="insight_sleep_luteal_rise_title">ल्यूटियल चरण में बेहतर नींद</string>
+    <string name="insight_sleep_luteal_rise_desc">ल्यूटियल चरण में नींद की गुणवत्ता %s अंक अधिक है। अच्छी दिनचर्या बनाए रखें।</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">भविष्यवाणी के लिए अपर्याप्त डेटा</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">ताज़ा करें</string>
+    <string name="recycle_bin_empty_title_short">बिन खाली करें</string>
+    <string name="recycle_bin_period_format">मासिक धर्म: %1$s</string>
+    <string name="recycle_bin_to_format">से %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">पासवर्ड सेट करें</string>
+    <string name="app_lock_confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="app_lock_set_password_btn">पासवर्ड सेट करें</string>
+    <string name="app_lock_unlock_btn">अनलॉक करें</string>
+    <string name="app_lock_enter_password">पासवर्ड दर्ज करें</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">कुल रिकॉर्ड</string>
+    <string name="stats_total_cycles">कुल चक्र</string>
+    <string name="stats_avg_cycle">औसत चक्र</string>
+    <string name="stats_avg_period">औसत मासिक धर्म</string>
+    <string name="stats_regularity_text">नियमितता</string>
+    <string name="stats_cycle_num">चक्र %d</string>
+    <string name="stats_days_suffix">%d दिन</string>
+    <string name="stats_avg_format">औसत: %d दिन</string>
+    <string name="stats_no_data">कोई डेटा नहीं</string>
+    <string name="weight_format">वज़न: %.1f किग्रा</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f सेमी</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">बैकअप आपके पासवर्ड का उपयोग करके AES-256-GCM से एन्क्रिप्ट किए जाते हैं।</string>
+    <string name="steps_of_goal">%d लक्ष्य में से</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d\u00B0 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">नीला</string>
+    <string name="color_green">हरा</string>
+    <string name="color_purple">बैंगनी</string>
+    <string name="color_orange">नारंगी</string>
+    <string name="color_teal">टील</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">विवरण के लिए टैप करें</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">दौड़ना</string>
+    <string name="exercise_walking">चलना</string>
+    <string name="exercise_cycling">साइकिल चलाना</string>
+    <string name="exercise_swimming">तैराकी</string>
+    <string name="exercise_yoga">योग</string>
+    <string name="exercise_strength">शक्ति प्रशिक्षण</string>
+    <string name="exercise_dance">नृत्य</string>
+    <string name="exercise_pilates">पिलेट्स</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">बास्केटबॉल</string>
+    <string name="exercise_football">फ़ुटबॉल</string>
+    <string name="exercise_tennis">टेनिस</string>
+    <string name="exercise_badminton">बैडमिंटन</string>
+    <string name="exercise_table_tennis">टेबल टेनिस</string>
+    <string name="exercise_skipping">रस्सी कूदना</string>
+    <string name="exercise_hiking">लंबी पैदल यात्रा</string>
+    <string name="exercise_other">अन्य</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">इस सप्ताह</string>
+    <string name="fitness_add_workout">कसरत जोड़ें</string>
+    <string name="fitness_select_type">व्यायाम प्रकार चुनें</string>
+    <string name="fitness_duration_minutes">अवधि (मिनट)</string>
+    <string name="fitness_calories_label">कैलोरी</string>
+    <string name="fitness_distance_km">दूरी (किमी)</string>
+    <string name="fitness_today_workouts">आज की कसरत</string>
+    <string name="fitness_recent_workouts">हाल की कसरत</string>
+    <string name="fitness_empty">अभी तक कोई कसरत रिकॉर्ड नहीं की गई।\nअपनी पहली कसरत जोड़ने के लिए + टैप करें।</string>
+    <string name="fitness_minutes_format">%d मिनट</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">अवधि</string>
+    <string name="fitness_calories">कैलोरी</string>
+    <string name="fitness_workouts">कसरत</string>
+    <string name="fitness_km_unit">किमी</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">बैटरी ऑप्टिमाइज़ेशन अक्षम करें</string>
+    <string name="steps_battery_desc">बैटरी ऑप्टिमाइज़ेशन कदम गणना सेवा को रोक सकता है और कदम ट्रैकिंग को प्रभावित कर सकता है।</string>
+    <string name="steps_battery_action">सेटिंग्स पर जाएँ</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">%s सेटिंग्स</string>
+    <string name="steps_auto_start_settings">ऑटो स्टार्ट सेटिंग्स</string>
+    <string name="steps_battery_settings">बैटरी सेटिंग्स</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">ऊर्जा सारांश</string>
+    <string name="energy_today">आज</string>
+    <string name="energy_this_week">इस सप्ताह</string>
+    <string name="energy_steps">कदम</string>
+    <string name="energy_workouts">कसरत</string>
+    <string name="energy_total">कुल</string>
+    <string name="energy_workouts_summary">%1$d कसरत \u00B7 %2$d मिनट</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">शरीर मीट्रिक</string>
+    <string name="body_metrics_height">ऊँचाई (सेमी)</string>
+    <string name="body_metrics_weight">वज़न (किग्रा)</string>
+    <string name="body_metrics_saved">शरीर मीट्रिक सहेजे गए</string>
+    <string name="body_metrics_height_error">कृपया एक मान्य ऊँचाई दर्ज करें (80-250 सेमी)</string>
+    <string name="body_metrics_weight_error">कृपया एक मान्य वज़न दर्ज करें (15-350 किग्रा)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">पोषण</string>
+    <string name="nav_nutrition">पोषण</string>
+    <string name="nutrition_add_meal">भोजन जोड़ें</string>
+    <string name="nutrition_meal_type">भोजन प्रकार</string>
+    <string name="nutrition_food_name">भोजन का नाम</string>
+    <string name="nutrition_calories">कैलोरी</string>
+    <string name="nutrition_protein">प्रोटीन (ग्राम)</string>
+    <string name="nutrition_carbs">कार्ब्स (ग्राम)</string>
+    <string name="nutrition_fat">वसा (ग्राम)</string>
+    <string name="nutrition_serving_size">परोसने का आकार</string>
+    <string name="nutrition_macros">मैक्रोन्यूट्रिएंट्स</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">दैनिक पोषण</string>
+    <string name="nutrition_today_meals">आज के भोजन</string>
+    <string name="nutrition_meals">भोजन</string>
+    <string name="nutrition_weekly_trend">साप्ताहिक प्रवृत्ति</string>
+    <string name="nutrition_empty">अभी तक कोई भोजन रिकॉर्ड नहीं किया गया।\nअपना पहला भोजन जोड़ने के लिए + टैप करें।</string>
+    <string name="nutrition_error_food_name">कृपया भोजन का नाम दर्ज करें</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">नाश्ता</string>
+    <string name="meal_lunch">दोपहर का भोजन</string>
+    <string name="meal_dinner">रात का खाना</string>
+    <string name="meal_snack">नाश्ता</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">पानी</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">ल्यूटियल चरण में कम कैलोरी सेवन</string>
+    <string name="insight_nutrition_luteal_low_desc">ल्यूटियल चरण में कैलोरी %.0f kcal कम हुई। संतुलित आहार बनाए रखने की कोशिश करें।</string>
+    <string name="insight_nutrition_luteal_high_title">ल्यूटियल चरण में उच्च कैलोरी सेवन</string>
+    <string name="insight_nutrition_luteal_high_desc">ल्यूटियल चरण में कैलोरी %.0f kcal बढ़ी। यह सामान्य है, अपने शरीर को सुनें।</string>
+    <string name="insight_nutrition_stable_title">स्थिर कैलोरी सेवन</string>
+    <string name="insight_nutrition_stable_desc">आपका कैलोरी सेवन चक्र चरणों में स्थिर रहता है। बहुत बढ़िया!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">PIN भूल गए?</string>
+    <string name="app_lock_change_pin">PIN बदलें</string>
+    <string name="app_lock_current_pin">वर्तमान PIN</string>
+    <string name="app_lock_new_pin_label">नया PIN</string>
+    <string name="app_lock_recovery_title">ऐप लॉक रीसेट करें</string>
+    <string name="app_lock_recovery_desc">ऐप लॉक रीसेट करने के लिए अपनी पहचान सत्यापित करें</string>
+    <string name="lock_30s">30 सेकंड</string>
+    <string name="lock_1min">1 मिनट</string>
+    <string name="lock_5min">5 मिनट</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">नींद</string>
+    <string name="sleep_title">नींद ट्रैकिंग</string>
+    <string name="sleep_record_title">नींद रिकॉर्ड करें</string>
+    <string name="sleep_hours">नींद के घंटे</string>
+    <string name="sleep_deep_hours">गहरी नींद</string>
+    <string name="sleep_quality">नींद की गुणवत्ता</string>
+    <string name="sleep_quality_format">%d सितारा</string>
+    <string name="sleep_history">नींद का इतिहास</string>
+    <string name="sleep_no_data">अभी तक कोई नींद डेटा रिकॉर्ड नहीं किया गया</string>
+    <string name="sleep_today_status">आज की नींद</string>
+    <string name="sleep_hours_format">%s घंटे</string>
+    <string name="sleep_deep_hours_format">गहरी: %s घंटे</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">मासिक धर्म</string>
+    <string name="phase_follicular">फॉलिक्युलर</string>
+    <string name="phase_ovulatory">ओवुलेटरी</string>
+    <string name="phase_luteal">ल्यूटियल</string>
+    <string name="nutrition_cycle_guidance">चक्र पोषण मार्गदर्शन</string>
+    <string name="nutrition_focus_nutrients">फोकस पोषक तत्व</string>
+    <string name="nutrition_recommended_foods">अनुशंसित खाद्य पदार्थ</string>
+    <string name="nutrition_limit_foods">सीमित करें</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d दिन</item>
+        <item quantity="other">%d दिन</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">कृपया एक वैध अवधि दर्ज करें</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">साफ़ करें</string>
+    <string name="edit">संपादित करें</string>
+    <string name="exact_date_mode">सटीक तिथि</string>
+    <string name="profile_dob_not_set">सेट नहीं है</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">केवल वर्ष</string>
+    <string name="year_picker_title">जन्म वर्ष चुनें</string>
+
+    <!-- Analysis -->
+    <string name="analysis_no_data">पर्याप्त डेटा नहीं। पहले स्वास्थ्य डेटा रिकॉर्ड करें।</string>
+    <string name="analysis_section_suggestions">स्मार्ट सुझाव</string>
+    <string name="analysis_section_nutrition">पोषण विश्लेषण</string>
+    <string name="analysis_section_calorie_balance">कैलोरी संतुलन</string>
+    <string name="analysis_section_exercise">व्यायाम विश्लेषण</string>
+    <string name="analysis_section_sleep">नींद विश्लेषण</string>
+    <string name="analysis_section_phase">चक्र सहसंबंध</string>
+    <string name="analysis_avg_daily_calories">औसत दैनिक</string>
+    <string name="analysis_protein">प्रोटीन</string>
+    <string name="analysis_carbs">कार्ब्स</string>
+    <string name="analysis_fat">वसा</string>
+    <string name="analysis_nutrient_ratio">पोषक अनुपात</string>
+    <string name="analysis_avg_water_format">औसत पानी: %.0f मिली</string>
+    <string name="analysis_avg_intake">औसत सेवन</string>
+    <string name="analysis_exercise_burned">व्यायाम जलन</string>
+    <string name="analysis_weekly_total_minutes">साप्ताहिक कुल</string>
+    <string name="analysis_daily_avg_minutes">दैनिक औसत</string>
+    <string name="analysis_calories_burned">कैलोरी जली</string>
+    <string name="analysis_exercise_type_distribution">व्यायाम प्रकार वितरण</string>
+    <string name="analysis_avg_sleep_hours">औसत अवधि</string>
+    <string name="analysis_quality_score">गुणवत्ता स्कोर</string>
+    <string name="analysis_daily_sleep_hours">दैनिक नींद घंटे</string>
+    <string name="analysis_mood">मूड</string>
+    <string name="analysis_stress">तनाव</string>
+    <string name="analysis_daily_net_calories">दैनिक शुद्ध कैलोरी (आराम ऊर्जा सहित)</string>
+
+    <!-- Health Patterns -->
+    <string name="pattern_exhaustion_title">शारीरिक थकावट का पता चला</string>
+    <string name="pattern_exhaustion_desc">कम नींद, उच्च तनाव और निम्न मूड बर्नआउट जोखिम का सुझाव देते हैं। आराम के दिनों पर विचार करें।</string>
+    <string name="pattern_overtraining_title">अत्यधिक प्रशिक्षण जोखिम</string>
+    <string name="pattern_overtraining_desc">कैलोरी घाटे और कम नींद के साथ उच्च व्यायाम मात्रा। चोट से सावधान रहें।</string>
+    <string name="pattern_sedentary_mood_title">गतिहीन + निम्न मूड</string>
+    <string name="pattern_sedentary_mood_desc">बहुत कम कदम संख्या के साथ निम्न मूड। एक छोटी सैर मदद कर सकती है।</string>
+    <string name="pattern_dehydration_stress_title">निर्जलीकरण + तनाव</string>
+    <string name="pattern_dehydration_stress_desc">कम पानी का सेवन और उच्च तनाव स्तर। जलयोजन लचीलापन का समर्थन करता है।</string>
+    <string name="pattern_positive_loop_title">सकारात्मक स्वास्थ्य चक्र</string>
+    <string name="pattern_positive_loop_desc">अच्छी नींद, उच्च गतिविधि और सकारात्मक मूड एक दूसरे को मजबूत कर रहे हैं। जारी रखें!</string>
+
+    <!-- Report -->
+    <string name="report_title">स्वास्थ्य रिपोर्ट</string>
+    <string name="report_description">अपने रिकॉर्ड किए गए डेटा के आधार पर एक व्यापक स्वास्थ्य रिपोर्ट तैयार करें। रिपोर्ट आपके डिवाइस पर स्थानीय रूप से बनाई जाती है और PDF के रूप में साझा की जा सकती है।</string>
+    <string name="report_period">रिपोर्ट अवधि: पिछले 30 दिन</string>
+    <string name="report_includes">शामिल: मासिक धर्म रिकॉर्ड, कदम, नींद, पोषण और स्वास्थ्य अंतर्दृष्टि</string>
+    <string name="report_generate">रिपोर्ट बनाएँ</string>
+    <string name="report_generating">PDF रिपोर्ट बनाई जा रही है...</string>
+    <string name="report_success">रिपोर्ट सफलतापूर्वक बनाई गई!</string>
+    <string name="report_share">स्वास्थ्य रिपोर्ट साझा करें</string>
+    <string name="report_share_button">साझा करें</string>
+    <string name="report_generate_new">नई बनाएँ</string>
+    <string name="report_error">त्रुटि: %s</string>
+    <string name="report_privacy_title">गोपनीयता सूचना</string>
+    <string name="report_privacy_body">सभी रिपोर्टें आपके डिवाइस पर स्थानीय रूप से बनाई जाती हैं। कोई स्वास्थ्य डेटा किसी सर्वर या क्लाउड सेवा पर अपलोड नहीं किया जाता है। आपका डेटा आपके पूर्ण नियंत्रण में रहता है।</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_low_calorie_title">कम कैलोरी सेवन</string>
+    <string name="suggestion_low_calorie_desc">दैनिक सेवन %.0f kcal अनुशंसित 1800 kcal से कम है। जटिल कार्ब्स और स्वस्थ वसा जोड़ने पर विचार करें।</string>
+    <string name="suggestion_high_calorie_title">उच्च कैलोरी सेवन</string>
+    <string name="suggestion_high_calorie_desc">दैनिक सेवन %.0f kcal 2500 kcal से अधिक है। स्नैक्स कम करने और सब्जियाँ बढ़ाने पर विचार करें।</string>
+    <string name="suggestion_low_protein_title">कम प्रोटीन सेवन</string>
+    <string name="suggestion_low_protein_desc">दैनिक प्रोटीन %.0f ग्राम अनुशंसित 50 ग्राम से कम है। अंडे, मछली और टोफू पर विचार करें।</string>
+    <string name="suggestion_low_water_title">कम पानी का सेवन</string>
+    <string name="suggestion_low_water_desc">दैनिक पानी %.0f मिली अनुशंसा से कम है। प्रतिदिन 1500-2000 मिली का लक्ष्य रखें।</string>
+    <string name="suggestion_high_surplus_title">उच्च कैलोरी अधिशेष</string>
+    <string name="suggestion_high_surplus_desc">दैनिक अधिशेष %.0f kcal। यदि वजन घटाना आपका लक्ष्य है, तो व्यायाम बढ़ाने पर विचार करें।</string>
+    <string name="suggestion_high_deficit_title">बड़ी कैलोरी कमी</string>
+    <string name="suggestion_high_deficit_desc">दैनिक कमी %.0f kcal। सुनिश्चित करें कि आप अपनी बेसल चयापचय आवश्यकताओं को पूरा करते हैं।</string>
+    <string name="suggestion_balanced_title">संतुलित कैलोरी</string>
+    <string name="suggestion_balanced_desc">सेवन और व्यय अच्छी तरह से संतुलित हैं। ऐसे ही जारी रखें!</string>
+    <string name="suggestion_low_exercise_title">कम व्यायाम</string>
+    <string name="suggestion_low_exercise_desc">साप्ताहिक व्यायाम %d मिनट WHO अनुशंसा 150 मिनट से कम है।</string>
+    <string name="suggestion_exercise_met_title">व्यायाम लक्ष्य पूरा</string>
+    <string name="suggestion_exercise_met_desc">साप्ताहिक व्यायाम %d मिनट WHO अनुशंसा को पूरा करता है!</string>
+    <string name="suggestion_exercise_variety_title">व्यायाम विविधता आवश्यक</string>
+    <string name="suggestion_exercise_variety_desc">समग्र फिटनेस के लिए विभिन्न व्यायाम प्रकार (कार्डियो + शक्ति + लचीलापन) आज़माएँ।</string>
+    <string name="suggestion_low_sleep_title">कम नींद</string>
+    <string name="suggestion_low_sleep_desc">दैनिक नींद %.1f घंटे अनुशंसित 7-9 घंटे से कम है। नियमित कार्यक्रम आज़माएँ।</string>
+    <string name="suggestion_high_sleep_title">अत्यधिक नींद</string>
+    <string name="suggestion_high_sleep_desc">दैनिक नींद %.1f घंटे 9 घंटे से अधिक है। लंबी नींद थकान का संकेत हो सकती है।</string>
+    <string name="suggestion_low_deep_sleep_title">कम गहरी नींद</string>
+    <string name="suggestion_low_deep_sleep_desc">गहरी नींद का अनुपात केवल %.0f%%。 सोने से पहले कैफीन से बचें और कमरे को अंधेरा रखें।</string>
+    <string name="suggestion_low_sleep_quality_title">कम नींद गुणवत्ता</string>
+    <string name="suggestion_low_sleep_quality_desc">नींद गुणवत्ता स्कोर %.1f/5। सोने से पहले ध्यान या गर्म स्नान आज़माएँ।</string>
+    <string name="suggestion_luteal_sleep_title">ल्यूटियल चरण नींद परिवर्तन</string>
+    <string name="suggestion_luteal_sleep_desc">ल्यूटियल चरण में नींद फॉलिक्युलर की तुलना में %.1f घंटे कम हुई। सामान्य हार्मोनल परिवर्तन।</string>
+
+    <!-- Nutrition Cycle Guidance -->
+    <string name="nutrition_menstrual_advice">रक्त हानि की भरपाई के लिए आयरन युक्त खाद्य पदार्थों पर ध्यान दें। मैग्नीशियम ऐंठन को कम करने में मदद करता है। अच्छी तरह से हाइड्रेटेड रहें।</string>
+    <string name="nutrition_menstrual_nutrients">आयरन \u00B7 मैग्नीशियम \u00B7 ओमेगा-3 \u00B7 विटामिन B12</string>
+    <string name="nutrition_menstrual_foods">पत्तेदार सब्जियाँ \u00B7 लाल मांस \u00B7 वसायुक्त मछली \u00B7 डार्क चॉकलेट \u00B7 नट्स</string>
+    <string name="nutrition_menstrual_limit">नमकीन स्नैक्स \u00B7 कैफीन \u00B7 डेयरी</string>
+    <string name="nutrition_follicular_advice">आपका ऊर्जा चयापचय बढ़ रहा है। हल्के, पोषक तत्वों से भरपूर भोजन के लिए बढ़िया समय। प्रोबायोटिक्स से आंत स्वास्थ्य का समर्थन करें।</string>
+    <string name="nutrition_follicular_nutrients">फाइबर \u00B7 विटामिन C \u00B7 प्रोबायोटिक्स \u00B7 फोलेट</string>
+    <string name="nutrition_follicular_foods">जामुन \u00B7 खट्टे फल \u00B7 दही \u00B7 ओट्स \u00B7 ब्रोकली</string>
+    <string name="nutrition_follicular_limit">प्रसंस्कृत खाद्य पदार्थ \u00B7 अतिरिक्त चीनी</string>
+    <string name="nutrition_ovulatory_advice">इस चरण के दौरान एस्ट्रोजन चरम पर होता है। एंटीऑक्सीडेंट युक्त खाद्य पदार्थों से लिवर डिटॉक्सिफिकेशन का समर्थन करें। सूजनरोधी आहार अनुशंसित।</string>
+    <string name="nutrition_ovulatory_nutrients">एंटीऑक्सीडेंट \u00B7 विटामिन C \u00B7 जिंक \u00B7 विटामिन E</string>
+    <string name="nutrition_ovulatory_foods">शिमला मिर्च \u00B7 सूरजमुखी के बीज \u00B7 दुबला पोल्ट्री \u00B7 एवोकाडो \u00B7 ग्रीन टी</string>
+    <string name="nutrition_ovulatory_limit">शराब \u00B7 तले हुए खाद्य पदार्थ</string>
+    <string name="nutrition_luteal_advice">प्रोजेस्टेरोन बढ़ता है, जिससे भूख बढ़ सकती है। जटिल कार्ब्स सेरोटोनिन बढ़ाने में मदद करते हैं। PMS लक्षणों को कम करने के लिए कैफीन और नमक सीमित करें।</string>
+    <string name="nutrition_luteal_nutrients">B विटामिन \u00B7 जटिल कार्ब्स \u00B7 मैग्नीशियम \u00B7 कैल्शियम \u00B7 विटामिन B6</string>
+    <string name="nutrition_luteal_foods">साबुत अनाज \u00B7 केले \u00B7 पत्तेदार सब्जियाँ \u00B7 फलियाँ \u00B7 डार्क चॉकलेट</string>
+    <string name="nutrition_luteal_limit">चीनी \u00B7 कैफीन \u00B7 नमकीन खाद्य पदार्थ</string>
+
+    <!-- Sleep Trend -->
+    <string name="sleep_trend_legend">\u25CF %1$s — %2$s    \u25B2 नींद के घंटे   \u2590 गुणवत्ता स्कोर</string>
+    <string name="sleep_luteal_worse">ल्यूटियल चरण में नींद की गुणवत्ता घटी</string>
+    <string name="sleep_luteal_better">ल्यूटियल चरण में नींद की गुणवत्ता में सुधार</string>
+    <string name="sleep_luteal_comparison_worse">ल्यूटियल औसत नींद %.1f घंटे, फॉलिक्युलर %.1f घंटे, %.1f घंटे घटी</string>
+    <string name="sleep_luteal_comparison_better">ल्यूटियल औसत नींद %.1f घंटे, फॉलिक्युलर %.1f घंटे, %.1f घंटे सुधार</string>
+
+    <!-- PDF Report -->
+    <string name="pdf_health_report">स्वास्थ्य रिपोर्ट</string>
+    <string name="pdf_generated">बनाई गई: %s</string>
+    <string name="pdf_user_info">उपयोगकर्ता: %1$s | लिंग: %2$s</string>
+    <string name="pdf_report_period">रिपोर्ट अवधि: %s</string>
+    <string name="pdf_period_summary">मासिक धर्म सारांश</string>
+    <string name="pdf_no_period_records">चयनित अवधि में कोई मासिक धर्म रिकॉर्ड नहीं।</string>
+    <string name="pdf_total_cycles">कुल चक्र: %d</string>
+    <string name="pdf_avg_cycle_length">औसत चक्र लंबाई: %d दिन</string>
+    <string name="pdf_avg_pain">औसत दर्द स्तर: %.1f / 3</string>
+    <string name="pdf_recent_records">हाल के रिकॉर्ड</string>
+    <string name="pdf_start_date">आरंभ तिथि</string>
+    <string name="pdf_end_date">समाप्ति तिथि</string>
+    <string name="pdf_flow">प्रवाह</string>
+    <string name="pdf_pain">दर्द</string>
+    <string name="pdf_ongoing">जारी</string>
+    <string name="pdf_flow_light">हल्का</string>
+    <string name="pdf_flow_medium">मध्यम</string>
+    <string name="pdf_flow_heavy">भारी</string>
+    <string name="pdf_pain_none">कोई नहीं</string>
+    <string name="pdf_pain_mild">हल्का</string>
+    <string name="pdf_pain_moderate">मध्यम</string>
+    <string name="pdf_pain_severe">गंभीर</string>
+    <string name="pdf_activity_summary">गतिविधि सारांश</string>
+    <string name="pdf_no_step_data">कोई कदम डेटा उपलब्ध नहीं।</string>
+    <string name="pdf_avg_daily_steps">औसत दैनिक कदम: %,d</string>
+    <string name="pdf_total_steps">कुल कदम: %,d</string>
+    <string name="pdf_max_steps">अधिकतम दैनिक कदम: %,d</string>
+    <string name="pdf_total_exercise">कुल व्यायाम: %d मिनट</string>
+    <string name="pdf_sleep_summary">नींद सारांश</string>
+    <string name="pdf_no_sleep_data">कोई नींद डेटा उपलब्ध नहीं।</string>
+    <string name="pdf_avg_sleep">औसत नींद: %.1f घंटे</string>
+    <string name="pdf_avg_sleep_quality">औसत नींद गुणवत्ता: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">औसत गहरी नींद: %.1f घंटे</string>
+    <string name="pdf_nutrition_summary">पोषण सारांश</string>
+    <string name="pdf_no_nutrition_data">कोई पोषण डेटा उपलब्ध नहीं।</string>
+    <string name="pdf_avg_calories">औसत दैनिक कैलोरी: %.0f kcal</string>
+    <string name="pdf_avg_water">औसत पानी का सेवन: %.0f मिली</string>
+    <string name="pdf_avg_protein">औसत प्रोटीन: %.0f ग्राम</string>
+    <string name="pdf_footer">यह रिपोर्ट आपके डिवाइस पर स्थानीय रूप से बनाई गई है। कोई डेटा आपके फोन से बाहर नहीं जाता।</string>
+    <string name="pdf_page">पृष्ठ %d</string>
+    <string name="pdf_app_name">TianshangHealth - गोपनीयता प्रथम</string>
+
+    <!-- General -->
+    <string name="sleep_auto_calculated">स्वचालित: %d घंटे</string>
+    <string name="sleep_bedtime_btn">सोने का समय</string>
+    <string name="sleep_elapsed">%d घं %d मि बीत गए</string>
+    <string name="sleep_sleeping">सो रहा है...</string>
+    <string name="sleep_waketime_btn">जागो</string>
+    <string name="export_report">PDF रिपोर्ट निर्यात करें</string>
+    <string name="insufficient_data">अपर्याप्त डेटा</string>
+    <string name="nutrition_energy_balance">ऊर्जा संतुलन</string>
+    <string name="nutrition_resting_energy">आराम</string>
+    <string name="nutrition_exercise_energy">व्यायाम</string>
+    <string name="nutrition_total_expenditure">कुल जलन</string>
+    <string name="nutrition_calorie_balance">संतुलन</string>
+    <string name="error_onboarding_required">कृपया पहले उपयोगकर्ता सेटअप पूरा करें</string>
+    <string name="error_load_failed">लोड करने में विफल</string>
+    <string name="previous">पिछला</string>
+    <string name="next">अगला</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">रिपोर्ट बनाने में विफल</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

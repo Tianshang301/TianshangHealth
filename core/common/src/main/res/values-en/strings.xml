@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Terms of Service</string>
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="accept_terms">I have read and accept</string>
+    <string name="app_lock_title">App Lock</string>
+    <string name="enter_pin">Password</string>
+    <string name="unlock">Unlock</string>
+    <string name="invalid_pin">Invalid password</string>
+    <string name="app_lock_setup_title">Set App Lock Password</string>
+    <string name="set_pin">Set Password</string>
+    <string name="confirm_pin">Confirm Password</string>
+    <string name="set_password">Set Password</string>
+    <string name="pin_empty_error">Password cannot be empty</string>
+    <string name="pin_mismatch_error">Passwords do not match</string>
+    <string name="pin_length_error">Password must be at least %d characters</string>
+    <string name="calendar_title">Calendar</string>
+    <string name="current_cycle_day">Day %d of cycle</string>
+    <string name="days_until_next_period">Next period in %d days</string>
+    <string name="no_period_data">No period data</string>
+    <string name="tap_date_to_record">Tap to record</string>
+    <string name="period">Period</string>
+    <string name="predicted_period">Predicted Period</string>
+    <string name="ovulation">Ovulation</string>
+    <string name="fertile_window">Fertile Window</string>
+    <string name="record_title">Record</string>
+    <string name="start_period">Start Period</string>
+    <string name="end_period">End Period</string>
+    <string name="flow_level">Flow</string>
+    <string name="pain_level">Pain</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="sexual_activity">Sexual Activity</string>
+    <string name="ovulation_test">Ovulation Test</string>
+    <string name="cervical_mucus">Cervical Mucus</string>
+    <string name="body_temperature">Body Temperature</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="analysis_title">Analysis</string>
+    <string name="cycle_statistics">Statistics</string>
+    <string name="avg_cycle_length">Average Cycle</string>
+    <string name="avg_period_length">Average Period</string>
+    <string name="cycle_regularity">Regularity</string>
+    <string name="total_cycles">Total Cycles</string>
+    <string name="pain_trend">Pain Trend</string>
+    <string name="symptom_frequency">Symptom Frequency</string>
+    <string name="predictions">Predictions</string>
+    <string name="reminder_title">Reminders</string>
+    <string name="period_reminder">Period Reminder</string>
+    <string name="ovulation_reminder">Ovulation Reminder</string>
+    <string name="pms_reminder">PMS Reminder</string>
+    <string name="profile_title">Profile</string>
+    <string name="theme_customization">Theme</string>
+    <string name="theme_color">Theme Color</string>
+    <string name="app_lock">App Lock</string>
+    <string name="language">Language</string>
+    <string name="recycle_bin">Recycle Bin</string>
+    <string name="recycle_bin_title">Recycle Bin</string>
+    <string name="backup_restore">Backup</string>
+    <string name="backup_restore_title">Backup &amp; Restore</string>
+    <string name="export_backup">Export Backup</string>
+    <string name="import_backup">Import Backup</string>
+    <string name="export_csv">Export CSV</string>
+    <string name="about">About</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">Add</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="latest_bmi">Current BMI</string>
+    <string name="bmi_history">History</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_description">Change theme</string>
+    <string name="no_deleted_records">No deleted records</string>
+    <string name="security_settings">Security</string>
+    <string name="data_security">Data Security</string>
+    <string name="database_encryption">Database Encryption</string>
+    <string name="encrypted">Encrypted (AES-256)</string>
+    <string name="unencrypted">Not Encrypted</string>
+    <string name="migrate_to_encrypted">Migrate to Encrypted Database</string>
+    <string name="migration_success">Migration successful! Database is now encrypted.</string>
+    <string name="migration_failed">Migration failed: %s. Your data has been restored to its original state.</string>
+    <string name="background_lock_delay">Lock after background</string>
+    <string name="lock_immediately">Immediately</string>
+    <string name="lock_after_seconds">%d seconds</string>
+    <string name="custom_reminders">Custom Reminders</string>
+    <string name="add_custom_reminder">Add Custom Reminder</string>
+    <string name="no_custom_reminders">No custom reminders yet</string>
+    <string name="reminder_title_label">Reminder title</string>
+    <string name="reminder_title_required">Title is required</string>
+    <string name="reminder_message_label">Message (optional)</string>
+    <string name="reminder_date">Reminder date</string>
+    <string name="select_time">Select time</string>
+    <string name="hue">Hue</string>
+    <string name="saturation">Saturation</string>
+    <string name="lightness">Lightness</string>
+    <string name="apply_color">Apply Color</string>
+    <string name="custom_color">Custom Color</string>
+    <string name="color_preview">Color Preview</string>
+    <string name="apply">Apply</string>
+    <string name="preset_colors">Preset Colors</string>
+    <string name="add_symptom">Add Symptom</string>
+    <string name="symptom_name">Symptom name</string>
+    <string name="symptom_name_required">Symptom name is required</string>
+    <string name="prediction_explanation">Adaptively predicted based on the last %1$d cycles (average %2$s days/cycle, %3$s days/period)</string>
+    <string name="record_date">Record Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="delete_record">Delete Record</string>
+    <string name="delete_record_confirm">Are you sure you want to delete the record for this date? This action cannot be undone.</string>
+    <string name="week_sun">Sun</string>
+    <string name="week_mon">Mon</string>
+    <string name="week_tue">Tue</string>
+    <string name="week_wed">Wed</string>
+    <string name="week_thu">Thu</string>
+    <string name="week_fri">Fri</string>
+    <string name="week_sat">Sat</string>
+    <string name="calendar_today">Today</string>
+    <string name="back">Back</string>
+    <string name="symptom_headache">Headache</string>
+    <string name="symptom_bloating">Bloating</string>
+    <string name="symptom_breast_tenderness">Breast tenderness</string>
+    <string name="symptom_backache">Backache</string>
+    <string name="symptom_fatigue">Fatigue</string>
+    <string name="symptom_mood_swings">Mood swings</string>
+    <string name="symptom_acne">Acne</string>
+    <string name="symptom_increased_appetite">Increased appetite</string>
+    <string name="symptom_insomnia">Insomnia</string>
+    <string name="symptom_nausea">Nausea</string>
+    <string name="flow_light">Light</string>
+    <string name="flow_medium">Medium</string>
+    <string name="flow_heavy">Heavy</string>
+    <string name="pain_none">None</string>
+    <string name="pain_mild">Mild</string>
+    <string name="pain_moderate">Moderate</string>
+    <string name="pain_severe">Severe</string>
+    <string name="unit_days">days</string>
+    <string name="predicted_period_label">Predicted period: %1$s - %2$s</string>
+    <string name="ovulation_date_label">Ovulation: %s</string>
+    <string name="confidence_label">Confidence: %1$s (based on %2$d cycles)</string>
+    <string name="reminder_days_before">Days before</string>
+    <string name="reminder_time">Reminder time</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_dark_pink">Dark pink</string>
+    <string name="color_peach">Peach</string>
+    <string name="color_light_purple">Light purple</string>
+    <string name="color_medium_purple">Medium purple</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Underweight</string>
+    <string name="bmi_category_normal">Normal</string>
+    <string name="bmi_category_overweight">Overweight</string>
+    <string name="bmi_category_obese">Obese</string>
+    <string name="bmi_standard_note">Based on Chinese BMI standard</string>
+    <string name="backup_success">Backup successful</string>
+    <string name="backup_fail">Backup failed</string>
+    <string name="restore_success">Restore successful</string>
+    <string name="restore_fail">Restore failed</string>
+    <string name="export_success">Export successful</string>
+    <string name="export_fail">Export failed</string>
+    <string name="backup_export_desc">Export database as a ZIP backup file</string>
+    <string name="backup_import_desc">Restore data from a backup file</string>
+    <string name="backup_csv_desc">Export records as a CSV spreadsheet</string>
+    <string name="deleted_time">Deleted: %s</string>
+    <string name="in_progress">In progress</string>
+    <string name="terms_countdown">Please wait %d seconds</string>
+    <string name="auth_failed">Authentication failed: %s</string>
+    <string name="auth_failed_generic">Authentication failed</string>
+    <string name="biometric_init_failed">Biometric initialization failed</string>
+    <string name="lockout_message">Too many attempts. Please wait %d seconds.</string>
+    <string name="chart_title_cycle_length_trend">Cycle Length Trend</string>
+    <string name="chart_title_pain_trend">Pain Trend</string>
+    <string name="chart_title_symptom_distribution">Symptom Distribution</string>
+    <string name="chart_cycle_label">Cycle %d</string>
+    <string name="chart_cycle_length_label">Cycle Length : %d</string>
+    <string name="chart_pain_level_label">Pain Level</string>
+    <string name="regularity_regular">Regular</string>
+    <string name="regularity_somewhat_regular">Somewhat regular</string>
+    <string name="regularity_irregular">Irregular</string>
+    <string name="regularity_insufficient_data">Insufficient data</string>
+    <string name="confidence_high">High</string>
+    <string name="confidence_medium">Medium</string>
+    <string name="confidence_low">Low</string>
+    <string name="confidence_insufficient">Insufficient data</string>
+    <string name="analysis_no_data_title">No data yet</string>
+    <string name="analysis_no_data_hint">Start recording your period to see analysis and predictions here</string>
+    <string name="section_appearance">Appearance</string>
+    <string name="section_health">Health</string>
+    <string name="section_data">Data</string>
+    <string name="section_other">Other</string>
+    <string name="open">Open</string>
+    <string name="retry">Retry</string>
+    <string name="profile_theme_description">Customize app colors</string>
+    <string name="profile_language_description">Change app language</string>
+    <string name="profile_bmi_description">Track your body mass index</string>
+    <string name="profile_app_lock_description">Require authentication to open app</string>
+    <string name="screenshot_protection_title">Screenshot Protection</string>
+    <string name="screenshot_protection_description">Prevent screenshots and screen recordings</string>
+    <string name="profile_backup_description">Encrypted backup and restore of all data</string>
+    <string name="profile_recycle_bin_description">View and restore deleted records</string>
+    <string name="profile_version">Version 1.0.0</string>
+    <string name="profile_app_description">A comprehensive health tracking app with privacy at its core.</string>
+    <string name="custom_theme">Custom Theme</string>
+    <string name="language_description">Select your preferred language. The app will restart to apply the change.</string>
+    <string name="language_changed_restart">Language changed, restarting&#8230;</string>
+    <string name="bmi_empty_text">No weight records yet. Add your first weight entry.</string>
+    <string name="save_height">Save Height</string>
+    <string name="bmi_category_label">Category</string>
+    <string name="height_label">Height</string>
+    <string name="update_height">Update Height</string>
+    <string name="add_weight_record_title">Add Weight Record</string>
+    <string name="add_weight_record_text">Enter your weight for today.</string>
+    <string name="recycle_bin_description">Deleted records are kept for 30 days before permanent removal.</string>
+    <string name="recycle_bin_empty">Recycle bin is empty</string>
+    <string name="recycle_bin_empty_title">Empty Recycle Bin</string>
+    <string name="recycle_bin_empty_confirm">All deleted records will be permanently removed. This action cannot be undone.</string>
+    <string name="recycle_bin_empty_action">Empty</string>
+    <string name="recycle_bin_restore">Restore</string>
+    <string name="recycle_bin_delete_forever">Delete Forever</string>
+    <string name="add_record">Add Record</string>
+    <string name="period_tracking_title">Period Tracking</string>
+    <string name="prediction_explanation_title">Prediction Explanation</string>
+    <string name="reminder_period_desc">Get notified before your period starts</string>
+    <string name="reminder_ovulation_desc">Get notified before ovulation</string>
+    <string name="reminder_pms_desc">Get notified about PMS symptoms</string>
+    <string name="cycle_status_title">Cycle Status</string>
+    <string name="cycle_day_label">Cycle Day</string>
+    <string name="days_until_label">Days Until</string>
+    <string name="period_active_text">Period is active</string>
+    <string name="next_period_label">Next Period</string>
+    <string name="not_enough_data">Not enough data</string>
+    <string name="cycle_length_label">Cycle Length</string>
+    <string name="chart_no_data">Not enough data to display chart</string>
+    <string name="chart_no_pain_data">No pain data recorded</string>
+    <string name="chart_pain_unknown">Unknown</string>
+    <string name="chart_total_records">Total Records</string>
+    <string name="record_for_date">Record for %s</string>
+    <string name="save_record">Save Record</string>
+    <string name="male_health_trend">Health Trends</string>
+    <string name="male_health_description">Period analysis is not applicable for male users. Showing general health data below.</string>
+    <string name="steps_overview">Steps Overview</string>
+    <string name="steps_today">Today\'s Steps</string>
+    <string name="steps_weekly_avg_label">7-Day Avg Steps</string>
+    <string name="steps_record_days">Days Recorded</string>
+    <string name="steps_weekly_trend_label">7-Day Step Trend</string>
+    <string name="steps_title">Steps Tracking</string>
+    <string name="steps_daily_goal">Daily Goal</string>
+    <string name="steps_update_goal">Update Goal</string>
+    <string name="steps_this_week">This Week</string>
+    <string name="steps_total">Total</string>
+    <string name="steps_average">Average</string>
+    <string name="steps_days_label">Days</string>
+    <string name="steps_weekly_trend">Weekly Trend</string>
+    <string name="steps_goal_format">%d steps</string>
+    <string name="steps_weekly_avg_format">Weekly avg %d steps/day</string>
+    <string name="steps_history_title">Step History</string>
+    <string name="steps_tab_week">Week</string>
+    <string name="steps_tab_month">Month</string>
+    <string name="steps_tab_year">Year</string>
+    <string name="steps_tab_all">All</string>
+    <string name="steps_30d_total">30-Day Total</string>
+    <string name="steps_avg">Daily Avg</string>
+    <string name="steps_best">Best Day</string>
+    <string name="steps_weekly_label">Weekly Breakdown</string>
+    <string name="steps_daily_trend">Daily Trend</string>
+    <string name="steps_monthly_label">Monthly Breakdown</string>
+    <string name="steps_total_label">Total Steps</string>
+    <string name="steps_period_total">Period Total</string>
+    <string name="steps_weekly_avg">Weekly Avg</string>
+    <string name="steps_monthly_avg">Monthly Avg</string>
+    <string name="steps_best_month">Best Month</string>
+    <string name="steps_tab_day">Day</string>
+    <string name="steps_label">Steps</string>
+    <string name="steps_calories_label">Calories</string>
+    <string name="steps_yearly_label">Yearly Breakdown</string>
+    <string name="dashboard_title">Health Dashboard</string>
+    <string name="dashboard_quick_actions">Quick Actions</string>
+    <string name="dashboard_retry">Retry</string>
+    <string name="dashboard_insights">Health Insights</string>
+    <string name="dashboard_insights_empty">Record more health data for personalized insights</string>
+    <string name="dashboard_period_status">Period Status</string>
+    <string name="dashboard_period_active">Period Active</string>
+    <string name="dashboard_follicular_phase">Follicular Phase</string>
+    <string name="dashboard_no_data">No Data</string>
+    <string name="dashboard_today_steps">Today\'s Steps</string>
+    <string name="dashboard_goal_format">Goal: %d</string>
+    <string name="dashboard_cycle_day_format">Day %1$d</string>
+    <string name="dashboard_record_period">Record Period</string>
+    <string name="dashboard_record_steps">Record Steps</string>
+    <string name="dashboard_record_health">Health Analysis</string>
+    <string name="gender_welcome">Welcome to TianshangHealth</string>
+    <string name="gender_instruction">Please select your gender for personalized health tracking</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_male_desc">Hides period tracking features</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_female_desc">Shows all features including period tracking</string>
+    <string name="gender_other">Other</string>
+    <string name="gender_other_desc">Shows all features</string>
+    <string name="gender_footnote">You can change this later in Settings</string>
+    <string name="gender_setting_title">Gender</string>
+    <string name="gender_setting_description">Change your gender to adjust feature modules</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="app_lock_health_data_protected">Your health data is protected</string>
+    <string name="app_lock_set_password_title">Set Password</string>
+    <string name="app_lock_password_label">Password</string>
+    <string name="app_lock_confirm_password_label">Confirm Password</string>
+    <string name="app_lock_enter_password_title">Enter Password</string>
+    <string name="app_lock_use_biometric">Use Biometrics</string>
+    <string name="terms_privacy_title">Terms of Service &amp; Privacy Policy</string>
+    <string name="terms_service_title">Terms of Service</string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="terms_service_declaration">1. Service Declaration\n\nTianshangHealth is a comprehensive health tracking application that prioritizes user privacy and data security. All data is stored locally on your device with strong encryption.\n\n2. Data Privacy\n\nWe do not collect, upload, or share any of your personal health data. The application operates completely offline with zero network permissions.\n\n3. User Responsibility\n\nYou are responsible for the accuracy of the health data you enter. The predictions and analyses provided are for reference only and do not constitute medical advice.\n\n4. Data Security\n\nYour data is protected with SQLCipher AES-256 encryption. The encryption key is managed through Android Keystore for hardware-level security.</string>
+    <string name="privacy_policy_body">1. Core Principle: Data Localization\n\nAll your health data, including menstrual cycles, symptoms, and other health metrics, is stored only in the encrypted database on your device.\n\n2. Information Collected\n\nWe only process information that you manually enter into the application. No automatic data collection occurs.\n\n3. Data Encryption\n\nAll sensitive data is encrypted using SQLCipher with AES-256 encryption. The encryption key is securely stored in Android Keystore.\n\n4. No Third-Party Access\n\nWe do not use any third-party analytics, advertising, or tracking services. Your data never leaves your device.\n\n5. Data Export\n\nYou can export your data at any time in standard formats (CSV, encrypted backup). You have full control over your data.\n\n6. Data Deletion\n\nYou can delete any or all of your data at any time. Deleted data is permanently removed from the device.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_failed_add_record">Failed to add record</string>
+    <string name="error_failed_update_record">Failed to update record</string>
+    <string name="error_failed_delete_record">Failed to delete record</string>
+    <string name="error_failed_record">Failed to record</string>
+    <string name="error_failed_set_password">Failed to set password</string>
+    <string name="error_password_not_set">Password not set</string>
+    <string name="error_incorrect_password">Incorrect password</string>
+    <string name="error_verification_failed">Verification failed</string>
+    <string name="error_failed_load_settings">Failed to load settings</string>
+    <string name="error_failed_update_settings">Failed to update settings</string>
+    <string name="error_failed_save_gender">Failed to save gender</string>
+    <string name="error_failed_update_goal">Failed to update goal</string>
+    <string name="error_failed_restore">Failed to restore record</string>
+    <string name="error_failed_to_delete">Failed to delete record</string>
+    <string name="error_failed_empty_bin">Failed to empty recycle bin</string>
+    <string name="loading">Loading...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Period Reminder</string>
+    <string name="notification_channel_period_desc">Reminders for period tracking</string>
+    <string name="notification_period_title">Period Tracking Reminder</string>
+    <string name="notification_period_body">Don\'t forget to log your period data today!</string>
+    <string name="notification_channel_ovulation">Ovulation Reminder</string>
+    <string name="notification_channel_ovulation_desc">Reminders for ovulation tracking</string>
+    <string name="notification_ovulation_title">Ovulation Window Approaching</string>
+    <string name="notification_ovulation_body">Your fertile window is coming up soon!</string>
+    <string name="notification_channel_pms">PMS Reminder</string>
+    <string name="notification_channel_pms_desc">Reminders for PMS symptoms</string>
+    <string name="notification_pms_title">PMS Symptoms Expected</string>
+    <string name="notification_pms_body">PMS symptoms may start in a few days. Take care!</string>
+    <string name="notification_channel_steps">Step Counter</string>
+    <string name="notification_channel_steps_desc">Step counter service notification</string>
+    <string name="notification_steps_body">Today\'s steps: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_period">Period</string>
+    <string name="nav_fitness">Fitness</string>
+    <string name="nav_analysis">Analysis</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Start Date,End Date,Flow Level,Pain Level,Notes</string>
+    <string name="backup_exported_success">Backup exported successfully</string>
+    <string name="import_success_format">Imported %d records successfully</string>
+    <string name="csv_exported_success">CSV exported successfully</string>
+    <string name="csv_export_failed">CSV export failed</string>
+    <string name="password_export_title">Encrypt Backup</string>
+    <string name="password_import_title">Decrypt Backup</string>
+    <string name="password_export_desc">Enter a password to encrypt your backup file.</string>
+    <string name="password_import_desc">Enter the password used to encrypt this backup file.</string>
+    <string name="password_label">Password</string>
+    <string name="proceed">Proceed</string>
+    <string name="password_short_error">Password too short</string>
+    <string name="password_mismatch_error">Passwords do not match</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Period Active</string>
+    <string name="insight_follicular_phase">Follicular Phase</string>
+    <string name="insight_luteal_phase">Luteal Phase</string>
+    <string name="insight_cycle_day">Cycle Day %d</string>
+    <string name="insight_steps_stable_title">Stable Activity Throughout Cycle</string>
+    <string name="insight_steps_stable_desc">Your step count remains consistent across cycle phases, good exercise habit maintained.</string>
+    <string name="insight_mood_drop_title">Mood Drops in Luteal Phase</string>
+    <string name="insight_mood_drop_desc">Average mood score is lower in luteal phase, consider mood management</string>
+    <string name="insight_mood_rise_title">Better Mood in Luteal Phase</string>
+    <string name="insight_mood_rise_desc">Average mood score is higher in luteal phase, you\'re doing great</string>
+    <string name="insight_sleep_drop_title">Sleep Quality Drops in Luteal Phase</string>
+    <string name="insight_sleep_drop_desc">Sleep quality decreases during luteal phase, try relaxation exercises</string>
+    <string name="insight_sleep_rise_title">Better Sleep in Luteal Phase</string>
+    <string name="insight_sleep_rise_desc">Sleep quality is higher in luteal phase, keep up the good routine</string>
+    <string name="insight_stress_period_title">Higher Stress During Period</string>
+    <string name="insight_stress_period_desc">Stress levels are %s points higher during period, consider reducing intense activities</string>
+    <string name="insight_mood_today_low_title">Low Mood Today</string>
+    <string name="insight_mood_today_low_desc">Your mood score is low today, try doing something you enjoy</string>
+    <string name="insight_stress_today_high_title">High Stress Today</string>
+    <string name="insight_stress_today_high_desc">Stress levels are high today, try deep breathing or meditation</string>
+    <string name="insight_sleep_last_night_low_title">Poor Sleep Last Night</string>
+    <string name="insight_sleep_last_night_low_desc">Sleep quality was low last night, try going to bed early tonight</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Activity drops significantly in luteal phase</string>
+    <string name="insight_luteal_increase">Activity increases in luteal phase</string>
+    <string name="insight_luteal_rest">Rest appropriately during luteal phase, light exercise like yoga recommended</string>
+    <string name="insight_luteal_nutrition">Great activity increase, remember to maintain nutrition</string>
+    <string name="insight_luteal_activity_low_title">Lower Activity in Luteal Phase</string>
+    <string name="insight_luteal_activity_low_desc">Luteal phase steps decreased by %d%% compared to follicular phase. Light activity like walking is recommended.</string>
+    <string name="insight_luteal_activity_high_title">Higher Activity in Luteal Phase</string>
+    <string name="insight_luteal_activity_high_desc">Luteal phase steps increased by %d%% compared to follicular phase. Remember to rest and maintain nutrition.</string>
+    <string name="insight_activity_stable_title">Consistent Activity Throughout Cycle</string>
+    <string name="insight_activity_stable_desc">Step counts remain stable across cycle phases. Good exercise habits maintained.</string>
+    <string name="insight_mood_luteal_drop_title">Mood Drops in Luteal Phase</string>
+    <string name="insight_mood_luteal_drop_desc">Average mood score is %s points lower in luteal phase. Consider mood management.</string>
+    <string name="insight_mood_luteal_rise_title">Better Mood in Luteal Phase</string>
+    <string name="insight_mood_luteal_rise_desc">Average mood score is %s points higher in luteal phase. You are doing great!</string>
+    <string name="insight_sleep_luteal_drop_title">Sleep Quality Drops in Luteal Phase</string>
+    <string name="insight_sleep_luteal_drop_desc">Sleep quality decreased by %s points in luteal phase. Try relaxation exercises before bed.</string>
+    <string name="insight_sleep_luteal_rise_title">Better Sleep in Luteal Phase</string>
+    <string name="insight_sleep_luteal_rise_desc">Sleep quality is %s points higher in luteal phase. Keep up the good routine.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Not enough data for prediction</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Refresh</string>
+    <string name="recycle_bin_empty_title_short">Empty Bin</string>
+    <string name="recycle_bin_period_format">Period: %1$s</string>
+    <string name="recycle_bin_to_format">to %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Set Password</string>
+    <string name="app_lock_confirm_password">Confirm Password</string>
+    <string name="app_lock_set_password_btn">Set Password</string>
+    <string name="app_lock_unlock_btn">Unlock</string>
+    <string name="app_lock_enter_password">Enter Password</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Total Records</string>
+    <string name="stats_total_cycles">Total Cycles</string>
+    <string name="stats_avg_cycle">Average Cycle</string>
+    <string name="stats_avg_period">Average Period</string>
+    <string name="stats_regularity_text">Regularity</string>
+    <string name="stats_cycle_num">Cycle %d</string>
+    <string name="stats_days_suffix">%d days</string>
+    <string name="stats_avg_format">Average: %d days</string>
+    <string name="stats_no_data">No data</string>
+    <string name="weight_format">Weight: %.1f kg</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f cm</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Backups are encrypted with AES-256-GCM using your password.</string>
+    <string name="steps_of_goal">of %d goal</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d掳 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Blue</string>
+    <string name="color_green">Green</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_teal">Teal</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Tap for details</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Running</string>
+    <string name="exercise_walking">Walking</string>
+    <string name="exercise_cycling">Cycling</string>
+    <string name="exercise_swimming">Swimming</string>
+    <string name="exercise_yoga">Yoga</string>
+    <string name="exercise_strength">Strength Training</string>
+    <string name="exercise_dance">Dance</string>
+    <string name="exercise_pilates">Pilates</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Basketball</string>
+    <string name="exercise_football">Football</string>
+    <string name="exercise_tennis">Tennis</string>
+    <string name="exercise_badminton">Badminton</string>
+    <string name="exercise_table_tennis">Table Tennis</string>
+    <string name="exercise_skipping">Skipping Rope</string>
+    <string name="exercise_hiking">Hiking</string>
+    <string name="exercise_other">Other</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">This Week</string>
+    <string name="fitness_add_workout">Add Workout</string>
+    <string name="fitness_select_type">Select Exercise Type</string>
+    <string name="fitness_duration_minutes">Duration (minutes)</string>
+    <string name="fitness_calories_label">Calories</string>
+    <string name="fitness_distance_km">Distance (km)</string>
+    <string name="fitness_today_workouts">Today\'s Workouts</string>
+    <string name="fitness_recent_workouts">Recent Workouts</string>
+    <string name="fitness_empty">No workouts recorded yet.\nTap + to add your first workout.</string>
+    <string name="fitness_minutes_format">%d min</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">Duration</string>
+    <string name="fitness_calories">Calories</string>
+    <string name="fitness_workouts">Workouts</string>
+    <string name="fitness_km_unit">km</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Disable Battery Optimization</string>
+    <string name="steps_battery_desc">Battery optimization may stop the step counting service and affect step tracking.</string>
+    <string name="steps_battery_action">Go to Settings</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">%s Settings</string>
+    <string name="steps_auto_start_settings">Auto Start Settings</string>
+    <string name="steps_battery_settings">Battery Settings</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Energy Summary</string>
+    <string name="energy_today">Today</string>
+    <string name="energy_this_week">This Week</string>
+    <string name="energy_steps">Steps</string>
+    <string name="energy_workouts">Workouts</string>
+    <string name="energy_total">Total</string>
+    <string name="energy_workouts_summary">%1$d workouts \u00B7 %2$d min</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Body Metrics</string>
+    <string name="body_metrics_height">Height (cm)</string>
+    <string name="body_metrics_weight">Weight (kg)</string>
+    <string name="body_metrics_saved">Body metrics saved</string>
+    <string name="body_metrics_height_error">Please enter a valid height (80-250cm)</string>
+    <string name="body_metrics_weight_error">Please enter a valid weight (15-350kg)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Nutrition</string>
+    <string name="nav_nutrition">Nutrition</string>
+    <string name="nutrition_add_meal">Add Meal</string>
+    <string name="nutrition_meal_type">Meal Type</string>
+    <string name="nutrition_food_name">Food Name</string>
+    <string name="nutrition_calories">Calories</string>
+    <string name="nutrition_protein">Protein (g)</string>
+    <string name="nutrition_carbs">Carbs (g)</string>
+    <string name="nutrition_fat">Fat (g)</string>
+    <string name="nutrition_serving_size">Serving Size</string>
+    <string name="nutrition_macros">Macronutrients</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Daily Nutrition</string>
+    <string name="nutrition_today_meals">Today\'s Meals</string>
+    <string name="nutrition_meals">meals</string>
+    <string name="nutrition_weekly_trend">Weekly Trend</string>
+    <string name="nutrition_empty">No meals recorded yet.\nTap + to add your first meal.</string>
+    <string name="nutrition_error_food_name">Please enter a food name</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Breakfast</string>
+    <string name="meal_lunch">Lunch</string>
+    <string name="meal_dinner">Dinner</string>
+    <string name="meal_snack">Snack</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Water</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Lower Calorie Intake in Luteal Phase</string>
+    <string name="insight_nutrition_luteal_low_desc">Calories decreased by %.0f kcal in luteal phase. Try to maintain a balanced diet.</string>
+    <string name="insight_nutrition_luteal_high_title">Higher Calorie Intake in Luteal Phase</string>
+    <string name="insight_nutrition_luteal_high_desc">Calories increased by %.0f kcal in luteal phase. This is normal, listen to your body.</string>
+    <string name="insight_nutrition_stable_title">Stable Calorie Intake</string>
+    <string name="insight_nutrition_stable_desc">Your calorie intake remains stable across cycle phases. Great job!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">Forgot PIN?</string>
+    <string name="app_lock_change_pin">Change PIN</string>
+    <string name="app_lock_current_pin">Current PIN</string>
+    <string name="app_lock_new_pin_label">New PIN</string>
+    <string name="app_lock_recovery_title">Reset App Lock</string>
+    <string name="app_lock_recovery_desc">Verify your identity to reset app lock</string>
+    <string name="lock_30s">30 seconds</string>
+    <string name="lock_1min">1 minute</string>
+    <string name="lock_5min">5 minutes</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Sleep</string>
+    <string name="sleep_title">Sleep Tracking</string>
+    <string name="sleep_record_title">Record Sleep</string>
+    <string name="sleep_hours">Sleep Hours</string>
+    <string name="sleep_deep_hours">Deep Sleep</string>
+    <string name="sleep_quality">Sleep Quality</string>
+    <string name="sleep_quality_format">%d star</string>
+    <string name="sleep_history">Sleep History</string>
+    <string name="sleep_no_data">No sleep data recorded yet</string>
+    <string name="sleep_today_status">Today\'s Sleep</string>
+    <string name="sleep_hours_format">%s hours</string>
+    <string name="sleep_deep_hours_format">Deep: %s hours</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Menstrual</string>
+    <string name="phase_follicular">Follicular</string>
+    <string name="phase_ovulatory">Ovulatory</string>
+    <string name="phase_luteal">Luteal</string>
+    <string name="nutrition_cycle_guidance">Cycle Nutrition Guidance</string>
+    <string name="nutrition_focus_nutrients">Focus Nutrients</string>
+    <string name="nutrition_recommended_foods">Recommended Foods</string>
+    <string name="nutrition_limit_foods">Limit</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Please enter a valid duration</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Clear</string>
+    <string name="edit">Edit</string>
+    <string name="exact_date_mode">Exact Date</string>
+    <string name="profile_dob_not_set">Not set</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Year Only</string>
+    <string name="year_picker_title">Select Birth Year</string>
+
+    <!-- Analysis -->
+    <string name="analysis_no_data">Not enough data. Record health data first.</string>
+    <string name="analysis_section_suggestions">Smart Suggestions</string>
+    <string name="analysis_section_nutrition">Nutrition Analysis</string>
+    <string name="analysis_section_calorie_balance">Calorie Balance</string>
+    <string name="analysis_section_exercise">Exercise Analysis</string>
+    <string name="analysis_section_sleep">Sleep Analysis</string>
+    <string name="analysis_section_phase">Cycle Correlation</string>
+    <string name="analysis_avg_daily_calories">Avg Daily</string>
+    <string name="analysis_protein">Protein</string>
+    <string name="analysis_carbs">Carbs</string>
+    <string name="analysis_fat">Fat</string>
+    <string name="analysis_nutrient_ratio">Nutrient Ratio</string>
+    <string name="analysis_avg_water_format">Avg Water: %.0f ml</string>
+    <string name="analysis_avg_intake">Avg Intake</string>
+    <string name="analysis_exercise_burned">Exercise Burn</string>
+    <string name="analysis_weekly_total_minutes">Weekly Total</string>
+    <string name="analysis_daily_avg_minutes">Daily Avg</string>
+    <string name="analysis_calories_burned">Calories Burned</string>
+    <string name="analysis_exercise_type_distribution">Exercise Type Distribution</string>
+    <string name="analysis_avg_sleep_hours">Avg Duration</string>
+    <string name="analysis_quality_score">Quality Score</string>
+    <string name="analysis_daily_sleep_hours">Daily Sleep Hours</string>
+    <string name="analysis_mood">Mood</string>
+    <string name="analysis_stress">Stress</string>
+    <string name="analysis_daily_net_calories">Daily Net Calories (with resting energy)</string>
+
+    <!-- Health Patterns -->
+    <string name="pattern_exhaustion_title">Physical Exhaustion Detected</string>
+    <string name="pattern_exhaustion_desc">Low sleep, high stress, and low mood suggest burnout risk. Consider rest days.</string>
+    <string name="pattern_overtraining_title">Overtraining Risk</string>
+    <string name="pattern_overtraining_desc">High exercise volume with calorie deficit and low sleep. Watch for injury.</string>
+    <string name="pattern_sedentary_mood_title">Sedentary + Low Mood</string>
+    <string name="pattern_sedentary_mood_desc">Very low step count paired with low mood. A short walk may help.</string>
+    <string name="pattern_dehydration_stress_title">Dehydration + Stress</string>
+    <string name="pattern_dehydration_stress_desc">Low water intake and high stress levels. Hydration supports resilience.</string>
+    <string name="pattern_positive_loop_title">Positive Health Loop</string>
+    <string name="pattern_positive_loop_desc">Good sleep, high activity, and positive mood reinforcing each other. Keep going!</string>
+
+    <!-- Report -->
+    <string name="report_title">Health Report</string>
+    <string name="report_description">Generate a comprehensive health report based on your recorded data. The report is created locally on your device and can be shared as a PDF.</string>
+    <string name="report_period">Report Period: Last 30 Days</string>
+    <string name="report_includes">Includes: Period records, steps, sleep, nutrition, and health insights</string>
+    <string name="report_generate">Generate Report</string>
+    <string name="report_generating">Generating PDF report...</string>
+    <string name="report_success">Report generated successfully!</string>
+    <string name="report_share">Share Health Report</string>
+    <string name="report_share_button">Share</string>
+    <string name="report_generate_new">Generate New</string>
+    <string name="report_error">Error: %s</string>
+    <string name="report_privacy_title">Privacy Notice</string>
+    <string name="report_privacy_body">All reports are generated locally on your device. No health data is uploaded to any server or cloud service. Your data remains under your complete control.</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_low_calorie_title">Low Calorie Intake</string>
+    <string name="suggestion_low_calorie_desc">Daily intake %.0f kcal is below recommended 1800 kcal. Consider adding complex carbs and healthy fats.</string>
+    <string name="suggestion_high_calorie_title">High Calorie Intake</string>
+    <string name="suggestion_high_calorie_desc">Daily intake %.0f kcal exceeds 2500 kcal. Consider reducing snacks and increasing vegetables.</string>
+    <string name="suggestion_low_protein_title">Low Protein Intake</string>
+    <string name="suggestion_low_protein_desc">Daily protein %.0f g is below recommended 50 g. Consider eggs, fish, and tofu.</string>
+    <string name="suggestion_low_water_title">Low Water Intake</string>
+    <string name="suggestion_low_water_desc">Daily water %.0f ml is below recommendation. Aim for 1500-2000 ml daily.</string>
+    <string name="suggestion_high_surplus_title">High Calorie Surplus</string>
+    <string name="suggestion_high_surplus_desc">Daily surplus %.0f kcal. If weight loss is your goal, consider increasing exercise.</string>
+    <string name="suggestion_high_deficit_title">Large Calorie Deficit</string>
+    <string name="suggestion_high_deficit_desc">Daily deficit %.0f kcal. Ensure you meet your basal metabolic needs.</string>
+    <string name="suggestion_balanced_title">Balanced Calories</string>
+    <string name="suggestion_balanced_desc">Intake and expenditure are well balanced. Keep it up!</string>
+    <string name="suggestion_low_exercise_title">Low Exercise</string>
+    <string name="suggestion_low_exercise_desc">Weekly exercise %d minutes is below WHO recommendation of 150 minutes.</string>
+    <string name="suggestion_exercise_met_title">Exercise Goal Met</string>
+    <string name="suggestion_exercise_met_desc">Weekly exercise %d minutes meets WHO recommendation!</string>
+    <string name="suggestion_exercise_variety_title">Exercise Variety Needed</string>
+    <string name="suggestion_exercise_variety_desc">Try different exercise types (cardio + strength + flexibility) for overall fitness.</string>
+    <string name="suggestion_low_sleep_title">Low Sleep</string>
+    <string name="suggestion_low_sleep_desc">Daily sleep %.1f hours is below recommended 7-9 hours. Try a regular schedule.</string>
+    <string name="suggestion_high_sleep_title">Excessive Sleep</string>
+    <string name="suggestion_high_sleep_desc">Daily sleep %.1f hours exceeds 9 hours. Long sleep may indicate fatigue.</string>
+    <string name="suggestion_low_deep_sleep_title">Low Deep Sleep</string>
+    <string name="suggestion_low_deep_sleep_desc">Deep sleep ratio only %.0f%%. Avoid caffeine before bed and keep room dark.</string>
+    <string name="suggestion_low_sleep_quality_title">Low Sleep Quality</string>
+    <string name="suggestion_low_sleep_quality_desc">Sleep quality score %.1f/5. Try meditation or warm bath before bed.</string>
+    <string name="suggestion_luteal_sleep_title">Luteal Phase Sleep Change</string>
+    <string name="suggestion_luteal_sleep_desc">Luteal phase sleep decreased %.1f hours vs follicular. Normal hormonal change.</string>
+
+    <!-- Nutrition Cycle Guidance -->
+    <string name="nutrition_menstrual_advice">Focus on iron-rich foods to replenish blood loss. Magnesium helps reduce cramps. Stay well hydrated.</string>
+    <string name="nutrition_menstrual_nutrients">Iron \u00B7 Magnesium \u00B7 Omega-3 \u00B7 Vitamin B12</string>
+    <string name="nutrition_menstrual_foods">Leafy Greens \u00B7 Red Meat \u00B7 Fatty Fish \u00B7 Dark Chocolate \u00B7 Nuts</string>
+    <string name="nutrition_menstrual_limit">Salty Snacks \u00B7 Caffeine \u00B7 Dairy</string>
+    <string name="nutrition_follicular_advice">Your energy metabolism is rising. Great time for light, nutrient-dense meals. Support gut health with probiotics.</string>
+    <string name="nutrition_follicular_nutrients">Fiber \u00B7 Vitamin C \u00B7 Probiotics \u00B7 Folate</string>
+    <string name="nutrition_follicular_foods">Berries \u00B7 Citrus Fruits \u00B7 Yogurt \u00B7 Oats \u00B7 Broccoli</string>
+    <string name="nutrition_follicular_limit">Processed Foods \u00B7 Excess Sugar</string>
+    <string name="nutrition_ovulatory_advice">Estrogen peaks during this phase. Support liver detoxification with antioxidant-rich foods. Anti-inflammatory diet recommended.</string>
+    <string name="nutrition_ovulatory_nutrients">Antioxidants \u00B7 Vitamin C \u00B7 Zinc \u00B7 Vitamin E</string>
+    <string name="nutrition_ovulatory_foods">Bell Peppers \u00B7 Sunflower Seeds \u00B7 Lean Poultry \u00B7 Avocado \u00B7 Green Tea</string>
+    <string name="nutrition_ovulatory_limit">Alcohol \u00B7 Fried Foods</string>
+    <string name="nutrition_luteal_advice">Progesterone rises, which may increase appetite. Complex carbs help boost serotonin. Limit caffeine and salt to ease PMS symptoms.</string>
+    <string name="nutrition_luteal_nutrients">B Vitamins \u00B7 Complex Carbs \u00B7 Magnesium \u00B7 Calcium \u00B7 Vitamin B6</string>
+    <string name="nutrition_luteal_foods">Whole Grains \u00B7 Bananas \u00B7 Leafy Greens \u00B7 Legumes \u00B7 Dark Chocolate</string>
+    <string name="nutrition_luteal_limit">Sugar \u00B7 Caffeine \u00B7 Salty Foods</string>
+
+    <!-- Sleep Trend -->
+    <string name="sleep_trend_legend">\u25CF %1$s — %2$s    \u25B2 Sleep Hours   \u2590 Quality Score</string>
+    <string name="sleep_luteal_worse">Luteal Phase Sleep Quality Decreased</string>
+    <string name="sleep_luteal_better">Luteal Phase Sleep Quality Improved</string>
+    <string name="sleep_luteal_comparison_worse">Luteal avg sleep %.1fh, follicular %.1fh, decreased %.1fh</string>
+    <string name="sleep_luteal_comparison_better">Luteal avg sleep %.1fh, follicular %.1fh, improved %.1fh</string>
+
+    <!-- PDF Report -->
+    <string name="pdf_health_report">Health Report</string>
+    <string name="pdf_generated">Generated: %s</string>
+    <string name="pdf_user_info">User: %1$s | Gender: %2$s</string>
+    <string name="pdf_report_period">Report Period: %s</string>
+    <string name="pdf_period_summary">Period Summary</string>
+    <string name="pdf_no_period_records">No period records in selected period.</string>
+    <string name="pdf_total_cycles">Total Cycles: %d</string>
+    <string name="pdf_avg_cycle_length">Average Cycle Length: %d days</string>
+    <string name="pdf_avg_pain">Average Pain Level: %.1f / 3</string>
+    <string name="pdf_recent_records">Recent Records</string>
+    <string name="pdf_start_date">Start Date</string>
+    <string name="pdf_end_date">End Date</string>
+    <string name="pdf_flow">Flow</string>
+    <string name="pdf_pain">Pain</string>
+    <string name="pdf_ongoing">Ongoing</string>
+    <string name="pdf_flow_light">Light</string>
+    <string name="pdf_flow_medium">Medium</string>
+    <string name="pdf_flow_heavy">Heavy</string>
+    <string name="pdf_pain_none">None</string>
+    <string name="pdf_pain_mild">Mild</string>
+    <string name="pdf_pain_moderate">Moderate</string>
+    <string name="pdf_pain_severe">Severe</string>
+    <string name="pdf_activity_summary">Activity Summary</string>
+    <string name="pdf_no_step_data">No step data available.</string>
+    <string name="pdf_avg_daily_steps">Average Daily Steps: %,d</string>
+    <string name="pdf_total_steps">Total Steps: %,d</string>
+    <string name="pdf_max_steps">Max Daily Steps: %,d</string>
+    <string name="pdf_total_exercise">Total Exercise: %d minutes</string>
+    <string name="pdf_sleep_summary">Sleep Summary</string>
+    <string name="pdf_no_sleep_data">No sleep data available.</string>
+    <string name="pdf_avg_sleep">Average Sleep: %.1f hours</string>
+    <string name="pdf_avg_sleep_quality">Average Sleep Quality: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Average Deep Sleep: %.1f hours</string>
+    <string name="pdf_nutrition_summary">Nutrition Summary</string>
+    <string name="pdf_no_nutrition_data">No nutrition data available.</string>
+    <string name="pdf_avg_calories">Average Daily Calories: %.0f kcal</string>
+    <string name="pdf_avg_water">Average Water Intake: %.0f ml</string>
+    <string name="pdf_avg_protein">Average Protein: %.0f g</string>
+    <string name="pdf_footer">This report is generated locally on your device. No data leaves your phone.</string>
+    <string name="pdf_page">Page %d</string>
+    <string name="pdf_app_name">TianshangHealth - Privacy First</string>
+
+    <!-- General -->
+    <string name="sleep_auto_calculated">Auto: %d hrs</string>
+    <string name="sleep_bedtime_btn">Bedtime</string>
+    <string name="sleep_elapsed">%dh %dm elapsed</string>
+    <string name="sleep_sleeping">Sleeping...</string>
+    <string name="sleep_waketime_btn">Wake up</string>
+    <string name="export_report">Export PDF Report</string>
+    <string name="insufficient_data">Insufficient data</string>
+    <string name="nutrition_energy_balance">Energy Balance</string>
+    <string name="nutrition_resting_energy">Resting</string>
+    <string name="nutrition_exercise_energy">Exercise</string>
+    <string name="nutrition_total_expenditure">Total Burn</string>
+    <string name="nutrition_calorie_balance">Balance</string>
+    <string name="error_onboarding_required">Please complete user setup first</string>
+    <string name="error_load_failed">Loading failed</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">Failed to generate report</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

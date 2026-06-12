@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:ExerciseScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ExerciseScreen( onNavigateToPeriodAnalysis: () -&gt; Unit = {}, stepsViewModel: StepsViewModel = hiltViewModel(), fitnessViewModel: FitnessViewModel = hiltViewModel() )</ID>
+    <ID>CyclomaticComplexMethod:MainNavigation.kt$@Composable fun MainNavigation()</ID>
+    <ID>FunctionNaming:EnergyCards.kt$@Composable internal fun EnergySummaryCard( todaySteps: Int, todayStepsCalories: Float, todayWorkoutCalories: Float, todayCombinedCalories: Float, weeklySteps: Int, weeklyStepsCalories: Float, weeklyWorkoutCalories: Float, weeklyWorkoutCount: Int, weeklyDurationMinutes: Int )</ID>
+    <ID>FunctionNaming:EnergyCards.kt$@Composable internal fun WeeklyStepsChart(steps: List&lt;DailySteps&gt;)</ID>
+    <ID>FunctionNaming:EnergyCards.kt$@Composable private fun EnergyRow( label: String, value: String, kcal: Float?, isBold: Boolean = false )</ID>
+    <ID>FunctionNaming:ExerciseScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ExerciseScreen( onNavigateToPeriodAnalysis: () -&gt; Unit = {}, stepsViewModel: StepsViewModel = hiltViewModel(), fitnessViewModel: FitnessViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:ExerciseScreenComponents.kt$@Composable internal fun BatteryOptimizationCard(onDisable: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:ExerciseScreenComponents.kt$@Composable internal fun GoalAdjustmentCard( todayGoal: Int, onUpdateGoal: (Int) -&gt; Unit )</ID>
+    <ID>FunctionNaming:ExerciseScreenComponents.kt$@Composable internal fun OemGuideCard( oemType: OemType, onOpenBatterySettings: () -&gt; Unit, onOpenAutoStartSettings: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:FitnessCards.kt$@Composable internal fun BodyMetricsCard( heightInput: String, weightInput: String, heightInputError: String? = null, weightInputError: String? = null, onHeightChanged: (String) -&gt; Unit, onWeightChanged: (String) -&gt; Unit, onSave: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:FitnessCards.kt$@Composable internal fun WorkoutItem( workout: WorkoutRecord, onDelete: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:MainNavigation.kt$@Composable fun MainNavigation()</ID>
+    <ID>FunctionNaming:MainNavigation.kt$@Composable private fun ProfileScreen( onNavigateToTheme: () -&gt; Unit = {}, onNavigateToLanguage: () -&gt; Unit = {}, onNavigateToBmi: () -&gt; Unit = {}, onNavigateToRecycleBin: () -&gt; Unit = {}, onNavigateToBackup: () -&gt; Unit = {}, onNavigateToAppLock: () -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:Theme.kt$@Composable fun TianshangHealthTheme( darkTheme: Boolean = isSystemInDarkTheme(), dynamicColor: Boolean = true, customHue: Float? = null, customSaturation: Float? = null, customLightness: Float? = null, content: @Composable () -&gt; Unit )</ID>
+    <ID>ImplicitDefaultLocale:EnergyCards.kt$String.format("%.1fk", value / 1000.0)</ID>
+    <ID>ImplicitDefaultLocale:FitnessCards.kt$String.format("%.1f", km)</ID>
+    <ID>LateinitUsage:TianshangHealthApplication.kt$TianshangHealthApplication$@Inject lateinit var workerFactory: HiltWorkerFactory</ID>
+    <ID>LongMethod:ExerciseScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ExerciseScreen( onNavigateToPeriodAnalysis: () -&gt; Unit = {}, stepsViewModel: StepsViewModel = hiltViewModel(), fitnessViewModel: FitnessViewModel = hiltViewModel() )</ID>
+    <ID>LongMethod:MainNavigation.kt$@Composable fun MainNavigation()</ID>
+    <ID>LongParameterList:EnergyCards.kt$( todaySteps: Int, todayStepsCalories: Float, todayWorkoutCalories: Float, todayCombinedCalories: Float, weeklySteps: Int, weeklyStepsCalories: Float, weeklyWorkoutCalories: Float, weeklyWorkoutCount: Int, weeklyDurationMinutes: Int )</ID>
+    <ID>MagicNumber:EnergyCards.kt$0.2f</ID>
+    <ID>MagicNumber:EnergyCards.kt$0.6f</ID>
+    <ID>MagicNumber:EnergyCards.kt$1000</ID>
+    <ID>MagicNumber:EnergyCards.kt$1000.0</ID>
+    <ID>MagicNumber:FitnessCards.kt$1000f</ID>
+    <ID>MagicNumber:FitnessCards.kt$100f</ID>
+    <ID>MagicNumber:MainActivity.kt$MainActivity$0.6f</ID>
+    <ID>MagicNumber:MainActivity.kt$MainActivity$0.7f</ID>
+    <ID>MagicNumber:MainActivity.kt$MainActivity$340f</ID>
+    <ID>MagicNumber:MainNavigation.kt$10f</ID>
+    <ID>MagicNumber:Theme.kt$0.6f</ID>
+    <ID>MagicNumber:Theme.kt$0.7f</ID>
+    <ID>MagicNumber:Theme.kt$340f</ID>
+    <ID>MatchingDeclarationName:MainNavigation.kt$Screen</ID>
+    <ID>UnderscoresInNumericLiterals:ExerciseScreenComponents.kt$20000f</ID>
+    <ID>UnnecessaryParentheses:FitnessCards.kt$(heightCm / 100f)</ID>
+    <ID>UseIfInsteadOfWhen:MainActivity.kt$MainActivity$when (langCode) { "zh" -&gt; "zh-Hans" else -&gt; langCode }</ID>
+  </CurrentIssues>
+</SmellBaseline>

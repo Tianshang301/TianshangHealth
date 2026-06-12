@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Kullanim Kosullari</string>
+    <string name="privacy_title">Gizlilik Politikasi</string>
+    <string name="accept_terms">Okudum ve kabul ediyorum</string>
+    <string name="app_lock_title">Uygulama Kilidi</string>
+    <string name="enter_pin">Sifre</string>
+    <string name="unlock">Kilidi Ac</string>
+    <string name="invalid_pin">Gecersiz sifre</string>
+    <string name="app_lock_setup_title">Uygulama Kilidi Sifresi Belirle</string>
+    <string name="set_pin">Sifre Belirle</string>
+    <string name="confirm_pin">Sifreyi Onayla</string>
+    <string name="set_password">Sifre Belirle</string>
+    <string name="pin_empty_error">Sifre bos olamaz</string>
+    <string name="pin_mismatch_error">Sifreler eslesmiyor</string>
+    <string name="pin_length_error">Sifre en az %d karakter olmalidir</string>
+    <string name="calendar_title">Takvim</string>
+    <string name="current_cycle_day">Donem %d. gun</string>
+    <string name="days_until_next_period">Sonraki adet %d gun sonra</string>
+    <string name="no_period_data">Adet verisi yok</string>
+    <string name="tap_date_to_record">Kaydetmek icin dokun</string>
+    <string name="period">Adet</string>
+    <string name="predicted_period">Tahmini Adet</string>
+    <string name="ovulation">Yumurtlama</string>
+    <string name="fertile_window">Bereketli Donem</string>
+    <string name="record_title">Kayit</string>
+    <string name="start_period">Adeti Baslat</string>
+    <string name="end_period">Adeti Bitir</string>
+    <string name="flow_level">Akis</string>
+    <string name="pain_level">Agri</string>
+    <string name="symptoms">Belirtiler</string>
+    <string name="sexual_activity">Cinsel Aktivite</string>
+    <string name="ovulation_test">Yumurtlama Testi</string>
+    <string name="cervical_mucus">Rahim Agzi Mukusu</string>
+    <string name="body_temperature">Vucut Sicakligi</string>
+    <string name="notes">Notlar</string>
+    <string name="save">Kaydet</string>
+    <string name="analysis_title">Analiz</string>
+    <string name="cycle_statistics">Istatistikler</string>
+    <string name="avg_cycle_length">Ortalama Donem</string>
+    <string name="avg_period_length">Ortalama Adet</string>
+    <string name="cycle_regularity">Duzenlilik</string>
+    <string name="total_cycles">Toplam Donem</string>
+    <string name="pain_trend">Agri Egilimi</string>
+    <string name="symptom_frequency">Belirti Sikligi</string>
+    <string name="predictions">Tahminler</string>
+    <string name="reminder_title">Hatirlaticilar</string>
+    <string name="period_reminder">Adet Hatirlaticisi</string>
+    <string name="ovulation_reminder">Yumurtlama Hatirlaticisi</string>
+    <string name="pms_reminder">PMS Hatirlaticisi</string>
+    <string name="profile_title">Profil</string>
+    <string name="theme_customization">Tema</string>
+    <string name="theme_color">Tema Rengi</string>
+    <string name="app_lock">Uygulama Kilidi</string>
+    <string name="language">Dil</string>
+    <string name="recycle_bin">Geri Donusum Kutusu</string>
+    <string name="recycle_bin_title">Geri Donusum Kutusu</string>
+    <string name="backup_restore">Yedekleme</string>
+    <string name="backup_restore_title">Yedekleme &amp; Geri Yukleme</string>
+    <string name="export_backup">Yedegi Disa Aktar</string>
+    <string name="import_backup">Yedegi Ice Aktar</string>
+    <string name="export_csv">CSV Disa Aktar</string>
+    <string name="about">Hakkinda</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">Ekle</string>
+    <string name="height_cm">Boy (cm)</string>
+    <string name="weight_kg">Kilo (kg)</string>
+    <string name="latest_bmi">Guncel BMI</string>
+    <string name="bmi_history">Gecmis</string>
+    <string name="dark_mode">Karanlik Mod</string>
+    <string name="dark_mode_description">Temayi degistir</string>
+    <string name="no_deleted_records">Silinen kayit yok</string>
+    <string name="security_settings">Guvenlik</string>
+    <string name="data_security">Veri Guvenligi</string>
+    <string name="database_encryption">Veritabani Sifreleme</string>
+    <string name="encrypted">Sifreli (AES-256)</string>
+    <string name="unencrypted">Sifresiz</string>
+    <string name="migrate_to_encrypted">Sifreli Veritabanina Gec</string>
+    <string name="migration_success">Gecis basarili! Veritabani artik sifreli.</string>
+    <string name="migration_failed">Gecis basarisiz: %s. Verileriniz orijinal durumuna geri yuklendi.</string>
+    <string name="background_lock_delay">Arka plandan sonra kilitle</string>
+    <string name="lock_immediately">Hemen</string>
+    <string name="lock_after_seconds">%d saniye</string>
+    <string name="custom_reminders">Ozel Hatirlaticilar</string>
+    <string name="add_custom_reminder">Ozel Hatirlatici Ekle</string>
+    <string name="no_custom_reminders">Henuz ozel hatirlatici yok</string>
+    <string name="reminder_title_label">Hatirlatici basligi</string>
+    <string name="reminder_title_required">Baslik gerekli</string>
+    <string name="reminder_message_label">Mesaj (istege bagli)</string>
+    <string name="reminder_date">Hatirlatici tarihi</string>
+    <string name="select_time">Saat sec</string>
+    <string name="hue">Ton</string>
+    <string name="saturation">Doygunluk</string>
+    <string name="lightness">Parlaklik</string>
+    <string name="apply_color">Rengi Uygula</string>
+    <string name="custom_color">Ozel Renk</string>
+    <string name="color_preview">Renk Onizleme</string>
+    <string name="apply">Uygula</string>
+    <string name="preset_colors">Hazir Renkler</string>
+    <string name="add_symptom">Belirti Ekle</string>
+    <string name="symptom_name">Belirti adi</string>
+    <string name="symptom_name_required">Belirti adi gerekli</string>
+    <string name="prediction_explanation">Son %1$d doneme gore uyumlu tahmin (ortalama %2$s gun/donem, %3$s gun/adet)</string>
+    <string name="record_date">Kayit Tarihi</string>
+    <string name="select_date">Tarih Sec</string>
+    <string name="confirm">Onayla</string>
+    <string name="cancel">Iptal</string>
+    <string name="delete">Sil</string>
+    <string name="delete_record">Kaydi Sil</string>
+    <string name="delete_record_confirm">Bu tarihteki kaydi silmek istediginizden emin misiniz? Bu islem geri alinamaz.</string>
+    <string name="week_sun">Paz</string>
+    <string name="week_mon">Pzt</string>
+    <string name="week_tue">Sali</string>
+    <string name="week_wed">Cars</string>
+    <string name="week_thu">Pers</string>
+    <string name="week_fri">Cuma</string>
+    <string name="week_sat">Cmt</string>
+    <string name="calendar_today">Bugun</string>
+    <string name="back">Geri</string>
+    <string name="symptom_headache">Bas Agri</string>
+    <string name="symptom_bloating">Sisme</string>
+    <string name="symptom_breast_tenderness">Memede Hassasiyet</string>
+    <string name="symptom_backache">Sirt Agri</string>
+    <string name="symptom_fatigue">Yorgunluk</string>
+    <string name="symptom_mood_swings">Ruh Hali Degisimleri</string>
+    <string name="symptom_acne">Akne</string>
+    <string name="symptom_increased_appetite">Artmis Iste</string>
+    <string name="symptom_insomnia">Uykusuzluk</string>
+    <string name="symptom_nausea">Mide Bulantisi</string>
+    <string name="flow_light">Hafif</string>
+    <string name="flow_medium">Orta</string>
+    <string name="flow_heavy">Siddetli</string>
+    <string name="pain_none">Yok</string>
+    <string name="pain_mild">Hafif</string>
+    <string name="pain_moderate">Orta</string>
+    <string name="pain_severe">Siddetli</string>
+    <string name="unit_days">gun</string>
+    <string name="predicted_period_label">Tahmini adet: %1$s - %2$s</string>
+    <string name="ovulation_date_label">Yumurtlama: %s</string>
+    <string name="confidence_label">Guven: %1$s (%2$d doneme dayali)</string>
+    <string name="reminder_days_before">Gun once</string>
+    <string name="reminder_time">Hatirlatma zamani</string>
+    <string name="enabled">Etkin</string>
+    <string name="disabled">Devre Disi</string>
+    <string name="color_pink">Pembe</string>
+    <string name="color_dark_pink">Koyu Pembe</string>
+    <string name="color_peach">Seftali</string>
+    <string name="color_light_purple">Acik Mor</string>
+    <string name="color_medium_purple">Orta Mor</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Zayif</string>
+    <string name="bmi_category_normal">Normal</string>
+    <string name="bmi_category_overweight">Fazla Kilolu</string>
+    <string name="bmi_category_obese">Obez</string>
+    <string name="bmi_standard_note">Cin BMI standardina gore</string>
+    <string name="backup_success">Yedekleme basarili</string>
+    <string name="backup_fail">Yedekleme basarisiz</string>
+    <string name="restore_success">Geri yukleme basarili</string>
+    <string name="restore_fail">Geri yukleme basarisiz</string>
+    <string name="export_success">Disa aktarma basarili</string>
+    <string name="export_fail">Disa aktarma basarisiz</string>
+    <string name="backup_export_desc">Veritabanini ZIP yedek dosyasi olarak disa aktar</string>
+    <string name="backup_import_desc">Bir yedek dosyasindan verileri geri yukle</string>
+    <string name="backup_csv_desc">Kayitlari CSV tablosu olarak disa aktar</string>
+    <string name="deleted_time">Silinme: %s</string>
+    <string name="in_progress">Devam ediyor</string>
+    <string name="terms_countdown">Lutfen %d saniye bekleyin</string>
+    <string name="auth_failed">Kimlik dogrulama basarisiz: %s</string>
+    <string name="auth_failed_generic">Kimlik dogrulama basarisiz</string>
+    <string name="biometric_init_failed">Biyometrik baslatma basarisiz</string>
+    <string name="lockout_message">Cok fazla deneme. Lutfen %d saniye bekleyin.</string>
+    <string name="chart_title_cycle_length_trend">Donem Uzunlugu Egilimi</string>
+    <string name="chart_title_pain_trend">Agri Egilimi</string>
+    <string name="chart_title_symptom_distribution">Belirti Dagitimi</string>
+    <string name="chart_cycle_label">Donem %d</string>
+    <string name="chart_cycle_length_label">Donem Uzunlugu : %d</string>
+    <string name="chart_pain_level_label">Agri Seviyesi</string>
+    <string name="regularity_regular">Duzenli</string>
+    <string name="regularity_somewhat_regular">Kismen duzenli</string>
+    <string name="regularity_irregular">Duzensiz</string>
+    <string name="regularity_insufficient_data">Yetersiz veri</string>
+    <string name="confidence_high">Yuksek</string>
+    <string name="confidence_medium">Orta</string>
+    <string name="confidence_low">Dusuk</string>
+    <string name="confidence_insufficient">Yetersiz veri</string>
+    <string name="analysis_no_data_title">Henuz veri yok</string>
+    <string name="analysis_no_data_hint">Analiz ve tahminleri gormek icin adetinizi kaydetmeye baslayin</string>
+    <string name="section_appearance">Gorunum</string>
+    <string name="section_health">Saglik</string>
+    <string name="section_data">Veri</string>
+    <string name="section_other">Diger</string>
+    <string name="open">Ac</string>
+    <string name="retry">Tekrar Dene</string>
+    <string name="profile_theme_description">Uygulama renklerini ozellestir</string>
+    <string name="profile_language_description">Uygulama dilini degistir</string>
+    <string name="profile_bmi_description">Vucut kitle indeksini takip et</string>
+    <string name="profile_app_lock_description">Uygulamayi acmak icin kimlik dogrulama gerektir</string>
+    <string name="screenshot_protection_title">Ekran Görüntüsü Koruması</string>
+    <string name="screenshot_protection_description">Ekran görüntüleri ve kayıtlarını önle</string>
+    <string name="profile_backup_description">Tum verilerin sifreli yedeklemesi ve geri yuklenmesi</string>
+    <string name="profile_recycle_bin_description">Silinen kayitlari goruntule ve geri yukle</string>
+    <string name="profile_version">Surum 1.0.0</string>
+    <string name="profile_app_description">Gizliligi merkeze alan kapsamli bir saglik takip uygulamasi.</string>
+    <string name="custom_theme">Ozel Tema</string>
+    <string name="language_description">Tercih ettiginiz dili secin. Degisikligi uygulamak icin uygulama yeniden baslatilacak.</string>
+    <string name="language_changed_restart">Dil degistirildi, yeniden baslatiliyor&#8230;</string>
+    <string name="bmi_empty_text">Henuz kilo kaydi yok. Ilk kilo girisini ekleyin.</string>
+    <string name="save_height">Boyu Kaydet</string>
+    <string name="bmi_category_label">Kategori</string>
+    <string name="height_label">Boy</string>
+    <string name="update_height">Boyu Guncelle</string>
+    <string name="add_weight_record_title">Kilo Kaydi Ekle</string>
+    <string name="add_weight_record_text">Bugunku kilonuzu girin.</string>
+    <string name="recycle_bin_description">Silinen kayitlar kalici olarak kaldirilmadan once 30 gun saklanir.</string>
+    <string name="recycle_bin_empty">Geri donusum kutusu bos</string>
+    <string name="recycle_bin_empty_title">Geri Donusum Kutusunu Bosalt</string>
+    <string name="recycle_bin_empty_confirm">Tum silinen kayitlar kalici olarak silinecek. Bu islem geri alinamaz.</string>
+    <string name="recycle_bin_empty_action">Bosalt</string>
+    <string name="recycle_bin_restore">Geri Yukle</string>
+    <string name="recycle_bin_delete_forever">Sonsuza Dek Sil</string>
+    <string name="add_record">Kayit Ekle</string>
+    <string name="period_tracking_title">Adet Takibi</string>
+    <string name="prediction_explanation_title">Tahmin Aciklamasi</string>
+    <string name="reminder_period_desc">Adetiniz baslamadan once bildirim alin</string>
+    <string name="reminder_ovulation_desc">Yumurtlamadan once bildirim alin</string>
+    <string name="reminder_pms_desc">PMS belirtileri hakkinda bildirim alin</string>
+    <string name="cycle_status_title">Donem Durumu</string>
+    <string name="cycle_day_label">Donem Gunu</string>
+    <string name="days_until_label">Kalan Gun</string>
+    <string name="period_active_text">Adet aktif</string>
+    <string name="next_period_label">Sonraki Adet</string>
+    <string name="not_enough_data">Yetersiz veri</string>
+    <string name="cycle_length_label">Donem Uzunlugu</string>
+    <string name="chart_no_data">Grafik goruntulemek icin yetersiz veri</string>
+    <string name="chart_no_pain_data">Agri verisi kaydedilmemis</string>
+    <string name="chart_pain_unknown">Bilinmiyor</string>
+    <string name="chart_total_records">Toplam Kayit</string>
+    <string name="record_for_date">%s icin kayit</string>
+    <string name="save_record">Kaydi Kaydet</string>
+    <string name="male_health_trend">Saglik Egilimleri</string>
+    <string name="male_health_description">Adet analizi erkek kullanicilar icin gecerli degildir. Asagida genel saglik verileri gosteriliyor.</string>
+    <string name="steps_overview">Adim Genel Bakis</string>
+    <string name="steps_today">Bugunku Adim</string>
+    <string name="steps_weekly_avg_label">7 Gunluk Ortalama Adim</string>
+    <string name="steps_record_days">Kayitli Gunler</string>
+    <string name="steps_weekly_trend_label">7 Gunluk Adim Egilimi</string>
+    <string name="steps_title">Adim Takibi</string>
+    <string name="steps_daily_goal">Gunluk Hedef</string>
+    <string name="steps_update_goal">Hedefi Guncelle</string>
+    <string name="steps_this_week">Bu Hafta</string>
+    <string name="steps_total">Toplam</string>
+    <string name="steps_average">Ortalama</string>
+    <string name="steps_days_label">Gun</string>
+    <string name="steps_weekly_trend">Haftalik Egilim</string>
+    <string name="steps_goal_format">%d adim</string>
+    <string name="steps_weekly_avg_format">Haftalik ort. %d adim/gun</string>
+    <string name="steps_history_title">Adim Gecmisi</string>
+    <string name="steps_tab_week">Hafta</string>
+    <string name="steps_tab_month">Ay</string>
+    <string name="steps_tab_year">Yil</string>
+    <string name="steps_tab_all">Tum</string>
+    <string name="steps_30d_total">30 Gunluk Toplam</string>
+    <string name="steps_avg">Gunluk Ort.</string>
+    <string name="steps_best">En Iyi Gun</string>
+    <string name="steps_weekly_label">Haftalik Dokum</string>
+    <string name="steps_daily_trend">Gunluk Egilim</string>
+    <string name="steps_monthly_label">Aylik Dokum</string>
+    <string name="steps_total_label">Toplam Adim</string>
+    <string name="steps_period_total">Donem Toplami</string>
+    <string name="steps_weekly_avg">Haftalik Ort.</string>
+    <string name="steps_monthly_avg">Aylik Ort.</string>
+    <string name="steps_best_month">En Iyi Ay</string>
+    <string name="steps_tab_day">Gun</string>
+    <string name="steps_label">Adim</string>
+    <string name="steps_calories_label">Kalori</string>
+    <string name="steps_yearly_label">Yillik Dokum</string>
+    <string name="dashboard_title">Saglik Paneli</string>
+    <string name="dashboard_quick_actions">Hizli Eylemler</string>
+    <string name="dashboard_retry">Tekrar Dene</string>
+    <string name="dashboard_insights">Saglik Analizleri</string>
+    <string name="dashboard_insights_empty">Kisisel icgoruler icin daha fazla saglik verisi kaydedin</string>
+    <string name="dashboard_period_status">Adet Durumu</string>
+    <string name="dashboard_period_active">Adet Aktif</string>
+    <string name="dashboard_follicular_phase">Follikuler Faz</string>
+    <string name="dashboard_no_data">Veri Yok</string>
+    <string name="dashboard_today_steps">Bugunku Adim</string>
+    <string name="dashboard_goal_format">Hedef: %d</string>
+    <string name="dashboard_cycle_day_format">Gun %1$d</string>
+    <string name="dashboard_record_period">Adeti Kaydet</string>
+    <string name="dashboard_record_steps">Adimlari Kaydet</string>
+    <string name="dashboard_record_health">Saglik Analizi</string>
+    <string name="gender_welcome">TianshangHealth\'a Hos Geldiniz</string>
+    <string name="gender_instruction">Kisisel saglik takibi icin cinsiyetinizi secin</string>
+    <string name="gender_male">Erkek</string>
+    <string name="gender_male_desc">Adet takibi ozelliklerini gizler</string>
+    <string name="gender_female">Kadin</string>
+    <string name="gender_female_desc">Adet takibi dahil tum ozellikleri gosterir</string>
+    <string name="gender_other">Diger</string>
+    <string name="gender_other_desc">Tum ozellikleri gosterir</string>
+    <string name="gender_footnote">Bunu daha sonra Ayarlar\'dan degistirebilirsiniz</string>
+    <string name="gender_setting_title">Cinsiyet</string>
+    <string name="gender_setting_description">Ozellik modullerini ayarlamak icin cinsiyetinizi degistirin</string>
+    <string name="select_gender">Cinsiyet Sec</string>
+    <string name="app_lock_health_data_protected">Saglik verileriniz korunuyor</string>
+    <string name="app_lock_set_password_title">Sifre Belirle</string>
+    <string name="app_lock_password_label">Sifre</string>
+    <string name="app_lock_confirm_password_label">Sifreyi Onayla</string>
+    <string name="app_lock_enter_password_title">Sifre Gir</string>
+    <string name="app_lock_use_biometric">Biyometri Kullan</string>
+    <string name="terms_privacy_title">Kullanim Kosullari &amp; Gizlilik Politikasi</string>
+    <string name="terms_service_title">Kullanim Kosullari</string>
+    <string name="privacy_policy_title">Gizlilik Politikasi</string>
+    <string name="terms_service_declaration">1. Hizmet Beyani\n\nTianshangHealth, kullanici gizliligine ve veri guvenligine oncelik veren kapsamli bir saglik takip uygulamasidir. Tum veriler, guclu sifreleme ile cihazinizda yerel olarak depolanir.\n\n2. Veri Gizliligi\n\nKisisel saglik verilerinizin hicbirini toplamaz, yuklemez veya paylasmayiz. Uygulama, sifir ag izniyle tamamen cevrimdisi calisir.\n\n3. Kullanici Sorumlulugu\n\nGirdiginiz saglik verilerinin dogrulugundan siz sorumlusunuz. Saglanan tahminler ve analizler yalnizca referans icindir ve tibbi tavi olusturmaz.\n\n4. Veri Guvenligi\n\nVerileriniz SQLCipher AES-256 sifrelemesi ile korunur. Sifreleme anahtari, donanim seviyesinde guvenlik icin Android Keystore uzerinden yonetilir.</string>
+    <string name="privacy_policy_body">1. Temel Ilke: Yerel Veri\n\nAdet donemleri, belirtiler ve diger saglik olcumleri dahil tum saglik verileriniz, yalnizca cihazinizdaki sifreli veritabaninda depolanir.\n\n2. Toplanan Bilgiler\n\nYalnizca uygulamaya manuel olarak girdiginiz bilgileri isleriz. Otomatik veri toplama gerceklesmez.\n\n3. Veri Sifreleme\n\nTum hassas veriler, SQLCipher AES-256 sifrelemesi ile sifrelenir. Sifreleme anahtari, Android Keystore\'da guvenli bir sekilde depolanir.\n\n4. Ucuncu Taraf Erisimi Yok\n\nHicbir ucuncu taraf analitik, reklam veya takip hizmeti kullanmayiz. Verileriniz cihazinizdan asla ayrilmaz.\n\n5. Veri Disa Aktarma\n\nVerilerinizi istediginiz zaman standart formatlarda (CSV, sifreli yedek) disa aktarabilirsiniz. Verileriniz uzerinde tam kontrole sahipsiniz.\n\n6. Veri Silme\n\nIstediginiz zaman verilerinizin herhangi birini veya tamamini silebilirsiniz. Silinen veriler cihazinizdan kalici olarak kaldirilir.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Bilinmeyen hata</string>
+    <string name="error_failed_add_record">Kayit ekleme basarisiz</string>
+    <string name="error_failed_update_record">Kayit guncelleme basarisiz</string>
+    <string name="error_failed_delete_record">Kayit silme basarisiz</string>
+    <string name="error_failed_record">Kaydetme basarisiz</string>
+    <string name="error_failed_set_password">Sifre belirleme basarisiz</string>
+    <string name="error_password_not_set">Sifre belirlenmemis</string>
+    <string name="error_incorrect_password">Yanlis sifre</string>
+    <string name="error_verification_failed">Dogrulama basarisiz</string>
+    <string name="error_failed_load_settings">Ayarlar yuklenemedi</string>
+    <string name="error_failed_update_settings">Ayarlar guncellenemedi</string>
+    <string name="error_failed_save_gender">Cinsiyet kaydedilemedi</string>
+    <string name="error_failed_update_goal">Hedef guncellenemedi</string>
+    <string name="error_failed_restore">Kayit geri yuklenemedi</string>
+    <string name="error_failed_to_delete">Kayit silinemedi</string>
+    <string name="error_failed_empty_bin">Geri donusum kutusu bosaltilamadi</string>
+    <string name="loading">Yukleniyor...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Adet Hatirlaticisi</string>
+    <string name="notification_channel_period_desc">Adet takibi icin hatirlaticilar</string>
+    <string name="notification_period_title">Adet Takibi Hatirlaticisi</string>
+    <string name="notification_period_body">Adet verilerinizi bugun kaydetmeyi unutmayin!</string>
+    <string name="notification_channel_ovulation">Yumurtlama Hatirlaticisi</string>
+    <string name="notification_channel_ovulation_desc">Yumurtlama takibi icin hatirlaticilar</string>
+    <string name="notification_ovulation_title">Yumurtlama Donemi Yaklasiyor</string>
+    <string name="notification_ovulation_body">Bereketli doneminiz yaklasiyor!</string>
+    <string name="notification_channel_pms">PMS Hatirlaticisi</string>
+    <string name="notification_channel_pms_desc">PMS belirtileri icin hatirlaticilar</string>
+    <string name="notification_pms_title">PMS Belirtileri Bekleniyor</string>
+    <string name="notification_pms_body">PMS belirtileri birkac gun icinde baslayabilir. Kendinize iyi bakin!</string>
+    <string name="notification_channel_steps">Adim Sayaci</string>
+    <string name="notification_channel_steps_desc">Adim sayaci servis bildirimi</string>
+    <string name="notification_steps_body">Bugunku adim: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Panel</string>
+    <string name="nav_period">Adet</string>
+    <string name="nav_fitness">Fitness</string>
+    <string name="nav_analysis">Analiz</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Baslangic Tarihi,Bitis Tarihi,Akis Seviyesi,Agri Seviyesi,Notlar</string>
+    <string name="backup_exported_success">Yedek basariyla disa aktarildi</string>
+    <string name="import_success_format">%d kayit basariyla ice aktarildi</string>
+    <string name="csv_exported_success">CSV basariyla disa aktarildi</string>
+    <string name="csv_export_failed">CSV disa aktarma basarisiz</string>
+    <string name="password_export_title">Yedegi Sifrele</string>
+    <string name="password_import_title">Yedegin Sifresini Coz</string>
+    <string name="password_export_desc">Yedek dosyanizi sifrelemek icin bir sifre girin.</string>
+    <string name="password_import_desc">Bu yedek dosyasini sifrelemek icin kullanilan sifreyi girin.</string>
+    <string name="password_label">Sifre</string>
+    <string name="proceed">Devam</string>
+    <string name="password_short_error">Sifre cok kisa</string>
+    <string name="password_mismatch_error">Sifreler eslesmiyor</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Adet Aktif</string>
+    <string name="insight_follicular_phase">Follikuler Faz</string>
+    <string name="insight_luteal_phase">Luteal Faz</string>
+    <string name="insight_cycle_day">Donem Gunu %d</string>
+    <string name="insight_steps_stable_title">Donem Boyunca Istikrarli Aktivite</string>
+    <string name="insight_steps_stable_desc">Adim sayiniz donem fazlari boyunca tutarli kaliyor, iyi egzersiz aliskanligi korunuyor.</string>
+    <string name="insight_mood_drop_title">Luteal Fazda Ruh Hali Dususu</string>
+    <string name="insight_mood_drop_desc">Luteal fazda ortalama ruh hali puani daha dusuk, ruh hali yonetimini dusunun</string>
+    <string name="insight_mood_rise_title">Luteal Fazda Daha Iyi Ruh Hali</string>
+    <string name="insight_mood_rise_desc">Luteal fazda ortalama ruh hali puani daha yuksek, harika gidiyorsunuz</string>
+    <string name="insight_sleep_drop_title">Luteal Fazda Uyku Kalitesi Dususu</string>
+    <string name="insight_sleep_drop_desc">Luteal fazda uyku kalitesi dusuyor, gevseeme egzersizleri deneyin</string>
+    <string name="insight_sleep_rise_title">Luteal Fazda Daha Iyi Uyku</string>
+    <string name="insight_sleep_rise_desc">Luteal fazda uyku kalitesi daha yuksek, iyi rutininizi surdurun</string>
+    <string name="insight_stress_period_title">Adet Sirasinda Daha Yuksek Stres</string>
+    <string name="insight_stress_period_desc">Stres seviyesi adet sirasinda %s puan daha yuksek, yogun aktiviteleri azaltmayi dusunun</string>
+    <string name="insight_mood_today_low_title">Bugun Ruh Hali Dusuk</string>
+    <string name="insight_mood_today_low_desc">Ruh hali puaniniz bugun dusuk, sevdigimiz bir sey yapmayi deneyin</string>
+    <string name="insight_stress_today_high_title">Bugun Stres Yuksek</string>
+    <string name="insight_stress_today_high_desc">Stres seviyesi bugun yuksek, derin nefes alma veya meditasyon deneyin</string>
+    <string name="insight_sleep_last_night_low_title">Dun Gece Kotu Uyku</string>
+    <string name="insight_sleep_last_night_low_desc">Dun gece uyku kalitesi dusuktu, bu aksam erken yatmayi deneyin</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Luteal fazda aktivite belirgin sekilde azalir</string>
+    <string name="insight_luteal_increase">Luteal fazda aktivite artar</string>
+    <string name="insight_luteal_rest">Luteal fazda uygun sekilde dinlenin, yoga gibi hafif egzersiz oenerilir</string>
+    <string name="insight_luteal_nutrition">Hareket artisi harika, beslenmeyi korumayi unutmayin</string>
+    <string name="insight_luteal_activity_low_title">Luteal Fazda Dusuk Aktivite</string>
+    <string name="insight_luteal_activity_low_desc">Luteal faz adimlari follikuler faza gore %%d azaldi. Yuruyus gibi hafif aktivite oenerilir.</string>
+    <string name="insight_luteal_activity_high_title">Luteal Fazda Yuksek Aktivite</string>
+    <string name="insight_luteal_activity_high_desc">Luteal faz adimlari follikuler faza gore %%d artti. Dinlenmeyi ve beslenmeyi korumayi unutmayin.</string>
+    <string name="insight_activity_stable_title">Donem Boyunca Tutarli Aktivite</string>
+    <string name="insight_activity_stable_desc">Adim sayilari donem fazlari boyunca sabit kaliyor. Iyi egzersiz aliskanliklari korunuyor.</string>
+    <string name="insight_mood_luteal_drop_title">Luteal Fazda Ruh Hali Dususu</string>
+    <string name="insight_mood_luteal_drop_desc">Luteal fazda ortalama ruh hali puani %s puan daha dusuk. Ruh hali yonetimini dusunun.</string>
+    <string name="insight_mood_luteal_rise_title">Luteal Fazda Daha Iyi Ruh Hali</string>
+    <string name="insight_mood_luteal_rise_desc">Luteal fazda ortalama ruh hali puani %s puan daha yuksek. Harika gidiyorsunuz!</string>
+    <string name="insight_sleep_luteal_drop_title">Luteal Fazda Uyku Kalitesi Dususu</string>
+    <string name="insight_sleep_luteal_drop_desc">Luteal fazda uyku kalitesi %s puan dustu. Yatmadan once gevseeme egzersizleri deneyin.</string>
+    <string name="insight_sleep_luteal_rise_title">Luteal Fazda Daha Iyi Uyku</string>
+    <string name="insight_sleep_luteal_rise_desc">Luteal fazda uyku kalitesi %s puan daha yuksek. Iyi rutininizi surdurun.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Tahmin icin yetersiz veri</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Yenile</string>
+    <string name="recycle_bin_empty_title_short">Kutuyu Bosalt</string>
+    <string name="recycle_bin_period_format">Adet: %1$s</string>
+    <string name="recycle_bin_to_format">-%1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Sifre Belirle</string>
+    <string name="app_lock_confirm_password">Sifreyi Onayla</string>
+    <string name="app_lock_set_password_btn">Sifre Belirle</string>
+    <string name="app_lock_unlock_btn">Kilidi Ac</string>
+    <string name="app_lock_enter_password">Sifre Gir</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Toplam Kayit</string>
+    <string name="stats_total_cycles">Toplam Donem</string>
+    <string name="stats_avg_cycle">Ortalama Donem</string>
+    <string name="stats_avg_period">Ortalama Adet</string>
+    <string name="stats_regularity_text">Duzenlilik</string>
+    <string name="stats_cycle_num">Donem %d</string>
+    <string name="stats_days_suffix">%d gun</string>
+    <string name="stats_avg_format">Ortalama: %d gun</string>
+    <string name="stats_no_data">Veri yok</string>
+    <string name="weight_format">Kilo: %.1f kg</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f cm</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Yedekler, sifreniz kullanilarak AES-256-GCM ile sifrelenir.</string>
+    <string name="steps_of_goal">%d hedefinden</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">R: %1$d\u00B0 D: %2$d%% P: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Mavi</string>
+    <string name="color_green">Yesil</string>
+    <string name="color_purple">Mor</string>
+    <string name="color_orange">Turuncu</string>
+    <string name="color_teal">Teal</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Detay icin dokun</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Kosu</string>
+    <string name="exercise_walking">Yuruyus</string>
+    <string name="exercise_cycling">Bisiklet</string>
+    <string name="exercise_swimming">Yuzme</string>
+    <string name="exercise_yoga">Yoga</string>
+    <string name="exercise_strength">Kuvvet Antrenmani</string>
+    <string name="exercise_dance">Dans</string>
+    <string name="exercise_pilates">Pilates</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Basketbol</string>
+    <string name="exercise_football">Futbol</string>
+    <string name="exercise_tennis">Tenis</string>
+    <string name="exercise_badminton">Badminton</string>
+    <string name="exercise_table_tennis">Masa Tenisi</string>
+    <string name="exercise_skipping">Ip Atlama</string>
+    <string name="exercise_hiking">Doga Yuruyusu</string>
+    <string name="exercise_other">Diger</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">Bu Hafta</string>
+    <string name="fitness_add_workout">Antrenman Ekle</string>
+    <string name="fitness_select_type">Egzersiz Turu Sec</string>
+    <string name="fitness_duration_minutes">Sure (dakika)</string>
+    <string name="fitness_calories_label">Kalori</string>
+    <string name="fitness_distance_km">Mesafe (km)</string>
+    <string name="fitness_today_workouts">Bugunun Antrenmanlari</string>
+    <string name="fitness_recent_workouts">Son Antrenmanlar</string>
+    <string name="fitness_empty">Henuz antrenman kaydedilmemis.\nIlk antrenmaninizi eklemek icin + dokunun.</string>
+    <string name="fitness_minutes_format">%d dk</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">Sure</string>
+    <string name="fitness_calories">Kalori</string>
+    <string name="fitness_workouts">Antrenman</string>
+    <string name="fitness_km_unit">km</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Pil Optimizasyonunu Devre Disi Brak</string>
+    <string name="steps_battery_desc">Pil optimizasyonu adim sayma servisini durdurabilir ve adim takibini etkileyebilir.</string>
+    <string name="steps_battery_action">Ayarlara Git</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">%s Ayarlari</string>
+    <string name="steps_auto_start_settings">Oto Baslatma Ayarlari</string>
+    <string name="steps_battery_settings">Pil Ayarlari</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Enerji Ozeti</string>
+    <string name="energy_today">Bugun</string>
+    <string name="energy_this_week">Bu Hafta</string>
+    <string name="energy_steps">Adim</string>
+    <string name="energy_workouts">Antrenman</string>
+    <string name="energy_total">Toplam</string>
+    <string name="energy_workouts_summary">%1$d antrenman \u00B7 %2$d dk</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Vucut Olcumleri</string>
+    <string name="body_metrics_height">Boy (cm)</string>
+    <string name="body_metrics_weight">Kilo (kg)</string>
+    <string name="body_metrics_saved">Vucut olcumleri kaydedildi</string>
+    <string name="body_metrics_height_error">Gecerli bir boy girin (80-250cm)</string>
+    <string name="body_metrics_weight_error">Gecerli bir kilo girin (15-350kg)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Beslenme</string>
+    <string name="nav_nutrition">Beslenme</string>
+    <string name="nutrition_add_meal">Ogun Ekle</string>
+    <string name="nutrition_meal_type">Ogun Turu</string>
+    <string name="nutrition_food_name">Yiyecek Adi</string>
+    <string name="nutrition_calories">Kalori</string>
+    <string name="nutrition_protein">Protein (g)</string>
+    <string name="nutrition_carbs">Karbonhidrat (g)</string>
+    <string name="nutrition_fat">Yag (g)</string>
+    <string name="nutrition_serving_size">Porsiyon Boyutu</string>
+    <string name="nutrition_macros">Makro Besinler</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Gunluk Beslenme</string>
+    <string name="nutrition_today_meals">Bugunun Ogunleri</string>
+    <string name="nutrition_meals">ogun</string>
+    <string name="nutrition_weekly_trend">Haftalik Egilim</string>
+    <string name="nutrition_empty">Henuz ogun kaydedilmemis.\nIlk ogunu eklemek icin + dokunun.</string>
+    <string name="nutrition_error_food_name">Bir yiyecek adi girin</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Kahvalti</string>
+    <string name="meal_lunch">Ogle Yemegi</string>
+    <string name="meal_dinner">Aksam Yemegi</string>
+    <string name="meal_snack">Atistirmali</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Su</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Luteal Fazda Dusuk Kalori Alimi</string>
+    <string name="insight_nutrition_luteal_low_desc">Luteal fazda kaloriler %.0f kcal dustu. Dengeli bir diyet surdurmeye calisin.</string>
+    <string name="insight_nutrition_luteal_high_title">Luteal Fazda Yuksek Kalori Alimi</string>
+    <string name="insight_nutrition_luteal_high_desc">Luteal fazda kaloriler %.0f kcal artti. Bu normaldir, vucudunuzu dinleyin.</string>
+    <string name="insight_nutrition_stable_title">Istikrarli Kalori Alimi</string>
+    <string name="insight_nutrition_stable_desc">Kalori aliminiz donem fazlari boyunca sabit kaliyor. Harika is!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">PIN\'i unuttum?</string>
+    <string name="app_lock_change_pin">PIN Degistir</string>
+    <string name="app_lock_current_pin">Mevcut PIN</string>
+    <string name="app_lock_new_pin_label">Yeni PIN</string>
+    <string name="app_lock_recovery_title">Uygulama Kilidini Sifirla</string>
+    <string name="app_lock_recovery_desc">Uygulama kilidini sifirlamak icin kimliginizi dogrulayin</string>
+    <string name="lock_30s">30 saniye</string>
+    <string name="lock_1min">1 dakika</string>
+    <string name="lock_5min">5 dakika</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Uyku</string>
+    <string name="sleep_title">Uyku Takibi</string>
+    <string name="sleep_record_title">Uyku Kaydet</string>
+    <string name="sleep_hours">Uyku Saati</string>
+    <string name="sleep_deep_hours">Derin Uyku</string>
+    <string name="sleep_quality">Uyku Kalitesi</string>
+    <string name="sleep_quality_format">%d yildiz</string>
+    <string name="sleep_history">Uyku Gecmisi</string>
+    <string name="sleep_no_data">Henuz uyku verisi kaydedilmemis</string>
+    <string name="sleep_today_status">Bugunun Uykusu</string>
+    <string name="sleep_hours_format">%s saat</string>
+    <string name="sleep_deep_hours_format">Derin: %s saat</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Menstrual</string>
+    <string name="phase_follicular">Follikuler</string>
+    <string name="phase_ovulatory">Ovulatuar</string>
+    <string name="phase_luteal">Luteal</string>
+    <string name="nutrition_cycle_guidance">Donem Beslenme Rehberi</string>
+    <string name="nutrition_focus_nutrients">Odak Besinler</string>
+    <string name="nutrition_recommended_foods">Tavsiye Edilen Besinler</string>
+    <string name="nutrition_limit_foods">Sinirla</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d gun</item>
+        <item quantity="other">%d gun</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Lütfen geçerli bir süre girin</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">d/M</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Temizle</string>
+    <string name="edit">Düzenle</string>
+    <string name="exact_date_mode">Kesin tarih</string>
+    <string name="profile_dob_not_set">Ayarlanmamış</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Yalnızca yıl</string>
+    <string name="year_picker_title">Doğum yılını seçin</string>
+
+    <!-- Analysis module -->
+    <string name="analysis_no_data">Yetersiz veri. Önce sağlık verilerinizi kaydedin.</string>
+    <string name="export_report">PDF Raporu Dışa Aktar</string>
+    <string name="insufficient_data">Yetersiz veri</string>
+
+    <!-- Nutrition analysis -->
+    <string name="nutrition_energy_balance">Enerji Dengesi</string>
+    <string name="nutrition_resting_energy">Dinlenme</string>
+    <string name="nutrition_exercise_energy">Egzersiz</string>
+    <string name="nutrition_total_expenditure">Toplam Yakım</string>
+    <string name="nutrition_calorie_balance">Denge</string>
+
+    <!-- Sleep tracking -->
+    <string name="sleep_auto_calculated">Otomatik: %d sa</string>
+    <string name="sleep_bedtime_btn">Yatma Vakti</string>
+    <string name="sleep_elapsed">%d sa %d dk geçti</string>
+    <string name="sleep_sleeping">Uyuyor...</string>
+    <string name="sleep_waketime_btn">Uyan</string>
+
+    <!-- Health pattern detection -->
+    <string name="pattern_exhaustion_title">Fiziksel Tükenme Tespit Edildi</string>
+    <string name="pattern_exhaustion_desc">Düşük uyku, yüksek stres ve düşük ruh hali tükenme riskini gösteriyor. Dinlenme günleri düşünün.</string>
+    <string name="pattern_overtraining_title">Aşırı Antrenman Riski</string>
+    <string name="pattern_overtraining_desc">Kalori açığı ve düşük uykuyla birlikte yüksek egzersiz hacmi. Sakatlanmaya dikkat edin.</string>
+    <string name="pattern_sedentary_mood_title">Hareketsizlik + Düşük Ruh Hali</string>
+    <string name="pattern_sedentary_mood_desc">Çok düşük adım sayısı ve düşük ruh hali. Kısa bir yürüyüş yardımcı olabilir.</string>
+    <string name="pattern_dehydration_stress_title">Dehidrasyon + Stres</string>
+    <string name="pattern_dehydration_stress_desc">Düşük su alımı ve yüksek stres seviyesi. Su tüketimi dayanıklılığı destekler.</string>
+    <string name="pattern_positive_loop_title">Pozitif Sağlık Döngüsü</string>
+    <string name="pattern_positive_loop_desc">İyi uyku, yüksek aktivite ve pozitif ruh hali birbirini güçlendiriyor. Devam edin!</string>
+
+    <!-- Analysis sections -->
+    <string name="analysis_section_suggestions">Akıllı Öneriler</string>
+    <string name="analysis_section_nutrition">Beslenme Analizi</string>
+    <string name="analysis_section_calorie_balance">Kalori Dengesi</string>
+    <string name="analysis_section_exercise">Egzersiz Analizi</string>
+    <string name="analysis_section_sleep">Uyku Analizi</string>
+    <string name="analysis_section_phase">Döngü Korelasyonu</string>
+    <string name="analysis_avg_daily_calories">Günlük Ort.</string>
+    <string name="analysis_protein">Protein</string>
+    <string name="analysis_carbs">Karb.</string>
+    <string name="analysis_fat">Yağ</string>
+    <string name="analysis_nutrient_ratio">Besin Oranı</string>
+    <string name="analysis_avg_water_format">Ort. Su: %.0f ml</string>
+    <string name="analysis_avg_intake">Ort. Alım</string>
+    <string name="analysis_exercise_burned">Egzersiz Yakımı</string>
+    <string name="analysis_weekly_total_minutes">Haftalık Toplam</string>
+    <string name="analysis_daily_avg_minutes">Günlük Ort.</string>
+    <string name="analysis_calories_burned">Yakılan Kalori</string>
+    <string name="analysis_exercise_type_distribution">Egzersiz Türü Dağılımı</string>
+    <string name="analysis_avg_sleep_hours">Ort. Süre</string>
+    <string name="analysis_quality_score">Kalite Puanı</string>
+    <string name="analysis_daily_sleep_hours">Günlük Uyku Saati</string>
+    <string name="analysis_mood">Ruh Hali</string>
+    <string name="analysis_stress">Stres</string>
+    <string name="analysis_daily_net_calories">Günlük Net Kalori (dinlenme enerjisi dahil)</string>
+
+    <!-- Report -->
+    <string name="report_title">Sağlık Raporu</string>
+    <string name="report_description">Kayıtlı verilerinize dayalı kapsamlı bir sağlık raporu oluşturun. Rapor, cihazınızda yerel olarak oluşturulur ve PDF olarak paylaşılabilir.</string>
+    <string name="report_period">Rapor Dönemi: Son 30 Gün</string>
+    <string name="report_includes">İçerir: Adet kayıtları, adımlar, uyku, beslenme ve sağlık analizleri</string>
+    <string name="report_generate">Rapor Oluştur</string>
+    <string name="report_generating">PDF raporu oluşturuluyor...</string>
+    <string name="report_success">Rapor başarıyla oluşturuldu!</string>
+    <string name="report_share">Sağlık Raporunu Paylaş</string>
+    <string name="report_share_button">Paylaş</string>
+    <string name="report_generate_new">Yeni Oluştur</string>
+    <string name="report_error">Hata: %s</string>
+    <string name="report_privacy_title">Gizlilik Bildirimi</string>
+    <string name="report_privacy_body">Tüm raporlar cihazınızda yerel olarak oluşturulur. Hiçbir sağlık verisi herhangi bir sunucuya veya bulut hizmetine yüklenmez. Verileriniz tamamen sizin kontrolünüzde kalır.</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_low_calorie_title">Düşük Kalori Alımı</string>
+    <string name="suggestion_low_calorie_desc">Günlük alım %.0f kcal, önerilen 1800 kcal\'in altında. Kompleks karbonhidratlar ve sağlıklı yağlar eklemeyi düşünün.</string>
+    <string name="suggestion_high_calorie_title">Yüksek Kalori Alımı</string>
+    <string name="suggestion_high_calorie_desc">Günlük alım %.0f kcal, 2500 kcal\'i aşıyor. Atıştırmalıkları azaltıp sebzeleri artırmayı düşünün.</string>
+    <string name="suggestion_low_protein_title">Düşük Protein Alımı</string>
+    <string name="suggestion_low_protein_desc">Günlük protein %.0f g, önerilen 50 g\'nin altında. Yumurta, balık ve tofu düşünün.</string>
+    <string name="suggestion_low_water_title">Düşük Su Alımı</string>
+    <string name="suggestion_low_water_desc">Günlük su %.0f ml, önerilen seviyenin altında. Günde 1500-2000 ml hedefleyin.</string>
+    <string name="suggestion_high_surplus_title">Yüksek Kalori Fazlası</string>
+    <string name="suggestion_high_surplus_desc">Günlük fazla %.0f kcal. Amacınız kilo vermekse egzersizi artırmayı düşünün.</string>
+    <string name="suggestion_high_deficit_title">Büyük Kalori Açığı</string>
+    <string name="suggestion_high_deficit_desc">Günlük açık %.0f kcal. Bazal metabolik ihtiyaçlarınızı karşıladığınızdan emin olun.</string>
+    <string name="suggestion_balanced_title">Dengeli Kaloriler</string>
+    <string name="suggestion_balanced_desc">Alım ve harcama iyi dengelenmiş. Aynen devam edin!</string>
+    <string name="suggestion_low_exercise_title">Düşük Egzersiz</string>
+    <string name="suggestion_low_exercise_desc">Haftalık egzersiz %d dakika, WHO önerisi olan 150 dakikanın altında.</string>
+    <string name="suggestion_exercise_met_title">Egzersiz Hedefi Karşılandı</string>
+    <string name="suggestion_exercise_met_desc">Haftalık egzersiz %d dakika WHO önerisini karşılıyor!</string>
+    <string name="suggestion_exercise_variety_title">Egzersiz Çeşitliliği Gerekli</string>
+    <string name="suggestion_exercise_variety_desc">Genel fitness için farklı egzersiz türleri deneyin (kardiyo + kuvvet + esneklik).</string>
+    <string name="suggestion_low_sleep_title">Düşük Uyku</string>
+    <string name="suggestion_low_sleep_desc">Günlük uyku %.1f saat, önerilen 7-9 saatin altında. Düzenli bir program deneyin.</string>
+    <string name="suggestion_high_sleep_title">Aşırı Uyku</string>
+    <string name="suggestion_high_sleep_desc">Günlük uyku %.1f saat, 9 saati aşıyor. Uzun uyku yorgunluğa işaret edebilir.</string>
+    <string name="suggestion_low_deep_sleep_title">Düşük Derin Uyku</string>
+    <string name="suggestion_low_deep_sleep_desc">Derin uyku oranı yalnızca %.0f%%. Yatmadan önce kafeinden kaçının ve odayı karanlık tutun.</string>
+    <string name="suggestion_low_sleep_quality_title">Düşük Uyku Kalitesi</string>
+    <string name="suggestion_low_sleep_quality_desc">Uyku kalitesi puanı %.1f/5. Yatmadan önce meditasyon veya ılık banyo deneyin.</string>
+    <string name="suggestion_luteal_sleep_title">Luteal Faz Uyku Değişimi</string>
+    <string name="suggestion_luteal_sleep_desc">Luteal fazda uyku, folliküler faza göre %.1f saat azaldı. Normal hormonal değişim.</string>
+
+    <!-- Error -->
+    <string name="error_onboarding_required">Lütfen önce kullanıcı kurulumunu tamamlayın</string>
+    <string name="error_load_failed">Yükleme başarısız</string>
+
+    <!-- Cycle nutrition guidance - menstrual -->
+    <string name="nutrition_menstrual_advice">Kan kaybını telafi etmek için demir açısından zengin besinlere odaklanın. Magnezyum krampları azaltmaya yardımcı olur. Bol su için.</string>
+    <string name="nutrition_menstrual_nutrients">Demir · Magnezyum · Omega-3 · B12 Vitamini</string>
+    <string name="nutrition_menstrual_foods">Yeşil Yapraklılar · Kırmızı Et · Yağlı Balık · Bitter Çikolata · Kuruyemiş</string>
+    <string name="nutrition_menstrual_limit">Tuzlu Atıştırmalıklar · Kafein · Süt Ürünleri</string>
+
+    <!-- Cycle nutrition guidance - follicular -->
+    <string name="nutrition_follicular_advice">Enerji metabolizmanız yükseliyor. Hafif, besin yoğun öğünler için harika bir zaman. Probiyotiklerle bağırsak sağlığınızı destekleyin.</string>
+    <string name="nutrition_follicular_nutrients">Lif · C Vitamini · Probiyotikler · Folat</string>
+    <string name="nutrition_follicular_foods">Meyveler · Turunçgiller · Yoğurt · Yulaf · Brokoli</string>
+    <string name="nutrition_follicular_limit">İşlenmiş Gıdalar · Aşırı Şeker</string>
+
+    <!-- Cycle nutrition guidance - ovulatory -->
+    <string name="nutrition_ovulatory_advice">Bu fazda östrojen zirve yapar. Antioksidan açısından zengin besinlerle karaciğer detoksunu destekleyin. Anti-enflamatuar diyet önerilir.</string>
+    <string name="nutrition_ovulatory_nutrients">Antioksidanlar · C Vitamini · Çinko · E Vitamini</string>
+    <string name="nutrition_ovulatory_foods">Dolmalık Biber · Ayçiçeği Çekirdeği · Yağsız Tavuk · Avokado · Yeşil Çay</string>
+    <string name="nutrition_ovulatory_limit">Alkol · Kızartmalar</string>
+
+    <!-- Cycle nutrition guidance - luteal -->
+    <string name="nutrition_luteal_advice">Progesteron yükselir, bu iştahı artırabilir. Kompleks karbonhidratlar serotonin seviyesini yükseltmeye yardımcı olur. PMS semptomlarını hafifletmek için kafein ve tuzu sınırlayın.</string>
+    <string name="nutrition_luteal_nutrients">B Vitaminleri · Kompleks Karbonhidratlar · Magnezyum · Kalsiyum · B6 Vitamini</string>
+    <string name="nutrition_luteal_foods">Tam Tahıllar · Muz · Yeşil Yapraklılar · Baklagiller · Bitter Çikolata</string>
+    <string name="nutrition_luteal_limit">Şeker · Kafein · Tuzlu Yiyecekler</string>
+
+    <!-- Sleep trend -->
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Uyku Saati   ▐ Kalite Puanı</string>
+    <string name="sleep_luteal_worse">Luteal Fazda Uyku Kalitesi Düştü</string>
+    <string name="sleep_luteal_better">Luteal Fazda Uyku Kalitesi Yükseldi</string>
+    <string name="sleep_luteal_comparison_worse">Luteal ort. uyku %.1fsa, folliküler %.1fsa, %.1fsa azaldı</string>
+    <string name="sleep_luteal_comparison_better">Luteal ort. uyku %.1fsa, folliküler %.1fsa, %.1fsa iyileşti</string>
+
+    <!-- PDF Report -->
+    <string name="pdf_health_report">Sağlık Raporu</string>
+    <string name="pdf_generated">Oluşturulma: %s</string>
+    <string name="pdf_user_info">Kullanıcı: %1$s | Cinsiyet: %2$s</string>
+    <string name="pdf_report_period">Rapor Dönemi: %s</string>
+    <string name="pdf_period_summary">Adet Özeti</string>
+    <string name="pdf_no_period_records">Seçilen dönemde adet kaydı yok.</string>
+    <string name="pdf_total_cycles">Toplam Döngü: %d</string>
+    <string name="pdf_avg_cycle_length">Ortalama Döngü Uzunluğu: %d gün</string>
+    <string name="pdf_avg_pain">Ortalama Ağrı Seviyesi: %.1f / 3</string>
+    <string name="pdf_recent_records">Son Kayıtlar</string>
+    <string name="pdf_start_date">Başlangıç Tarihi</string>
+    <string name="pdf_end_date">Bitiş Tarihi</string>
+    <string name="pdf_flow">Akış</string>
+    <string name="pdf_pain">Ağrı</string>
+    <string name="pdf_ongoing">Devam Ediyor</string>
+    <string name="pdf_flow_light">Hafif</string>
+    <string name="pdf_flow_medium">Orta</string>
+    <string name="pdf_flow_heavy">Yoğun</string>
+    <string name="pdf_pain_none">Yok</string>
+    <string name="pdf_pain_mild">Hafif</string>
+    <string name="pdf_pain_moderate">Orta</string>
+    <string name="pdf_pain_severe">Şiddetli</string>
+    <string name="pdf_activity_summary">Aktivite Özeti</string>
+    <string name="pdf_no_step_data">Adım verisi yok.</string>
+    <string name="pdf_avg_daily_steps">Ortalama Günlük Adım: %,d</string>
+    <string name="pdf_total_steps">Toplam Adım: %,d</string>
+    <string name="pdf_max_steps">Maks. Günlük Adım: %,d</string>
+    <string name="pdf_total_exercise">Toplam Egzersiz: %d dakika</string>
+    <string name="pdf_sleep_summary">Uyku Özeti</string>
+    <string name="pdf_no_sleep_data">Uyku verisi yok.</string>
+    <string name="pdf_avg_sleep">Ortalama Uyku: %.1f saat</string>
+    <string name="pdf_avg_sleep_quality">Ortalama Uyku Kalitesi: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Ortalama Derin Uyku: %.1f saat</string>
+    <string name="pdf_nutrition_summary">Beslenme Özeti</string>
+    <string name="pdf_no_nutrition_data">Beslenme verisi yok.</string>
+    <string name="pdf_avg_calories">Ortalama Günlük Kalori: %.0f kcal</string>
+    <string name="pdf_avg_water">Ortalama Su Alımı: %.0f ml</string>
+    <string name="pdf_avg_protein">Ortalama Protein: %.0f g</string>
+    <string name="pdf_footer">Bu rapor cihazınızda yerel olarak oluşturulur. Hiçbir veri telefonunuzdan çıkmaz.</string>
+    <string name="pdf_page">Sayfa %d</string>
+    <string name="pdf_app_name">TianshangHealth - Önce Gizlilik</string>
+    <string name="previous">Önceki</string>
+    <string name="next">Sonraki</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">Rapor oluşturma başarısız</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

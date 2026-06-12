@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:SleepTrendChart.kt$@Composable fun SleepTrendChart( data: List&lt;DailyHealth&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>ExpressionBodySyntax:SleepTrendChart.kt$return if (isRtl) chartWidth - (stepX * index) else stepX * index</ID>
+    <ID>FunctionNaming:BedWakeTimerCard.kt$@Composable fun BedWakeTimerCard( bedTime: Long?, wakeTime: Long?, onBedTimeClick: () -&gt; Unit, onWakeTimeClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:SleepScreen.kt$@Composable private fun SleepHistoryItem(sleep: DailyHealth)</ID>
+    <ID>FunctionNaming:SleepScreen.kt$@Composable private fun SleepInputCard( hoursInput: String, deepHoursInput: String, qualityInput: Int?, onHoursChanged: (String) -&gt; Unit, onDeepHoursChanged: (String) -&gt; Unit, onQualityChanged: (Int) -&gt; Unit, onSave: () -&gt; Unit, isSaving: Boolean )</ID>
+    <ID>FunctionNaming:SleepScreen.kt$@Composable private fun TodaySleepCard(sleep: DailyHealth)</ID>
+    <ID>FunctionNaming:SleepScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SleepScreen( viewModel: SleepViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:SleepTrendChart.kt$@Composable fun SleepCycleCorrelationCard( follicularAvgSleep: Float?, lutealAvgSleep: Float?, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:SleepTrendChart.kt$@Composable fun SleepTrendChart( data: List&lt;DailyHealth&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:SleepScreen.kt$( hoursInput: String, deepHoursInput: String, qualityInput: Int?, onHoursChanged: (String) -&gt; Unit, onDeepHoursChanged: (String) -&gt; Unit, onQualityChanged: (Int) -&gt; Unit, onSave: () -&gt; Unit, isSaving: Boolean )</ID>
+    <ID>MagicNumber:BedWakeTimerCard.kt$3_600_000</ID>
+    <ID>MagicNumber:BedWakeTimerCard.kt$3_600_000f</ID>
+    <ID>MagicNumber:BedWakeTimerCard.kt$60_000</ID>
+    <ID>MagicNumber:SleepScreen.kt$5</ID>
+    <ID>MagicNumber:SleepTrendChart.kt$0.3f</ID>
+    <ID>MagicNumber:SleepTrendChart.kt$0xFF4CAF50</ID>
+    <ID>MagicNumber:SleepTrendChart.kt$0xFFFF5252</ID>
+    <ID>MagicNumber:SleepTrendChart.kt$0xFFFFC107</ID>
+    <ID>MagicNumber:SleepTrendChart.kt$16f</ID>
+    <ID>MagicNumber:SleepTrendChart.kt$4</ID>
+    <ID>MagicNumber:SleepTrendChart.kt$7</ID>
+    <ID>MagicNumber:SleepViewModel.kt$SleepViewModel$7</ID>
+    <ID>UnnecessaryParentheses:BedWakeTimerCard.kt$(elapsedMs % 3_600_000)</ID>
+    <ID>UnnecessaryParentheses:SleepTrendChart.kt$((day.sleepHours ?: 0f) / maxHours * chartHeight)</ID>
+    <ID>UnnecessaryParentheses:SleepTrendChart.kt$(i.toFloat() / maxHours * chartHeight)</ID>
+    <ID>UnnecessaryParentheses:SleepTrendChart.kt$(quality.toFloat() / HealthConstants.SLEEP_QUALITY_MAX)</ID>
+    <ID>UnnecessaryParentheses:SleepTrendChart.kt$(stepX * index)</ID>
+    <ID>UseCheckOrError:SleepRepository.kt$SleepRepository$throw IllegalStateException("No user found. Onboarding must be completed first.")</ID>
+  </CurrentIssues>
+</SmellBaseline>

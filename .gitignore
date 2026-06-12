@@ -1,0 +1,79 @@
+# IDE
+*.iml
+.idea/
+.navigation/
+
+# Gradle
+.gradle/
+build/
+local.properties
+
+# C/C++ Android NDK
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+.kotlin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Android
+captures/
+*.apk
+*.aab
+*.hprof
+
+# Java / Kotlin temp
+*.log
+*.bak
+*.tmp
+__pycache__/
+
+# Signing
+*.jks
+*.keystore
+
+# All Markdown files except README and readme/ translations
+*.md
+!README.md
+!readme/*.md
+
+# Python
+*.py
+
+# Compiled Java
+*.class
+
+# Dex
+*.dex
+
+# Data / datasets
+*.csv
+
+# Screenshots
+*screen*.png
+screenshot*.png
+
+# PowerShell scripts
+*.ps1
+
+# Plain text / JSON test files
+*.txt
+*.json
+
+# XML dump / UI dumps
+*dump*.xml
+ui.xml
+window_dump.xml
+
+# Local / temp
+local.properties.example
+dumptmp/
+
+# Dev tools
+scripts/
+
+# Security testing tools
+DumpPwd.*

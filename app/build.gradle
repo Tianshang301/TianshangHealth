@@ -1,0 +1,135 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
+}
+
+android {
+    namespace 'com.tianshang.health'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.tianshang.health"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            def localProperties = new Properties()
+            def localPropertiesFile = rootProject.file('local.properties')
+            if (localPropertiesFile.exists()) {
+                localProperties.load(new FileInputStream(localPropertiesFile))
+            }
+            def ksPass = localProperties.getProperty('KEYSTORE_PASSWORD')
+            def kAlias = localProperties.getProperty('KEY_ALIAS')
+            def kPass = localProperties.getProperty('KEY_PASSWORD')
+            if (ksPass && kAlias && kPass) {
+                storeFile file('tianshang-health-release.jks')
+                storePassword ksPass
+                keyAlias kAlias
+                keyPassword kPass
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    
+    buildFeatures {
+        compose true
+    }
+    
+    composeOptions {
+        kotlinCompilerExtensionVersion libs.versions.compose.compiler.get()
+    }
+    
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+            excludes += '/META-INF/versions/9/OSGI-INF/MANIFEST.MF'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == "release") {
+                outputFileName = "TianshangHealth-v${variant.versionName}.apk"
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':core:common')
+    implementation project(':core:security')
+    implementation project(':core:database')
+    implementation project(':feature:onboarding')
+    implementation project(':feature:dashboard')
+    implementation project(':feature:period')
+    implementation project(':feature:steps')
+    implementation project(':feature:fitness')
+    implementation project(':feature:nutrition')
+    implementation project(':feature:sleep')
+    implementation project(':feature:analysis')
+    
+    implementation libs.core.ktx
+    implementation libs.appcompat
+    implementation libs.lifecycle.runtime
+    implementation libs.lifecycle.process
+    implementation libs.activity.compose
+    implementation platform(libs.compose.bom)
+    implementation libs.compose.ui
+    implementation libs.compose.ui.graphics
+    implementation libs.compose.ui.tooling.preview
+    implementation libs.compose.material3
+    implementation libs.compose.material.icons
+    implementation libs.navigation.compose
+    
+    // Hilt
+    implementation libs.hilt.android
+    ksp libs.hilt.compiler
+    implementation libs.hilt.navigation.compose
+    implementation libs.hilt.work
+    ksp libs.hilt.work.compiler
+    
+    // Security
+    implementation libs.security.crypto
+    
+    // Splash Screen
+    implementation libs.splashscreen
+
+    // TensorFlow Lite — 移除 select-tf-ops，LSTM 模型暂未兼容 TFLite 2.14.0 运行时
+    // 仅使用 LINEAR 模型（不需要 Flex delegate）
+    // 参见 AGENTS.md §13.11
+    
+    testImplementation libs.junit
+    testImplementation libs.robolectric
+    androidTestImplementation libs.android.test.junit
+    androidTestImplementation libs.espresso
+    androidTestImplementation libs.mockk
+    androidTestImplementation libs.coroutines.test
+    androidTestImplementation platform(libs.compose.bom)
+    androidTestImplementation libs.compose.ui.test.junit4
+    debugImplementation libs.compose.ui.tooling
+    debugImplementation libs.compose.ui.test.manifest
+}

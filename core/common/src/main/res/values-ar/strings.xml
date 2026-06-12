@@ -1,0 +1,884 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تيانشانغ الصحة</string>
+    <string name="terms_title">شروط الخدمة</string>
+    <string name="privacy_title">سياسة الخصوصية</string>
+    <string name="accept_terms">لقد قرأت وأوافق</string>
+    <string name="app_lock_title">قفل التطبيق</string>
+    <string name="enter_pin">كلمة المرور</string>
+    <string name="unlock">إلغاء القفل</string>
+    <string name="invalid_pin">كلمة مرور غير صالحة</string>
+    <string name="app_lock_setup_title">تعيين كلمة مرور القفل</string>
+    <string name="set_pin">تعيين كلمة المرور</string>
+    <string name="confirm_pin">تأكيد كلمة المرور</string>
+    <string name="set_password">تعيين كلمة المرور</string>
+    <string name="pin_empty_error">كلمة المرور لا يمكن أن تكون فارغة</string>
+    <string name="pin_mismatch_error">كلمتا المرور غير متطابقتين</string>
+    <string name="pin_length_error">يجب أن تتكون كلمة المرور من %d أحرف على الأقل</string>
+    <string name="calendar_title">التقويم</string>
+    <string name="current_cycle_day">اليوم %d من الدورة</string>
+    <string name="days_until_next_period">الدورة القادمة بعد %d يوم</string>
+    <string name="no_period_data">لا توجد بيانات دورة</string>
+    <string name="tap_date_to_record">اضغط للتسجيل</string>
+    <string name="period">الدورة</string>
+    <string name="predicted_period">الدورة المتوقعة</string>
+    <string name="ovulation">الإباضة</string>
+    <string name="fertile_window">نافذة الخصوبة</string>
+    <string name="record_title">تسجيل</string>
+    <string name="start_period">بدء الدورة</string>
+    <string name="end_period">إنهاء الدورة</string>
+    <string name="flow_level">التدفق</string>
+    <string name="pain_level">الألم</string>
+    <string name="symptoms">الأعراض</string>
+    <string name="sexual_activity">النشاط الجنسي</string>
+    <string name="ovulation_test">اختبار الإباضة</string>
+    <string name="cervical_mucus">مخاط عنق الرحم</string>
+    <string name="body_temperature">درجة حرارة الجسم</string>
+    <string name="notes">ملاحظات</string>
+    <string name="save">حفظ</string>
+    <string name="analysis_title">تحليل</string>
+    <string name="cycle_statistics">إحصائيات</string>
+    <string name="avg_cycle_length">متوسط الدورة</string>
+    <string name="avg_period_length">متوسط الحيض</string>
+    <string name="cycle_regularity">الانتظام</string>
+    <string name="total_cycles">إجمالي الدورات</string>
+    <string name="pain_trend">اتجاه الألم</string>
+    <string name="symptom_frequency">تكرار الأعراض</string>
+    <string name="predictions">التوقعات</string>
+    <string name="reminder_title">التذكيرات</string>
+    <string name="period_reminder">تذكير الدورة</string>
+    <string name="ovulation_reminder">تذكير الإباضة</string>
+    <string name="pms_reminder">تذكير أعراض ما قبل الحيض</string>
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="theme_customization">المظهر</string>
+    <string name="theme_color">لون المظهر</string>
+    <string name="app_lock">قفل التطبيق</string>
+    <string name="language">اللغة</string>
+    <string name="recycle_bin">سلة المحذوفات</string>
+    <string name="recycle_bin_title">سلة المحذوفات</string>
+    <string name="backup_restore">النسخ الاحتياطي</string>
+    <string name="backup_restore_title">النسخ الاحتياطي والاستعادة</string>
+    <string name="export_backup">تصدير النسخ الاحتياطي</string>
+    <string name="import_backup">استيراد النسخ الاحتياطي</string>
+    <string name="export_csv">تصدير CSV</string>
+    <string name="about">حول</string>
+    <string name="bmi_title">مؤشر كتلة الجسم</string>
+    <string name="add_bmi_record">إضافة</string>
+    <string name="height_cm">الطول (سم)</string>
+    <string name="weight_kg">الوزن (كجم)</string>
+    <string name="latest_bmi">مؤشر كتلة الجسم الحالي</string>
+    <string name="bmi_history">السجل</string>
+    <string name="dark_mode">الوضع الداكن</string>
+    <string name="dark_mode_description">تغيير المظهر</string>
+    <string name="no_deleted_records">لا توجد سجلات محذوفة</string>
+    <string name="security_settings">الأمان</string>
+    <string name="data_security">أمان البيانات</string>
+    <string name="database_encryption">تشفير قاعدة البيانات</string>
+    <string name="encrypted">مشفر (AES-256)</string>
+    <string name="unencrypted">غير مشفر</string>
+    <string name="migrate_to_encrypted">الترحيل إلى قاعدة بيانات مشفرة</string>
+    <string name="migration_success">تم الترحيل بنجاح! قاعدة البيانات الآن مشفرة.</string>
+    <string name="migration_failed">فشل الترحيل: %s. تمت استعادة بياناتك.</string>
+    <string name="background_lock_delay">تأخير القفل</string>
+    <string name="lock_immediately">فوراً</string>
+    <string name="lock_after_seconds">%d ثانية</string>
+    <string name="custom_reminders">تذكيرات مخصصة</string>
+    <string name="add_custom_reminder">إضافة تذكير مخصص</string>
+    <string name="no_custom_reminders">لا توجد تذكيرات مخصصة بعد</string>
+    <string name="reminder_title_label">عنوان التذكير</string>
+    <string name="reminder_title_required">العنوان مطلوب</string>
+    <string name="reminder_message_label">الرسالة (اختياري)</string>
+    <string name="reminder_date">تاريخ التذكير</string>
+    <string name="select_time">اختيار الوقت</string>
+    <string name="hue">درجة اللون</string>
+    <string name="saturation">التشبع</string>
+    <string name="lightness">الإضاءة</string>
+    <string name="apply_color">تطبيق اللون</string>
+    <string name="custom_color">لون مخصص</string>
+    <string name="color_preview">معاينة اللون</string>
+    <string name="apply">تطبيق</string>
+    <string name="preset_colors">الألوان المحددة مسبقاً</string>
+    <string name="add_symptom">إضافة عرض</string>
+    <string name="symptom_name">اسم العرض</string>
+    <string name="symptom_name_required">اسم العرض مطلوب</string>
+    <string name="prediction_explanation">تنبؤ تكيفي بناءً على آخر %1$d دورة (متوسط %2$s يوم/دورة، %3$s يوم/حيض)</string>
+    <string name="record_date">تاريخ التسجيل</string>
+    <string name="select_date">اختيار التاريخ</string>
+    <string name="confirm">تأكيد</string>
+    <string name="cancel">إلغاء</string>
+    <string name="delete">حذف</string>
+    <string name="delete_record">حذف السجل</string>
+    <string name="delete_record_confirm">هل أنت متأكد من حذف السجل لهذا التاريخ؟ لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="week_sun">الأحد</string>
+    <string name="week_mon">الإثنين</string>
+    <string name="week_tue">الثلاثاء</string>
+    <string name="week_wed">الأربعاء</string>
+    <string name="week_thu">الخميس</string>
+    <string name="week_fri">الجمعة</string>
+    <string name="week_sat">السبت</string>
+    <string name="calendar_today">اليوم</string>
+    <string name="back">رجوع</string>
+    <string name="symptom_headache">صداع</string>
+    <string name="symptom_bloating">انتفاخ</string>
+    <string name="symptom_breast_tenderness">ألم الثدي</string>
+    <string name="symptom_backache">آلام الظهر</string>
+    <string name="symptom_fatigue">إرهاق</string>
+    <string name="symptom_mood_swings">تقلبات مزاجية</string>
+    <string name="symptom_acne">حب الشباب</string>
+    <string name="symptom_increased_appetite">زيادة الشهية</string>
+    <string name="symptom_insomnia">أرق</string>
+    <string name="symptom_nausea">غثيان</string>
+    <string name="flow_light">خفيف</string>
+    <string name="flow_medium">متوسط</string>
+    <string name="flow_heavy">غزير</string>
+    <string name="pain_none">لا يوجد</string>
+    <string name="pain_mild">خفيف</string>
+    <string name="pain_moderate">متوسط</string>
+    <string name="pain_severe">شديد</string>
+    <string name="unit_days">أيام</string>
+    <string name="predicted_period_label">الدورة المتوقعة: %1$s - %2$s</string>
+    <string name="ovulation_date_label">الإباضة: %s</string>
+    <string name="confidence_label">الثقة: %1$s (بناءً على %2$d دورة)</string>
+    <string name="reminder_days_before">أيام قبل</string>
+    <string name="reminder_time">وقت التذكير</string>
+    <string name="enabled">مفعل</string>
+    <string name="disabled">معطل</string>
+    <string name="color_pink">وردي</string>
+    <string name="color_dark_pink">وردي غامق</string>
+    <string name="color_peach">خوخي</string>
+    <string name="color_light_purple">أرجواني فاتح</string>
+    <string name="color_medium_purple">أرجواني متوسط</string>
+    <string name="unit_cm">سم</string>
+    <string name="unit_kg">كجم</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">نقص وزن</string>
+    <string name="bmi_category_normal">طبيعي</string>
+    <string name="bmi_category_overweight">وزن زائد</string>
+    <string name="bmi_category_obese">سمنة</string>
+    <string name="bmi_standard_note">بناءً على المعيار الصيني لمؤشر كتلة الجسم</string>
+    <string name="backup_success">تم النسخ الاحتياطي بنجاح</string>
+    <string name="backup_fail">فشل النسخ الاحتياطي</string>
+    <string name="restore_success">تمت الاستعادة بنجاح</string>
+    <string name="restore_fail">فشلت الاستعادة</string>
+    <string name="export_success">تم التصدير بنجاح</string>
+    <string name="export_fail">فشل التصدير</string>
+    <string name="backup_export_desc">تصدير قاعدة البيانات كملف ZIP احتياطي</string>
+    <string name="backup_import_desc">استعادة البيانات من ملف احتياطي</string>
+    <string name="backup_csv_desc">تصدير السجلات كجدول CSV</string>
+    <string name="deleted_time">تم الحذف: %s</string>
+    <string name="in_progress">قيد التقدم</string>
+    <string name="terms_countdown">يرجى الانتظار %d ثانية</string>
+    <string name="auth_failed">فشل المصادقة: %s</string>
+    <string name="auth_failed_generic">فشلت المصادقة</string>
+    <string name="biometric_init_failed">فشل تهيئة القياسات الحيوية</string>
+    <string name="lockout_message">محاولات كثيرة جداً. يرجى الانتظار %d ثانية.</string>
+    <string name="chart_title_cycle_length_trend">اتجاه طول الدورة</string>
+    <string name="chart_title_pain_trend">اتجاه الألم</string>
+    <string name="chart_title_symptom_distribution">توزيع الأعراض</string>
+    <string name="chart_cycle_label">دورة %d</string>
+    <string name="chart_cycle_length_label">طول الدورة : %d</string>
+    <string name="chart_pain_level_label">مستوى الألم</string>
+    <string name="regularity_regular">منتظم</string>
+    <string name="regularity_somewhat_regular">منتظم إلى حد ما</string>
+    <string name="regularity_irregular">غير منتظم</string>
+    <string name="regularity_insufficient_data">بيانات غير كافية</string>
+    <string name="confidence_high">عالية</string>
+    <string name="confidence_medium">متوسطة</string>
+    <string name="confidence_low">منخفضة</string>
+    <string name="confidence_insufficient">بيانات غير كافية</string>
+    <string name="analysis_no_data_title">لا توجد بيانات بعد</string>
+    <string name="analysis_no_data_hint">ابدأ بتسجيل دورتك لرؤية التحليلات والتوقعات هنا</string>
+    <string name="section_appearance">المظهر</string>
+    <string name="section_health">الصحة</string>
+    <string name="section_data">البيانات</string>
+    <string name="section_other">أخرى</string>
+    <string name="open">فتح</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="profile_theme_description">تخصيص ألوان التطبيق</string>
+    <string name="profile_language_description">تغيير لغة التطبيق</string>
+    <string name="profile_bmi_description">تتبع مؤشر كتلة جسمك</string>
+    <string name="profile_app_lock_description">يتطلب المصادقة لفتح التطبيق</string>
+    <string name="screenshot_protection_title">الحماية من لقطات الشاشة</string>
+    <string name="screenshot_protection_description">منع لقطات الشاشة وتسجيلات الشاشة</string>
+    <string name="profile_backup_description">نسخ احتياطي مشفر واستعادة جميع البيانات</string>
+    <string name="profile_recycle_bin_description">عرض واستعادة السجلات المحذوفة</string>
+    <string name="profile_version">الإصدار 1.0.0</string>
+    <string name="profile_app_description">تطبيق شامل لتتبع الصحة مع الخصوصية في جوهره.</string>
+    <string name="custom_theme">مظهر مخصص</string>
+    <string name="language_description">اختر لغتك المفضلة. سيتم إعادة تشغيل التطبيق لتطبيق التغيير.</string>
+    <string name="language_changed_restart">تم تغيير اللغة، إعادة التشغيل&#8230;</string>
+    <string name="bmi_empty_text">لا توجد سجلات وزن بعد. أضف أول إدخال وزن.</string>
+    <string name="save_height">حفظ الطول</string>
+    <string name="bmi_category_label">الفئة</string>
+    <string name="height_label">الطول</string>
+    <string name="update_height">تحديث الطول</string>
+    <string name="add_weight_record_title">إضافة سجل وزن</string>
+    <string name="add_weight_record_text">أدخل وزنك لليوم.</string>
+    <string name="recycle_bin_description">يتم الاحتفاظ بالسجلات المحذوفة لمدة 30 يوماً قبل الإزالة الدائمة.</string>
+    <string name="recycle_bin_empty">سلة المحذوفات فارغة</string>
+    <string name="recycle_bin_empty_title">تفريغ سلة المحذوفات</string>
+    <string name="recycle_bin_empty_confirm">ستتم إزالة جميع السجلات المحذوفة بشكل دائم. لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="recycle_bin_empty_action">تفريغ</string>
+    <string name="recycle_bin_restore">استعادة</string>
+    <string name="recycle_bin_delete_forever">حذف نهائي</string>
+    <string name="add_record">إضافة سجل</string>
+    <string name="period_tracking_title">تتبع الدورة</string>
+    <string name="prediction_explanation_title">شرح التوقع</string>
+    <string name="reminder_period_desc">تلقي إشعار قبل بدء الدورة</string>
+    <string name="reminder_ovulation_desc">تلقي إشعار قبل الإباضة</string>
+    <string name="reminder_pms_desc">تلقي إشعار حول أعراض ما قبل الحيض</string>
+    <string name="cycle_status_title">حالة الدورة</string>
+    <string name="cycle_day_label">يوم الدورة</string>
+    <string name="days_until_label">الأيام المتبقية</string>
+    <string name="period_active_text">الدورة نشطة</string>
+    <string name="next_period_label">الدورة القادمة</string>
+    <string name="not_enough_data">بيانات غير كافية</string>
+    <string name="cycle_length_label">طول الدورة</string>
+    <string name="chart_no_data">بيانات غير كافية لعرض الرسم البياني</string>
+    <string name="chart_no_pain_data">لا توجد بيانات ألم مسجلة</string>
+    <string name="chart_pain_unknown">غير معروف</string>
+    <string name="chart_total_records">إجمالي السجلات</string>
+    <string name="record_for_date">سجل لـ %s</string>
+    <string name="save_record">حفظ السجل</string>
+    <string name="male_health_trend">اتجاهات الصحة</string>
+    <string name="male_health_description">تحليل الدورة غير متاح للمستخدمين الذكور. يتم عرض البيانات الصحية العامة أدناه.</string>
+    <string name="steps_overview">نظرة عامة على الخطوات</string>
+    <string name="steps_today">خطوات اليوم</string>
+    <string name="steps_weekly_avg_label">متوسط 7 أيام</string>
+    <string name="steps_record_days">الأيام المسجلة</string>
+    <string name="steps_weekly_trend_label">اتجاه الخطوات لـ 7 أيام</string>
+    <string name="steps_title">تتبع الخطوات</string>
+    <string name="steps_daily_goal">الهدف اليومي</string>
+    <string name="steps_update_goal">تحديث الهدف</string>
+    <string name="steps_this_week">هذا الأسبوع</string>
+    <string name="steps_total">الإجمالي</string>
+    <string name="steps_average">المتوسط</string>
+    <string name="steps_days_label">أيام</string>
+    <string name="steps_weekly_trend">الاتجاه الأسبوعي</string>
+    <string name="steps_goal_format">%d خطوة</string>
+    <string name="steps_weekly_avg_format">المتوسط الأسبوعي %d خطوة/يوم</string>
+    <string name="steps_history_title">سجل الخطوات</string>
+    <string name="steps_tab_week">أسبوع</string>
+    <string name="steps_tab_month">شهر</string>
+    <string name="steps_tab_year">سنة</string>
+    <string name="steps_tab_all">الكل</string>
+    <string name="steps_30d_total">إجمالي 30 يوم</string>
+    <string name="steps_avg">المتوسط اليومي</string>
+    <string name="steps_best">أفضل يوم</string>
+    <string name="steps_weekly_label">توزيع أسبوعي</string>
+    <string name="steps_daily_trend">الاتجاه اليومي</string>
+    <string name="steps_monthly_label">توزيع شهري</string>
+    <string name="steps_total_label">إجمالي الخطوات</string>
+    <string name="steps_period_total">إجمالي الفترة</string>
+    <string name="steps_weekly_avg">المتوسط الأسبوعي</string>
+    <string name="steps_monthly_avg">المتوسط الشهري</string>
+    <string name="steps_best_month">أفضل شهر</string>
+    <string name="steps_tab_day">يوم</string>
+    <string name="steps_label">الخطوات</string>
+    <string name="steps_calories_label">السعرات</string>
+    <string name="steps_yearly_label">توزيع سنوي</string>
+    <string name="dashboard_title">لوحة الصحة</string>
+    <string name="dashboard_quick_actions">إجراءات سريعة</string>
+    <string name="dashboard_retry">إعادة المحاولة</string>
+    <string name="dashboard_insights">رؤى صحية</string>
+    <string name="dashboard_insights_empty">سجل المزيد من البيانات الصحية للحصول على رؤى مخصصة</string>
+    <string name="dashboard_period_status">حالة الدورة</string>
+    <string name="dashboard_period_active">الدورة نشطة</string>
+    <string name="dashboard_follicular_phase">الطور الجريبي</string>
+    <string name="dashboard_no_data">لا توجد بيانات</string>
+    <string name="dashboard_today_steps">خطوات اليوم</string>
+    <string name="dashboard_goal_format">الهدف: %d</string>
+    <string name="dashboard_cycle_day_format">اليوم %1$d</string>
+    <string name="dashboard_record_period">تسجيل الدورة</string>
+    <string name="dashboard_record_steps">تسجيل الخطوات</string>
+    <string name="dashboard_record_health">تحليل الصحة</string>
+    <string name="gender_welcome">مرحباً بك في TianshangHealth</string>
+    <string name="gender_instruction">يرجى اختيار جنسك لتتبع صحي مخصص</string>
+    <string name="gender_male">ذكر</string>
+    <string name="gender_male_desc">يخفي ميزات تتبع الدورة</string>
+    <string name="gender_female">أنثى</string>
+    <string name="gender_female_desc">يعرض جميع الميزات بما في ذلك تتبع الدورة</string>
+    <string name="gender_other">آخر</string>
+    <string name="gender_other_desc">يعرض جميع الميزات</string>
+    <string name="gender_footnote">يمكنك تغيير هذا لاحقاً في الإعدادات</string>
+    <string name="gender_setting_title">الجنس</string>
+    <string name="gender_setting_description">غير جنسك لضبط وحدات الميزات</string>
+    <string name="select_gender">اختيار الجنس</string>
+    <string name="app_lock_health_data_protected">بياناتك الصحية محمية</string>
+    <string name="app_lock_set_password_title">تعيين كلمة المرور</string>
+    <string name="app_lock_password_label">كلمة المرور</string>
+    <string name="app_lock_confirm_password_label">تأكيد كلمة المرور</string>
+    <string name="app_lock_enter_password_title">إدخال كلمة المرور</string>
+    <string name="app_lock_use_biometric">استخدام القياسات الحيوية</string>
+    <string name="terms_privacy_title">شروط الخدمة وسياسة الخصوصية</string>
+    <string name="terms_service_title">شروط الخدمة</string>
+    <string name="privacy_policy_title">سياسة الخصوصية</string>
+    <string name="terms_service_declaration">1. إعلان الخدمة\n\nTianshangHealth هو تطبيق شامل لتتبع الصحة يضع خصوصية المستخدم وأمن البيانات في المقام الأول. يتم تخزين جميع البيانات محلياً على جهازك بتشفير قوي.\n\n2. خصوصية البيانات\n\nنحن لا نجمع أو نرفع أو نشارك أي من بياناتك الصحية الشخصية. يعمل التطبيق بالكامل دون اتصال بالإنترنت دون أذونات شبكة.\n\n3. مسؤولية المستخدم\n\nأنت مسؤول عن دقة البيانات الصحية التي تدخلها. التوقعات والتحليلات المقدمة هي للإشارة فقط ولا تشكل استشارة طبية.\n\n4. أمان البيانات\n\nبياناتك محمية بتشفير SQLCipher AES-256. تتم إدارة مفتاح التشفير من خلال Android Keystore لأمان على مستوى الأجهزة.</string>
+    <string name="privacy_policy_body">1. المبدأ الأساسي: توطين البيانات\n\nجميع بياناتك الصحية، بما في ذلك الدورات الشهرية والأعراض والمقاييس الصحية الأخرى، يتم تخزينها فقط في قاعدة البيانات المشفرة على جهازك.\n\n2. المعلومات التي يتم جمعها\n\nنقوم فقط بمعالجة المعلومات التي تدخلها يدوياً في التطبيق. لا يتم جمع بيانات تلقائي.\n\n3. تشفير البيانات\n\nيتم تشفير جميع البيانات الحساسة باستخدام SQLCipher مع AES-256. يتم تخزين مفتاح التشفير بشكل آمن في Android Keystore.\n\n4. لا وصول لأطراف ثالثة\n\nنحن لا نستخدم أي خدمات تحليلات أو إعلانات أو تتبع من أطراف ثالثة. بياناتك لا تغادر جهازك أبداً.\n\n5. تصدير البيانات\n\nيمكنك تصدير بياناتك في أي وقت بتنسيقات قياسية (CSV، نسخ احتياطي مشفر). لديك السيطرة الكاملة على بياناتك.\n\n6. حذف البيانات\n\nيمكنك حذف أي أو كل بياناتك في أي وقت. يتم إزالة البيانات المحذوفة بشكل دائم من الجهاز.</string>
+    <!-- Error messages -->
+    <string name="error_unknown">خطأ غير معروف</string>
+    <string name="error_failed_add_record">فشل إضافة السجل</string>
+    <string name="error_failed_update_record">فشل تحديث السجل</string>
+    <string name="error_failed_delete_record">فشل حذف السجل</string>
+    <string name="error_failed_record">فشل التسجيل</string>
+    <string name="error_failed_set_password">فشل تعيين كلمة المرور</string>
+    <string name="error_password_not_set">كلمة المرور غير معينة</string>
+    <string name="error_incorrect_password">كلمة مرور غير صحيحة</string>
+    <string name="error_verification_failed">فشل التحقق</string>
+    <string name="error_failed_load_settings">فشل تحميل الإعدادات</string>
+    <string name="error_failed_update_settings">فشل تحديث الإعدادات</string>
+    <string name="error_failed_save_gender">فشل حفظ الجنس</string>
+    <string name="error_failed_update_goal">فشل تحديث الهدف</string>
+    <string name="error_failed_restore">فشل استعادة السجل</string>
+    <string name="error_failed_to_delete">فشل حذف السجل</string>
+    <string name="error_failed_empty_bin">فشل تفريغ سلة المحذوفات</string>
+    <string name="loading">جارٍ التحميل...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">تذكير الدورة</string>
+    <string name="notification_channel_period_desc">تذكيرات لتتبع الدورة</string>
+    <string name="notification_period_title">تذكير بتتبع الدورة</string>
+    <string name="notification_period_body">لا تنسَ تسجيل بيانات دورتك اليوم!</string>
+    <string name="notification_channel_ovulation">تذكير الإباضة</string>
+    <string name="notification_channel_ovulation_desc">تذكيرات لتتبع الإباضة</string>
+    <string name="notification_ovulation_title">نافذة الإباضة تقترب</string>
+    <string name="notification_ovulation_body">نافذة الخصوبة لديك قادمة قريباً!</string>
+    <string name="notification_channel_pms">تذكير أعراض ما قبل الحيض</string>
+    <string name="notification_channel_pms_desc">تذكيرات لأعراض ما قبل الحيض</string>
+    <string name="notification_pms_title">أعراض ما قبل الحيض متوقعة</string>
+    <string name="notification_pms_body">قد تبدأ أعراض ما قبل الحيض في غضون أيام. اعتني بنفسك!</string>
+    <string name="notification_channel_steps">عداد الخطوات</string>
+    <string name="notification_channel_steps_desc">إشعار خدمة عداد الخطوات</string>
+    <string name="notification_steps_body">خطوات اليوم: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">لوحة البيانات</string>
+    <string name="nav_period">الدورة</string>
+    <string name="nav_fitness">اللياقة</string>
+    <string name="nav_analysis">التحليل</string>
+    <string name="nav_profile">الملف الشخصي</string>
+
+    <!-- Backup and CSV strings -->
+    <string name="csv_header">تاريخ البداية,تاريخ النهاية,مستوى التدفق,مستوى الألم,ملاحظات</string>
+    <string name="backup_exported_success">تم تصدير النسخ الاحتياطي بنجاح</string>
+    <string name="import_success_format">تم استيراد %d سجل بنجاح</string>
+    <string name="csv_exported_success">تم تصدير CSV بنجاح</string>
+    <string name="csv_export_failed">فشل تصدير CSV</string>
+    <string name="password_export_title">تشفير النسخ الاحتياطي</string>
+    <string name="password_import_title">فك تشفير النسخ الاحتياطي</string>
+    <string name="password_export_desc">أدخل كلمة مرور لتشفير ملف النسخ الاحتياطي.</string>
+    <string name="password_import_desc">أدخل كلمة المرور المستخدمة لتشفير ملف النسخ الاحتياطي هذا.</string>
+    <string name="password_label">كلمة المرور</string>
+    <string name="proceed">متابعة</string>
+    <string name="password_short_error">كلمة المرور قصيرة جداً</string>
+    <string name="password_mismatch_error">كلمتا المرور غير متطابقتين</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">الدورة نشطة</string>
+    <string name="insight_follicular_phase">الطور الجريبي</string>
+    <string name="insight_luteal_phase">الطور الأصفر</string>
+    <string name="insight_cycle_day">يوم الدورة %d</string>
+    <string name="insight_steps_stable_title">نشاط مستقر طوال الدورة</string>
+    <string name="insight_steps_stable_desc">عدد خطواتك يظل ثابتاً عبر مراحل الدورة، عادة تمرين جيدة.</string>
+    <string name="insight_mood_drop_title">انخفاض المزاج في الطور الأصفر</string>
+    <string name="insight_mood_drop_desc">متوسط درجة المزاج أقل في الطور الأصفر، فكر في إدارة المزاج</string>
+    <string name="insight_mood_rise_title">مزاج أفضل في الطور الأصفر</string>
+    <string name="insight_mood_rise_desc">متوسط درجة المزاج أعلى في الطور الأصفر، أنت تقوم بعمل رائع</string>
+    <string name="insight_sleep_drop_title">انخفاض جودة النوم في الطور الأصفر</string>
+    <string name="insight_sleep_drop_desc">تنخفض جودة النوم خلال الطور الأصفر، جرب تمارين الاسترخاء</string>
+    <string name="insight_sleep_rise_title">نوم أفضل في الطور الأصفر</string>
+    <string name="insight_sleep_rise_desc">جودة النوم أعلى في الطور الأصفر، حافظ على الروتين الجيد</string>
+    <string name="insight_stress_period_title">إجهاد أعلى أثناء الدورة</string>
+    <string name="insight_stress_period_desc">مستويات الإجهاد أعلى بمقدار %s نقطة أثناء الدورة، فكر في تقليل الأنشطة المكثفة</string>
+    <string name="insight_mood_today_low_title">مزاج منخفض اليوم</string>
+    <string name="insight_mood_today_low_desc">درجة مزاجك منخفضة اليوم، جرب القيام بشيء تستمتع به</string>
+    <string name="insight_stress_today_high_title">إجهاد مرتفع اليوم</string>
+    <string name="insight_stress_today_high_desc">مستويات الإجهاد مرتفعة اليوم، جرب التنفس العميق أو التأمل</string>
+    <string name="insight_sleep_last_night_low_title">نوم سيئ الليلة الماضية</string>
+    <string name="insight_sleep_last_night_low_desc">جودة النوم كانت منخفضة الليلة الماضية، حاول الذهاب إلى الفراش مبكراً الليلة</string>
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">النشاط ينخفض بشكل ملحوظ في الطور الأصفر</string>
+    <string name="insight_luteal_increase">النشاط يزداد في الطور الأصفر</string>
+    <string name="insight_luteal_rest">استرح بشكل مناسب خلال الطور الأصفر، تمارين خفيفة مثل اليوجا موصى بها</string>
+    <string name="insight_luteal_nutrition">زيادة نشاط رائعة، تذكر الحفاظ على التغذية</string>
+    <string name="insight_luteal_activity_low_title">نشاط أقل في الطور الأصفر</string>
+    <string name="insight_luteal_activity_low_desc">انخفضت خطوات الطور الأصفر بنسبة %d%% مقارنة بالطور الجريبي. يوصى بالنشاط الخفيف مثل المشي.</string>
+    <string name="insight_luteal_activity_high_title">نشاط أعلى في الطور الأصفر</string>
+    <string name="insight_luteal_activity_high_desc">زادت خطوات الطور الأصفر بنسبة %d%% مقارنة بالطور الجريبي. تذكر الراحة والحفاظ على التغذية.</string>
+    <string name="insight_activity_stable_title">نشاط ثابت طوال الدورة</string>
+    <string name="insight_activity_stable_desc">تظل أعداد الخطوات ثابتة عبر مراحل الدورة. عادات تمرين جيدة محفوظة.</string>
+    <string name="insight_mood_luteal_drop_title">انخفاض المزاج في الطور الأصفر</string>
+    <string name="insight_mood_luteal_drop_desc">متوسط درجة المزاج أقل بمقدار %s نقطة في الطور الأصفر. فكر في إدارة المزاج.</string>
+    <string name="insight_mood_luteal_rise_title">مزاج أفضل في الطور الأصفر</string>
+    <string name="insight_mood_luteal_rise_desc">متوسط درجة المزاج أعلى بمقدار %s نقطة في الطور الأصفر. أنت تقوم بعمل رائع!</string>
+    <string name="insight_sleep_luteal_drop_title">انخفاض جودة النوم في الطور الأصفر</string>
+    <string name="insight_sleep_luteal_drop_desc">انخفضت جودة النوم بمقدار %s نقطة في الطور الأصفر. جرب تمارين الاسترخاء قبل النوم.</string>
+    <string name="insight_sleep_luteal_rise_title">نوم أفضل في الطور الأصفر</string>
+    <string name="insight_sleep_luteal_rise_desc">جودة النوم أعلى بمقدار %s نقطة في الطور الأصفر. حافظ على الروتين الجيد.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">بيانات غير كافية للتوقع</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">تحديث</string>
+    <string name="recycle_bin_empty_title_short">تفريغ السلة</string>
+    <string name="recycle_bin_period_format">الدورة: %1$s</string>
+    <string name="recycle_bin_to_format">إلى %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">تعيين كلمة المرور</string>
+    <string name="app_lock_confirm_password">تأكيد كلمة المرور</string>
+    <string name="app_lock_set_password_btn">تعيين كلمة المرور</string>
+    <string name="app_lock_unlock_btn">إلغاء القفل</string>
+    <string name="app_lock_enter_password">إدخال كلمة المرور</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels -->
+    <string name="stats_total_records">إجمالي السجلات</string>
+    <string name="stats_total_cycles">إجمالي الدورات</string>
+    <string name="stats_avg_cycle">متوسط الدورة</string>
+    <string name="stats_avg_period">متوسط الحيض</string>
+    <string name="stats_regularity_text">الانتظام</string>
+    <string name="stats_cycle_num">دورة %d</string>
+    <string name="stats_days_suffix">%d يوم</string>
+    <string name="stats_avg_format">المتوسط: %d يوم</string>
+    <string name="stats_no_data">لا توجد بيانات</string>
+    <string name="weight_format">الوزن: %.1f كجم</string>
+    <string name="bmi_format">مؤشر كتلة الجسم %.1f</string>
+    <string name="height_cm_format">%.0f سم</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">يتم تشفير النسخ الاحتياطية باستخدام AES-256-GCM باستخدام كلمة المرور الخاصة بك.</string>
+    <string name="steps_of_goal">من هدف %d</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">د: %1$d° ت: %2$d%% إ: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">أزرق</string>
+    <string name="color_green">أخضر</string>
+    <string name="color_purple">أرجواني</string>
+    <string name="color_orange">برتقالي</string>
+    <string name="color_teal">شرشيري</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">اضغط للتفاصيل</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">جري</string>
+    <string name="exercise_walking">مشي</string>
+    <string name="exercise_cycling">ركوب الدراجات</string>
+    <string name="exercise_swimming">سباحة</string>
+    <string name="exercise_yoga">يوجا</string>
+    <string name="exercise_strength">تدريب القوة</string>
+    <string name="exercise_dance">رقص</string>
+    <string name="exercise_pilates">بيلاتس</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">كرة السلة</string>
+    <string name="exercise_football">كرة القدم</string>
+    <string name="exercise_tennis">تنس</string>
+    <string name="exercise_badminton">ريشة طائرة</string>
+    <string name="exercise_table_tennis">تنس الطاولة</string>
+    <string name="exercise_skipping">نط الحبل</string>
+    <string name="exercise_hiking">المشي لمسافات طويلة</string>
+    <string name="exercise_other">أخرى</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">هذا الأسبوع</string>
+    <string name="fitness_add_workout">إضافة تمرين</string>
+    <string name="fitness_select_type">اختيار نوع التمرين</string>
+    <string name="fitness_duration_minutes">المدة (دقائق)</string>
+    <string name="fitness_calories_label">السعرات الحرارية</string>
+    <string name="fitness_distance_km">المسافة (كم)</string>
+    <string name="fitness_today_workouts">تمارين اليوم</string>
+    <string name="fitness_recent_workouts">التمارين الأخيرة</string>
+    <string name="fitness_empty">لا توجد تمارين مسجلة بعد.\nاضغط + لإضافة أول تمرين.</string>
+    <string name="fitness_minutes_format">%d دقيقة</string>
+    <string name="fitness_calories_format">%d سعرة</string>
+    <string name="fitness_duration">المدة</string>
+    <string name="fitness_calories">السعرات</string>
+    <string name="fitness_workouts">التمارين</string>
+    <string name="fitness_km_unit">كم</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">تعطيل تحسين البطارية</string>
+    <string name="steps_battery_desc">قد يوقف تحسين البطارية خدمة عداد الخطوات ويؤثر على تتبع الخطوات.</string>
+    <string name="steps_battery_action">الذهاب إلى الإعدادات</string>
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">إعدادات %s</string>
+    <string name="steps_auto_start_settings">إعدادات التشغيل التلقائي</string>
+    <string name="steps_battery_settings">إعدادات البطارية</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">ملخص الطاقة</string>
+    <string name="energy_today">اليوم</string>
+    <string name="energy_this_week">هذا الأسبوع</string>
+    <string name="energy_steps">الخطوات</string>
+    <string name="energy_workouts">التمارين</string>
+    <string name="energy_total">الإجمالي</string>
+    <string name="energy_workouts_summary">%1$d تمرين · %2$d دقيقة</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">مقاييس الجسم</string>
+    <string name="body_metrics_height">الطول (سم)</string>
+    <string name="body_metrics_weight">الوزن (كجم)</string>
+    <string name="body_metrics_saved">تم حفظ مقاييس الجسم</string>
+    <string name="body_metrics_height_error">يرجى إدخال طول صالح (80-250سم)</string>
+    <string name="body_metrics_weight_error">يرجى إدخال وزن صالح (15-350كجم)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">التغذية</string>
+    <string name="nav_nutrition">التغذية</string>
+    <string name="nutrition_add_meal">إضافة وجبة</string>
+    <string name="nutrition_meal_type">نوع الوجبة</string>
+    <string name="nutrition_food_name">اسم الطعام</string>
+    <string name="nutrition_calories">السعرات الحرارية</string>
+    <string name="nutrition_protein">البروتين (غ)</string>
+    <string name="nutrition_carbs">الكربوهيدرات (غ)</string>
+    <string name="nutrition_fat">الدهون (غ)</string>
+    <string name="nutrition_serving_size">حجم الحصة</string>
+    <string name="nutrition_macros">المغذيات الكبرى</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">التغذية اليومية</string>
+    <string name="nutrition_today_meals">وجبات اليوم</string>
+    <string name="nutrition_meals">وجبات</string>
+    <string name="nutrition_weekly_trend">الاتجاه الأسبوعي</string>
+    <string name="nutrition_empty">لا توجد وجبات مسجلة بعد.\nاضغط + لإضافة أول وجبة.</string>
+    <string name="nutrition_error_food_name">يرجى إدخال اسم الطعام</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">الإفطار</string>
+    <string name="meal_lunch">الغداء</string>
+    <string name="meal_dinner">العشاء</string>
+    <string name="meal_snack">وجبة خفيفة</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">الماء</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">انخفاض السعرات الحرارية في الطور الأصفر</string>
+    <string name="insight_nutrition_luteal_low_desc">انخفضت السعرات الحرارية بمقدار %.0f سعرة في الطور الأصفر. حاول الحفاظ على نظام غذائي متوازن.</string>
+    <string name="insight_nutrition_luteal_high_title">ارتفاع السعرات الحرارية في الطور الأصفر</string>
+    <string name="insight_nutrition_luteal_high_desc">زادت السعرات الحرارية بمقدار %.0f سعرة في الطور الأصفر. هذا طبيعي، استمع لجسمك.</string>
+    <string name="insight_nutrition_stable_title">سعرات حرارية مستقرة</string>
+    <string name="insight_nutrition_stable_desc">يظل تناول السعرات الحرارية مستقراً عبر مراحل الدورة. عمل رائع!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">هل نسيت الرقم السري؟</string>
+    <string name="app_lock_change_pin">تغيير الرقم السري</string>
+    <string name="app_lock_current_pin">الرقم السري الحالي</string>
+    <string name="app_lock_new_pin_label">الرقم السري الجديد</string>
+    <string name="app_lock_recovery_title">إعادة تعيين قفل التطبيق</string>
+    <string name="app_lock_recovery_desc">تحقق من هويتك لإعادة تعيين قفل التطبيق</string>
+    <string name="lock_30s">30 ثانية</string>
+    <string name="lock_1min">دقيقة واحدة</string>
+    <string name="lock_5min">5 دقائق</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">النوم</string>
+    <string name="sleep_title">تتبع النوم</string>
+    <string name="sleep_record_title">تسجيل النوم</string>
+    <string name="sleep_hours">ساعات النوم</string>
+    <string name="sleep_deep_hours">النوم العميق</string>
+    <string name="sleep_quality">جودة النوم</string>
+    <string name="sleep_quality_format">%d نجمة</string>
+    <string name="sleep_history">سجل النوم</string>
+    <string name="sleep_no_data">لا توجد بيانات نوم مسجلة بعد</string>
+    <string name="sleep_today_status">نوم اليوم</string>
+    <string name="sleep_hours_format">%s ساعة</string>
+    <string name="sleep_deep_hours_format">عميق: %s ساعة</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">الحيض</string>
+    <string name="phase_follicular">الجريبي</string>
+    <string name="phase_ovulatory">الإباضة</string>
+    <string name="phase_luteal">الأصفر</string>
+    <string name="nutrition_cycle_guidance">إرشادات التغذية حسب الدورة</string>
+    <string name="nutrition_focus_nutrients">المغذيات الرئيسية</string>
+    <string name="nutrition_recommended_foods">الأطعمة الموصى بها</string>
+    <string name="nutrition_limit_foods">الحد من</string>
+
+    <plurals name="days_count">
+        <item quantity="zero">%d يوم</item>
+        <item quantity="one">%d يوم</item>
+        <item quantity="two">%d يومين</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d يوماً</item>
+        <item quantity="other">%d يوم</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">الرجاء إدخال مدة صالحة</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">d/M</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">مسح</string>
+    <string name="edit">تعديل</string>
+    <string name="exact_date_mode">تاريخ محدد</string>
+    <string name="profile_dob_not_set">غير مضبوط</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">السنة فقط</string>
+    <string name="year_picker_title">اختر سنة الميلاد</string>
+
+    <!-- Analysis -->
+    <string name="analysis_no_data">بيانات غير كافية. سجل البيانات الصحية أولاً.</string>
+    <string name="analysis_section_suggestions">اقتراحات ذكية</string>
+    <string name="analysis_section_nutrition">تحليل التغذية</string>
+    <string name="analysis_section_calorie_balance">توازن السعرات</string>
+    <string name="analysis_section_exercise">تحليل التمرين</string>
+    <string name="analysis_section_sleep">تحليل النوم</string>
+    <string name="analysis_section_phase">ارتباط الدورة</string>
+    <string name="analysis_avg_daily_calories">المتوسط اليومي</string>
+    <string name="analysis_protein">البروتين</string>
+    <string name="analysis_carbs">الكربوهيدرات</string>
+    <string name="analysis_fat">الدهون</string>
+    <string name="analysis_nutrient_ratio">نسبة المغذيات</string>
+    <string name="analysis_avg_water_format">متوسط الماء: %.0f مل</string>
+    <string name="analysis_avg_intake">متوسط الاستهلاك</string>
+    <string name="analysis_exercise_burned">حرق التمارين</string>
+    <string name="analysis_weekly_total_minutes">المجموع الأسبوعي</string>
+    <string name="analysis_daily_avg_minutes">المتوسط اليومي</string>
+    <string name="analysis_calories_burned">السعرات المحروقة</string>
+    <string name="analysis_exercise_type_distribution">توزيع أنواع التمارين</string>
+    <string name="analysis_avg_sleep_hours">متوسط المدة</string>
+    <string name="analysis_quality_score">درجة الجودة</string>
+    <string name="analysis_daily_sleep_hours">ساعات النوم اليومية</string>
+    <string name="analysis_mood">المزاج</string>
+    <string name="analysis_stress">الإجهاد</string>
+    <string name="analysis_daily_net_calories">صافي السعرات اليومية (مع طاقة الراحة)</string>
+
+    <!-- Health Patterns -->
+    <string name="pattern_exhaustion_title">تم اكتشاف الإرهاق البدني</string>
+    <string name="pattern_exhaustion_desc">قلة النوم وارتفاع الإجهاد وانخفاض المزاج تشير إلى خطر الإرهاق. فكر في أيام راحة.</string>
+    <string name="pattern_overtraining_title">خطر الإفراط في التدريب</string>
+    <string name="pattern_overtraining_desc">حجم تمرين عالٍ مع عجز في السعرات وقلة نوم. انتبه للإصابة.</string>
+    <string name="pattern_sedentary_mood_title">خمول + مزاج منخفض</string>
+    <string name="pattern_sedentary_mood_desc">عدد خطوات منخفض جداً مع مزاج منخفض. نزهة قصيرة قد تساعد.</string>
+    <string name="pattern_dehydration_stress_title">جفاف + إجهاد</string>
+    <string name="pattern_dehydration_stress_desc">ماء قليل ومستويات إجهاد عالية. الترطيب يدعم المرونة.</string>
+    <string name="pattern_positive_loop_title">حلقة صحية إيجابية</string>
+    <string name="pattern_positive_loop_desc">نوم جيد ونشاط عالٍ ومزاج إيجابي يعزز بعضهم البعض. استمر!</string>
+
+    <!-- Report -->
+    <string name="report_title">تقرير صحي</string>
+    <string name="report_description">قم بإنشاء تقرير صحي شامل بناءً على بياناتك المسجلة. يتم إنشاء التقرير محلياً على جهازك ويمكن مشاركته كملف PDF.</string>
+    <string name="report_period">فترة التقرير: آخر 30 يوماً</string>
+    <string name="report_includes">يشمل: سجلات الدورة والخطوات والنوم والتغذية والرؤى الصحية</string>
+    <string name="report_generate">إنشاء تقرير</string>
+    <string name="report_generating">جارٍ إنشاء تقرير PDF...</string>
+    <string name="report_success">تم إنشاء التقرير بنجاح!</string>
+    <string name="report_share">مشاركة التقرير الصحي</string>
+    <string name="report_share_button">مشاركة</string>
+    <string name="report_generate_new">إنشاء جديد</string>
+    <string name="report_error">خطأ: %s</string>
+    <string name="report_privacy_title">إشعار الخصوصية</string>
+    <string name="report_privacy_body">يتم إنشاء جميع التقارير محلياً على جهازك. لا يتم تحميل أي بيانات صحية إلى أي خادم أو خدمة سحابية. تبقى بياناتك تحت سيطرتك الكاملة.</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_low_calorie_title">انخفاض السعرات الحرارية</string>
+    <string name="suggestion_low_calorie_desc">الاستهلاك اليومي %.0f سعرة أقل من 1800 سعرة الموصى بها. فكر في إضافة كربوهيدرات معقدة ودهون صحية.</string>
+    <string name="suggestion_high_calorie_title">ارتفاع السعرات الحرارية</string>
+    <string name="suggestion_high_calorie_desc">الاستهلاك اليومي %.0f سعرة يتجاوز 2500 سعرة. فكر في تقليل الوجبات الخفيفة وزيادة الخضروات.</string>
+    <string name="suggestion_low_protein_title">انخفاض البروتين</string>
+    <string name="suggestion_low_protein_desc">البروتين اليومي %.0f غ أقل من 50 غ الموصى بها. فكر في البيض والسمك والتوفو.</string>
+    <string name="suggestion_low_water_title">انخفاض شرب الماء</string>
+    <string name="suggestion_low_water_desc">الماء اليومي %.0f مل أقل من الموصى به. استهدف 1500-2000 مل يومياً.</string>
+    <string name="suggestion_high_surplus_title">فائض سعرات مرتفع</string>
+    <string name="suggestion_high_surplus_desc">الفائض اليومي %.0f سعرة. إذا كان فقدان الوزن هدفك، فكر في زيادة التمرين.</string>
+    <string name="suggestion_high_deficit_title">عجز سعرات كبير</string>
+    <string name="suggestion_high_deficit_desc">العجز اليومي %.0f سعرة. تأكد من تلبية احتياجاتك الأيضية الأساسية.</string>
+    <string name="suggestion_balanced_title">سعرات متوازنة</string>
+    <string name="suggestion_balanced_desc">الاستهلاك والإنفاق متوازنان. استمر!</string>
+    <string name="suggestion_low_exercise_title">نشاط رياضي منخفض</string>
+    <string name="suggestion_low_exercise_desc">التمرين الأسبوعي %d دقيقة أقل من توصية منظمة الصحة العالمية البالغة 150 دقيقة.</string>
+    <string name="suggestion_exercise_met_title">تحقق هدف التمرين</string>
+    <string name="suggestion_exercise_met_desc">التمرين الأسبوعي %d دقيقة يلبي توصية منظمة الصحة العالمية!</string>
+    <string name="suggestion_exercise_variety_title">تنوع التمارين مطلوب</string>
+    <string name="suggestion_exercise_variety_desc">جرب أنواعاً مختلفة من التمارين (كارديو + قوة + مرونة) للياقة شاملة.</string>
+    <string name="suggestion_low_sleep_title">نوم قليل</string>
+    <string name="suggestion_low_sleep_desc">النوم اليومي %.1f ساعة أقل من 7-9 ساعات الموصى بها. جرب جدولاً منتظماً.</string>
+    <string name="suggestion_high_sleep_title">نوم مفرط</string>
+    <string name="suggestion_high_sleep_desc">النوم اليومي %.1f ساعة يتجاوز 9 ساعات. النوم الطويل قد يشير إلى الإرهاق.</string>
+    <string name="suggestion_low_deep_sleep_title">نوم عميق قليل</string>
+    <string name="suggestion_low_deep_sleep_desc">نسبة النوم العميق فقط %.0f%%. تجنب الكافيين قبل النوم واجعل الغرفة مظلمة.</string>
+    <string name="suggestion_low_sleep_quality_title">جودة نوم منخفضة</string>
+    <string name="suggestion_low_sleep_quality_desc">درجة جودة النوم %.1f/5. جرب التأمل أو حمام دافئ قبل النوم.</string>
+    <string name="suggestion_luteal_sleep_title">تغير النوم في الطور الأصفر</string>
+    <string name="suggestion_luteal_sleep_desc">انخفض النوم في الطور الأصفر بمقدار %.1f ساعة مقارنة بالطور الجريبي. تغير هرموني طبيعي.</string>
+
+    <!-- Nutrition Cycle Guidance -->
+    <string name="nutrition_menstrual_advice">ركّز على الأطعمة الغنية بالحديد لتعويض فقدان الدم. المغنيسيوم يساعد في تقليل التقلصات. حافظ على الترطيب الجيد.</string>
+    <string name="nutrition_menstrual_nutrients">الحديد \u00B7 المغنيسيوم \u00B7 أوميغا-3 \u00B7 فيتامين ب12</string>
+    <string name="nutrition_menstrual_foods">الخضروات الورقية \u00B7 اللحوم الحمراء \u00B7 الأسماك الدهنية \u00B7 الشوكولاتة الداكنة \u00B7 المكسرات</string>
+    <string name="nutrition_menstrual_limit">الوجبات الخفيفة المالحة \u00B7 الكافيين \u00B7 الألبان</string>
+    <string name="nutrition_follicular_advice">التمثيل الغذائي للطاقة في ارتفاع. وقت رائع لوجبات خفيفة غنية بالمغذيات. ادعم صحة الأمعاء بالبروبيوتيك.</string>
+    <string name="nutrition_follicular_nutrients">الألياف \u00B7 فيتامين سي \u00B7 البروبيوتيك \u00B7 الفولات</string>
+    <string name="nutrition_follicular_foods">التوت \u00B7 الحمضيات \u00B7 الزبادي \u00B7 الشوفان \u00B7 البروكلي</string>
+    <string name="nutrition_follicular_limit">الأطعمة المصنعة \u00B7 السكر الزائد</string>
+    <string name="nutrition_ovulatory_advice">يبلغ الإستروجين ذروته خلال هذه المرحلة. ادعم إزالة السموم من الكبد بالأطعمة الغنية بمضادات الأكسدة. يُنصح باتباع نظام غذائي مضاد للالتهابات.</string>
+    <string name="nutrition_ovulatory_nutrients">مضادات الأكسدة \u00B7 فيتامين سي \u00B7 الزنك \u00B7 فيتامين إي</string>
+    <string name="nutrition_ovulatory_foods">الفلفل الرومي \u00B7 بذور عباد الشمس \u00B7 الدواجن الخالية من الدهون \u00B7 الأفوكادو \u00B7 الشاي الأخضر</string>
+    <string name="nutrition_ovulatory_limit">الكحول \u00B7 الأطعمة المقلية</string>
+    <string name="nutrition_luteal_advice">يرتفع البروجسترون مما قد يزيد الشهية. الكربوهيدرات المعقدة تساعد في تعزيز السيروتونين. قلل الكافيين والملح لتخفيف أعراض ما قبل الحيض.</string>
+    <string name="nutrition_luteal_nutrients">فيتامينات ب \u00B7 الكربوهيدرات المعقدة \u00B7 المغنيسيوم \u00B7 الكالسيوم \u00B7 فيتامين ب6</string>
+    <string name="nutrition_luteal_foods">الحبوب الكاملة \u00B7 الموز \u00B7 الخضروات الورقية \u00B7 البقوليات \u00B7 الشوكولاتة الداكنة</string>
+    <string name="nutrition_luteal_limit">السكر \u00B7 الكافيين \u00B7 الأطعمة المالحة</string>
+
+    <!-- Sleep Trend -->
+    <string name="sleep_trend_legend">\u25CF %1$s — %2$s    \u25B2 ساعات النوم   \u2590 درجة الجودة</string>
+    <string name="sleep_luteal_worse">انخفضت جودة النوم في الطور الأصفر</string>
+    <string name="sleep_luteal_better">تحسنت جودة النوم في الطور الأصفر</string>
+    <string name="sleep_luteal_comparison_worse">متوسط النوم في الطور الأصفر %.1f ساعة، الجريبي %.1f ساعة، انخفض %.1f ساعة</string>
+    <string name="sleep_luteal_comparison_better">متوسط النوم في الطور الأصفر %.1f ساعة، الجريبي %.1f ساعة، تحسن %.1f ساعة</string>
+
+    <!-- PDF Report -->
+    <string name="pdf_health_report">تقرير صحي</string>
+    <string name="pdf_generated">تم الإنشاء: %s</string>
+    <string name="pdf_user_info">المستخدم: %1$s | الجنس: %2$s</string>
+    <string name="pdf_report_period">فترة التقرير: %s</string>
+    <string name="pdf_period_summary">ملخص الدورة</string>
+    <string name="pdf_no_period_records">لا توجد سجلات دورة في الفترة المحددة.</string>
+    <string name="pdf_total_cycles">إجمالي الدورات: %d</string>
+    <string name="pdf_avg_cycle_length">متوسط طول الدورة: %d يوماً</string>
+    <string name="pdf_avg_pain">متوسط مستوى الألم: %.1f / 3</string>
+    <string name="pdf_recent_records">السجلات الأخيرة</string>
+    <string name="pdf_start_date">تاريخ البداية</string>
+    <string name="pdf_end_date">تاريخ النهاية</string>
+    <string name="pdf_flow">التدفق</string>
+    <string name="pdf_pain">الألم</string>
+    <string name="pdf_ongoing">قيد التقدم</string>
+    <string name="pdf_flow_light">خفيف</string>
+    <string name="pdf_flow_medium">متوسط</string>
+    <string name="pdf_flow_heavy">غزير</string>
+    <string name="pdf_pain_none">لا يوجد</string>
+    <string name="pdf_pain_mild">خفيف</string>
+    <string name="pdf_pain_moderate">متوسط</string>
+    <string name="pdf_pain_severe">شديد</string>
+    <string name="pdf_activity_summary">ملخص النشاط</string>
+    <string name="pdf_no_step_data">لا توجد بيانات خطوات متاحة.</string>
+    <string name="pdf_avg_daily_steps">متوسط الخطوات اليومية: %,d</string>
+    <string name="pdf_total_steps">إجمالي الخطوات: %,d</string>
+    <string name="pdf_max_steps">الحد الأقصى للخطوات اليومية: %,d</string>
+    <string name="pdf_total_exercise">إجمالي التمرين: %d دقيقة</string>
+    <string name="pdf_sleep_summary">ملخص النوم</string>
+    <string name="pdf_no_sleep_data">لا توجد بيانات نوم متاحة.</string>
+    <string name="pdf_avg_sleep">متوسط النوم: %.1f ساعة</string>
+    <string name="pdf_avg_sleep_quality">متوسط جودة النوم: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">متوسط النوم العميق: %.1f ساعة</string>
+    <string name="pdf_nutrition_summary">ملخص التغذية</string>
+    <string name="pdf_no_nutrition_data">لا توجد بيانات تغذية متاحة.</string>
+    <string name="pdf_avg_calories">متوسط السعرات اليومية: %.0f سعرة</string>
+    <string name="pdf_avg_water">متوسط شرب الماء: %.0f مل</string>
+    <string name="pdf_avg_protein">متوسط البروتين: %.0f غ</string>
+    <string name="pdf_footer">يتم إنشاء هذا التقرير محلياً على جهازك. لا تغادر أي بيانات هاتفك.</string>
+    <string name="pdf_page">صفحة %d</string>
+    <string name="pdf_app_name">TianshangHealth - الخصوصية أولاً</string>
+
+    <!-- General -->
+    <string name="sleep_auto_calculated">تلقائي: %d ساعة</string>
+    <string name="sleep_bedtime_btn">وقت النوم</string>
+    <string name="sleep_elapsed">%d س %d د مضى</string>
+    <string name="sleep_sleeping">نائم...</string>
+    <string name="sleep_waketime_btn">استيقظ</string>
+    <string name="export_report">تصدير تقرير PDF</string>
+    <string name="insufficient_data">بيانات غير كافية</string>
+    <string name="nutrition_energy_balance">توازن الطاقة</string>
+    <string name="nutrition_resting_energy">الراحة</string>
+    <string name="nutrition_exercise_energy">التمرين</string>
+    <string name="nutrition_total_expenditure">إجمالي الحرق</string>
+    <string name="nutrition_calorie_balance">التوازن</string>
+    <string name="error_onboarding_required">يرجى إكمال إعداد المستخدم أولاً</string>
+    <string name="error_load_failed">فشل التحميل</string>
+    <string name="previous">السابق</string>
+    <string name="next">التالي</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">فشل إنشاء التقرير</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

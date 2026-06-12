@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">ข้อกำหนดในการให้บริการ</string>
+    <string name="privacy_title">นโยบายความเป็นส่วนตัว</string>
+    <string name="accept_terms">ฉันได้อ่านและยอมรับ</string>
+    <string name="app_lock_title">ล็อคแอป</string>
+    <string name="enter_pin">รหัสผ่าน</string>
+    <string name="unlock">ปลดล็อค</string>
+    <string name="invalid_pin">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="app_lock_setup_title">ตั้งรหัสผ่านล็อคแอป</string>
+    <string name="set_pin">ตั้งรหัสผ่าน</string>
+    <string name="confirm_pin">ยืนยันรหัสผ่าน</string>
+    <string name="set_password">ตั้งรหัสผ่าน</string>
+    <string name="pin_empty_error">รหัสผ่านต้องไม่เว้นว่าง</string>
+    <string name="pin_mismatch_error">รหัสผ่านไม่ตรงกัน</string>
+    <string name="pin_length_error">รหัสผ่านต้องมีอย่างน้อย %d ตัวอักษร</string>
+    <string name="calendar_title">ปฏิทิน</string>
+    <string name="current_cycle_day">วันที่ %d ของรอบ</string>
+    <string name="days_until_next_period">ประจำเดือนครั้งต่อไปใน %d วัน</string>
+    <string name="no_period_data">ไม่มีข้อมูลประจำเดือน</string>
+    <string name="tap_date_to_record">แตะเพื่อบันทึก</string>
+    <string name="period">ประจำเดือน</string>
+    <string name="predicted_period">ประจำเดือนที่คาดการณ์</string>
+    <string name="ovulation">การตกไข่</string>
+    <string name="fertile_window">ช่วงเจริญพันธุ์</string>
+    <string name="record_title">บันทึก</string>
+    <string name="start_period">เริ่มประจำเดือน</string>
+    <string name="end_period">สิ้นสุดประจำเดือน</string>
+    <string name="flow_level">ปริมาณ</string>
+    <string name="pain_level">ความเจ็บปวด</string>
+    <string name="symptoms">อาการ</string>
+    <string name="sexual_activity">กิจกรรมทางเพศ</string>
+    <string name="ovulation_test">ทดสอบการตกไข่</string>
+    <string name="cervical_mucus">มูกปากมดลูก</string>
+    <string name="body_temperature">อุณหภูมิร่างกาย</string>
+    <string name="notes">บันทึก</string>
+    <string name="save">บันทึก</string>
+    <string name="analysis_title">วิเคราะห์</string>
+    <string name="cycle_statistics">สถิติ</string>
+    <string name="avg_cycle_length">รอบเฉลี่ย</string>
+    <string name="avg_period_length">ประจำเดือนเฉลี่ย</string>
+    <string name="cycle_regularity">ความสม่ำเสมอ</string>
+    <string name="total_cycles">รอบทั้งหมด</string>
+    <string name="pain_trend">แนวโน้มความเจ็บปวด</string>
+    <string name="symptom_frequency">ความถี่อาการ</string>
+    <string name="predictions">การทำนาย</string>
+    <string name="reminder_title">การแจ้งเตือน</string>
+    <string name="period_reminder">แจ้งเตือนประจำเดือน</string>
+    <string name="ovulation_reminder">แจ้งเตือนการตกไข่</string>
+    <string name="pms_reminder">แจ้งเตือน PMS</string>
+    <string name="profile_title">โปรไฟล์</string>
+    <string name="theme_customization">ธีม</string>
+    <string name="theme_color">สีธีม</string>
+    <string name="app_lock">ล็อคแอป</string>
+    <string name="language">ภาษา</string>
+    <string name="recycle_bin">ถังขยะ</string>
+    <string name="recycle_bin_title">ถังขยะ</string>
+    <string name="backup_restore">สำรองข้อมูล</string>
+    <string name="backup_restore_title">สำรองข้อมูล &amp; กู้คืน</string>
+    <string name="export_backup">ส่งออกสำรอง</string>
+    <string name="import_backup">นำเข้าสำรอง</string>
+    <string name="export_csv">ส่งออก CSV</string>
+    <string name="about">เกี่ยวกับ</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">เพิ่ม</string>
+    <string name="height_cm">ส่วนสูง (ซม.)</string>
+    <string name="weight_kg">น้ำหนัก (กก.)</string>
+    <string name="latest_bmi">BMI ปัจจุบัน</string>
+    <string name="bmi_history">ประวัติ</string>
+    <string name="dark_mode">โหมดมืด</string>
+    <string name="dark_mode_description">เปลี่ยนธีม</string>
+    <string name="no_deleted_records">ไม่มีบันทึกที่ถูกลบ</string>
+    <string name="security_settings">ความปลอดภัย</string>
+    <string name="data_security">ความปลอดภัยของข้อมูล</string>
+    <string name="database_encryption">การเข้ารหัสฐานข้อมูล</string>
+    <string name="encrypted">เข้ารหัสแล้ว (AES-256)</string>
+    <string name="unencrypted">ไม่ได้เข้ารหัส</string>
+    <string name="migrate_to_encrypted">ย้ายไปฐานข้อมูลที่เข้ารหัส</string>
+    <string name="migration_success">การย้ายสำเร็จ! ฐานข้อมูลถูกเข้ารหัสแล้ว</string>
+    <string name="migration_failed">การย้ายล้มเหลว: %s ข้อมูลของคุณถูกกู้คืนเป็นสถานะเดิม</string>
+    <string name="background_lock_delay">ล็อคหลังจากพื้นหลัง</string>
+    <string name="lock_immediately">ทันที</string>
+    <string name="lock_after_seconds">%d วินาที</string>
+    <string name="custom_reminders">การแจ้งเตือนแบบกำหนดเอง</string>
+    <string name="add_custom_reminder">เพิ่มการแจ้งเตือนแบบกำหนดเอง</string>
+    <string name="no_custom_reminders">ยังไม่มีการแจ้งเตือนแบบกำหนดเอง</string>
+    <string name="reminder_title_label">หัวข้อการแจ้งเตือน</string>
+    <string name="reminder_title_required">ต้องระบุหัวข้อ</string>
+    <string name="reminder_message_label">ข้อความ (ไม่จำเป็น)</string>
+    <string name="reminder_date">วันที่แจ้งเตือน</string>
+    <string name="select_time">เลือกเวลา</string>
+    <string name="hue">สี</string>
+    <string name="saturation">ความอิ่ม</string>
+    <string name="lightness">ความสว่าง</string>
+    <string name="apply_color">ใช้สี</string>
+    <string name="custom_color">สีกำหนดเอง</string>
+    <string name="color_preview">ตัวอย่างสี</string>
+    <string name="apply">ใช้</string>
+    <string name="preset_colors">สีที่กำหนดไว้</string>
+    <string name="add_symptom">เพิ่มอาการ</string>
+    <string name="symptom_name">ชื่ออาการ</string>
+    <string name="symptom_name_required">ต้องระบุชื่ออาการ</string>
+    <string name="prediction_explanation">คาดการณ์แบบปรับตัวจาก %1$d รอบล่าสุด (เฉลี่ย %2$s วัน/รอบ, %3$s วัน/ประจำเดือน)</string>
+    <string name="record_date">วันที่บันทึก</string>
+    <string name="select_date">เลือกวันที่</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="delete">ลบ</string>
+    <string name="delete_record">ลบบันทึก</string>
+    <string name="delete_record_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบบันทึกสำหรับวันที่นี้? การดำเนินการนี้ไม่สามารถยกเลิกได้</string>
+    <string name="week_sun">อา.</string>
+    <string name="week_mon">จ.</string>
+    <string name="week_tue">อ.</string>
+    <string name="week_wed">พ.</string>
+    <string name="week_thu">พฤ.</string>
+    <string name="week_fri">ศ.</string>
+    <string name="week_sat">ส.</string>
+    <string name="calendar_today">วันนี้</string>
+    <string name="back">กลับ</string>
+    <string name="symptom_headache">ปวดหัว</string>
+    <string name="symptom_bloating">ท้องอืด</string>
+    <string name="symptom_breast_tenderness">เจ็บเต้านม</string>
+    <string name="symptom_backache">ปวดหลัง</string>
+    <string name="symptom_fatigue">อ่อนเพลีย</string>
+    <string name="symptom_mood_swings">อารมณ์แปรปรวน</string>
+    <string name="symptom_acne">สิว</string>
+    <string name="symptom_increased_appetite">ความอยากอาหารเพิ่มขึ้น</string>
+    <string name="symptom_insomnia">นอนไม่หลับ</string>
+    <string name="symptom_nausea">คลื่นไส้</string>
+    <string name="flow_light">น้อย</string>
+    <string name="flow_medium">ปานกลาง</string>
+    <string name="flow_heavy">มาก</string>
+    <string name="pain_none">ไม่มี</string>
+    <string name="pain_mild">เล็กน้อย</string>
+    <string name="pain_moderate">ปานกลาง</string>
+    <string name="pain_severe">รุนแรง</string>
+    <string name="unit_days">วัน</string>
+    <string name="predicted_period_label">ประจำเดือนที่คาดการณ์: %1$s - %2$s</string>
+    <string name="ovulation_date_label">การตกไข่: %s</string>
+    <string name="confidence_label">ความเชื่อมั่น: %1$s (จาก %2$d รอบ)</string>
+    <string name="reminder_days_before">วันก่อนหน้า</string>
+    <string name="reminder_time">เวลาแจ้งเตือน</string>
+    <string name="enabled">เปิดใช้งาน</string>
+    <string name="disabled">ปิดใช้งาน</string>
+    <string name="color_pink">ชมพู</string>
+    <string name="color_dark_pink">ชมพูเข้ม</string>
+    <string name="color_peach">พีช</string>
+    <string name="color_light_purple">ม่วงอ่อน</string>
+    <string name="color_medium_purple">ม่วงกลาง</string>
+    <string name="unit_cm">ซม.</string>
+    <string name="unit_kg">กก.</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">น้ำหนักต่ำกว่าเกณฑ์</string>
+    <string name="bmi_category_normal">ปกติ</string>
+    <string name="bmi_category_overweight">น้ำหนักเกิน</string>
+    <string name="bmi_category_obese">อ้วน</string>
+    <string name="bmi_standard_note">ตามมาตรฐาน BMI ของจีน</string>
+    <string name="backup_success">สำรองข้อมูลสำเร็จ</string>
+    <string name="backup_fail">สำรองข้อมูลล้มเหลว</string>
+    <string name="restore_success">กู้คืนสำเร็จ</string>
+    <string name="restore_fail">กู้คืนล้มเหลว</string>
+    <string name="export_success">ส่งออกสำเร็จ</string>
+    <string name="export_fail">ส่งออกล้มเหลว</string>
+    <string name="backup_export_desc">ส่งออกฐานข้อมูลเป็นไฟล์สำรอง ZIP</string>
+    <string name="backup_import_desc">กู้คืนข้อมูลจากไฟล์สำรอง</string>
+    <string name="backup_csv_desc">ส่งออกบันทึกเป็นตาราง CSV</string>
+    <string name="deleted_time">ลบเมื่อ: %s</string>
+    <string name="in_progress">กำลังดำเนินการ</string>
+    <string name="terms_countdown">โปรดรอ %d วินาที</string>
+    <string name="auth_failed">การยืนยันตัวตนล้มเหลว: %s</string>
+    <string name="auth_failed_generic">การยืนยันตัวตนล้มเหลว</string>
+    <string name="biometric_init_failed">การเริ่มต้นไบโอเมตริกล้มเหลว</string>
+    <string name="lockout_message">พยายามมากเกินไป โปรดรอ %d วินาที</string>
+    <string name="chart_title_cycle_length_trend">แนวโน้มความยาวรอบ</string>
+    <string name="chart_title_pain_trend">แนวโน้มความเจ็บปวด</string>
+    <string name="chart_title_symptom_distribution">การกระจายอาการ</string>
+    <string name="chart_cycle_label">รอบ %d</string>
+    <string name="chart_cycle_length_label">ความยาวรอบ : %d</string>
+    <string name="chart_pain_level_label">ระดับความเจ็บปวด</string>
+    <string name="regularity_regular">สม่ำเสมอ</string>
+    <string name="regularity_somewhat_regular">ค่อนข้างสม่ำเสมอ</string>
+    <string name="regularity_irregular">ไม่สม่ำเสมอ</string>
+    <string name="regularity_insufficient_data">ข้อมูลไม่เพียงพอ</string>
+    <string name="confidence_high">สูง</string>
+    <string name="confidence_medium">ปานกลาง</string>
+    <string name="confidence_low">ต่ำ</string>
+    <string name="confidence_insufficient">ข้อมูลไม่เพียงพอ</string>
+    <string name="analysis_no_data_title">ยังไม่มีข้อมูล</string>
+    <string name="analysis_no_data_hint">เริ่มบันทึกประจำเดือนของคุณเพื่อดูการวิเคราะห์และการทำนายที่นี่</string>
+    <string name="section_appearance">รูปลักษณ์</string>
+    <string name="section_health">สุขภาพ</string>
+    <string name="section_data">ข้อมูล</string>
+    <string name="section_other">อื่น ๆ</string>
+    <string name="open">เปิด</string>
+    <string name="retry">ลองอีกครั้ง</string>
+    <string name="profile_theme_description">ปรับแต่งสีแอป</string>
+    <string name="profile_language_description">เปลี่ยนภาษาแอป</string>
+    <string name="profile_bmi_description">ติดตามดัชนีมวลกายของคุณ</string>
+    <string name="profile_app_lock_description">ต้องยืนยันตัวตนเพื่อเปิดแอป</string>
+    <string name="screenshot_protection_title">การป้องกันภาพหน้าจอ</string>
+    <string name="screenshot_protection_description">ป้องกันการจับภาพหน้าจอและการบันทึกหน้าจอ</string>
+    <string name="profile_backup_description">สำรองข้อมูลและกู้คืนข้อมูลทั้งหมดแบบเข้ารหัส</string>
+    <string name="profile_recycle_bin_description">ดูและกู้คืนบันทึกที่ถูกลบ</string>
+    <string name="profile_version">เวอร์ชัน 1.0.0</string>
+    <string name="profile_app_description">แอปติดตามสุขภาพที่ครอบคลุมโดยให้ความสำคัญกับความเป็นส่วนตัว</string>
+    <string name="custom_theme">ธีมกำหนดเอง</string>
+    <string name="language_description">เลือกภาษาที่คุณต้องการ แอปจะรีสตาร์ทเพื่อใช้การเปลี่ยนแปลง</string>
+    <string name="language_changed_restart">เปลี่ยนภาษาแล้ว กำลังรีสตาร์ท&#8230;</string>
+    <string name="bmi_empty_text">ยังไม่มีบันทึกน้ำหนัก เพิ่มรายการน้ำหนักแรกของคุณ</string>
+    <string name="save_height">บันทึกส่วนสูง</string>
+    <string name="bmi_category_label">หมวดหมู่</string>
+    <string name="height_label">ส่วนสูง</string>
+    <string name="update_height">อัปเดตส่วนสูง</string>
+    <string name="add_weight_record_title">เพิ่มบันทึกน้ำหนัก</string>
+    <string name="add_weight_record_text">ป้อนน้ำหนักของคุณสำหรับวันนี้</string>
+    <string name="recycle_bin_description">บันทึกที่ถูกลบจะถูกเก็บไว้ 30 วันก่อนลบถาวร</string>
+    <string name="recycle_bin_empty">ถังขยะว่าง</string>
+    <string name="recycle_bin_empty_title">ล้างถังขยะ</string>
+    <string name="recycle_bin_empty_confirm">บันทึกที่ถูกลบทั้งหมดจะถูกลบถาวร การดำเนินการนี้ไม่สามารถยกเลิกได้</string>
+    <string name="recycle_bin_empty_action">ล้าง</string>
+    <string name="recycle_bin_restore">กู้คืน</string>
+    <string name="recycle_bin_delete_forever">ลบถาวร</string>
+    <string name="add_record">เพิ่มบันทึก</string>
+    <string name="period_tracking_title">ติดตามประจำเดือน</string>
+    <string name="prediction_explanation_title">คำอธิบายการทำนาย</string>
+    <string name="reminder_period_desc">รับการแจ้งเตือนก่อนประจำเดือนมา</string>
+    <string name="reminder_ovulation_desc">รับการแจ้งเตือนก่อนการตกไข่</string>
+    <string name="reminder_pms_desc">รับการแจ้งเตือนเกี่ยวกับอาการ PMS</string>
+    <string name="cycle_status_title">สถานะรอบ</string>
+    <string name="cycle_day_label">วันของรอบ</string>
+    <string name="days_until_label">วันจนถึง</string>
+    <string name="period_active_text">ประจำเดือนกำลังมา</string>
+    <string name="next_period_label">ประจำเดือนครั้งต่อไป</string>
+    <string name="not_enough_data">ข้อมูลไม่เพียงพอ</string>
+    <string name="cycle_length_label">ความยาวรอบ</string>
+    <string name="chart_no_data">ข้อมูลไม่เพียงพอที่จะแสดงแผนภูมิ</string>
+    <string name="chart_no_pain_data">ไม่มีข้อมูลความเจ็บปวดที่บันทึกไว้</string>
+    <string name="chart_pain_unknown">ไม่ทราบ</string>
+    <string name="chart_total_records">บันทึกทั้งหมด</string>
+    <string name="record_for_date">บันทึกสำหรับ %s</string>
+    <string name="save_record">บันทึก</string>
+    <string name="male_health_trend">แนวโน้มสุขภาพ</string>
+    <string name="male_health_description">การวิเคราะห์ประจำเดือนไม่สามารถใช้ได้กับผู้ใช้ชาย แสดงข้อมูลสุขภาพทั่วไปด้านล่าง</string>
+    <string name="steps_overview">ภาพรวมก้าว</string>
+    <string name="steps_today">ก้าววันนี้</string>
+    <string name="steps_weekly_avg_label">ค่าเฉลี่ยก้าว 7 วัน</string>
+    <string name="steps_record_days">วันที่บันทึก</string>
+    <string name="steps_weekly_trend_label">แนวโน้มก้าว 7 วัน</string>
+    <string name="steps_title">ติดตามก้าว</string>
+    <string name="steps_daily_goal">เป้าหมายรายวัน</string>
+    <string name="steps_update_goal">อัปเดตเป้าหมาย</string>
+    <string name="steps_this_week">สัปดาห์นี้</string>
+    <string name="steps_total">ทั้งหมด</string>
+    <string name="steps_average">เฉลี่ย</string>
+    <string name="steps_days_label">วัน</string>
+    <string name="steps_weekly_trend">แนวโน้มรายสัปดาห์</string>
+    <string name="steps_goal_format">%d ก้าว</string>
+    <string name="steps_weekly_avg_format">ค่าเฉลี่ยรายสัปดาห์ %d ก้าว/วัน</string>
+    <string name="steps_history_title">ประวัติก้าว</string>
+    <string name="steps_tab_week">สัปดาห์</string>
+    <string name="steps_tab_month">เดือน</string>
+    <string name="steps_tab_year">ปี</string>
+    <string name="steps_tab_all">ทั้งหมด</string>
+    <string name="steps_30d_total">รวม 30 วัน</string>
+    <string name="steps_avg">เฉลี่ยรายวัน</string>
+    <string name="steps_best">วันที่ดีที่สุด</string>
+    <string name="steps_weekly_label">รายละเอียดรายสัปดาห์</string>
+    <string name="steps_daily_trend">แนวโน้มรายวัน</string>
+    <string name="steps_monthly_label">รายละเอียดรายเดือน</string>
+    <string name="steps_total_label">ก้าวทั้งหมด</string>
+    <string name="steps_period_total">รวมรอบ</string>
+    <string name="steps_weekly_avg">เฉลี่ยรายสัปดาห์</string>
+    <string name="steps_monthly_avg">เฉลี่ยรายเดือน</string>
+    <string name="steps_best_month">เดือนที่ดีที่สุด</string>
+    <string name="steps_tab_day">วัน</string>
+    <string name="steps_label">ก้าว</string>
+    <string name="steps_calories_label">แคลอรี่</string>
+    <string name="steps_yearly_label">รายละเอียดรายปี</string>
+    <string name="dashboard_title">แดชบอร์ดสุขภาพ</string>
+    <string name="dashboard_quick_actions">การดำเนินการด่วน</string>
+    <string name="dashboard_retry">ลองอีกครั้ง</string>
+    <string name="dashboard_insights">ข้อมูลเชิงลึกสุขภาพ</string>
+    <string name="dashboard_insights_empty">บันทึกข้อมูลสุขภาพเพิ่มเติมเพื่อรับข้อมูลเชิงลึกส่วนบุคคล</string>
+    <string name="dashboard_period_status">สถานะประจำเดือน</string>
+    <string name="dashboard_period_active">ประจำเดือนกำลังมา</string>
+    <string name="dashboard_follicular_phase">ระยะฟอลลิคูลาร์</string>
+    <string name="dashboard_no_data">ไม่มีข้อมูล</string>
+    <string name="dashboard_today_steps">ก้าววันนี้</string>
+    <string name="dashboard_goal_format">เป้าหมาย: %d</string>
+    <string name="dashboard_cycle_day_format">วันที่ %1$d</string>
+    <string name="dashboard_record_period">บันทึกประจำเดือน</string>
+    <string name="dashboard_record_steps">บันทึกก้าว</string>
+    <string name="dashboard_record_health">วิเคราะห์สุขภาพ</string>
+    <string name="gender_welcome">ยินดีต้อนรับสู่ TianshangHealth</string>
+    <string name="gender_instruction">โปรดเลือกเพศของคุณเพื่อการติดตามสุขภาพส่วนบุคคล</string>
+    <string name="gender_male">ชาย</string>
+    <string name="gender_male_desc">ซ่อนฟีเจอร์ติดตามประจำเดือน</string>
+    <string name="gender_female">หญิง</string>
+    <string name="gender_female_desc">แสดงฟีเจอร์ทั้งหมดรวมถึงการติดตามประจำเดือน</string>
+    <string name="gender_other">อื่น ๆ</string>
+    <string name="gender_other_desc">แสดงฟีเจอร์ทั้งหมด</string>
+    <string name="gender_footnote">คุณสามารถเปลี่ยนได้ภายหลังในการตั้งค่า</string>
+    <string name="gender_setting_title">เพศ</string>
+    <string name="gender_setting_description">เปลี่ยนเพศของคุณเพื่อปรับโมดูลฟีเจอร์</string>
+    <string name="select_gender">เลือกเพศ</string>
+    <string name="app_lock_health_data_protected">ข้อมูลสุขภาพของคุณได้รับการปกป้อง</string>
+    <string name="app_lock_set_password_title">ตั้งรหัสผ่าน</string>
+    <string name="app_lock_password_label">รหัสผ่าน</string>
+    <string name="app_lock_confirm_password_label">ยืนยันรหัสผ่าน</string>
+    <string name="app_lock_enter_password_title">ป้อนรหัสผ่าน</string>
+    <string name="app_lock_use_biometric">ใช้ไบโอเมตริก</string>
+    <string name="terms_privacy_title">ข้อกำหนดในการให้บริการ &amp; นโยบายความเป็นส่วนตัว</string>
+    <string name="terms_service_title">ข้อกำหนดในการให้บริการ</string>
+    <string name="privacy_policy_title">นโยบายความเป็นส่วนตัว</string>
+    <string name="terms_service_declaration">1. คำประกาศบริการ\n\nTianshangHealth เป็นแอปพลิเคชันติดตามสุขภาพที่ครอบคลุมซึ่งให้ความสำคัญกับความเป็นส่วนตัวและความปลอดภัยของข้อมูลของผู้ใช้ ข้อมูลทั้งหมดถูกจัดเก็บในเครื่องอุปกรณ์ของคุณด้วยการเข้ารหัสที่แข็งแกร่ง\n\n2. ความเป็นส่วนตัวของข้อมูล\n\nเราไม่เก็บรวบรวม อัปโหลด หรือแบ่งปันข้อมูลสุขภาพส่วนบุคคลของคุณ แอปพลิเคชันทำงานแบบออฟไลน์ทั้งหมดโดยไม่มีสิทธิ์เครือข่าย\n\n3. ความรับผิดชอบของผู้ใช้\n\nคุณรับผิดชอบต่อความถูกต้องของข้อมูลสุขภาพที่คุณป้อน การทำนายและการวิเคราะห์ที่ให้ไว้มีไว้เพื่อการอ้างอิงเท่านั้นและไม่ถือเป็นคำแนะนำทางการแพทย์\n\n4. ความปลอดภัยของข้อมูล\n\nข้อมูลของคุณได้รับการปกป้องด้วยการเข้ารหัส SQLCipher AES-256 คีย์การเข้ารหัสถูกจัดการผ่าน Android Keystore เพื่อความปลอดภัยระดับฮาร์ดแวร์</string>
+    <string name="privacy_policy_body">1. หลักการสำคัญ: ข้อมูลในเครื่อง\n\nข้อมูลสุขภาพทั้งหมดของคุณ รวมถึงรอบประจำเดือน อาการ และตัวชี้วัดสุขภาพอื่น ๆ จะถูกจัดเก็บเฉพาะในฐานข้อมูลที่เข้ารหัสบนอุปกรณ์ของคุณเท่านั้น\n\n2. ข้อมูลที่เก็บรวบรวม\n\nเราประมวลผลเฉพาะข้อมูลที่คุณป้อนลงในแอปพลิเคชันด้วยตนเองเท่านั้น ไม่มีการเก็บรวบรวมข้อมูลอัตโนมัติ\n\n3. การเข้ารหัสข้อมูล\n\nข้อมูลที่ละเอียดอ่อนทั้งหมดถูกเข้ารหัสโดยใช้ SQLCipher ด้วยการเข้ารหัส AES-256 คีย์การเข้ารหัสถูกจัดเก็บอย่างปลอดภัยใน Android Keystore\n\n4. ไม่มีการเข้าถึงของบุคคลที่สาม\n\nเราไม่ใช้บริการวิเคราะห์ โฆษณา หรือติดตามของบุคคลที่สาม ข้อมูลของคุณไม่เคยออกจากอุปกรณ์ของคุณ\n\n5. การส่งออกข้อมูล\n\nคุณสามารถส่งออกข้อมูลของคุณได้ตลอดเวลาในรูปแบบมาตรฐาน (CSV, สำรองข้อมูลที่เข้ารหัส) คุณมีควบคุมข้อมูลของคุณอย่างเต็มที่\n\n6. การลบข้อมูล\n\nคุณสามารถลบข้อมูลใด ๆ หรือทั้งหมดของคุณได้ตลอดเวลา ข้อมูลที่ถูกลบจะถูกลบออกจากอุปกรณ์อย่างถาวร</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">ข้อผิดพลาดที่ไม่ทราบสาเหตุ</string>
+    <string name="error_failed_add_record">ไม่สามารถเพิ่มบันทึก</string>
+    <string name="error_failed_update_record">ไม่สามารถอัปเดตบันทึก</string>
+    <string name="error_failed_delete_record">ไม่สามารถลบบันทึก</string>
+    <string name="error_failed_record">ไม่สามารถบันทึก</string>
+    <string name="error_failed_set_password">ไม่สามารถตั้งรหัสผ่าน</string>
+    <string name="error_password_not_set">ไม่ได้ตั้งรหัสผ่าน</string>
+    <string name="error_incorrect_password">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="error_verification_failed">การยืนยันล้มเหลว</string>
+    <string name="error_failed_load_settings">ไม่สามารถโหลดการตั้งค่า</string>
+    <string name="error_failed_update_settings">ไม่สามารถอัปเดตการตั้งค่า</string>
+    <string name="error_failed_save_gender">ไม่สามารถบันทึกเพศ</string>
+    <string name="error_failed_update_goal">ไม่สามารถอัปเดตเป้าหมาย</string>
+    <string name="error_failed_restore">ไม่สามารถกู้คืนบันทึก</string>
+    <string name="error_failed_to_delete">ไม่สามารถลบบันทึก</string>
+    <string name="error_failed_empty_bin">ไม่สามารถล้างถังขยะ</string>
+    <string name="loading">กำลังโหลด...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">แจ้งเตือนประจำเดือน</string>
+    <string name="notification_channel_period_desc">การแจ้งเตือนสำหรับการติดตามประจำเดือน</string>
+    <string name="notification_period_title">แจ้งเตือนการติดตามประจำเดือน</string>
+    <string name="notification_period_body">อย่าลืมบันทึกข้อมูลประจำเดือนของคุณวันนี้!</string>
+    <string name="notification_channel_ovulation">แจ้งเตือนการตกไข่</string>
+    <string name="notification_channel_ovulation_desc">การแจ้งเตือนสำหรับการติดตามการตกไข่</string>
+    <string name="notification_ovulation_title">ช่วงตกไข่กำลังใกล้เข้ามา</string>
+    <string name="notification_ovulation_body">ช่วงเจริญพันธุ์ของคุณกำลังจะมาถึง!</string>
+    <string name="notification_channel_pms">แจ้งเตือน PMS</string>
+    <string name="notification_channel_pms_desc">การแจ้งเตือนสำหรับอาการ PMS</string>
+    <string name="notification_pms_title">คาดว่าอาการ PMS จะมา</string>
+    <string name="notification_pms_body">อาการ PMS อาจเริ่มในอีกไม่กี่วัน ดูแลตัวเองด้วย!</string>
+    <string name="notification_channel_steps">นับก้าว</string>
+    <string name="notification_channel_steps_desc">การแจ้งเตือนบริการนับก้าว</string>
+    <string name="notification_steps_body">ก้าววันนี้: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">แดชบอร์ด</string>
+    <string name="nav_period">ประจำเดือน</string>
+    <string name="nav_fitness">ฟิตเนส</string>
+    <string name="nav_analysis">วิเคราะห์</string>
+    <string name="nav_profile">โปรไฟล์</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">วันที่เริ่ม,วันที่สิ้นสุด,ระดับปริมาณ,ระดับความเจ็บปวด,บันทึก</string>
+    <string name="backup_exported_success">ส่งออกสำรองข้อมูลสำเร็จ</string>
+    <string name="import_success_format">นำเข้า %d บันทึกสำเร็จ</string>
+    <string name="csv_exported_success">ส่งออก CSV สำเร็จ</string>
+    <string name="csv_export_failed">ส่งออก CSV ล้มเหลว</string>
+    <string name="password_export_title">เข้ารหัสสำรองข้อมูล</string>
+    <string name="password_import_title">ถอดรหัสสำรองข้อมูล</string>
+    <string name="password_export_desc">ป้อนรหัสผ่านเพื่อเข้ารหัสไฟล์สำรองข้อมูลของคุณ</string>
+    <string name="password_import_desc">ป้อนรหัสผ่านที่ใช้เข้ารหัสไฟล์สำรองข้อมูลนี้</string>
+    <string name="password_label">รหัสผ่าน</string>
+    <string name="proceed">ดำเนินการ</string>
+    <string name="password_short_error">รหัสผ่านสั้นเกินไป</string>
+    <string name="password_mismatch_error">รหัสผ่านไม่ตรงกัน</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">ประจำเดือนกำลังมา</string>
+    <string name="insight_follicular_phase">ระยะฟอลลิคูลาร์</string>
+    <string name="insight_luteal_phase">ระยะลูเทียล</string>
+    <string name="insight_cycle_day">วันที่ %d ของรอบ</string>
+    <string name="insight_steps_stable_title">กิจกรรมคงที่ตลอดรอบ</string>
+    <string name="insight_steps_stable_desc">จำนวนก้าวของคุณคงที่ตลอดระยะรอบ รักษานิสัยการออกกำลังกายที่ดี</string>
+    <string name="insight_mood_drop_title">อารมณ์ลดลงในระยะลูเทียล</string>
+    <string name="insight_mood_drop_desc">คะแนนอารมณ์เฉลี่ยต่ำกว่าในระยะลูเทียล ควรพิจารณาการจัดการอารมณ์</string>
+    <string name="insight_mood_rise_title">อารมณ์ดีขึ้นในระยะลูเทียล</string>
+    <string name="insight_mood_rise_desc">คะแนนอารมณ์เฉลี่ยสูงกว่าในระยะลูเทียล คุณทำได้ดีมาก</string>
+    <string name="insight_sleep_drop_title">คุณภาพการนอนหลับลดลงในระยะลูเทียล</string>
+    <string name="insight_sleep_drop_desc">คุณภาพการนอนหลับลดลงในช่วงระยะลูเทียล ลองออกกำลังกายผ่อนคลาย</string>
+    <string name="insight_sleep_rise_title">นอนหลับดีขึ้นในระยะลูเทียล</string>
+    <string name="insight_sleep_rise_desc">คุณภาพการนอนหลับสูงขึ้นในระยะลูเทียล รักษากิจวัตรที่ดี</string>
+    <string name="insight_stress_period_title">ความเครียดสูงขึ้นในช่วงประจำเดือน</string>
+    <string name="insight_stress_period_desc">ระดับความเครียดสูงขึ้น %s คะแนนในช่วงประจำเดือน ควรพิจารณาลดกิจกรรมที่หนัก</string>
+    <string name="insight_mood_today_low_title">อารมณ์ต่ำวันนี้</string>
+    <string name="insight_mood_today_low_desc">คะแนนอารมณ์ของคุณต่ำวันนี้ ลองทำสิ่งที่คุณชอบ</string>
+    <string name="insight_stress_today_high_title">ความเครียดสูงวันนี้</string>
+    <string name="insight_stress_today_high_desc">ระดับความเครียดสูงวันนี้ ลองหายใจลึก ๆ หรือทำสมาธิ</string>
+    <string name="insight_sleep_last_night_low_title">นอนหลับไม่ดีเมื่อคืนนี้</string>
+    <string name="insight_sleep_last_night_low_desc">คุณภาพการนอนหลับต่ำเมื่อคืนนี้ ลองเข้านอนเร็วคืนนี้</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">กิจกรรมลดลงอย่างมีนัยสำคัญในระยะลูเทียล</string>
+    <string name="insight_luteal_increase">กิจกรรมเพิ่มขึ้นในระยะลูเทียล</string>
+    <string name="insight_luteal_rest">พักผ่อนอย่างเหมาะสมในช่วงระยะลูเทียล แนะนำการออกกำลังกายเบา ๆ เช่น โยคะ</string>
+    <string name="insight_luteal_nutrition">กิจกรรมเพิ่มขึ้นดีมาก อย่าลืมรักษาโภชนาการ</string>
+    <string name="insight_luteal_activity_low_title">กิจกรรมต่ำในระยะลูเทียล</string>
+    <string name="insight_luteal_activity_low_desc">ก้าวในระยะลูเทียลลดลง %d%% เมื่อเทียบกับระยะฟอลลิคูลาร์ แนะนำกิจกรรมเบา ๆ เช่น การเดิน</string>
+    <string name="insight_luteal_activity_high_title">กิจกรรมสูงในระยะลูเทียล</string>
+    <string name="insight_luteal_activity_high_desc">ก้าวในระยะลูเทียลเพิ่มขึ้น %d%% เมื่อเทียบกับระยะฟอลลิคูลาร์ อย่าลืมพักผ่อนและรักษาโภชนาการ</string>
+    <string name="insight_activity_stable_title">กิจกรรมสม่ำเสมอตลอดรอบ</string>
+    <string name="insight_activity_stable_desc">จำนวนก้าวคงที่ตลอดระยะรอบ รักษานิสัยการออกกำลังกายที่ดี</string>
+    <string name="insight_mood_luteal_drop_title">อารมณ์ลดลงในระยะลูเทียล</string>
+    <string name="insight_mood_luteal_drop_desc">คะแนนอารมณ์เฉลี่ยต่ำกว่า %s คะแนนในระยะลูเทียล ควรพิจารณาการจัดการอารมณ์</string>
+    <string name="insight_mood_luteal_rise_title">อารมณ์ดีขึ้นในระยะลูเทียล</string>
+    <string name="insight_mood_luteal_rise_desc">คะแนนอารมณ์เฉลี่ยสูงกว่า %s คะแนนในระยะลูเทียล คุณทำได้ดีมาก!</string>
+    <string name="insight_sleep_luteal_drop_title">คุณภาพการนอนหลับลดลงในระยะลูเทียล</string>
+    <string name="insight_sleep_luteal_drop_desc">คุณภาพการนอนหลับลดลง %s คะแนนในระยะลูเทียล ลองออกกำลังกายผ่อนคลายก่อนนอน</string>
+    <string name="insight_sleep_luteal_rise_title">นอนหลับดีขึ้นในระยะลูเทียล</string>
+    <string name="insight_sleep_luteal_rise_desc">คุณภาพการนอนหลับสูงขึ้น %s คะแนนในระยะลูเทียล รักษากิจวัตรที่ดี</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">ข้อมูลไม่เพียงพอสำหรับการทำนาย</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">รีเฟรช</string>
+    <string name="recycle_bin_empty_title_short">ล้างถังขยะ</string>
+    <string name="recycle_bin_period_format">ประจำเดือน: %1$s</string>
+    <string name="recycle_bin_to_format">ถึง %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">ตั้งรหัสผ่าน</string>
+    <string name="app_lock_confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="app_lock_set_password_btn">ตั้งรหัสผ่าน</string>
+    <string name="app_lock_unlock_btn">ปลดล็อค</string>
+    <string name="app_lock_enter_password">ป้อนรหัสผ่าน</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">บันทึกทั้งหมด</string>
+    <string name="stats_total_cycles">รอบทั้งหมด</string>
+    <string name="stats_avg_cycle">รอบเฉลี่ย</string>
+    <string name="stats_avg_period">ประจำเดือนเฉลี่ย</string>
+    <string name="stats_regularity_text">ความสม่ำเสมอ</string>
+    <string name="stats_cycle_num">รอบ %d</string>
+    <string name="stats_days_suffix">%d วัน</string>
+    <string name="stats_avg_format">เฉลี่ย: %d วัน</string>
+    <string name="stats_no_data">ไม่มีข้อมูล</string>
+    <string name="weight_format">น้ำหนัก: %.1f กก.</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f ซม.</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">ข้อมูลสำรองถูกเข้ารหัสด้วย AES-256-GCM โดยใช้รหัสผ่านของคุณ</string>
+    <string name="steps_of_goal">จากเป้าหมาย %d</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d\u00B0 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">น้ำเงิน</string>
+    <string name="color_green">เขียว</string>
+    <string name="color_purple">ม่วง</string>
+    <string name="color_orange">ส้ม</string>
+    <string name="color_teal">ทีล</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">แตะเพื่อดูรายละเอียด</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">วิ่ง</string>
+    <string name="exercise_walking">เดิน</string>
+    <string name="exercise_cycling">ปั่นจักรยาน</string>
+    <string name="exercise_swimming">ว่ายน้ำ</string>
+    <string name="exercise_yoga">โยคะ</string>
+    <string name="exercise_strength">ฝึกความแข็งแรง</string>
+    <string name="exercise_dance">เต้นรำ</string>
+    <string name="exercise_pilates">พิลาทิส</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">บาสเกตบอล</string>
+    <string name="exercise_football">ฟุตบอล</string>
+    <string name="exercise_tennis">เทนนิส</string>
+    <string name="exercise_badminton">แบดมินตัน</string>
+    <string name="exercise_table_tennis">ปิงปอง</string>
+    <string name="exercise_skipping">กระโดดเชือก</string>
+    <string name="exercise_hiking">เดินป่า</string>
+    <string name="exercise_other">อื่น ๆ</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">สัปดาห์นี้</string>
+    <string name="fitness_add_workout">เพิ่มการออกกำลังกาย</string>
+    <string name="fitness_select_type">เลือกประเภทการออกกำลังกาย</string>
+    <string name="fitness_duration_minutes">ระยะเวลา (นาที)</string>
+    <string name="fitness_calories_label">แคลอรี่</string>
+    <string name="fitness_distance_km">ระยะทาง (กม.)</string>
+    <string name="fitness_today_workouts">การออกกำลังกายวันนี้</string>
+    <string name="fitness_recent_workouts">การออกกำลังกายล่าสุด</string>
+    <string name="fitness_empty">ยังไม่ได้บันทึกการออกกำลังกาย\nแตะ + เพื่อเพิ่มการออกกำลังกายครั้งแรก</string>
+    <string name="fitness_minutes_format">%d นาที</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">ระยะเวลา</string>
+    <string name="fitness_calories">แคลอรี่</string>
+    <string name="fitness_workouts">ออกกำลังกาย</string>
+    <string name="fitness_km_unit">กม.</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">ปิดการเพิ่มประสิทธิภาพแบตเตอรี่</string>
+    <string name="steps_battery_desc">การเพิ่มประสิทธิภาพแบตเตอรี่อาจหยุดบริการนับก้าวและส่งผลต่อการติดตามก้าว</string>
+    <string name="steps_battery_action">ไปที่การตั้งค่า</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">การตั้งค่า %s</string>
+    <string name="steps_auto_start_settings">การตั้งค่าเริ่มต้นอัตโนมัติ</string>
+    <string name="steps_battery_settings">การตั้งค่าแบตเตอรี่</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">สรุปพลังงาน</string>
+    <string name="energy_today">วันนี้</string>
+    <string name="energy_this_week">สัปดาห์นี้</string>
+    <string name="energy_steps">ก้าว</string>
+    <string name="energy_workouts">ออกกำลังกาย</string>
+    <string name="energy_total">ทั้งหมด</string>
+    <string name="energy_workouts_summary">%1$d ครั้ง \u00B7 %2$d นาที</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">ตัวชี้วัดร่างกาย</string>
+    <string name="body_metrics_height">ส่วนสูง (ซม.)</string>
+    <string name="body_metrics_weight">น้ำหนัก (กก.)</string>
+    <string name="body_metrics_saved">บันทึกตัวชี้วัดร่างกายแล้ว</string>
+    <string name="body_metrics_height_error">โปรดป้อนส่วนสูงที่ถูกต้อง (80-250 ซม.)</string>
+    <string name="body_metrics_weight_error">โปรดป้อนน้ำหนักที่ถูกต้อง (15-350 กก.)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">โภชนาการ</string>
+    <string name="nav_nutrition">โภชนาการ</string>
+    <string name="nutrition_add_meal">เพิ่มมื้ออาหาร</string>
+    <string name="nutrition_meal_type">ประเภทมื้ออาหาร</string>
+    <string name="nutrition_food_name">ชื่ออาหาร</string>
+    <string name="nutrition_calories">แคลอรี่</string>
+    <string name="nutrition_protein">โปรตีน (ก.)</string>
+    <string name="nutrition_carbs">คาร์บ (ก.)</string>
+    <string name="nutrition_fat">ไขมัน (ก.)</string>
+    <string name="nutrition_serving_size">ขนาดที่เสิร์ฟ</string>
+    <string name="nutrition_macros">สารอาหารหลัก</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">โภชนาการรายวัน</string>
+    <string name="nutrition_today_meals">มื้ออาหารวันนี้</string>
+    <string name="nutrition_meals">มื้อ</string>
+    <string name="nutrition_weekly_trend">แนวโน้มรายสัปดาห์</string>
+    <string name="nutrition_empty">ยังไม่ได้บันทึกมื้ออาหาร\nแตะ + เพื่อเพิ่มมื้ออาหารแรก</string>
+    <string name="nutrition_error_food_name">โปรดป้อนชื่ออาหาร</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">อาหารเช้า</string>
+    <string name="meal_lunch">อาหารกลางวัน</string>
+    <string name="meal_dinner">อาหารเย็น</string>
+    <string name="meal_snack">ของว่าง</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">น้ำ</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">ปริมาณแคลอรี่ต่ำในระยะลูเทียล</string>
+    <string name="insight_nutrition_luteal_low_desc">แคลอรี่ลดลง %.0f kcal ในระยะลูเทียล พยายามรักษาอาหารที่สมดุล</string>
+    <string name="insight_nutrition_luteal_high_title">ปริมาณแคลอรี่สูงในระยะลูเทียล</string>
+    <string name="insight_nutrition_luteal_high_desc">แคลอรี่เพิ่มขึ้น %.0f kcal ในระยะลูเทียล นี่เป็นปกติ ฟังร่างกายของคุณ</string>
+    <string name="insight_nutrition_stable_title">ปริมาณแคลอรี่คงที่</string>
+    <string name="insight_nutrition_stable_desc">ปริมาณแคลอรี่ของคุณคงที่ตลอดระยะรอบ เยี่ยมมาก!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">ลืม PIN?</string>
+    <string name="app_lock_change_pin">เปลี่ยน PIN</string>
+    <string name="app_lock_current_pin">PIN ปัจจุบัน</string>
+    <string name="app_lock_new_pin_label">PIN ใหม่</string>
+    <string name="app_lock_recovery_title">รีเซ็ตล็อคแอป</string>
+    <string name="app_lock_recovery_desc">ยืนยันตัวตนของคุณเพื่อรีเซ็ตล็อคแอป</string>
+    <string name="lock_30s">30 วินาที</string>
+    <string name="lock_1min">1 นาที</string>
+    <string name="lock_5min">5 นาที</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">นอน</string>
+    <string name="sleep_title">ติดตามการนอน</string>
+    <string name="sleep_record_title">บันทึกการนอน</string>
+    <string name="sleep_hours">ชั่วโมงนอน</string>
+    <string name="sleep_deep_hours">นอนหลับลึก</string>
+    <string name="sleep_quality">คุณภาพการนอน</string>
+    <string name="sleep_quality_format">%d ดาว</string>
+    <string name="sleep_history">ประวัติการนอน</string>
+    <string name="sleep_no_data">ยังไม่ได้บันทึกข้อมูลการนอน</string>
+    <string name="sleep_today_status">การนอนวันนี้</string>
+    <string name="sleep_hours_format">%s ชั่วโมง</string>
+    <string name="sleep_deep_hours_format">หลับลึก: %s ชั่วโมง</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">มีประจำเดือน</string>
+    <string name="phase_follicular">ฟอลลิคูลาร์</string>
+    <string name="phase_ovulatory">ตกไข่</string>
+    <string name="phase_luteal">ลูเทียล</string>
+    <string name="nutrition_cycle_guidance">คำแนะนำโภชนาการตามรอบ</string>
+    <string name="nutrition_focus_nutrients">สารอาหารที่เน้น</string>
+    <string name="nutrition_recommended_foods">อาหารที่แนะนำ</string>
+    <string name="nutrition_limit_foods">จำกัด</string>
+
+    <plurals name="days_count">
+        <item quantity="other">%d วัน</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">กรุณาป้อนระยะเวลาที่ถูกต้อง</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">ล้าง</string>
+    <string name="edit">แก้ไข</string>
+    <string name="exact_date_mode">วันที่แน่นอน</string>
+    <string name="profile_dob_not_set">ไม่ได้ตั้งค่า</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">เฉพาะปี</string>
+    <string name="year_picker_title">เลือกปีเกิด</string>
+
+    <!-- Analysis -->
+    <string name="analysis_no_data">ข้อมูลไม่เพียงพอ โปรดบันทึกข้อมูลสุขภาพก่อน</string>
+    <string name="analysis_section_suggestions">คำแนะนำอัจฉริยะ</string>
+    <string name="analysis_section_nutrition">วิเคราะห์โภชนาการ</string>
+    <string name="analysis_section_calorie_balance">สมดุลแคลอรี่</string>
+    <string name="analysis_section_exercise">วิเคราะห์การออกกำลังกาย</string>
+    <string name="analysis_section_sleep">วิเคราะห์การนอน</string>
+    <string name="analysis_section_phase">ความสัมพันธ์ของรอบ</string>
+    <string name="analysis_avg_daily_calories">เฉลี่ยต่อวัน</string>
+    <string name="analysis_protein">โปรตีน</string>
+    <string name="analysis_carbs">คาร์บ</string>
+    <string name="analysis_fat">ไขมัน</string>
+    <string name="analysis_nutrient_ratio">สัดส่วนสารอาหาร</string>
+    <string name="analysis_avg_water_format">น้ำเฉลี่ย: %.0f มล.</string>
+    <string name="analysis_avg_intake">ปริมาณเฉลี่ย</string>
+    <string name="analysis_exercise_burned">เผาผลาญจากการออกกำลังกาย</string>
+    <string name="analysis_weekly_total_minutes">รวมรายสัปดาห์</string>
+    <string name="analysis_daily_avg_minutes">เฉลี่ยรายวัน</string>
+    <string name="analysis_calories_burned">แคลอรี่ที่เผาผลาญ</string>
+    <string name="analysis_exercise_type_distribution">การกระจายประเภทการออกกำลังกาย</string>
+    <string name="analysis_avg_sleep_hours">ระยะเวลาเฉลี่ย</string>
+    <string name="analysis_quality_score">คะแนนคุณภาพ</string>
+    <string name="analysis_daily_sleep_hours">ชั่วโมงนอนรายวัน</string>
+    <string name="analysis_mood">อารมณ์</string>
+    <string name="analysis_stress">ความเครียด</string>
+    <string name="analysis_daily_net_calories">แคลอรี่สุทธิรายวัน (รวมพลังงานขณะพัก)</string>
+
+    <!-- Health Patterns -->
+    <string name="pattern_exhaustion_title">ตรวจพบความเหนื่อยล้าทางร่างกาย</string>
+    <string name="pattern_exhaustion_desc">นอนน้อย เครียดสูง และอารมณ์ต่ำบ่งบอกถึงความเสี่ยงต่อภาวะหมดไฟ พิจารณาวันพักผ่อน</string>
+    <string name="pattern_overtraining_title">ความเสี่ยงออกกำลังกายมากเกินไป</string>
+    <string name="pattern_overtraining_desc">ปริมาณการออกกำลังกายสูงร่วมกับการขาดแคลอรี่และการนอนน้อย ระวังการบาดเจ็บ</string>
+    <string name="pattern_sedentary_mood_title">นั่งนิ่ง + อารมณ์ต่ำ</string>
+    <string name="pattern_sedentary_mood_desc">จำนวนก้าวต่ำมากร่วมกับอารมณ์ต่ำ การเดินสั้น ๆ อาจช่วยได้</string>
+    <string name="pattern_dehydration_stress_title">ขาดน้ำ + เครียด</string>
+    <string name="pattern_dehydration_stress_desc">น้ำดื่มน้อยและระดับความเครียดสูง การดื่มน้ำสนับสนุนความยืดหยุ่น</string>
+    <string name="pattern_positive_loop_title">วงจรสุขภาพเชิงบวก</string>
+    <string name="pattern_positive_loop_desc">การนอนที่ดี กิจกรรมสูง และอารมณ์เชิงบวกเสริมซึ่งกันและกัน ทำต่อไป!</string>
+
+    <!-- Report -->
+    <string name="report_title">รายงานสุขภาพ</string>
+    <string name="report_description">สร้างรายงานสุขภาพที่ครอบคลุมจากข้อมูลที่บันทึกไว้ รายงานถูกสร้างในเครื่องอุปกรณ์ของคุณและสามารถแชร์เป็น PDF ได้</string>
+    <string name="report_period">รอบระยะเวลารายงาน: 30 วันล่าสุด</string>
+    <string name="report_includes">รวม: บันทึกประจำเดือน ก้าว การนอน โภชนาการ และข้อมูลเชิงลึกสุขภาพ</string>
+    <string name="report_generate">สร้างรายงาน</string>
+    <string name="report_generating">กำลังสร้างรายงาน PDF...</string>
+    <string name="report_success">สร้างรายงานสำเร็จ!</string>
+    <string name="report_share">แชร์รายงานสุขภาพ</string>
+    <string name="report_share_button">แชร์</string>
+    <string name="report_generate_new">สร้างใหม่</string>
+    <string name="report_error">ข้อผิดพลาด: %s</string>
+    <string name="report_privacy_title">ประกาศความเป็นส่วนตัว</string>
+    <string name="report_privacy_body">รายงานทั้งหมดถูกสร้างในเครื่องอุปกรณ์ของคุณ ไม่มีการอัปโหลดข้อมูลสุขภาพไปยังเซิร์ฟเวอร์หรือบริการคลาวด์ ข้อมูลของคุณยังคงอยู่ภายใต้การควบคุมของคุณ</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_low_calorie_title">ปริมาณแคลอรี่ต่ำ</string>
+    <string name="suggestion_low_calorie_desc">ปริมาณที่รับประทานต่อวัน %.0f kcal ต่ำกว่าคำแนะนำ 1800 kcal พิจารณาเพิ่มคาร์บเชิงซ้อนและไขมันดี</string>
+    <string name="suggestion_high_calorie_title">ปริมาณแคลอรี่สูง</string>
+    <string name="suggestion_high_calorie_desc">ปริมาณที่รับประทานต่อวัน %.0f kcal เกิน 2500 kcal พิจารณาลดของว่างและเพิ่มผัก</string>
+    <string name="suggestion_low_protein_title">ปริมาณโปรตีนต่ำ</string>
+    <string name="suggestion_low_protein_desc">โปรตีนต่อวัน %.0f กรัม ต่ำกว่าคำแนะนำ 50 กรัม พิจารณาไข่ ปลา และเต้าหู้</string>
+    <string name="suggestion_low_water_title">ปริมาณน้ำต่ำ</string>
+    <string name="suggestion_low_water_desc">น้ำต่อวัน %.0f มล. ต่ำกว่าคำแนะนำ ตั้งเป้าวันละ 1500-2000 มล.</string>
+    <string name="suggestion_high_surplus_title">แคลอรี่ส่วนเกินสูง</string>
+    <string name="suggestion_high_surplus_desc">ส่วนเกินต่อวัน %.0f kcal หากเป้าหมายคือการลดน้ำหนัก พิจารณาเพิ่มการออกกำลังกาย</string>
+    <string name="suggestion_high_deficit_title">การขาดแคลอรี่มาก</string>
+    <string name="suggestion_high_deficit_desc">การขาดต่อวัน %.0f kcal ตรวจสอบให้แน่ใจว่าคุณได้รับความต้องการพื้นฐานในการเผาผลาญ</string>
+    <string name="suggestion_balanced_title">แคลอรี่สมดุล</string>
+    <string name="suggestion_balanced_desc">ปริมาณที่รับและการใช้จ่ายสมดุลดี ทำต่อไป!</string>
+    <string name="suggestion_low_exercise_title">ออกกำลังกายน้อย</string>
+    <string name="suggestion_low_exercise_desc">การออกกำลังกายรายสัปดาห์ %d นาที ต่ำกว่าคำแนะนำของ WHO ที่ 150 นาที</string>
+    <string name="suggestion_exercise_met_title">บรรลุเป้าหมายการออกกำลังกาย</string>
+    <string name="suggestion_exercise_met_desc">การออกกำลังกายรายสัปดาห์ %d นาที เป็นไปตามคำแนะนำของ WHO!</string>
+    <string name="suggestion_exercise_variety_title">ต้องการความหลากหลายในการออกกำลังกาย</string>
+    <string name="suggestion_exercise_variety_desc">ลองประเภทการออกกำลังกายที่แตกต่างกัน (คาร์ดิโอ + ความแข็งแรง + ความยืดหยุ่น) เพื่อสมรรถภาพโดยรวม</string>
+    <string name="suggestion_low_sleep_title">นอนน้อย</string>
+    <string name="suggestion_low_sleep_desc">การนอนต่อวัน %.1f ชั่วโมง ต่ำกว่าคำแนะนำ 7-9 ชั่วโมง ลองกำหนดเวลาปกติ</string>
+    <string name="suggestion_high_sleep_title">นอนมากเกินไป</string>
+    <string name="suggestion_high_sleep_desc">การนอนต่อวัน %.1f ชั่วโมง เกิน 9 ชั่วโมง การนอนนานอาจบ่งบอกถึงความเหนื่อยล้า</string>
+    <string name="suggestion_low_deep_sleep_title">นอนหลับลึกน้อย</string>
+    <string name="suggestion_low_deep_sleep_desc">สัดส่วนการนอนหลับลึกเพียง %.0f%%。 หลีกเลี่ยงคาเฟอีนก่อนนอนและทำให้ห้องมืด</string>
+    <string name="suggestion_low_sleep_quality_title">คุณภาพการนอนต่ำ</string>
+    <string name="suggestion_low_sleep_quality_desc">คะแนนคุณภาพการนอน %.1f/5 ลองทำสมาธิหรืออาบน้ำอุ่นก่อนนอน</string>
+    <string name="suggestion_luteal_sleep_title">การเปลี่ยนแปลงการนอนในระยะลูเทียล</string>
+    <string name="suggestion_luteal_sleep_desc">การนอนในระยะลูเทียลลดลง %.1f ชั่วโมง เทียบกับระยะฟอลลิคูลาร์ การเปลี่ยนแปลงฮอร์โมนปกติ</string>
+
+    <!-- Nutrition Cycle Guidance -->
+    <string name="nutrition_menstrual_advice">เน้นอาหารที่อุดมด้วยธาตุเหล็กเพื่อชดเชยการเสียเลือด แมกนีเซียมช่วยลดตะคริว ดื่มน้ำให้เพียงพอ</string>
+    <string name="nutrition_menstrual_nutrients">ธาตุเหล็ก \u00B7 แมกนีเซียม \u00B7 โอเมก้า-3 \u00B7 วิตามิน B12</string>
+    <string name="nutrition_menstrual_foods">ผักใบเขียว \u00B7 เนื้อแดง \u00B7 ปลาที่มีไขมัน \u00B7 ดาร์กช็อกโกแลต \u00B7 ถั่ว</string>
+    <string name="nutrition_menstrual_limit">ของว่างเค็ม \u00B7 คาเฟอีน \u00B7 ผลิตภัณฑ์นม</string>
+    <string name="nutrition_follicular_advice">การเผาผลาญพลังงานของคุณเพิ่มขึ้น ช่วงเวลาที่ดีสำหรับมื้ออาหารเบา ๆ ที่มีสารอาหารหนาแน่น สนับสนุนสุขภาพลำไส้ด้วยโปรไบโอติก</string>
+    <string name="nutrition_follicular_nutrients">ใยอาหาร \u00B7 วิตามิน C \u00B7 โปรไบโอติก \u00B7 โฟเลต</string>
+    <string name="nutrition_follicular_foods">เบอร์รี่ \u00B7 ผลไม้รสเปรี้ยว \u00B7 โยเกิร์ต \u00B7 ข้าวโอ๊ต \u00B7 บรอกโคลี</string>
+    <string name="nutrition_follicular_limit">อาหารแปรรูป \u00B7 น้ำตาลส่วนเกิน</string>
+    <string name="nutrition_ovulatory_advice">เอสโตรเจนสูงสุดในช่วงนี้ สนับสนุนการล้างพิษตับด้วยอาหารที่อุดมด้วยสารต้านอนุมูลอิสระ แนะนำอาหารต้านการอักเสบ</string>
+    <string name="nutrition_ovulatory_nutrients">สารต้านอนุมูลอิสระ \u00B7 วิตามิน C \u00B7 สังกะสี \u00B7 วิตามิน E</string>
+    <string name="nutrition_ovulatory_foods">พริกหยวก \u00B7 เมล็ดทานตะวัน \u00B7 สัตว์ปีกไม่ติดมัน \u00B7 อะโวคาโด \u00B7 ชาเขียว</string>
+    <string name="nutrition_ovulatory_limit">แอลกอฮอล์ \u00B7 อาหารทอด</string>
+    <string name="nutrition_luteal_advice">โปรเจสเตอโรนเพิ่มขึ้น ซึ่งอาจเพิ่มความอยากอาหาร คาร์บเชิงซ้อนช่วยเพิ่มเซโรโทนิน จำกัดคาเฟอีนและเกลือเพื่อบรรเทาอาการ PMS</string>
+    <string name="nutrition_luteal_nutrients">วิตามิน B \u00B7 คาร์บเชิงซ้อน \u00B7 แมกนีเซียม \u00B7 แคลเซียม \u00B7 วิตามิน B6</string>
+    <string name="nutrition_luteal_foods">ธัญพืชไม่ขัดสี \u00B7 กล้วย \u00B7 ผักใบเขียว \u00B7 พืชตระกูลถั่ว \u00B7 ดาร์กช็อกโกแลต</string>
+    <string name="nutrition_luteal_limit">น้ำตาล \u00B7 คาเฟอีน \u00B7 อาหารเค็ม</string>
+
+    <!-- Sleep Trend -->
+    <string name="sleep_trend_legend">\u25CF %1$s — %2$s    \u25B2 ชั่วโมงนอน   \u2590 คะแนนคุณภาพ</string>
+    <string name="sleep_luteal_worse">คุณภาพการนอนในระยะลูเทียลลดลง</string>
+    <string name="sleep_luteal_better">คุณภาพการนอนในระยะลูเทียลดีขึ้น</string>
+    <string name="sleep_luteal_comparison_worse">การนอนเฉลี่ยระยะลูเทียล %.1f ชม. ฟอลลิคูลาร์ %.1f ชม. ลดลง %.1f ชม.</string>
+    <string name="sleep_luteal_comparison_better">การนอนเฉลี่ยระยะลูเทียล %.1f ชม. ฟอลลิคูลาร์ %.1f ชม. ดีขึ้น %.1f ชม.</string>
+
+    <!-- PDF Report -->
+    <string name="pdf_health_report">รายงานสุขภาพ</string>
+    <string name="pdf_generated">สร้างเมื่อ: %s</string>
+    <string name="pdf_user_info">ผู้ใช้: %1$s | เพศ: %2$s</string>
+    <string name="pdf_report_period">รอบระยะเวลารายงาน: %s</string>
+    <string name="pdf_period_summary">สรุปประจำเดือน</string>
+    <string name="pdf_no_period_records">ไม่มีบันทึกประจำเดือนในช่วงเวลาที่เลือก</string>
+    <string name="pdf_total_cycles">รอบทั้งหมด: %d</string>
+    <string name="pdf_avg_cycle_length">ความยาวรอบเฉลี่ย: %d วัน</string>
+    <string name="pdf_avg_pain">ระดับความเจ็บปวดเฉลี่ย: %.1f / 3</string>
+    <string name="pdf_recent_records">บันทึกล่าสุด</string>
+    <string name="pdf_start_date">วันที่เริ่มต้น</string>
+    <string name="pdf_end_date">วันที่สิ้นสุด</string>
+    <string name="pdf_flow">ปริมาณ</string>
+    <string name="pdf_pain">ความเจ็บปวด</string>
+    <string name="pdf_ongoing">กำลังดำเนินการ</string>
+    <string name="pdf_flow_light">น้อย</string>
+    <string name="pdf_flow_medium">ปานกลาง</string>
+    <string name="pdf_flow_heavy">มาก</string>
+    <string name="pdf_pain_none">ไม่มี</string>
+    <string name="pdf_pain_mild">เล็กน้อย</string>
+    <string name="pdf_pain_moderate">ปานกลาง</string>
+    <string name="pdf_pain_severe">รุนแรง</string>
+    <string name="pdf_activity_summary">สรุปกิจกรรม</string>
+    <string name="pdf_no_step_data">ไม่มีข้อมูลก้าว</string>
+    <string name="pdf_avg_daily_steps">จำนวนก้าวเฉลี่ยต่อวัน: %,d</string>
+    <string name="pdf_total_steps">จำนวนก้าวทั้งหมด: %,d</string>
+    <string name="pdf_max_steps">จำนวนก้าวสูงสุดต่อวัน: %,d</string>
+    <string name="pdf_total_exercise">การออกกำลังกายทั้งหมด: %d นาที</string>
+    <string name="pdf_sleep_summary">สรุปการนอน</string>
+    <string name="pdf_no_sleep_data">ไม่มีข้อมูลการนอน</string>
+    <string name="pdf_avg_sleep">การนอนเฉลี่ย: %.1f ชั่วโมง</string>
+    <string name="pdf_avg_sleep_quality">คุณภาพการนอนเฉลี่ย: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">การนอนหลับลึกเฉลี่ย: %.1f ชั่วโมง</string>
+    <string name="pdf_nutrition_summary">สรุปโภชนาการ</string>
+    <string name="pdf_no_nutrition_data">ไม่มีข้อมูลโภชนาการ</string>
+    <string name="pdf_avg_calories">แคลอรี่เฉลี่ยต่อวัน: %.0f kcal</string>
+    <string name="pdf_avg_water">ปริมาณน้ำเฉลี่ย: %.0f มล.</string>
+    <string name="pdf_avg_protein">โปรตีนเฉลี่ย: %.0f กรัม</string>
+    <string name="pdf_footer">รายงานนี้ถูกสร้างในเครื่องอุปกรณ์ของคุณ ไม่มีข้อมูลออกจากโทรศัพท์ของคุณ</string>
+    <string name="pdf_page">หน้า %d</string>
+    <string name="pdf_app_name">TianshangHealth - ความเป็นส่วนตัวมาก่อน</string>
+
+    <!-- General -->
+    <string name="sleep_auto_calculated">อัตโนมัติ: %d ชม.</string>
+    <string name="sleep_bedtime_btn">เวลาเข้านอน</string>
+    <string name="sleep_elapsed">%d ชม. %d นาที ที่ผ่านมา</string>
+    <string name="sleep_sleeping">กำลังนอน...</string>
+    <string name="sleep_waketime_btn">ตื่นนอน</string>
+    <string name="export_report">ส่งออกรายงาน PDF</string>
+    <string name="insufficient_data">ข้อมูลไม่เพียงพอ</string>
+    <string name="nutrition_energy_balance">สมดุลพลังงาน</string>
+    <string name="nutrition_resting_energy">ขณะพัก</string>
+    <string name="nutrition_exercise_energy">ออกกำลังกาย</string>
+    <string name="nutrition_total_expenditure">เผาผลาญทั้งหมด</string>
+    <string name="nutrition_calorie_balance">สมดุล</string>
+    <string name="error_onboarding_required">โปรดตั้งค่าผู้ใช้ก่อน</string>
+    <string name="error_load_failed">โหลดล้มเหลว</string>
+    <string name="previous">ก่อนหน้า</string>
+    <string name="next">ถัดไป</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">ไม่สามารถสร้างรายงาน</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

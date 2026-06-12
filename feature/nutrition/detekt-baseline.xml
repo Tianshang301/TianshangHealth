@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ComplexCondition:NutritionRepository.kt$NutritionRepository$calories &gt; 0f || protein &gt; 0f || carbs &gt; 0f || fat &gt; 0f</ID>
+    <ID>CyclomaticComplexMethod:NutritionRepository.kt$NutritionRepository$private suspend fun syncDailyHealth(date: String)</ID>
+    <ID>CyclomaticComplexMethod:NutritionRepository.kt$NutritionRepository$suspend fun getCycleNutritionRecommendation(): CycleNutritionRecommendation?</ID>
+    <ID>DestructuringDeclarationWithTooManyEntries:NutritionRepository.kt$NutritionRepository$val (focusNutrientsId, recommendedFoodsId, foodsToLimitId, generalAdviceId) = when (phase) { CyclePhase.MENSTRUAL -&gt; Quadruple( com.tianshang.health.core.common.R.string.nutrition_menstrual_nutrients, com.tianshang.health.core.common.R.string.nutrition_menstrual_foods, com.tianshang.health.core.common.R.string.nutrition_menstrual_limit, com.tianshang.health.core.common.R.string.nutrition_menstrual_advice ) CyclePhase.FOLLICULAR -&gt; Quadruple( com.tianshang.health.core.common.R.string.nutrition_follicular_nutrients, com.tianshang.health.core.common.R.string.nutrition_follicular_foods, com.tianshang.health.core.common.R.string.nutrition_follicular_limit, com.tianshang.health.core.common.R.string.nutrition_follicular_advice ) CyclePhase.OVULATORY -&gt; Quadruple( com.tianshang.health.core.common.R.string.nutrition_ovulatory_nutrients, com.tianshang.health.core.common.R.string.nutrition_ovulatory_foods, com.tianshang.health.core.common.R.string.nutrition_ovulatory_limit, com.tianshang.health.core.common.R.string.nutrition_ovulatory_advice ) CyclePhase.LUTEAL -&gt; Quadruple( com.tianshang.health.core.common.R.string.nutrition_luteal_nutrients, com.tianshang.health.core.common.R.string.nutrition_luteal_foods, com.tianshang.health.core.common.R.string.nutrition_luteal_limit, com.tianshang.health.core.common.R.string.nutrition_luteal_advice ) }</ID>
+    <ID>ExpressionBodySyntax:MealType.kt$MealType.Companion$return entries.find { it.value == value } ?: BREAKFAST</ID>
+    <ID>ExpressionBodySyntax:NutritionCalculator.kt$NutritionCalculator$return kcal * KCAL_TO_KJ</ID>
+    <ID>FunctionNaming:AddMealSheet.kt$@OptIn(ExperimentalLayoutApi::class, ExperimentalMaterial3Api::class) @Composable fun AddMealContent( state: AddMealState, onTypeSelected: (MealType) -&gt; Unit, onFoodNameChanged: (String) -&gt; Unit, onCaloriesChanged: (String) -&gt; Unit, onProteinChanged: (String) -&gt; Unit, onCarbsChanged: (String) -&gt; Unit, onFatChanged: (String) -&gt; Unit, onServingSizeChanged: (String) -&gt; Unit, onNotesChanged: (String) -&gt; Unit, onSave: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:CycleNutritionSection.kt$@Composable fun CycleNutritionCard( recommendation: CycleNutritionRecommendation )</ID>
+    <ID>FunctionNaming:MealItemCard.kt$@Composable fun MealItem( meal: MealRecord, onDelete: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:NutritionScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun NutritionScreen( viewModel: NutritionViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:NutritionSummaryComponents.kt$@Composable fun DailyNutritionSummary( state: NutritionState, onAddWater: (Float) -&gt; Unit = {} )</ID>
+    <ID>FunctionNaming:NutritionSummaryComponents.kt$@Composable fun EnergyBalanceSection(state: NutritionState)</ID>
+    <ID>FunctionNaming:NutritionSummaryComponents.kt$@Composable fun EnergyItem( label: String, value: String, color: Color, isBold: Boolean = false )</ID>
+    <ID>FunctionNaming:NutritionSummaryComponents.kt$@Composable fun NutrientBar( label: String, value: String, progress: Float, color: Color )</ID>
+    <ID>FunctionNaming:NutritionSummaryComponents.kt$@Composable fun WaterIntakeCard( currentMl: Float, goalMl: Float, onAddWater: (Float) -&gt; Unit )</ID>
+    <ID>LongMethod:AddMealSheet.kt$@OptIn(ExperimentalLayoutApi::class, ExperimentalMaterial3Api::class) @Composable fun AddMealContent( state: AddMealState, onTypeSelected: (MealType) -&gt; Unit, onFoodNameChanged: (String) -&gt; Unit, onCaloriesChanged: (String) -&gt; Unit, onProteinChanged: (String) -&gt; Unit, onCarbsChanged: (String) -&gt; Unit, onFatChanged: (String) -&gt; Unit, onServingSizeChanged: (String) -&gt; Unit, onNotesChanged: (String) -&gt; Unit, onSave: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongMethod:NutritionScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun NutritionScreen( viewModel: NutritionViewModel = hiltViewModel() )</ID>
+    <ID>LongParameterList:AddMealSheet.kt$( state: AddMealState, onTypeSelected: (MealType) -&gt; Unit, onFoodNameChanged: (String) -&gt; Unit, onCaloriesChanged: (String) -&gt; Unit, onProteinChanged: (String) -&gt; Unit, onCarbsChanged: (String) -&gt; Unit, onFatChanged: (String) -&gt; Unit, onServingSizeChanged: (String) -&gt; Unit, onNotesChanged: (String) -&gt; Unit, onSave: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongParameterList:NutritionRepository.kt$NutritionRepository$( mealType: String, foodName: String, calories: Float? = null, proteinGrams: Float? = null, carbsGrams: Float? = null, fatGrams: Float? = null, servingSize: String? = null, notes: String? = null, date: String = LocalDate.now().toString() )</ID>
+    <ID>MagicNumber:NutritionRepository.kt$NutritionRepository$3</ID>
+    <ID>MagicNumber:NutritionRepository.kt$NutritionRepository$4</ID>
+    <ID>MagicNumber:NutritionSummaryComponents.kt$100f</ID>
+    <ID>MagicNumber:NutritionSummaryComponents.kt$250f</ID>
+    <ID>MagicNumber:NutritionSummaryComponents.kt$500f</ID>
+    <ID>MagicNumber:NutritionViewModel.kt$NutritionViewModel$30</ID>
+    <ID>ReturnCount:NutritionRepository.kt$NutritionRepository$suspend fun getCycleNutritionRecommendation(): CycleNutritionRecommendation?</ID>
+    <ID>SwallowedException:NutritionRepository.kt$NutritionRepository$e: Exception</ID>
+    <ID>TooManyFunctions:NutritionRepository.kt$NutritionRepository</ID>
+    <ID>TooManyFunctions:NutritionViewModel.kt$NutritionViewModel : ViewModel</ID>
+    <ID>UseCheckOrError:NutritionRepository.kt$NutritionRepository$throw IllegalStateException("No user found. Onboarding must be completed first.")</ID>
+  </CurrentIssues>
+</SmellBaseline>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ExpressionBodySyntax:Argon2Hasher.kt$Argon2Hasher$return MessageDigest.isEqual(a, b)</ID>
+    <ID>MagicNumber:KeystoreManager.kt$KeystoreManager$256</ID>
+    <ID>TooManyFunctions:AppLockManager.kt$AppLockManager</ID>
+    <ID>UnderscoresInNumericLiterals:Argon2Hasher.kt$Argon2Hasher$65536</ID>
+    <ID>UnderscoresInNumericLiterals:Argon2HasherTest.kt$Argon2HasherTest$10000</ID>
+    <ID>UseCheckOrError:AppLockManager.kt$AppLockManager$throw IllegalStateException("AppLockManager context reference lost")</ID>
+    <ID>UseCheckOrError:AppLockManager.kt$AppLockManager$throw IllegalStateException("AppLockManager not initialized. Call init() first.")</ID>
+    <ID>UseCheckOrError:ScreenshotProtectionManager.kt$ScreenshotProtectionManager$throw IllegalStateException( "ScreenshotProtectionManager not initialized. Call init() first." )</ID>
+    <ID>UseCheckOrError:ScreenshotProtectionManager.kt$ScreenshotProtectionManager$throw IllegalStateException("ScreenshotProtectionManager context reference lost")</ID>
+  </CurrentIssues>
+</SmellBaseline>

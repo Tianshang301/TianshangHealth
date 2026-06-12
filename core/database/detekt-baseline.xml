@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.dailyHealthDao()</ID>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.dailySymptomDao()</ID>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.mealDao()</ID>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.periodRecordDao()</ID>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.predictionLogDao()</ID>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.stepsDao()</ID>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.userDao()</ID>
+    <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.workoutDao()</ID>
+    <ID>ExpressionBodySyntax:User.kt$User.Gender.Companion$return entries.find { it.value == value } ?: FEMALE</ID>
+    <ID>MaxLineLength:PeriodRecordDao.kt$PeriodRecordDao$"SELECT * FROM period_records WHERE userId = :userId AND isDeleted = 0 AND startDate &lt;= :date AND (endDate IS NULL OR endDate &gt;= :date) LIMIT 1"</ID>
+    <ID>MaxLineLength:PredictionLogDao.kt$PredictionLogDao$"SELECT * FROM prediction_logs WHERE userId = :userId AND tfliteModelUsed IS NOT NULL AND actualStartDate IS NULL ORDER BY createdAt DESC LIMIT 1"</ID>
+    <ID>MaxLineLength:WorkoutDao.kt$WorkoutDao$"SELECT caloriesBurned FROM workout_records WHERE userId = :userId AND date &gt;= :startDate AND date &lt;= :endDate AND caloriesBurned IS NOT NULL ORDER BY date"</ID>
+    <ID>MaxLineLength:WorkoutDao.kt$WorkoutDao$"SELECT date, SUM(caloriesBurned) as totalCalories FROM workout_records WHERE userId = :userId AND date &gt;= :startDate AND date &lt;= :endDate AND caloriesBurned IS NOT NULL GROUP BY date ORDER BY date"</ID>
+    <ID>MaxLineLength:WorkoutDao.kt$WorkoutDao$"SELECT exerciseType, SUM(caloriesBurned) as totalCalories FROM workout_records WHERE userId = :userId AND date &gt;= :startDate AND date &lt;= :endDate AND caloriesBurned IS NOT NULL GROUP BY exerciseType ORDER BY totalCalories DESC"</ID>
+    <ID>MaximumLineLength:DailyHealthDao.kt$DailyHealthDao$ </ID>
+    <ID>MaximumLineLength:DailySymptomDao.kt$DailySymptomDao$ </ID>
+    <ID>MaximumLineLength:MealDao.kt$MealDao$ </ID>
+    <ID>MaximumLineLength:PeriodRecordDao.kt$PeriodRecordDao$ </ID>
+    <ID>MaximumLineLength:PredictionLogDao.kt$PredictionLogDao$ </ID>
+    <ID>MaximumLineLength:StepsDao.kt$StepsDao$ </ID>
+    <ID>MaximumLineLength:TianshangDatabase.kt$TianshangDatabase.Companion.&lt;no name provided&gt;$ </ID>
+    <ID>MaximumLineLength:WorkoutDao.kt$WorkoutDao$ </ID>
+    <ID>TooManyFunctions:DailyHealthDao.kt$DailyHealthDao</ID>
+    <ID>TooManyFunctions:MealDao.kt$MealDao</ID>
+    <ID>TooManyFunctions:PeriodRecordDao.kt$PeriodRecordDao</ID>
+    <ID>TooManyFunctions:PeriodRecordRepository.kt$PeriodRecordRepository</ID>
+    <ID>TooManyFunctions:StepsDao.kt$StepsDao</ID>
+    <ID>TooManyFunctions:WorkoutDao.kt$WorkoutDao</ID>
+  </CurrentIssues>
+</SmellBaseline>

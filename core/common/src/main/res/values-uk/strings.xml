@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Умови надання послуг</string>
+    <string name="privacy_title">Політика конфіденційності</string>
+    <string name="accept_terms">Я прочитав і приймаю</string>
+    <string name="app_lock_title">Блокування додатку</string>
+    <string name="enter_pin">Пароль</string>
+    <string name="unlock">Розблокувати</string>
+    <string name="invalid_pin">Невірний пароль</string>
+    <string name="app_lock_setup_title">Встановити пароль блокування додатку</string>
+    <string name="set_pin">Встановити пароль</string>
+    <string name="confirm_pin">Підтвердити пароль</string>
+    <string name="set_password">Встановити пароль</string>
+    <string name="pin_empty_error">Пароль не може бути порожнім</string>
+    <string name="pin_mismatch_error">Паролі не співпадають</string>
+    <string name="pin_length_error">Пароль має містити щонайменше %d символів</string>
+    <string name="calendar_title">Календар</string>
+    <string name="current_cycle_day">День %d циклу</string>
+    <string name="days_until_next_period">Наступна менструація через %d днів</string>
+    <string name="no_period_data">Немає даних про менструацію</string>
+    <string name="tap_date_to_record">Натисніть, щоб записати</string>
+    <string name="period">Менструація</string>
+    <string name="predicted_period">Прогнозована менструація</string>
+    <string name="ovulation">Овуляція</string>
+    <string name="fertile_window">Фертильний період</string>
+    <string name="record_title">Запис</string>
+    <string name="start_period">Початок менструації</string>
+    <string name="end_period">Кінець менструації</string>
+    <string name="flow_level">Рясність</string>
+    <string name="pain_level">Біль</string>
+    <string name="symptoms">Симптоми</string>
+    <string name="sexual_activity">Статева активність</string>
+    <string name="ovulation_test">Тест на овуляцію</string>
+    <string name="cervical_mucus">Цервікальний слиз</string>
+    <string name="body_temperature">Температура тіла</string>
+    <string name="notes">Нотатки</string>
+    <string name="save">Зберегти</string>
+    <string name="analysis_title">Аналіз</string>
+    <string name="cycle_statistics">Статистика</string>
+    <string name="avg_cycle_length">Середній цикл</string>
+    <string name="avg_period_length">Середня менструація</string>
+    <string name="cycle_regularity">Регулярність</string>
+    <string name="total_cycles">Всього циклів</string>
+    <string name="pain_trend">Тенденція болю</string>
+    <string name="symptom_frequency">Частота симптомів</string>
+    <string name="predictions">Прогнози</string>
+    <string name="reminder_title">Нагадування</string>
+    <string name="period_reminder">Нагадування про менструацію</string>
+    <string name="ovulation_reminder">Нагадування про овуляцію</string>
+    <string name="pms_reminder">Нагадування про ПМС</string>
+    <string name="profile_title">Профіль</string>
+    <string name="theme_customization">Тема</string>
+    <string name="theme_color">Колір теми</string>
+    <string name="app_lock">Блокування додатку</string>
+    <string name="language">Мова</string>
+    <string name="recycle_bin">Кошик</string>
+    <string name="recycle_bin_title">Кошик</string>
+    <string name="backup_restore">Резервне копіювання</string>
+    <string name="backup_restore_title">Резервне копіювання &amp; Відновлення</string>
+    <string name="export_backup">Експортувати резервну копію</string>
+    <string name="import_backup">Імпортувати резервну копію</string>
+    <string name="export_csv">Експортувати CSV</string>
+    <string name="about">Про додаток</string>
+    <string name="bmi_title">ІМТ</string>
+    <string name="add_bmi_record">Додати</string>
+    <string name="height_cm">Зріст (см)</string>
+    <string name="weight_kg">Вага (кг)</string>
+    <string name="latest_bmi">Поточний ІМТ</string>
+    <string name="bmi_history">Історія</string>
+    <string name="dark_mode">Темний режим</string>
+    <string name="dark_mode_description">Змінити тему</string>
+    <string name="no_deleted_records">Немає видалених записів</string>
+    <string name="security_settings">Безпека</string>
+    <string name="data_security">Безпека даних</string>
+    <string name="database_encryption">Шифрування бази даних</string>
+    <string name="encrypted">Зашифровано (AES-256)</string>
+    <string name="unencrypted">Не зашифровано</string>
+    <string name="migrate_to_encrypted">Мігрувати до зашифрованої бази даних</string>
+    <string name="migration_success">Міграція успішна! База даних тепер зашифрована.</string>
+    <string name="migration_failed">Міграція не вдалася: %s. Ваші дані відновлено до початкового стану.</string>
+    <string name="background_lock_delay">Блокувати після фону</string>
+    <string name="lock_immediately">Негайно</string>
+    <string name="lock_after_seconds">%d секунд</string>
+    <string name="custom_reminders">Користувацькі нагадування</string>
+    <string name="add_custom_reminder">Додати користувацьке нагадування</string>
+    <string name="no_custom_reminders">Ще немає користувацьких нагадувань</string>
+    <string name="reminder_title_label">Заголовок нагадування</string>
+    <string name="reminder_title_required">Заголовок обов\'язковий</string>
+    <string name="reminder_message_label">Повідомлення (необов\'язково)</string>
+    <string name="reminder_date">Дата нагадування</string>
+    <string name="select_time">Виберіть час</string>
+    <string name="hue">Відтінок</string>
+    <string name="saturation">Насиченість</string>
+    <string name="lightness">Яскравість</string>
+    <string name="apply_color">Застосувати колір</string>
+    <string name="custom_color">Користувацький колір</string>
+    <string name="color_preview">Попередній перегляд кольору</string>
+    <string name="apply">Застосувати</string>
+    <string name="preset_colors">Попередньо встановлені кольори</string>
+    <string name="add_symptom">Додати симптом</string>
+    <string name="symptom_name">Назва симптому</string>
+    <string name="symptom_name_required">Назва симптому обов\'язкова</string>
+    <string name="prediction_explanation">Адаптивний прогноз на основі останніх %1$d циклів (середнє %2$s днів/цикл, %3$s днів/менструація)</string>
+    <string name="record_date">Дата запису</string>
+    <string name="select_date">Виберіть дату</string>
+    <string name="confirm">Підтвердити</string>
+    <string name="cancel">Скасувати</string>
+    <string name="delete">Видалити</string>
+    <string name="delete_record">Видалити запис</string>
+    <string name="delete_record_confirm">Ви впевнені, що хочете видалити запис за цю дату? Цю дію не можна скасувати.</string>
+    <string name="week_sun">Нд</string>
+    <string name="week_mon">Пн</string>
+    <string name="week_tue">Вт</string>
+    <string name="week_wed">Ср</string>
+    <string name="week_thu">Чт</string>
+    <string name="week_fri">Пт</string>
+    <string name="week_sat">Сб</string>
+    <string name="calendar_today">Сьогодні</string>
+    <string name="back">Назад</string>
+    <string name="symptom_headache">Головний біль</string>
+    <string name="symptom_bloating">Здуття</string>
+    <string name="symptom_breast_tenderness">Чутливість грудей</string>
+    <string name="symptom_backache">Біль у спині</string>
+    <string name="symptom_fatigue">Втома</string>
+    <string name="symptom_mood_swings">Перепади настрою</string>
+    <string name="symptom_acne">Акне</string>
+    <string name="symptom_increased_appetite">Підвищений апетит</string>
+    <string name="symptom_insomnia">Безсоння</string>
+    <string name="symptom_nausea">Нудота</string>
+    <string name="flow_light">Легка</string>
+    <string name="flow_medium">Помірна</string>
+    <string name="flow_heavy">Рясна</string>
+    <string name="pain_none">Немає</string>
+    <string name="pain_mild">Легкий</string>
+    <string name="pain_moderate">Помірний</string>
+    <string name="pain_severe">Сильний</string>
+    <string name="unit_days">дні</string>
+    <string name="predicted_period_label">Прогнозована менструація: %1$s - %2$s</string>
+    <string name="ovulation_date_label">Овуляція: %s</string>
+    <string name="confidence_label">Впевненість: %1$s (на основі %2$d циклів)</string>
+    <string name="reminder_days_before">Днів до</string>
+    <string name="reminder_time">Час нагадування</string>
+    <string name="enabled">Увімкнено</string>
+    <string name="disabled">Вимкнено</string>
+    <string name="color_pink">Рожевий</string>
+    <string name="color_dark_pink">Темно-рожевий</string>
+    <string name="color_peach">Персиковий</string>
+    <string name="color_light_purple">Світло-фіолетовий</string>
+    <string name="color_medium_purple">Середньо-фіолетовий</string>
+    <string name="unit_cm">см</string>
+    <string name="unit_kg">кг</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Недостатня вага</string>
+    <string name="bmi_category_normal">Норма</string>
+    <string name="bmi_category_overweight">Надмірна вага</string>
+    <string name="bmi_category_obese">Ожиріння</string>
+    <string name="bmi_standard_note">На основі китайського стандарту ІМТ</string>
+    <string name="backup_success">Резервне копіювання успішне</string>
+    <string name="backup_fail">Резервне копіювання не вдалося</string>
+    <string name="restore_success">Відновлення успішне</string>
+    <string name="restore_fail">Відновлення не вдалося</string>
+    <string name="export_success">Експорт успішний</string>
+    <string name="export_fail">Експорт не вдався</string>
+    <string name="backup_export_desc">Експортувати базу даних як ZIP-файл резервної копії</string>
+    <string name="backup_import_desc">Відновити дані з файлу резервної копії</string>
+    <string name="backup_csv_desc">Експортувати записи як CSV-таблицю</string>
+    <string name="deleted_time">Видалено: %s</string>
+    <string name="in_progress">Виконується</string>
+    <string name="terms_countdown">Будь ласка, зачекайте %d секунд</string>
+    <string name="auth_failed">Аутентифікація не вдалася: %s</string>
+    <string name="auth_failed_generic">Аутентифікація не вдалася</string>
+    <string name="biometric_init_failed">Помилка ініціалізації біометрії</string>
+    <string name="lockout_message">Забагато спроб. Будь ласка, зачекайте %d секунд.</string>
+    <string name="chart_title_cycle_length_trend">Тенденція тривалості циклу</string>
+    <string name="chart_title_pain_trend">Тенденція болю</string>
+    <string name="chart_title_symptom_distribution">Розподіл симптомів</string>
+    <string name="chart_cycle_label">Цикл %d</string>
+    <string name="chart_cycle_length_label">Тривалість циклу : %d</string>
+    <string name="chart_pain_level_label">Рівень болю</string>
+    <string name="regularity_regular">Регулярний</string>
+    <string name="regularity_somewhat_regular">Дещо регулярний</string>
+    <string name="regularity_irregular">Нерегулярний</string>
+    <string name="regularity_insufficient_data">Недостатньо даних</string>
+    <string name="confidence_high">Високий</string>
+    <string name="confidence_medium">Середній</string>
+    <string name="confidence_low">Низький</string>
+    <string name="confidence_insufficient">Недостатньо даних</string>
+    <string name="analysis_no_data_title">Ще немає даних</string>
+    <string name="analysis_no_data_hint">Почніть записувати менструацію, щоб побачити аналіз та прогнози</string>
+    <string name="section_appearance">Вигляд</string>
+    <string name="section_health">Здоров\'я</string>
+    <string name="section_data">Дані</string>
+    <string name="section_other">Інше</string>
+    <string name="open">Відкрити</string>
+    <string name="retry">Повторити</string>
+    <string name="profile_theme_description">Налаштувати кольори додатку</string>
+    <string name="profile_language_description">Змінити мову додатку</string>
+    <string name="profile_bmi_description">Відстежуйте свій індекс маси тіла</string>
+    <string name="profile_app_lock_description">Вимагати аутентифікацію для відкриття додатку</string>
+    <string name="screenshot_protection_title">Захист від знімків екрана</string>
+    <string name="screenshot_protection_description">Запобігати знімкам екрана та запису екрана</string>
+    <string name="profile_backup_description">Зашифроване резервне копіювання та відновлення всіх даних</string>
+    <string name="profile_recycle_bin_description">Переглядати та відновлювати видалені записи</string>
+    <string name="profile_version">Версія 1.0.0</string>
+    <string name="profile_app_description">Комплексний додаток для відстеження здоров\'я з пріоритетом конфіденційності.</string>
+    <string name="custom_theme">Користувацька тема</string>
+    <string name="language_description">Виберіть бажану мову. Додаток перезапуститься, щоб застосувати зміни.</string>
+    <string name="language_changed_restart">Мову змінено, перезапуск&#8230;</string>
+    <string name="bmi_empty_text">Ще немає записів ваги. Додайте свій перший запис ваги.</string>
+    <string name="save_height">Зберегти зріст</string>
+    <string name="bmi_category_label">Категорія</string>
+    <string name="height_label">Зріст</string>
+    <string name="update_height">Оновити зріст</string>
+    <string name="add_weight_record_title">Додати запис ваги</string>
+    <string name="add_weight_record_text">Введіть свою вагу на сьогодні.</string>
+    <string name="recycle_bin_description">Видалені записи зберігаються 30 днів перед остаточним видаленням.</string>
+    <string name="recycle_bin_empty">Кошик порожній</string>
+    <string name="recycle_bin_empty_title">Очистити кошик</string>
+    <string name="recycle_bin_empty_confirm">Всі видалені записи буде остаточно видалено. Цю дію не можна скасувати.</string>
+    <string name="recycle_bin_empty_action">Очистити</string>
+    <string name="recycle_bin_restore">Відновити</string>
+    <string name="recycle_bin_delete_forever">Видалити назавжди</string>
+    <string name="add_record">Додати запис</string>
+    <string name="period_tracking_title">Відстеження менструації</string>
+    <string name="prediction_explanation_title">Пояснення прогнозу</string>
+    <string name="reminder_period_desc">Отримувати сповіщення перед початком менструації</string>
+    <string name="reminder_ovulation_desc">Отримувати сповіщення перед овуляцією</string>
+    <string name="reminder_pms_desc">Отримувати сповіщення про симптоми ПМС</string>
+    <string name="cycle_status_title">Статус циклу</string>
+    <string name="cycle_day_label">День циклу</string>
+    <string name="days_until_label">Днів до</string>
+    <string name="period_active_text">Менструація активна</string>
+    <string name="next_period_label">Наступна менструація</string>
+    <string name="not_enough_data">Недостатньо даних</string>
+    <string name="cycle_length_label">Тривалість циклу</string>
+    <string name="chart_no_data">Недостатньо даних для відображення графіка</string>
+    <string name="chart_no_pain_data">Немає записаних даних про біль</string>
+    <string name="chart_pain_unknown">Невідомо</string>
+    <string name="chart_total_records">Всього записів</string>
+    <string name="record_for_date">Запис на %s</string>
+    <string name="save_record">Зберегти запис</string>
+    <string name="male_health_trend">Тенденції здоров\'я</string>
+    <string name="male_health_description">Аналіз менструації не застосовується для чоловіків. Нижче показано загальні дані про здоров\'я.</string>
+    <string name="steps_overview">Огляд кроків</string>
+    <string name="steps_today">Сьогодні кроків</string>
+    <string name="steps_weekly_avg_label">Середня кількість кроків за 7 днів</string>
+    <string name="steps_record_days">Записано днів</string>
+    <string name="steps_weekly_trend_label">Тенденція кроків за 7 днів</string>
+    <string name="steps_title">Відстеження кроків</string>
+    <string name="steps_daily_goal">Щоденна мета</string>
+    <string name="steps_update_goal">Оновити мету</string>
+    <string name="steps_this_week">Цього тижня</string>
+    <string name="steps_total">Всього</string>
+    <string name="steps_average">Середнє</string>
+    <string name="steps_days_label">Дні</string>
+    <string name="steps_weekly_trend">Тижнева тенденція</string>
+    <string name="steps_goal_format">%d кроків</string>
+    <string name="steps_weekly_avg_format">Тижневе середнє %d кроків/день</string>
+    <string name="steps_history_title">Історія кроків</string>
+    <string name="steps_tab_week">Тиждень</string>
+    <string name="steps_tab_month">Місяць</string>
+    <string name="steps_tab_year">Рік</string>
+    <string name="steps_tab_all">Всі</string>
+    <string name="steps_30d_total">Загалом за 30 днів</string>
+    <string name="steps_avg">Щоденне середнє</string>
+    <string name="steps_best">Найкращий день</string>
+    <string name="steps_weekly_label">Тижневий розподіл</string>
+    <string name="steps_daily_trend">Щоденна тенденція</string>
+    <string name="steps_monthly_label">Місячний розподіл</string>
+    <string name="steps_total_label">Загальна кількість кроків</string>
+    <string name="steps_period_total">Загалом за період</string>
+    <string name="steps_weekly_avg">Тижневе середнє</string>
+    <string name="steps_monthly_avg">Місячне середнє</string>
+    <string name="steps_best_month">Найкращий місяць</string>
+    <string name="steps_tab_day">День</string>
+    <string name="steps_label">Кроки</string>
+    <string name="steps_calories_label">Калорії</string>
+    <string name="steps_yearly_label">Річний розподіл</string>
+    <string name="dashboard_title">Панель здоров\'я</string>
+    <string name="dashboard_quick_actions">Швидкі дії</string>
+    <string name="dashboard_retry">Повторити</string>
+    <string name="dashboard_insights">Аналітика здоров\'я</string>
+    <string name="dashboard_insights_empty">Записуйте більше даних про здоров\'я для персоналізованої аналітики</string>
+    <string name="dashboard_period_status">Статус менструації</string>
+    <string name="dashboard_period_active">Менструація активна</string>
+    <string name="dashboard_follicular_phase">Фолікулярна фаза</string>
+    <string name="dashboard_no_data">Немає даних</string>
+    <string name="dashboard_today_steps">Кроків сьогодні</string>
+    <string name="dashboard_goal_format">Мета: %d</string>
+    <string name="dashboard_cycle_day_format">День %1$d</string>
+    <string name="dashboard_record_period">Записати менструацію</string>
+    <string name="dashboard_record_steps">Записати кроки</string>
+    <string name="dashboard_record_health">Аналіз здоров\'я</string>
+    <string name="gender_welcome">Ласкаво просимо до TianshangHealth</string>
+    <string name="gender_instruction">Виберіть свою стать для персоналізованого відстеження здоров\'я</string>
+    <string name="gender_male">Чоловік</string>
+    <string name="gender_male_desc">Приховує функції відстеження менструації</string>
+    <string name="gender_female">Жінка</string>
+    <string name="gender_female_desc">Показує всі функції, включаючи відстеження менструації</string>
+    <string name="gender_other">Інше</string>
+    <string name="gender_other_desc">Показує всі функції</string>
+    <string name="gender_footnote">Ви можете змінити це пізніше в Налаштуваннях</string>
+    <string name="gender_setting_title">Стать</string>
+    <string name="gender_setting_description">Змініть свою стать, щоб налаштувати модулі функцій</string>
+    <string name="select_gender">Виберіть стать</string>
+    <string name="app_lock_health_data_protected">Ваші дані про здоров\'я захищені</string>
+    <string name="app_lock_set_password_title">Встановити пароль</string>
+    <string name="app_lock_password_label">Пароль</string>
+    <string name="app_lock_confirm_password_label">Підтвердити пароль</string>
+    <string name="app_lock_enter_password_title">Введіть пароль</string>
+    <string name="app_lock_use_biometric">Використовувати біометрію</string>
+    <string name="terms_privacy_title">Умови надання послуг &amp; Політика конфіденційності</string>
+    <string name="terms_service_title">Умови надання послуг</string>
+    <string name="privacy_policy_title">Політика конфіденційності</string>
+    <string name="terms_service_declaration">1. Декларація про послуги\n\nTianshangHealth - це комплексний додаток для відстеження здоров\'я, який ставить на перше місце конфіденційність користувача та безпеку даних. Всі дані зберігаються локально на вашому пристрої з сильним шифруванням.\n\n2. Конфіденційність даних\n\nМи не збираємо, не завантажуємо та не передаємо ваші особисті дані про здоров\'я. Додаток працює повністю офлайн без дозволів на мережу.\n\n3. Відповідальність користувача\n\nВи відповідаєте за точність введених вами даних про здоров\'я. Надані прогнози та аналіз призначені лише для довідки та не є медичною консультацією.\n\n4. Безпека даних\n\nВаші дані захищені шифруванням SQLCipher AES-256. Ключ шифрування керується через Android Keystore для безпеки на рівні апаратного забезпечення.</string>
+    <string name="privacy_policy_body">1. Основний принцип: Локалізація даних\n\nВсі ваші дані про здоров\'я, включаючи менструальні цикли, симптоми та інші показники здоров\'я, зберігаються лише в зашифрованій базі даних на вашому пристрої.\n\n2. Інформація, що збирається\n\nМи обробляємо лише інформацію, яку ви вручну вводите в додаток. Автоматичного збору даних не відбувається.\n\n3. Шифрування даних\n\nВсі чутливі дані шифруються за допомогою SQLCipher з шифруванням AES-256. Ключ шифрування безпечно зберігається в Android Keystore.\n\n4. Відсутність доступу третіх сторін\n\nМи не використовуємо сторонні послуги аналітики, реклами чи відстеження. Ваші дані ніколи не залишають ваш пристрій.\n\n5. Експорт даних\n\nВи можете експортувати свої дані в будь-який час у стандартних форматах (CSV, зашифрована резервна копія). Ви маєте повний контроль над своїми даними.\n\n6. Видалення даних\n\nВи можете видалити будь-які або всі свої дані в будь-який час. Видалені дані остаточно видаляються з пристрою.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Невідома помилка</string>
+    <string name="error_failed_add_record">Не вдалося додати запис</string>
+    <string name="error_failed_update_record">Не вдалося оновити запис</string>
+    <string name="error_failed_delete_record">Не вдалося видалити запис</string>
+    <string name="error_failed_record">Не вдалося записати</string>
+    <string name="error_failed_set_password">Не вдалося встановити пароль</string>
+    <string name="error_password_not_set">Пароль не встановлено</string>
+    <string name="error_incorrect_password">Невірний пароль</string>
+    <string name="error_verification_failed">Верифікація не вдалася</string>
+    <string name="error_failed_load_settings">Не вдалося завантажити налаштування</string>
+    <string name="error_failed_update_settings">Не вдалося оновити налаштування</string>
+    <string name="error_failed_save_gender">Не вдалося зберегти стать</string>
+    <string name="error_failed_update_goal">Не вдалося оновити мету</string>
+    <string name="error_failed_restore">Не вдалося відновити запис</string>
+    <string name="error_failed_to_delete">Не вдалося видалити запис</string>
+    <string name="error_failed_empty_bin">Не вдалося очистити кошик</string>
+    <string name="loading">Завантаження...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Нагадування про менструацію</string>
+    <string name="notification_channel_period_desc">Нагадування для відстеження менструації</string>
+    <string name="notification_period_title">Нагадування про відстеження менструації</string>
+    <string name="notification_period_body">Не забудьте сьогодні записати дані про менструацію!</string>
+    <string name="notification_channel_ovulation">Нагадування про овуляцію</string>
+    <string name="notification_channel_ovulation_desc">Нагадування для відстеження овуляції</string>
+    <string name="notification_ovulation_title">Вікно овуляції наближається</string>
+    <string name="notification_ovulation_body">Ваш фертильний період скоро настане!</string>
+    <string name="notification_channel_pms">Нагадування про ПМС</string>
+    <string name="notification_channel_pms_desc">Нагадування про симптоми ПМС</string>
+    <string name="notification_pms_title">Очікуються симптоми ПМС</string>
+    <string name="notification_pms_body">Симптоми ПМС можуть початися через кілька днів. Піклуйтеся про себе!</string>
+    <string name="notification_channel_steps">Лічильник кроків</string>
+    <string name="notification_channel_steps_desc">Сповіщення служби лічильника кроків</string>
+    <string name="notification_steps_body">Кроків сьогодні: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Панель</string>
+    <string name="nav_period">Менструація</string>
+    <string name="nav_fitness">Фітнес</string>
+    <string name="nav_analysis">Аналіз</string>
+    <string name="nav_profile">Профіль</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Дата початку,Дата закінчення,Рівень рясності,Рівень болю,Нотатки</string>
+    <string name="backup_exported_success">Резервну копію успішно експортовано</string>
+    <string name="import_success_format">Успішно імпортовано %d записів</string>
+    <string name="csv_exported_success">CSV успішно експортовано</string>
+    <string name="csv_export_failed">Експорт CSV не вдався</string>
+    <string name="password_export_title">Зашифрувати резервну копію</string>
+    <string name="password_import_title">Розшифрувати резервну копію</string>
+    <string name="password_export_desc">Введіть пароль для шифрування файлу резервної копії.</string>
+    <string name="password_import_desc">Введіть пароль, який використовувався для шифрування цього файлу резервної копії.</string>
+    <string name="password_label">Пароль</string>
+    <string name="proceed">Продовжити</string>
+    <string name="password_short_error">Пароль занадто короткий</string>
+    <string name="password_mismatch_error">Паролі не співпадають</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Менструація активна</string>
+    <string name="insight_follicular_phase">Фолікулярна фаза</string>
+    <string name="insight_luteal_phase">Лютеїнова фаза</string>
+    <string name="insight_cycle_day">День циклу %d</string>
+    <string name="insight_steps_stable_title">Стабільна активність протягом циклу</string>
+    <string name="insight_steps_stable_desc">Кількість кроків залишається постійною в усіх фазах циклу, підтримується хороша звичка до вправ.</string>
+    <string name="insight_mood_drop_title">Настрій погіршується в лютеїновій фазі</string>
+    <string name="insight_mood_drop_desc">Середній показник настрою нижчий у лютеїновій фазі, розгляньте управління настроєм</string>
+    <string name="insight_mood_rise_title">Кращий настрій у лютеїновій фазі</string>
+    <string name="insight_mood_rise_desc">Середній показник настрою вищий у лютеїновій фазі, ви чудово справляєтеся</string>
+    <string name="insight_sleep_drop_title">Якість сну погіршується в лютеїновій фазі</string>
+    <string name="insight_sleep_drop_desc">Якість сну знижується під час лютеїнової фази, спробуйте вправи на розслаблення</string>
+    <string name="insight_sleep_rise_title">Кращий сон у лютеїновій фазі</string>
+    <string name="insight_sleep_rise_desc">Якість сну вища в лютеїновій фазі, продовжуйте хорошу рутину</string>
+    <string name="insight_stress_period_title">Вищий стрес під час менструації</string>
+    <string name="insight_stress_period_desc">Рівень стресу на %s балів вищий під час менструації, розгляньте зменшення інтенсивних активностей</string>
+    <string name="insight_mood_today_low_title">Поганий настрій сьогодні</string>
+    <string name="insight_mood_today_low_desc">Ваш настрій сьогодні низький, спробуйте зайнятися тим, що вам подобається</string>
+    <string name="insight_stress_today_high_title">Високий стрес сьогодні</string>
+    <string name="insight_stress_today_high_desc">Рівень стресу сьогодні високий, спробуйте глибоке дихання або медитацію</string>
+    <string name="insight_sleep_last_night_low_title">Поганий сон минулої ночі</string>
+    <string name="insight_sleep_last_night_low_desc">Якість сну була низькою минулої ночі, спробуйте лягти раніше сьогодні</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Активність значно знижується в лютеїновій фазі</string>
+    <string name="insight_luteal_increase">Активність підвищується в лютеїновій фазі</string>
+    <string name="insight_luteal_rest">Відпочивайте належним чином під час лютеїнової фази, рекомендовані легкі вправи, як йога</string>
+    <string name="insight_luteal_nutrition">Чудове підвищення активності, не забувайте підтримувати харчування</string>
+    <string name="insight_luteal_activity_low_title">Нижча активність у лютеїновій фазі</string>
+    <string name="insight_luteal_activity_low_desc">Кроки в лютеїновій фазі зменшилися на %d%% порівняно з фолікулярною фазою. Рекомендована легка активність, як ходьба.</string>
+    <string name="insight_luteal_activity_high_title">Вища активність у лютеїновій фазі</string>
+    <string name="insight_luteal_activity_high_desc">Кроки в лютеїновій фазі збільшилися на %d%% порівняно з фолікулярною фазою. Не забувайте відпочивати та підтримувати харчування.</string>
+    <string name="insight_activity_stable_title">Постійна активність протягом циклу</string>
+    <string name="insight_activity_stable_desc">Кількість кроків залишається стабільною в усіх фазах циклу. Підтримуються хороші звички до вправ.</string>
+    <string name="insight_mood_luteal_drop_title">Настрій погіршується в лютеїновій фазі</string>
+    <string name="insight_mood_luteal_drop_desc">Середній показник настрою на %s балів нижчий у лютеїновій фазі. Розгляньте управління настроєм.</string>
+    <string name="insight_mood_luteal_rise_title">Кращий настрій у лютеїновій фазі</string>
+    <string name="insight_mood_luteal_rise_desc">Середній показник настрою на %s балів вищий у лютеїновій фазі. Ви чудово справляєтеся!</string>
+    <string name="insight_sleep_luteal_drop_title">Якість сну погіршується в лютеїновій фазі</string>
+    <string name="insight_sleep_luteal_drop_desc">Якість сну знизилася на %s балів у лютеїновій фазі. Спробуйте вправи на розслаблення перед сном.</string>
+    <string name="insight_sleep_luteal_rise_title">Кращий сон у лютеїновій фазі</string>
+    <string name="insight_sleep_luteal_rise_desc">Якість сну на %s балів вища в лютеїновій фазі. Продовжуйте хорошу рутину.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Недостатньо даних для прогнозу</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Оновити</string>
+    <string name="recycle_bin_empty_title_short">Очистити кошик</string>
+    <string name="recycle_bin_period_format">Менструація: %1$s</string>
+    <string name="recycle_bin_to_format">до %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Встановити пароль</string>
+    <string name="app_lock_confirm_password">Підтвердити пароль</string>
+    <string name="app_lock_set_password_btn">Встановити пароль</string>
+    <string name="app_lock_unlock_btn">Розблокувати</string>
+    <string name="app_lock_enter_password">Введіть пароль</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Всього записів</string>
+    <string name="stats_total_cycles">Всього циклів</string>
+    <string name="stats_avg_cycle">Середній цикл</string>
+    <string name="stats_avg_period">Середня менструація</string>
+    <string name="stats_regularity_text">Регулярність</string>
+    <string name="stats_cycle_num">Цикл %d</string>
+    <string name="stats_days_suffix">%d дні</string>
+    <string name="stats_avg_format">Середнє: %d днів</string>
+    <string name="stats_no_data">Немає даних</string>
+    <string name="weight_format">Вага: %.1f кг</string>
+    <string name="bmi_format">ІМТ %.1f</string>
+    <string name="height_cm_format">%.0f см</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Резервні копії шифруються за допомогою AES-256-GCM з вашим паролем.</string>
+    <string name="steps_of_goal">з %d мети</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d\u00B0 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Синій</string>
+    <string name="color_green">Зелений</string>
+    <string name="color_purple">Фіолетовий</string>
+    <string name="color_orange">Помаранчевий</string>
+    <string name="color_teal">Бірюзовий</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Натисніть для деталей</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Біг</string>
+    <string name="exercise_walking">Ходьба</string>
+    <string name="exercise_cycling">Велосипед</string>
+    <string name="exercise_swimming">Плавання</string>
+    <string name="exercise_yoga">Йога</string>
+    <string name="exercise_strength">Силові тренування</string>
+    <string name="exercise_dance">Танці</string>
+    <string name="exercise_pilates">Пілатес</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Баскетбол</string>
+    <string name="exercise_football">Футбол</string>
+    <string name="exercise_tennis">Теніс</string>
+    <string name="exercise_badminton">Бадмінтон</string>
+    <string name="exercise_table_tennis">Настільний теніс</string>
+    <string name="exercise_skipping">Скакалка</string>
+    <string name="exercise_hiking">Піші прогулянки</string>
+    <string name="exercise_other">Інше</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">Цього тижня</string>
+    <string name="fitness_add_workout">Додати тренування</string>
+    <string name="fitness_select_type">Виберіть тип вправи</string>
+    <string name="fitness_duration_minutes">Тривалість (хвилини)</string>
+    <string name="fitness_calories_label">Калорії</string>
+    <string name="fitness_distance_km">Відстань (км)</string>
+    <string name="fitness_today_workouts">Сьогоднішні тренування</string>
+    <string name="fitness_recent_workouts">Останні тренування</string>
+    <string name="fitness_empty">Ще немає записаних тренувань.\nНатисніть +, щоб додати перше тренування.</string>
+    <string name="fitness_minutes_format">%d хв</string>
+    <string name="fitness_calories_format">%d ккал</string>
+    <string name="fitness_duration">Тривалість</string>
+    <string name="fitness_calories">Калорії</string>
+    <string name="fitness_workouts">Тренування</string>
+    <string name="fitness_km_unit">км</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Вимкнути оптимізацію батареї</string>
+    <string name="steps_battery_desc">Оптимізація батареї може зупинити службу підрахунку кроків і вплинути на відстеження кроків.</string>
+    <string name="steps_battery_action">Перейти до налаштувань</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">Налаштування %s</string>
+    <string name="steps_auto_start_settings">Налаштування автозапуску</string>
+    <string name="steps_battery_settings">Налаштування батареї</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Підсумок енергії</string>
+    <string name="energy_today">Сьогодні</string>
+    <string name="energy_this_week">Цього тижня</string>
+    <string name="energy_steps">Кроки</string>
+    <string name="energy_workouts">Тренування</string>
+    <string name="energy_total">Всього</string>
+    <string name="energy_workouts_summary">%1$d тренувань \u00B7 %2$d хв</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Показники тіла</string>
+    <string name="body_metrics_height">Зріст (см)</string>
+    <string name="body_metrics_weight">Вага (кг)</string>
+    <string name="body_metrics_saved">Показники тіла збережено</string>
+    <string name="body_metrics_height_error">Будь ласка, введіть дійсний зріст (80-250 см)</string>
+    <string name="body_metrics_weight_error">Будь ласка, введіть дійсну вагу (15-350 кг)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Харчування</string>
+    <string name="nav_nutrition">Харчування</string>
+    <string name="nutrition_add_meal">Додати прийом їжі</string>
+    <string name="nutrition_meal_type">Тип прийому їжі</string>
+    <string name="nutrition_food_name">Назва страви</string>
+    <string name="nutrition_calories">Калорії</string>
+    <string name="nutrition_protein">Білок (г)</string>
+    <string name="nutrition_carbs">Вуглеводи (г)</string>
+    <string name="nutrition_fat">Жири (г)</string>
+    <string name="nutrition_serving_size">Розмір порції</string>
+    <string name="nutrition_macros">Макронутрієнти</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Щоденне харчування</string>
+    <string name="nutrition_today_meals">Сьогоднішні прийоми їжі</string>
+    <string name="nutrition_meals">прийомів</string>
+    <string name="nutrition_weekly_trend">Тижнева тенденція</string>
+    <string name="nutrition_empty">Ще немає записаних прийомів їжі.\nНатисніть +, щоб додати перший прийом їжі.</string>
+    <string name="nutrition_error_food_name">Будь ласка, введіть назву страви</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Сніданок</string>
+    <string name="meal_lunch">Обід</string>
+    <string name="meal_dinner">Вечеря</string>
+    <string name="meal_snack">Перекус</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Вода</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Нижче споживання калорій у лютеїновій фазі</string>
+    <string name="insight_nutrition_luteal_low_desc">Калорії зменшилися на %.0f ккал у лютеїновій фазі. Намагайтеся підтримувати збалансоване харчування.</string>
+    <string name="insight_nutrition_luteal_high_title">Вище споживання калорій у лютеїновій фазі</string>
+    <string name="insight_nutrition_luteal_high_desc">Калорії збільшилися на %.0f ккал у лютеїновій фазі. Це нормально, прислухайтеся до свого тіла.</string>
+    <string name="insight_nutrition_stable_title">Стабільне споживання калорій</string>
+    <string name="insight_nutrition_stable_desc">Ваше споживання калорій залишається стабільним у всіх фазах циклу. Чудова робота!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">Забули PIN?</string>
+    <string name="app_lock_change_pin">Змінити PIN</string>
+    <string name="app_lock_current_pin">Поточний PIN</string>
+    <string name="app_lock_new_pin_label">Новий PIN</string>
+    <string name="app_lock_recovery_title">Скинути блокування додатку</string>
+    <string name="app_lock_recovery_desc">Підтвердьте свою особу, щоб скинути блокування додатку</string>
+    <string name="lock_30s">30 секунд</string>
+    <string name="lock_1min">1 хвилина</string>
+    <string name="lock_5min">5 хвилин</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Сон</string>
+    <string name="sleep_title">Відстеження сну</string>
+    <string name="sleep_record_title">Записати сон</string>
+    <string name="sleep_hours">Години сну</string>
+    <string name="sleep_deep_hours">Глибокий сон</string>
+    <string name="sleep_quality">Якість сну</string>
+    <string name="sleep_quality_format">%d зірка</string>
+    <string name="sleep_history">Історія сну</string>
+    <string name="sleep_no_data">Ще немає записаних даних про сон</string>
+    <string name="sleep_today_status">Сон сьогодні</string>
+    <string name="sleep_hours_format">%s годин</string>
+    <string name="sleep_deep_hours_format">Глибокий: %s годин</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Менструальна</string>
+    <string name="phase_follicular">Фолікулярна</string>
+    <string name="phase_ovulatory">Овуляторна</string>
+    <string name="phase_luteal">Лютеїнова</string>
+    <string name="nutrition_cycle_guidance">Харчові рекомендації за фазою циклу</string>
+    <string name="nutrition_focus_nutrients">Ключові поживні речовини</string>
+    <string name="nutrition_recommended_foods">Рекомендовані продукти</string>
+    <string name="nutrition_limit_foods">Обмежити</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дні</item>
+        <item quantity="many">%d днів</item>
+        <item quantity="other">%d дня</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Введіть допустиму тривалість</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Очистити</string>
+    <string name="edit">Редагувати</string>
+    <string name="exact_date_mode">Точна дата</string>
+    <string name="profile_dob_not_set">Не встановлено</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Тільки рік</string>
+    <string name="year_picker_title">Виберіть рік народження</string>
+
+    <!-- Analysis module -->
+    <string name="analysis_no_data">Недостатньо даних. Запишіть дані про здоров\'я.</string>
+    <string name="export_report">Експортувати звіт PDF</string>
+    <string name="insufficient_data">Недостатньо даних</string>
+
+    <!-- Nutrition analysis -->
+    <string name="nutrition_energy_balance">Енергетичний баланс</string>
+    <string name="nutrition_resting_energy">Спокій</string>
+    <string name="nutrition_exercise_energy">Тренування</string>
+    <string name="nutrition_total_expenditure">Всього спалено</string>
+    <string name="nutrition_calorie_balance">Баланс</string>
+
+    <!-- Sleep tracking -->
+    <string name="sleep_auto_calculated">Авто: %d год</string>
+    <string name="sleep_bedtime_btn">До сну</string>
+    <string name="sleep_elapsed">Минуло %d год %d хв</string>
+    <string name="sleep_sleeping">Спите...</string>
+    <string name="sleep_waketime_btn">Прокинутись</string>
+
+    <!-- Health pattern detection -->
+    <string name="pattern_exhaustion_title">Виявлено фізичне виснаження</string>
+    <string name="pattern_exhaustion_desc">Недостатній сон, високий стрес і поганий настрій свідчать про ризик вигорання. Рекомендуються дні відпочинку.</string>
+    <string name="pattern_overtraining_title">Ризик перетренованості</string>
+    <string name="pattern_overtraining_desc">Високий обсяг тренувань із дефіцитом калорій і нестачею сну. Слідкуйте за травмами.</string>
+    <string name="pattern_sedentary_mood_title">Малорухливість + Поганий настрій</string>
+    <string name="pattern_sedentary_mood_desc">Дуже низька кількість кроків у поєднанні з поганим настроєм. Коротка прогулянка може допомогти.</string>
+    <string name="pattern_dehydration_stress_title">Зневоднення + Стрес</string>
+    <string name="pattern_dehydration_stress_desc">Низьке споживання води та високий рівень стресу. Гідратація підвищує стійкість.</string>
+    <string name="pattern_positive_loop_title">Позитивний цикл здоров\'я</string>
+    <string name="pattern_positive_loop_desc">Хороший сон, висока активність і позитивний настрій посилюють один одного. Продовжуйте в тому ж дусі!</string>
+
+    <!-- Analysis sections -->
+    <string name="analysis_section_suggestions">Розумні рекомендації</string>
+    <string name="analysis_section_nutrition">Аналіз харчування</string>
+    <string name="analysis_section_calorie_balance">Баланс калорій</string>
+    <string name="analysis_section_exercise">Аналіз тренувань</string>
+    <string name="analysis_section_sleep">Аналіз сну</string>
+    <string name="analysis_section_phase">Зв\'язок із циклом</string>
+    <string name="analysis_avg_daily_calories">У середньому за день</string>
+    <string name="analysis_protein">Білки</string>
+    <string name="analysis_carbs">Вуглеводи</string>
+    <string name="analysis_fat">Жири</string>
+    <string name="analysis_nutrient_ratio">Співвідношення нутрієнтів</string>
+    <string name="analysis_avg_water_format">Води в середньому: %.0f мл</string>
+    <string name="analysis_avg_intake">Середнє споживання</string>
+    <string name="analysis_exercise_burned">Спалено на тренуваннях</string>
+    <string name="analysis_weekly_total_minutes">За тиждень усього</string>
+    <string name="analysis_daily_avg_minutes">У середньому за день</string>
+    <string name="analysis_calories_burned">Спалено калорій</string>
+    <string name="analysis_exercise_type_distribution">Розподіл за типами тренувань</string>
+    <string name="analysis_avg_sleep_hours">Середня тривалість</string>
+    <string name="analysis_quality_score">Оцінка якості</string>
+    <string name="analysis_daily_sleep_hours">Щоденні години сну</string>
+    <string name="analysis_mood">Настрій</string>
+    <string name="analysis_stress">Стрес</string>
+    <string name="analysis_daily_net_calories">Чисті калорії на день (з урахуванням спокою)</string>
+
+    <!-- Report -->
+    <string name="report_title">Звіт про здоров\'я</string>
+    <string name="report_description">Створіть комплексний звіт про здоров\'я на основі ваших даних. Звіт створюється локально на пристрої та може бути поширений у форматі PDF.</string>
+    <string name="report_period">Період звіту: останні 30 днів</string>
+    <string name="report_includes">Включає: записи циклу, кроки, сон, харчування та аналітику здоров\'я</string>
+    <string name="report_generate">Створити звіт</string>
+    <string name="report_generating">Створення звіту PDF...</string>
+    <string name="report_success">Звіт успішно створено!</string>
+    <string name="report_share">Поділитися звітом про здоров\'я</string>
+    <string name="report_share_button">Поділитися</string>
+    <string name="report_generate_new">Створити новий</string>
+    <string name="report_error">Помилка: %s</string>
+    <string name="report_privacy_title">Повідомлення про конфіденційність</string>
+    <string name="report_privacy_body">Усі звіти створюються локально на вашому пристрої. Жодні дані про здоров\'я не завантажуються на сервер або в хмарний сервіс. Ваші дані залишаються під вашим повним контролем.</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_low_calorie_title">Низьке споживання калорій</string>
+    <string name="suggestion_low_calorie_desc">Денне споживання %.0f ккал нижче рекомендованих 1800 ккал. Рекомендується додати складні вуглеводи та корисні жири.</string>
+    <string name="suggestion_high_calorie_title">Високе споживання калорій</string>
+    <string name="suggestion_high_calorie_desc">Денне споживання %.0f ккал перевищує 2500 ккал. Рекомендується скоротити перекуси та збільшити кількість овочів.</string>
+    <string name="suggestion_low_protein_title">Низьке споживання білка</string>
+    <string name="suggestion_low_protein_desc">Денне споживання білка %.0f г нижче рекомендованих 50 г. Рекомендуються яйця, риба та тофу.</string>
+    <string name="suggestion_low_water_title">Низьке споживання води</string>
+    <string name="suggestion_low_water_desc">Денне споживання води %.0f мл нижче рекомендованого. Прагніть до 1500-2000 мл на день.</string>
+    <string name="suggestion_high_surplus_title">Великий профіцит калорій</string>
+    <string name="suggestion_high_surplus_desc">Денний профіцит %.0f ккал. Якщо ваша мета — схуднення, збільште фізичну активність.</string>
+    <string name="suggestion_high_deficit_title">Великий дефіцит калорій</string>
+    <string name="suggestion_high_deficit_desc">Денний дефіцит %.0f ккал. Переконайтеся, що ви покриваєте базові метаболічні потреби.</string>
+    <string name="suggestion_balanced_title">Збалансовані калорії</string>
+    <string name="suggestion_balanced_desc">Споживання та витрати добре збалансовані. Продовжуйте в тому ж дусі!</string>
+    <string name="suggestion_low_exercise_title">Низька фізична активність</string>
+    <string name="suggestion_low_exercise_desc">Щотижневе навантаження %d хвилин нижче рекомендованих ВООЗ 150 хвилин.</string>
+    <string name="suggestion_exercise_met_title">Мета з навантаження досягнута</string>
+    <string name="suggestion_exercise_met_desc">Щотижневе навантаження %d хвилин відповідає рекомендаціям ВООЗ!</string>
+    <string name="suggestion_exercise_variety_title">Потрібне різноманіття навантажень</string>
+    <string name="suggestion_exercise_variety_desc">Спробуйте різні типи тренувань (кардіо + сила + гнучкість) для загальної фізичної форми.</string>
+    <string name="suggestion_low_sleep_title">Недостатній сон</string>
+    <string name="suggestion_low_sleep_desc">Щоденний сон %.1f год нижче рекомендованих 7-9 годин. Спробуйте дотримуватися регулярного графіка.</string>
+    <string name="suggestion_high_sleep_title">Надмірний сон</string>
+    <string name="suggestion_high_sleep_desc">Щоденний сон %.1f год перевищує 9 годин. Тривалий сон може вказувати на втому.</string>
+    <string name="suggestion_low_deep_sleep_title">Мало глибокого сну</string>
+    <string name="suggestion_low_deep_sleep_desc">Частка глибокого сну лише %.0f%%. Уникайте кофеїну перед сном і тримайте кімнату темною.</string>
+    <string name="suggestion_low_sleep_quality_title">Низька якість сну</string>
+    <string name="suggestion_low_sleep_quality_desc">Оцінка якості сну %.1f/5. Спробуйте медитацію або теплу ванну перед сном.</string>
+    <string name="suggestion_luteal_sleep_title">Зміна сну в лютеїновій фазі</string>
+    <string name="suggestion_luteal_sleep_desc">Сон у лютеїновій фазі зменшився на %.1f год порівняно з фолікулярною. Нормальна гормональна зміна.</string>
+
+    <!-- Error -->
+    <string name="error_onboarding_required">Будь ласка, завершіть налаштування користувача</string>
+    <string name="error_load_failed">Завантаження не вдалося</string>
+
+    <!-- Cycle nutrition guidance - menstrual -->
+    <string name="nutrition_menstrual_advice">Зосередьтеся на продуктах, багатих на залізо, для відновлення крововтрати. Магній допомагає зменшити спазми. Пийте достатньо води.</string>
+    <string name="nutrition_menstrual_nutrients">Залізо · Магній · Омега-3 · Вітамін B12</string>
+    <string name="nutrition_menstrual_foods">Листова зелень · Червоне м\'ясо · Жирна риба · Темний шоколад · Горіхи</string>
+    <string name="nutrition_menstrual_limit">Солоні закуски · Кофеїн · Молочні продукти</string>
+
+    <!-- Cycle nutrition guidance - follicular -->
+    <string name="nutrition_follicular_advice">Ваш енергетичний обмін підвищується. Чудовий час для легкої, поживної їжі. Підтримуйте здоров\'я кишечника пробіотиками.</string>
+    <string name="nutrition_follicular_nutrients">Клітковина · Вітамін C · Пробіотики · Фолат</string>
+    <string name="nutrition_follicular_foods">Ягоди · Цитрусові · Йогурт · Вівсянка · Броколі</string>
+    <string name="nutrition_follicular_limit">Оброблені продукти · Надлишок цукру</string>
+
+    <!-- Cycle nutrition guidance - ovulatory -->
+    <string name="nutrition_ovulatory_advice">Естроген досягає піку в цій фазі. Підтримуйте детоксикацію печінки продуктами, багатими на антиоксиданти. Рекомендується протизапальна дієта.</string>
+    <string name="nutrition_ovulatory_nutrients">Антиоксиданти · Вітамін C · Цинк · Вітамін E</string>
+    <string name="nutrition_ovulatory_foods">Болгарський перець · Насіння соняшнику · Нежирна птиця · Авокадо · Зелений чай</string>
+    <string name="nutrition_ovulatory_limit">Алкоголь · Смажена їжа</string>
+
+    <!-- Cycle nutrition guidance - luteal -->
+    <string name="nutrition_luteal_advice">Прогестерон підвищується, що може збільшити апетит. Складні вуглеводи допомагають підвищити серотонін. Обмежте кофеїн і сіль для полегшення симптомів ПМС.</string>
+    <string name="nutrition_luteal_nutrients">Вітаміни групи B · Складні вуглеводи · Магній · Кальцій · Вітамін B6</string>
+    <string name="nutrition_luteal_foods">Цільнозернові · Банани · Листова зелень · Бобові · Темний шоколад</string>
+    <string name="nutrition_luteal_limit">Цукор · Кофеїн · Солона їжа</string>
+
+    <!-- Sleep trend -->
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Години сну   ▐ Оцінка якості</string>
+    <string name="sleep_luteal_worse">Якість сну в лютеїновій фазі погіршилася</string>
+    <string name="sleep_luteal_better">Якість сну в лютеїновій фазі покращилася</string>
+    <string name="sleep_luteal_comparison_worse">Середній сон у лютеїновій фазі %.1f год, у фолікулярній %.1f год, зменшення на %.1f год</string>
+    <string name="sleep_luteal_comparison_better">Середній сон у лютеїновій фазі %.1f год, у фолікулярній %.1f год, покращення на %.1f год</string>
+
+    <!-- PDF Report -->
+    <string name="pdf_health_report">Звіт про здоров\'я</string>
+    <string name="pdf_generated">Створено: %s</string>
+    <string name="pdf_user_info">Користувач: %1$s | Стать: %2$s</string>
+    <string name="pdf_report_period">Період звіту: %s</string>
+    <string name="pdf_period_summary">Підсумок циклу</string>
+    <string name="pdf_no_period_records">Немає записів циклу за вибраний період.</string>
+    <string name="pdf_total_cycles">Всього циклів: %d</string>
+    <string name="pdf_avg_cycle_length">Середня тривалість циклу: %d дн.</string>
+    <string name="pdf_avg_pain">Середній рівень болю: %.1f / 3</string>
+    <string name="pdf_recent_records">Останні записи</string>
+    <string name="pdf_start_date">Дата початку</string>
+    <string name="pdf_end_date">Дата закінчення</string>
+    <string name="pdf_flow">Рясність</string>
+    <string name="pdf_pain">Біль</string>
+    <string name="pdf_ongoing">Триває</string>
+    <string name="pdf_flow_light">Легка</string>
+    <string name="pdf_flow_medium">Помірна</string>
+    <string name="pdf_flow_heavy">Рясна</string>
+    <string name="pdf_pain_none">Немає</string>
+    <string name="pdf_pain_mild">Легкий</string>
+    <string name="pdf_pain_moderate">Помірний</string>
+    <string name="pdf_pain_severe">Сильний</string>
+    <string name="pdf_activity_summary">Підсумок активності</string>
+    <string name="pdf_no_step_data">Немає даних про кроки.</string>
+    <string name="pdf_avg_daily_steps">Середня кількість кроків на день: %,d</string>
+    <string name="pdf_total_steps">Всього кроків: %,d</string>
+    <string name="pdf_max_steps">Максимум кроків на день: %,d</string>
+    <string name="pdf_total_exercise">Всього тренувань: %d хвилин</string>
+    <string name="pdf_sleep_summary">Підсумок сну</string>
+    <string name="pdf_no_sleep_data">Немає даних про сон.</string>
+    <string name="pdf_avg_sleep">Середня тривалість сну: %.1f год</string>
+    <string name="pdf_avg_sleep_quality">Середня якість сну: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Середня тривалість глибокого сну: %.1f год</string>
+    <string name="pdf_nutrition_summary">Підсумок харчування</string>
+    <string name="pdf_no_nutrition_data">Немає даних про харчування.</string>
+    <string name="pdf_avg_calories">Середнє споживання калорій на день: %.0f ккал</string>
+    <string name="pdf_avg_water">Середнє споживання води: %.0f мл</string>
+    <string name="pdf_avg_protein">Середнє споживання білка: %.0f г</string>
+    <string name="pdf_footer">Цей звіт створено локально на вашому пристрої. Жодні дані не залишають ваш телефон.</string>
+    <string name="pdf_page">Сторінка %d</string>
+    <string name="pdf_app_name">TianshangHealth — Конфіденційність понад усе</string>
+    <string name="previous">Назад</string>
+    <string name="next">Далі</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">Не вдалося створити звіт</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

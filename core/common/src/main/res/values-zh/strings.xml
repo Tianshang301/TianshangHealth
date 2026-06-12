@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">天殇·悦康</string>
+    <string name="terms_title">服务条款</string>
+    <string name="privacy_title">隐私政策</string>
+    <string name="accept_terms">我已阅读并接受</string>
+    <string name="app_lock_title">应用锁</string>
+    <string name="enter_pin">密码</string>
+    <string name="unlock">解锁</string>
+    <string name="invalid_pin">密码错误</string>
+    <string name="app_lock_setup_title">设置应用锁密码</string>
+    <string name="set_pin">设置密码</string>
+    <string name="confirm_pin">确认密码</string>
+    <string name="set_password">设置密码</string>
+    <string name="pin_empty_error">密码不能为空</string>
+    <string name="pin_mismatch_error">两次密码不一致</string>
+    <string name="pin_length_error">密码长度至少为%d位</string>
+    <string name="calendar_title">日历</string>
+    <string name="current_cycle_day">周期第%d天</string>
+    <string name="days_until_next_period">距下次经期还有%d天</string>
+    <string name="no_period_data">无经期数据</string>
+    <string name="tap_date_to_record">点击记录</string>
+    <string name="period">经期</string>
+    <string name="predicted_period">预测经期</string>
+    <string name="ovulation">排卵</string>
+    <string name="fertile_window">易孕期</string>
+    <string name="record_title">记录</string>
+    <string name="start_period">开始经期</string>
+    <string name="end_period">结束经期</string>
+    <string name="flow_level">经量</string>
+    <string name="pain_level">痛经</string>
+    <string name="symptoms">症状</string>
+    <string name="sexual_activity">性生活</string>
+    <string name="ovulation_test">排卵试纸</string>
+    <string name="cervical_mucus">宫颈黏液</string>
+    <string name="body_temperature">基础体温</string>
+    <string name="notes">备注</string>
+    <string name="save">保存</string>
+    <string name="analysis_title">分析</string>
+    <string name="cycle_statistics">周期统计</string>
+    <string name="avg_cycle_length">平均周期</string>
+    <string name="avg_period_length">平均经期</string>
+    <string name="cycle_regularity">规律性</string>
+    <string name="total_cycles">总周期数</string>
+    <string name="pain_trend">痛经趋势</string>
+    <string name="symptom_frequency">症状频率</string>
+    <string name="predictions">预测</string>
+    <string name="reminder_title">提醒</string>
+    <string name="period_reminder">经期提醒</string>
+    <string name="ovulation_reminder">排卵提醒</string>
+    <string name="pms_reminder">经前综合症提醒</string>
+    <string name="profile_title">我的</string>
+    <string name="profile_dob_title">出生日期</string>
+    <string name="theme_customization">主题</string>
+    <string name="theme_color">主题颜色</string>
+    <string name="app_lock">应用锁</string>
+    <string name="language">语言</string>
+    <string name="recycle_bin">回收站</string>
+    <string name="recycle_bin_title">回收站</string>
+    <string name="backup_restore">备份</string>
+    <string name="backup_restore_title">备份与恢复</string>
+    <string name="export_backup">导出备份</string>
+    <string name="import_backup">导入备份</string>
+    <string name="export_csv">导出CSV</string>
+    <string name="about">关于</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">添加</string>
+    <string name="height_cm">身高（厘米）</string>
+    <string name="weight_kg">体重（公斤）</string>
+    <string name="latest_bmi">当前BMI</string>
+    <string name="bmi_history">历史</string>
+    <string name="dark_mode">深色模式</string>
+    <string name="dark_mode_description">切换主题模式</string>
+    <string name="no_deleted_records">无已删除记录</string>
+    <string name="security_settings">安全</string>
+    <string name="data_security">数据安全</string>
+    <string name="database_encryption">数据库加密</string>
+    <string name="encrypted">已加密（AES-256）</string>
+    <string name="unencrypted">未加密</string>
+    <string name="migrate_to_encrypted">迁移至加密数据库</string>
+    <string name="migration_success">迁移成功！数据库现已加密。</string>
+    <string name="migration_failed">迁移失败：%s。数据已恢复至原始状态。</string>
+    <string name="background_lock_delay">后台锁定延迟</string>
+    <string name="lock_immediately">立即</string>
+    <string name="lock_after_seconds">%d秒后</string>
+    <string name="custom_reminders">自定义提醒</string>
+    <string name="add_custom_reminder">添加自定义提醒</string>
+    <string name="no_custom_reminders">暂无自定义提醒</string>
+    <string name="reminder_title_label">提醒标题</string>
+    <string name="reminder_title_required">标题为必填项</string>
+    <string name="reminder_message_label">消息（可选）</string>
+    <string name="reminder_date">提醒日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="hue">色相</string>
+    <string name="saturation">饱和度</string>
+    <string name="lightness">明度</string>
+    <string name="apply_color">应用颜色</string>
+    <string name="custom_color">自定义颜色</string>
+    <string name="color_preview">颜色预览</string>
+    <string name="apply">应用</string>
+    <string name="preset_colors">预设颜色</string>
+    <string name="add_symptom">添加症状</string>
+    <string name="symptom_name">症状名称</string>
+    <string name="symptom_name_required">症状名称为必填项</string>
+    <string name="prediction_explanation">基于最近%1$d个周期自适应预测（平均%2$s天/周期，%3$s天/经期）</string>
+    <string name="record_date">记录日期</string>
+    <string name="select_date">选择日期</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="delete_record">删除记录</string>
+    <string name="delete_record_confirm">确定删除此日期的记录？此操作不可撤销。</string>
+    <string name="week_sun">日</string>
+    <string name="week_mon">一</string>
+    <string name="week_tue">二</string>
+    <string name="week_wed">三</string>
+    <string name="week_thu">四</string>
+    <string name="week_fri">五</string>
+    <string name="week_sat">六</string>
+    <string name="calendar_today">今天</string>
+    <string name="back">返回</string>
+    <string name="symptom_headache">头痛</string>
+    <string name="symptom_bloating">腹胀</string>
+    <string name="symptom_breast_tenderness">乳房胀痛</string>
+    <string name="symptom_backache">背痛</string>
+    <string name="symptom_fatigue">疲劳</string>
+    <string name="symptom_mood_swings">情绪波动</string>
+    <string name="symptom_acne">痤疮</string>
+    <string name="symptom_increased_appetite">食欲增加</string>
+    <string name="symptom_insomnia">失眠</string>
+    <string name="symptom_nausea">恶心</string>
+    <string name="flow_light">少</string>
+    <string name="flow_medium">中</string>
+    <string name="flow_heavy">多</string>
+    <string name="pain_none">无</string>
+    <string name="pain_mild">轻微</string>
+    <string name="pain_moderate">中度</string>
+    <string name="pain_severe">重度</string>
+    <string name="unit_days">天</string>
+    <string name="predicted_period_label">预测经期：%1$s - %2$s</string>
+    <string name="ovulation_date_label">排卵日：%s</string>
+    <string name="confidence_label">可信度：%1$s（基于%2$d个周期）</string>
+    <string name="reminder_days_before">提前天数</string>
+    <string name="reminder_time">提醒时间</string>
+    <string name="enabled">已开启</string>
+    <string name="disabled">已关闭</string>
+    <string name="color_pink">粉色</string>
+    <string name="color_dark_pink">深粉</string>
+    <string name="color_peach">桃色</string>
+    <string name="color_light_purple">浅紫</string>
+    <string name="color_medium_purple">中紫</string>
+    <string name="unit_cm">厘米</string>
+    <string name="unit_kg">公斤</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">偏瘦</string>
+    <string name="bmi_category_normal">正常</string>
+    <string name="bmi_category_overweight">超重</string>
+    <string name="bmi_category_obese">肥胖</string>
+    <string name="bmi_standard_note">基于中国BMI标准</string>
+    <string name="backup_success">备份成功</string>
+    <string name="backup_fail">备份失败</string>
+    <string name="restore_success">恢复成功</string>
+    <string name="restore_fail">恢复失败</string>
+    <string name="export_success">导出成功</string>
+    <string name="export_fail">导出失败</string>
+    <string name="backup_export_desc">将数据库导出为ZIP备份文件</string>
+    <string name="backup_import_desc">从备份文件恢复数据</string>
+    <string name="backup_csv_desc">将记录导出为CSV表格</string>
+    <string name="deleted_time">删除时间：%s</string>
+    <string name="in_progress">进行中</string>
+    <string name="terms_countdown">请等待%d秒</string>
+    <string name="auth_failed">认证失败：%s</string>
+    <string name="auth_failed_generic">认证失败</string>
+    <string name="biometric_init_failed">生物识别初始化失败</string>
+    <string name="lockout_message">尝试次数过多，请等待%d秒后重试</string>
+    <string name="chart_title_cycle_length_trend">周期长度趋势</string>
+    <string name="chart_title_pain_trend">痛经趋势</string>
+    <string name="chart_title_symptom_distribution">症状分布</string>
+    <string name="chart_cycle_label">第%d周期</string>
+    <string name="chart_cycle_length_label">周期长度 : %d</string>
+    <string name="chart_pain_level_label">痛经等级</string>
+    <string name="regularity_regular">规律</string>
+    <string name="regularity_somewhat_regular">较规律</string>
+    <string name="regularity_irregular">不规律</string>
+    <string name="regularity_insufficient_data">数据不足</string>
+    <string name="confidence_high">高</string>
+    <string name="confidence_medium">中</string>
+    <string name="confidence_low">低</string>
+    <string name="confidence_insufficient">数据不足</string>
+    <string name="analysis_no_data_title">暂无数据</string>
+    <string name="analysis_no_data_hint">开始记录经期即可查看分析和预测</string>
+    <string name="section_appearance">外观</string>
+    <string name="section_health">健康</string>
+    <string name="section_data">数据</string>
+    <string name="section_other">其他</string>
+    <string name="open">打开</string>
+    <string name="retry">重试</string>
+    <string name="profile_theme_description">自定义应用颜色</string>
+    <string name="profile_language_description">更改应用语言</string>
+    <string name="profile_bmi_description">追踪身体质量指数</string>
+    <string name="profile_app_lock_description">需要认证才能打开应用</string>
+    <string name="screenshot_protection_title">防截图</string>
+    <string name="screenshot_protection_description">阻止截图和屏幕录制</string>
+    <string name="profile_backup_description">所有数据的加密备份与恢复</string>
+    <string name="profile_recycle_bin_description">查看和恢复已删除的记录</string>
+    <string name="profile_version">版本 1.0.0</string>
+    <string name="profile_app_description">以隐私为核心的全面健康追踪应用。</string>
+    <string name="custom_theme">自定义主题</string>
+    <string name="language_description">选择偏好的语言。应用将重启以应用更改。</string>
+    <string name="language_changed_restart">语言已更改，正在重启…</string>
+    <string name="bmi_empty_text">暂无体重记录。添加您的第一条体重记录。</string>
+    <string name="save_height">保存身高</string>
+    <string name="bmi_category_label">类别</string>
+    <string name="height_label">身高</string>
+    <string name="update_height">更新身高</string>
+    <string name="add_weight_record_title">添加体重记录</string>
+    <string name="add_weight_record_text">输入您今天的体重。</string>
+    <string name="recycle_bin_description">已删除的记录将在30天后永久清除。</string>
+    <string name="recycle_bin_empty">回收站已清空</string>
+    <string name="recycle_bin_empty_title">清空回收站</string>
+    <string name="recycle_bin_empty_confirm">所有已删除记录将被永久移除。此操作不可撤销。</string>
+    <string name="recycle_bin_empty_action">清空</string>
+    <string name="recycle_bin_restore">还原</string>
+    <string name="recycle_bin_delete_forever">永久删除</string>
+    <string name="add_record">添加记录</string>
+    <string name="period_tracking_title">经期追踪</string>
+    <string name="prediction_explanation_title">预测说明</string>
+    <string name="reminder_period_desc">在经期开始前收到通知</string>
+    <string name="reminder_ovulation_desc">在排卵前收到通知</string>
+    <string name="reminder_pms_desc">在经前综合症症状前收到通知</string>
+    <string name="cycle_status_title">周期状态</string>
+    <string name="cycle_day_label">周期天数</string>
+    <string name="days_until_label">距离</string>
+    <string name="period_active_text">经期进行中</string>
+    <string name="next_period_label">下次经期</string>
+    <string name="not_enough_data">数据不足</string>
+    <string name="cycle_length_label">周期长度</string>
+    <string name="chart_no_data">数据不足，无法显示图表</string>
+    <string name="chart_no_pain_data">未记录痛经数据</string>
+    <string name="chart_pain_unknown">未知</string>
+    <string name="chart_total_records">总记录数</string>
+    <string name="record_for_date">%s的记录</string>
+    <string name="save_record">保存记录</string>
+    <string name="male_health_trend">健康趋势</string>
+    <string name="male_health_description">经期分析不适用于男性用户。以下显示通用健康数据。</string>
+    <string name="steps_overview">步数概览</string>
+    <string name="steps_today">今日步数</string>
+    <string name="steps_weekly_avg_label">7天平均步数</string>
+    <string name="steps_record_days">记录天数</string>
+    <string name="steps_weekly_trend_label">7天步数趋势</string>
+    <string name="steps_title">步数统计</string>
+    <string name="steps_daily_goal">每日目标</string>
+    <string name="steps_update_goal">更新目标</string>
+    <string name="steps_this_week">本周</string>
+    <string name="steps_total">总计</string>
+    <string name="steps_average">平均</string>
+    <string name="steps_days_label">天数</string>
+    <string name="steps_weekly_trend">周趋势</string>
+    <string name="steps_goal_format">%d步</string>
+    <string name="steps_weekly_avg_format">周均%d步/天</string>
+    <string name="steps_history_title">步数历史</string>
+    <string name="steps_tab_week">周</string>
+    <string name="steps_tab_month">月</string>
+    <string name="steps_tab_year">年</string>
+    <string name="steps_tab_all">总</string>
+    <string name="steps_30d_total">30天总计</string>
+    <string name="steps_avg">日均</string>
+    <string name="steps_best">最佳</string>
+    <string name="steps_weekly_label">周明细</string>
+    <string name="steps_daily_trend">日趋势</string>
+    <string name="steps_monthly_label">月明细</string>
+    <string name="steps_total_label">总步数</string>
+    <string name="steps_period_total">周期总计</string>
+    <string name="steps_weekly_avg">周平均</string>
+    <string name="steps_monthly_avg">月平均</string>
+    <string name="steps_best_month">最佳月份</string>
+    <string name="steps_tab_day">日</string>
+    <string name="steps_label">步数</string>
+    <string name="steps_calories_label">卡路里</string>
+    <string name="steps_yearly_label">年明细</string>
+    <string name="dashboard_title">健康仪表盘</string>
+    <string name="dashboard_quick_actions">快捷操作</string>
+    <string name="dashboard_retry">重试</string>
+    <string name="dashboard_insights">健康洞察</string>
+    <string name="dashboard_insights_empty">记录更多健康数据以获取个性化洞察</string>
+    <string name="dashboard_period_status">经期状态</string>
+    <string name="dashboard_period_active">经期进行中</string>
+    <string name="dashboard_follicular_phase">卵泡期</string>
+    <string name="dashboard_no_data">暂无数据</string>
+    <string name="dashboard_today_steps">今日步数</string>
+    <string name="dashboard_goal_format">目标：%d</string>
+    <string name="dashboard_cycle_day_format">第%1$d天</string>
+    <string name="dashboard_record_period">记录经期</string>
+    <string name="dashboard_record_steps">记录步数</string>
+    <string name="dashboard_record_health">健康分析</string>
+    <string name="gender_welcome">欢迎使用天殇健康</string>
+    <string name="gender_instruction">请选择您的性别以获取个性化健康追踪</string>
+    <string name="gender_male">男</string>
+    <string name="gender_male_desc">隐藏经期追踪功能</string>
+    <string name="gender_female">女</string>
+    <string name="gender_female_desc">显示所有功能，包括经期追踪</string>
+    <string name="gender_other">其他</string>
+    <string name="gender_other_desc">显示所有功能</string>
+    <string name="gender_footnote">您可以在设置中随时更改</string>
+    <string name="gender_setting_title">性别</string>
+    <string name="gender_setting_description">更改性别以调整功能模块</string>
+    <string name="select_gender">选择性别</string>
+    <string name="app_lock_health_data_protected">您的健康数据受到保护</string>
+    <string name="app_lock_set_password_title">设置密码</string>
+    <string name="app_lock_password_label">密码</string>
+    <string name="app_lock_confirm_password_label">确认密码</string>
+    <string name="app_lock_enter_password_title">输入密码</string>
+    <string name="app_lock_use_biometric">使用生物识别</string>
+    <string name="terms_privacy_title">服务条款与隐私政策</string>
+    <string name="terms_service_title">服务条款</string>
+    <string name="privacy_policy_title">隐私政策</string>
+    <string name="terms_service_declaration">1. 服务声明\n\n天殇健康是一款以用户隐私和数据安全为优先的全面健康追踪应用。所有数据均使用强加密存储在您的设备本地。\n\n2. 数据隐私\n\n我们不会收集、上传或分享您的任何个人健康数据。本应用完全离线运行，无需网络权限。\n\n3. 用户责任\n\n您对输入的健康数据的准确性负责。提供的预测和分析仅供参考，不构成医疗建议。\n\n4. 数据安全\n\n您的数据受SQLCipher AES-256加密保护。加密密钥通过Android Keystore管理，实现硬件级安全。</string>
+    <string name="privacy_policy_body">1. 核心原则：数据本地化\n\n您的所有健康数据，包括月经周期、症状及其他健康指标，仅存储在您设备上的加密数据库中。\n\n2. 收集的信息\n\n我们仅处理您手动输入应用的信息。不会进行任何自动数据收集。\n\n3. 数据加密\n\n所有敏感数据均使用SQLCipher AES-256加密。加密密钥安全存储在Android Keystore中。\n\n4. 无第三方访问\n\n我们不使用任何第三方分析、广告或追踪服务。您的数据永远不会离开您的设备。\n\n5. 数据导出\n\n您可以随时以标准格式（CSV、加密备份）导出数据。您对自己的数据拥有完全控制权。\n\n6. 数据删除\n\n您可以随时删除任何或全部数据。已删除的数据将从设备上永久移除。</string>
+
+    <!-- 错误消息 -->
+    <string name="error_unknown">未知错误</string>
+    <string name="error_failed_add_record">添加记录失败</string>
+    <string name="error_failed_update_record">更新记录失败</string>
+    <string name="error_failed_delete_record">删除记录失败</string>
+    <string name="error_failed_record">记录失败</string>
+    <string name="error_failed_set_password">设置密码失败</string>
+    <string name="error_password_not_set">密码未设置</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_verification_failed">验证失败</string>
+    <string name="error_failed_load_settings">加载设置失败</string>
+    <string name="error_failed_update_settings">更新设置失败</string>
+    <string name="error_failed_save_gender">保存性别失败</string>
+    <string name="error_failed_update_goal">更新目标失败</string>
+    <string name="error_failed_restore">还原记录失败</string>
+    <string name="error_failed_to_delete">删除记录失败</string>
+    <string name="error_failed_empty_bin">清空回收站失败</string>
+    <string name="loading">加载中…</string>
+
+    <!-- 通知字符串 -->
+    <string name="notification_channel_period">经期提醒</string>
+    <string name="notification_channel_period_desc">经期追踪提醒</string>
+    <string name="notification_period_title">经期追踪提醒</string>
+    <string name="notification_period_body">别忘了记录今天的经期数据！</string>
+    <string name="notification_channel_ovulation">排卵提醒</string>
+    <string name="notification_channel_ovulation_desc">排卵追踪提醒</string>
+    <string name="notification_ovulation_title">排卵窗口即将到来</string>
+    <string name="notification_ovulation_body">您的易孕期即将到来！</string>
+    <string name="notification_channel_pms">经前综合症提醒</string>
+    <string name="notification_channel_pms_desc">经前综合症症状提醒</string>
+    <string name="notification_pms_title">预计出现经前综合症症状</string>
+    <string name="notification_pms_body">经前综合症症状可能在几天后出现，请多保重！</string>
+    <string name="notification_channel_steps">计步器</string>
+    <string name="notification_channel_steps_desc">计步器服务通知</string>
+    <string name="notification_steps_body">今日步数：%d</string>
+
+    <!-- 导航标签标题 -->
+    <string name="nav_dashboard">首页</string>
+    <string name="nav_period">经期</string>
+    <string name="nav_fitness">运动</string>
+    <string name="nav_analysis">分析</string>
+    <string name="nav_profile">我的</string>
+
+    <!-- 备份与CSV字符串 -->
+    <string name="csv_header">开始日期,结束日期,经量等级,痛经等级,备注</string>
+    <string name="backup_exported_success">备份导出成功</string>
+    <string name="import_success_format">成功导入%d条记录</string>
+    <string name="csv_exported_success">CSV导出成功</string>
+    <string name="csv_export_failed">CSV导出失败</string>
+    <string name="password_export_title">加密备份</string>
+    <string name="password_import_title">解密备份</string>
+    <string name="password_export_desc">输入密码以加密您的备份文件。</string>
+    <string name="password_import_desc">输入用于加密此备份文件的密码。</string>
+    <string name="password_label">密码</string>
+    <string name="proceed">继续</string>
+    <string name="password_short_error">密码太短</string>
+    <string name="password_mismatch_error">两次密码不一致</string>
+
+    <!-- 仪表盘洞察字符串 -->
+    <string name="insight_period_active">经期进行中</string>
+    <string name="insight_follicular_phase">卵泡期</string>
+    <string name="insight_luteal_phase">黄体期</string>
+    <string name="insight_cycle_day">周期第%d天</string>
+    <string name="insight_steps_stable_title">全周期活动量稳定</string>
+    <string name="insight_steps_stable_desc">您的步数在各个周期阶段保持稳定，良好的运动习惯得以维持。</string>
+    <string name="insight_mood_drop_title">黄体期情绪低落</string>
+    <string name="insight_mood_drop_desc">黄体期平均情绪评分较低，建议进行情绪管理</string>
+    <string name="insight_mood_rise_title">黄体期情绪较佳</string>
+    <string name="insight_mood_rise_desc">黄体期平均情绪评分较高，您做得很好</string>
+    <string name="insight_sleep_drop_title">黄体期睡眠质量下降</string>
+    <string name="insight_sleep_drop_desc">黄体期睡眠质量下降，尝试放松练习</string>
+    <string name="insight_sleep_rise_title">黄体期睡眠质量提升</string>
+    <string name="insight_sleep_rise_desc">黄体期睡眠质量较高，继续保持良好作息</string>
+    <string name="insight_stress_period_title">经期压力较大</string>
+    <string name="insight_stress_period_desc">经期压力水平高出%s点，建议减少剧烈活动</string>
+    <string name="insight_mood_today_low_title">今日心情较低</string>
+    <string name="insight_mood_today_low_desc">今日情绪评分较低，尝试做些喜欢的事情</string>
+    <string name="insight_stress_today_high_title">今日压力较大</string>
+    <string name="insight_stress_today_high_desc">今日压力水平较高，尝试深呼吸或冥想</string>
+    <string name="insight_sleep_last_night_low_title">昨晚睡眠不佳</string>
+    <string name="insight_sleep_last_night_low_desc">昨晚睡眠质量较低，今晚尝试早点入睡</string>
+
+    <!-- 步数洞察字符串 -->
+    <string name="insight_luteal_decrease">黄体期活动量显著下降</string>
+    <string name="insight_luteal_increase">黄体期活动量增加</string>
+    <string name="insight_luteal_rest">黄体期适当休息，推荐瑜伽等轻度运动</string>
+    <string name="insight_luteal_nutrition">活动量增加明显，记得补充营养</string>
+    <string name="insight_luteal_activity_low_title">黄体期活动量较低</string>
+    <string name="insight_luteal_activity_low_desc">黄体期步数相较卵泡期下降%d%%。推荐散步等轻度活动。</string>
+    <string name="insight_luteal_activity_high_title">黄体期活动量较高</string>
+    <string name="insight_luteal_activity_high_desc">黄体期步数相较卵泡期增加%d%%。记得休息和补充营养。</string>
+    <string name="insight_activity_stable_title">全周期活动量一致</string>
+    <string name="insight_activity_stable_desc">步数在各个周期阶段保持稳定，良好的运动习惯得以维持。</string>
+    <string name="insight_mood_luteal_drop_title">黄体期情绪低落</string>
+    <string name="insight_mood_luteal_drop_desc">黄体期平均情绪评分较卵泡期低%s分。建议进行情绪管理。</string>
+    <string name="insight_mood_luteal_rise_title">黄体期情绪较佳</string>
+    <string name="insight_mood_luteal_rise_desc">黄体期平均情绪评分较卵泡期高%s分。您做得很好！</string>
+    <string name="insight_sleep_luteal_drop_title">黄体期睡眠质量下降</string>
+    <string name="insight_sleep_luteal_drop_desc">黄体期睡眠质量下降%s分。睡前进尝试放松练习。</string>
+    <string name="insight_sleep_luteal_rise_title">黄体期睡眠质量提升</string>
+    <string name="insight_sleep_luteal_rise_desc">黄体期睡眠质量提升%s分。继续保持良好作息。</string>
+
+    <!-- 预测引擎字符串 -->
+    <string name="prediction_not_enough_data">数据不足，无法进行预测</string>
+
+    <!-- 回收站 -->
+    <string name="recycle_bin_refresh">刷新</string>
+    <string name="recycle_bin_empty_title_short">清空回收站</string>
+    <string name="recycle_bin_period_format">经期：%1$s</string>
+    <string name="recycle_bin_to_format">至%1$s</string>
+
+    <!-- 应用锁字符串 -->
+    <string name="app_lock_set_password">设置密码</string>
+    <string name="app_lock_confirm_password">确认密码</string>
+    <string name="app_lock_set_password_btn">设置密码</string>
+    <string name="app_lock_unlock_btn">解锁</string>
+    <string name="app_lock_enter_password">输入密码</string>
+
+    <!-- 日历导航箭头 -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- 统计标签（用于图表） -->
+    <string name="stats_total_records">总记录数</string>
+    <string name="stats_total_cycles">总周期数</string>
+    <string name="stats_avg_cycle">平均周期</string>
+    <string name="stats_avg_period">平均经期</string>
+    <string name="stats_regularity_text">规律性</string>
+    <string name="stats_cycle_num">第%d周期</string>
+    <string name="stats_days_suffix">%d天</string>
+    <string name="stats_avg_format">平均：%d天</string>
+    <string name="stats_no_data">暂无数据</string>
+    <string name="weight_format">体重：%.1f公斤</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f厘米</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">备份使用您的密码以AES-256-GCM加密。</string>
+    <string name="steps_of_goal">目标%d步</string>
+
+    <!-- HSL色彩引擎 -->
+    <string name="hsl_format">色相：%1$d° 饱和度：%2$d%% 明度：%3$d%%</string>
+
+    <!-- 预设颜色名称 -->
+    <string name="color_blue">蓝色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_purple">紫色</string>
+    <string name="color_orange">橙色</string>
+    <string name="color_teal">青色</string>
+
+    <!-- 计步器通知 -->
+    <string name="step_notification_text">点击查看详情</string>
+
+    <!-- 运动类型 -->
+    <string name="exercise_running">跑步</string>
+    <string name="exercise_walking">步行</string>
+    <string name="exercise_cycling">骑行</string>
+    <string name="exercise_swimming">游泳</string>
+    <string name="exercise_yoga">瑜伽</string>
+    <string name="exercise_strength">力量训练</string>
+    <string name="exercise_dance">舞蹈</string>
+    <string name="exercise_pilates">普拉提</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">篮球</string>
+    <string name="exercise_football">足球</string>
+    <string name="exercise_tennis">网球</string>
+    <string name="exercise_badminton">羽毛球</string>
+    <string name="exercise_table_tennis">乒乓球</string>
+    <string name="exercise_skipping">跳绳</string>
+    <string name="exercise_hiking">徒步</string>
+    <string name="exercise_other">其他</string>
+
+    <!-- 运动UI -->
+    <string name="fitness_weekly_summary">本周</string>
+    <string name="fitness_add_workout">添加运动</string>
+    <string name="fitness_select_type">选择运动类型</string>
+    <string name="fitness_duration_minutes">时长（分钟）</string>
+    <string name="fitness_calories_label">卡路里</string>
+    <string name="fitness_distance_km">距离（公里）</string>
+    <string name="fitness_today_workouts">今日运动</string>
+    <string name="fitness_recent_workouts">最近运动</string>
+    <string name="fitness_empty">尚未记录运动。\n点击+添加您的第一次运动。</string>
+    <string name="fitness_minutes_format">%d分钟</string>
+    <string name="fitness_calories_format">%d千卡</string>
+    <string name="fitness_duration">时长</string>
+    <string name="fitness_calories">卡路里</string>
+    <string name="fitness_workouts">运动</string>
+    <string name="fitness_km_unit">公里</string>
+
+    <!-- 电池优化 -->
+    <string name="steps_battery_title">关闭电池优化</string>
+    <string name="steps_battery_desc">电池优化可能会停止计步服务，影响步数统计。</string>
+    <string name="steps_battery_action">前往设置</string>
+
+    <!-- OEM引导 -->
+    <string name="steps_oem_settings">%s设置</string>
+    <string name="steps_auto_start_settings">自启动设置</string>
+    <string name="steps_battery_settings">电池设置</string>
+
+    <!-- 能量摘要 -->
+    <string name="energy_summary_title">能量摘要</string>
+    <string name="energy_today">今日</string>
+    <string name="energy_this_week">本周</string>
+    <string name="energy_steps">步数</string>
+    <string name="energy_workouts">运动</string>
+    <string name="energy_total">总计</string>
+    <string name="energy_workouts_summary">%1$d次运动 · %2$d分钟</string>
+
+    <!-- 身体指标 -->
+    <string name="body_metrics_title">身体指标</string>
+    <string name="body_metrics_height">身高（厘米）</string>
+    <string name="body_metrics_weight">体重（公斤）</string>
+    <string name="body_metrics_saved">身体指标已保存</string>
+    <string name="body_metrics_height_error">请输入有效身高（80-250厘米）</string>
+    <string name="body_metrics_weight_error">请输入有效体重（15-350公斤）</string>
+
+    <!-- 营养 -->
+    <string name="nutrition_title">营养</string>
+    <string name="nav_nutrition">营养</string>
+    <string name="nutrition_add_meal">添加餐食</string>
+    <string name="nutrition_meal_type">餐食类型</string>
+    <string name="nutrition_food_name">食物名称</string>
+    <string name="nutrition_calories">卡路里</string>
+    <string name="nutrition_protein">蛋白质（克）</string>
+    <string name="nutrition_carbs">碳水（克）</string>
+    <string name="nutrition_fat">脂肪（克）</string>
+    <string name="nutrition_serving_size">份量</string>
+    <string name="nutrition_macros">宏量营养素</string>
+    <string name="macro_protein_prefix">蛋白质: %s</string>
+    <string name="macro_carbs_prefix">碳水: %s</string>
+    <string name="macro_fat_prefix">脂肪: %s</string>
+    <string name="nutrition_daily_summary">每日营养</string>
+    <string name="nutrition_today_meals">今日餐食</string>
+    <string name="nutrition_meals">餐</string>
+    <string name="nutrition_weekly_trend">周趋势</string>
+    <string name="nutrition_empty">尚未记录餐食。\n点击+添加您的第一餐。</string>
+    <string name="nutrition_error_food_name">请输入食物名称</string>
+
+    <!-- 餐食类型 -->
+    <string name="meal_breakfast">早餐</string>
+    <string name="meal_lunch">午餐</string>
+    <string name="meal_dinner">晚餐</string>
+    <string name="meal_snack">零食</string>
+
+    <!-- 饮水 -->
+    <string name="nutrition_water">饮水</string>
+
+    <!-- 营养洞察 -->
+    <string name="insight_nutrition_luteal_low_title">黄体期卡路里摄入偏低</string>
+    <string name="insight_nutrition_luteal_low_desc">黄体期卡路里降低%.0f千卡。请尽量保持均衡饮食。</string>
+    <string name="insight_nutrition_luteal_high_title">黄体期卡路里摄入偏高</string>
+    <string name="insight_nutrition_luteal_high_desc">黄体期卡路里增加%.0f千卡。这很自然，倾听身体的声音。</string>
+    <string name="insight_nutrition_stable_title">卡路里摄入稳定</string>
+    <string name="insight_nutrition_stable_desc">您的卡路里摄入在各个周期保持稳定。做得很好！</string>
+
+    <!-- 应用锁字符串 -->
+    <string name="app_lock_forgot_pin">忘记密码？</string>
+    <string name="app_lock_change_pin">修改密码</string>
+    <string name="app_lock_current_pin">当前密码</string>
+    <string name="app_lock_new_pin_label">新密码</string>
+    <string name="app_lock_recovery_title">重置应用锁</string>
+    <string name="app_lock_recovery_desc">验证身份以重置应用锁</string>
+    <string name="lock_30s">30秒</string>
+    <string name="lock_1min">1分钟</string>
+    <string name="lock_5min">5分钟</string>
+
+    <!-- 睡眠追踪字符串 -->
+    <string name="nav_sleep">睡眠</string>
+    <string name="sleep_title">睡眠追踪</string>
+    <string name="sleep_record_title">记录睡眠</string>
+    <string name="sleep_hours">睡眠时长</string>
+    <string name="sleep_deep_hours">深睡时长</string>
+    <string name="sleep_quality">睡眠质量</string>
+    <string name="sleep_quality_format">%d星</string>
+    <string name="sleep_history">睡眠历史</string>
+    <string name="sleep_no_data">尚未记录睡眠数据</string>
+    <string name="sleep_today_status">今日睡眠</string>
+    <string name="sleep_hours_format">%s小时</string>
+    <string name="sleep_deep_hours_format">深睡：%s小时</string>
+
+    <!-- 周期营养指导字符串 -->
+    <string name="phase_menstrual">月经期</string>
+    <string name="phase_follicular">卵泡期</string>
+    <string name="phase_ovulatory">排卵期</string>
+    <string name="phase_luteal">黄体期</string>
+    <string name="nutrition_cycle_guidance">周期营养指导</string>
+    <string name="nutrition_focus_nutrients">重点营养素</string>
+    <string name="nutrition_recommended_foods">推荐食物</string>
+    <string name="nutrition_limit_foods">限制</string>
+
+    <plurals name="days_count">
+        <item quantity="other">%d天</item>
+    </plurals>
+    <!-- OEM 设置指南 -->
+    <string name="oem_xiaomi_display">小米 (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">设置 → 电池 → 省电模式 → 选择应用 → 设为「无限制」</string>
+    <string name="oem_xiaomi_autostart">设置 → 应用设置 → 授权管理 → 自启动管理 → 开启本应用
+或：安全中心 → 权限 → 自启动 → 开启</string>
+    <string name="oem_xiaomi_lock">打开多任务界面 → 下拉应用卡片 → 点击锁形图标锁定</string>
+
+    <string name="oem_huawei_display">华为 (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">设置 → 电池 → 启动管理 → 关闭「自动管理」→ 手动开启「自启动」「关联启动」「后台运行」</string>
+    <string name="oem_huawei_autostart">设置 → 应用 → 应用启动管理 → 关闭「自动管理」→ 全部打开</string>
+    <string name="oem_huawei_lock">打开多任务界面 → 下拉应用 → 点击锁形图标锁定</string>
+
+    <string name="oem_honor_display">荣耀 (MagicOS)</string>
+    <string name="oem_honor_battery">设置 → 电池 → 启动管理 → 关闭「自动管理」→ 全部开启</string>
+    <string name="oem_honor_autostart">设置 → 应用 → 应用启动管理 → 关闭「自动管理」→ 全部打开</string>
+    <string name="oem_honor_lock">打开多任务界面 → 下拉应用 → 点击锁形图标锁定</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">设置 → 电池 → 应用电池管理 → 选择应用 → 开启「允许后台活动」</string>
+    <string name="oem_oppo_autostart">设置 → 应用管理 → 选择应用 → 开启「自启动」</string>
+    <string name="oem_oppo_lock">打开多任务界面 → 下拉应用 → 点击锁形图标锁定</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">设置 → 电池 → 后台耗电管理 → 选择应用 → 开启「允许后台运行」</string>
+    <string name="oem_vivo_autostart">设置 → 更多设置 → 应用 → 自启动 → 开启本应用</string>
+    <string name="oem_vivo_lock">打开多任务界面 → 点击应用右上角菜单 → 选择「锁定」</string>
+
+    <string name="oem_samsung_display">三星 (OneUI)</string>
+    <string name="oem_samsung_battery">设置 → 电池 → 后台使用限制 → 将本应用加入「永不休眠的应用」列表</string>
+    <string name="oem_samsung_autostart">设置 → 应用程序 → 选择应用 → 电池 → 选择「不受限制」</string>
+    <string name="oem_samsung_lock">打开多任务 → 长按应用图标 → 点击锁定图标</string>
+
+    <string name="oem_oneplus_display">一加 (OxygenOS)</string>
+    <string name="oem_oneplus_battery">设置 → 电池 → 电池优化 → 选择「所有应用」→ 搜索本应用 → 设为「不优化」</string>
+    <string name="oem_oneplus_autostart">设置 → 应用管理 → 选择应用 → 开启「自启动」</string>
+    <string name="oem_oneplus_lock">打开多任务界面 → 长按应用窗口 → 点击右上角锁形图标</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">设置 → 电池 → 省电设置 → 应用电池管理 → 开启「允许后台活动」</string>
+    <string name="oem_realme_autostart">设置 → 应用管理 → 选择应用 → 开启「自启动」</string>
+    <string name="oem_realme_lock">打开多任务界面 → 下拉应用 → 点击锁形图标锁定</string>
+
+    <string name="oem_other_display">其他设备</string>
+    <string name="oem_other_battery">设置 → 应用 → 选择应用 → 电池 → 选择「无限制」</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">打开多任务界面 → 锁定应用</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">经期阶段</string>
+    <string name="phase_follicular_full">卵泡期</string>
+    <string name="phase_ovulatory_full">排卵期</string>
+    <string name="phase_luteal_full">黄体期</string>
+    <string name="phase_day_range">（第 %s 天）</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">推荐运动</string>
+    <string name="fitness_avoid">避免运动</string>
+    <string name="fitness_avoid_overtraining">避免过度训练——倾听身体的声音</string>
+
+    <string name="fitness_advice_menstrual">专注于休息和恢复。轻度拉伸和泡沫轴按摩可以帮助缓解紧张。</string>
+    <string name="fitness_advice_follicular">你的能量正在上升！这是进行挑战性训练和创造个人最佳成绩的最佳阶段。</string>
+    <string name="fitness_advice_ovulatory">你正处于身体表现的巅峰！好好利用，但不要忘记充分热身。</string>
+    <string name="fitness_advice_luteal">随着孕酮上升，能量会下降。优先保证睡眠、水分摄入和压力缓解。</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Please enter a valid duration</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1f万</string>
+    <string name="date_format_month_day">M月d日</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">清除</string>
+    <string name="edit">编辑</string>
+    <string name="exact_date_mode">精确日期</string>
+    <string name="profile_dob_not_set">未设置</string>
+    <string name="year_only_mode">仅年份</string>
+    <string name="year_picker_title">选择出生年份</string>
+
+    <!-- 分析 -->
+    <string name="analysis_no_data">数据不足。请先记录健康数据。</string>
+    <string name="insufficient_data">数据不足</string>
+    <string name="analysis_section_suggestions">智能建议</string>
+    <string name="analysis_section_nutrition">营养分析</string>
+    <string name="analysis_section_calorie_balance">卡路里平衡</string>
+    <string name="analysis_section_exercise">运动分析</string>
+    <string name="analysis_section_sleep">睡眠分析</string>
+    <string name="analysis_section_phase">周期相关性</string>
+    <string name="analysis_avg_daily_calories">日均</string>
+    <string name="analysis_protein">蛋白质</string>
+    <string name="analysis_carbs">碳水</string>
+    <string name="analysis_fat">脂肪</string>
+    <string name="analysis_nutrient_ratio">营养素比例</string>
+    <string name="analysis_avg_water_format">日均饮水：%.0f毫升</string>
+    <string name="analysis_avg_intake">日均摄入</string>
+    <string name="analysis_exercise_burned">运动消耗</string>
+    <string name="analysis_weekly_total_minutes">周总计</string>
+    <string name="analysis_daily_avg_minutes">日均</string>
+    <string name="analysis_calories_burned">消耗卡路里</string>
+    <string name="analysis_exercise_type_distribution">运动类型分布</string>
+    <string name="analysis_avg_sleep_hours">平均时长</string>
+    <string name="analysis_quality_score">质量评分</string>
+    <string name="analysis_daily_sleep_hours">每日睡眠时长</string>
+    <string name="analysis_mood">情绪</string>
+    <string name="analysis_stress">压力</string>
+    <string name="analysis_daily_net_calories">每日净卡路里（含静息能量）</string>
+
+    <!-- 报告 -->
+    <string name="export_report">导出PDF报告</string>
+    <string name="report_title">健康报告</string>
+    <string name="report_description">根据您的记录数据生成全面的健康报告。报告在设备本地生成，可共享为PDF文件。</string>
+    <string name="report_period">报告周期：最近30天</string>
+    <string name="report_includes">包含：经期记录、步数、睡眠、营养和健康洞察</string>
+    <string name="report_generate">生成报告</string>
+    <string name="report_generating">正在生成PDF报告…</string>
+    <string name="report_success">报告生成成功！</string>
+    <string name="report_share">共享健康报告</string>
+    <string name="report_share_button">共享</string>
+    <string name="report_generate_new">生成新报告</string>
+    <string name="report_error">错误：%s</string>
+    <string name="report_privacy_title">隐私声明</string>
+    <string name="report_privacy_body">所有报告均在您的设备本地生成。任何健康数据均不会上传至任何服务器或云服务。您的数据完全由您自己掌控。</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">生成报告失败</string>
+
+    <!-- 营养 -->
+    <string name="nutrition_energy_balance">能量平衡</string>
+    <string name="nutrition_resting_energy">静息</string>
+    <string name="nutrition_exercise_energy">运动</string>
+    <string name="nutrition_total_expenditure">总消耗</string>
+    <string name="nutrition_calorie_balance">平衡</string>
+    <string name="nutrition_menstrual_advice">重点摄入富含铁质的食物以补充失血。镁有助于缓解痉挛。注意充分补水。</string>
+    <string name="nutrition_menstrual_nutrients">铁 · 镁 · Omega-3 · 维生素B12</string>
+    <string name="nutrition_menstrual_foods">绿叶蔬菜 · 红肉 · 多脂鱼类 · 黑巧克力 · 坚果</string>
+    <string name="nutrition_menstrual_limit">咸味零食 · 咖啡因 · 乳制品</string>
+    <string name="nutrition_follicular_advice">能量代谢正在上升。此时宜选择清淡营养的餐食。补充益生菌以维护肠道健康。</string>
+    <string name="nutrition_follicular_nutrients">膳食纤维 · 维生素C · 益生菌 · 叶酸</string>
+    <string name="nutrition_follicular_foods">浆果 · 柑橘类水果 · 酸奶 · 燕麦 · 西兰花</string>
+    <string name="nutrition_follicular_limit">加工食品 · 过量糖分</string>
+    <string name="nutrition_ovulatory_advice">此阶段雌激素达到峰值。摄入富含抗氧化物的食物以支持肝脏解毒。建议采用抗炎饮食。</string>
+    <string name="nutrition_ovulatory_nutrients">抗氧化物 · 维生素C · 锌 · 维生素E</string>
+    <string name="nutrition_ovulatory_foods">甜椒 · 葵花籽 · 禽瘦肉 · 牛油果 · 绿茶</string>
+    <string name="nutrition_ovulatory_limit">酒精 · 油炸食品</string>
+    <string name="nutrition_luteal_advice">孕酮升高，可能增加食欲。复合碳水有助于提升血清素。限制咖啡因和盐分以缓解经前综合症症状。</string>
+    <string name="nutrition_luteal_nutrients">B族维生素 · 复合碳水 · 镁 · 钙 · 维生素B6</string>
+    <string name="nutrition_luteal_foods">全谷物 · 香蕉 · 绿叶蔬菜 · 豆类 · 黑巧克力</string>
+    <string name="nutrition_luteal_limit">糖分 · 咖啡因 · 高盐食物</string>
+
+    <!-- 睡眠 -->
+    <string name="sleep_auto_calculated">自动：%d小时</string>
+    <string name="sleep_bedtime_btn">就寝</string>
+    <string name="sleep_elapsed">已过%dh%dm</string>
+    <string name="sleep_sleeping">睡眠中…</string>
+    <string name="sleep_waketime_btn">起床</string>
+    <string name="sleep_luteal_worse">黄体期睡眠质量下降</string>
+    <string name="sleep_luteal_better">黄体期睡眠质量提升</string>
+    <string name="sleep_luteal_comparison_worse">黄体期平均睡眠%.1f小时，卵泡期%.1f小时，减少%.1f小时</string>
+    <string name="sleep_luteal_comparison_better">黄体期平均睡眠%.1f小时，卵泡期%.1f小时，增加%.1f小时</string>
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ 睡眠时长   ▐ 质量评分</string>
+
+    <!-- 模式 -->
+    <string name="pattern_exhaustion_title">检测到身体疲劳</string>
+    <string name="pattern_exhaustion_desc">睡眠不足、压力过高和情绪低落提示倦怠风险。建议安排休息日。</string>
+    <string name="pattern_overtraining_title">过度训练风险</string>
+    <string name="pattern_overtraining_desc">运动量过高且卡路里不足、睡眠不足。请注意预防受伤。</string>
+    <string name="pattern_sedentary_mood_title">久坐不动+情绪低落</string>
+    <string name="pattern_sedentary_mood_desc">步数极低且情绪不佳。散个步可能会有所帮助。</string>
+    <string name="pattern_dehydration_stress_title">脱水+压力</string>
+    <string name="pattern_dehydration_stress_desc">饮水量少且压力水平高。补充水分有助于增强抗压能力。</string>
+    <string name="pattern_positive_loop_title">正向健康循环</string>
+    <string name="pattern_positive_loop_desc">优质睡眠、充足活动和积极情绪相互促进。继续保持！</string>
+
+    <!-- 建议 -->
+    <string name="suggestion_low_calorie_title">卡路里摄入偏低</string>
+    <string name="suggestion_low_calorie_desc">每日摄入%.0f千卡，低于建议的1800千卡。建议增加复合碳水和健康脂肪。</string>
+    <string name="suggestion_high_calorie_title">卡路里摄入偏高</string>
+    <string name="suggestion_high_calorie_desc">每日摄入%.0f千卡，超过2500千卡。建议减少零食、增加蔬菜。</string>
+    <string name="suggestion_low_protein_title">蛋白质摄入不足</string>
+    <string name="suggestion_low_protein_desc">每日蛋白质%.0f克，低于建议的50克。建议摄入鸡蛋、鱼类和豆腐。</string>
+    <string name="suggestion_low_water_title">饮水不足</string>
+    <string name="suggestion_low_water_desc">每日饮水%.0f毫升，低于建议量。建议每日饮水1500-2000毫升。</string>
+    <string name="suggestion_high_surplus_title">卡路里盈余过多</string>
+    <string name="suggestion_high_surplus_desc">每日盈余%.0f千卡。如果您的目标是减重，建议增加运动量。</string>
+    <string name="suggestion_high_deficit_title">卡路里缺口过大</string>
+    <string name="suggestion_high_deficit_desc">每日缺口%.0f千卡。请确保满足基础代谢需求。</string>
+    <string name="suggestion_balanced_title">卡路里平衡</string>
+    <string name="suggestion_balanced_desc">摄入与消耗保持良好平衡。继续保持！</string>
+    <string name="suggestion_low_exercise_title">运动不足</string>
+    <string name="suggestion_low_exercise_desc">每周运动%d分钟，低于世界卫生组织建议的150分钟。</string>
+    <string name="suggestion_exercise_met_title">运动目标达标</string>
+    <string name="suggestion_exercise_met_desc">每周运动%d分钟，达到世界卫生组织建议标准！</string>
+    <string name="suggestion_exercise_variety_title">运动类型需多样化</string>
+    <string name="suggestion_exercise_variety_desc">尝试不同类型的运动（有氧+力量+柔韧性），全面提升体能。</string>
+    <string name="suggestion_low_sleep_title">睡眠不足</string>
+    <string name="suggestion_low_sleep_desc">每日睡眠%.1f小时，低于建议的7-9小时。尝试保持规律作息。</string>
+    <string name="suggestion_high_sleep_title">睡眠过多</string>
+    <string name="suggestion_high_sleep_desc">每日睡眠%.1f小时，超过9小时。睡眠过长可能提示疲劳。</string>
+    <string name="suggestion_low_deep_sleep_title">深睡不足</string>
+    <string name="suggestion_low_deep_sleep_desc">深睡比例仅为%.0f%%。睡前避免摄入咖啡因，保持房间黑暗。</string>
+    <string name="suggestion_low_sleep_quality_title">睡眠质量偏低</string>
+    <string name="suggestion_low_sleep_quality_desc">睡眠质量评分%.1f/5。睡前尝试冥想或泡温水澡。</string>
+    <string name="suggestion_luteal_sleep_title">黄体期睡眠变化</string>
+    <string name="suggestion_luteal_sleep_desc">黄体期睡眠较卵泡期减少%.1f小时。属于正常的激素变化。</string>
+
+    <!-- PDF报告 -->
+    <string name="pdf_health_report">健康报告</string>
+    <string name="pdf_generated">生成时间：%s</string>
+    <string name="pdf_user_info">用户：%1$s | 性别：%2$s</string>
+    <string name="pdf_report_period">报告周期：%s</string>
+    <string name="pdf_period_summary">经期摘要</string>
+    <string name="pdf_no_period_records">所选周期内无经期记录。</string>
+    <string name="pdf_total_cycles">总周期数：%d</string>
+    <string name="pdf_avg_cycle_length">平均周期长度：%d天</string>
+    <string name="pdf_avg_pain">平均痛经等级：%.1f / 3</string>
+    <string name="pdf_recent_records">近期记录</string>
+    <string name="pdf_start_date">开始日期</string>
+    <string name="pdf_end_date">结束日期</string>
+    <string name="pdf_flow">经量</string>
+    <string name="pdf_pain">痛经</string>
+    <string name="pdf_ongoing">进行中</string>
+    <string name="pdf_flow_light">少</string>
+    <string name="pdf_flow_medium">中</string>
+    <string name="pdf_flow_heavy">多</string>
+    <string name="pdf_pain_none">无</string>
+    <string name="pdf_pain_mild">轻微</string>
+    <string name="pdf_pain_moderate">中度</string>
+    <string name="pdf_pain_severe">重度</string>
+    <string name="pdf_activity_summary">活动摘要</string>
+    <string name="pdf_no_step_data">无步数数据。</string>
+    <string name="pdf_avg_daily_steps">平均每日步数：%,d</string>
+    <string name="pdf_total_steps">总步数：%,d</string>
+    <string name="pdf_max_steps">最高每日步数：%,d</string>
+    <string name="pdf_total_exercise">总运动时长：%d分钟</string>
+    <string name="pdf_sleep_summary">睡眠摘要</string>
+    <string name="pdf_no_sleep_data">无睡眠数据。</string>
+    <string name="pdf_avg_sleep">平均睡眠：%.1f小时</string>
+    <string name="pdf_avg_sleep_quality">平均睡眠质量：%.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">平均深睡：%.1f小时</string>
+    <string name="pdf_nutrition_summary">营养摘要</string>
+    <string name="pdf_no_nutrition_data">无营养数据。</string>
+    <string name="pdf_avg_calories">平均每日卡路里：%.0f千卡</string>
+    <string name="pdf_avg_water">平均饮水：%.0f毫升</string>
+    <string name="pdf_avg_protein">平均蛋白质：%.0f克</string>
+    <string name="pdf_footer">此报告在您的设备本地生成。无任何数据离开您的手机。</string>
+    <string name="pdf_page">第%d页</string>
+    <string name="pdf_app_name">天殇健康 - 隐私至上</string>
+
+    <!-- 通用 -->
+    <string name="previous">上一页</string>
+    <string name="next">下一页</string>
+    <string name="error_onboarding_required">请先完成用户设置</string>
+    <string name="error_load_failed">加载失败</string>
+    <string name="chart_donut_legend_format">%1$s：%2$d%%</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

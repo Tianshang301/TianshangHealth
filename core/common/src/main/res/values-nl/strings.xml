@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Gebruiksvoorwaarden</string>
+    <string name="privacy_title">Privacybeleid</string>
+    <string name="accept_terms">Ik heb gelezen en aanvaard</string>
+    <string name="app_lock_title">Appvergrendeling</string>
+    <string name="enter_pin">Wachtwoord</string>
+    <string name="unlock">Ontgrendel</string>
+    <string name="invalid_pin">Ongeldig wachtwoord</string>
+    <string name="app_lock_setup_title">Appvergrendelingswachtwoord Instellen</string>
+    <string name="set_pin">Wachtwoord Instellen</string>
+    <string name="confirm_pin">Bevestig Wachtwoord</string>
+    <string name="set_password">Wachtwoord Instellen</string>
+    <string name="pin_empty_error">Wachtwoord mag niet leeg zijn</string>
+    <string name="pin_mismatch_error">Wachtwoorden komen niet overeen</string>
+    <string name="pin_length_error">Wachtwoord moet ten minste %d tekens bevatten</string>
+    <string name="calendar_title">Kalender</string>
+    <string name="current_cycle_day">Dag %d van cyclus</string>
+    <string name="days_until_next_period">Volgende menstruatie over %d dagen</string>
+    <string name="no_period_data">Geen menstruatiegegevens</string>
+    <string name="tap_date_to_record">Tik om te noteren</string>
+    <string name="period">Menstruatie</string>
+    <string name="predicted_period">Voorspelde Menstruatie</string>
+    <string name="ovulation">Ovulatie</string>
+    <string name="fertile_window">Vruchtbare Periode</string>
+    <string name="record_title">Notitie</string>
+    <string name="start_period">Start Menstruatie</string>
+    <string name="end_period">Einde Menstruatie</string>
+    <string name="flow_level">Flow</string>
+    <string name="pain_level">Pijn</string>
+    <string name="symptoms">Symptomen</string>
+    <string name="sexual_activity">Seksuele Activiteit</string>
+    <string name="ovulation_test">Ovulatietest</string>
+    <string name="cervical_mucus">Baarmoederhalsslijm</string>
+    <string name="body_temperature">Lichaamstemperatuur</string>
+    <string name="notes">Notities</string>
+    <string name="save">Opslaan</string>
+    <string name="analysis_title">Analyse</string>
+    <string name="cycle_statistics">Statistieken</string>
+    <string name="avg_cycle_length">Gemiddelde Cyclus</string>
+    <string name="avg_period_length">Gemiddelde Menstruatie</string>
+    <string name="cycle_regularity">Regelmaat</string>
+    <string name="total_cycles">Totaal Cycli</string>
+    <string name="pain_trend">Pijntrend</string>
+    <string name="symptom_frequency">Symptoomfrequentie</string>
+    <string name="predictions">Voorspellingen</string>
+    <string name="reminder_title">Herinneringen</string>
+    <string name="period_reminder">Menstruatieherinnering</string>
+    <string name="ovulation_reminder">Ovulatieherinnering</string>
+    <string name="pms_reminder">PMS-herinnering</string>
+    <string name="profile_title">Profiel</string>
+    <string name="theme_customization">Thema</string>
+    <string name="theme_color">Themakleur</string>
+    <string name="app_lock">Appvergrendeling</string>
+    <string name="language">Taal</string>
+    <string name="recycle_bin">Prullenbak</string>
+    <string name="recycle_bin_title">Prullenbak</string>
+    <string name="backup_restore">Back-up</string>
+    <string name="backup_restore_title">Back-up &amp; Herstel</string>
+    <string name="export_backup">Exporteer Back-up</string>
+    <string name="import_backup">Importeer Back-up</string>
+    <string name="export_csv">Exporteer CSV</string>
+    <string name="about">Over</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">Toevoegen</string>
+    <string name="height_cm">Lengte (cm)</string>
+    <string name="weight_kg">Gewicht (kg)</string>
+    <string name="latest_bmi">Huidige BMI</string>
+    <string name="bmi_history">Geschiedenis</string>
+    <string name="dark_mode">Donkere Modus</string>
+    <string name="dark_mode_description">Thema wijzigen</string>
+    <string name="no_deleted_records">Geen verwijderde gegevens</string>
+    <string name="security_settings">Beveiliging</string>
+    <string name="data_security">Gegevensbeveiliging</string>
+    <string name="database_encryption">Databaseversleuteling</string>
+    <string name="encrypted">Versleuteld (AES-256)</string>
+    <string name="unencrypted">Onversleuteld</string>
+    <string name="migrate_to_encrypted">Migreer naar Versleutelde Database</string>
+    <string name="migration_success">Migratie geslaagd! Database is nu versleuteld.</string>
+    <string name="migration_failed">Migratie mislukt: %s. Uw gegevens zijn hersteld naar de oorspronkelijke staat.</string>
+    <string name="background_lock_delay">Vergrendelen na achtergrond</string>
+    <string name="lock_immediately">Onmiddellijk</string>
+    <string name="lock_after_seconds">%d seconden</string>
+    <string name="custom_reminders">Aangepaste Herinneringen</string>
+    <string name="add_custom_reminder">Aangepaste Herinnering Toevoegen</string>
+    <string name="no_custom_reminders">Nog geen aangepaste herinneringen</string>
+    <string name="reminder_title_label">Herinneringstitel</string>
+    <string name="reminder_title_required">Titel is verplicht</string>
+    <string name="reminder_message_label">Bericht (optioneel)</string>
+    <string name="reminder_date">Herinneringsdatum</string>
+    <string name="select_time">Selecteer tijd</string>
+    <string name="hue">Tint</string>
+    <string name="saturation">Verzadiging</string>
+    <string name="lightness">Helderheid</string>
+    <string name="apply_color">Kleur Toepassen</string>
+    <string name="custom_color">Aangepaste Kleur</string>
+    <string name="color_preview">Kleurvoorbeeld</string>
+    <string name="apply">Toepassen</string>
+    <string name="preset_colors">Standaardkleuren</string>
+    <string name="add_symptom">Symptoom Toevoegen</string>
+    <string name="symptom_name">Symptoomnaam</string>
+    <string name="symptom_name_required">Symptoomnaam is verplicht</string>
+    <string name="prediction_explanation">Adaptief voorspeld op basis van de laatste %1$d cycli (gemiddeld %2$s dagen/cyclus, %3$s dagen/menstruatie)</string>
+    <string name="record_date">Notitiedatum</string>
+    <string name="select_date">Selecteer Datum</string>
+    <string name="confirm">Bevestigen</string>
+    <string name="cancel">Annuleren</string>
+    <string name="delete">Verwijderen</string>
+    <string name="delete_record">Notitie Verwijderen</string>
+    <string name="delete_record_confirm">Weet u zeker dat u de notitie voor deze datum wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.</string>
+    <string name="week_sun">Zon</string>
+    <string name="week_mon">Maa</string>
+    <string name="week_tue">Din</string>
+    <string name="week_wed">Woe</string>
+    <string name="week_thu">Don</string>
+    <string name="week_fri">Vrij</string>
+    <string name="week_sat">Zat</string>
+    <string name="calendar_today">Vandaag</string>
+    <string name="back">Terug</string>
+    <string name="symptom_headache">Hoofdpijn</string>
+    <string name="symptom_bloating">Opgeblazen Gevoel</string>
+    <string name="symptom_breast_tenderness">Gevoelige Borsten</string>
+    <string name="symptom_backache">Rugpijn</string>
+    <string name="symptom_fatigue">Vermoeidheid</string>
+    <string name="symptom_mood_swings">Stemmingswisselingen</string>
+    <string name="symptom_acne">Acne</string>
+    <string name="symptom_increased_appetite">Toegenomen Eetlust</string>
+    <string name="symptom_insomnia">Slapeloosheid</string>
+    <string name="symptom_nausea">Misselijkheid</string>
+    <string name="flow_light">Licht</string>
+    <string name="flow_medium">Matig</string>
+    <string name="flow_heavy">Zwaar</string>
+    <string name="pain_none">Geen</string>
+    <string name="pain_mild">Mild</string>
+    <string name="pain_moderate">Matig</string>
+    <string name="pain_severe">Ernstig</string>
+    <string name="unit_days">dagen</string>
+    <string name="predicted_period_label">Voorspelde menstruatie: %1$s - %2$s</string>
+    <string name="ovulation_date_label">Ovulatie: %s</string>
+    <string name="confidence_label">Zekerheid: %1$s (op basis van %2$d cycli)</string>
+    <string name="reminder_days_before">Dagen van tevoren</string>
+    <string name="reminder_time">Herinneringstijd</string>
+    <string name="enabled">Ingeschakeld</string>
+    <string name="disabled">Uitgeschakeld</string>
+    <string name="color_pink">Roze</string>
+    <string name="color_dark_pink">Donkerroze</string>
+    <string name="color_peach">Perzik</string>
+    <string name="color_light_purple">Lichtpaars</string>
+    <string name="color_medium_purple">Middelpaars</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Ondergewicht</string>
+    <string name="bmi_category_normal">Normaal</string>
+    <string name="bmi_category_overweight">Overgewicht</string>
+    <string name="bmi_category_obese">Obese</string>
+    <string name="bmi_standard_note">Gebaseerd op Chinese BMI-norm</string>
+    <string name="backup_success">Back-up geslaagd</string>
+    <string name="backup_fail">Back-up mislukt</string>
+    <string name="restore_success">Herstel geslaagd</string>
+    <string name="restore_fail">Herstel mislukt</string>
+    <string name="export_success">Export geslaagd</string>
+    <string name="export_fail">Export mislukt</string>
+    <string name="backup_export_desc">Exporteer database als ZIP-back-upbestand</string>
+    <string name="backup_import_desc">Herstel gegevens uit een back-upbestand</string>
+    <string name="backup_csv_desc">Exporteer gegevens als CSV-spreadsheet</string>
+    <string name="deleted_time">Verwijderd: %s</string>
+    <string name="in_progress">Bezig</string>
+    <string name="terms_countdown">Een ogenblik geduld %d seconden</string>
+    <string name="auth_failed">Authenticatie mislukt: %s</string>
+    <string name="auth_failed_generic">Authenticatie mislukt</string>
+    <string name="biometric_init_failed">Biometrische initialisatie mislukt</string>
+    <string name="lockout_message">Te veel pogingen. Een ogenblik geduld %d seconden.</string>
+    <string name="chart_title_cycle_length_trend">Cycluslengte Trend</string>
+    <string name="chart_title_pain_trend">Pijntrend</string>
+    <string name="chart_title_symptom_distribution">Symptoomverdeling</string>
+    <string name="chart_cycle_label">Cyclus %d</string>
+    <string name="chart_cycle_length_label">Cycluslengte : %d</string>
+    <string name="chart_pain_level_label">Pijnniveau</string>
+    <string name="regularity_regular">Regelmatig</string>
+    <string name="regularity_somewhat_regular">Enigszins regelmatig</string>
+    <string name="regularity_irregular">Onregelmatig</string>
+    <string name="regularity_insufficient_data">Onvoldoende gegevens</string>
+    <string name="confidence_high">Hoog</string>
+    <string name="confidence_medium">Gemiddeld</string>
+    <string name="confidence_low">Laag</string>
+    <string name="confidence_insufficient">Onvoldoende gegevens</string>
+    <string name="analysis_no_data_title">Nog geen gegevens</string>
+    <string name="analysis_no_data_hint">Begin met het noteren van uw menstruatie om hier analyses en voorspellingen te zien</string>
+    <string name="section_appearance">Uiterlijk</string>
+    <string name="section_health">Gezondheid</string>
+    <string name="section_data">Gegevens</string>
+    <string name="section_other">Overig</string>
+    <string name="open">Openen</string>
+    <string name="retry">Opnieuw</string>
+    <string name="profile_theme_description">App-kleuren aanpassen</string>
+    <string name="profile_language_description">App-taal wijzigen</string>
+    <string name="profile_bmi_description">Volg uw body mass index</string>
+    <string name="profile_app_lock_description">Authenticatie vereisen om app te openen</string>
+    <string name="screenshot_protection_title">Schermafbeelding beveiliging</string>
+    <string name="screenshot_protection_description">Voorkom screenshots en schermopnames</string>
+    <string name="profile_backup_description">Versleutelde back-up en herstel van alle gegevens</string>
+    <string name="profile_recycle_bin_description">Bekijk en herstel verwijderde gegevens</string>
+    <string name="profile_version">Versie 1.0.0</string>
+    <string name="profile_app_description">Een uitgebreide gezondheidsapp met privacy als kern.</string>
+    <string name="custom_theme">Aangepast Thema</string>
+    <string name="language_description">Selecteer uw voorkeurstaal. De app wordt opnieuw gestart om de wijziging toe te passen.</string>
+    <string name="language_changed_restart">Taal gewijzigd, herstarten&#8230;</string>
+    <string name="bmi_empty_text">Nog geen gewichtsgegevens. Voeg uw eerste gewichtsinvoer toe.</string>
+    <string name="save_height">Lengte Opslaan</string>
+    <string name="bmi_category_label">Categorie</string>
+    <string name="height_label">Lengte</string>
+    <string name="update_height">Lengte Bijwerken</string>
+    <string name="add_weight_record_title">Gewichtsnotitie Toevoegen</string>
+    <string name="add_weight_record_text">Voer uw gewicht voor vandaag in.</string>
+    <string name="recycle_bin_description">Verwijderde gegevens worden 30 dagen bewaard voordat ze permanent worden verwijderd.</string>
+    <string name="recycle_bin_empty">Prullenbak is leeg</string>
+    <string name="recycle_bin_empty_title">Prullenbak Leegmaken</string>
+    <string name="recycle_bin_empty_confirm">Alle verwijderde gegevens worden permanent verwijderd. Deze actie kan niet ongedaan worden gemaakt.</string>
+    <string name="recycle_bin_empty_action">Leegmaken</string>
+    <string name="recycle_bin_restore">Herstellen</string>
+    <string name="recycle_bin_delete_forever">Definitief Verwijderen</string>
+    <string name="add_record">Notitie Toevoegen</string>
+    <string name="period_tracking_title">Menstruatie Volgen</string>
+    <string name="prediction_explanation_title">Voorspellingsuitleg</string>
+    <string name="reminder_period_desc">Ontvang een melding voordat uw menstruatie begint</string>
+    <string name="reminder_ovulation_desc">Ontvang een melding voor de ovulatie</string>
+    <string name="reminder_pms_desc">Ontvang een melding over PMS-symptomen</string>
+    <string name="cycle_status_title">Cyclusstatus</string>
+    <string name="cycle_day_label">Cyclusdag</string>
+    <string name="days_until_label">Dagen Tot</string>
+    <string name="period_active_text">Menstruatie actief</string>
+    <string name="next_period_label">Volgende Menstruatie</string>
+    <string name="not_enough_data">Onvoldoende gegevens</string>
+    <string name="cycle_length_label">Cycluslengte</string>
+    <string name="chart_no_data">Onvoldoende gegevens om grafiek weer te geven</string>
+    <string name="chart_no_pain_data">Geen pijngegevens geregistreerd</string>
+    <string name="chart_pain_unknown">Onbekend</string>
+    <string name="chart_total_records">Totaal Notities</string>
+    <string name="record_for_date">Notitie voor %s</string>
+    <string name="save_record">Notitie Opslaan</string>
+    <string name="male_health_trend">Gezondheidstrends</string>
+    <string name="male_health_description">Menstruatieanalyse is niet van toepassing voor mannelijke gebruikers. Hieronder worden algemene gezondheidsgegevens weergegeven.</string>
+    <string name="steps_overview">Stappenoverzicht</string>
+    <string name="steps_today">Stappen Vandaag</string>
+    <string name="steps_weekly_avg_label">7-daags Gemiddeld Aantal Stappen</string>
+    <string name="steps_record_days">Dagen Geregistreerd</string>
+    <string name="steps_weekly_trend_label">7-daagse Stappentrend</string>
+    <string name="steps_title">Stappen Volgen</string>
+    <string name="steps_daily_goal">Dagelijks Doel</string>
+    <string name="steps_update_goal">Doel Bijwerken</string>
+    <string name="steps_this_week">Deze Week</string>
+    <string name="steps_total">Totaal</string>
+    <string name="steps_average">Gemiddelde</string>
+    <string name="steps_days_label">Dagen</string>
+    <string name="steps_weekly_trend">Wekelijkse Trend</string>
+    <string name="steps_goal_format">%d stappen</string>
+    <string name="steps_weekly_avg_format">Wekelijks gem. %d stappen/dag</string>
+    <string name="steps_history_title">Stappengeschiedenis</string>
+    <string name="steps_tab_week">Week</string>
+    <string name="steps_tab_month">Maand</string>
+    <string name="steps_tab_year">Jaar</string>
+    <string name="steps_tab_all">Alle</string>
+    <string name="steps_30d_total">30-daags Totaal</string>
+    <string name="steps_avg">Dagelijks Gem.</string>
+    <string name="steps_best">Beste Dag</string>
+    <string name="steps_weekly_label">Wekelijkse Uitsplitsing</string>
+    <string name="steps_daily_trend">Dagelijkse Trend</string>
+    <string name="steps_monthly_label">Maandelijkse Uitsplitsing</string>
+    <string name="steps_total_label">Totaal Aantal Stappen</string>
+    <string name="steps_period_total">Periodetotaal</string>
+    <string name="steps_weekly_avg">Wekelijks Gem.</string>
+    <string name="steps_monthly_avg">Maandelijks Gem.</string>
+    <string name="steps_best_month">Beste Maand</string>
+    <string name="steps_tab_day">Dag</string>
+    <string name="steps_label">Stappen</string>
+    <string name="steps_calories_label">Calorieen</string>
+    <string name="steps_yearly_label">Jaarlijkse Uitsplitsing</string>
+    <string name="dashboard_title">Gezondheidsdashboard</string>
+    <string name="dashboard_quick_actions">Snelle Acties</string>
+    <string name="dashboard_retry">Opnieuw</string>
+    <string name="dashboard_insights">Gezondheidsinzichten</string>
+    <string name="dashboard_insights_empty">Noteer meer gezondheidsgegevens voor gepersonaliseerde inzichten</string>
+    <string name="dashboard_period_status">Menstruatiestatus</string>
+    <string name="dashboard_period_active">Menstruatie Actief</string>
+    <string name="dashboard_follicular_phase">Folliculaire Fase</string>
+    <string name="dashboard_no_data">Geen Gegevens</string>
+    <string name="dashboard_today_steps">Stappen Vandaag</string>
+    <string name="dashboard_goal_format">Doel: %d</string>
+    <string name="dashboard_cycle_day_format">Dag %1$d</string>
+    <string name="dashboard_record_period">Menstruatie Noteren</string>
+    <string name="dashboard_record_steps">Stappen Noteren</string>
+    <string name="dashboard_record_health">Gezondheidsanalyse</string>
+    <string name="gender_welcome">Welkom bij TianshangHealth</string>
+    <string name="gender_instruction">Selecteer uw geslacht voor gepersonaliseerd gezondheidsvolg</string>
+    <string name="gender_male">Man</string>
+    <string name="gender_male_desc">Verbergt menstruatiefuncties</string>
+    <string name="gender_female">Vrouw</string>
+    <string name="gender_female_desc">Toont alle functies inclusief menstruatie volgen</string>
+    <string name="gender_other">Anders</string>
+    <string name="gender_other_desc">Toont alle functies</string>
+    <string name="gender_footnote">U kunt dit later wijzigen in Instellingen</string>
+    <string name="gender_setting_title">Geslacht</string>
+    <string name="gender_setting_description">Wijzig uw geslacht om functiemodules aan te passen</string>
+    <string name="select_gender">Selecteer Geslacht</string>
+    <string name="app_lock_health_data_protected">Uw gezondheidsgegevens zijn beschermd</string>
+    <string name="app_lock_set_password_title">Wachtwoord Instellen</string>
+    <string name="app_lock_password_label">Wachtwoord</string>
+    <string name="app_lock_confirm_password_label">Bevestig Wachtwoord</string>
+    <string name="app_lock_enter_password_title">Voer Wachtwoord In</string>
+    <string name="app_lock_use_biometric">Gebruik Biometrie</string>
+    <string name="terms_privacy_title">Gebruiksvoorwaarden &amp; Privacybeleid</string>
+    <string name="terms_service_title">Gebruiksvoorwaarden</string>
+    <string name="privacy_policy_title">Privacybeleid</string>
+    <string name="terms_service_declaration">1. Dienstverklaring\n\nTianshangHealth is een uitgebreide gezondheidsapp die prioriteit geeft aan gebruikersprivacy en gegevensbeveiliging. Alle gegevens worden lokaal op uw apparaat opgeslagen met sterke versleuteling.\n\n2. Gegevensprivacy\n\nWij verzamelen, uploaden of delen geen van uw persoonlijke gezondheidsgegevens. De app werkt volledig offline zonder netwerktoestemmingen.\n\n3. Gebruikersverantwoordelijkheid\n\nU bent verantwoordelijk voor de nauwkeurigheid van de door u ingevoerde gezondheidsgegevens. De verstrekte voorspellingen en analyses zijn alleen ter referentie en vormen geen medisch advies.\n\n4. Gegevensbeveiliging\n\nUw gegevens worden beschermd met SQLCipher AES-256-versleuteling. De versleutelingssleutel wordt beheerd via Android Keystore voor beveiliging op hardwareniveau.</string>
+    <string name="privacy_policy_body">1. Kernprincipe: Gegevens op het Apparaat\n\nAl uw gezondheidsgegevens, inclusief menstruatiecycli, symptomen en andere gezondheidsmetingen, worden alleen opgeslagen in de versleutelde database op uw apparaat.\n\n2. Verzamelde Informatie\n\nWij verwerken alleen informatie die u handmatig in de app invoert. Er vindt geen automatische gegevensverzameling plaats.\n\n3. Gegevensversleuteling\n\nAlle gevoelige gegevens worden versleuteld met SQLCipher AES-256. De versleutelingssleutel wordt veilig opgeslagen in Android Keystore.\n\n4. Geen Toegang voor Derden\n\nWij gebruiken geen analyses, advertenties of trackingdiensten van derden. Uw gegevens verlaten nooit uw apparaat.\n\n5. Gegevensexport\n\nU kunt uw gegevens op elk moment exporteren in standaardformaten (CSV, versleutelde back-up). U heeft volledige controle over uw gegevens.\n\n6. Gegevensverwijdering\n\nU kunt op elk moment alle of een deel van uw gegevens verwijderen. Verwijderde gegevens worden permanent van het apparaat gewist.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Onbekende fout</string>
+    <string name="error_failed_add_record">Notitie toevoegen mislukt</string>
+    <string name="error_failed_update_record">Notitie bijwerken mislukt</string>
+    <string name="error_failed_delete_record">Notitie verwijderen mislukt</string>
+    <string name="error_failed_record">Noteren mislukt</string>
+    <string name="error_failed_set_password">Wachtwoord instellen mislukt</string>
+    <string name="error_password_not_set">Wachtwoord niet ingesteld</string>
+    <string name="error_incorrect_password">Onjuist wachtwoord</string>
+    <string name="error_verification_failed">Verificatie mislukt</string>
+    <string name="error_failed_load_settings">Instellingen laden mislukt</string>
+    <string name="error_failed_update_settings">Instellingen bijwerken mislukt</string>
+    <string name="error_failed_save_gender">Geslacht opslaan mislukt</string>
+    <string name="error_failed_update_goal">Doel bijwerken mislukt</string>
+    <string name="error_failed_restore">Notitie herstellen mislukt</string>
+    <string name="error_failed_to_delete">Notitie verwijderen mislukt</string>
+    <string name="error_failed_empty_bin">Prullenbak legen mislukt</string>
+    <string name="loading">Laden...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Menstruatieherinnering</string>
+    <string name="notification_channel_period_desc">Herinneringen voor menstruatie volgen</string>
+    <string name="notification_period_title">Menstruatieherinnering</string>
+    <string name="notification_period_body">Vergeet niet uw menstruatiegegevens vandaag te noteren!</string>
+    <string name="notification_channel_ovulation">Ovulatieherinnering</string>
+    <string name="notification_channel_ovulation_desc">Herinneringen voor ovulatie volgen</string>
+    <string name="notification_ovulation_title">Ovulatievenster Nadert</string>
+    <string name="notification_ovulation_body">Uw vruchtbare periode komt eraan!</string>
+    <string name="notification_channel_pms">PMS-herinnering</string>
+    <string name="notification_channel_pms_desc">Herinneringen voor PMS-symptomen</string>
+    <string name="notification_pms_title">PMS-symptomen Verwacht</string>
+    <string name="notification_pms_body">PMS-symptomen kunnen over een paar dagen beginnen. Zorg goed voor uzelf!</string>
+    <string name="notification_channel_steps">Stappenteller</string>
+    <string name="notification_channel_steps_desc">Stappentellerservice melding</string>
+    <string name="notification_steps_body">Stappen vandaag: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_period">Menstruatie</string>
+    <string name="nav_fitness">Fitness</string>
+    <string name="nav_analysis">Analyse</string>
+    <string name="nav_profile">Profiel</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Startdatum,Einddatum,Flow-niveau,Pijnniveau,Notities</string>
+    <string name="backup_exported_success">Back-up succesvol geexporteerd</string>
+    <string name="import_success_format">%d notities succesvol geimporteerd</string>
+    <string name="csv_exported_success">CSV succesvol geexporteerd</string>
+    <string name="csv_export_failed">CSV-export mislukt</string>
+    <string name="password_export_title">Back-up Versleutelen</string>
+    <string name="password_import_title">Back-up Ontsleutelen</string>
+    <string name="password_export_desc">Voer een wachtwoord in om uw back-upbestand te versleutelen.</string>
+    <string name="password_import_desc">Voer het wachtwoord in dat is gebruikt om dit back-upbestand te versleutelen.</string>
+    <string name="password_label">Wachtwoord</string>
+    <string name="proceed">Doorgaan</string>
+    <string name="password_short_error">Wachtwoord te kort</string>
+    <string name="password_mismatch_error">Wachtwoorden komen niet overeen</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Menstruatie Actief</string>
+    <string name="insight_follicular_phase">Folliculaire Fase</string>
+    <string name="insight_luteal_phase">Luteale Fase</string>
+    <string name="insight_cycle_day">Cyclusdag %d</string>
+    <string name="insight_steps_stable_title">Stabiele Activiteit Gedurende Cyclus</string>
+    <string name="insight_steps_stable_desc">Uw stappen blijven consistent in alle cyclusfasen, goede beweeggewoonte behouden.</string>
+    <string name="insight_mood_drop_title">Stemmingsdaling in Luteale Fase</string>
+    <string name="insight_mood_drop_desc">Gemiddelde stemming is lager in luteale fase, overweeg stemmingsmanagement</string>
+    <string name="insight_mood_rise_title">Betere Stemming in Luteale Fase</string>
+    <string name="insight_mood_rise_desc">Gemiddelde stemming is hoger in luteale fase, u doet het geweldig</string>
+    <string name="insight_sleep_drop_title">Slaapkwaliteit Daalt in Luteale Fase</string>
+    <string name="insight_sleep_drop_desc">Slaapkwaliteit neemt af tijdens luteale fase, probeer ontspanningsoefeningen</string>
+    <string name="insight_sleep_rise_title">Betere Slaap in Luteale Fase</string>
+    <string name="insight_sleep_rise_desc">Slaapkwaliteit is hoger in luteale fase, blijf de goede routine volgen</string>
+    <string name="insight_stress_period_title">Hogere Stress Tijdens Menstruatie</string>
+    <string name="insight_stress_period_desc">Stressniveau is %s punten hoger tijdens menstruatie, overweeg intensieve activiteiten te verminderen</string>
+    <string name="insight_mood_today_low_title">Lage Stemming Vandaag</string>
+    <string name="insight_mood_today_low_desc">Uw stemming is vandaag laag, probeer iets te doen wat u leuk vindt</string>
+    <string name="insight_stress_today_high_title">Hoge Stress Vandaag</string>
+    <string name="insight_stress_today_high_desc">Stressniveau is vandaag hoog, probeer diep ademhalen of meditatie</string>
+    <string name="insight_sleep_last_night_low_title">Slechte Slaap Afgelopen Nacht</string>
+    <string name="insight_sleep_last_night_low_desc">Slaapkwaliteit was laag afgelopen nacht, probeer vanavond vroeg naar bed te gaan</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Activiteit neemt aanzienlijk af in luteale fase</string>
+    <string name="insight_luteal_increase">Activiteit neemt toe in luteale fase</string>
+    <string name="insight_luteal_rest">Rust voldoende tijdens luteale fase, lichte oefening zoals yoga wordt aanbevolen</string>
+    <string name="insight_luteal_nutrition">Geweldige activiteitstoename, vergeet niet uw voeding te onderhouden</string>
+    <string name="insight_luteal_activity_low_title">Lagere Activiteit in Luteale Fase</string>
+    <string name="insight_luteal_activity_low_desc">Luteale fase stappen daalden met %d%% vergeleken met folliculaire fase. Lichte activiteit zoals wandelen wordt aanbevolen.</string>
+    <string name="insight_luteal_activity_high_title">Hogere Activiteit in Luteale Fase</string>
+    <string name="insight_luteal_activity_high_desc">Luteale fase stappen stegen met %d%% vergeleken met folliculaire fase. Vergeet niet te rusten en voeding te onderhouden.</string>
+    <string name="insight_activity_stable_title">Consistente Activiteit Gedurende Cyclus</string>
+    <string name="insight_activity_stable_desc">Stapenaantallen blijven stabiel in alle cyclusfasen. Goede beweeggewoonten behouden.</string>
+    <string name="insight_mood_luteal_drop_title">Stemmingsdaling in Luteale Fase</string>
+    <string name="insight_mood_luteal_drop_desc">Gemiddelde stemming is %s punten lager in luteale fase. Overweeg stemmingsmanagement.</string>
+    <string name="insight_mood_luteal_rise_title">Betere Stemming in Luteale Fase</string>
+    <string name="insight_mood_luteal_rise_desc">Gemiddelde stemming is %s punten hoger in luteale fase. U doet het geweldig!</string>
+    <string name="insight_sleep_luteal_drop_title">Slaapkwaliteit Daalt in Luteale Fase</string>
+    <string name="insight_sleep_luteal_drop_desc">Slaapkwaliteit daalde met %s punten in luteale fase. Probeer ontspanningsoefeningen voor het slapengaan.</string>
+    <string name="insight_sleep_luteal_rise_title">Betere Slaap in Luteale Fase</string>
+    <string name="insight_sleep_luteal_rise_desc">Slaapkwaliteit is %s punten hoger in luteale fase. Blijf de goede routine volgen.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Onvoldoende gegevens voor voorspelling</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Verversen</string>
+    <string name="recycle_bin_empty_title_short">Prullenbak Leegmaken</string>
+    <string name="recycle_bin_period_format">Menstruatie: %1$s</string>
+    <string name="recycle_bin_to_format">tot %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Wachtwoord Instellen</string>
+    <string name="app_lock_confirm_password">Bevestig Wachtwoord</string>
+    <string name="app_lock_set_password_btn">Wachtwoord Instellen</string>
+    <string name="app_lock_unlock_btn">Ontgrendel</string>
+    <string name="app_lock_enter_password">Voer Wachtwoord In</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Totaal Notities</string>
+    <string name="stats_total_cycles">Totaal Cycli</string>
+    <string name="stats_avg_cycle">Gemiddelde Cyclus</string>
+    <string name="stats_avg_period">Gemiddelde Menstruatie</string>
+    <string name="stats_regularity_text">Regelmaat</string>
+    <string name="stats_cycle_num">Cyclus %d</string>
+    <string name="stats_days_suffix">%d dagen</string>
+    <string name="stats_avg_format">Gemiddeld: %d dagen</string>
+    <string name="stats_no_data">Geen gegevens</string>
+    <string name="weight_format">Gewicht: %.1f kg</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f cm</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Back-ups zijn versleuteld met AES-256-GCM met uw wachtwoord.</string>
+    <string name="steps_of_goal">van %d doel</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d\u00B0 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Blauw</string>
+    <string name="color_green">Groen</string>
+    <string name="color_purple">Paars</string>
+    <string name="color_orange">Oranje</string>
+    <string name="color_teal">Groenblauw</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Tik voor details</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Hardlopen</string>
+    <string name="exercise_walking">Wandelen</string>
+    <string name="exercise_cycling">Fietsen</string>
+    <string name="exercise_swimming">Zwemmen</string>
+    <string name="exercise_yoga">Yoga</string>
+    <string name="exercise_strength">Krachttraining</string>
+    <string name="exercise_dance">Dans</string>
+    <string name="exercise_pilates">Pilates</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Basketbal</string>
+    <string name="exercise_football">Voetbal</string>
+    <string name="exercise_tennis">Tennis</string>
+    <string name="exercise_badminton">Badminton</string>
+    <string name="exercise_table_tennis">Tafeltennis</string>
+    <string name="exercise_skipping">Touwtjespringen</string>
+    <string name="exercise_hiking">Wandelen in de natuur</string>
+    <string name="exercise_other">Anders</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">Deze Week</string>
+    <string name="fitness_add_workout">Training Toevoegen</string>
+    <string name="fitness_select_type">Selecteer Type Oefening</string>
+    <string name="fitness_duration_minutes">Duur (minuten)</string>
+    <string name="fitness_calories_label">Calorieen</string>
+    <string name="fitness_distance_km">Afstand (km)</string>
+    <string name="fitness_today_workouts">Trainingen Vandaag</string>
+    <string name="fitness_recent_workouts">Recente Trainingen</string>
+    <string name="fitness_empty">Nog geen trainingen geregistreerd.\nTik + om uw eerste training toe te voegen.</string>
+    <string name="fitness_minutes_format">%d min</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">Duur</string>
+    <string name="fitness_calories">Calorieen</string>
+    <string name="fitness_workouts">Trainingen</string>
+    <string name="fitness_km_unit">km</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Schakel Batterijoptimalisatie Uit</string>
+    <string name="steps_battery_desc">Batterijoptimalisatie kan de stappenteldienst stoppen en de stapvolging beinvloeden.</string>
+    <string name="steps_battery_action">Ga naar Instellingen</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">%s Instellingen</string>
+    <string name="steps_auto_start_settings">Automatisch Starten Instellingen</string>
+    <string name="steps_battery_settings">Batterij Instellingen</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Energiesamenvatting</string>
+    <string name="energy_today">Vandaag</string>
+    <string name="energy_this_week">Deze Week</string>
+    <string name="energy_steps">Stappen</string>
+    <string name="energy_workouts">Trainingen</string>
+    <string name="energy_total">Totaal</string>
+    <string name="energy_workouts_summary">%1$d trainingen \u00B7 %2$d min</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Lichaamsmetingen</string>
+    <string name="body_metrics_height">Lengte (cm)</string>
+    <string name="body_metrics_weight">Gewicht (kg)</string>
+    <string name="body_metrics_saved">Lichaamsmetingen opgeslagen</string>
+    <string name="body_metrics_height_error">Voer een geldige lengte in (80-250cm)</string>
+    <string name="body_metrics_weight_error">Voer een geldig gewicht in (15-350kg)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Voeding</string>
+    <string name="nav_nutrition">Voeding</string>
+    <string name="nutrition_add_meal">Maaltijd Toevoegen</string>
+    <string name="nutrition_meal_type">Maaltijdtype</string>
+    <string name="nutrition_food_name">Voedselnaam</string>
+    <string name="nutrition_calories">Calorieen</string>
+    <string name="nutrition_protein">Eiwit (g)</string>
+    <string name="nutrition_carbs">Koolhydraten (g)</string>
+    <string name="nutrition_fat">Vet (g)</string>
+    <string name="nutrition_serving_size">Portiegrootte</string>
+    <string name="nutrition_macros">Macronutrienten</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Dagelijkse Voeding</string>
+    <string name="nutrition_today_meals">Maaltijden Vandaag</string>
+    <string name="nutrition_meals">maaltijden</string>
+    <string name="nutrition_weekly_trend">Wekelijkse Trend</string>
+    <string name="nutrition_empty">Nog geen maaltijden geregistreerd.\nTik + om uw eerste maaltijd toe te voegen.</string>
+    <string name="nutrition_error_food_name">Voer een voedselnaam in</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Ontbijt</string>
+    <string name="meal_lunch">Lunch</string>
+    <string name="meal_dinner">Diner</string>
+    <string name="meal_snack">Tussendoortje</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Water</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Lagere Calorie-inname in Luteale Fase</string>
+    <string name="insight_nutrition_luteal_low_desc">Calorieen daalden met %.0f kcal in luteale fase. Probeer een uitgebalanceerd dieet te behouden.</string>
+    <string name="insight_nutrition_luteal_high_title">Hogere Calorie-inname in Luteale Fase</string>
+    <string name="insight_nutrition_luteal_high_desc">Calorieen stegen met %.0f kcal in luteale fase. Dit is normaal, luister naar uw lichaam.</string>
+    <string name="insight_nutrition_stable_title">Stabiele Calorie-inname</string>
+    <string name="insight_nutrition_stable_desc">Uw calorie-inname blijft stabiel in alle cyclusfasen. Goed gedaan!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">PIN vergeten?</string>
+    <string name="app_lock_change_pin">Wijzig PIN</string>
+    <string name="app_lock_current_pin">Huidige PIN</string>
+    <string name="app_lock_new_pin_label">Nieuwe PIN</string>
+    <string name="app_lock_recovery_title">Appvergrendeling Resetten</string>
+    <string name="app_lock_recovery_desc">Verifieer uw identiteit om de appvergrendeling te resetten</string>
+    <string name="lock_30s">30 seconden</string>
+    <string name="lock_1min">1 minuut</string>
+    <string name="lock_5min">5 minuten</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Slaap</string>
+    <string name="sleep_title">Slaapregistratie</string>
+    <string name="sleep_record_title">Slaap Registreren</string>
+    <string name="sleep_hours">Slaapuren</string>
+    <string name="sleep_deep_hours">Diepe Slaap</string>
+    <string name="sleep_quality">Slaapkwaliteit</string>
+    <string name="sleep_quality_format">%d ster</string>
+    <string name="sleep_history">Slaapgeschiedenis</string>
+    <string name="sleep_no_data">Nog geen slaapgegevens geregistreerd</string>
+    <string name="sleep_today_status">Slaap Vandaag</string>
+    <string name="sleep_hours_format">%s uur</string>
+    <string name="sleep_deep_hours_format">Diep: %s uur</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Menstrueel</string>
+    <string name="phase_follicular">Folliculair</string>
+    <string name="phase_ovulatory">Ovulatoir</string>
+    <string name="phase_luteal">Luteaal</string>
+    <string name="nutrition_cycle_guidance">Voedingsadvies per Cyclusfase</string>
+    <string name="nutrition_focus_nutrients">Belangrijke Nutriënten</string>
+    <string name="nutrition_recommended_foods">Aanbevolen Voedsel</string>
+    <string name="nutrition_limit_foods">Beperk</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagen</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Voer een geldige duur in</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Wissen</string>
+    <string name="edit">Bewerken</string>
+    <string name="exact_date_mode">Exacte datum</string>
+    <string name="profile_dob_not_set">Niet ingesteld</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Alleen jaar</string>
+    <string name="year_picker_title">Geboortejaar selecteren</string>
+
+
+    <!-- Analysis section strings -->
+    <string name="analysis_no_data">Niet genoeg gegevens. Noteer eerst gezondheidsgegevens.</string>
+    <string name="export_report">PDF-rapport exporteren</string>
+    <string name="insufficient_data">Onvoldoende gegevens</string>
+
+    <!-- Nutrition analysis -->
+    <string name="nutrition_energy_balance">Energiebalans</string>
+    <string name="nutrition_resting_energy">Rust</string>
+    <string name="nutrition_exercise_energy">Beweging</string>
+    <string name="nutrition_total_expenditure">Totaal Verbruik</string>
+    <string name="nutrition_calorie_balance">Balans</string>
+
+    <!-- Sleep timer -->
+    <string name="sleep_auto_calculated">Auto: %d uur</string>
+    <string name="sleep_bedtime_btn">Bedtijd</string>
+    <string name="sleep_elapsed">%du %dm verstreken</string>
+    <string name="sleep_sleeping">Slapen...</string>
+    <string name="sleep_waketime_btn">Word wakker</string>
+
+    <!-- Cross-dimension patterns -->
+    <string name="pattern_exhaustion_title">Lichamelijke Uitputting Gedetecteerd</string>
+    <string name="pattern_exhaustion_desc">Weinig slaap, hoge stress en lage stemming duiden op burn-outrisico. Overweeg rustdagen.</string>
+    <string name="pattern_overtraining_title">Risico op Overtraining</string>
+    <string name="pattern_overtraining_desc">Hoog trainingsvolume met calorietekort en weinig slaap. Let op blessures.</string>
+    <string name="pattern_sedentary_mood_title">Zittend + Lage Stemming</string>
+    <string name="pattern_sedentary_mood_desc">Zeer laag aantal stappen in combinatie met lage stemming. Een korte wandeling kan helpen.</string>
+    <string name="pattern_dehydration_stress_title">Uitdroging + Stress</string>
+    <string name="pattern_dehydration_stress_desc">Lage waterinname en hoge stressniveaus. Hydratatie ondersteunt veerkracht.</string>
+    <string name="pattern_positive_loop_title">Positieve Gezondheidslus</string>
+    <string name="pattern_positive_loop_desc">Goede slaap, hoge activiteit en positieve stemming versterken elkaar. Ga zo door!</string>
+
+    <!-- Analysis section labels -->
+    <string name="analysis_section_suggestions">Slimme Suggesties</string>
+    <string name="analysis_section_nutrition">Voedingsanalyse</string>
+    <string name="analysis_section_calorie_balance">Caloriebalans</string>
+    <string name="analysis_section_exercise">Bewegingsanalyse</string>
+    <string name="analysis_section_sleep">Slaapanalyse</string>
+    <string name="analysis_section_phase">Cycluscorrelatie</string>
+    <string name="analysis_avg_daily_calories">Gem. Dagelijks</string>
+    <string name="analysis_protein">Eiwit</string>
+    <string name="analysis_carbs">Koolhydraten</string>
+    <string name="analysis_fat">Vet</string>
+    <string name="analysis_nutrient_ratio">Voedingsverhouding</string>
+    <string name="analysis_avg_water_format">Water Gem.: %.0f ml</string>
+    <string name="analysis_avg_intake">Gem. Inname</string>
+    <string name="analysis_exercise_burned">Bewegingsverbruik</string>
+    <string name="analysis_weekly_total_minutes">Wekelijks Totaal</string>
+    <string name="analysis_daily_avg_minutes">Dagelijks Gem.</string>
+    <string name="analysis_calories_burned">Calorieën Verbrand</string>
+    <string name="analysis_exercise_type_distribution">Verdeling Bewegingstypen</string>
+    <string name="analysis_avg_sleep_hours">Gem. Duur</string>
+    <string name="analysis_quality_score">Kwaliteitsscore</string>
+    <string name="analysis_daily_sleep_hours">Dagelijkse Slaapuren</string>
+    <string name="analysis_mood">Stemming</string>
+    <string name="analysis_stress">Stress</string>
+    <string name="analysis_daily_net_calories">Dagelijkse Netto Calorieën (met rustenergie)</string>
+
+    <!-- PDF Report -->
+    <string name="report_title">Gezondheidsrapport</string>
+    <string name="report_description">Genereer een uitgebreid gezondheidsrapport op basis van uw geregistreerde gegevens. Het rapport wordt lokaal op uw apparaat gemaakt en kan als PDF worden gedeeld.</string>
+    <string name="report_period">Rapportperiode: Laatste 30 Dagen</string>
+    <string name="report_includes">Bevat: Menstruatiegegevens, stappen, slaap, voeding en gezondheidsinzichten</string>
+    <string name="report_generate">Rapport Genereren</string>
+    <string name="report_generating">PDF-rapport wordt gegenereerd...</string>
+    <string name="report_success">Rapport succesvol gegenereerd!</string>
+    <string name="report_share">Gezondheidsrapport Delen</string>
+    <string name="report_share_button">Delen</string>
+    <string name="report_generate_new">Nieuwe Genereren</string>
+    <string name="report_error">Fout: %s</string>
+    <string name="report_privacy_title">Privacyverklaring</string>
+    <string name="report_privacy_body">Alle rapporten worden lokaal op uw apparaat gegenereerd. Er worden geen gezondheidsgegevens geüpload naar een server of clouddienst. Uw gegevens blijven volledig onder uw controle.</string>
+
+    <!-- Nutrition suggestions -->
+    <string name="suggestion_low_calorie_title">Lage Calorie-inname</string>
+    <string name="suggestion_low_calorie_desc">Dagelijkse inname %.0f kcal is onder de aanbevolen 1800 kcal. Overweeg complexe koolhydraten en gezonde vetten toe te voegen.</string>
+    <string name="suggestion_high_calorie_title">Hoge Calorie-inname</string>
+    <string name="suggestion_high_calorie_desc">Dagelijkse inname %.0f kcal overschrijdt 2500 kcal. Overweeg snacks te verminderen en groenten te verhogen.</string>
+    <string name="suggestion_low_protein_title">Lage Eiwitinname</string>
+    <string name="suggestion_low_protein_desc">Dagelijks eiwit %.0f g is onder de aanbevolen 50 g. Overweeg eieren, vis en tofu.</string>
+    <string name="suggestion_low_water_title">Lage Waterinname</string>
+    <string name="suggestion_low_water_desc">Dagelijks water %.0f ml is onder de aanbeveling. Streef naar 1500-2000 ml per dag.</string>
+    <string name="suggestion_high_surplus_title">Hoog Calorieoverschot</string>
+    <string name="suggestion_high_surplus_desc">Dagelijks overschot %.0f kcal. Als gewichtsverlies uw doel is, overweeg dan meer beweging.</string>
+    <string name="suggestion_high_deficit_title">Groot Calorie tekort</string>
+    <string name="suggestion_high_deficit_desc">Dagelijks tekort %.0f kcal. Zorg dat u aan uw basale metabolische behoeften voldoet.</string>
+    <string name="suggestion_balanced_title">Gebalanceerde Calorieën</string>
+    <string name="suggestion_balanced_desc">Inname en verbruik zijn goed in balans. Ga zo door!</string>
+    <string name="suggestion_low_exercise_title">Weinig Beweging</string>
+    <string name="suggestion_low_exercise_desc">Wekelijkse beweging %d minuten is onder de WHO-aanbeveling van 150 minuten.</string>
+    <string name="suggestion_exercise_met_title">Bewegingsdoel Bereikt</string>
+    <string name="suggestion_exercise_met_desc">Wekelijkse beweging %d minuten voldoet aan de WHO-aanbeveling!</string>
+    <string name="suggestion_exercise_variety_title">Bewegingsvariatie Nodig</string>
+    <string name="suggestion_exercise_variety_desc">Probeer verschillende bewegingstypen (cardio + kracht + flexibiliteit) voor algehele fitheid.</string>
+    <string name="suggestion_low_sleep_title">Weinig Slaap</string>
+    <string name="suggestion_low_sleep_desc">Dagelijkse slaap %.1f uur is onder de aanbevolen 7-9 uur. Probeer een regelmatig schema.</string>
+    <string name="suggestion_high_sleep_title">Overmatige Slaap</string>
+    <string name="suggestion_high_sleep_desc">Dagelijkse slaap %.1f uur overschrijdt 9 uur. Lange slaap kan op vermoeidheid wijzen.</string>
+    <string name="suggestion_low_deep_sleep_title">Weinig Diepe Slaap</string>
+    <string name="suggestion_low_deep_sleep_desc">Diepe slaap ratio slechts %.0f%%. Vermijd cafeïne voor het slapengaan en houd de kamer donker.</string>
+    <string name="suggestion_low_sleep_quality_title">Lage Slaapkwaliteit</string>
+    <string name="suggestion_low_sleep_quality_desc">Slaapkwaliteitsscore %.1f/5. Probeer meditatie of een warm bad voor het slapengaan.</string>
+    <string name="suggestion_luteal_sleep_title">Slaapverandering in Luteale Fase</string>
+    <string name="suggestion_luteal_sleep_desc">Slaap in luteale fase daalde met %.1f uur versus folliculair. Normale hormonale verandering.</string>
+
+    <!-- Error messages -->
+    <string name="error_onboarding_required">Voltooi eerst de gebruikersinstellingen</string>
+    <string name="error_load_failed">Laden mislukt</string>
+
+    <!-- Cycle nutrition advice -->
+    <string name="nutrition_menstrual_advice">Focus op ijzerrijk voedsel om bloedverlies aan te vullen. Magnesium helpt krampen te verminderen. Blijf goed gehydrateerd.</string>
+    <string name="nutrition_menstrual_nutrients">IJzer · Magnesium · Omega-3 · Vitamine B12</string>
+    <string name="nutrition_menstrual_foods">Bladgroenten · Rood Vlees · Vette Vis · Pure Chocolade · Noten</string>
+    <string name="nutrition_menstrual_limit">Zoute Snacks · Cafeïne · Zuivel</string>
+    <string name="nutrition_follicular_advice">Uw energiemetabolisme stijgt. Geweldige tijd voor lichte, voedzame maaltijden. Ondersteun de darmgezondheid met probiotica.</string>
+    <string name="nutrition_follicular_nutrients">Vezels · Vitamine C · Probiotica · Foliumzuur</string>
+    <string name="nutrition_follicular_foods">Bessen · Citrusvruchten · Yoghurt · Haver · Broccoli</string>
+    <string name="nutrition_follicular_limit">Bewerkte Voeding · Overmatige Suiker</string>
+    <string name="nutrition_ovulatory_advice">Oestrogeen piekt in deze fase. Ondersteun leverontgifting met antioxidantrijke voeding. Ontstekingsremmend dieet aanbevolen.</string>
+    <string name="nutrition_ovulatory_nutrients">Antioxidanten · Vitamine C · Zink · Vitamine E</string>
+    <string name="nutrition_ovulatory_foods">Paprika · Zonnebloempitten · Mager Gevogelte · Avocado · Groene Thee</string>
+    <string name="nutrition_ovulatory_limit">Alcohol · Gefrituurd Voedsel</string>
+    <string name="nutrition_luteal_advice">Progesteron stijgt, wat de eetlust kan vergroten. Complexe koolhydraten helpen serotonine te verhogen. Beperk cafeïne en zout om PMS-symptomen te verlichten.</string>
+    <string name="nutrition_luteal_nutrients">B-Vitaminen · Complexe Koolhydraten · Magnesium · Calcium · Vitamine B6</string>
+    <string name="nutrition_luteal_foods">Volkoren · Bananen · Bladgroenten · Peulvruchten · Pure Chocolade</string>
+    <string name="nutrition_luteal_limit">Suiker · Cafeïne · Zout Voedsel</string>
+
+    <!-- Sleep trend -->
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Slaapuren   ▐ Kwaliteitsscore</string>
+    <string name="sleep_luteal_worse">Slaapkwaliteit in Luteale Fase Verminderd</string>
+    <string name="sleep_luteal_better">Slaapkwaliteit in Luteale Fase Verbeterd</string>
+    <string name="sleep_luteal_comparison_worse">Luteaal gem. slaap %.1fu, folliculair %.1fu, gedaald met %.1fu</string>
+    <string name="sleep_luteal_comparison_better">Luteaal gem. slaap %.1fu, folliculair %.1fu, verbeterd met %.1fu</string>
+
+    <!-- PDF report -->
+    <string name="pdf_health_report">Gezondheidsrapport</string>
+    <string name="pdf_generated">Gegenereerd: %s</string>
+    <string name="pdf_user_info">Gebruiker: %1$s | Geslacht: %2$s</string>
+    <string name="pdf_report_period">Rapportperiode: %s</string>
+    <string name="pdf_period_summary">Menstruatiesamenvatting</string>
+    <string name="pdf_no_period_records">Geen menstruatiegegevens in geselecteerde periode.</string>
+    <string name="pdf_total_cycles">Totaal Cycli: %d</string>
+    <string name="pdf_avg_cycle_length">Gemiddelde Cycluslengte: %d dagen</string>
+    <string name="pdf_avg_pain">Gemiddeld Pijnniveau: %.1f / 3</string>
+    <string name="pdf_recent_records">Recente Gegevens</string>
+    <string name="pdf_start_date">Startdatum</string>
+    <string name="pdf_end_date">Einddatum</string>
+    <string name="pdf_flow">Flow</string>
+    <string name="pdf_pain">Pijn</string>
+    <string name="pdf_ongoing">Bezig</string>
+    <string name="pdf_flow_light">Licht</string>
+    <string name="pdf_flow_medium">Matig</string>
+    <string name="pdf_flow_heavy">Zwaar</string>
+    <string name="pdf_pain_none">Geen</string>
+    <string name="pdf_pain_mild">Mild</string>
+    <string name="pdf_pain_moderate">Matig</string>
+    <string name="pdf_pain_severe">Ernstig</string>
+    <string name="pdf_activity_summary">Activiteitsoverzicht</string>
+    <string name="pdf_no_step_data">Geen stapgegevens beschikbaar.</string>
+    <string name="pdf_avg_daily_steps">Gemiddelde Dagelijkse Stappen: %,d</string>
+    <string name="pdf_total_steps">Totaal Stappen: %,d</string>
+    <string name="pdf_max_steps">Max. Dagelijkse Stappen: %,d</string>
+    <string name="pdf_total_exercise">Totale Beweging: %d minuten</string>
+    <string name="pdf_sleep_summary">Slaapoverzicht</string>
+    <string name="pdf_no_sleep_data">Geen slaapgegevens beschikbaar.</string>
+    <string name="pdf_avg_sleep">Gemiddelde Slaap: %.1f uur</string>
+    <string name="pdf_avg_sleep_quality">Gemiddelde Slaapkwaliteit: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Gemiddelde Diepe Slaap: %.1f uur</string>
+    <string name="pdf_nutrition_summary">Voedingsoverzicht</string>
+    <string name="pdf_no_nutrition_data">Geen voedingsgegevens beschikbaar.</string>
+    <string name="pdf_avg_calories">Gemiddelde Dagelijkse Calorieën: %.0f kcal</string>
+    <string name="pdf_avg_water">Gemiddelde Waterinname: %.0f ml</string>
+    <string name="pdf_avg_protein">Gemiddeld Eiwit: %.0f g</string>
+    <string name="pdf_footer">Dit rapport wordt lokaal op uw apparaat gegenereerd. Geen gegevens verlaten uw telefoon.</string>
+    <string name="pdf_page">Pagina %d</string>
+    <string name="pdf_app_name">TianshangHealth – Privacy Eerst</string>
+
+    <!-- General -->
+    <string name="previous">Vorige</string>
+    <string name="next">Volgende</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">Rapport genereren mislukt</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

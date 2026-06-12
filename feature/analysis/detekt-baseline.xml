@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:AnalyticsEngine.kt$AnalyticsEngine$fun computeNutrition(records: List&lt;DailyHealth&gt;): WeeklyNutrition</ID>
+    <ID>CyclomaticComplexMethod:CrossDimensionEngine.kt$CrossDimensionEngine$fun detectCompoundPatterns(records: List&lt;DailyHealth&gt;): List&lt;CompoundPattern&gt;</ID>
+    <ID>CyclomaticComplexMethod:MedicalReportGenerator.kt$MedicalReportGenerator$private fun drawPeriodSummary( canvas: Canvas, data: HealthReportData, startY: Float, ensureSpace: (Float) -&gt; Boolean ): Float</ID>
+    <ID>CyclomaticComplexMethod:MoodPredictor.kt$MoodPredictor$fun extractFeatures( today: DailyHealth, yesterday: DailyHealth?, cyclePhase: CyclePhase, dayOfCycle: Float ): FloatArray</ID>
+    <ID>CyclomaticComplexMethod:SuggestionEngine.kt$SuggestionEngine$fun generate(data: AnalysisData): List&lt;Suggestion&gt;</ID>
+    <ID>ExpressionBodySyntax:FeatureExtractor.kt$FeatureExtractor$return if (std != 0f) (value - mean) / std else 0f</ID>
+    <ID>ExpressionBodySyntax:FeatureExtractor.kt$FeatureExtractor$return normalizedValue * outputStd + outputMean</ID>
+    <ID>ExpressionBodySyntax:PredictionLogger.kt$PredictionLogger$return predictionLogDao.getMeanAbsoluteError(userId)</ID>
+    <ID>ExpressionBodySyntax:PredictionLogger.kt$PredictionLogger$return predictionLogDao.getMeanAbsoluteErrorByModel(userId, modelName)</ID>
+    <ID>ExpressionBodySyntax:TFLiteModule.kt$TFLiteModule$return FeatureExtractor()</ID>
+    <ID>ExpressionBodySyntax:TFLiteModule.kt$TFLiteModule$return MoodPredictor(tFLiteManager, stringResolver)</ID>
+    <ID>ExpressionBodySyntax:TFLiteModule.kt$TFLiteModule$return PredictionEnhancer(tFLiteManager, featureExtractor, stringResolver)</ID>
+    <ID>ExpressionBodySyntax:TFLiteModule.kt$TFLiteModule$return TFLiteManager(context)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable fun AnalysisScreen( onNavigateToReport: () -&gt; Unit = {}, viewModel: AnalysisViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun AnalysisContent( data: com.tianshang.health.feature.analysis.domain.AnalysisData, isFemale: Boolean, onNavigateToReport: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun CalorieBalanceSection(balance: com.tianshang.health.feature.analysis.domain.CalorieBalance)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun ErrorContent(message: String, onRetry: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun ExerciseSection(exercise: com.tianshang.health.feature.analysis.domain.WeeklyExercise)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun LoadingContent()</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun NutritionSection(nutrition: com.tianshang.health.feature.analysis.domain.WeeklyNutrition)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun PhaseSection(comparisons: List&lt;com.tianshang.health.feature.analysis.domain.PhaseComparison&gt;)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun SectionHeader(icon: ImageVector, title: String)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun SleepSection(sleep: com.tianshang.health.feature.analysis.domain.WeeklySleep)</ID>
+    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun StatItem( label: String, value: String, modifier: Modifier = Modifier, valueColor: androidx.compose.ui.graphics.Color = androidx.compose.ui.graphics.Color.Unspecified )</ID>
+    <ID>FunctionNaming:DonutChart.kt$@Composable fun DonutChart( slices: List&lt;DonutSlice&gt;, centerLabel: String, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:DonutChart.kt$@Composable fun SimpleBarChart( data: List&lt;DailyValue&gt;, color: Color, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:ReportScreen.kt$@Composable fun ReportScreen( viewModel: ReportViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:SuggestionCard.kt$@Composable fun SuggestionCard( suggestion: Suggestion, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:ReportScreen.kt$@Composable fun ReportScreen( viewModel: ReportViewModel = hiltViewModel() )</ID>
+    <ID>LongMethod:SuggestionEngine.kt$SuggestionEngine$fun generate(data: AnalysisData): List&lt;Suggestion&gt;</ID>
+    <ID>LongParameterList:MoodPredictorTest.kt$MoodPredictorTest$( steps: Int? = 8000, exerciseMinutes: Int? = 30, sleepHours: Float? = 7.5f, deepSleepHours: Float? = 1.5f, sleepQuality: Int? = 3, caloriesIntake: Float? = 2000f, waterIntake: Float? = 1500f, heartRateResting: Int? = 72, moodScore: Int? = 3, stressLevel: Int? = 3 )</ID>
+    <ID>LoopWithTooManyJumpStatements:CrossDimensionEngine.kt$CrossDimensionEngine$for</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFF1E88E5</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFF43A047</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFF5C6BC0</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFF8E24AA</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFFE53935</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFFFB8C00</ID>
+    <ID>MagicNumber:AnalysisViewModel.kt$AnalysisViewModel$14</ID>
+    <ID>MagicNumber:AnalysisViewModel.kt$AnalysisViewModel$7</ID>
+    <ID>MagicNumber:AnalyticsEngine.kt$AnalyticsEngine$5</ID>
+    <ID>MagicNumber:CombinedPredictionUseCase.kt$CombinedPredictionUseCase$3</ID>
+    <ID>MagicNumber:CombinedPredictionUseCase.kt$CombinedPredictionUseCase$5</ID>
+    <ID>MagicNumber:CombinedPredictionUseCase.kt$CombinedPredictionUseCase$7</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$0.2f</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$0.4f</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$0.6f</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$0.8f</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$100</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$14</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$3</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$50</ID>
+    <ID>MagicNumber:CrossDimensionEngine.kt$CrossDimensionEngine$7</ID>
+    <ID>MagicNumber:DonutChart.kt$100</ID>
+    <ID>MagicNumber:DonutChart.kt$28f</ID>
+    <ID>MagicNumber:DonutChart.kt$360f</ID>
+    <ID>MagicNumber:DonutChart.kt$4f</ID>
+    <ID>MagicNumber:DonutChart.kt$90f</ID>
+    <ID>MagicNumber:FeatureExtractor.kt$FeatureExtractor$0.75</ID>
+    <ID>MagicNumber:FeatureExtractor.kt$FeatureExtractor$3</ID>
+    <ID>MagicNumber:FeatureExtractor.kt$FeatureExtractor$4</ID>
+    <ID>MagicNumber:FeatureExtractor.kt$FeatureExtractor$5</ID>
+    <ID>MagicNumber:FeatureExtractor.kt$FeatureExtractor$6</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$100f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$10f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$120f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$14f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$15f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$18f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$20f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$22f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$240f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$25f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$3</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$30f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$320f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$35f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$5</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$5f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$6f</ID>
+    <ID>MagicNumber:MedicalReportGenerator.kt$MedicalReportGenerator$80f</ID>
+    <ID>MagicNumber:MoodPredictor.kt$MoodPredictor$5f</ID>
+    <ID>MagicNumber:PredictionEnhancer.kt$PredictionEnhancer$100</ID>
+    <ID>MagicNumber:PredictionLogger.kt$PredictionLogger$0.3f</ID>
+    <ID>MagicNumber:PredictionLogger.kt$PredictionLogger$0.5f</ID>
+    <ID>MagicNumber:PredictionLogger.kt$PredictionLogger$0.8f</ID>
+    <ID>MagicNumber:ReportScreen.kt$30</ID>
+    <ID>MagicNumber:SuggestionCard.kt$0xFF1E88E5</ID>
+    <ID>MagicNumber:SuggestionCard.kt$0xFF43A047</ID>
+    <ID>MagicNumber:SuggestionCard.kt$0xFFE53935</ID>
+    <ID>MagicNumber:SuggestionEngine.kt$SuggestionEngine$0.5f</ID>
+    <ID>MagicNumber:SuggestionEngine.kt$SuggestionEngine$100</ID>
+    <ID>MagicNumber:SuggestionEngine.kt$SuggestionEngine$300</ID>
+    <ID>MagicNumber:TFLiteManager.kt$TFLiteManager$4</ID>
+    <ID>MatchingDeclarationName:DonutChart.kt$DonutSlice</ID>
+    <ID>MaxLineLength:AnalysisViewModel.kt$AnalysisViewModel$follicularDateRange = Pair(lastPeriodStart.format(DateTimeFormatter.ISO_LOCAL_DATE), follicularEnd.format(DateTimeFormatter.ISO_LOCAL_DATE))</ID>
+    <ID>MaxLineLength:AnalysisViewModel.kt$AnalysisViewModel$lutealDateRange = Pair(lutealStart.format(DateTimeFormatter.ISO_LOCAL_DATE), lutealEnd.format(DateTimeFormatter.ISO_LOCAL_DATE))</ID>
+    <ID>MaxLineLength:CrossDimensionEngine.kt$CrossDimensionEngine$if</ID>
+    <ID>MaximumLineLength:AnalysisScreen.kt$ </ID>
+    <ID>MaximumLineLength:AnalysisViewModel.kt$AnalysisViewModel$ </ID>
+    <ID>MaximumLineLength:AnalyticsEngine.kt$AnalyticsEngine$ </ID>
+    <ID>MaximumLineLength:CrossDimensionEngine.kt$CrossDimensionEngine$ </ID>
+    <ID>MaximumLineLength:FeatureExtractor.kt$FeatureExtractor$ </ID>
+    <ID>MaximumLineLength:MoodPredictor.kt$MoodPredictor$ </ID>
+    <ID>MaximumLineLength:ReportViewModel.kt$ReportViewModel$ </ID>
+    <ID>NoWildcardImports:AnalysisScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:AnalysisScreen.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>NoWildcardImports:AnalysisScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>ReturnCount:FeatureExtractor.kt$FeatureExtractor$private fun findOvulationDate( symptoms: List&lt;DailySymptom&gt;, startDate: LocalDate, endDate: LocalDate ): LocalDate?</ID>
+    <ID>ReturnCount:MoodPredictor.kt$MoodPredictor$fun predict( today: DailyHealth, yesterday: DailyHealth?, cyclePhase: CyclePhase = CyclePhase.FOLLICULAR, dayOfCycle: Float = 1f ): MoodPredictionResult</ID>
+    <ID>SwallowedException:TFLiteManager.kt$TFLiteManager$e: Exception</ID>
+    <ID>UnderscoresInNumericLiterals:AnalyticsEngineTest.kt$AnalyticsEngineTest$10000</ID>
+    <ID>UnderscoresInNumericLiterals:MoodPredictorTest.kt$MoodPredictorTest$10000f</ID>
+    <ID>UnnecessaryParentheses:CrossDimensionEngine.kt$CrossDimensionEngine$(avgCalories - avgBurned)</ID>
+    <ID>UnnecessaryParentheses:DonutChart.kt$(slice.value / total)</ID>
+    <ID>UnnecessaryParentheses:MedicalReportGenerator.kt$MedicalReportGenerator$(data.periodRecords.size.coerceAtMost(5) * 20f)</ID>
+    <ID>UnusedPrivateClass:MedicalReportGenerator.kt$MedicalReportGenerator$PageContext</ID>
+    <ID>UnusedPrivateProperty:MedicalReportGenerator.kt$MedicalReportGenerator$private val contentWidth = pageWidth - marginLeft - marginRight</ID>
+    <ID>UnusedPrivateProperty:MedicalReportGenerator.kt$MedicalReportGenerator$private val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")</ID>
+    <ID>UnusedPrivateProperty:SuggestionEngine.kt$SuggestionEngine$private const val MOOD_LOW = 2.5f</ID>
+    <ID>UnusedPrivateProperty:SuggestionEngine.kt$SuggestionEngine$private const val STRESS_HIGH = 3.5f</ID>
+    <ID>WildcardImport:AnalysisScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:AnalysisScreen.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:AnalysisScreen.kt$import androidx.compose.material3.*</ID>
+  </CurrentIssues>
+</SmellBaseline>

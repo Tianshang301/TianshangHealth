@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Syarat Perkhidmatan</string>
+    <string name="privacy_title">Dasar Privasi</string>
+    <string name="accept_terms">Saya telah membaca dan menerima</string>
+    <string name="app_lock_title">Kunci Aplikasi</string>
+    <string name="enter_pin">Kata Laluan</string>
+    <string name="unlock">Buka Kunci</string>
+    <string name="invalid_pin">Kata laluan tidak sah</string>
+    <string name="app_lock_setup_title">Tetapkan Kata Laluan Kunci Aplikasi</string>
+    <string name="set_pin">Tetapkan Kata Laluan</string>
+    <string name="confirm_pin">Sahkan Kata Laluan</string>
+    <string name="set_password">Tetapkan Kata Laluan</string>
+    <string name="pin_empty_error">Kata laluan tidak boleh kosong</string>
+    <string name="pin_mismatch_error">Kata laluan tidak sepadan</string>
+    <string name="pin_length_error">Kata laluan mesti sekurang-kurangnya %d aksara</string>
+    <string name="calendar_title">Kalendar</string>
+    <string name="current_cycle_day">Hari %d kitaran</string>
+    <string name="days_until_next_period">Haid seterusnya dalam %d hari</string>
+    <string name="no_period_data">Tiada data haid</string>
+    <string name="tap_date_to_record">Ketik untuk merekod</string>
+    <string name="period">Haid</string>
+    <string name="predicted_period">Haid Dijangka</string>
+    <string name="ovulation">Ovulasi</string>
+    <string name="fertile_window">Subur</string>
+    <string name="record_title">Rekod</string>
+    <string name="start_period">Mula Haid</string>
+    <string name="end_period">Tamat Haid</string>
+    <string name="flow_level">Aliran</string>
+    <string name="pain_level">Sakit</string>
+    <string name="symptoms">Gejala</string>
+    <string name="sexual_activity">Aktiviti Seksual</string>
+    <string name="ovulation_test">Ujian Ovulasi</string>
+    <string name="cervical_mucus">Lendir Serviks</string>
+    <string name="body_temperature">Suhu Badan</string>
+    <string name="notes">Nota</string>
+    <string name="save">Simpan</string>
+    <string name="analysis_title">Analisis</string>
+    <string name="cycle_statistics">Statistik</string>
+    <string name="avg_cycle_length">Purata Kitaran</string>
+    <string name="avg_period_length">Purata Haid</string>
+    <string name="cycle_regularity">Keteraturan</string>
+    <string name="total_cycles">Jumlah Kitaran</string>
+    <string name="pain_trend">Trend Sakit</string>
+    <string name="symptom_frequency">Kekerapan Gejala</string>
+    <string name="predictions">Ramalan</string>
+    <string name="reminder_title">Peringatan</string>
+    <string name="period_reminder">Peringatan Haid</string>
+    <string name="ovulation_reminder">Peringatan Ovulasi</string>
+    <string name="pms_reminder">Peringatan PMS</string>
+    <string name="profile_title">Profil</string>
+    <string name="theme_customization">Tema</string>
+    <string name="theme_color">Warna Tema</string>
+    <string name="app_lock">Kunci Aplikasi</string>
+    <string name="language">Bahasa</string>
+    <string name="recycle_bin">Tong Kitar Semula</string>
+    <string name="recycle_bin_title">Tong Kitar Semula</string>
+    <string name="backup_restore">Sandaran</string>
+    <string name="backup_restore_title">Sandaran &amp; Pulihkan</string>
+    <string name="export_backup">Eksport Sandaran</string>
+    <string name="import_backup">Import Sandaran</string>
+    <string name="export_csv">Eksport CSV</string>
+    <string name="about">Perihal</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">Tambah</string>
+    <string name="height_cm">Tinggi (cm)</string>
+    <string name="weight_kg">Berat (kg)</string>
+    <string name="latest_bmi">BMI Semasa</string>
+    <string name="bmi_history">Sejarah</string>
+    <string name="dark_mode">Mod Gelap</string>
+    <string name="dark_mode_description">Tukar tema</string>
+    <string name="no_deleted_records">Tiada rekod dipadam</string>
+    <string name="security_settings">Keselamatan</string>
+    <string name="data_security">Keselamatan Data</string>
+    <string name="database_encryption">Penyulitan Pangkalan Data</string>
+    <string name="encrypted">Disulitkan (AES-256)</string>
+    <string name="unencrypted">Tidak Disulitkan</string>
+    <string name="migrate_to_encrypted">Migrasi ke Pangkalan Data Disulitkan</string>
+    <string name="migration_success">Migrasi berjaya! Pangkalan data kini disulitkan.</string>
+    <string name="migration_failed">Migrasi gagal: %s. Data anda telah dipulihkan ke keadaan asal.</string>
+    <string name="background_lock_delay">Kunci selepas latar belakang</string>
+    <string name="lock_immediately">Segera</string>
+    <string name="lock_after_seconds">%d saat</string>
+    <string name="custom_reminders">Peringatan Tersuai</string>
+    <string name="add_custom_reminder">Tambah Peringatan Tersuai</string>
+    <string name="no_custom_reminders">Belum ada peringatan tersuai</string>
+    <string name="reminder_title_label">Tajuk peringatan</string>
+    <string name="reminder_title_required">Tajuk diperlukan</string>
+    <string name="reminder_message_label">Mesej (pilihan)</string>
+    <string name="reminder_date">Tarikh peringatan</string>
+    <string name="select_time">Pilih masa</string>
+    <string name="hue">Rona</string>
+    <string name="saturation">Kepekatan</string>
+    <string name="lightness">Kecerahan</string>
+    <string name="apply_color">Guna Warna</string>
+    <string name="custom_color">Warna Tersuai</string>
+    <string name="color_preview">Pratonton Warna</string>
+    <string name="apply">Guna</string>
+    <string name="preset_colors">Warna Pratetap</string>
+    <string name="add_symptom">Tambah Gejala</string>
+    <string name="symptom_name">Nama gejala</string>
+    <string name="symptom_name_required">Nama gejala diperlukan</string>
+    <string name="prediction_explanation">Diramal secara adaptif berdasarkan %1$d kitaran terakhir (purata %2$s hari/kitaran, %3$s hari/haid)</string>
+    <string name="record_date">Tarikh Rekod</string>
+    <string name="select_date">Pilih Tarikh</string>
+    <string name="confirm">Sahkan</string>
+    <string name="cancel">Batal</string>
+    <string name="delete">Padam</string>
+    <string name="delete_record">Padam Rekod</string>
+    <string name="delete_record_confirm">Adakah anda pasti mahu memadam rekod untuk tarikh ini? Tindakan ini tidak boleh dibatalkan.</string>
+    <string name="week_sun">Ahd</string>
+    <string name="week_mon">Isn</string>
+    <string name="week_tue">Sel</string>
+    <string name="week_wed">Rab</string>
+    <string name="week_thu">Kha</string>
+    <string name="week_fri">Jum</string>
+    <string name="week_sat">Sab</string>
+    <string name="calendar_today">Hari Ini</string>
+    <string name="back">Kembali</string>
+    <string name="symptom_headache">Sakit Kepala</string>
+    <string name="symptom_bloating">Kembung Perut</string>
+    <string name="symptom_breast_tenderness">Payudara Sakit</string>
+    <string name="symptom_backache">Sakit Belakang</string>
+    <string name="symptom_fatigue">Keletihan</string>
+    <string name="symptom_mood_swings">Perubahan Mood</string>
+    <string name="symptom_acne">Jerawat</string>
+    <string name="symptom_increased_appetite">Selera Makan Meningkat</string>
+    <string name="symptom_insomnia">Insomnia</string>
+    <string name="symptom_nausea">Loya</string>
+    <string name="flow_light">Ringan</string>
+    <string name="flow_medium">Sederhana</string>
+    <string name="flow_heavy">Berat</string>
+    <string name="pain_none">Tiada</string>
+    <string name="pain_mild">Ringan</string>
+    <string name="pain_moderate">Sederhana</string>
+    <string name="pain_severe">Teruk</string>
+    <string name="unit_days">hari</string>
+    <string name="predicted_period_label">Haid dijangka: %1$s - %2$s</string>
+    <string name="ovulation_date_label">Ovulasi: %s</string>
+    <string name="confidence_label">Keyakinan: %1$s (berdasarkan %2$d kitaran)</string>
+    <string name="reminder_days_before">Hari sebelum</string>
+    <string name="reminder_time">Masa peringatan</string>
+    <string name="enabled">Diaktifkan</string>
+    <string name="disabled">Dinonaktifkan</string>
+    <string name="color_pink">Merah Jambu</string>
+    <string name="color_dark_pink">Merah Jambu Gelap</string>
+    <string name="color_peach">Pic</string>
+    <string name="color_light_purple">Ungu Muda</string>
+    <string name="color_medium_purple">Ungu Sederhana</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Kurang Berat</string>
+    <string name="bmi_category_normal">Normal</string>
+    <string name="bmi_category_overweight">Berat Berlebihan</string>
+    <string name="bmi_category_obese">Obes</string>
+    <string name="bmi_standard_note">Berdasarkan standard BMI China</string>
+    <string name="backup_success">Sandaran berjaya</string>
+    <string name="backup_fail">Sandaran gagal</string>
+    <string name="restore_success">Pemulihan berjaya</string>
+    <string name="restore_fail">Pemulihan gagal</string>
+    <string name="export_success">Eksport berjaya</string>
+    <string name="export_fail">Eksport gagal</string>
+    <string name="backup_export_desc">Eksport pangkalan data sebagai fail sandaran ZIP</string>
+    <string name="backup_import_desc">Pulihkan data dari fail sandaran</string>
+    <string name="backup_csv_desc">Eksport rekod sebagai hamparan CSV</string>
+    <string name="deleted_time">Dipadam: %s</string>
+    <string name="in_progress">Sedang berjalan</string>
+    <string name="terms_countdown">Sila tunggu %d saat</string>
+    <string name="auth_failed">Pengesahan gagal: %s</string>
+    <string name="auth_failed_generic">Pengesahan gagal</string>
+    <string name="biometric_init_failed">Permulaan biometrik gagal</string>
+    <string name="lockout_message">Terlalu banyak percubaan. Sila tunggu %d saat.</string>
+    <string name="chart_title_cycle_length_trend">Trend Panjang Kitaran</string>
+    <string name="chart_title_pain_trend">Trend Sakit</string>
+    <string name="chart_title_symptom_distribution">Taburan Gejala</string>
+    <string name="chart_cycle_label">Kitaran %d</string>
+    <string name="chart_cycle_length_label">Panjang Kitaran : %d</string>
+    <string name="chart_pain_level_label">Tahap Sakit</string>
+    <string name="regularity_regular">Teratur</string>
+    <string name="regularity_somewhat_regular">Agak Teratur</string>
+    <string name="regularity_irregular">Tidak Teratur</string>
+    <string name="regularity_insufficient_data">Data tidak mencukupi</string>
+    <string name="confidence_high">Tinggi</string>
+    <string name="confidence_medium">Sederhana</string>
+    <string name="confidence_low">Rendah</string>
+    <string name="confidence_insufficient">Data tidak mencukupi</string>
+    <string name="analysis_no_data_title">Belum ada data</string>
+    <string name="analysis_no_data_hint">Mula merekod haid anda untuk melihat analisis dan ramalan di sini</string>
+    <string name="section_appearance">Penampilan</string>
+    <string name="section_health">Kesihatan</string>
+    <string name="section_data">Data</string>
+    <string name="section_other">Lain-lain</string>
+    <string name="open">Buka</string>
+    <string name="retry">Cuba Semula</string>
+    <string name="profile_theme_description">Sesuaikan warna aplikasi</string>
+    <string name="profile_language_description">Tukar bahasa aplikasi</string>
+    <string name="profile_bmi_description">Pantau indeks jisim badan anda</string>
+    <string name="profile_app_lock_description">Perlukan pengesahan untuk membuka aplikasi</string>
+    <string name="screenshot_protection_title">Perlindungan Screenshot</string>
+    <string name="screenshot_protection_description">Halang screenshot dan rakaman skrin</string>
+    <string name="profile_backup_description">Sandaran dan pemulihan disulitkan semua data</string>
+    <string name="profile_recycle_bin_description">Lihat dan pulihkan rekod yang dipadam</string>
+    <string name="profile_version">Versi 1.0.0</string>
+    <string name="profile_app_description">Aplikasi penjejakan kesihatan komprehensif dengan privasi sebagai terasnya.</string>
+    <string name="custom_theme">Tema Tersuai</string>
+    <string name="language_description">Pilih bahasa pilihan anda. Aplikasi akan dimulakan semula untuk menggunakan perubahan.</string>
+    <string name="language_changed_restart">Bahasa ditukar, sedang dimulakan semula&#8230;</string>
+    <string name="bmi_empty_text">Belum ada rekod berat. Tambah entri berat pertama anda.</string>
+    <string name="save_height">Simpan Tinggi</string>
+    <string name="bmi_category_label">Kategori</string>
+    <string name="height_label">Tinggi</string>
+    <string name="update_height">Kemas Kini Tinggi</string>
+    <string name="add_weight_record_title">Tambah Rekod Berat</string>
+    <string name="add_weight_record_text">Masukkan berat anda untuk hari ini.</string>
+    <string name="recycle_bin_description">Rekod yang dipadam disimpan selama 30 hari sebelum dikeluarkan secara kekal.</string>
+    <string name="recycle_bin_empty">Tong kitar semula kosong</string>
+    <string name="recycle_bin_empty_title">Kosongkan Tong Kitar Semula</string>
+    <string name="recycle_bin_empty_confirm">Semua rekod yang dipadam akan dikeluarkan secara kekal. Tindakan ini tidak boleh dibatalkan.</string>
+    <string name="recycle_bin_empty_action">Kosongkan</string>
+    <string name="recycle_bin_restore">Pulihkan</string>
+    <string name="recycle_bin_delete_forever">Padam Selama-lamanya</string>
+    <string name="add_record">Tambah Rekod</string>
+    <string name="period_tracking_title">Penjejakan Haid</string>
+    <string name="prediction_explanation_title">Penjelasan Ramalan</string>
+    <string name="reminder_period_desc">Dapatkan notifikasi sebelum haid bermula</string>
+    <string name="reminder_ovulation_desc">Dapatkan notifikasi sebelum ovulasi</string>
+    <string name="reminder_pms_desc">Dapatkan notifikasi tentang gejala PMS</string>
+    <string name="cycle_status_title">Status Kitaran</string>
+    <string name="cycle_day_label">Hari Kitaran</string>
+    <string name="days_until_label">Hari Sehingga</string>
+    <string name="period_active_text">Haid sedang aktif</string>
+    <string name="next_period_label">Haid Seterusnya</string>
+    <string name="not_enough_data">Data tidak mencukupi</string>
+    <string name="cycle_length_label">Panjang Kitaran</string>
+    <string name="chart_no_data">Data tidak mencukupi untuk memaparkan carta</string>
+    <string name="chart_no_pain_data">Tiada data sakit direkodkan</string>
+    <string name="chart_pain_unknown">Tidak Diketahui</string>
+    <string name="chart_total_records">Jumlah Rekod</string>
+    <string name="record_for_date">Rekod untuk %s</string>
+    <string name="save_record">Simpan Rekod</string>
+    <string name="male_health_trend">Trend Kesihatan</string>
+    <string name="male_health_description">Analisis haid tidak tersedia untuk pengguna lelaki. Menunjukkan data kesihatan umum di bawah.</string>
+    <string name="steps_overview">Gambaran Keseluruhan Langkah</string>
+    <string name="steps_today">Langkah Hari Ini</string>
+    <string name="steps_weekly_avg_label">Purata Langkah 7 Hari</string>
+    <string name="steps_record_days">Hari Direkodkan</string>
+    <string name="steps_weekly_trend_label">Trend Langkah 7 Hari</string>
+    <string name="steps_title">Penjejakan Langkah</string>
+    <string name="steps_daily_goal">Matlamat Harian</string>
+    <string name="steps_update_goal">Kemas Kini Matlamat</string>
+    <string name="steps_this_week">Minggu Ini</string>
+    <string name="steps_total">Jumlah</string>
+    <string name="steps_average">Purata</string>
+    <string name="steps_days_label">Hari</string>
+    <string name="steps_weekly_trend">Trend Mingguan</string>
+    <string name="steps_goal_format">%d langkah</string>
+    <string name="steps_weekly_avg_format">Purata mingguan %d langkah/hari</string>
+    <string name="steps_history_title">Sejarah Langkah</string>
+    <string name="steps_tab_week">Minggu</string>
+    <string name="steps_tab_month">Bulan</string>
+    <string name="steps_tab_year">Tahun</string>
+    <string name="steps_tab_all">Semua</string>
+    <string name="steps_30d_total">Jumlah 30 Hari</string>
+    <string name="steps_avg">Purata Harian</string>
+    <string name="steps_best">Hari Terbaik</string>
+    <string name="steps_weekly_label">Pecahan Mingguan</string>
+    <string name="steps_daily_trend">Trend Harian</string>
+    <string name="steps_monthly_label">Pecahan Bulanan</string>
+    <string name="steps_total_label">Jumlah Langkah</string>
+    <string name="steps_period_total">Jumlah Tempoh</string>
+    <string name="steps_weekly_avg">Purata Mingguan</string>
+    <string name="steps_monthly_avg">Purata Bulanan</string>
+    <string name="steps_best_month">Bulan Terbaik</string>
+    <string name="steps_tab_day">Hari</string>
+    <string name="steps_label">Langkah</string>
+    <string name="steps_calories_label">Kalori</string>
+    <string name="steps_yearly_label">Pecahan Tahunan</string>
+    <string name="dashboard_title">Papan Pemuka Kesihatan</string>
+    <string name="dashboard_quick_actions">Tindakan Pantas</string>
+    <string name="dashboard_retry">Cuba Semula</string>
+    <string name="dashboard_insights">Wawasan Kesihatan</string>
+    <string name="dashboard_insights_empty">Rekod lebih banyak data kesihatan untuk wawasan diperibadikan</string>
+    <string name="dashboard_period_status">Status Haid</string>
+    <string name="dashboard_period_active">Haid Aktif</string>
+    <string name="dashboard_follicular_phase">Fasa Folikel</string>
+    <string name="dashboard_no_data">Tiada Data</string>
+    <string name="dashboard_today_steps">Langkah Hari Ini</string>
+    <string name="dashboard_goal_format">Matlamat: %d</string>
+    <string name="dashboard_cycle_day_format">Hari %1$d</string>
+    <string name="dashboard_record_period">Rekod Haid</string>
+    <string name="dashboard_record_steps">Rekod Langkah</string>
+    <string name="dashboard_record_health">Analisis Kesihatan</string>
+    <string name="gender_welcome">Selamat Datang ke TianshangHealth</string>
+    <string name="gender_instruction">Sila pilih jantina anda untuk penjejakan kesihatan diperibadikan</string>
+    <string name="gender_male">Lelaki</string>
+    <string name="gender_male_desc">Menyembunyikan ciri penjejakan haid</string>
+    <string name="gender_female">Perempuan</string>
+    <string name="gender_female_desc">Menunjukkan semua ciri termasuk penjejakan haid</string>
+    <string name="gender_other">Lain-lain</string>
+    <string name="gender_other_desc">Menunjukkan semua ciri</string>
+    <string name="gender_footnote">Anda boleh menukar ini kemudian dalam Tetapan</string>
+    <string name="gender_setting_title">Jantina</string>
+    <string name="gender_setting_description">Tukar jantina anda untuk menyesuaikan modul ciri</string>
+    <string name="select_gender">Pilih Jantina</string>
+    <string name="app_lock_health_data_protected">Data kesihatan anda dilindungi</string>
+    <string name="app_lock_set_password_title">Tetapkan Kata Laluan</string>
+    <string name="app_lock_password_label">Kata Laluan</string>
+    <string name="app_lock_confirm_password_label">Sahkan Kata Laluan</string>
+    <string name="app_lock_enter_password_title">Masukkan Kata Laluan</string>
+    <string name="app_lock_use_biometric">Guna Biometrik</string>
+    <string name="terms_privacy_title">Syarat Perkhidmatan &amp; Dasar Privasi</string>
+    <string name="terms_service_title">Syarat Perkhidmatan</string>
+    <string name="privacy_policy_title">Dasar Privasi</string>
+    <string name="terms_service_declaration">1. Pengisytiharan Perkhidmatan\n\nTianshangHealth ialah aplikasi penjejakan kesihatan komprehensif yang mengutamakan privasi pengguna dan keselamatan data. Semua data disimpan secara tempatan pada peranti anda dengan penyulitan kuat.\n\n2. Privasi Data\n\nKami tidak mengumpul, memuat naik, atau berkongsi sebarang data kesihatan peribadi anda. Aplikasi beroperasi sepenuhnya di luar talian dengan kebenaran rangkaian sifar.\n\n3. Tanggungjawab Pengguna\n\nAnda bertanggungjawab untuk ketepatan data kesihatan yang anda masukkan. Ramalan dan analisis yang disediakan adalah untuk rujukan sahaja dan tidak membentuk nasihat perubatan.\n\n4. Keselamatan Data\n\nData anda dilindungi dengan penyulitan SQLCipher AES-256. Kunci penyulitan diuruskan melalui Android Keystore untuk keselamatan peringkat perkakasan.</string>
+    <string name="privacy_policy_body">1. Prinsip Teras: Data Setempat\n\nSemua data kesihatan anda, termasuk kitaran haid, gejala, dan metrik kesihatan lain, disimpan hanya dalam pangkalan data yang disulitkan pada peranti anda.\n\n2. Maklumat Dikumpul\n\nKami hanya memproses maklumat yang anda masukkan secara manual ke dalam aplikasi. Tiada pengumpulan data automatik berlaku.\n\n3. Penyulitan Data\n\nSemua data sensitif disulitkan menggunakan SQLCipher dengan penyulitan AES-256. Kunci penyulitan disimpan dengan selamat dalam Android Keystore.\n\n4. Tiada Akses Pihak Ketiga\n\nKami tidak menggunakan sebarang analitik, pengiklanan, atau perkhidmatan penjejakan pihak ketiga. Data anda tidak pernah meninggalkan peranti anda.\n\n5. Eksport Data\n\nAnda boleh mengeksport data anda pada bila-bila masa dalam format standard (CSV, sandaran disulitkan). Anda mempunyai kawalan penuh ke atas data anda.\n\n6. Pemadaman Data\n\nAnda boleh memadam sebarang atau semua data anda pada bila-bila masa. Data yang dipadam akan dikeluarkan secara kekal dari peranti.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Ralat tidak diketahui</string>
+    <string name="error_failed_add_record">Gagal menambah rekod</string>
+    <string name="error_failed_update_record">Gagal mengemas kini rekod</string>
+    <string name="error_failed_delete_record">Gagal memadam rekod</string>
+    <string name="error_failed_record">Gagal merekod</string>
+    <string name="error_failed_set_password">Gagal menetapkan kata laluan</string>
+    <string name="error_password_not_set">Kata laluan tidak ditetapkan</string>
+    <string name="error_incorrect_password">Kata laluan salah</string>
+    <string name="error_verification_failed">Pengesahan gagal</string>
+    <string name="error_failed_load_settings">Gagal memuat tetapan</string>
+    <string name="error_failed_update_settings">Gagal mengemas kini tetapan</string>
+    <string name="error_failed_save_gender">Gagal menyimpan jantina</string>
+    <string name="error_failed_update_goal">Gagal mengemas kini matlamat</string>
+    <string name="error_failed_restore">Gagal memulihkan rekod</string>
+    <string name="error_failed_to_delete">Gagal memadam rekod</string>
+    <string name="error_failed_empty_bin">Gagal mengosongkan tong kitar semula</string>
+    <string name="loading">Memuatkan...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Peringatan Haid</string>
+    <string name="notification_channel_period_desc">Peringatan untuk penjejakan haid</string>
+    <string name="notification_period_title">Peringatan Penjejakan Haid</string>
+    <string name="notification_period_body">Jangan lupa log data haid anda hari ini!</string>
+    <string name="notification_channel_ovulation">Peringatan Ovulasi</string>
+    <string name="notification_channel_ovulation_desc">Peringatan untuk penjejakan ovulasi</string>
+    <string name="notification_ovulation_title">Tetingkap Ovulasi Semakin Menghampiri</string>
+    <string name="notification_ovulation_body">Tetingkap subur anda akan datang tidak lama lagi!</string>
+    <string name="notification_channel_pms">Peringatan PMS</string>
+    <string name="notification_channel_pms_desc">Peringatan untuk gejala PMS</string>
+    <string name="notification_pms_title">Gejala PMS Dijangka</string>
+    <string name="notification_pms_body">Gejala PMS mungkin bermula dalam beberapa hari. Jaga diri!</string>
+    <string name="notification_channel_steps">Pengira Langkah</string>
+    <string name="notification_channel_steps_desc">Pemberitahuan perkhidmatan pengira langkah</string>
+    <string name="notification_steps_body">Langkah hari ini: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Papan Pemuka</string>
+    <string name="nav_period">Haid</string>
+    <string name="nav_fitness">Kecergasan</string>
+    <string name="nav_analysis">Analisis</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Tarikh Mula,Tarikh Tamat,Tahap Aliran,Tahap Sakit,Nota</string>
+    <string name="backup_exported_success">Sandaran berjaya dieksport</string>
+    <string name="import_success_format">%d rekod berjaya diimport</string>
+    <string name="csv_exported_success">CSV berjaya dieksport</string>
+    <string name="csv_export_failed">Eksport CSV gagal</string>
+    <string name="password_export_title">Sulitkan Sandaran</string>
+    <string name="password_import_title">Nyahsulit Sandaran</string>
+    <string name="password_export_desc">Masukkan kata laluan untuk menyulitkan fail sandaran anda.</string>
+    <string name="password_import_desc">Masukkan kata laluan yang digunakan untuk menyulitkan fail sandaran ini.</string>
+    <string name="password_label">Kata Laluan</string>
+    <string name="proceed">Teruskan</string>
+    <string name="password_short_error">Kata laluan terlalu pendek</string>
+    <string name="password_mismatch_error">Kata laluan tidak sepadan</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Haid Aktif</string>
+    <string name="insight_follicular_phase">Fasa Folikel</string>
+    <string name="insight_luteal_phase">Fasa Luteal</string>
+    <string name="insight_cycle_day">Hari Kitaran %d</string>
+    <string name="insight_steps_stable_title">Aktiviti Stabil Sepanjang Kitaran</string>
+    <string name="insight_steps_stable_desc">Kiraan langkah anda kekal konsisten merentas fasa kitaran, tabiat senaman yang baik dikekalkan.</string>
+    <string name="insight_mood_drop_title">Mood Menurun dalam Fasa Luteal</string>
+    <string name="insight_mood_drop_desc">Skor mood purata lebih rendah dalam fasa luteal, pertimbangkan pengurusan mood</string>
+    <string name="insight_mood_rise_title">Mood Lebih Baik dalam Fasa Luteal</string>
+    <string name="insight_mood_rise_desc">Skor mood purata lebih tinggi dalam fasa luteal, anda melakukan dengan baik</string>
+    <string name="insight_sleep_drop_title">Kualiti Tidur Menurun dalam Fasa Luteal</string>
+    <string name="insight_sleep_drop_desc">Kualiti tidur menurun semasa fasa luteal, cuba senaman relaksasi</string>
+    <string name="insight_sleep_rise_title">Tidur Lebih Baik dalam Fasa Luteal</string>
+    <string name="insight_sleep_rise_desc">Kualiti tidur lebih tinggi dalam fasa luteal, teruskan rutin yang baik</string>
+    <string name="insight_stress_period_title">Tekanan Lebih Tinggi Semasa Haid</string>
+    <string name="insight_stress_period_desc">Tahap tekanan %s mata lebih tinggi semasa haid, pertimbangkan mengurangkan aktiviti berat</string>
+    <string name="insight_mood_today_low_title">Mood Rendah Hari Ini</string>
+    <string name="insight_mood_today_low_desc">Skor mood anda rendah hari ini, cuba lakukan sesuatu yang anda nikmati</string>
+    <string name="insight_stress_today_high_title">Tekanan Tinggi Hari Ini</string>
+    <string name="insight_stress_today_high_desc">Tahap tekanan tinggi hari ini, cuba pernafasan dalam atau meditasi</string>
+    <string name="insight_sleep_last_night_low_title">Tidur Kurang Baik Malam Tadi</string>
+    <string name="insight_sleep_last_night_low_desc">Kualiti tidur rendah malam tadi, cuba tidur awal malam ini</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Aktiviti menurun dengan ketara dalam fasa luteal</string>
+    <string name="insight_luteal_increase">Aktiviti meningkat dalam fasa luteal</string>
+    <string name="insight_luteal_rest">Rehat dengan sesuai semasa fasa luteal, senaman ringan seperti yoga disyorkan</string>
+    <string name="insight_luteal_nutrition">Peningkatan aktiviti yang hebat, ingat untuk mengekalkan nutrisi</string>
+    <string name="insight_luteal_activity_low_title">Aktiviti Lebih Rendah dalam Fasa Luteal</string>
+    <string name="insight_luteal_activity_low_desc">Langkah fasa luteal menurun sebanyak %d%% berbanding fasa folikel. Aktiviti ringan seperti berjalan adalah disyorkan.</string>
+    <string name="insight_luteal_activity_high_title">Aktiviti Lebih Tinggi dalam Fasa Luteal</string>
+    <string name="insight_luteal_activity_high_desc">Langkah fasa luteal meningkat sebanyak %d%% berbanding fasa folikel. Ingat untuk berehat dan mengekalkan nutrisi.</string>
+    <string name="insight_activity_stable_title">Aktiviti Konsisten Sepanjang Kitaran</string>
+    <string name="insight_activity_stable_desc">Kiraan langkah kekal stabil merentas fasa kitaran. Tabiat senaman yang baik dikekalkan.</string>
+    <string name="insight_mood_luteal_drop_title">Mood Menurun dalam Fasa Luteal</string>
+    <string name="insight_mood_luteal_drop_desc">Skor mood purata %s mata lebih rendah dalam fasa luteal. Pertimbangkan pengurusan mood.</string>
+    <string name="insight_mood_luteal_rise_title">Mood Lebih Baik dalam Fasa Luteal</string>
+    <string name="insight_mood_luteal_rise_desc">Skor mood purata %s mata lebih tinggi dalam fasa luteal. Anda melakukan dengan baik!</string>
+    <string name="insight_sleep_luteal_drop_title">Kualiti Tidur Menurun dalam Fasa Luteal</string>
+    <string name="insight_sleep_luteal_drop_desc">Kualiti tidur menurun sebanyak %s mata dalam fasa luteal. Cuba senaman relaksasi sebelum tidur.</string>
+    <string name="insight_sleep_luteal_rise_title">Tidur Lebih Baik dalam Fasa Luteal</string>
+    <string name="insight_sleep_luteal_rise_desc">Kualiti tidur %s mata lebih tinggi dalam fasa luteal. Teruskan rutin yang baik.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Data tidak mencukupi untuk ramalan</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Muat Semula</string>
+    <string name="recycle_bin_empty_title_short">Kosongkan Tong</string>
+    <string name="recycle_bin_period_format">Haid: %1$s</string>
+    <string name="recycle_bin_to_format">ke %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Tetapkan Kata Laluan</string>
+    <string name="app_lock_confirm_password">Sahkan Kata Laluan</string>
+    <string name="app_lock_set_password_btn">Tetapkan Kata Laluan</string>
+    <string name="app_lock_unlock_btn">Buka Kunci</string>
+    <string name="app_lock_enter_password">Masukkan Kata Laluan</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Jumlah Rekod</string>
+    <string name="stats_total_cycles">Jumlah Kitaran</string>
+    <string name="stats_avg_cycle">Purata Kitaran</string>
+    <string name="stats_avg_period">Purata Haid</string>
+    <string name="stats_regularity_text">Keteraturan</string>
+    <string name="stats_cycle_num">Kitaran %d</string>
+    <string name="stats_days_suffix">%d hari</string>
+    <string name="stats_avg_format">Purata: %d hari</string>
+    <string name="stats_no_data">Tiada data</string>
+    <string name="weight_format">Berat: %.1f kg</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f cm</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Sandaran disulitkan dengan AES-256-GCM menggunakan kata laluan anda.</string>
+    <string name="steps_of_goal">daripada matlamat %d</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d\u00B0 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Biru</string>
+    <string name="color_green">Hijau</string>
+    <string name="color_purple">Ungu</string>
+    <string name="color_orange">Oren</string>
+    <string name="color_teal">Teal</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Ketik untuk butiran</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Berlari</string>
+    <string name="exercise_walking">Berjalan</string>
+    <string name="exercise_cycling">Berbasikal</string>
+    <string name="exercise_swimming">Berenang</string>
+    <string name="exercise_yoga">Yoga</string>
+    <string name="exercise_strength">Latihan Kekuatan</string>
+    <string name="exercise_dance">Tarian</string>
+    <string name="exercise_pilates">Pilates</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Bola Keranjang</string>
+    <string name="exercise_football">Bola Sepak</string>
+    <string name="exercise_tennis">Tenis</string>
+    <string name="exercise_badminton">Badminton</string>
+    <string name="exercise_table_tennis">Ping Pong</string>
+    <string name="exercise_skipping">Lompat Tali</string>
+    <string name="exercise_hiking">Mendaki</string>
+    <string name="exercise_other">Lain-lain</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">Minggu Ini</string>
+    <string name="fitness_add_workout">Tambah Senaman</string>
+    <string name="fitness_select_type">Pilih Jenis Senaman</string>
+    <string name="fitness_duration_minutes">Tempoh (minit)</string>
+    <string name="fitness_calories_label">Kalori</string>
+    <string name="fitness_distance_km">Jarak (km)</string>
+    <string name="fitness_today_workouts">Senaman Hari Ini</string>
+    <string name="fitness_recent_workouts">Senaman Terkini</string>
+    <string name="fitness_empty">Tiada senaman direkodkan lagi.\nKetik + untuk tambah senaman pertama anda.</string>
+    <string name="fitness_minutes_format">%d min</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">Tempoh</string>
+    <string name="fitness_calories">Kalori</string>
+    <string name="fitness_workouts">Senaman</string>
+    <string name="fitness_km_unit">km</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Lumpuhkan Pengoptimuman Bateri</string>
+    <string name="steps_battery_desc">Pengoptimuman bateri mungkin menghentikan perkhidmatan pengira langkah dan menjejaskan penjejakan langkah.</string>
+    <string name="steps_battery_action">Pergi ke Tetapan</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">Tetapan %s</string>
+    <string name="steps_auto_start_settings">Tetapan Auto Mula</string>
+    <string name="steps_battery_settings">Tetapan Bateri</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Ringkasan Tenaga</string>
+    <string name="energy_today">Hari Ini</string>
+    <string name="energy_this_week">Minggu Ini</string>
+    <string name="energy_steps">Langkah</string>
+    <string name="energy_workouts">Senaman</string>
+    <string name="energy_total">Jumlah</string>
+    <string name="energy_workouts_summary">%1$d senaman \u00B7 %2$d min</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Metrik Badan</string>
+    <string name="body_metrics_height">Tinggi (cm)</string>
+    <string name="body_metrics_weight">Berat (kg)</string>
+    <string name="body_metrics_saved">Metrik badan disimpan</string>
+    <string name="body_metrics_height_error">Sila masukkan tinggi yang sah (80-250cm)</string>
+    <string name="body_metrics_weight_error">Sila masukkan berat yang sah (15-350kg)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Pemakanan</string>
+    <string name="nav_nutrition">Pemakanan</string>
+    <string name="nutrition_add_meal">Tambah Makanan</string>
+    <string name="nutrition_meal_type">Jenis Makanan</string>
+    <string name="nutrition_food_name">Nama Makanan</string>
+    <string name="nutrition_calories">Kalori</string>
+    <string name="nutrition_protein">Protein (g)</string>
+    <string name="nutrition_carbs">Karbohidrat (g)</string>
+    <string name="nutrition_fat">Lemak (g)</string>
+    <string name="nutrition_serving_size">Saiz Hidangan</string>
+    <string name="nutrition_macros">Makronutrien</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Pemakanan Harian</string>
+    <string name="nutrition_today_meals">Makanan Hari Ini</string>
+    <string name="nutrition_meals">makanan</string>
+    <string name="nutrition_weekly_trend">Trend Mingguan</string>
+    <string name="nutrition_empty">Tiada makanan direkodkan lagi.\nKetik + untuk tambah makanan pertama anda.</string>
+    <string name="nutrition_error_food_name">Sila masukkan nama makanan</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Sarapan</string>
+    <string name="meal_lunch">Makan Tengah Hari</string>
+    <string name="meal_dinner">Makan Malam</string>
+    <string name="meal_snack">Snek</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Air</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Pengambilan Kalori Lebih Rendah dalam Fasa Luteal</string>
+    <string name="insight_nutrition_luteal_low_desc">Kalori menurun sebanyak %.0f kcal dalam fasa luteal. Cuba kekalkan diet seimbang.</string>
+    <string name="insight_nutrition_luteal_high_title">Pengambilan Kalori Lebih Tinggi dalam Fasa Luteal</string>
+    <string name="insight_nutrition_luteal_high_desc">Kalori meningkat sebanyak %.0f kcal dalam fasa luteal. Ini adalah normal, dengar badan anda.</string>
+    <string name="insight_nutrition_stable_title">Pengambilan Kalori Stabil</string>
+    <string name="insight_nutrition_stable_desc">Pengambilan kalori anda kekal stabil merentas fasa kitaran. Kerja bagus!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">Lupa PIN?</string>
+    <string name="app_lock_change_pin">Tukar PIN</string>
+    <string name="app_lock_current_pin">PIN Semasa</string>
+    <string name="app_lock_new_pin_label">PIN Baru</string>
+    <string name="app_lock_recovery_title">Set Semula Kunci Aplikasi</string>
+    <string name="app_lock_recovery_desc">Sahkan identiti anda untuk menetap semula kunci aplikasi</string>
+    <string name="lock_30s">30 saat</string>
+    <string name="lock_1min">1 minit</string>
+    <string name="lock_5min">5 minit</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Tidur</string>
+    <string name="sleep_title">Penjejakan Tidur</string>
+    <string name="sleep_record_title">Rekod Tidur</string>
+    <string name="sleep_hours">Jam Tidur</string>
+    <string name="sleep_deep_hours">Tidur Nyenyak</string>
+    <string name="sleep_quality">Kualiti Tidur</string>
+    <string name="sleep_quality_format">%d bintang</string>
+    <string name="sleep_history">Sejarah Tidur</string>
+    <string name="sleep_no_data">Tiada data tidur direkodkan lagi</string>
+    <string name="sleep_today_status">Tidur Hari Ini</string>
+    <string name="sleep_hours_format">%s jam</string>
+    <string name="sleep_deep_hours_format">Nyenyak: %s jam</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Menstruasi</string>
+    <string name="phase_follicular">Folikel</string>
+    <string name="phase_ovulatory">Ovulasi</string>
+    <string name="phase_luteal">Luteal</string>
+    <string name="nutrition_cycle_guidance">Panduan Pemakanan Kitaran</string>
+    <string name="nutrition_focus_nutrients">Nutrien Fokus</string>
+    <string name="nutrition_recommended_foods">Makanan Disyorkan</string>
+    <string name="nutrition_limit_foods">Hadkan</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d hari</item>
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Sila masukkan tempoh yang sah</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Padam</string>
+    <string name="edit">Sunting</string>
+    <string name="exact_date_mode">Tarikh tepat</string>
+    <string name="profile_dob_not_set">Belum ditetapkan</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Hanya tahun</string>
+    <string name="year_picker_title">Pilih tahun lahir</string>
+
+    <!-- Analysis section strings -->
+    <string name="analysis_no_data">Data tidak mencukupi. Rekod data kesihatan terlebih dahulu.</string>
+    <string name="insufficient_data">Data tidak mencukupi</string>
+    <string name="analysis_section_suggestions">Cadangan Pintar</string>
+    <string name="analysis_section_nutrition">Analisis Pemakanan</string>
+    <string name="analysis_section_calorie_balance">Keseimbangan Kalori</string>
+    <string name="analysis_section_exercise">Analisis Senaman</string>
+    <string name="analysis_section_sleep">Analisis Tidur</string>
+    <string name="analysis_section_phase">Korelasi Kitaran</string>
+    <string name="analysis_avg_daily_calories">Purata Harian</string>
+    <string name="analysis_protein">Protein</string>
+    <string name="analysis_carbs">Karbohidrat</string>
+    <string name="analysis_fat">Lemak</string>
+    <string name="analysis_nutrient_ratio">Nisbah Nutrien</string>
+    <string name="analysis_avg_water_format">Purata Air: %.0f ml</string>
+    <string name="analysis_avg_intake">Purata Pengambilan</string>
+    <string name="analysis_exercise_burned">Bakar Senaman</string>
+    <string name="analysis_weekly_total_minutes">Jumlah Mingguan</string>
+    <string name="analysis_daily_avg_minutes">Purata Harian</string>
+    <string name="analysis_calories_burned">Kalori Terbakar</string>
+    <string name="analysis_exercise_type_distribution">Taburan Jenis Senaman</string>
+    <string name="analysis_avg_sleep_hours">Purata Tempoh</string>
+    <string name="analysis_quality_score">Skor Kualiti</string>
+    <string name="analysis_daily_sleep_hours">Jam Tidur Harian</string>
+    <string name="analysis_mood">Mood</string>
+    <string name="analysis_stress">Tekanan</string>
+    <string name="analysis_daily_net_calories">Kalori Bersih Harian (dengan tenaga rehat)</string>
+
+    <!-- Pattern insight strings -->
+    <string name="pattern_exhaustion_title">Keletihan Fizikal Dikesan</string>
+    <string name="pattern_exhaustion_desc">Tidur rendah, tekanan tinggi, dan mood rendah menunjukkan risiko keletihan. Pertimbangkan hari rehat.</string>
+    <string name="pattern_overtraining_title">Risiko Latihan Berlebihan</string>
+    <string name="pattern_overtraining_desc">Isipadu senaman tinggi dengan defisit kalori dan tidur rendah. Berhati-hati dengan kecederaan.</string>
+    <string name="pattern_sedentary_mood_title">Kurang Gerak + Mood Rendah</string>
+    <string name="pattern_sedentary_mood_desc">Kiraan langkah sangat rendah disertai mood rendah. Jalan kaki pendek mungkin membantu.</string>
+    <string name="pattern_dehydration_stress_title">Dehidrasi + Tekanan</string>
+    <string name="pattern_dehydration_stress_desc">Pengambilan air rendah dan tahap tekanan tinggi. Penghidratan menyokong daya tahan.</string>
+    <string name="pattern_positive_loop_title">Gelung Kesihatan Positif</string>
+    <string name="pattern_positive_loop_desc">Tidur baik, aktiviti tinggi, dan mood positif saling mengukuhkan. Teruskan!</string>
+
+    <!-- Smart suggestion strings -->
+    <string name="suggestion_low_calorie_title">Pengambilan Kalori Rendah</string>
+    <string name="suggestion_low_calorie_desc">Pengambilan harian %.0f kcal di bawah saranan 1800 kcal. Pertimbangkan menambah karbohidrat kompleks dan lemak sihat.</string>
+    <string name="suggestion_high_calorie_title">Pengambilan Kalori Tinggi</string>
+    <string name="suggestion_high_calorie_desc">Pengambilan harian %.0f kcal melebihi 2500 kcal. Pertimbangkan mengurangkan snek dan menambah sayur-sayuran.</string>
+    <string name="suggestion_low_protein_title">Pengambilan Protein Rendah</string>
+    <string name="suggestion_low_protein_desc">Protein harian %.0f g di bawah saranan 50 g. Pertimbangkan telur, ikan, dan tauhu.</string>
+    <string name="suggestion_low_water_title">Pengambilan Air Rendah</string>
+    <string name="suggestion_low_water_desc">Air harian %.0f ml di bawah saranan. Sasarkan 1500-2000 ml setiap hari.</string>
+    <string name="suggestion_high_surplus_title">Lebihan Kalori Tinggi</string>
+    <string name="suggestion_high_surplus_desc">Lebihan harian %.0f kcal. Jika sasaran anda penurunan berat badan, pertimbangkan meningkatkan senaman.</string>
+    <string name="suggestion_high_deficit_title">Defisit Kalori Besar</string>
+    <string name="suggestion_high_deficit_desc">Defisit harian %.0f kcal. Pastikan anda memenuhi keperluan metabolisme basal.</string>
+    <string name="suggestion_balanced_title">Kalori Seimbang</string>
+    <string name="suggestion_balanced_desc">Pengambilan dan perbelanjaan seimbang. Teruskan!</string>
+    <string name="suggestion_low_exercise_title">Senaman Rendah</string>
+    <string name="suggestion_low_exercise_desc">Senaman mingguan %d minit di bawah saranan WHO 150 minit.</string>
+    <string name="suggestion_exercise_met_title">Sasaran Senaman Tercapai</string>
+    <string name="suggestion_exercise_met_desc">Senaman mingguan %d minit memenuhi saranan WHO!</string>
+    <string name="suggestion_exercise_variety_title">Variasi Senaman Diperlukan</string>
+    <string name="suggestion_exercise_variety_desc">Cuba jenis senaman berbeza (kardio + kekuatan + fleksibiliti) untuk kecergasan menyeluruh.</string>
+    <string name="suggestion_low_sleep_title">Tidur Rendah</string>
+    <string name="suggestion_low_sleep_desc">Tidur harian %.1f jam di bawah saranan 7-9 jam. Cuba jadual tetap.</string>
+    <string name="suggestion_high_sleep_title">Tidur Berlebihan</string>
+    <string name="suggestion_high_sleep_desc">Tidur harian %.1f jam melebihi 9 jam. Tidur panjang mungkin menandakan keletihan.</string>
+    <string name="suggestion_low_deep_sleep_title">Tidur Nyenyak Rendah</string>
+    <string name="suggestion_low_deep_sleep_desc">Nisbah tidur nyenyak hanya %.0f%%. Elakkan kafein sebelum tidur dan jaga bilik gelap.</string>
+    <string name="suggestion_low_sleep_quality_title">Kualiti Tidur Rendah</string>
+    <string name="suggestion_low_sleep_quality_desc">Skor kualiti tidur %.1f/5. Cuba meditasi atau mandi air suam sebelum tidur.</string>
+    <string name="suggestion_luteal_sleep_title">Perubahan Tidur Fasa Luteal</string>
+    <string name="suggestion_luteal_sleep_desc">Tidur fasa luteal menurun %.1f jam berbanding fasa folikel. Perubahan hormon normal.</string>
+
+    <!-- Nutrition cycle guidance strings -->
+    <string name="nutrition_menstrual_advice">Fokus pada makanan kaya zat besi untuk menggantikan kehilangan darah. Magnesium membantu mengurangkan kekejangan. Kekal terhidrasi dengan baik.</string>
+    <string name="nutrition_menstrual_nutrients">Zat Besi · Magnesium · Omega-3 · Vitamin B12</string>
+    <string name="nutrition_menstrual_foods">Sayuran Hijau · Daging Merah · Ikan Berlemak · Coklat Gelap · Kacang</string>
+    <string name="nutrition_menstrual_limit">Snek Masin · Kafein · Tenusu</string>
+    <string name="nutrition_follicular_advice">Metabolisme tenaga anda meningkat. Masa yang sesuai untuk makanan ringan padat nutrien. Sokong kesihatan usus dengan probiotik.</string>
+    <string name="nutrition_follicular_nutrients">Serat · Vitamin C · Probiotik · Folat</string>
+    <string name="nutrition_follicular_foods">Beri · Buah Sitrus · Yogurt · Oat · Brokoli</string>
+    <string name="nutrition_follicular_limit">Makanan Diproses · Gula Berlebihan</string>
+    <string name="nutrition_ovulatory_advice">Estrogen memuncak semasa fasa ini. Sokong detoksifikasi hati dengan makanan kaya antioksidan. Diet anti-radang disyorkan.</string>
+    <string name="nutrition_ovulatory_nutrients">Antioksidan · Vitamin C · Zink · Vitamin E</string>
+    <string name="nutrition_ovulatory_foods">Lada Benggala · Biji Bunga Matahari · Ayam Tanpa Lemak · Alpukat · Teh Hijau</string>
+    <string name="nutrition_ovulatory_limit">Alkohol · Makanan Bergoreng</string>
+    <string name="nutrition_luteal_advice">Progesteron meningkat, yang boleh meningkatkan selera makan. Karbohidrat kompleks membantu meningkatkan serotonin. Hadkan kafein dan garam untuk meredakan gejala PMS.</string>
+    <string name="nutrition_luteal_nutrients">Vitamin B · Karbohidrat Kompleks · Magnesium · Kalsium · Vitamin B6</string>
+    <string name="nutrition_luteal_foods">Bijirin Penuh · Pisang · Sayuran Hijau · Kekacang · Coklat Gelap</string>
+    <string name="nutrition_luteal_limit">Gula · Kafein · Makanan Masin</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="sleep_auto_calculated">Auto: %d jam</string>
+    <string name="sleep_bedtime_btn">Waktu Tidur</string>
+    <string name="sleep_elapsed">%dj %m telah berlalu</string>
+    <string name="sleep_sleeping">Sedang tidur...</string>
+    <string name="sleep_waketime_btn">Bangun</string>
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Jam Tidur   ▐ Skor Kualiti</string>
+    <string name="sleep_luteal_worse">Kualiti Tidur Fasa Luteal Menurun</string>
+    <string name="sleep_luteal_better">Kualiti Tidur Fasa Luteal Meningkat</string>
+    <string name="sleep_luteal_comparison_worse">Purata tidur luteal %.1fj, folikel %.1fj, menurun %.1fj</string>
+    <string name="sleep_luteal_comparison_better">Purata tidur luteal %.1fj, folikel %.1fj, meningkat %.1fj</string>
+
+    <!-- PDF report strings -->
+    <string name="export_report">Eksport Laporan PDF</string>
+    <string name="report_title">Laporan Kesihatan</string>
+    <string name="report_description">Hasilkan laporan kesihatan komprehensif berdasarkan data yang direkodkan. Laporan dicipta secara setempat pada peranti anda dan boleh dikongsi sebagai PDF.</string>
+    <string name="report_period">Tempoh Laporan: 30 Hari Lepas</string>
+    <string name="report_includes">Termasuk: Rekod haid, langkah, tidur, pemakanan, dan wawasan kesihatan</string>
+    <string name="report_generate">Hasilkan Laporan</string>
+    <string name="report_generating">Menghasilkan laporan PDF...</string>
+    <string name="report_success">Laporan berjaya dihasilkan!</string>
+    <string name="report_share">Kongsi Laporan Kesihatan</string>
+    <string name="report_share_button">Kongsi</string>
+    <string name="report_generate_new">Hasilkan Baru</string>
+    <string name="report_error">Ralat: %s</string>
+    <string name="report_privacy_title">Notis Privasi</string>
+    <string name="report_privacy_body">Semua laporan dihasilkan secara setempat pada peranti anda. Tiada data kesihatan dimuat naik ke mana-mana pelayan atau perkhidmatan awan. Data anda kekal di bawah kawalan penuh anda.</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="pdf_health_report">Laporan Kesihatan</string>
+    <string name="pdf_generated">Dihasilkan: %s</string>
+    <string name="pdf_user_info">Pengguna: %1$s | Jantina: %2$s</string>
+    <string name="pdf_report_period">Tempoh Laporan: %s</string>
+    <string name="pdf_period_summary">Ringkasan Haid</string>
+    <string name="pdf_no_period_records">Tiada rekod haid dalam tempoh yang dipilih.</string>
+    <string name="pdf_total_cycles">Jumlah Kitaran: %d</string>
+    <string name="pdf_avg_cycle_length">Purata Panjang Kitaran: %d hari</string>
+    <string name="pdf_avg_pain">Purata Tahap Sakit: %.1f / 3</string>
+    <string name="pdf_recent_records">Rekod Terkini</string>
+    <string name="pdf_start_date">Tarikh Mula</string>
+    <string name="pdf_end_date">Tarikh Tamat</string>
+    <string name="pdf_flow">Aliran</string>
+    <string name="pdf_pain">Sakit</string>
+    <string name="pdf_ongoing">Sedang Berjalan</string>
+    <string name="pdf_flow_light">Ringan</string>
+    <string name="pdf_flow_medium">Sederhana</string>
+    <string name="pdf_flow_heavy">Berat</string>
+    <string name="pdf_pain_none">Tiada</string>
+    <string name="pdf_pain_mild">Ringan</string>
+    <string name="pdf_pain_moderate">Sederhana</string>
+    <string name="pdf_pain_severe">Teruk</string>
+    <string name="pdf_activity_summary">Ringkasan Aktiviti</string>
+    <string name="pdf_no_step_data">Tiada data langkah.</string>
+    <string name="pdf_avg_daily_steps">Purata Langkah Harian: %,d</string>
+    <string name="pdf_total_steps">Jumlah Langkah: %,d</string>
+    <string name="pdf_max_steps">Maks Langkah Harian: %,d</string>
+    <string name="pdf_total_exercise">Jumlah Senaman: %d minit</string>
+    <string name="pdf_sleep_summary">Ringkasan Tidur</string>
+    <string name="pdf_no_sleep_data">Tiada data tidur.</string>
+    <string name="pdf_avg_sleep">Purata Tidur: %.1f jam</string>
+    <string name="pdf_avg_sleep_quality">Purata Kualiti Tidur: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Purata Tidur Nyenyak: %.1f jam</string>
+    <string name="pdf_nutrition_summary">Ringkasan Pemakanan</string>
+    <string name="pdf_no_nutrition_data">Tiada data pemakanan.</string>
+    <string name="pdf_avg_calories">Purata Kalori Harian: %.0f kcal</string>
+    <string name="pdf_avg_water">Purata Pengambilan Air: %.0f ml</string>
+    <string name="pdf_avg_protein">Purata Protein: %.0f g</string>
+    <string name="pdf_footer">Laporan ini dihasilkan secara setempat pada peranti anda. Tiada data meninggalkan telefon anda.</string>
+    <string name="pdf_page">Halaman %d</string>
+    <string name="pdf_app_name">TianshangHealth - Privasi Dahulu</string>
+
+    <!-- Navigation strings -->
+    <string name="previous">Sebelum</string>
+    <string name="next">Seterusnya</string>
+
+    <!-- Chart strings -->
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+
+    <!-- Error strings -->
+    <string name="error_onboarding_required">Sila selesaikan persediaan pengguna terlebih dahulu</string>
+    <string name="error_load_failed">Gagal memuat</string>
+    <string name="error_failed_generate_report">Gagal menghasilkan laporan</string>
+
+    <!-- Energy balance strings -->
+    <string name="nutrition_energy_balance">Keseimbangan Tenaga</string>
+    <string name="nutrition_resting_energy">Rehat</string>
+    <string name="nutrition_exercise_energy">Senaman</string>
+    <string name="nutrition_total_expenditure">Jumlah Bakar</string>
+    <string name="nutrition_calorie_balance">Keseimbangan</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

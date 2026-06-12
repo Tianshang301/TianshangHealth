@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:InsightUiMapper.kt$@Composable private fun InsightData.toInsightItem(): InsightItem?</ID>
+    <ID>FunctionNaming:DashboardScreen.kt$@Composable fun DashboardScreen( onNavigateToPeriod: () -&gt; Unit = {}, onNavigateToSteps: () -&gt; Unit = {}, onNavigateToHealthData: () -&gt; Unit = {}, onNavigateToNutrition: () -&gt; Unit = {}, onNavigateToSleep: () -&gt; Unit = {}, viewModel: DashboardViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:DashboardScreen.kt$@Composable private fun DashboardContent( state: com.tianshang.health.feature.dashboard.viewmodel.DashboardState, onNavigateToPeriod: () -&gt; Unit, onNavigateToSteps: () -&gt; Unit, onNavigateToHealthData: () -&gt; Unit, onNavigateToNutrition: () -&gt; Unit, onNavigateToSleep: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:DashboardScreen.kt$@Composable private fun ErrorContent( message: String, onRetry: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:DashboardScreen.kt$@Composable private fun LoadingContent()</ID>
+    <ID>FunctionNaming:HealthInsightsCard.kt$@Composable fun HealthInsightsCard( insights: InsightResult, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:HealthInsightsCard.kt$@Composable private fun InsightRow(item: InsightItem)</ID>
+    <ID>FunctionNaming:PeriodStatusCard.kt$@Composable fun PeriodStatusCard( currentCycleDay: Int?, isPeriodActive: Boolean, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:QuickActionsCard.kt$@Composable fun QuickActionsCard( showPeriodAction: Boolean, onRecordPeriod: () -&gt; Unit, onRecordSteps: () -&gt; Unit, onRecordHealth: () -&gt; Unit, onRecordNutrition: () -&gt; Unit, onRecordSleep: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:QuickActionsCard.kt$@Composable private fun ActionButton( label: String, icon: @Composable () -&gt; Unit, onClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StepsOverviewCard.kt$@Composable fun StepsOverviewCard( todaySteps: Int, goal: Int, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:InsightUiMapper.kt$@Composable private fun InsightData.toInsightItem(): InsightItem?</ID>
+    <ID>MagicNumber:DashboardViewModel.kt$DashboardViewModel$5</ID>
+    <ID>MagicNumber:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$4</ID>
+    <ID>MagicNumber:HealthInsightsCard.kt$0xFFE65100</ID>
+    <ID>MagicNumber:HealthInsightsCard.kt$0xFFFFF3E0</ID>
+    <ID>MagicNumber:InsightUiMapper.kt$0.5f</ID>
+    <ID>MagicNumber:InsightUiMapper.kt$0.85f</ID>
+    <ID>MagicNumber:InsightUiMapper.kt$1.15f</ID>
+    <ID>MagicNumber:InsightUiMapper.kt$1.3f</ID>
+    <ID>MagicNumber:InsightUiMapper.kt$100</ID>
+    <ID>MagicNumber:InsightUiMapper.kt$100f</ID>
+    <ID>MaxLineLength:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private suspend</ID>
+    <ID>MaximumLineLength:DashboardViewModelTest.kt$DashboardViewModelTest$ </ID>
+    <ID>MaximumLineLength:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$ </ID>
+    <ID>ReturnCount:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private fun addMoodInsight(dataList: MutableList&lt;InsightData&gt;, stats: PhaseStats): Boolean</ID>
+    <ID>ReturnCount:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private fun addNutritionInsight(dataList: MutableList&lt;InsightData&gt;, stats: PhaseStats): Boolean</ID>
+    <ID>ReturnCount:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private fun addSleepInsight(dataList: MutableList&lt;InsightData&gt;, stats: PhaseStats): Boolean</ID>
+    <ID>ReturnCount:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private fun addStepsInsight(dataList: MutableList&lt;InsightData&gt;, stats: PhaseStats): Boolean</ID>
+    <ID>ReturnCount:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private fun addStressInsight(dataList: MutableList&lt;InsightData&gt;, stats: PhaseStats): Boolean</ID>
+    <ID>ReturnCount:InsightUiMapper.kt$@Composable private fun InsightData.toInsightItem(): InsightItem?</ID>
+    <ID>UnusedPrivateProperty:DashboardViewModelTest.kt$DashboardViewModelTest$private val weekStart = today.minusDays(today.dayOfWeek.value.toLong() - 1)</ID>
+    <ID>UnusedPrivateProperty:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private val dailySymptomDao: DailySymptomDao</ID>
+    <ID>UseIfInsteadOfWhen:HealthInsightsCard.kt$when (item.category) { InsightCategory.WARNING -&gt; Color(0xFFE65100) else -&gt; MaterialTheme.colorScheme.onSurface }</ID>
+  </CurrentIssues>
+</SmellBaseline>

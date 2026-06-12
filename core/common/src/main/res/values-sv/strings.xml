@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Anvandarvillkor</string>
+    <string name="privacy_title">Integritetspolicy</string>
+    <string name="accept_terms">Jag har last och godkanner</string>
+    <string name="app_lock_title">Applas</string>
+    <string name="enter_pin">Losenord</string>
+    <string name="unlock">Las upp</string>
+    <string name="invalid_pin">Ogiltigt losenord</string>
+    <string name="app_lock_setup_title">Stall in applasslosenord</string>
+    <string name="set_pin">Stall in losenord</string>
+    <string name="confirm_pin">Bekrafta losenord</string>
+    <string name="set_password">Stall in losenord</string>
+    <string name="pin_empty_error">Losenordet far inte vara tomt</string>
+    <string name="pin_mismatch_error">Losenorden matchar inte</string>
+    <string name="pin_length_error">Losenordet maste vara minst %d tecken</string>
+    <string name="calendar_title">Kalender</string>
+    <string name="current_cycle_day">Dag %d av cykel</string>
+    <string name="days_until_next_period">Nasta menstruation om %d dagar</string>
+    <string name="no_period_data">Ingen menstruationsdata</string>
+    <string name="tap_date_to_record">Tryck for att registrera</string>
+    <string name="period">Menstruation</string>
+    <string name="predicted_period">Forvantad Menstruation</string>
+    <string name="ovulation">Agglossning</string>
+    <string name="fertile_window">Fertil period</string>
+    <string name="record_title">Registrera</string>
+    <string name="start_period">Starta mens</string>
+    <string name="end_period">Avsluta mens</string>
+    <string name="flow_level">Flode</string>
+    <string name="pain_level">Smart</string>
+    <string name="symptoms">Symtom</string>
+    <string name="sexual_activity">Sexuell Aktivitet</string>
+    <string name="ovulation_test">Agglossningstest</string>
+    <string name="cervical_mucus">Livmoderhalssekret</string>
+    <string name="body_temperature">Kroppstemperatur</string>
+    <string name="notes">Anteckningar</string>
+    <string name="save">Spara</string>
+    <string name="analysis_title">Analys</string>
+    <string name="cycle_statistics">Statistik</string>
+    <string name="avg_cycle_length">Genomsnittlig Cykel</string>
+    <string name="avg_period_length">Genomsnittlig Menstruation</string>
+    <string name="cycle_regularity">Regelbundenhet</string>
+    <string name="total_cycles">Totalt Antal Cykler</string>
+    <string name="pain_trend">Smarttrend</string>
+    <string name="symptom_frequency">Symtomfrekvens</string>
+    <string name="predictions">Prognoser</string>
+    <string name="reminder_title">Paminnelser</string>
+    <string name="period_reminder">Menstruationspaminnelse</string>
+    <string name="ovulation_reminder">Agglossningspaminnelse</string>
+    <string name="pms_reminder">PMS-paminnelse</string>
+    <string name="profile_title">Profil</string>
+    <string name="theme_customization">Tema</string>
+    <string name="theme_color">Temafarg</string>
+    <string name="app_lock">Applas</string>
+    <string name="language">Sprak</string>
+    <string name="recycle_bin">Papperskorg</string>
+    <string name="recycle_bin_title">Papperskorg</string>
+    <string name="backup_restore">Sakerhetskopiering</string>
+    <string name="backup_restore_title">Sakerhetskopiering &amp; Aterstallning</string>
+    <string name="export_backup">Exportera Sakerhetskopia</string>
+    <string name="import_backup">Importera Sakerhetskopia</string>
+    <string name="export_csv">Exportera CSV</string>
+    <string name="about">Om</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">Lagg till</string>
+    <string name="height_cm">Langd (cm)</string>
+    <string name="weight_kg">Vikt (kg)</string>
+    <string name="latest_bmi">Aktuellt BMI</string>
+    <string name="bmi_history">Historik</string>
+    <string name="dark_mode">Morkt Lage</string>
+    <string name="dark_mode_description">Andra tema</string>
+    <string name="no_deleted_records">Inga borttagna poster</string>
+    <string name="security_settings">Sakerhet</string>
+    <string name="data_security">Datasakerhet</string>
+    <string name="database_encryption">Databaskryptering</string>
+    <string name="encrypted">Krypterad (AES-256)</string>
+    <string name="unencrypted">Okrypterad</string>
+    <string name="migrate_to_encrypted">Migrera till Krypterad Databas</string>
+    <string name="migration_success">Migrering lyckades! Databasen ar nu krypterad.</string>
+    <string name="migration_failed">Migrering misslyckades: %s. Din data har aterstallts till ursprungligt tillstand.</string>
+    <string name="background_lock_delay">Las efter bakgrund</string>
+    <string name="lock_immediately">Omedelbart</string>
+    <string name="lock_after_seconds">%d sekunder</string>
+    <string name="custom_reminders">Anpassade Paminnelser</string>
+    <string name="add_custom_reminder">Lagg till Anpassad Paminnelse</string>
+    <string name="no_custom_reminders">Inga anpassade paminnelser an</string>
+    <string name="reminder_title_label">Paminnelsetitel</string>
+    <string name="reminder_title_required">Titel kravs</string>
+    <string name="reminder_message_label">Meddelande (valfritt)</string>
+    <string name="reminder_date">Paminnelsedatum</string>
+    <string name="select_time">Valj tid</string>
+    <string name="hue">Fargton</string>
+    <string name="saturation">Mattnad</string>
+    <string name="lightness">Ljushet</string>
+    <string name="apply_color">Applicera Farg</string>
+    <string name="custom_color">Anpassad Farg</string>
+    <string name="color_preview">Fargforhandsvisning</string>
+    <string name="apply">Applicera</string>
+    <string name="preset_colors">Forinstallda Farger</string>
+    <string name="add_symptom">Lagg till Symtom</string>
+    <string name="symptom_name">Symtomnamn</string>
+    <string name="symptom_name_required">Symtomnamn kravs</string>
+    <string name="prediction_explanation">Adaptivt prognostiserat baserat pa de senaste %1$d cyklerna (genomsnitt %2$s dagar/cykel, %3$s dagar/menstruation)</string>
+    <string name="record_date">Registreringsdatum</string>
+    <string name="select_date">Valj Datum</string>
+    <string name="confirm">Bekrafta</string>
+    <string name="cancel">Avbryt</string>
+    <string name="delete">Ta bort</string>
+    <string name="delete_record">Ta bort Post</string>
+    <string name="delete_record_confirm">Ar du saker pa att du vill ta bort posten for detta datum? Denna atgard kan inte angras.</string>
+    <string name="week_sun">Son</string>
+    <string name="week_mon">Man</string>
+    <string name="week_tue">Tis</string>
+    <string name="week_wed">Ons</string>
+    <string name="week_thu">Tor</string>
+    <string name="week_fri">Fre</string>
+    <string name="week_sat">Lor</string>
+    <string name="calendar_today">Idag</string>
+    <string name="back">Tillbaka</string>
+    <string name="symptom_headache">Huvudvark</string>
+    <string name="symptom_bloating">Uppblasthet</string>
+    <string name="symptom_breast_tenderness">Brustomhet</string>
+    <string name="symptom_backache">Ryggvark</string>
+    <string name="symptom_fatigue">Trotthet</string>
+    <string name="symptom_mood_swings">Humorsvangningar</string>
+    <string name="symptom_acne">Akne</string>
+    <string name="symptom_increased_appetite">Okad Aptit</string>
+    <string name="symptom_insomnia">Somnloshet</string>
+    <string name="symptom_nausea">Illamaende</string>
+    <string name="flow_light">Latt</string>
+    <string name="flow_medium">Medel</string>
+    <string name="flow_heavy">Tung</string>
+    <string name="pain_none">Ingen</string>
+    <string name="pain_mild">Lindrig</string>
+    <string name="pain_moderate">Måttlig</string>
+    <string name="pain_severe">Svar</string>
+    <string name="unit_days">dagar</string>
+    <string name="predicted_period_label">Forvantad menstruation: %1$s - %2$s</string>
+    <string name="ovulation_date_label">Agglossning: %s</string>
+    <string name="confidence_label">Sakerhet: %1$s (baserat pa %2$d cykler)</string>
+    <string name="reminder_days_before">Dagar innan</string>
+    <string name="reminder_time">Paminnelsetid</string>
+    <string name="enabled">Aktiverad</string>
+    <string name="disabled">Inaktiverad</string>
+    <string name="color_pink">Rosa</string>
+    <string name="color_dark_pink">Morkrosa</string>
+    <string name="color_peach">Persika</string>
+    <string name="color_light_purple">Ljuslila</string>
+    <string name="color_medium_purple">Mellanlila</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Undervikt</string>
+    <string name="bmi_category_normal">Normal</string>
+    <string name="bmi_category_overweight">Overvikt</string>
+    <string name="bmi_category_obese">Fetma</string>
+    <string name="bmi_standard_note">Baserat pa kinesisk BMI-standard</string>
+    <string name="backup_success">Sakerhetskopiering lyckades</string>
+    <string name="backup_fail">Sakerhetskopiering misslyckades</string>
+    <string name="restore_success">Aterstallning lyckades</string>
+    <string name="restore_fail">Aterstallning misslyckades</string>
+    <string name="export_success">Export lyckades</string>
+    <string name="export_fail">Export misslyckades</string>
+    <string name="backup_export_desc">Exportera databas som en ZIP-sakerhetskopia</string>
+    <string name="backup_import_desc">Aterstall data fran en sakerhetskopieringsfil</string>
+    <string name="backup_csv_desc">Exportera register som ett CSV-kalkylark</string>
+    <string name="deleted_time">Borttagen: %s</string>
+    <string name="in_progress">Pagar</string>
+    <string name="terms_countdown">Vanligen vanta %d sekunder</string>
+    <string name="auth_failed">Autentisering misslyckades: %s</string>
+    <string name="auth_failed_generic">Autentisering misslyckades</string>
+    <string name="biometric_init_failed">Biometrisk initialisering misslyckades</string>
+    <string name="lockout_message">For manga forsok. Vanligen vanta %d sekunder.</string>
+    <string name="chart_title_cycle_length_trend">Cykellangd Trend</string>
+    <string name="chart_title_pain_trend">Smarttrend</string>
+    <string name="chart_title_symptom_distribution">Symtomfordelning</string>
+    <string name="chart_cycle_label">Cykel %d</string>
+    <string name="chart_cycle_length_label">Cykellangd : %d</string>
+    <string name="chart_pain_level_label">Smartniva</string>
+    <string name="regularity_regular">Regelbunden</string>
+    <string name="regularity_somewhat_regular">Ganska regelbunden</string>
+    <string name="regularity_irregular">Oregelbunden</string>
+    <string name="regularity_insufficient_data">Otillrackligt med data</string>
+    <string name="confidence_high">Hog</string>
+    <string name="confidence_medium">Medel</string>
+    <string name="confidence_low">Lag</string>
+    <string name="confidence_insufficient">Otillrackligt med data</string>
+    <string name="analysis_no_data_title">Ingen data an</string>
+    <string name="analysis_no_data_hint">Borja registrera din menstruation for att se analys och prognoser har</string>
+    <string name="section_appearance">Utseende</string>
+    <string name="section_health">Halsa</string>
+    <string name="section_data">Data</string>
+    <string name="section_other">Ovrigt</string>
+    <string name="open">Oppna</string>
+    <string name="retry">Forsok Igen</string>
+    <string name="profile_theme_description">Anpassa appfarger</string>
+    <string name="profile_language_description">Andra appsprak</string>
+    <string name="profile_bmi_description">Folj ditt body mass index</string>
+    <string name="profile_app_lock_description">Krav autentisering for att oppna appen</string>
+    <string name="screenshot_protection_title">Skärmdumpsskydd</string>
+    <string name="screenshot_protection_description">Förhindra skärmdumpar och skärminspelningar</string>
+    <string name="profile_backup_description">Krypterad sakerhetskopiering och aterstallning av all data</string>
+    <string name="profile_recycle_bin_description">Visa och aterstall borttagna poster</string>
+    <string name="profile_version">Version 1.0.0</string>
+    <string name="profile_app_description">En omfattande halsoapp med integritet i fokus.</string>
+    <string name="custom_theme">Anpassat Tema</string>
+    <string name="language_description">Valj ditt foredragna sprak. Appen kommer att startas om for att tillampa andringen.</string>
+    <string name="language_changed_restart">Sprak andrat, startar om&#8230;</string>
+    <string name="bmi_empty_text">Inga viktdataposter an. Lagg till din forsta viktinmatning.</string>
+    <string name="save_height">Spara Langd</string>
+    <string name="bmi_category_label">Kategori</string>
+    <string name="height_label">Langd</string>
+    <string name="update_height">Uppdatera Langd</string>
+    <string name="add_weight_record_title">Lagg till Viktpost</string>
+    <string name="add_weight_record_text">Ange din vikt for idag.</string>
+    <string name="recycle_bin_description">Borttagna poster sparas i 30 dagar innan permanent borttagning.</string>
+    <string name="recycle_bin_empty">Papperskorgen ar tom</string>
+    <string name="recycle_bin_empty_title">Tom Papperskorgen</string>
+    <string name="recycle_bin_empty_confirm">Alla borttagna poster kommer att tas bort permanent. Denna atgard kan inte angras.</string>
+    <string name="recycle_bin_empty_action">Tom</string>
+    <string name="recycle_bin_restore">Aterstall</string>
+    <string name="recycle_bin_delete_forever">Ta bort for Alltid</string>
+    <string name="add_record">Lagg till Post</string>
+    <string name="period_tracking_title">Menstruationsspaning</string>
+    <string name="prediction_explanation_title">Prognosforklaring</string>
+    <string name="reminder_period_desc">F notifiering innan din menstruation borjar</string>
+    <string name="reminder_ovulation_desc">F notifiering innan agglossning</string>
+    <string name="reminder_pms_desc">F notifiering om PMS-symtom</string>
+    <string name="cycle_status_title">Cykelstatus</string>
+    <string name="cycle_day_label">Cykeldag</string>
+    <string name="days_until_label">Dagar Tills</string>
+    <string name="period_active_text">Menstruation aktiv</string>
+    <string name="next_period_label">Nasta Menstruation</string>
+    <string name="not_enough_data">Otillrackligt med data</string>
+    <string name="cycle_length_label">Cykellangd</string>
+    <string name="chart_no_data">Otillrackligt med data for att visa diagram</string>
+    <string name="chart_no_pain_data">Ingen smartdata registrerad</string>
+    <string name="chart_pain_unknown">Okand</string>
+    <string name="chart_total_records">Totalt Antal Poster</string>
+    <string name="record_for_date">Post for %s</string>
+    <string name="save_record">Spara Post</string>
+    <string name="male_health_trend">Halsotrender</string>
+    <string name="male_health_description">Menstruationsanalys ar inte tillamplig for manliga anvandare. Visar allman halsodata nedan.</string>
+    <string name="steps_overview">Stegoversikt</string>
+    <string name="steps_today">Dagens Steg</string>
+    <string name="steps_weekly_avg_label">7-dagars Genomsnittligt Steg</string>
+    <string name="steps_record_days">Registrerade Dagar</string>
+    <string name="steps_weekly_trend_label">7-dagars Stegtendens</string>
+    <string name="steps_title">Stegspaning</string>
+    <string name="steps_daily_goal">Dagligt Mål</string>
+    <string name="steps_update_goal">Uppdatera Mål</string>
+    <string name="steps_this_week">Denna Vecka</string>
+    <string name="steps_total">Totalt</string>
+    <string name="steps_average">Genomsnitt</string>
+    <string name="steps_days_label">Dagar</string>
+    <string name="steps_weekly_trend">Veckotendens</string>
+    <string name="steps_goal_format">%d steg</string>
+    <string name="steps_weekly_avg_format">Veckogenomsnitt %d steg/dag</string>
+    <string name="steps_history_title">Steghistorik</string>
+    <string name="steps_tab_week">Vecka</string>
+    <string name="steps_tab_month">Manad</string>
+    <string name="steps_tab_year">Ar</string>
+    <string name="steps_tab_all">Alla</string>
+    <string name="steps_30d_total">30-dagars Totalt</string>
+    <string name="steps_avg">Dagligt Genomsnitt</string>
+    <string name="steps_best">Basta Dag</string>
+    <string name="steps_weekly_label">Veckouppdelning</string>
+    <string name="steps_daily_trend">Daglig Tendens</string>
+    <string name="steps_monthly_label">Manadsuppdelning</string>
+    <string name="steps_total_label">Totalt Antal Steg</string>
+    <string name="steps_period_total">Periodsumma</string>
+    <string name="steps_weekly_avg">Veckogenomsnitt</string>
+    <string name="steps_monthly_avg">Manadsgenomsnitt</string>
+    <string name="steps_best_month">Basta Manad</string>
+    <string name="steps_tab_day">Dag</string>
+    <string name="steps_label">Steg</string>
+    <string name="steps_calories_label">Kalorier</string>
+    <string name="steps_yearly_label">Arsuppdelning</string>
+    <string name="dashboard_title">Halsodashboard</string>
+    <string name="dashboard_quick_actions">Snabbagera</string>
+    <string name="dashboard_retry">Forsok Igen</string>
+    <string name="dashboard_insights">Halsoinsikter</string>
+    <string name="dashboard_insights_empty">Registrera mer halsodata for personliga insikter</string>
+    <string name="dashboard_period_status">Menstruationsstatus</string>
+    <string name="dashboard_period_active">Menstruation Aktiv</string>
+    <string name="dashboard_follicular_phase">Follikelfas</string>
+    <string name="dashboard_no_data">Ingen Data</string>
+    <string name="dashboard_today_steps">Dagens Steg</string>
+    <string name="dashboard_goal_format">Mål: %d</string>
+    <string name="dashboard_cycle_day_format">Dag %1$d</string>
+    <string name="dashboard_record_period">Registrera Menstruation</string>
+    <string name="dashboard_record_steps">Registrera Steg</string>
+    <string name="dashboard_record_health">Halsoanalys</string>
+    <string name="gender_welcome">Valkommen till TianshangHealth</string>
+    <string name="gender_instruction">Valj ditt kon for personlig halsoovervakning</string>
+    <string name="gender_male">Man</string>
+    <string name="gender_male_desc">Doljer menstruationsspaningsfunktioner</string>
+    <string name="gender_female">Kvinna</string>
+    <string name="gender_female_desc">Visar alla funktioner inklusive menstruationsspaning</string>
+    <string name="gender_other">Annat</string>
+    <string name="gender_other_desc">Visar alla funktioner</string>
+    <string name="gender_footnote">Du kan andra detta senare i Inställningar</string>
+    <string name="gender_setting_title">Kon</string>
+    <string name="gender_setting_description">Andra ditt kon för att justera funktionsmoduler</string>
+    <string name="select_gender">Välj Kon</string>
+    <string name="app_lock_health_data_protected">Din halsodata ar skyddad</string>
+    <string name="app_lock_set_password_title">Stall in Losenord</string>
+    <string name="app_lock_password_label">Losenord</string>
+    <string name="app_lock_confirm_password_label">Bekrafta Losenord</string>
+    <string name="app_lock_enter_password_title">Ange Losenord</string>
+    <string name="app_lock_use_biometric">Anvand Biometri</string>
+    <string name="terms_privacy_title">Anvandarvillkor &amp; Integritetspolicy</string>
+    <string name="terms_service_title">Anvandarvillkor</string>
+    <string name="privacy_policy_title">Integritetspolicy</string>
+    <string name="terms_service_declaration">1. Tjansteforakran\n\nTianshangHealth ar en omfattande halsoapp som prioriterar anvandarintegritet och dataskerhet. All data lagras lokalt pa din enhet med stark kryptering.\n\n2. Dataintegritet\n\nVi samlar inte in, laddar upp eller delar nagra av dina personliga halso data. Appen fungerar helt offline utan natverksbehorigheter.\n\n3. Anvandaransvar\n\nDu ar ansvarig for noggrannheten i de halso data du anger. Prognoserna och analyserna som tillhandahalls ar endast for referens och utgor inte medicinsk radgivning.\n\n4. Dataskerhet\n\nDin data skyddas med SQLCipher AES-256-kryptering. Krypteringsnyckeln hanteras via Android Keystore for sakert pa maskinvaruniva.</string>
+    <string name="privacy_policy_body">1. Grundprincip: Data pa Enheten\n\nAll din halso data, inklusive menstruationscykler, symtom och andra halso matningar, lagras endast i den krypterade databasen pa din enhet.\n\n2. Insamlad Information\n\nVi behandlar endast information som du manuellt anger i appen. Ingen automatisk datainsamling sker.\n\n3. Datakryptering\n\nAll kanslig data krypteras med SQLCipher AES-256. Krypteringsnyckeln lagras pa ett sakert satt i Android Keystore.\n\n4. Ingen Tredjepartsatkomst\n\nVi anvander inga tredjeparts analys-, reklam- eller spaningstjanster. Din data lamnar aldrig din enhet.\n\n5. Dataexport\n\nDu kan exportera din data nar som helst i standardformat (CSV, krypterad sakerhetskopia). Du har full kontroll over din data.\n\n6. Databorttagning\n\nDu kan ta bort alla eller delar av din data nar som helst. Borttagen data tas bort permanent fran enheten.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Okant fel</string>
+    <string name="error_failed_add_record">Det gick inte att lagga till post</string>
+    <string name="error_failed_update_record">Det gick inte att uppdatera post</string>
+    <string name="error_failed_delete_record">Det gick inte att ta bort post</string>
+    <string name="error_failed_record">Det gick inte att registrera</string>
+    <string name="error_failed_set_password">Det gick inte att stalla in losenord</string>
+    <string name="error_password_not_set">Losenord inte inställt</string>
+    <string name="error_incorrect_password">Felaktigt losenord</string>
+    <string name="error_verification_failed">Verifiering misslyckades</string>
+    <string name="error_failed_load_settings">Det gick inte att ladda installningar</string>
+    <string name="error_failed_update_settings">Det gick inte att uppdatera installningar</string>
+    <string name="error_failed_save_gender">Det gick inte att spara kon</string>
+    <string name="error_failed_update_goal">Det gick inte att uppdatera mal</string>
+    <string name="error_failed_restore">Det gick inte att aterstalla post</string>
+    <string name="error_failed_to_delete">Det gick inte att ta bort post</string>
+    <string name="error_failed_empty_bin">Det gick inte att tömma papperskorgen</string>
+    <string name="loading">Laddar...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Menstruationspaminnelse</string>
+    <string name="notification_channel_period_desc">Paminnelser for menstruationsspaning</string>
+    <string name="notification_period_title">Paminnelse om Menstruationsspaning</string>
+    <string name="notification_period_body">Glom inte att logga din menstruationsdata idag!</string>
+    <string name="notification_channel_ovulation">Agglossningspaminnelse</string>
+    <string name="notification_channel_ovulation_desc">Paminnelser for agglossningsspaning</string>
+    <string name="notification_ovulation_title">Agglossningsperiod Narmar Sig</string>
+    <string name="notification_ovulation_body">Din fertila period kommer snart!</string>
+    <string name="notification_channel_pms">PMS-paminnelse</string>
+    <string name="notification_channel_pms_desc">Paminnelser for PMS-symtom</string>
+    <string name="notification_pms_title">PMS-symtom Forvantas</string>
+    <string name="notification_pms_body">PMS-symtom kan borja om nagra dagar. Ta hand om dig!</string>
+    <string name="notification_channel_steps">Steg rakneverk</string>
+    <string name="notification_channel_steps_desc">Notis om stegrakningstjanst</string>
+    <string name="notification_steps_body">Dagens steg: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_period">Menstruation</string>
+    <string name="nav_fitness">Traing</string>
+    <string name="nav_analysis">Analys</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Startdatum,Slutdatum,Flodesniva,Smartniva,Anteckningar</string>
+    <string name="backup_exported_success">Sakerhetskopia exporterad framgangsrikt</string>
+    <string name="import_success_format">%d poster importerades framgangsrikt</string>
+    <string name="csv_exported_success">CSV exporterad framgangsrikt</string>
+    <string name="csv_export_failed">CSV-export misslyckades</string>
+    <string name="password_export_title">Kryptera Sakerhetskopia</string>
+    <string name="password_import_title">Avkryptera Sakerhetskopia</string>
+    <string name="password_export_desc">Ange ett losenord for att kryptera din sakerhetskopia.</string>
+    <string name="password_import_desc">Ange losenordet som anvandes for att kryptera denna sakerhetskopia.</string>
+    <string name="password_label">Losenord</string>
+    <string name="proceed">Fortsatt</string>
+    <string name="password_short_error">Losenordet ar for kort</string>
+    <string name="password_mismatch_error">Losenorden matchar inte</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Menstruation Aktiv</string>
+    <string name="insight_follicular_phase">Follikelfas</string>
+    <string name="insight_luteal_phase">Lutealfas</string>
+    <string name="insight_cycle_day">Cykeldag %d</string>
+    <string name="insight_steps_stable_title">Stabil Aktivitet Genom Cykeln</string>
+    <string name="insight_steps_stable_desc">Ditt stegantal forbli konstant over cykelfaser, bra traingsvana bibehalls.</string>
+    <string name="insight_mood_drop_title">Humoret Sjunker i Lutealfasen</string>
+    <string name="insight_mood_drop_desc">Genomsnittligt humor ar lagre i lutealfasen, overvaga humorkontroll</string>
+    <string name="insight_mood_rise_title">Battre Humor i Lutealfasen</string>
+    <string name="insight_mood_rise_desc">Genomsnittligt humor ar hogre i lutealfasen, du gor det bra</string>
+    <string name="insight_sleep_drop_title">Somnkvaliteten Sjunker i Lutealfasen</string>
+    <string name="insight_sleep_drop_desc">Somnkvaliteten minskar under lutealfasen, prova avslappningsovningar</string>
+    <string name="insight_sleep_rise_title">Battre Somn i Lutealfasen</string>
+    <string name="insight_sleep_rise_desc">Somnkvaliteten ar hogre i lutealfasen, fortsatt med den goda rutinen</string>
+    <string name="insight_stress_period_title">Hogre Stress Under Menstruation</string>
+    <string name="insight_stress_period_desc">Stressnivan ar %s poang hogre under menstruation, overvaga att minska intensiva aktiviteter</string>
+    <string name="insight_mood_today_low_title">Lagt Humor Idag</string>
+    <string name="insight_mood_today_low_desc">Ditt humor ar lagt idag, forsok gora nagot du tycker om</string>
+    <string name="insight_stress_today_high_title">Hog Stress Idag</string>
+    <string name="insight_stress_today_high_desc">Stressnivan ar hog idag, forsok djupandning eller meditation</string>
+    <string name="insight_sleep_last_night_low_title">Dalig Somn Inatt</string>
+    <string name="insight_sleep_last_night_low_desc">Somnkvaliteten var lag inatt, forsok ga och lagga dig tidigt ikvall</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Aktiviteten minskar markant i lutealfasen</string>
+    <string name="insight_luteal_increase">Aktiviteten okar i lutealfasen</string>
+    <string name="insight_luteal_rest">Vila appropriat under lutealfasen, latt traing som yoga rekommenderas</string>
+    <string name="insight_luteal_nutrition">Bra aktivitetsokning, glom inte att uppratta naringsintaget</string>
+    <string name="insight_luteal_activity_low_title">Lgre Aktivitet i Lutealfasen</string>
+    <string name="insight_luteal_activity_low_desc">Lutealfasens steg minskade med %d%% jamfort med follikelfasen. Latt aktivitet som promenader rekommenderas.</string>
+    <string name="insight_luteal_activity_high_title">Hgre Aktivitet i Lutealfasen</string>
+    <string name="insight_luteal_activity_high_desc">Lutealfasens steg okade med %d%% jamfort med follikelfasen. Glom inte att vila och uppratta naringsintaget.</string>
+    <string name="insight_activity_stable_title">Konsekvent Aktivitet Genom Cykeln</string>
+    <string name="insight_activity_stable_desc">Stegantalet forbli stabilt over cykelfaser. Bra traingsvanor bibehalls.</string>
+    <string name="insight_mood_luteal_drop_title">Humoret Sjunker i Lutealfasen</string>
+    <string name="insight_mood_luteal_drop_desc">Genomsnittligt humor ar %s poang lagre i lutealfasen. Overvaga humorkontroll.</string>
+    <string name="insight_mood_luteal_rise_title">Battre Humor i Lutealfasen</string>
+    <string name="insight_mood_luteal_rise_desc">Genomsnittligt humor ar %s poang hogre i lutealfasen. Du gor det bra!</string>
+    <string name="insight_sleep_luteal_drop_title">Somnkvaliteten Sjunker i Lutealfasen</string>
+    <string name="insight_sleep_luteal_drop_desc">Somnkvaliteten minskade med %s poang i lutealfasen. Prova avslappningsovningar innan sangen.</string>
+    <string name="insight_sleep_luteal_rise_title">Battre Somn i Lutealfasen</string>
+    <string name="insight_sleep_luteal_rise_desc">Somnkvaliteten ar %s poang hogre i lutealfasen. Fortsatt med den goda rutinen.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Otillrackligt med data for prognos</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Uppdatera</string>
+    <string name="recycle_bin_empty_title_short">Tom Korgen</string>
+    <string name="recycle_bin_period_format">Menstruation: %1$s</string>
+    <string name="recycle_bin_to_format">till %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Stall in Losenord</string>
+    <string name="app_lock_confirm_password">Bekrafta Losenord</string>
+    <string name="app_lock_set_password_btn">Stall in Losenord</string>
+    <string name="app_lock_unlock_btn">Las upp</string>
+    <string name="app_lock_enter_password">Ange Losenord</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Totalt Antal Poster</string>
+    <string name="stats_total_cycles">Totalt Antal Cykler</string>
+    <string name="stats_avg_cycle">Genomsnittlig Cykel</string>
+    <string name="stats_avg_period">Genomsnittlig Menstruation</string>
+    <string name="stats_regularity_text">Regelbundenhet</string>
+    <string name="stats_cycle_num">Cykel %d</string>
+    <string name="stats_days_suffix">%d dagar</string>
+    <string name="stats_avg_format">Genomsnitt: %d dagar</string>
+    <string name="stats_no_data">Ingen data</string>
+    <string name="weight_format">Vikt: %.1f kg</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f cm</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Sakerhetskopior krypteras med AES-256-GCM med ditt losenord.</string>
+    <string name="steps_of_goal">av %d mal</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d\u00B0 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Blatt</string>
+    <string name="color_green">Gront</string>
+    <string name="color_purple">Lila</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_teal">Turkos</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Tryck for detaljer</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Lopning</string>
+    <string name="exercise_walking">Promenad</string>
+    <string name="exercise_cycling">Cykling</string>
+    <string name="exercise_swimming">Simning</string>
+    <string name="exercise_yoga">Yoga</string>
+    <string name="exercise_strength">Styrketraining</string>
+    <string name="exercise_dance">Dans</string>
+    <string name="exercise_pilates">Pilates</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Basket</string>
+    <string name="exercise_football">Fotboll</string>
+    <string name="exercise_tennis">Tennis</string>
+    <string name="exercise_badminton">Badminton</string>
+    <string name="exercise_table_tennis">Bordtennis</string>
+    <string name="exercise_skipping">Hopprep</string>
+    <string name="exercise_hiking">Vandring</string>
+    <string name="exercise_other">Annat</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">Denna Vecka</string>
+    <string name="fitness_add_workout">Lagg till Triaingspass</string>
+    <string name="fitness_select_type">Välj Triaingstyp</string>
+    <string name="fitness_duration_minutes">Langd (minuter)</string>
+    <string name="fitness_calories_label">Kalorier</string>
+    <string name="fitness_distance_km">Distans (km)</string>
+    <string name="fitness_today_workouts">Dagens Triaingspass</string>
+    <string name="fitness_recent_workouts">Senaste Triaingspassen</string>
+    <string name="fitness_empty">Inga triaingspass registrerade an.\nTryck + for att lagga till ditt forsta pass.</string>
+    <string name="fitness_minutes_format">%d min</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">Langd</string>
+    <string name="fitness_calories">Kalorier</string>
+    <string name="fitness_workouts">Triaingspass</string>
+    <string name="fitness_km_unit">km</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Inaktivera Batterioptimering</string>
+    <string name="steps_battery_desc">Batterioptimering kan stoppa stegrakningstjansten och pavrka stegspaningen.</string>
+    <string name="steps_battery_action">Ga till Installningar</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">%s Installningar</string>
+    <string name="steps_auto_start_settings">Installningar for Automatisk Start</string>
+    <string name="steps_battery_settings">Batteriinstallningar</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Energisammanfattning</string>
+    <string name="energy_today">Idag</string>
+    <string name="energy_this_week">Denna Vecka</string>
+    <string name="energy_steps">Steg</string>
+    <string name="energy_workouts">Triaingspass</string>
+    <string name="energy_total">Totalt</string>
+    <string name="energy_workouts_summary">%1$d triaingspass \u00B7 %2$d min</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Kroppsmatning</string>
+    <string name="body_metrics_height">Langd (cm)</string>
+    <string name="body_metrics_weight">Vikt (kg)</string>
+    <string name="body_metrics_saved">Kroppsmatning sparad</string>
+    <string name="body_metrics_height_error">Ange en giltig langd (80-250cm)</string>
+    <string name="body_metrics_weight_error">Ange en giltig vikt (15-350kg)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Naring</string>
+    <string name="nav_nutrition">Naring</string>
+    <string name="nutrition_add_meal">Lagg till Mltid</string>
+    <string name="nutrition_meal_type">Mltidstyp</string>
+    <string name="nutrition_food_name">Matnamn</string>
+    <string name="nutrition_calories">Kalorier</string>
+    <string name="nutrition_protein">Protein (g)</string>
+    <string name="nutrition_carbs">Kolhydrater (g)</string>
+    <string name="nutrition_fat">Fett (g)</string>
+    <string name="nutrition_serving_size">Portionsstorlek</string>
+    <string name="nutrition_macros">Makronaringsamnen</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Daglig Naring</string>
+    <string name="nutrition_today_meals">Dagens Mltider</string>
+    <string name="nutrition_meals">mltider</string>
+    <string name="nutrition_weekly_trend">Veckotendens</string>
+    <string name="nutrition_empty">Inga mltider registrerade an.\nTryck + for att lagga till din forsta mltid.</string>
+    <string name="nutrition_error_food_name">Ange ett matnamn</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Frukost</string>
+    <string name="meal_lunch">Lunch</string>
+    <string name="meal_dinner">Middag</string>
+    <string name="meal_snack">Mellanml</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Vatten</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Lgre Kaloriintag i Lutealfasen</string>
+    <string name="insight_nutrition_luteal_low_desc">Kalorier minskade med %.0f kcal i lutealfasen. Forsok uppratta en balanserad kost.</string>
+    <string name="insight_nutrition_luteal_high_title">Hgre Kaloriintag i Lutealfasen</string>
+    <string name="insight_nutrition_luteal_high_desc">Kalorier okade med %.0f kcal i lutealfasen. Detta ar normalt, lyssna pa din kropp.</string>
+    <string name="insight_nutrition_stable_title">Stabilt Kaloriintag</string>
+    <string name="insight_nutrition_stable_desc">Ditt kaloriintag forbli stabilt over cykelfaser. Bra jobbat!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">Glomt PIN?</string>
+    <string name="app_lock_change_pin">Andra PIN</string>
+    <string name="app_lock_current_pin">Nuvarande PIN</string>
+    <string name="app_lock_new_pin_label">Ny PIN</string>
+    <string name="app_lock_recovery_title">Aterstall Applas</string>
+    <string name="app_lock_recovery_desc">Verifiera din identitet for att aterstalla applasset</string>
+    <string name="lock_30s">30 sekunder</string>
+    <string name="lock_1min">1 minut</string>
+    <string name="lock_5min">5 minuter</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Somn</string>
+    <string name="sleep_title">Somnspaning</string>
+    <string name="sleep_record_title">Registrera Somn</string>
+    <string name="sleep_hours">Somntimmar</string>
+    <string name="sleep_deep_hours">Djup somn</string>
+    <string name="sleep_quality">Somnkvalitet</string>
+    <string name="sleep_quality_format">%d stjarna</string>
+    <string name="sleep_history">Somnhistorik</string>
+    <string name="sleep_no_data">Ingen somndata registrerad an</string>
+    <string name="sleep_today_status">Dagens Somn</string>
+    <string name="sleep_hours_format">%s timmar</string>
+    <string name="sleep_deep_hours_format">Djup: %s timmar</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Menstruell</string>
+    <string name="phase_follicular">Follikelfas</string>
+    <string name="phase_ovulatory">Agglossningsfas</string>
+    <string name="phase_luteal">Lutealfas</string>
+    <string name="nutrition_cycle_guidance">Naringsvagledning for Cykelfas</string>
+    <string name="nutrition_focus_nutrients">Fokus Naringsamnen</string>
+    <string name="nutrition_recommended_foods">Rekommenderad Mat</string>
+    <string name="nutrition_limit_foods">Begransa</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagar</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Ange en giltig varaktighet</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Rensa</string>
+    <string name="edit">Redigera</string>
+    <string name="exact_date_mode">Exakt datum</string>
+    <string name="profile_dob_not_set">Inte angivet</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Endast år</string>
+    <string name="year_picker_title">Välj födelseår</string>
+
+
+    <!-- Analysis section strings -->
+    <string name="analysis_no_data">Inte tillräckligt med data. Registrera hälsodata först.</string>
+    <string name="export_report">Exportera PDF-rapport</string>
+    <string name="insufficient_data">Otillräcklig data</string>
+
+    <!-- Nutrition analysis -->
+    <string name="nutrition_energy_balance">Energibalans</string>
+    <string name="nutrition_resting_energy">Vila</string>
+    <string name="nutrition_exercise_energy">Träning</string>
+    <string name="nutrition_total_expenditure">Total Förbränning</string>
+    <string name="nutrition_calorie_balance">Balans</string>
+
+    <!-- Sleep timer -->
+    <string name="sleep_auto_calculated">Auto: %d tim</string>
+    <string name="sleep_bedtime_btn">Läggdags</string>
+    <string name="sleep_elapsed">%dh %dm förfluten</string>
+    <string name="sleep_sleeping">Sover...</string>
+    <string name="sleep_waketime_btn">Vakna</string>
+
+    <!-- Cross-dimension patterns -->
+    <string name="pattern_exhaustion_title">Fysisk Utmattning Upptäckt</string>
+    <string name="pattern_exhaustion_desc">Lite sömn, hög stress och lågt humör tyder på utbrändhetsrisk. Överväg vilodagar.</string>
+    <string name="pattern_overtraining_title">Överträningsrisk</string>
+    <string name="pattern_overtraining_desc">Hög träningsvolym med kaloriunderskott och lite sömn. Se upp för skador.</string>
+    <string name="pattern_sedentary_mood_title">Stillasittande + Lågt Humör</string>
+    <string name="pattern_sedentary_mood_desc">Mycket lågt stegantal i kombination med lågt humör. En kort promenad kan hjälpa.</string>
+    <string name="pattern_dehydration_stress_title">Utforskning + Stress</string>
+    <string name="pattern_dehydration_stress_desc">Lågt vattenintag och höga stressnivåer. Vätska stödjer motståndskraft.</string>
+    <string name="pattern_positive_loop_title">Positiv Hälso Loop</string>
+    <string name="pattern_positive_loop_desc">Bra sömn, hög aktivitet och positivt humör förstärker varandra. Fortsätt så!</string>
+
+    <!-- Analysis section labels -->
+    <string name="analysis_section_suggestions">Smarta Förslag</string>
+    <string name="analysis_section_nutrition">Näringsanalys</string>
+    <string name="analysis_section_calorie_balance">Kaloribalans</string>
+    <string name="analysis_section_exercise">Träningsanalys</string>
+    <string name="analysis_section_sleep">Sömnanalys</string>
+    <string name="analysis_section_phase">Cykelkorrelation</string>
+    <string name="analysis_avg_daily_calories">Genomsnitt Dagl.</string>
+    <string name="analysis_protein">Protein</string>
+    <string name="analysis_carbs">Kolhydrater</string>
+    <string name="analysis_fat">Fett</string>
+    <string name="analysis_nutrient_ratio">Näringsförhållande</string>
+    <string name="analysis_avg_water_format">Vatten Snitt: %.0f ml</string>
+    <string name="analysis_avg_intake">Snitt Intag</string>
+    <string name="analysis_exercise_burned">Träningsförbränning</string>
+    <string name="analysis_weekly_total_minutes">Veckototal</string>
+    <string name="analysis_daily_avg_minutes">Dagl. Genomsnitt</string>
+    <string name="analysis_calories_burned">Kalorier Förbrända</string>
+    <string name="analysis_exercise_type_distribution">Fördelning Träningstyper</string>
+    <string name="analysis_avg_sleep_hours">Snitt Längd</string>
+    <string name="analysis_quality_score">Kvalitetspoäng</string>
+    <string name="analysis_daily_sleep_hours">Dagliga Sömntimmar</string>
+    <string name="analysis_mood">Humör</string>
+    <string name="analysis_stress">Stress</string>
+    <string name="analysis_daily_net_calories">Dagliga Nettokalorier (med vilande energi)</string>
+
+    <!-- PDF Report -->
+    <string name="report_title">Hälsorapport</string>
+    <string name="report_description">Skapa en omfattande hälsorapport baserad på dina registrerade data. Rapporten skapas lokalt på din enhet och kan delas som PDF.</string>
+    <string name="report_period">Rapportperiod: Senaste 30 Dagarna</string>
+    <string name="report_includes">Innehåller: Menstruationsdata, steg, sömn, kost och hälsoinsikter</string>
+    <string name="report_generate">Skapa Rapport</string>
+    <string name="report_generating">Skapar PDF-rapport...</string>
+    <string name="report_success">Rapport skapad framgångsrikt!</string>
+    <string name="report_share">Dela Hälsorapport</string>
+    <string name="report_share_button">Dela</string>
+    <string name="report_generate_new">Skapa Ny</string>
+    <string name="report_error">Fel: %s</string>
+    <string name="report_privacy_title">Sekretessmeddelande</string>
+    <string name="report_privacy_body">Alla rapporter skapas lokalt på din enhet. Inga hälsodata laddas upp till någon server eller molntjänst. Dina data förblir under din fulla kontroll.</string>
+
+    <!-- Nutrition suggestions -->
+    <string name="suggestion_low_calorie_title">Lågt Kaloriintag</string>
+    <string name="suggestion_low_calorie_desc">Dagligt intag %.0f kcal är under rekommenderade 1800 kcal. Överväg att lägga till komplexa kolhydrater och hälsosamma fetter.</string>
+    <string name="suggestion_high_calorie_title">Högt Kaloriintag</string>
+    <string name="suggestion_high_calorie_desc">Dagligt intag %.0f kcal överstiger 2500 kcal. Överväg att minska snacks och öka grönsaker.</string>
+    <string name="suggestion_low_protein_title">Lågt Proteinintag</string>
+    <string name="suggestion_low_protein_desc">Dagligt protein %.0f g är under rekommenderade 50 g. Överväg ägg, fisk och tofu.</string>
+    <string name="suggestion_low_water_title">Lågt Vattenintag</string>
+    <string name="suggestion_low_water_desc">Dagligt vatten %.0f ml är under rekommendationen. Sikta på 1500-2000 ml dagligen.</string>
+    <string name="suggestion_high_surplus_title">Högt Kaloriöverskott</string>
+    <string name="suggestion_high_surplus_desc">Dagligt överskott %.0f kcal. Om viktminskning är ditt mål, överväg att öka träningen.</string>
+    <string name="suggestion_high_deficit_title">Stort Kaloriunderskott</string>
+    <string name="suggestion_high_deficit_desc">Dagligt underskott %.0f kcal. Se till att du täcker dina basala metabola behov.</string>
+    <string name="suggestion_balanced_title">Balanserade Kalorier</string>
+    <string name="suggestion_balanced_desc">Intag och förbrukning är välbalanserade. Fortsätt så!</string>
+    <string name="suggestion_low_exercise_title">Lite Träning</string>
+    <string name="suggestion_low_exercise_desc">Veckoträning %d minuter är under WHO:s rekommendation på 150 minuter.</string>
+    <string name="suggestion_exercise_met_title">Träningsmål Uppnått</string>
+    <string name="suggestion_exercise_met_desc">Veckoträning %d minuter uppnår WHO:s rekommendation!</string>
+    <string name="suggestion_exercise_variety_title">Träningsvariation Behövs</string>
+    <string name="suggestion_exercise_variety_desc">Prova olika träningstyper (kondition + styrka + flexibilitet) för allmän kondition.</string>
+    <string name="suggestion_low_sleep_title">Lite Sömn</string>
+    <string name="suggestion_low_sleep_desc">Daglig sömn %.1f timmar är under rekommenderade 7-9 timmar. Försök med ett regelbundet schema.</string>
+    <string name="suggestion_high_sleep_title">Överdriven Sömn</string>
+    <string name="suggestion_high_sleep_desc">Daglig sömn %.1f timmar överstiger 9 timmar. Lång sömn kan indikera trötthet.</string>
+    <string name="suggestion_low_deep_sleep_title">Lite Djup Sömn</string>
+    <string name="suggestion_low_deep_sleep_desc">Djup sömn andel endast %.0f%%. Undvik koffein före sänggåendet och håll rummet mörkt.</string>
+    <string name="suggestion_low_sleep_quality_title">Låg Sömnkvalitet</string>
+    <string name="suggestion_low_sleep_quality_desc">Sömnkvalitetspoäng %.1f/5. Prova meditation eller ett varmt bad före sänggåendet.</string>
+    <string name="suggestion_luteal_sleep_title">Sömnförändring i Lutealfasen</string>
+    <string name="suggestion_luteal_sleep_desc">Sömn i lutealfasen minskade med %.1f timmar jämfört med follikulär. Normal hormonell förändring.</string>
+
+    <!-- Error messages -->
+    <string name="error_onboarding_required">Vänligen slutför användarinställningen först</string>
+    <string name="error_load_failed">Inläsning misslyckades</string>
+
+    <!-- Cycle nutrition advice -->
+    <string name="nutrition_menstrual_advice">Fokusera på järnrik mat för att återfylla blodförlust. Magnesium hjälper att minska kramper. Håll dig väl hydrerad.</string>
+    <string name="nutrition_menstrual_nutrients">Järn · Magnesium · Omega-3 · Vitamin B12</string>
+    <string name="nutrition_menstrual_foods">Bladgrönt · Rött Kött · Fet Fisk · Mörk Choklad · Nötter</string>
+    <string name="nutrition_menstrual_limit">Salta Snacks · Koffein · Mejeri</string>
+    <string name="nutrition_follicular_advice">Din energimetabolism ökar. Bra tid för lätta, näringsrika måltider. Stöd tarmhälsan med probiotika.</string>
+    <string name="nutrition_follicular_nutrients">Fibrer · Vitamin C · Probiotika · Folat</string>
+    <string name="nutrition_follicular_foods">Bär · Citrusfrukter · Yoghurt · Havre · Broccoli</string>
+    <string name="nutrition_follicular_limit">Processad Mat · Överdrivet Socker</string>
+    <string name="nutrition_ovulatory_advice">Östrogen når sin topp under denna fas. Stöd leveravgiftning med antioxidantrik mat. Antiinflammatorisk kost rekommenderas.</string>
+    <string name="nutrition_ovulatory_nutrients">Antioxidanter · Vitamin C · Zink · Vitamin E</string>
+    <string name="nutrition_ovulatory_foods">Paprika · Solrosfrön · Magert Fågel · Avokado · Grönt Te</string>
+    <string name="nutrition_ovulatory_limit">Alkohol · Friterad Mat</string>
+    <string name="nutrition_luteal_advice">Progesteron stiger, vilket kan öka aptiten. Komplexa kolhydrater hjälper till att öka serotonin. Begränsa koffein och salt för att lindra PMS-symtom.</string>
+    <string name="nutrition_luteal_nutrients">B-Vitaminer · Komplexa Kolhydrater · Magnesium · Kalcium · Vitamin B6</string>
+    <string name="nutrition_luteal_foods">Fullkorn · Bananer · Bladgrönt · Baljväxter · Mörk Choklad</string>
+    <string name="nutrition_luteal_limit">Socker · Koffein · Salt Mat</string>
+
+    <!-- Sleep trend -->
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Sömntimmar   ▐ Kvalitetspoäng</string>
+    <string name="sleep_luteal_worse">Sömnkvalitet i Lutealfasen Minskad</string>
+    <string name="sleep_luteal_better">Sömnkvalitet i Lutealfasen Förbättrad</string>
+    <string name="sleep_luteal_comparison_worse">Luteal snitt sömn %.1ft, follikulär %.1ft, minskad %.1ft</string>
+    <string name="sleep_luteal_comparison_better">Luteal snitt sömn %.1ft, follikulär %.1ft, förbättrad %.1ft</string>
+
+    <!-- PDF report -->
+    <string name="pdf_health_report">Hälsorapport</string>
+    <string name="pdf_generated">Skapad: %s</string>
+    <string name="pdf_user_info">Användare: %1$s | Kön: %2$s</string>
+    <string name="pdf_report_period">Rapportperiod: %s</string>
+    <string name="pdf_period_summary">Menstruationssammanfattning</string>
+    <string name="pdf_no_period_records">Inga menstruationsdata i vald period.</string>
+    <string name="pdf_total_cycles">Totalt Cykler: %d</string>
+    <string name="pdf_avg_cycle_length">Genomsnittlig Cykellängd: %d dagar</string>
+    <string name="pdf_avg_pain">Genomsnittlig Smärtnivå: %.1f / 3</string>
+    <string name="pdf_recent_records">Senaste Poster</string>
+    <string name="pdf_start_date">Startdatum</string>
+    <string name="pdf_end_date">Slutdatum</string>
+    <string name="pdf_flow">Flöde</string>
+    <string name="pdf_pain">Smärta</string>
+    <string name="pdf_ongoing">Pågående</string>
+    <string name="pdf_flow_light">Lätt</string>
+    <string name="pdf_flow_medium">Medel</string>
+    <string name="pdf_flow_heavy">Tung</string>
+    <string name="pdf_pain_none">Ingen</string>
+    <string name="pdf_pain_mild">Lindrig</string>
+    <string name="pdf_pain_moderate">Måttlig</string>
+    <string name="pdf_pain_severe">Svår</string>
+    <string name="pdf_activity_summary">Aktivitetsammanfattning</string>
+    <string name="pdf_no_step_data">Inga stegdata tillgängliga.</string>
+    <string name="pdf_avg_daily_steps">Genomsnittliga Dagliga Steg: %,d</string>
+    <string name="pdf_total_steps">Totalt Steg: %,d</string>
+    <string name="pdf_max_steps">Max Dagliga Steg: %,d</string>
+    <string name="pdf_total_exercise">Total Träning: %d minuter</string>
+    <string name="pdf_sleep_summary">Sömnsummering</string>
+    <string name="pdf_no_sleep_data">Inga sömndata tillgängliga.</string>
+    <string name="pdf_avg_sleep">Genomsnittlig Sömn: %.1f timmar</string>
+    <string name="pdf_avg_sleep_quality">Genomsnittlig Sömnkvalitet: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Genomsnittlig Djup Sömn: %.1f timmar</string>
+    <string name="pdf_nutrition_summary">Näringssammanfattning</string>
+    <string name="pdf_no_nutrition_data">Inga näringsdata tillgängliga.</string>
+    <string name="pdf_avg_calories">Genomsnittliga Dagliga Kalorier: %.0f kcal</string>
+    <string name="pdf_avg_water">Genomsnittligt Vattenintag: %.0f ml</string>
+    <string name="pdf_avg_protein">Genomsnittligt Protein: %.0f g</string>
+    <string name="pdf_footer">Denna rapport skapas lokalt på din enhet. Inga data lämnar din telefon.</string>
+    <string name="pdf_page">Sida %d</string>
+    <string name="pdf_app_name">TianshangHealth – Integritet Först</string>
+
+    <!-- General -->
+    <string name="previous">Föregående</string>
+    <string name="next">Nästa</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">Det gick inte att skapa rapporten</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return ChronoUnit.DAYS.between(startDate, endDate)</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return LocalDate.parse(dateString, displayFormatter)</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date == LocalDate.now()</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date.format(displayFormatter)</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date.format(monthFormatter)</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date.isAfter(LocalDate.now())</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date.isBefore(LocalDate.now())</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date.minusDays(days)</ID>
+    <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date.plusDays(days)</ID>
+    <ID>ExpressionBodySyntax:Extensions.kt$return !this.isBefore(start) &amp;&amp; !this.isAfter(end)</ID>
+    <ID>ExpressionBodySyntax:Extensions.kt$return this == other</ID>
+    <ID>ExpressionBodySyntax:Extensions.kt$return this.format(DateTimeFormatter.ofPattern("yyyy-MM"))</ID>
+    <ID>ExpressionBodySyntax:Extensions.kt$return this.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))</ID>
+    <ID>ExpressionBodySyntax:HslColorEngine.kt$HslColorEngine$return toColor(Hsl(hue, saturation, lightness))</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return !date.isAfter(LocalDate.now())</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return gender in listOf("male", "female", "other")</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return id &gt; 0L</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return length in 2..10</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return length in HealthConstants.MIN_CYCLE_LENGTH..HealthConstants.MAX_CYCLE_LENGTH</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return level in listOf("HIGH", "MEDIUM", "LOW", "INSUFFICIENT_DATA")</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return limit &gt; 0 &amp;&amp; limit &lt;= maxLimit</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return name.isNotBlank() &amp;&amp; name.length &lt;= 100</ID>
+    <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return type.isNotBlank()</ID>
+    <ID>FunctionNaming:CommonComponents.kt$@Composable fun EmptyContent( message: String, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:CommonComponents.kt$@Composable fun ErrorContent( message: String, onRetry: () -&gt; Unit, modifier: Modifier = Modifier, retryText: String = stringResource(R.string.retry) )</ID>
+    <ID>FunctionNaming:CommonComponents.kt$@Composable fun LoadingContent( modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatCard.kt$@Composable fun StatCard( title: String, value: String, subtitle: String? = null, icon: ImageVector? = null, iconTint: Color = MaterialTheme.colorScheme.primary, containerColor: Color = MaterialTheme.colorScheme.surfaceVariant, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatCard.kt$@Composable fun StatItem( label: String, value: String, modifier: Modifier = Modifier )</ID>
+    <ID>MagicNumber:CyclePhase.kt$CyclePhase.Companion$4</ID>
+    <ID>MagicNumber:Extensions.kt$3</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.5f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.6f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.7f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.85f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.8f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFF1C1B1F</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFF49454F</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFF79747E</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFF938F99</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFFCAC4D0</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFFE6E1E5</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFFE7E0EC</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFFFFFBFE</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$120f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$180f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$240f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$300f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$30f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$360f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$4f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$60f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$6f</ID>
+    <ID>MagicNumber:ValidationUtils.kt$ValidationUtils$100</ID>
+    <ID>MaximumLineLength:HslColorEngine.kt$HslColorEngine$ </ID>
+    <ID>TooManyFunctions:ValidationUtils.kt$ValidationUtils</ID>
+    <ID>UnderscoresInNumericLiterals:AppConstants.kt$AppConstants$30000L</ID>
+    <ID>UnderscoresInNumericLiterals:HealthConstants.kt$HealthConstants$10000</ID>
+    <ID>UnderscoresInNumericLiterals:HealthConstants.kt$HealthConstants$10000f</ID>
+    <ID>UnderscoresInNumericLiterals:HealthConstants.kt$HealthConstants$20000</ID>
+    <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$((b - r) / delta)</ID>
+    <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$((g - b) / delta)</ID>
+    <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$((r - g) / delta)</ID>
+    <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$(b + m)</ID>
+    <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$(g + m)</ID>
+    <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$(h / 60f)</ID>
+    <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$(r + m)</ID>
+  </CurrentIssues>
+</SmellBaseline>

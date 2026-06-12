@@ -1,0 +1,894 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Warunki Usługi</string>
+    <string name="privacy_title">Polityka Prywatności</string>
+    <string name="accept_terms">Przeczytałem i akceptuję</string>
+    <string name="app_lock_title">Blokada Aplikacji</string>
+    <string name="enter_pin">Hasło</string>
+    <string name="unlock">Odblokuj</string>
+    <string name="invalid_pin">Nieprawidłowe hasło</string>
+    <string name="app_lock_setup_title">Ustaw Hasło Blokady Aplikacji</string>
+    <string name="set_pin">Ustaw Hasło</string>
+    <string name="confirm_pin">Potwierdź Hasło</string>
+    <string name="set_password">Ustaw Hasło</string>
+    <string name="pin_empty_error">Hasło nie może być puste</string>
+    <string name="pin_mismatch_error">Hasła nie są zgodne</string>
+    <string name="pin_length_error">Hasło musi mieć co najmniej %d znaków</string>
+    <string name="calendar_title">Kalendarz</string>
+    <string name="current_cycle_day">Dzień %d cyklu</string>
+    <string name="days_until_next_period">Następna miesiączka za %d dni</string>
+    <string name="no_period_data">Brak danych o miesiączce</string>
+    <string name="tap_date_to_record">Dotknij, aby zapisać</string>
+    <string name="period">Miesiączka</string>
+    <string name="predicted_period">Przewidywana Miesiączka</string>
+    <string name="ovulation">Owulacja</string>
+    <string name="fertile_window">Okno Płodności</string>
+    <string name="record_title">Zapis</string>
+    <string name="start_period">Rozpocznij Miesiączkę</string>
+    <string name="end_period">Zakończ Miesiączkę</string>
+    <string name="flow_level">Obfitość</string>
+    <string name="pain_level">Ból</string>
+    <string name="symptoms">Objawy</string>
+    <string name="sexual_activity">Aktywność Seksualna</string>
+    <string name="ovulation_test">Test Owulacyjny</string>
+    <string name="cervical_mucus">Śluz Szyjkowy</string>
+    <string name="body_temperature">Temperatura Ciała</string>
+    <string name="notes">Notatki</string>
+    <string name="save">Zapisz</string>
+    <string name="analysis_title">Analiza</string>
+    <string name="cycle_statistics">Statystyki</string>
+    <string name="avg_cycle_length">Średni Cykl</string>
+    <string name="avg_period_length">Średnia Miesiączka</string>
+    <string name="cycle_regularity">Regularność</string>
+    <string name="total_cycles">Liczba Cykli</string>
+    <string name="pain_trend">Trend Bólu</string>
+    <string name="symptom_frequency">Częstotliwość Objawów</string>
+    <string name="predictions">Prognozy</string>
+    <string name="reminder_title">Przypomnienia</string>
+    <string name="period_reminder">Przypomnienie o Miesiączce</string>
+    <string name="ovulation_reminder">Przypomnienie o Owulacji</string>
+    <string name="pms_reminder">Przypomnienie o PMS</string>
+    <string name="profile_title">Profil</string>
+    <string name="theme_customization">Motyw</string>
+    <string name="theme_color">Kolor Motywu</string>
+    <string name="app_lock">Blokada Aplikacji</string>
+    <string name="language">Język</string>
+    <string name="recycle_bin">Kosz</string>
+    <string name="recycle_bin_title">Kosz</string>
+    <string name="backup_restore">Kopia Zapasowa</string>
+    <string name="backup_restore_title">Kopia Zapasowa &amp; Przywracanie</string>
+    <string name="export_backup">Eksportuj Kopię</string>
+    <string name="import_backup">Importuj Kopię</string>
+    <string name="export_csv">Eksportuj CSV</string>
+    <string name="about">O Aplikacji</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">Dodaj</string>
+    <string name="height_cm">Wzrost (cm)</string>
+    <string name="weight_kg">Waga (kg)</string>
+    <string name="latest_bmi">Aktualne BMI</string>
+    <string name="bmi_history">Historia</string>
+    <string name="dark_mode">Tryb Ciemny</string>
+    <string name="dark_mode_description">Zmień motyw</string>
+    <string name="no_deleted_records">Brak usuniętych rekordów</string>
+    <string name="security_settings">Bezpieczeństwo</string>
+    <string name="data_security">Bezpieczeństwo Danych</string>
+    <string name="database_encryption">Szyfrowanie Bazy Danych</string>
+    <string name="encrypted">Zaszyfrowane (AES-256)</string>
+    <string name="unencrypted">Niezaszyfrowane</string>
+    <string name="migrate_to_encrypted">Migruj do Zaszyfrowanej Bazy Danych</string>
+    <string name="migration_success">Migracja udana! Baza danych jest teraz zaszyfrowana.</string>
+    <string name="migration_failed">Migracja nieudana: %s. Twoje dane zostały przywrócone do oryginalnego stanu.</string>
+    <string name="background_lock_delay">Blokada po wyjściu w tło</string>
+    <string name="lock_immediately">Natychmiast</string>
+    <string name="lock_after_seconds">%d sekund</string>
+    <string name="custom_reminders">Własne Przypomnienia</string>
+    <string name="add_custom_reminder">Dodaj Własne Przypomnienie</string>
+    <string name="no_custom_reminders">Brak własnych przypomnień</string>
+    <string name="reminder_title_label">Tytuł przypomnienia</string>
+    <string name="reminder_title_required">Tytuł jest wymagany</string>
+    <string name="reminder_message_label">Wiadomość (opcjonalna)</string>
+    <string name="reminder_date">Data przypomnienia</string>
+    <string name="select_time">Wybierz godzinę</string>
+    <string name="hue">Barwa</string>
+    <string name="saturation">Nasycenie</string>
+    <string name="lightness">Jasność</string>
+    <string name="apply_color">Zastosuj Kolor</string>
+    <string name="custom_color">Własny Kolor</string>
+    <string name="color_preview">Podgląd Koloru</string>
+    <string name="apply">Zastosuj</string>
+    <string name="preset_colors">Gotowe Kolory</string>
+    <string name="add_symptom">Dodaj Objaw</string>
+    <string name="symptom_name">Nazwa objawu</string>
+    <string name="symptom_name_required">Nazwa objawu jest wymagana</string>
+    <string name="prediction_explanation">Adaptacyjnie przewidziano na podstawie ostatnich %1$d cykli (średnio %2$s dni/cykl, %3$s dni/miesiączka)</string>
+    <string name="record_date">Data Rekordu</string>
+    <string name="select_date">Wybierz Datę</string>
+    <string name="confirm">Potwierdź</string>
+    <string name="cancel">Anuluj</string>
+    <string name="delete">Usuń</string>
+    <string name="delete_record">Usuń Rekord</string>
+    <string name="delete_record_confirm">Czy na pewno chcesz usunąć rekord z tej daty? Tej czynności nie można cofnąć.</string>
+    <string name="week_sun">Nie</string>
+    <string name="week_mon">Pon</string>
+    <string name="week_tue">Wto</string>
+    <string name="week_wed">Śro</string>
+    <string name="week_thu">Czw</string>
+    <string name="week_fri">Pią</string>
+    <string name="week_sat">Sob</string>
+    <string name="calendar_today">Dziś</string>
+    <string name="back">Wstecz</string>
+    <string name="symptom_headache">Ból Głowy</string>
+    <string name="symptom_bloating">Wzdęcia</string>
+    <string name="symptom_breast_tenderness">Bolesność Piersi</string>
+    <string name="symptom_backache">Ból Pleców</string>
+    <string name="symptom_fatigue">Zmęczenie</string>
+    <string name="symptom_mood_swings">Wahania Nastroju</string>
+    <string name="symptom_acne">Trądzik</string>
+    <string name="symptom_increased_appetite">Zwiększony Apetyt</string>
+    <string name="symptom_insomnia">Bezsenność</string>
+    <string name="symptom_nausea">Nudności</string>
+    <string name="flow_light">Lekka</string>
+    <string name="flow_medium">Umiarkowana</string>
+    <string name="flow_heavy">Obfita</string>
+    <string name="pain_none">Brak</string>
+    <string name="pain_mild">Łagodny</string>
+    <string name="pain_moderate">Umiarkowany</string>
+    <string name="pain_severe">Silny</string>
+    <string name="unit_days">dni</string>
+    <string name="predicted_period_label">Przewidywana miesiączka: %1$s - %2$s</string>
+    <string name="ovulation_date_label">Owulacja: %s</string>
+    <string name="confidence_label">Pewność: %1$s (na podstawie %2$d cykli)</string>
+    <string name="reminder_days_before">Dni przed</string>
+    <string name="reminder_time">Czas przypomnienia</string>
+    <string name="enabled">Włączone</string>
+    <string name="disabled">Wyłączone</string>
+    <string name="color_pink">Różowy</string>
+    <string name="color_dark_pink">Ciemnoróżowy</string>
+    <string name="color_peach">Brzoskwiniowy</string>
+    <string name="color_light_purple">Jasnofioletowy</string>
+    <string name="color_medium_purple">Średniofioletowy</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Niedowaga</string>
+    <string name="bmi_category_normal">Prawidłowa</string>
+    <string name="bmi_category_overweight">Nadwaga</string>
+    <string name="bmi_category_obese">Otyłość</string>
+    <string name="bmi_standard_note">Według chińskiego standardu BMI</string>
+    <string name="backup_success">Kopia zapasowa udana</string>
+    <string name="backup_fail">Kopia zapasowa nieudana</string>
+    <string name="restore_success">Przywracanie udane</string>
+    <string name="restore_fail">Przywracanie nieudane</string>
+    <string name="export_success">Eksport udany</string>
+    <string name="export_fail">Eksport nieudany</string>
+    <string name="backup_export_desc">Eksportuj bazę danych jako plik ZIP kopii zapasowej</string>
+    <string name="backup_import_desc">Przywróć dane z pliku kopii zapasowej</string>
+    <string name="backup_csv_desc">Eksportuj rekordy jako arkusz CSV</string>
+    <string name="deleted_time">Usunięto: %s</string>
+    <string name="in_progress">W trakcie</string>
+    <string name="terms_countdown">Proszę czekać %d sekund</string>
+    <string name="auth_failed">Uwierzytelnianie nieudane: %s</string>
+    <string name="auth_failed_generic">Uwierzytelnianie nieudane</string>
+    <string name="biometric_init_failed">Inicjalizacja biometryczna nieudana</string>
+    <string name="lockout_message">Zbyt wiele prób. Proszę czekać %d sekund.</string>
+    <string name="chart_title_cycle_length_trend">Trend Długości Cyklu</string>
+    <string name="chart_title_pain_trend">Trend Bólu</string>
+    <string name="chart_title_symptom_distribution">Rozkład Objawów</string>
+    <string name="chart_cycle_label">Cykl %d</string>
+    <string name="chart_cycle_length_label">Długość Cyklu : %d</string>
+    <string name="chart_pain_level_label">Poziom Bólu</string>
+    <string name="regularity_regular">Regularny</string>
+    <string name="regularity_somewhat_regular">Dość regularny</string>
+    <string name="regularity_irregular">Nieregularny</string>
+    <string name="regularity_insufficient_data">Niewystarczająca ilość danych</string>
+    <string name="confidence_high">Wysoka</string>
+    <string name="confidence_medium">Średnia</string>
+    <string name="confidence_low">Niska</string>
+    <string name="confidence_insufficient">Niewystarczająca ilość danych</string>
+    <string name="analysis_no_data_title">Brak danych</string>
+    <string name="analysis_no_data_hint">Rozpocznij zapisywanie swojej miesiączki, aby zobaczyć analizy i prognozy</string>
+    <string name="section_appearance">Wygląd</string>
+    <string name="section_health">Zdrowie</string>
+    <string name="section_data">Dane</string>
+    <string name="section_other">Inne</string>
+    <string name="open">Otwórz</string>
+    <string name="retry">Spróbuj Ponownie</string>
+    <string name="profile_theme_description">Dostosuj kolory aplikacji</string>
+    <string name="profile_language_description">Zmień język aplikacji</string>
+    <string name="profile_bmi_description">Śledź swój wskaźnik masy ciała</string>
+    <string name="profile_app_lock_description">Wymagaj uwierzytelnienia do otwarcia aplikacji</string>
+    <string name="screenshot_protection_title">Ochrona przed zrzutami ekranu</string>
+    <string name="screenshot_protection_description">Zapobiegaj zrzutom ekranu i nagrywaniu</string>
+    <string name="profile_backup_description">Szyfrowana kopia zapasowa i przywracanie wszystkich danych</string>
+    <string name="profile_recycle_bin_description">Przeglądaj i przywracaj usunięte rekordy</string>
+    <string name="profile_version">Wersja 1.0.0</string>
+    <string name="profile_app_description">Kompleksowa aplikacja do śledzenia zdrowia z priorytetem prywatności.</string>
+    <string name="custom_theme">Motyw Niestandardowy</string>
+    <string name="language_description">Wybierz preferowany język. Aplikacja uruchomi się ponownie, aby zastosować zmianę.</string>
+    <string name="language_changed_restart">Język zmieniony, restartowanie&#8230;</string>
+    <string name="bmi_empty_text">Brak rekordów wagi. Dodaj pierwszy wpis wagi.</string>
+    <string name="save_height">Zapisz Wzrost</string>
+    <string name="bmi_category_label">Kategoria</string>
+    <string name="height_label">Wzrost</string>
+    <string name="update_height">Aktualizuj Wzrost</string>
+    <string name="add_weight_record_title">Dodaj Rekord Wagi</string>
+    <string name="add_weight_record_text">Wprowadź swoją wagę na dziś.</string>
+    <string name="recycle_bin_description">Usunięte rekordy są przechowywane przez 30 dni przed trwałym usunięciem.</string>
+    <string name="recycle_bin_empty">Kosz jest pusty</string>
+    <string name="recycle_bin_empty_title">Opróżnij Kosz</string>
+    <string name="recycle_bin_empty_confirm">Wszystkie usunięte rekordy zostaną trwale usunięte. Tej czynności nie można cofnąć.</string>
+    <string name="recycle_bin_empty_action">Opróżnij</string>
+    <string name="recycle_bin_restore">Przywróć</string>
+    <string name="recycle_bin_delete_forever">Usuń na Zawsze</string>
+    <string name="add_record">Dodaj Rekord</string>
+    <string name="period_tracking_title">Śledzenie Miesiączki</string>
+    <string name="prediction_explanation_title">Wyjaśnienie Prognozy</string>
+    <string name="reminder_period_desc">Otrzymuj powiadomienie przed rozpoczęciem miesiączki</string>
+    <string name="reminder_ovulation_desc">Otrzymuj powiadomienie przed owulacją</string>
+    <string name="reminder_pms_desc">Otrzymuj powiadomienie o objawach PMS</string>
+    <string name="cycle_status_title">Status Cyklu</string>
+    <string name="cycle_day_label">Dzień Cyklu</string>
+    <string name="days_until_label">Dni Do</string>
+    <string name="period_active_text">Miesiączka aktywna</string>
+    <string name="next_period_label">Następna Miesiączka</string>
+    <string name="not_enough_data">Niewystarczająca ilość danych</string>
+    <string name="cycle_length_label">Długość Cyklu</string>
+    <string name="chart_no_data">Niewystarczająca ilość danych do wyświetlenia wykresu</string>
+    <string name="chart_no_pain_data">Brak danych o bólu</string>
+    <string name="chart_pain_unknown">Nieznany</string>
+    <string name="chart_total_records">Liczba Rekordów</string>
+    <string name="record_for_date">Rekord na %s</string>
+    <string name="save_record">Zapisz Rekord</string>
+    <string name="male_health_trend">Trendy Zdrowotne</string>
+    <string name="male_health_description">Analiza miesiączki nie dotyczy użytkowników płci męskiej. Poniżej pokazano ogólne dane zdrowotne.</string>
+    <string name="steps_overview">Przegląd Kroków</string>
+    <string name="steps_today">Dzisiejsze Kroki</string>
+    <string name="steps_weekly_avg_label">Średnia Kroków z 7 Dni</string>
+    <string name="steps_record_days">Dni Zapisane</string>
+    <string name="steps_weekly_trend_label">Trend Kroków z 7 Dni</string>
+    <string name="steps_title">Śledzenie Kroków</string>
+    <string name="steps_daily_goal">Cel Dzienny</string>
+    <string name="steps_update_goal">Aktualizuj Cel</string>
+    <string name="steps_this_week">W Tym Tygodniu</string>
+    <string name="steps_total">Łącznie</string>
+    <string name="steps_average">Średnia</string>
+    <string name="steps_days_label">Dni</string>
+    <string name="steps_weekly_trend">Trend Tygodniowy</string>
+    <string name="steps_goal_format">%d kroków</string>
+    <string name="steps_weekly_avg_format">Średnia tygodniowa %d kroków/dzień</string>
+    <string name="steps_history_title">Historia Kroków</string>
+    <string name="steps_tab_week">Tydzień</string>
+    <string name="steps_tab_month">Miesiąc</string>
+    <string name="steps_tab_year">Rok</string>
+    <string name="steps_tab_all">Wszystko</string>
+    <string name="steps_30d_total">Łącznie 30 Dni</string>
+    <string name="steps_avg">Średnia Dziennie</string>
+    <string name="steps_best">Najlepszy Dzień</string>
+    <string name="steps_weekly_label">Podział Tygodniowy</string>
+    <string name="steps_daily_trend">Trend Dzienny</string>
+    <string name="steps_monthly_label">Podział Miesięczny</string>
+    <string name="steps_total_label">Łączna Liczba Kroków</string>
+    <string name="steps_period_total">Łącznie w Okresie</string>
+    <string name="steps_weekly_avg">Średnia Tygodniowa</string>
+    <string name="steps_monthly_avg">Średnia Miesięczna</string>
+    <string name="steps_best_month">Najlepszy Miesiąc</string>
+    <string name="steps_tab_day">Dzień</string>
+    <string name="steps_label">Kroki</string>
+    <string name="steps_calories_label">Kalorie</string>
+    <string name="steps_yearly_label">Podział Roczny</string>
+    <string name="dashboard_title">Panel Zdrowia</string>
+    <string name="dashboard_quick_actions">Szybkie Akcje</string>
+    <string name="dashboard_retry">Spróbuj Ponownie</string>
+    <string name="dashboard_insights">Wgląd w Zdrowie</string>
+    <string name="dashboard_insights_empty">Zapisuj więcej danych zdrowotnych, aby uzyskać spersonalizowany wgląd</string>
+    <string name="dashboard_period_status">Status Miesiączki</string>
+    <string name="dashboard_period_active">Miesiączka Aktywna</string>
+    <string name="dashboard_follicular_phase">Faza Folikularna</string>
+    <string name="dashboard_no_data">Brak Danych</string>
+    <string name="dashboard_today_steps">Dzisiejsze Kroki</string>
+    <string name="dashboard_goal_format">Cel: %d</string>
+    <string name="dashboard_cycle_day_format">Dzień %1$d</string>
+    <string name="dashboard_record_period">Zapisz Miesiączkę</string>
+    <string name="dashboard_record_steps">Zapisz Kroki</string>
+    <string name="dashboard_record_health">Analiza Zdrowia</string>
+    <string name="gender_welcome">Witaj w TianshangHealth</string>
+    <string name="gender_instruction">Wybierz swoją płeć dla spersonalizowanego śledzenia zdrowia</string>
+    <string name="gender_male">Mężczyzna</string>
+    <string name="gender_male_desc">Ukrywa funkcje śledzenia miesiączki</string>
+    <string name="gender_female">Kobieta</string>
+    <string name="gender_female_desc">Pokazuje wszystkie funkcje, w tym śledzenie miesiączki</string>
+    <string name="gender_other">Inne</string>
+    <string name="gender_other_desc">Pokazuje wszystkie funkcje</string>
+    <string name="gender_footnote">Możesz to zmienić później w Ustawieniach</string>
+    <string name="gender_setting_title">Płeć</string>
+    <string name="gender_setting_description">Zmień swoją płeć, aby dostosować moduły funkcji</string>
+    <string name="select_gender">Wybierz Płeć</string>
+    <string name="app_lock_health_data_protected">Twoje dane zdrowotne są chronione</string>
+    <string name="app_lock_set_password_title">Ustaw Hasło</string>
+    <string name="app_lock_password_label">Hasło</string>
+    <string name="app_lock_confirm_password_label">Potwierdź Hasło</string>
+    <string name="app_lock_enter_password_title">Wprowadź Hasło</string>
+    <string name="app_lock_use_biometric">Użyj Biometrii</string>
+    <string name="terms_privacy_title">Warunki Usługi i Polityka Prywatności</string>
+    <string name="terms_service_title">Warunki Usługi</string>
+    <string name="privacy_policy_title">Polityka Prywatności</string>
+    <string name="terms_service_declaration">1. Deklaracja Usługi\n\nTianshangHealth to kompleksowa aplikacja do śledzenia zdrowia, która priorytetowo traktuje prywatność użytkownika i bezpieczeństwo danych. Wszystkie dane są przechowywane lokalnie na urządzeniu z silnym szyfrowaniem.\n\n2. Prywatność Danych\n\nNie zbieramy, nie przesyłamy ani nie udostępniamy żadnych Twoich osobistych danych zdrowotnych. Aplikacja działa całkowicie offline, bez uprawnień sieciowych.\n\n3. Odpowiedzialność Użytkownika\n\nJesteś odpowiedzialny za dokładność wprowadzanych danych zdrowotnych. Prognozy i analizy są dostarczane wyłącznie w celach informacyjnych i nie stanowią porady medycznej.\n\n4. Bezpieczeństwo Danych\n\nTwoje dane są chronione szyfrowaniem SQLCipher AES-256. Klucz szyfrowania jest zarządzany przez Android Keystore dla bezpieczeństwa na poziomie sprzętowym.</string>
+    <string name="privacy_policy_body">1. Podstawowa Zasada: Lokalizacja Danych\n\nWszystkie Twoje dane zdrowotne, w tym cykle miesiączkowe, objawy i inne wskaźniki zdrowia, są przechowywane wyłącznie w zaszyfrowanej bazie danych na Twoim urządzeniu.\n\n2. Zbierane Informacje\n\nPrzetwarzamy tylko informacje, które ręcznie wprowadzasz do aplikacji. Nie następuje automatyczne zbieranie danych.\n\n3. Szyfrowanie Danych\n\nWszystkie wrażliwe dane są szyfrowane przy użyciu SQLCipher z szyfrowaniem AES-256. Klucz szyfrowania jest bezpiecznie przechowywany w Android Keystore.\n\n4. Brak Dostępu Stron Trzecich\n\nNie korzystamy z żadnych usług analitycznych, reklamowych ani śledzących stron trzecich. Twoje dane nigdy nie opuszczają Twojego urządzenia.\n\n5. Eksport Danych\n\nMożesz w każdej chwili wyeksportować swoje dane w standardowych formatach (CSV, zaszyfrowana kopia zapasowa). Masz pełną kontrolę nad swoimi danymi.\n\n6. Usuwanie Danych\n\nMożesz w każdej chwili usunąć dowolne lub wszystkie swoje dane. Usunięte dane są trwale usuwane z urządzenia.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Nieznany błąd</string>
+    <string name="error_failed_add_record">Nie udało się dodać rekordu</string>
+    <string name="error_failed_update_record">Nie udało się zaktualizować rekordu</string>
+    <string name="error_failed_delete_record">Nie udało się usunąć rekordu</string>
+    <string name="error_failed_record">Nie udało się zapisać</string>
+    <string name="error_failed_set_password">Nie udało się ustawić hasła</string>
+    <string name="error_password_not_set">Hasło nie ustawione</string>
+    <string name="error_incorrect_password">Nieprawidłowe hasło</string>
+    <string name="error_verification_failed">Weryfikacja nieudana</string>
+    <string name="error_failed_load_settings">Nie udało się załadować ustawień</string>
+    <string name="error_failed_update_settings">Nie udało się zaktualizować ustawień</string>
+    <string name="error_failed_save_gender">Nie udało się zapisać płci</string>
+    <string name="error_failed_update_goal">Nie udało się zaktualizować celu</string>
+    <string name="error_failed_restore">Nie udało się przywrócić rekordu</string>
+    <string name="error_failed_to_delete">Nie udało się usunąć rekordu</string>
+    <string name="error_failed_empty_bin">Nie udało się opróżnić kosza</string>
+    <string name="loading">Ładowanie...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Przypomnienie o Miesiączce</string>
+    <string name="notification_channel_period_desc">Przypomnienia o śledzeniu miesiączki</string>
+    <string name="notification_period_title">Przypomnienie o Śledzeniu Miesiączki</string>
+    <string name="notification_period_body">Nie zapomnij zapisać danych o miesiączce!</string>
+    <string name="notification_channel_ovulation">Przypomnienie o Owulacji</string>
+    <string name="notification_channel_ovulation_desc">Przypomnienia o śledzeniu owulacji</string>
+    <string name="notification_ovulation_title">Okno Owulacyjne się Zbliża</string>
+    <string name="notification_ovulation_body">Twoje okno płodności nadchodzi!</string>
+    <string name="notification_channel_pms">Przypomnienie o PMS</string>
+    <string name="notification_channel_pms_desc">Przypomnienia o objawach PMS</string>
+    <string name="notification_pms_title">Spodziewane Objawy PMS</string>
+    <string name="notification_pms_body">Objawy PMS mogą rozpocząć się za kilka dni. Uważaj na siebie!</string>
+    <string name="notification_channel_steps">Licznik Kroków</string>
+    <string name="notification_channel_steps_desc">Powiadomienie usługi licznika kroków</string>
+    <string name="notification_steps_body">Dzisiejsze kroki: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Panel</string>
+    <string name="nav_period">Miesiączka</string>
+    <string name="nav_fitness">Kondycja</string>
+    <string name="nav_analysis">Analiza</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Data Rozpoczęcia,Data Zakończenia,Poziom Obfitości,Poziom Bólu,Notatki</string>
+    <string name="backup_exported_success">Kopia zapasowa wyeksportowana pomyślnie</string>
+    <string name="import_success_format">Pomyślnie zaimportowano %d rekordów</string>
+    <string name="csv_exported_success">CSV wyeksportowany pomyślnie</string>
+    <string name="csv_export_failed">Eksport CSV nieudany</string>
+    <string name="password_export_title">Szyfruj Kopię Zapasową</string>
+    <string name="password_import_title">Odszyfruj Kopię Zapasową</string>
+    <string name="password_export_desc">Wprowadź hasło do zaszyfrowania pliku kopii zapasowej.</string>
+    <string name="password_import_desc">Wprowadź hasło użyte do zaszyfrowania tego pliku kopii zapasowej.</string>
+    <string name="password_label">Hasło</string>
+    <string name="proceed">Kontynuuj</string>
+    <string name="password_short_error">Hasło za krótkie</string>
+    <string name="password_mismatch_error">Hasła nie są zgodne</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Miesiączka Aktywna</string>
+    <string name="insight_follicular_phase">Faza Folikularna</string>
+    <string name="insight_luteal_phase">Faza Lutealna</string>
+    <string name="insight_cycle_day">Dzień Cyklu %d</string>
+    <string name="insight_steps_stable_title">Stabilna Aktywność w Cyklu</string>
+    <string name="insight_steps_stable_desc">Liczba kroków pozostaje stała we wszystkich fazach cyklu, utrzymujesz dobre nawyki ćwiczeń.</string>
+    <string name="insight_mood_drop_title">Spadek Nastroju w Fazie Lutealnej</string>
+    <string name="insight_mood_drop_desc">Średni nastrój jest niższy w fazie lutealnej, rozważ zarządzanie nastrojem</string>
+    <string name="insight_mood_rise_title">Lepszy Nastrój w Fazie Lutealnej</string>
+    <string name="insight_mood_rise_desc">Średni nastrój jest wyższy w fazie lutealnej, świetnie sobie radzisz</string>
+    <string name="insight_sleep_drop_title">Jakość Snu Spada w Fazie Lutealnej</string>
+    <string name="insight_sleep_drop_desc">Jakość snu spada podczas fazy lutealnej, wypróbuj ćwiczenia relaksacyjne</string>
+    <string name="insight_sleep_rise_title">Lepszy Sen w Fazie Lutealnej</string>
+    <string name="insight_sleep_rise_desc">Jakość snu jest wyższa w fazie lutealnej, kontynuuj dobrą rutynę</string>
+    <string name="insight_stress_period_title">Wyższy Stres Podczas Miesiączki</string>
+    <string name="insight_stress_period_desc">Poziom stresu jest %s punktów wyższy podczas miesiączki, rozważ ograniczenie intensywnych aktywności</string>
+    <string name="insight_mood_today_low_title">Niski Nastrój Dzisiaj</string>
+    <string name="insight_mood_today_low_desc">Twój nastrój jest dzisiaj niski, spróbuj zrobić coś, co lubisz</string>
+    <string name="insight_stress_today_high_title">Wysoki Stres Dzisiaj</string>
+    <string name="insight_stress_today_high_desc">Poziom stresu jest dzisiaj wysoki, spróbuj głębokiego oddychania lub medytacji</string>
+    <string name="insight_sleep_last_night_low_title">Słaby Sen Ostatniej Nocy</string>
+    <string name="insight_sleep_last_night_low_desc">Jakość snu była niska ostatniej nocy, spróbuj położyć się dzisiaj wcześnie</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Aktywność znacznie spada w fazie lutealnej</string>
+    <string name="insight_luteal_increase">Aktywność wzrasta w fazie lutealnej</string>
+    <string name="insight_luteal_rest">Odpoczywaj odpowiednio w fazie lutealnej, zalecane lekkie ćwiczenia jak joga</string>
+    <string name="insight_luteal_nutrition">Świetny wzrost aktywności, pamiętaj o utrzymaniu odżywiania</string>
+    <string name="insight_luteal_activity_low_title">Niższa Aktywność w Fazie Lutealnej</string>
+    <string name="insight_luteal_activity_low_desc">Kroki w fazie lutealnej spadły o %d%% w porównaniu do fazy folikularnej. Zalecana lekka aktywność jak spacery.</string>
+    <string name="insight_luteal_activity_high_title">Wyższa Aktywność w Fazie Lutealnej</string>
+    <string name="insight_luteal_activity_high_desc">Kroki w fazie lutealnej wzrosły o %d%% w porównaniu do fazy folikularnej. Pamiętaj o odpoczynku i utrzymaniu odżywiania.</string>
+    <string name="insight_activity_stable_title">Stała Aktywność w Cyklu</string>
+    <string name="insight_activity_stable_desc">Liczba kroków pozostaje stabilna we wszystkich fazach cyklu. Utrzymujesz dobre nawyki ćwiczeń.</string>
+    <string name="insight_mood_luteal_drop_title">Spadek Nastroju w Fazie Lutealnej</string>
+    <string name="insight_mood_luteal_drop_desc">Średni nastrój jest %s punktów niższy w fazie lutealnej. Rozważ zarządzanie nastrojem.</string>
+    <string name="insight_mood_luteal_rise_title">Lepszy Nastrój w Fazie Lutealnej</string>
+    <string name="insight_mood_luteal_rise_desc">Średni nastrój jest %s punktów wyższy w fazie lutealnej. Świetnie sobie radzisz!</string>
+    <string name="insight_sleep_luteal_drop_title">Jakość Snu Spada w Fazie Lutealnej</string>
+    <string name="insight_sleep_luteal_drop_desc">Jakość snu spadła o %s punktów w fazie lutealnej. Wypróbuj ćwiczenia relaksacyjne przed snem.</string>
+    <string name="insight_sleep_luteal_rise_title">Lepszy Sen w Fazie Lutealnej</string>
+    <string name="insight_sleep_luteal_rise_desc">Jakość snu jest %s punktów wyższa w fazie lutealnej. Kontynuuj dobrą rutynę.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Niewystarczająca ilość danych do prognozy</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Odśwież</string>
+    <string name="recycle_bin_empty_title_short">Opróżnij Kosz</string>
+    <string name="recycle_bin_period_format">Miesiączka: %1$s</string>
+    <string name="recycle_bin_to_format">do %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Ustaw Hasło</string>
+    <string name="app_lock_confirm_password">Potwierdź Hasło</string>
+    <string name="app_lock_set_password_btn">Ustaw Hasło</string>
+    <string name="app_lock_unlock_btn">Odblokuj</string>
+    <string name="app_lock_enter_password">Wprowadź Hasło</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Liczba Rekordów</string>
+    <string name="stats_total_cycles">Liczba Cykli</string>
+    <string name="stats_avg_cycle">Średni Cykl</string>
+    <string name="stats_avg_period">Średnia Miesiączka</string>
+    <string name="stats_regularity_text">Regularność</string>
+    <string name="stats_cycle_num">Cykl %d</string>
+    <string name="stats_days_suffix">%d dni</string>
+    <string name="stats_avg_format">Średnio: %d dni</string>
+    <string name="stats_no_data">Brak danych</string>
+    <string name="weight_format">Waga: %.1f kg</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f cm</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Kopie zapasowe są szyfrowane AES-256-GCM przy użyciu Twojego hasła.</string>
+    <string name="steps_of_goal">z celu %d</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">H: %1$d\u00B0 S: %2$d%% L: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Niebieski</string>
+    <string name="color_green">Zielony</string>
+    <string name="color_purple">Fioletowy</string>
+    <string name="color_orange">Pomarańczowy</string>
+    <string name="color_teal">Morski</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Dotknij, aby zobaczyć szczegóły</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Bieganie</string>
+    <string name="exercise_walking">Chodzenie</string>
+    <string name="exercise_cycling">Jazda na Rowerze</string>
+    <string name="exercise_swimming">Pływanie</string>
+    <string name="exercise_yoga">Joga</string>
+    <string name="exercise_strength">Trening Siłowy</string>
+    <string name="exercise_dance">Taniec</string>
+    <string name="exercise_pilates">Pilates</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Koszykówka</string>
+    <string name="exercise_football">Piłka Nożna</string>
+    <string name="exercise_tennis">Tenis</string>
+    <string name="exercise_badminton">Badminton</string>
+    <string name="exercise_table_tennis">Tenis Stołowy</string>
+    <string name="exercise_skipping">Skakanka</string>
+    <string name="exercise_hiking">Wędrówki</string>
+    <string name="exercise_other">Inne</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">W Tym Tygodniu</string>
+    <string name="fitness_add_workout">Dodaj Trening</string>
+    <string name="fitness_select_type">Wybierz Rodzaj Ćwiczenia</string>
+    <string name="fitness_duration_minutes">Czas trwania (minuty)</string>
+    <string name="fitness_calories_label">Kalorie</string>
+    <string name="fitness_distance_km">Dystans (km)</string>
+    <string name="fitness_today_workouts">Dzisiejsze Treningi</string>
+    <string name="fitness_recent_workouts">Ostatnie Treningi</string>
+    <string name="fitness_empty">Brak zapisanych treningów.\nDotknij +, aby dodać pierwszy trening.</string>
+    <string name="fitness_minutes_format">%d min</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">Czas</string>
+    <string name="fitness_calories">Kalorie</string>
+    <string name="fitness_workouts">Treningi</string>
+    <string name="fitness_km_unit">km</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Wyłącz Optymalizację Baterii</string>
+    <string name="steps_battery_desc">Optymalizacja baterii może zatrzymać usługę liczenia kroków i wpłynąć na śledzenie kroków.</string>
+    <string name="steps_battery_action">Przejdź do Ustawień</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">Ustawienia %s</string>
+    <string name="steps_auto_start_settings">Ustawienia Auto Startu</string>
+    <string name="steps_battery_settings">Ustawienia Baterii</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Podsumowanie Energii</string>
+    <string name="energy_today">Dziś</string>
+    <string name="energy_this_week">W Tym Tygodniu</string>
+    <string name="energy_steps">Kroki</string>
+    <string name="energy_workouts">Treningi</string>
+    <string name="energy_total">Łącznie</string>
+    <string name="energy_workouts_summary">%1$d trening\u00F3w \u00B7 %2$d min</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Pomiary Ciała</string>
+    <string name="body_metrics_height">Wzrost (cm)</string>
+    <string name="body_metrics_weight">Waga (kg)</string>
+    <string name="body_metrics_saved">Pomiary ciała zapisane</string>
+    <string name="body_metrics_height_error">Wprowadź prawidłowy wzrost (80-250cm)</string>
+    <string name="body_metrics_weight_error">Wprowadź prawidłową wagę (15-350kg)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Odżywianie</string>
+    <string name="nav_nutrition">Odżywianie</string>
+    <string name="nutrition_add_meal">Dodaj Posiłek</string>
+    <string name="nutrition_meal_type">Rodzaj Posiłku</string>
+    <string name="nutrition_food_name">Nazwa Produktu</string>
+    <string name="nutrition_calories">Kalorie</string>
+    <string name="nutrition_protein">Białko (g)</string>
+    <string name="nutrition_carbs">Węglowodany (g)</string>
+    <string name="nutrition_fat">Tłuszcz (g)</string>
+    <string name="nutrition_serving_size">Wielkość Porcji</string>
+    <string name="nutrition_macros">Makroskładniki</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Dzienne Odżywianie</string>
+    <string name="nutrition_today_meals">Dzisiejsze Posiłki</string>
+    <string name="nutrition_meals">posiłki</string>
+    <string name="nutrition_weekly_trend">Trend Tygodniowy</string>
+    <string name="nutrition_empty">Brak zapisanych posiłków.\nDotknij +, aby dodać pierwszy posiłek.</string>
+    <string name="nutrition_error_food_name">Wprowadź nazwę produktu</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Śniadanie</string>
+    <string name="meal_lunch">Obiad</string>
+    <string name="meal_dinner">Kolacja</string>
+    <string name="meal_snack">Przekąska</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Woda</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Niższe Spożycie Kalorii w Fazie Lutealnej</string>
+    <string name="insight_nutrition_luteal_low_desc">Kalorie spadły o %.0f kcal w fazie lutealnej. Staraj się utrzymać zbilansowaną dietę.</string>
+    <string name="insight_nutrition_luteal_high_title">Wyższe Spożycie Kalorii w Fazie Lutealnej</string>
+    <string name="insight_nutrition_luteal_high_desc">Kalorie wzrosły o %.0f kcal w fazie lutealnej. To normalne, słuchaj swojego ciała.</string>
+    <string name="insight_nutrition_stable_title">Stabilne Spożycie Kalorii</string>
+    <string name="insight_nutrition_stable_desc">Twoje spożycie kalorii pozostaje stabilne we wszystkich fazach cyklu. Świetna robota!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">Zapomniałeś PIN?</string>
+    <string name="app_lock_change_pin">Zmień PIN</string>
+    <string name="app_lock_current_pin">Aktualny PIN</string>
+    <string name="app_lock_new_pin_label">Nowy PIN</string>
+    <string name="app_lock_recovery_title">Resetuj Blokadę Aplikacji</string>
+    <string name="app_lock_recovery_desc">Zweryfikuj swoją tożsamość, aby zresetować blokadę aplikacji</string>
+    <string name="lock_30s">30 sekund</string>
+    <string name="lock_1min">1 minuta</string>
+    <string name="lock_5min">5 minut</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Sen</string>
+    <string name="sleep_title">Śledzenie Snu</string>
+    <string name="sleep_record_title">Zapisz Sen</string>
+    <string name="sleep_hours">Godziny Snu</string>
+    <string name="sleep_deep_hours">Sen Głęboki</string>
+    <string name="sleep_quality">Jakość Snu</string>
+    <string name="sleep_quality_format">%d gwiazdka</string>
+    <string name="sleep_history">Historia Snu</string>
+    <string name="sleep_no_data">Brak danych o śnie</string>
+    <string name="sleep_today_status">Dzisiejszy Sen</string>
+    <string name="sleep_hours_format">%s godzin</string>
+    <string name="sleep_deep_hours_format">Głęboki: %s godzin</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Miesiączka</string>
+    <string name="phase_follicular">Folikularna</string>
+    <string name="phase_ovulatory">Owulacyjna</string>
+    <string name="phase_luteal">Lutealna</string>
+    <string name="nutrition_cycle_guidance">Wskazówki Żywieniowe w Cyklu</string>
+    <string name="nutrition_focus_nutrients">Kluczowe Składniki</string>
+    <string name="nutrition_recommended_foods">Zalecane Produkty</string>
+    <string name="nutrition_limit_foods">Ogranicz</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d dzień</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+        <item quantity="other">%d dnia</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Wprowadź poprawny czas trwania</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Wyczyść</string>
+    <string name="edit">Edytuj</string>
+    <string name="exact_date_mode">Dokładna data</string>
+    <string name="profile_dob_not_set">Nie ustawiono</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Tylko rok</string>
+    <string name="year_picker_title">Wybierz rok urodzenia</string>
+
+
+    <!-- Analysis section strings -->
+    <string name="analysis_no_data">Za mało danych. Najpierw zapisz dane zdrowotne.</string>
+    <string name="export_report">Eksportuj raport PDF</string>
+    <string name="insufficient_data">Niewystarczające dane</string>
+
+    <!-- Nutrition analysis -->
+    <string name="nutrition_energy_balance">Bilans Energetyczny</string>
+    <string name="nutrition_resting_energy">Spoczynek</string>
+    <string name="nutrition_exercise_energy">Ćwiczenia</string>
+    <string name="nutrition_total_expenditure">Całkowite Spalanie</string>
+    <string name="nutrition_calorie_balance">Bilans</string>
+
+    <!-- Sleep timer -->
+    <string name="sleep_auto_calculated">Auto: %d godz.</string>
+    <string name="sleep_bedtime_btn">Pora snu</string>
+    <string name="sleep_elapsed">%dg %dm minęło</string>
+    <string name="sleep_sleeping">Spanie...</string>
+    <string name="sleep_waketime_btn">Obudź się</string>
+
+    <!-- Cross-dimension patterns -->
+    <string name="pattern_exhaustion_title">Wykryto Wyczerpanie Fizyczne</string>
+    <string name="pattern_exhaustion_desc">Mało snu, wysoki stres i niski nastrój sugerują ryzyko wypalenia. Rozważ dni odpoczynku.</string>
+    <string name="pattern_overtraining_title">Ryzyko Przetrenowania</string>
+    <string name="pattern_overtraining_desc">Duża objętość ćwiczeń z deficytem kalorii i małą ilością snu. Uważaj na kontuzje.</string>
+    <string name="pattern_sedentary_mood_title">Siedzący Tryb + Niski Nastrój</string>
+    <string name="pattern_sedentary_mood_desc">Bardzo niska liczba kroków połączona z niskim nastrojem. Krótki spacer może pomóc.</string>
+    <string name="pattern_dehydration_stress_title">Odwodnienie + Stres</string>
+    <string name="pattern_dehydration_stress_desc">Niskie spożycie wody i wysoki poziom stresu. Nawodnienie wspiera odporność.</string>
+    <string name="pattern_positive_loop_title">Pozytywna Pętla Zdrowotna</string>
+    <string name="pattern_positive_loop_desc">Dobry sen, wysoka aktywność i pozytywny nastrój wzajemnie się wzmacniają. Tak trzymaj!</string>
+
+    <!-- Analysis section labels -->
+    <string name="analysis_section_suggestions">Inteligentne Sugestie</string>
+    <string name="analysis_section_nutrition">Analiza Żywienia</string>
+    <string name="analysis_section_calorie_balance">Bilans Kalorii</string>
+    <string name="analysis_section_exercise">Analiza Ćwiczeń</string>
+    <string name="analysis_section_sleep">Analiza Snu</string>
+    <string name="analysis_section_phase">Korelacja Cyklu</string>
+    <string name="analysis_avg_daily_calories">Śr. Dziennie</string>
+    <string name="analysis_protein">Białko</string>
+    <string name="analysis_carbs">Węglowodany</string>
+    <string name="analysis_fat">Tłuszcz</string>
+    <string name="analysis_nutrient_ratio">Stosunek Składników</string>
+    <string name="analysis_avg_water_format">Śr. Woda: %.0f ml</string>
+    <string name="analysis_avg_intake">Śr. Spożycie</string>
+    <string name="analysis_exercise_burned">Spalone Ćwiczeniami</string>
+    <string name="analysis_weekly_total_minutes">Tygodniowa Suma</string>
+    <string name="analysis_daily_avg_minutes">Śr. Dziennie</string>
+    <string name="analysis_calories_burned">Spalone Kalorie</string>
+    <string name="analysis_exercise_type_distribution">Rozkład Rodzajów Ćwiczeń</string>
+    <string name="analysis_avg_sleep_hours">Śr. Czas</string>
+    <string name="analysis_quality_score">Wynik Jakości</string>
+    <string name="analysis_daily_sleep_hours">Dzienne Godziny Snu</string>
+    <string name="analysis_mood">Nastrój</string>
+    <string name="analysis_stress">Stres</string>
+    <string name="analysis_daily_net_calories">Dzienne Netto Kalorie (z energią spoczynkową)</string>
+
+    <!-- PDF Report -->
+    <string name="report_title">Raport Zdrowotny</string>
+    <string name="report_description">Wygeneruj kompleksowy raport zdrowotny na podstawie zapisanych danych. Raport jest tworzony lokalnie na urządzeniu i można go udostępnić jako PDF.</string>
+    <string name="report_period">Okres raportu: Ostatnie 30 Dni</string>
+    <string name="report_includes">Zawiera: Dane o miesiączce, kroki, sen, odżywianie i wgląd w zdrowie</string>
+    <string name="report_generate">Generuj Raport</string>
+    <string name="report_generating">Generowanie raportu PDF...</string>
+    <string name="report_success">Raport wygenerowany pomyślnie!</string>
+    <string name="report_share">Udostępnij Raport Zdrowotny</string>
+    <string name="report_share_button">Udostępnij</string>
+    <string name="report_generate_new">Generuj Nowy</string>
+    <string name="report_error">Błąd: %s</string>
+    <string name="report_privacy_title">Informacja o Prywatności</string>
+    <string name="report_privacy_body">Wszystkie raporty są generowane lokalnie na Twoim urządzeniu. Żadne dane zdrowotne nie są przesyłane na serwer ani do usługi w chmurze. Twoje dane pozostają pod Twoją pełną kontrolą.</string>
+
+    <!-- Nutrition suggestions -->
+    <string name="suggestion_low_calorie_title">Niskie Spożycie Kalorii</string>
+    <string name="suggestion_low_calorie_desc">Dzienne spożycie %.0f kcal jest poniżej zalecanych 1800 kcal. Rozważ dodanie węglowodanów złożonych i zdrowych tłuszczów.</string>
+    <string name="suggestion_high_calorie_title">Wysokie Spożycie Kalorii</string>
+    <string name="suggestion_high_calorie_desc">Dzienne spożycie %.0f kcal przekracza 2500 kcal. Rozważ ograniczenie przekąsek i zwiększenie warzyw.</string>
+    <string name="suggestion_low_protein_title">Niskie Spożycie Białka</string>
+    <string name="suggestion_low_protein_desc">Dzienne białko %.0f g jest poniżej zalecanych 50 g. Rozważ jajka, ryby i tofu.</string>
+    <string name="suggestion_low_water_title">Niskie Spożycie Wody</string>
+    <string name="suggestion_low_water_desc">Dzienna woda %.0f ml jest poniżej zalecenia. Celuj w 1500-2000 ml dziennie.</string>
+    <string name="suggestion_high_surplus_title">Wysoka Nadwyżka Kalorii</string>
+    <string name="suggestion_high_surplus_desc">Dzienna nadwyżka %.0f kcal. Jeśli celem jest utrata wagi, rozważ zwiększenie ćwiczeń.</string>
+    <string name="suggestion_high_deficit_title">Duży Deficyt Kalorii</string>
+    <string name="suggestion_high_deficit_desc">Dzienny deficyt %.0f kcal. Upewnij się, że pokrywasz swoje podstawowe potrzeby metaboliczne.</string>
+    <string name="suggestion_balanced_title">Zrównoważone Kalorie</string>
+    <string name="suggestion_balanced_desc">Spożycie i wydatek są dobrze zrównoważone. Tak trzymaj!</string>
+    <string name="suggestion_low_exercise_title">Mało Ćwiczeń</string>
+    <string name="suggestion_low_exercise_desc">Tygodniowe ćwiczenia %d minut są poniżej zalecenia WHO wynoszącego 150 minut.</string>
+    <string name="suggestion_exercise_met_title">Cel Ćwiczeń Osiągnięty</string>
+    <string name="suggestion_exercise_met_desc">Tygodniowe ćwiczenia %d minut osiągają zalecenie WHO!</string>
+    <string name="suggestion_exercise_variety_title">Potrzebna Różnorodność Ćwiczeń</string>
+    <string name="suggestion_exercise_variety_desc">Wypróbuj różne rodzaje ćwiczeń (cardio + siła + elastyczność) dla ogólnej kondycji.</string>
+    <string name="suggestion_low_sleep_title">Mało Snu</string>
+    <string name="suggestion_low_sleep_desc">Dzienny sen %.1f godzin jest poniżej zalecanych 7-9 godzin. Spróbuj regularnego harmonogramu.</string>
+    <string name="suggestion_high_sleep_title">Nadmierny Sen</string>
+    <string name="suggestion_high_sleep_desc">Dzienny sen %.1f godzin przekracza 9 godzin. Długi sen może wskazywać na zmęczenie.</string>
+    <string name="suggestion_low_deep_sleep_title">Mało Snu Głębokiego</string>
+    <string name="suggestion_low_deep_sleep_desc">Udział snu głębokiego tylko %.0f%%. Unikaj kofeiny przed snem i utrzymuj ciemne pomieszczenie.</string>
+    <string name="suggestion_low_sleep_quality_title">Niska Jakość Snu</string>
+    <string name="suggestion_low_sleep_quality_desc">Wynik jakości snu %.1f/5. Wypróbuj medytację lub ciepłą kąpiel przed snem.</string>
+    <string name="suggestion_luteal_sleep_title">Zmiana Snu w Fazie Lutealnej</string>
+    <string name="suggestion_luteal_sleep_desc">Sen w fazie lutealnej zmniejszył się o %.1f godz. w porównaniu do folikularnej. Normalna zmiana hormonalna.</string>
+
+    <!-- Error messages -->
+    <string name="error_onboarding_required">Najpierw ukończ konfigurację użytkownika</string>
+    <string name="error_load_failed">Ładowanie nie powiodło się</string>
+
+    <!-- Cycle nutrition advice -->
+    <string name="nutrition_menstrual_advice">Skoncentruj się na produktach bogatych w żelazo, aby uzupełnić utratę krwi. Magnez pomaga zmniejszyć skurcze. Pozostań dobrze nawodniony.</string>
+    <string name="nutrition_menstrual_nutrients">Żelazo · Magnez · Omega-3 · Witamina B12</string>
+    <string name="nutrition_menstrual_foods">Zielone Warzywa Liściaste · Czerwone Mięso · Tłusta Ryba · Gorzka Czekolada · Orzechy</string>
+    <string name="nutrition_menstrual_limit">Słone Przekąski · Kofeina · Nabiał</string>
+    <string name="nutrition_follicular_advice">Twój metabolizm energetyczny wzrasta. Świetny czas na lekkie, bogate w składniki odżywcze posiłki. Wspieraj zdrowie jelit probiotykami.</string>
+    <string name="nutrition_follicular_nutrients">Błonnik · Witamina C · Probiotyki · Kwas Folowy</string>
+    <string name="nutrition_follicular_foods">Jagody · Owoce Cytrusowe · Jogurt · Płatki Owsiane · Brokuły</string>
+    <string name="nutrition_follicular_limit">Przetworzona Żywność · Nadmiar Cukru</string>
+    <string name="nutrition_ovulatory_advice">Estrogen osiąga szczyt w tej fazie. Wspomóż detoksykację wątroby żywnością bogatą w antyoksydanty. Zalecana dieta przeciwzapalna.</string>
+    <string name="nutrition_ovulatory_nutrients">Antyoksydanty · Witamina C · Cynk · Witamina E</string>
+    <string name="nutrition_ovulatory_foods">Papryka · Nasiona Słonecznika · Chudy Drób · Awokado · Zielona Herbata</string>
+    <string name="nutrition_ovulatory_limit">Alkohol · Smażone Potrawy</string>
+    <string name="nutrition_luteal_advice">Progesteron wzrasta, co może zwiększyć apetyt. Węglowodany złożone pomagają zwiększyć serotoninę. Ogranicz kofeinę i sól, aby złagodzić objawy PMS.</string>
+    <string name="nutrition_luteal_nutrients">Witaminy B · Węglowodany Złożone · Magnez · Wapń · Witamina B6</string>
+    <string name="nutrition_luteal_foods">Pełne Ziarna · Banany · Zielone Warzywa Liściaste · Rośliny Strączkowe · Gorzka Czekolada</string>
+    <string name="nutrition_luteal_limit">Cukier · Kofeina · Słone Potrawy</string>
+
+    <!-- Sleep trend -->
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Godziny Snu   ▐ Wynik Jakości</string>
+    <string name="sleep_luteal_worse">Jakość Snu w Fazie Lutealnej Pogorszona</string>
+    <string name="sleep_luteal_better">Jakość Snu w Fazie Lutealnej Poprawiona</string>
+    <string name="sleep_luteal_comparison_worse">Lutealna śr. sen %.1fg, folikularna %.1fg, spadek o %.1fg</string>
+    <string name="sleep_luteal_comparison_better">Lutealna śr. sen %.1fg, folikularna %.1fg, poprawa o %.1fg</string>
+
+    <!-- PDF report -->
+    <string name="pdf_health_report">Raport Zdrowotny</string>
+    <string name="pdf_generated">Wygenerowano: %s</string>
+    <string name="pdf_user_info">Użytkownik: %1$s | Płeć: %2$s</string>
+    <string name="pdf_report_period">Okres raportu: %s</string>
+    <string name="pdf_period_summary">Podsumowanie Miesiączki</string>
+    <string name="pdf_no_period_records">Brak danych o miesiączce w wybranym okresie.</string>
+    <string name="pdf_total_cycles">Liczba Cykli: %d</string>
+    <string name="pdf_avg_cycle_length">Średnia Długość Cyklu: %d dni</string>
+    <string name="pdf_avg_pain">Średni Poziom Bólu: %.1f / 3</string>
+    <string name="pdf_recent_records">Ostatnie Rekordy</string>
+    <string name="pdf_start_date">Data Rozpoczęcia</string>
+    <string name="pdf_end_date">Data Zakończenia</string>
+    <string name="pdf_flow">Obfitość</string>
+    <string name="pdf_pain">Ból</string>
+    <string name="pdf_ongoing">W Trakcie</string>
+    <string name="pdf_flow_light">Lekka</string>
+    <string name="pdf_flow_medium">Umiarkowana</string>
+    <string name="pdf_flow_heavy">Obfita</string>
+    <string name="pdf_pain_none">Brak</string>
+    <string name="pdf_pain_mild">Łagodny</string>
+    <string name="pdf_pain_moderate">Umiarkowany</string>
+    <string name="pdf_pain_severe">Silny</string>
+    <string name="pdf_activity_summary">Podsumowanie Aktywności</string>
+    <string name="pdf_no_step_data">Brak danych o krokach.</string>
+    <string name="pdf_avg_daily_steps">Średnia Dziennych Kroków: %,d</string>
+    <string name="pdf_total_steps">Łączna Liczba Kroków: %,d</string>
+    <string name="pdf_max_steps">Maks. Dzienna Liczba Kroków: %,d</string>
+    <string name="pdf_total_exercise">Łączne Ćwiczenia: %d minut</string>
+    <string name="pdf_sleep_summary">Podsumowanie Snu</string>
+    <string name="pdf_no_sleep_data">Brak danych o śnie.</string>
+    <string name="pdf_avg_sleep">Średnia Długość Snu: %.1f godzin</string>
+    <string name="pdf_avg_sleep_quality">Średnia Jakość Snu: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Średni Sen Głęboki: %.1f godzin</string>
+    <string name="pdf_nutrition_summary">Podsumowanie Żywienia</string>
+    <string name="pdf_no_nutrition_data">Brak danych o żywieniu.</string>
+    <string name="pdf_avg_calories">Średnia Dzienna Liczba Kalorii: %.0f kcal</string>
+    <string name="pdf_avg_water">Średnie Spożycie Wody: %.0f ml</string>
+    <string name="pdf_avg_protein">Średnie Białko: %.0f g</string>
+    <string name="pdf_footer">Ten raport jest generowany lokalnie na Twoim urządzeniu. Żadne dane nie opuszczają Twojego telefonu.</string>
+    <string name="pdf_page">Strona %d</string>
+    <string name="pdf_app_name">TianshangHealth – Prywatność Przede Wszystkim</string>
+
+    <!-- General -->
+    <string name="previous">Poprzedni</string>
+    <string name="next">Następny</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">Nie udało się wygenerować raportu</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

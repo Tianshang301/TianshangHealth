@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ExpressionBodySyntax:CalorieCalculator.kt$CalorieCalculator$return kcal * KCAL_TO_KJ</ID>
+    <ID>ExpressionBodySyntax:ExerciseType.kt$ExerciseType.Companion$return entries.find { it.value == value } ?: OTHER</ID>
+    <ID>FunctionNaming:AddWorkoutSheet.kt$@OptIn(ExperimentalLayoutApi::class, ExperimentalMaterial3Api::class) @Composable fun AddWorkoutContent( state: AddWorkoutState, onTypeSelected: (ExerciseType) -&gt; Unit, onDurationChanged: (String) -&gt; Unit, onCaloriesChanged: (String) -&gt; Unit, onDistanceChanged: (String) -&gt; Unit, onNotesChanged: (String) -&gt; Unit, onSave: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:CycleFitnessRecommendationCard.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun CycleFitnessRecommendationCard( recommendation: CycleFitnessRecommendation )</ID>
+    <ID>ImplicitDefaultLocale:CalorieCalculator.kt$CalorieCalculator$String.format("%.0f", kcal)</ID>
+    <ID>ImplicitDefaultLocale:CalorieCalculator.kt$CalorieCalculator$String.format("%.0f", kcalToKj(kcal))</ID>
+    <ID>ImplicitDefaultLocale:FitnessViewModel.kt$FitnessViewModel$String.format("%.0f", kcal)</ID>
+    <ID>ImplicitDefaultLocale:FitnessViewModel.kt$FitnessViewModel$String.format("%.1f", it)</ID>
+    <ID>LongMethod:CycleFitnessRecommendationCard.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun CycleFitnessRecommendationCard( recommendation: CycleFitnessRecommendation )</ID>
+    <ID>LongParameterList:AddWorkoutSheet.kt$( state: AddWorkoutState, onTypeSelected: (ExerciseType) -&gt; Unit, onDurationChanged: (String) -&gt; Unit, onCaloriesChanged: (String) -&gt; Unit, onDistanceChanged: (String) -&gt; Unit, onNotesChanged: (String) -&gt; Unit, onSave: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongParameterList:FitnessRepository.kt$FitnessRepository$( exerciseType: String, durationMinutes: Int, caloriesBurned: Float? = null, distanceMeters: Float? = null, averageHeartRate: Int? = null, intensity: String? = null, notes: String? = null, date: String = LocalDate.now().toString() )</ID>
+    <ID>MagicNumber:CalorieCalculator.kt$CalorieCalculator$100_000f</ID>
+    <ID>MagicNumber:FitnessRepository.kt$FitnessRepository$30</ID>
+    <ID>MagicNumber:FitnessViewModel.kt$FitnessViewModel$15f</ID>
+    <ID>MagicNumber:FitnessViewModel.kt$FitnessViewModel$20</ID>
+    <ID>MagicNumber:FitnessViewModel.kt$FitnessViewModel$250f</ID>
+    <ID>MagicNumber:FitnessViewModel.kt$FitnessViewModel$350f</ID>
+    <ID>MagicNumber:FitnessViewModel.kt$FitnessViewModel$80f</ID>
+    <ID>MagicNumber:GetCycleFitnessRecommendationsUseCase.kt$GetCycleFitnessRecommendationsUseCase$3</ID>
+    <ID>MagicNumber:GetCycleFitnessRecommendationsUseCase.kt$GetCycleFitnessRecommendationsUseCase$4</ID>
+    <ID>MaxLineLength:CalorieCalculator.kt$CalorieCalculator$HealthConstants.BMR_WEIGHT_COEFFICIENT * weightKg + HealthConstants.BMR_HEIGHT_COEFFICIENT * heightCm - HealthConstants.BMR_AGE_COEFFICIENT * age + HealthConstants.BMR_MALE_OFFSET</ID>
+    <ID>MaxLineLength:CalorieCalculator.kt$CalorieCalculator$HealthConstants.BMR_WEIGHT_COEFFICIENT * weightKg + HealthConstants.BMR_HEIGHT_COEFFICIENT * heightCm - HealthConstants.BMR_AGE_COEFFICIENT * age - HealthConstants.BMR_FEMALE_OFFSET</ID>
+    <ID>MaximumLineLength:CalorieCalculator.kt$CalorieCalculator$ </ID>
+    <ID>ThrowsCount:FitnessViewModel.kt$FitnessViewModel$private fun loadData()</ID>
+    <ID>TooManyFunctions:FitnessRepository.kt$FitnessRepository</ID>
+    <ID>TooManyFunctions:FitnessViewModel.kt$FitnessViewModel : ViewModel</ID>
+    <ID>UnderscoresInNumericLiterals:FitnessRepositoryTest.kt$FitnessRepositoryTest$100000</ID>
+    <ID>UseCheckOrError:FitnessRepository.kt$FitnessRepository$throw IllegalStateException("No user found. Onboarding must be completed first.")</ID>
+  </CurrentIssues>
+</SmellBaseline>

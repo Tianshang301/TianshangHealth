@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Условия использования</string>
+    <string name="privacy_title">Политика конфиденциальности</string>
+    <string name="accept_terms">Я прочитал и принимаю</string>
+    <string name="app_lock_title">Блокировка приложения</string>
+    <string name="enter_pin">Пароль</string>
+    <string name="unlock">Разблокировать</string>
+    <string name="invalid_pin">Неверный пароль</string>
+    <string name="app_lock_setup_title">Установка пароля блокировки</string>
+    <string name="set_pin">Установить пароль</string>
+    <string name="confirm_pin">Подтвердите пароль</string>
+    <string name="set_password">Установить пароль</string>
+    <string name="pin_empty_error">Пароль не может быть пустым</string>
+    <string name="pin_mismatch_error">Пароли не совпадают</string>
+    <string name="pin_length_error">Пароль должен содержать не менее %d символов</string>
+    <string name="calendar_title">Календарь</string>
+    <string name="current_cycle_day">День %d цикла</string>
+    <string name="days_until_next_period">Следующие через %d дн.</string>
+    <string name="no_period_data">Нет данных о цикле</string>
+    <string name="tap_date_to_record">Нажмите для записи</string>
+    <string name="period">Цикл</string>
+    <string name="predicted_period">Прогнозируемый цикл</string>
+    <string name="ovulation">Овуляция</string>
+    <string name="fertile_window">Фертильное окно</string>
+    <string name="record_title">Запись</string>
+    <string name="start_period">Начало цикла</string>
+    <string name="end_period">Конец цикла</string>
+    <string name="flow_level">Интенсивность</string>
+    <string name="pain_level">Боль</string>
+    <string name="symptoms">Симптомы</string>
+    <string name="sexual_activity">Половой акт</string>
+    <string name="ovulation_test">Тест на овуляцию</string>
+    <string name="cervical_mucus">Шеечная слизь</string>
+    <string name="body_temperature">Температура тела</string>
+    <string name="notes">Заметки</string>
+    <string name="save">Сохранить</string>
+    <string name="analysis_title">Анализ</string>
+    <string name="cycle_statistics">Статистика</string>
+    <string name="avg_cycle_length">Средняя длина цикла</string>
+    <string name="avg_period_length">Средняя длительность</string>
+    <string name="cycle_regularity">Регулярность</string>
+    <string name="total_cycles">Всего циклов</string>
+    <string name="pain_trend">Тенденция боли</string>
+    <string name="symptom_frequency">Частота симптомов</string>
+    <string name="predictions">Прогнозы</string>
+    <string name="reminder_title">Напоминания</string>
+    <string name="period_reminder">Напоминание о цикле</string>
+    <string name="ovulation_reminder">Напоминание об овуляции</string>
+    <string name="pms_reminder">Напоминание о ПМС</string>
+    <string name="profile_title">Профиль</string>
+    <string name="theme_customization">Тема</string>
+    <string name="theme_color">Цвет темы</string>
+    <string name="app_lock">Блокировка</string>
+    <string name="language">Язык</string>
+    <string name="recycle_bin">Корзина</string>
+    <string name="recycle_bin_title">Корзина</string>
+    <string name="backup_restore">Резервное копирование</string>
+    <string name="backup_restore_title">Резервирование и Восстановление</string>
+    <string name="export_backup">Экспорт резервной копии</string>
+    <string name="import_backup">Импорт резервной копии</string>
+    <string name="export_csv">Экспорт CSV</string>
+    <string name="about">О приложении</string>
+    <string name="bmi_title">ИМТ</string>
+    <string name="add_bmi_record">Добавить</string>
+    <string name="height_cm">Рост (см)</string>
+    <string name="weight_kg">Вес (кг)</string>
+    <string name="latest_bmi">Текущий ИМТ</string>
+    <string name="bmi_history">История</string>
+    <string name="dark_mode">Тёмный режим</string>
+    <string name="dark_mode_description">Сменить тему</string>
+    <string name="no_deleted_records">Нет удалённых записей</string>
+    <string name="security_settings">Безопасность</string>
+    <string name="data_security">Безопасность данных</string>
+    <string name="database_encryption">Шифрование базы данных</string>
+    <string name="encrypted">Зашифровано (AES-256)</string>
+    <string name="unencrypted">Не зашифровано</string>
+    <string name="migrate_to_encrypted">Перейти на зашифрованную БД</string>
+    <string name="migration_success">Миграция успешна! База данных теперь зашифрована.</string>
+    <string name="migration_failed">Ошибка миграции: %s. Ваши данные восстановлены.</string>
+    <string name="background_lock_delay">Задержка блокировки</string>
+    <string name="lock_immediately">Немедленно</string>
+    <string name="lock_after_seconds">%d секунд</string>
+    <string name="custom_reminders">Пользовательские напоминания</string>
+    <string name="add_custom_reminder">Добавить напоминание</string>
+    <string name="no_custom_reminders">Нет пользовательских напоминаний</string>
+    <string name="reminder_title_label">Заголовок напоминания</string>
+    <string name="reminder_title_required">Заголовок обязателен</string>
+    <string name="reminder_message_label">Сообщение (необязательно)</string>
+    <string name="reminder_date">Дата напоминания</string>
+    <string name="select_time">Выбрать время</string>
+    <string name="hue">Оттенок</string>
+    <string name="saturation">Насыщенность</string>
+    <string name="lightness">Яркость</string>
+    <string name="apply_color">Применить цвет</string>
+    <string name="custom_color">Пользовательский цвет</string>
+    <string name="color_preview">Предпросмотр цвета</string>
+    <string name="apply">Применить</string>
+    <string name="preset_colors">Цвета по умолчанию</string>
+    <string name="add_symptom">Добавить симптом</string>
+    <string name="symptom_name">Название симптома</string>
+    <string name="symptom_name_required">Название симптома обязательно</string>
+    <string name="prediction_explanation">Адаптивный прогноз на основе последних %1 циклов (среднее %2 дн./цикл, %3 дн./цикл)</string>
+    <string name="record_date">Дата записи</string>
+    <string name="select_date">Выбрать дату</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_record">Удалить запись</string>
+    <string name="delete_record_confirm">Вы уверены, что хотите удалить запись за эту дату? Это действие нельзя отменить.</string>
+    <string name="week_sun">Вс</string>
+    <string name="week_mon">Пн</string>
+    <string name="week_tue">Вт</string>
+    <string name="week_wed">Ср</string>
+    <string name="week_thu">Чт</string>
+    <string name="week_fri">Пт</string>
+    <string name="week_sat">Сб</string>
+    <string name="calendar_today">Сегодня</string>
+    <string name="back">Назад</string>
+    <string name="symptom_headache">Головная боль</string>
+    <string name="symptom_bloating">Вздутие живота</string>
+    <string name="symptom_breast_tenderness">Болезненность груди</string>
+    <string name="symptom_backache">Боль в спине</string>
+    <string name="symptom_fatigue">Усталость</string>
+    <string name="symptom_mood_swings">Перепады настроения</string>
+    <string name="symptom_acne">Акне</string>
+    <string name="symptom_increased_appetite">Повышенный аппетит</string>
+    <string name="symptom_insomnia">Бессонница</string>
+    <string name="symptom_nausea">Тошнота</string>
+    <string name="flow_light">Слабый</string>
+    <string name="flow_medium">Умеренный</string>
+    <string name="flow_heavy">Обильный</string>
+    <string name="pain_none">Нет</string>
+    <string name="pain_mild">Лёгкая</string>
+    <string name="pain_moderate">Умеренная</string>
+    <string name="pain_severe">Сильная</string>
+    <string name="unit_days">дн.</string>
+    <string name="predicted_period_label">Прогнозируемый цикл: %1 - %2</string>
+    <string name="ovulation_date_label">Овуляция: %s</string>
+    <string name="confidence_label">Уверенность: %1 (на основе %2 циклов)</string>
+    <string name="reminder_days_before">Дней до</string>
+    <string name="reminder_time">Время напоминания</string>
+    <string name="enabled">Включено</string>
+    <string name="disabled">Отключено</string>
+    <string name="color_pink">Розовый</string>
+    <string name="color_dark_pink">Тёмно-розовый</string>
+    <string name="color_peach">Персиковый</string>
+    <string name="color_light_purple">Светло-фиолетовый</string>
+    <string name="color_medium_purple">Фиолетовый</string>
+    <string name="unit_cm">см</string>
+    <string name="unit_kg">кг</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Недостаточный вес</string>
+    <string name="bmi_category_normal">Норма</string>
+    <string name="bmi_category_overweight">Избыточный вес</string>
+    <string name="bmi_category_obese">Ожирение</string>
+    <string name="bmi_standard_note">На основе китайского стандарта ИМТ</string>
+    <string name="backup_success">Резервирование успешно</string>
+    <string name="backup_fail">Ошибка резервирования</string>
+    <string name="restore_success">Восстановление успешно</string>
+    <string name="restore_fail">Ошибка восстановления</string>
+    <string name="export_success">Экспорт успешен</string>
+    <string name="export_fail">Ошибка экспорта</string>
+    <string name="backup_export_desc">Экспорт базы данных в ZIP-архив</string>
+    <string name="backup_import_desc">Восстановление данных из резервной копии</string>
+    <string name="backup_csv_desc">Экспорт записей в CSV-таблицу</string>
+    <string name="deleted_time">Удалено: %s</string>
+    <string name="in_progress">Выполняется</string>
+    <string name="terms_countdown">Пожалуйста, подождите %d секунд</string>
+    <string name="auth_failed">Ошибка аутентификации: %s</string>
+    <string name="auth_failed_generic">Ошибка аутентификации</string>
+    <string name="biometric_init_failed">Ошибка инициализации биометрии</string>
+    <string name="lockout_message">Слишком много попыток. Подождите %d секунд.</string>
+    <string name="chart_title_cycle_length_trend">Тенденция длины цикла</string>
+    <string name="chart_title_pain_trend">Тенденция боли</string>
+    <string name="chart_title_symptom_distribution">Распределение симптомов</string>
+    <string name="chart_cycle_label">Цикл %d</string>
+    <string name="chart_cycle_length_label">Длина цикла : %d</string>
+    <string name="chart_pain_level_label">Уровень боли</string>
+    <string name="regularity_regular">Регулярный</string>
+    <string name="regularity_somewhat_regular">Относительно регулярный</string>
+    <string name="regularity_irregular">Нерегулярный</string>
+    <string name="regularity_insufficient_data">Недостаточно данных</string>
+    <string name="confidence_high">Высокая</string>
+    <string name="confidence_medium">Средняя</string>
+    <string name="confidence_low">Низкая</string>
+    <string name="confidence_insufficient">Недостаточно данных</string>
+    <string name="analysis_no_data_title">Данных пока нет</string>
+    <string name="analysis_no_data_hint">Начните записывать свой цикл, чтобы увидеть анализ и прогнозы</string>
+    <string name="section_appearance">Внешний вид</string>
+    <string name="section_health">Здоровье</string>
+    <string name="section_data">Данные</string>
+    <string name="section_other">Другое</string>
+    <string name="open">Открыть</string>
+    <string name="retry">Повторить</string>
+    <string name="profile_theme_description">Настроить цвета приложения</string>
+    <string name="profile_language_description">Изменить язык приложения</string>
+    <string name="profile_bmi_description">Отслеживать индекс массы тела</string>
+    <string name="profile_app_lock_description">Требовать аутентификацию для открытия</string>
+    <string name="screenshot_protection_title">Защита от скриншотов</string>
+    <string name="screenshot_protection_description">Предотвращать скриншоты и запись экрана</string>
+    <string name="profile_backup_description">Зашифрованное резервирование всех данных</string>
+    <string name="profile_recycle_bin_description">Просмотр и восстановление удалённых записей</string>
+    <string name="profile_version">Версия 1.0.0</string>
+    <string name="profile_app_description">Комплексное приложение для отслеживания здоровья с акцентом на конфиденциальность.</string>
+    <string name="custom_theme">Пользовательская тема</string>
+    <string name="language_description">Выберите предпочитаемый язык. Приложение перезапустится.</string>
+    <string name="language_changed_restart">Язык изменён, перезапуск&#8230;</string>
+    <string name="bmi_empty_text">Нет записей веса. Добавьте первую запись.</string>
+    <string name="save_height">Сохранить рост</string>
+    <string name="bmi_category_label">Категория</string>
+    <string name="height_label">Рост</string>
+    <string name="update_height">Обновить рост</string>
+    <string name="add_weight_record_title">Добавить запись веса</string>
+    <string name="add_weight_record_text">Введите ваш вес на сегодня.</string>
+    <string name="recycle_bin_description">Удалённые записи хранятся 30 дней перед окончательным удалением.</string>
+    <string name="recycle_bin_empty">Корзина пуста</string>
+    <string name="recycle_bin_empty_title">Очистить корзину</string>
+    <string name="recycle_bin_empty_confirm">Все удалённые записи будут удалены навсегда. Это действие нельзя отменить.</string>
+    <string name="recycle_bin_empty_action">Очистить</string>
+    <string name="recycle_bin_restore">Восстановить</string>
+    <string name="recycle_bin_delete_forever">Удалить навсегда</string>
+    <string name="add_record">Добавить запись</string>
+    <string name="period_tracking_title">Отслеживание цикла</string>
+    <string name="prediction_explanation_title">Объяснение прогноза</string>
+    <string name="reminder_period_desc">Уведомлять перед началом цикла</string>
+    <string name="reminder_ovulation_desc">Уведомлять перед овуляцией</string>
+    <string name="reminder_pms_desc">Уведомлять о симптомах ПМС</string>
+    <string name="cycle_status_title">Статус цикла</string>
+    <string name="cycle_day_label">День цикла</string>
+    <string name="days_until_label">Дней до</string>
+    <string name="period_active_text">Цикл активен</string>
+    <string name="next_period_label">Следующий цикл</string>
+    <string name="not_enough_data">Недостаточно данных</string>
+    <string name="cycle_length_label">Длина цикла</string>
+    <string name="chart_no_data">Недостаточно данных для графика</string>
+    <string name="chart_no_pain_data">Нет записей о боли</string>
+    <string name="chart_pain_unknown">Неизвестно</string>
+    <string name="chart_total_records">Всего записей</string>
+    <string name="record_for_date">Запись за %s</string>
+    <string name="save_record">Сохранить запись</string>
+    <string name="male_health_trend">Тенденции здоровья</string>
+    <string name="male_health_description">Анализ цикла недоступен для мужчин. Показаны общие данные о здоровье.</string>
+    <string name="steps_overview">Обзор шагов</string>
+    <string name="steps_today">Шагов сегодня</string>
+    <string name="steps_weekly_avg_label">Среднее за 7 дней</string>
+    <string name="steps_record_days">Дней записи</string>
+    <string name="steps_weekly_trend_label">Тенденция шагов за 7 дней</string>
+    <string name="steps_title">Отслеживание шагов</string>
+    <string name="steps_daily_goal">Дневная цель</string>
+    <string name="steps_update_goal">Обновить цель</string>
+    <string name="steps_this_week">На этой неделе</string>
+    <string name="steps_total">Всего</string>
+    <string name="steps_average">Среднее</string>
+    <string name="steps_days_label">Дни</string>
+    <string name="steps_weekly_trend">Недельная тенденция</string>
+    <string name="steps_goal_format">%d шагов</string>
+    <string name="steps_weekly_avg_format">В среднем %d шагов/день</string>
+    <string name="steps_history_title">История шагов</string>
+    <string name="steps_tab_week">Неделя</string>
+    <string name="steps_tab_month">Месяц</string>
+    <string name="steps_tab_year">Год</string>
+    <string name="steps_tab_all">Всё</string>
+    <string name="steps_30d_total">За 30 дней</string>
+    <string name="steps_avg">В среднем в день</string>
+    <string name="steps_best">Лучший день</string>
+    <string name="steps_weekly_label">По неделям</string>
+    <string name="steps_daily_trend">Дневная тенденция</string>
+    <string name="steps_monthly_label">По месяцам</string>
+    <string name="steps_total_label">Всего шагов</string>
+    <string name="steps_period_total">За период</string>
+    <string name="steps_weekly_avg">В среднем за неделю</string>
+    <string name="steps_monthly_avg">В среднем за месяц</string>
+    <string name="steps_best_month">Лучший месяц</string>
+    <string name="steps_tab_day">День</string>
+    <string name="steps_label">Шаги</string>
+    <string name="steps_calories_label">Калории</string>
+    <string name="steps_yearly_label">По годам</string>
+    <string name="dashboard_title">Панель здоровья</string>
+    <string name="dashboard_quick_actions">Быстрые действия</string>
+    <string name="dashboard_retry">Повторить</string>
+    <string name="dashboard_insights">Аналитика здоровья</string>
+    <string name="dashboard_insights_empty">Записывайте больше данных для персонализированной аналитики</string>
+    <string name="dashboard_period_status">Статус цикла</string>
+    <string name="dashboard_period_active">Цикл активен</string>
+    <string name="dashboard_follicular_phase">Фолликулярная фаза</string>
+    <string name="dashboard_no_data">Нет данных</string>
+    <string name="dashboard_today_steps">Шагов сегодня</string>
+    <string name="dashboard_goal_format">Цель: %d</string>
+    <string name="dashboard_cycle_day_format">День %1</string>
+    <string name="dashboard_record_period">Запись цикла</string>
+    <string name="dashboard_record_steps">Запись шагов</string>
+    <string name="dashboard_record_health">Анализ здоровья</string>
+    <string name="gender_welcome">Добро пожаловать в TianshangHealth</string>
+    <string name="gender_instruction">Выберите пол для персонализированного отслеживания</string>
+    <string name="gender_male">Мужской</string>
+    <string name="gender_male_desc">Скрывает функции отслеживания цикла</string>
+    <string name="gender_female">Женский</string>
+    <string name="gender_female_desc">Показывает все функции, включая отслеживание цикла</string>
+    <string name="gender_other">Другой</string>
+    <string name="gender_other_desc">Показывает все функции</string>
+    <string name="gender_footnote">Вы можете изменить это позже в Настройках</string>
+    <string name="gender_setting_title">Пол</string>
+    <string name="gender_setting_description">Измените пол для настройки модулей</string>
+    <string name="select_gender">Выберите пол</string>
+    <string name="app_lock_health_data_protected">Ваши данные о здоровье защищены</string>
+    <string name="app_lock_set_password_title">Установить пароль</string>
+    <string name="app_lock_password_label">Пароль</string>
+    <string name="app_lock_confirm_password_label">Подтвердите пароль</string>
+    <string name="app_lock_enter_password_title">Введите пароль</string>
+    <string name="app_lock_use_biometric">Использовать биометрию</string>
+    <string name="terms_privacy_title">Условия использования и Политика конфиденциальности</string>
+    <string name="terms_service_title">Условия использования</string>
+    <string name="privacy_policy_title">Политика конфиденциальности</string>
+    <string name="terms_service_declaration">1. Декларация об услугах\n\nTianshangHealth — это комплексное приложение для отслеживания здоровья, которое ставит во главу угла конфиденциальность пользователя и безопасность данных. Все данные хранятся локально на устройстве с надёжным шифрованием.\n\n2. Конфиденциальность данных\n\nМы не собираем, не загружаем и не передаём ваши личные данные о здоровье. Приложение работает полностью офлайн без разрешений на доступ к сети.\n\n3. Ответственность пользователя\n\nВы несёте ответственность за точность введённых данных. Прогнозы и аналитика предоставляются только для справки и не являются медицинскими рекомендациями.\n\n4. Безопасность данных\n\nВаши данные защищены шифрованием SQLCipher AES-256. Ключ шифрования управляется через Android Keystore для безопасности на уровне оборудования.</string>
+    <string name="privacy_policy_body">1. Основной принцип: Локализация данных\n\nВсе ваши данные о здоровье, включая менструальные циклы, симптомы и другие показатели, хранятся только в зашифрованной базе данных на вашем устройстве.\n\n2. Собираемая информация\n\nМы обрабатываем только информацию, которую вы вводите вручную. Автоматический сбор данных не производится.\n\n3. Шифрование данных\n\nВсе конфиденциальные данные шифруются с помощью SQLCipher с AES-256. Ключ шифрования надёжно хранится в Android Keystore.\n\n4. Отсутствие доступа третьих лиц\n\nМы не используем сторонние сервисы аналитики, рекламы или отслеживания. Ваши данные никогда не покидают ваше устройство.\n\n5. Экспорт данных\n\nВы можете экспортировать данные в любое время в стандартных форматах (CSV, зашифрованная резервная копия). Вы полностью контролируете свои данные.\n\n6. Удаление данных\n\nВы можете удалить все или часть данных в любое время. Удалённые данные безвозвратно стираются с устройства.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_failed_add_record">Не удалось добавить запись</string>
+    <string name="error_failed_update_record">Не удалось обновить запись</string>
+    <string name="error_failed_delete_record">Не удалось удалить запись</string>
+    <string name="error_failed_record">Не удалось записать</string>
+    <string name="error_failed_set_password">Не удалось установить пароль</string>
+    <string name="error_password_not_set">Пароль не установлен</string>
+    <string name="error_incorrect_password">Неверный пароль</string>
+    <string name="error_verification_failed">Ошибка проверки</string>
+    <string name="error_failed_load_settings">Не удалось загрузить настройки</string>
+    <string name="error_failed_update_settings">Не удалось обновить настройки</string>
+    <string name="error_failed_save_gender">Не удалось сохранить пол</string>
+    <string name="error_failed_update_goal">Не удалось обновить цель</string>
+    <string name="error_failed_restore">Не удалось восстановить запись</string>
+    <string name="error_failed_to_delete">Не удалось удалить запись</string>
+    <string name="error_failed_empty_bin">Не удалось очистить корзину</string>
+    <string name="loading">Загрузка...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Напоминание о цикле</string>
+    <string name="notification_channel_period_desc">Напоминания об отслеживании цикла</string>
+    <string name="notification_period_title">Напоминание об отслеживании цикла</string>
+    <string name="notification_period_body">Не забудьте записать данные цикла сегодня!</string>
+    <string name="notification_channel_ovulation">Напоминание об овуляции</string>
+    <string name="notification_channel_ovulation_desc">Напоминания об отслеживании овуляции</string>
+    <string name="notification_ovulation_title">Овуляция приближается</string>
+    <string name="notification_ovulation_body">Ваше фертильное окно скоро начнётся!</string>
+    <string name="notification_channel_pms">Напоминание о ПМС</string>
+    <string name="notification_channel_pms_desc">Напоминания о симптомах ПМС</string>
+    <string name="notification_pms_title">Ожидаются симптомы ПМС</string>
+    <string name="notification_pms_body">Симптомы ПМС могут начаться через несколько дней. Берегите себя!</string>
+    <string name="notification_channel_steps">Шагомер</string>
+    <string name="notification_channel_steps_desc">Уведомление службы шагомера</string>
+    <string name="notification_steps_body">Шагов сегодня: %d</string>
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">Обзор</string>
+    <string name="nav_period">Цикл</string>
+    <string name="nav_fitness">Фитнес</string>
+    <string name="nav_analysis">Анализ</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Backup and CSV strings -->
+    <string name="csv_header">Дата начала,Дата конца,Интенсивность,Уровень боли,Заметки</string>
+    <string name="backup_exported_success">Резервная копия экспортирована</string>
+    <string name="import_success_format">Импортировано %d записей</string>
+    <string name="csv_exported_success">CSV экспортирован успешно</string>
+    <string name="csv_export_failed">Ошибка экспорта CSV</string>
+    <string name="password_export_title">Зашифровать резервную копию</string>
+    <string name="password_import_title">Расшифровать резервную копию</string>
+    <string name="password_export_desc">Введите пароль для шифрования резервной копии.</string>
+    <string name="password_import_desc">Введите пароль, использованный для шифрования этой копии.</string>
+    <string name="password_label">Пароль</string>
+    <string name="proceed">Продолжить</string>
+    <string name="password_short_error">Слишком короткий пароль</string>
+    <string name="password_mismatch_error">Пароли не совпадают</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">Цикл активен</string>
+    <string name="insight_follicular_phase">Фолликулярная фаза</string>
+    <string name="insight_luteal_phase">Лютеиновая фаза</string>
+    <string name="insight_cycle_day">День цикла %d</string>
+    <string name="insight_steps_stable_title">Стабильная активность в цикле</string>
+    <string name="insight_steps_stable_desc">Количество шагов остаётся стабильным во всех фазах цикла.</string>
+    <string name="insight_mood_drop_title">Снижение настроения в лютеиновой фазе</string>
+    <string name="insight_mood_drop_desc">Средний балл настроения ниже в лютеиновой фазе, попробуйте управление настроением</string>
+    <string name="insight_mood_rise_title">Лучшее настроение в лютеиновой фазе</string>
+    <string name="insight_mood_rise_desc">Средний балл настроения выше в лютеиновой фазе, вы отлично справляетесь</string>
+    <string name="insight_sleep_drop_title">Качество сна снижается в лютеиновой фазе</string>
+    <string name="insight_sleep_drop_desc">Качество сна ухудшается в лютеиновой фазе, попробуйте упражнения для расслабления</string>
+    <string name="insight_sleep_rise_title">Лучший сон в лютеиновой фазе</string>
+    <string name="insight_sleep_rise_desc">Качество сна выше в лютеиновой фазе, продолжайте в том же духе</string>
+    <string name="insight_stress_period_title">Повышенный стресс во время цикла</string>
+    <string name="insight_stress_period_desc">Уровень стресса на %s баллов выше во время цикла, снизьте интенсивные нагрузки</string>
+    <string name="insight_mood_today_low_title">Сегодня плохое настроение</string>
+    <string name="insight_mood_today_low_desc">Сегодня у вас низкое настроение, попробуйте заняться любимым делом</string>
+    <string name="insight_stress_today_high_title">Сегодня высокий стресс</string>
+    <string name="insight_stress_today_high_desc">Уровень стресса высок сегодня, попробуйте глубокое дыхание или медитацию</string>
+    <string name="insight_sleep_last_night_low_title">Плохой сон прошлой ночью</string>
+    <string name="insight_sleep_last_night_low_desc">Качество сна было низким прошлой ночью, попробуйте лечь спать пораньше</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Активность значительно снижается в лютеиновой фазе</string>
+    <string name="insight_luteal_increase">Активность повышается в лютеиновой фазе</string>
+    <string name="insight_luteal_rest">Отдыхайте в лютеиновой фазе, рекомендуются лёгкие упражнения как йога</string>
+    <string name="insight_luteal_nutrition">Отличное повышение активности, не забывайте о питании</string>
+    <string name="insight_luteal_activity_low_title">Снижение активности в лютеиновой фазе</string>
+    <string name="insight_luteal_activity_low_desc">Шаги в лютеиновой фазе снизились на %d%% по сравнению с фолликулярной. Рекомендуется лёгкая активность.</string>
+    <string name="insight_luteal_activity_high_title">Повышение активности в лютеиновой фазе</string>
+    <string name="insight_luteal_activity_high_desc">Шаги в лютеиновой фазе выросли на %d%% по сравнению с фолликулярной. Не забывайте отдыхать.</string>
+    <string name="insight_activity_stable_title">Стабильная активность в течение цикла</string>
+    <string name="insight_activity_stable_desc">Количество шагов остаётся стабильным во всех фазах цикла.</string>
+    <string name="insight_mood_luteal_drop_title">Снижение настроения в лютеиновой фазе</string>
+    <string name="insight_mood_luteal_drop_desc">Средний балл настроения на %s баллов ниже в лютеиновой фазе.</string>
+    <string name="insight_mood_luteal_rise_title">Лучшее настроение в лютеиновой фазе</string>
+    <string name="insight_mood_luteal_rise_desc">Средний балл настроения на %s баллов выше в лютеиновой фазе. Вы отлично справляетесь!</string>
+    <string name="insight_sleep_luteal_drop_title">Качество сна снижается в лютеиновой фазе</string>
+    <string name="insight_sleep_luteal_drop_desc">Качество сна снизилось на %s балла в лютеиновой фазе. Попробуйте расслабление перед сном.</string>
+    <string name="insight_sleep_luteal_rise_title">Лучший сон в лютеиновой фазе</string>
+    <string name="insight_sleep_luteal_rise_desc">Качество сна на %s баллов выше в лютеиновой фазе. Продолжайте в том же духе.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Недостаточно данных для прогноза</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Обновить</string>
+    <string name="recycle_bin_empty_title_short">Очистить корзину</string>
+    <string name="recycle_bin_period_format">Цикл: %1</string>
+    <string name="recycle_bin_to_format">до %1</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Установить пароль</string>
+    <string name="app_lock_confirm_password">Подтвердить пароль</string>
+    <string name="app_lock_set_password_btn">Установить пароль</string>
+    <string name="app_lock_unlock_btn">Разблокировать</string>
+    <string name="app_lock_enter_password">Введите пароль</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">Всего записей</string>
+    <string name="stats_total_cycles">Всего циклов</string>
+    <string name="stats_avg_cycle">Средний цикл</string>
+    <string name="stats_avg_period">Средняя длительность</string>
+    <string name="stats_regularity_text">Регулярность</string>
+    <string name="stats_cycle_num">Цикл %d</string>
+    <string name="stats_days_suffix">%d дн.</string>
+    <string name="stats_avg_format">В среднем: %d дн.</string>
+    <string name="stats_no_data">Нет данных</string>
+    <string name="weight_format">Вес: %.1f кг</string>
+    <string name="bmi_format">ИМТ %.1f</string>
+    <string name="height_cm_format">%.0f см</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Резервные копии шифруются AES-256-GCM с вашим паролем.</string>
+    <string name="steps_of_goal">из %d цели</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">О: %1° Н: %2%% Я: %3%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Синий</string>
+    <string name="color_green">Зелёный</string>
+    <string name="color_purple">Фиолетовый</string>
+    <string name="color_orange">Оранжевый</string>
+    <string name="color_teal">Бирюзовый</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Нажмите для подробностей</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Бег</string>
+    <string name="exercise_walking">Ходьба</string>
+    <string name="exercise_cycling">Велосипед</string>
+    <string name="exercise_swimming">Плавание</string>
+    <string name="exercise_yoga">Йога</string>
+    <string name="exercise_strength">Силовые тренировки</string>
+    <string name="exercise_dance">Танцы</string>
+    <string name="exercise_pilates">Пилатес</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Баскетбол</string>
+    <string name="exercise_football">Футбол</string>
+    <string name="exercise_tennis">Теннис</string>
+    <string name="exercise_badminton">Бадминтон</string>
+    <string name="exercise_table_tennis">Настольный теннис</string>
+    <string name="exercise_skipping">Скакалка</string>
+    <string name="exercise_hiking">Походы</string>
+    <string name="exercise_other">Другое</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">На этой неделе</string>
+    <string name="fitness_add_workout">Добавить тренировку</string>
+    <string name="fitness_select_type">Выберите тип упражнения</string>
+    <string name="fitness_duration_minutes">Длительность (мин)</string>
+    <string name="fitness_calories_label">Калории</string>
+    <string name="fitness_distance_km">Дистанция (км)</string>
+    <string name="fitness_today_workouts">Тренировки сегодня</string>
+    <string name="fitness_recent_workouts">Последние тренировки</string>
+    <string name="fitness_empty">Тренировок пока нет.\nНажмите +, чтобы добавить первую.</string>
+    <string name="fitness_minutes_format">%d мин</string>
+    <string name="fitness_calories_format">%d ккал</string>
+    <string name="fitness_duration">Длительность</string>
+    <string name="fitness_calories">Калории</string>
+    <string name="fitness_workouts">Тренировки</string>
+    <string name="fitness_km_unit">км</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">Отключить оптимизацию батареи</string>
+    <string name="steps_battery_desc">Оптимизация батареи может остановить службу шагомера.</string>
+    <string name="steps_battery_action">Перейти в Настройки</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">Настройки %s</string>
+    <string name="steps_auto_start_settings">Автозапуск</string>
+    <string name="steps_battery_settings">Настройки батареи</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">Сводка энергии</string>
+    <string name="energy_today">Сегодня</string>
+    <string name="energy_this_week">На этой неделе</string>
+    <string name="energy_steps">Шаги</string>
+    <string name="energy_workouts">Тренировки</string>
+    <string name="energy_total">Всего</string>
+    <string name="energy_workouts_summary">%1 тренировок · %2 мин</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Параметры тела</string>
+    <string name="body_metrics_height">Рост (см)</string>
+    <string name="body_metrics_weight">Вес (кг)</string>
+    <string name="body_metrics_saved">Параметры тела сохранены</string>
+    <string name="body_metrics_height_error">Введите корректный рост (80-250см)</string>
+    <string name="body_metrics_weight_error">Введите корректный вес (15-350кг)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Питание</string>
+    <string name="nav_nutrition">Питание</string>
+    <string name="nutrition_add_meal">Добавить приём пищи</string>
+    <string name="nutrition_meal_type">Тип приёма пищи</string>
+    <string name="nutrition_food_name">Название продукта</string>
+    <string name="nutrition_calories">Калории</string>
+    <string name="nutrition_protein">Белки (г)</string>
+    <string name="nutrition_carbs">Углеводы (г)</string>
+    <string name="nutrition_fat">Жиры (г)</string>
+    <string name="nutrition_serving_size">Размер порции</string>
+    <string name="nutrition_macros">Макронутриенты</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Дневное питание</string>
+    <string name="nutrition_today_meals">Приёмы пищи сегодня</string>
+    <string name="nutrition_meals">приёмов</string>
+    <string name="nutrition_weekly_trend">Недельная тенденция</string>
+    <string name="nutrition_empty">Приёмов пищи пока нет.\nНажмите +, чтобы добавить первый.</string>
+    <string name="nutrition_error_food_name">Введите название продукта</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">Завтрак</string>
+    <string name="meal_lunch">Обед</string>
+    <string name="meal_dinner">Ужин</string>
+    <string name="meal_snack">Перекус</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">Вода</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">Пониженное потребление калорий в лютеиновой фазе</string>
+    <string name="insight_nutrition_luteal_low_desc">Калории снизились на %.0f ккал в лютеиновой фазе. Старайтесь поддерживать сбалансированное питание.</string>
+    <string name="insight_nutrition_luteal_high_title">Повышенное потребление калорий в лютеиновой фазе</string>
+    <string name="insight_nutrition_luteal_high_desc">Калории выросли на %.0f ккал в лютеиновой фазе. Это нормально, прислушивайтесь к своему телу.</string>
+    <string name="insight_nutrition_stable_title">Стабильное потребление калорий</string>
+    <string name="insight_nutrition_stable_desc">Потребление калорий остаётся стабильным во всех фазах цикла. Отличная работа!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">Забыли PIN?</string>
+    <string name="app_lock_change_pin">Сменить PIN</string>
+    <string name="app_lock_current_pin">Текущий PIN</string>
+    <string name="app_lock_new_pin_label">Новый PIN</string>
+    <string name="app_lock_recovery_title">Сброс блокировки приложения</string>
+    <string name="app_lock_recovery_desc">Подтвердите личность для сброса блокировки</string>
+    <string name="lock_30s">30 секунд</string>
+    <string name="lock_1min">1 минута</string>
+    <string name="lock_5min">5 минут</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Сон</string>
+    <string name="sleep_title">Отслеживание сна</string>
+    <string name="sleep_record_title">Запись сна</string>
+    <string name="sleep_hours">Часы сна</string>
+    <string name="sleep_deep_hours">Глубокий сон</string>
+    <string name="sleep_quality">Качество сна</string>
+    <string name="sleep_quality_format">%d звёзд</string>
+    <string name="sleep_history">История сна</string>
+    <string name="sleep_no_data">Данных о сне пока нет</string>
+    <string name="sleep_today_status">Сон сегодня</string>
+    <string name="sleep_hours_format">%s часов</string>
+    <string name="sleep_deep_hours_format">Глубокий: %s часов</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Менструальная</string>
+    <string name="phase_follicular">Фолликулярная</string>
+    <string name="phase_ovulatory">Овуляторная</string>
+    <string name="phase_luteal">Лютеиновая</string>
+    <string name="nutrition_cycle_guidance">Рекомендации по питанию по циклу</string>
+    <string name="nutrition_focus_nutrients">Ключевые нутриенты</string>
+    <string name="nutrition_recommended_foods">Рекомендуемые продукты</string>
+    <string name="nutrition_limit_foods">Ограничить</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d дня</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Введите допустимую продолжительность</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">d.M</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Очистить</string>
+    <string name="edit">Редактировать</string>
+    <string name="exact_date_mode">Точная дата</string>
+    <string name="profile_dob_not_set">Не задано</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Только год</string>
+    <string name="year_picker_title">Выберите год рождения</string>
+
+    <!-- Analysis module -->
+    <string name="analysis_no_data">Недостаточно данных. Запишите данные о здоровье.</string>
+    <string name="export_report">Экспорт отчёта PDF</string>
+    <string name="insufficient_data">Недостаточно данных</string>
+
+    <!-- Nutrition analysis -->
+    <string name="nutrition_energy_balance">Энергетический баланс</string>
+    <string name="nutrition_resting_energy">Покой</string>
+    <string name="nutrition_exercise_energy">Тренировки</string>
+    <string name="nutrition_total_expenditure">Всего сожжено</string>
+    <string name="nutrition_calorie_balance">Баланс</string>
+
+    <!-- Sleep tracking -->
+    <string name="sleep_auto_calculated">Авто: %d ч</string>
+    <string name="sleep_bedtime_btn">Ко сну</string>
+    <string name="sleep_elapsed">Прошло %d ч %d мин</string>
+    <string name="sleep_sleeping">Спите...</string>
+    <string name="sleep_waketime_btn">Проснуться</string>
+
+    <!-- Health pattern detection -->
+    <string name="pattern_exhaustion_title">Обнаружено физическое истощение</string>
+    <string name="pattern_exhaustion_desc">Недостаток сна, высокий стресс и плохое настроение указывают на риск выгорания. Рекомендуются дни отдыха.</string>
+    <string name="pattern_overtraining_title">Риск перетренированности</string>
+    <string name="pattern_overtraining_desc">Высокий объём тренировок с дефицитом калорий и недостатком сна. Следите за травмами.</string>
+    <string name="pattern_sedentary_mood_title">Малоподвижность + Плохое настроение</string>
+    <string name="pattern_sedentary_mood_desc">Очень низкое количество шагов в сочетании с плохим настроением. Короткая прогулка может помочь.</string>
+    <string name="pattern_dehydration_stress_title">Обезвоживание + Стресс</string>
+    <string name="pattern_dehydration_stress_desc">Низкое потребление воды и высокий уровень стресса. Гидратация повышает устойчивость.</string>
+    <string name="pattern_positive_loop_title">Позитивный цикл здоровья</string>
+    <string name="pattern_positive_loop_desc">Хороший сон, высокая активность и позитивное настроение усиливают друг друга. Продолжайте в том же духе!</string>
+
+    <!-- Analysis sections -->
+    <string name="analysis_section_suggestions">Умные рекомендации</string>
+    <string name="analysis_section_nutrition">Анализ питания</string>
+    <string name="analysis_section_calorie_balance">Баланс калорий</string>
+    <string name="analysis_section_exercise">Анализ тренировок</string>
+    <string name="analysis_section_sleep">Анализ сна</string>
+    <string name="analysis_section_phase">Связь с циклом</string>
+    <string name="analysis_avg_daily_calories">В среднем в день</string>
+    <string name="analysis_protein">Белки</string>
+    <string name="analysis_carbs">Углеводы</string>
+    <string name="analysis_fat">Жиры</string>
+    <string name="analysis_nutrient_ratio">Соотношение нутриентов</string>
+    <string name="analysis_avg_water_format">Воды в среднем: %.0f мл</string>
+    <string name="analysis_avg_intake">Среднее потребление</string>
+    <string name="analysis_exercise_burned">Сожжено на тренировках</string>
+    <string name="analysis_weekly_total_minutes">За неделю всего</string>
+    <string name="analysis_daily_avg_minutes">В среднем в день</string>
+    <string name="analysis_calories_burned">Сожжено калорий</string>
+    <string name="analysis_exercise_type_distribution">Распределение по типам тренировок</string>
+    <string name="analysis_avg_sleep_hours">Средняя продолжительность</string>
+    <string name="analysis_quality_score">Оценка качества</string>
+    <string name="analysis_daily_sleep_hours">Ежедневные часы сна</string>
+    <string name="analysis_mood">Настроение</string>
+    <string name="analysis_stress">Стресс</string>
+    <string name="analysis_daily_net_calories">Чистые калории в день (с учётом покоя)</string>
+
+    <!-- Report -->
+    <string name="report_title">Отчёт о здоровье</string>
+    <string name="report_description">Создайте комплексный отчёт о здоровье на основе ваших данных. Отчёт создаётся локально на устройстве и может быть опубликован в формате PDF.</string>
+    <string name="report_period">Период отчёта: последние 30 дней</string>
+    <string name="report_includes">Включает: записи цикла, шаги, сон, питание и аналитику здоровья</string>
+    <string name="report_generate">Создать отчёт</string>
+    <string name="report_generating">Создание отчёта PDF...</string>
+    <string name="report_success">Отчёт успешно создан!</string>
+    <string name="report_share">Поделиться отчётом о здоровье</string>
+    <string name="report_share_button">Поделиться</string>
+    <string name="report_generate_new">Создать новый</string>
+    <string name="report_error">Ошибка: %s</string>
+    <string name="report_privacy_title">Уведомление о конфиденциальности</string>
+    <string name="report_privacy_body">Все отчёты создаются локально на вашем устройстве. Никакие данные о здоровье не загружаются на сервер или в облачный сервис. Ваши данные остаются под вашим полным контролем.</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_low_calorie_title">Низкое потребление калорий</string>
+    <string name="suggestion_low_calorie_desc">Дневное потребление %.0f ккал ниже рекомендуемых 1800 ккал. Рекомендуется добавить сложные углеводы и полезные жиры.</string>
+    <string name="suggestion_high_calorie_title">Высокое потребление калорий</string>
+    <string name="suggestion_high_calorie_desc">Дневное потребление %.0f ккал превышает 2500 ккал. Рекомендуется сократить перекусы и увеличить количество овощей.</string>
+    <string name="suggestion_low_protein_title">Низкое потребление белка</string>
+    <string name="suggestion_low_protein_desc">Дневное потребление белка %.0f г ниже рекомендуемых 50 г. Рекомендуются яйца, рыба и тофу.</string>
+    <string name="suggestion_low_water_title">Низкое потребление воды</string>
+    <string name="suggestion_low_water_desc">Дневное потребление воды %.0f мл ниже рекомендуемого. Стремитесь к 1500-2000 мл в день.</string>
+    <string name="suggestion_high_surplus_title">Большой профицит калорий</string>
+    <string name="suggestion_high_surplus_desc">Дневной профицит %.0f ккал. Если ваша цель — похудение, увеличьте физическую активность.</string>
+    <string name="suggestion_high_deficit_title">Большой дефицит калорий</string>
+    <string name="suggestion_high_deficit_desc">Дневной дефицит %.0f ккал. Убедитесь, что вы покрываете базовые метаболические потребности.</string>
+    <string name="suggestion_balanced_title">Сбалансированные калории</string>
+    <string name="suggestion_balanced_desc">Потребление и расход хорошо сбалансированы. Продолжайте в том же духе!</string>
+    <string name="suggestion_low_exercise_title">Низкая физическая активность</string>
+    <string name="suggestion_low_exercise_desc">Еженедельная нагрузка %d минут ниже рекомендованных ВОЗ 150 минут.</string>
+    <string name="suggestion_exercise_met_title">Цель по нагрузке достигнута</string>
+    <string name="suggestion_exercise_met_desc">Еженедельная нагрузка %d минут соответствует рекомендациям ВОЗ!</string>
+    <string name="suggestion_exercise_variety_title">Нужно разнообразие нагрузок</string>
+    <string name="suggestion_exercise_variety_desc">Попробуйте разные типы тренировок (кардио + сила + гибкость) для общего фитнеса.</string>
+    <string name="suggestion_low_sleep_title">Недостаток сна</string>
+    <string name="suggestion_low_sleep_desc">Ежедневный сон %.1f ч ниже рекомендуемых 7-9 часов. Попробуйте соблюдать регулярный график.</string>
+    <string name="suggestion_high_sleep_title">Избыточный сон</string>
+    <string name="suggestion_high_sleep_desc">Ежедневный сон %.1f ч превышает 9 часов. Долгий сон может указывать на утомление.</string>
+    <string name="suggestion_low_deep_sleep_title">Мало глубокого сна</string>
+    <string name="suggestion_low_deep_sleep_desc">Доля глубокого сна всего %.0f%%. Избегайте кофеина перед сном и держите комнату тёмной.</string>
+    <string name="suggestion_low_sleep_quality_title">Низкое качество сна</string>
+    <string name="suggestion_low_sleep_quality_desc">Оценка качества сна %.1f/5. Попробуйте медитацию или тёплую ванну перед сном.</string>
+    <string name="suggestion_luteal_sleep_title">Изменение сна в лютеиновой фазе</string>
+    <string name="suggestion_luteal_sleep_desc">Сон в лютеиновой фазе уменьшился на %.1f ч по сравнению с фолликулярной. Нормальное гормональное изменение.</string>
+
+    <!-- Error -->
+    <string name="error_onboarding_required">Пожалуйста, завершите настройку пользователя</string>
+    <string name="error_load_failed">Загрузка не удалась</string>
+
+    <!-- Cycle nutrition guidance - menstrual -->
+    <string name="nutrition_menstrual_advice">Сосредоточьтесь на продуктах, богатых железом, для восполнения кровопотери. Магний помогает уменьшить спазмы. Пейте достаточно воды.</string>
+    <string name="nutrition_menstrual_nutrients">Железо · Магний · Омега-3 · Витамин B12</string>
+    <string name="nutrition_menstrual_foods">Листовая зелень · Красное мясо · Жирная рыба · Тёмный шоколад · Орехи</string>
+    <string name="nutrition_menstrual_limit">Солёные закуски · Кофеин · Молочные продукты</string>
+
+    <!-- Cycle nutrition guidance - follicular -->
+    <string name="nutrition_follicular_advice">Ваш энергетический обмен повышается. Отличное время для лёгкой, питательной пищи. Поддерживайте здоровье кишечника пробиотиками.</string>
+    <string name="nutrition_follicular_nutrients">Клетчатка · Витамин C · Пробиотики · Фолат</string>
+    <string name="nutrition_follicular_foods">Ягоды · Цитрусовые · Йогурт · Овсянка · Брокколи</string>
+    <string name="nutrition_follicular_limit">Обработанные продукты · Избыток сахара</string>
+
+    <!-- Cycle nutrition guidance - ovulatory -->
+    <string name="nutrition_ovulatory_advice">Эстроген достигает пика в этой фазе. Поддерживайте детоксикацию печени продуктами, богатыми антиоксидантами. Рекомендуется противовоспалительная диета.</string>
+    <string name="nutrition_ovulatory_nutrients">Антиоксиданты · Витамин C · Цинк · Витамин E</string>
+    <string name="nutrition_ovulatory_foods">Болгарский перец · Семена подсолнечника · Нежирная птица · Авокадо · Зелёный чай</string>
+    <string name="nutrition_ovulatory_limit">Алкоголь · Жареная пища</string>
+
+    <!-- Cycle nutrition guidance - luteal -->
+    <string name="nutrition_luteal_advice">Прогестерон повышается, что может увеличить аппетит. Сложные углеводы помогают повысить серотонин. Ограничьте кофеин и соль для облегчения симптомов ПМС.</string>
+    <string name="nutrition_luteal_nutrients">Витамины группы B · Сложные углеводы · Магний · Кальций · Витамин B6</string>
+    <string name="nutrition_luteal_foods">Цельнозерновые · Бананы · Листовая зелень · Бобовые · Тёмный шоколад</string>
+    <string name="nutrition_luteal_limit">Сахар · Кофеин · Солёная пища</string>
+
+    <!-- Sleep trend -->
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Часы сна   ▐ Оценка качества</string>
+    <string name="sleep_luteal_worse">Качество сна в лютеиновой фазе ухудшилось</string>
+    <string name="sleep_luteal_better">Качество сна в лютеиновой фазе улучшилось</string>
+    <string name="sleep_luteal_comparison_worse">Средний сон в лютеиновой фазе %.1f ч, в фолликулярной %.1f ч, уменьшение на %.1f ч</string>
+    <string name="sleep_luteal_comparison_better">Средний сон в лютеиновой фазе %.1f ч, в фолликулярной %.1f ч, улучшение на %.1f ч</string>
+
+    <!-- PDF Report -->
+    <string name="pdf_health_report">Отчёт о здоровье</string>
+    <string name="pdf_generated">Создан: %s</string>
+    <string name="pdf_user_info">Пользователь: %1$s | Пол: %2$s</string>
+    <string name="pdf_report_period">Период отчёта: %s</string>
+    <string name="pdf_period_summary">Сводка по циклу</string>
+    <string name="pdf_no_period_records">Нет записей цикла за выбранный период.</string>
+    <string name="pdf_total_cycles">Всего циклов: %d</string>
+    <string name="pdf_avg_cycle_length">Средняя длина цикла: %d дн.</string>
+    <string name="pdf_avg_pain">Средний уровень боли: %.1f / 3</string>
+    <string name="pdf_recent_records">Последние записи</string>
+    <string name="pdf_start_date">Дата начала</string>
+    <string name="pdf_end_date">Дата окончания</string>
+    <string name="pdf_flow">Интенсивность</string>
+    <string name="pdf_pain">Боль</string>
+    <string name="pdf_ongoing">Продолжается</string>
+    <string name="pdf_flow_light">Слабая</string>
+    <string name="pdf_flow_medium">Умеренная</string>
+    <string name="pdf_flow_heavy">Обильная</string>
+    <string name="pdf_pain_none">Нет</string>
+    <string name="pdf_pain_mild">Лёгкая</string>
+    <string name="pdf_pain_moderate">Умеренная</string>
+    <string name="pdf_pain_severe">Сильная</string>
+    <string name="pdf_activity_summary">Сводка активности</string>
+    <string name="pdf_no_step_data">Нет данных о шагах.</string>
+    <string name="pdf_avg_daily_steps">Среднее количество шагов в день: %,d</string>
+    <string name="pdf_total_steps">Всего шагов: %,d</string>
+    <string name="pdf_max_steps">Максимум шагов в день: %,d</string>
+    <string name="pdf_total_exercise">Всего тренировок: %d минут</string>
+    <string name="pdf_sleep_summary">Сводка сна</string>
+    <string name="pdf_no_sleep_data">Нет данных о сне.</string>
+    <string name="pdf_avg_sleep">Средняя продолжительность сна: %.1f ч</string>
+    <string name="pdf_avg_sleep_quality">Среднее качество сна: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Средняя продолжительность глубокого сна: %.1f ч</string>
+    <string name="pdf_nutrition_summary">Сводка питания</string>
+    <string name="pdf_no_nutrition_data">Нет данных о питании.</string>
+    <string name="pdf_avg_calories">Среднее потребление калорий в день: %.0f ккал</string>
+    <string name="pdf_avg_water">Среднее потребление воды: %.0f мл</string>
+    <string name="pdf_avg_protein">Среднее потребление белка: %.0f г</string>
+    <string name="pdf_footer">Этот отчёт создан локально на вашем устройстве. Никакие данные не покидают ваш телефон.</string>
+    <string name="pdf_page">Страница %d</string>
+    <string name="pdf_app_name">TianshangHealth — Конфиденциальность превыше всего</string>
+    <string name="previous">Назад</string>
+    <string name="next">Далее</string>
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="error_failed_generate_report">Не удалось создать отчёт</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>

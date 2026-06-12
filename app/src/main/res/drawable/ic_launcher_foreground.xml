@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 心形（实心，更饱满） -->
+    <path
+        android:fillColor="#FF6B81"
+        android:pathData="M54,42 C54,34 40,26 32,32 C24,40 24,54 54,76 C84,54 84,40 76,32 C68,26 54,34 54,42 Z" />
+    <!-- 心跳线（白色，单峰居中） -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,56 L40,56 L46,38 L52,72 L58,44 L62,56 L92,56" />
+    <!-- 圆点装饰（心跳线端点） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,54 A3,3 0 1,0 16,58 A3,3 0 1,0 16,54 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M92,54 A3,3 0 1,0 92,58 A3,3 0 1,0 92,54 Z" />
+</vector>

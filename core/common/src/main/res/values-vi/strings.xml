@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TianshangHealth</string>
+    <string name="terms_title">Đi&#7873;u kho&#7843;n D&#7883;ch v&#7909;</string>
+    <string name="privacy_title">Chính sách B&#7843;o m&#7853;t</string>
+    <string name="accept_terms">Tôi Đã &#273;&#7885;c và ch&#7845;p nh&#7853;n</string>
+    <string name="app_lock_title">Khóa &#7913;ng d&#7909;ng</string>
+    <string name="enter_pin">M&#7853;t kh&#7849;u</string>
+    <string name="unlock">M&#7903; khóa</string>
+    <string name="invalid_pin">M&#7853;t kh&#7849;u không h&#7907;p l&#7879;</string>
+    <string name="app_lock_setup_title">Thi&#7871;t l&#7853;p m&#7853;t kh&#7849;u khóa</string>
+    <string name="set_pin">Đ&#7863;t m&#7853;t kh&#7849;u</string>
+    <string name="confirm_pin">Xác nh&#7853;n m&#7853;t kh&#7849;u</string>
+    <string name="set_password">Đ&#7863;t m&#7853;t kh&#7849;u</string>
+    <string name="pin_empty_error">M&#7853;t kh&#7849;u không Đ&#432;&#7907;c Đ&#7875; tr&#7889;ng</string>
+    <string name="pin_mismatch_error">M&#7853;t kh&#7849;u không kh&#7899;p</string>
+    <string name="pin_length_error">M&#7853;t kh&#7849;u ph&#7843;i có ít nh&#7845;t %d ký t&#7921;</string>
+    <string name="calendar_title">L&#7883;ch</string>
+    <string name="current_cycle_day">Ngày %d c&#7911;a chu k&#7923;</string>
+    <string name="days_until_next_period">K&#7923; ti&#7871;p theo trong %d ngày</string>
+    <string name="no_period_data">Không có d&#7919; li&#7879;u chu k&#7923;</string>
+    <string name="tap_date_to_record">Ch&#7841;m Đ&#7875; ghi l&#7841;i</string>
+    <string name="period">K&#7923; kinh</string>
+    <string name="predicted_period">K&#7923; kinh d&#7921; Đoán</string>
+    <string name="ovulation">R&#7909;ng tr&#7913;ng</string>
+    <string name="fertile_window">C&#7917;a s&#7893; th&#7909; th&#7905; thai</string>
+    <string name="record_title">Ghi chép</string>
+    <string name="start_period">B&#7855;t Đ&#7847;u k&#7923; kinh</string>
+    <string name="end_period">K&#7871;t thúc k&#7923; kinh</string>
+    <string name="flow_level">L&#432;&#7907;ng kinh</string>
+    <string name="pain_level">Đau</string>
+    <string name="symptoms">Tri&#7879;u ch&#7913;ng</string>
+    <string name="sexual_activity">Ho&#7841;t Đ&#7897;ng tình d&#7909;c</string>
+    <string name="ovulation_test">Th&#7917; r&#7909;ng tr&#7913;ng</string>
+    <string name="cervical_mucus">D&#7883;ch nh&#7847;y c&#7893; t&#7917; cung</string>
+    <string name="body_temperature">Nhi&#7879;t Đ&#7897; c&#417; th&#7875;</string>
+    <string name="notes">Ghi chú</string>
+    <string name="save">L&#432;u</string>
+    <string name="analysis_title">Phân tích</string>
+    <string name="cycle_statistics">Th&#7889;ng kê</string>
+    <string name="avg_cycle_length">Chu k&#7923; trung bình</string>
+    <string name="avg_period_length">K&#7923; kinh trung bình</string>
+    <string name="cycle_regularity">Đ&#7873;u Đ&#7863;n</string>
+    <string name="total_cycles">T&#7893;ng chu k&#7923;</string>
+    <string name="pain_trend">Xu h&#432;&#7899;ng Đau</string>
+    <string name="symptom_frequency">T&#7847;n su&#7845;t tri&#7879;u ch&#7913;ng</string>
+    <string name="predictions">D&#7921; Đoán</string>
+    <string name="reminder_title">Nh&#7855;c nh&#7903;</string>
+    <string name="period_reminder">Nh&#7855;c nh&#7903; chu k&#7923;</string>
+    <string name="ovulation_reminder">Nh&#7855;c nh&#7903; r&#7909;ng tr&#7913;ng</string>
+    <string name="pms_reminder">Nh&#7855;c nh&#7903; PMS</string>
+    <string name="profile_title">H&#7891; s&#417;</string>
+    <string name="theme_customization">Giao di&#7879;n</string>
+    <string name="theme_color">Màu giao di&#7879;n</string>
+    <string name="app_lock">Khóa &#7913;ng d&#7909;ng</string>
+    <string name="language">Ngôn ng&#7919;</string>
+    <string name="recycle_bin">Thùng rác</string>
+    <string name="recycle_bin_title">Thùng rác</string>
+    <string name="backup_restore">Sao l&#432;u</string>
+    <string name="backup_restore_title">Sao l&#432;u &amp; Ph&#7909;c h&#7891;i</string>
+    <string name="export_backup">Xu&#7845;t sao l&#432;u</string>
+    <string name="import_backup">Nh&#7853;p sao l&#432;u</string>
+    <string name="export_csv">Xu&#7845;t CSV</string>
+    <string name="about">Gi&#7899;i thi&#7879;u</string>
+    <string name="bmi_title">BMI</string>
+    <string name="add_bmi_record">Thêm</string>
+    <string name="height_cm">Chi&#7873;u cao (cm)</string>
+    <string name="weight_kg">Cân n&#7863;ng (kg)</string>
+    <string name="latest_bmi">BMI hi&#7879;n t&#7841;i</string>
+    <string name="bmi_history">L&#7883;ch s&#7917;</string>
+    <string name="dark_mode">Ch&#7871; Đ&#7897; t&#7881;i</string>
+    <string name="dark_mode_description">Thay Đ&#7893;i giao di&#7879;n</string>
+    <string name="no_deleted_records">Không có b&#7843;n ghi Đã xóa</string>
+    <string name="security_settings">B&#7843;o m&#7853;t</string>
+    <string name="data_security">B&#7843;o m&#7853;t d&#7919; li&#7879;u</string>
+    <string name="database_encryption">Mã hóa c&#417; s&#7903; d&#7919; li&#7879;u</string>
+    <string name="encrypted">Đã mã hóa (AES-256)</string>
+    <string name="unencrypted">Ch&#432;a mã hóa</string>
+    <string name="migrate_to_encrypted">Di chuy&#7875;n Đ&#7871;n c&#417; s&#7903; d&#7919; li&#7879;u Đã mã hóa</string>
+    <string name="migration_success">Di chuy&#7875;n thành công! C&#417; s&#7903; d&#7919; li&#7879;u hi&#7879;n Đã Đ&#432;&#7907;c mã hóa.</string>
+    <string name="migration_failed">Di chuy&#7875;n th&#7845;t b&#7841;i: %s. D&#7919; li&#7879;u c&#7911;a b&#7841;n Đã Đ&#432;&#7907;c khôi ph&#7909;c.</string>
+    <string name="background_lock_delay">Trì hoãn khóa</string>
+    <string name="lock_immediately">Ngay l&#7853;p t&#7913;c</string>
+    <string name="lock_after_seconds">%d giây</string>
+    <string name="custom_reminders">Nh&#7855;c nh&#7903; tùy ch&#7881;nh</string>
+    <string name="add_custom_reminder">Thêm nh&#7855;c nh&#7903; tùy ch&#7881;nh</string>
+    <string name="no_custom_reminders">Ch&#432;a có nh&#7855;c nh&#7903; tùy ch&#7881;nh</string>
+    <string name="reminder_title_label">Tiêu Đ&#7873; nh&#7855;c nh&#7903;</string>
+    <string name="reminder_title_required">Tiêu Đ&#7873; là b&#7855;t bu&#7897;c</string>
+    <string name="reminder_message_label">L&#7901;i nh&#7855;n (không b&#7855;t bu&#7897;c)</string>
+    <string name="reminder_date">Ngày nh&#7855;c nh&#7903;</string>
+    <string name="select_time">Ch&#7885;n gi&#7901;</string>
+    <string name="hue">Màu s&#7855;c</string>
+    <string name="saturation">Đ&#7897; bão hòa</string>
+    <string name="lightness">Đ&#7897; sáng</string>
+    <string name="apply_color">áp d&#7909;ng màu</string>
+    <string name="custom_color">Màu tùy ch&#7881;nh</string>
+    <string name="color_preview">Xem tr&#432;&#7899;c màu</string>
+    <string name="apply">áp d&#7909;ng</string>
+    <string name="preset_colors">Màu có s&#7869;n</string>
+    <string name="add_symptom">Thêm tri&#7879;u ch&#7913;ng</string>
+    <string name="symptom_name">Tên tri&#7879;u ch&#7913;ng</string>
+    <string name="symptom_name_required">Tên tri&#7879;u ch&#7913;ng là b&#7855;t bu&#7897;c</string>
+    <string name="prediction_explanation">D&#7921; Đoán thích &#7913;ng d&#7921;a trên %1$d chu k&#7923; g&#7847;n nh&#7845;t (trung bình %2$s ngày/chu k&#7923;, %3$s ngày/k&#7923; kinh)</string>
+    <string name="record_date">Ngày ghi</string>
+    <string name="select_date">Ch&#7885;n ngày</string>
+    <string name="confirm">Xác nh&#7853;n</string>
+    <string name="cancel">H&#7911;y</string>
+    <string name="delete">Xóa</string>
+    <string name="delete_record">Xóa b&#7843;n ghi</string>
+    <string name="delete_record_confirm">B&#7841;n có ch&#7855;c ch&#7855;n mu&#7889;n xóa b&#7843;n ghi cho ngày này? Hành Đ&#7897;ng này không th&#7875; hoàn tác.</string>
+    <string name="week_sun">CN</string>
+    <string name="week_mon">T2</string>
+    <string name="week_tue">T3</string>
+    <string name="week_wed">T4</string>
+    <string name="week_thu">T5</string>
+    <string name="week_fri">T6</string>
+    <string name="week_sat">T7</string>
+    <string name="calendar_today">Hôm nay</string>
+    <string name="back">Quay l&#7841;i</string>
+    <string name="symptom_headache">Đau Đ&#7847;u</string>
+    <string name="symptom_bloating">Đ&#7847;y h&#417;i</string>
+    <string name="symptom_breast_tenderness">C&#259;ng t&#7913;c ng&#7921;c</string>
+    <string name="symptom_backache">Đau l&#432;ng</string>
+    <string name="symptom_fatigue">M&#7879;t m&#7887;i</string>
+    <string name="symptom_mood_swings">Thay Đ&#7893;i tâm tr&#7841;ng</string>
+    <string name="symptom_acne">M&#7909;n</string>
+    <string name="symptom_increased_appetite">Thèm ăn</string>
+    <string name="symptom_insomnia">M&#7845;t ng&#7911;</string>
+    <string name="symptom_nausea">Bu&#7891;n nôn</string>
+    <string name="flow_light">Nh&#7865;</string>
+    <string name="flow_medium">Trung bình</string>
+    <string name="flow_heavy">N&#7863;ng</string>
+    <string name="pain_none">Không</string>
+    <string name="pain_mild">Nh&#7865;</string>
+    <string name="pain_moderate">V&#7915;a ph&#7843;i</string>
+    <string name="pain_severe">N&#7863;ng</string>
+    <string name="unit_days">ngày</string>
+    <string name="predicted_period_label">K&#7923; kinh d&#7921; Đoán: %1$s - %2$s</string>
+    <string name="ovulation_date_label">R&#7909;ng tr&#7913;ng: %s</string>
+    <string name="confidence_label">Đ&#7897; tin c&#7853;y: %1$s (d&#7921;a trên %2$d chu k&#7923;)</string>
+    <string name="reminder_days_before">S&#7889; ngày tr&#432;&#7899;c</string>
+    <string name="reminder_time">Gi&#7901; nh&#7855;c nh&#7903;</string>
+    <string name="enabled">Đã b&#7853;t</string>
+    <string name="disabled">Đã t&#7855;t</string>
+    <string name="color_pink">H&#7891;ng</string>
+    <string name="color_dark_pink">H&#7891;ng Đ&#7851;m</string>
+    <string name="color_peach">Đào</string>
+    <string name="color_light_purple">Tím nh&#7841;t</string>
+    <string name="color_medium_purple">Tím trung</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_kcal_format">%.0f kcal</string>
+    <string name="unit_grams_format">%.0f g</string>
+    <string name="unit_hours_format">%.1f h</string>
+    <string name="unit_minutes_int_format">%d min</string>
+    <string name="unit_minutes_float_format">%.0f min</string>
+    <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="unit_net_kcal_format">%+.0f kcal</string>
+    <string name="bmi_category_underweight">Thi&#7871;u cân</string>
+    <string name="bmi_category_normal">Bình th&#432;&#7901;ng</string>
+    <string name="bmi_category_overweight">Th&#7915;a cân</string>
+    <string name="bmi_category_obese">Béo phì</string>
+    <string name="bmi_standard_note">D&#7921;a trên tiêu chu&#7849;n BMI Trung Qu&#7889;c</string>
+    <string name="backup_success">Sao l&#432;u thành công</string>
+    <string name="backup_fail">Sao l&#432;u th&#7845;t b&#7841;i</string>
+    <string name="restore_success">Ph&#7909;c h&#7891;i thành công</string>
+    <string name="restore_fail">Ph&#7909;c h&#7891;i th&#7845;t b&#7841;i</string>
+    <string name="export_success">Xu&#7845;t thành công</string>
+    <string name="export_fail">Xu&#7845;t th&#7845;t b&#7841;i</string>
+    <string name="backup_export_desc">Xu&#7845;t c&#417; s&#7903; d&#7919; li&#7879;u d&#432;&#7899;i d&#7841;ng t&#7879;p ZIP sao l&#432;u</string>
+    <string name="backup_import_desc">Khôi ph&#7909;c d&#7919; li&#7879;u t&#7915; t&#7879;p sao l&#432;u</string>
+    <string name="backup_csv_desc">Xu&#7845;t b&#7843;n ghi d&#432;&#7899;i d&#7841;ng b&#7843;ng tính CSV</string>
+    <string name="deleted_time">Đã xóa: %s</string>
+    <string name="in_progress">Đang ti&#7871;n hành</string>
+    <string name="terms_countdown">Vui lòng &#273;&#7907;i %d giây</string>
+    <string name="auth_failed">Xác th&#7921;c th&#7845;t b&#7841;i: %s</string>
+    <string name="auth_failed_generic">Xác th&#7921;c th&#7845;t b&#7841;i</string>
+    <string name="biometric_init_failed">Kh&#7903;i t&#7841;o sinh tr&#7855;c th&#7845;t b&#7841;i</string>
+    <string name="lockout_message">Quá nhi&#7873;u l&#7847;n th&#7917;. Vui lòng Đ&#7907;i %d giây.</string>
+    <string name="chart_title_cycle_length_trend">Xu h&#432;&#7899;ng Đ&#7897; dài chu k&#7923;</string>
+    <string name="chart_title_pain_trend">Xu h&#432;&#7899;ng Đau</string>
+    <string name="chart_title_symptom_distribution">Phân b&#7889; tri&#7879;u ch&#7913;ng</string>
+    <string name="chart_cycle_label">Chu k&#7923; %d</string>
+    <string name="chart_cycle_length_label">Đ&#7897; dài chu k&#7923; : %d</string>
+    <string name="chart_pain_level_label">M&#7913;c Đ&#7897; Đau</string>
+    <string name="regularity_regular">Đ&#7873;u Đ&#7863;n</string>
+    <string name="regularity_somewhat_regular">T&#432;&#417;ng Đ&#7889;i Đ&#7873;u</string>
+    <string name="regularity_irregular">Không Đ&#7873;u</string>
+    <string name="regularity_insufficient_data">Không Đ&#7911; d&#7919; li&#7879;u</string>
+    <string name="confidence_high">Cao</string>
+    <string name="confidence_medium">Trung bình</string>
+    <string name="confidence_low">Th&#7845;p</string>
+    <string name="confidence_insufficient">Không Đ&#7911; d&#7919; li&#7879;u</string>
+    <string name="analysis_no_data_title">Ch&#432;a có d&#7919; li&#7879;u</string>
+    <string name="analysis_no_data_hint">B&#7855;t Đ&#7847;u ghi l&#7841;i chu k&#7923; Đ&#7875; xem phân tích và d&#7921; Đoán</string>
+    <string name="section_appearance">Giao di&#7879;n</string>
+    <string name="section_health">S&#7913;c kh&#7887;e</string>
+    <string name="section_data">D&#7919; li&#7879;u</string>
+    <string name="section_other">Khác</string>
+    <string name="open">M&#7903;</string>
+    <string name="retry">Th&#7917; l&#7841;i</string>
+    <string name="profile_theme_description">Tùy ch&#7881;nh màu &#7913;ng d&#7909;ng</string>
+    <string name="profile_language_description">Thay Đ&#7893;i ngôn ng&#7919; &#7913;ng d&#7909;ng</string>
+    <string name="profile_bmi_description">Theo dõi ch&#7881; s&#7889; kh&#7889;i c&#417; th&#7875;</string>
+    <string name="profile_app_lock_description">Yêu c&#7847;u xác th&#7921;c Đ&#7875; m&#7903; &#7913;ng d&#7909;ng</string>
+    <string name="screenshot_protection_title">Chống chụp màn hình</string>
+    <string name="screenshot_protection_description">Ngăn chụp màn hình và ghi màn hình</string>
+    <string name="profile_backup_description">Sao l&#432;u mã hóa và ph&#7909;c h&#7891;i t&#7845;t c&#7843; d&#7919; li&#7879;u</string>
+    <string name="profile_recycle_bin_description">Xem và khôi ph&#7909;c các b&#7843;n ghi Đã xóa</string>
+    <string name="profile_version">Phiên b&#7843;n 1.0.0</string>
+    <string name="profile_app_description">úng d&#7909;ng theo dõi s&#7913;c kh&#7887;e toàn di&#7879;n v&#7899;i tr&#7885;ng tâm là quy&#7873;n riêng t&#432;.</string>
+    <string name="custom_theme">Giao di&#7879;n tùy ch&#7881;nh</string>
+    <string name="language_description">Ch&#7885;n ngôn ng&#7919; &#432;a thích. úng d&#7909;ng s&#7869; kh&#7903;i Đ&#7897;ng l&#7841;i Đ&#7875; áp d&#7909;ng thay Đ&#7893;i.</string>
+    <string name="language_changed_restart">Đã thay Đ&#7893;i ngôn ng&#7919;, Đang kh&#7903;i Đ&#7897;ng l&#7841;i&#8230;</string>
+    <string name="bmi_empty_text">Ch&#432;a có b&#7843;n ghi cân n&#7863;ng. Thêm b&#7843;n ghi Đ&#7847;u tiên.</string>
+    <string name="save_height">L&#432;u chi&#7873;u cao</string>
+    <string name="bmi_category_label">Danh m&#7909;c</string>
+    <string name="height_label">Chi&#7873;u cao</string>
+    <string name="update_height">C&#7853;p nh&#7853;t chi&#7873;u cao</string>
+    <string name="add_weight_record_title">Thêm b&#7843;n ghi cân n&#7863;ng</string>
+    <string name="add_weight_record_text">Nh&#7853;p cân n&#7863;ng c&#7911;a b&#7841;n hôm nay.</string>
+    <string name="recycle_bin_description">Các b&#7843;n ghi Đã xóa Đ&#432;&#7907;c gi&#7919; trong 30 ngày tr&#432;&#7899;c khi xóa vãnh vi&#7877;n.</string>
+    <string name="recycle_bin_empty">Thùng rác tr&#7889;ng</string>
+    <string name="recycle_bin_empty_title">D&#7885;n thùng rác</string>
+    <string name="recycle_bin_empty_confirm">T&#7845;t c&#7843; các b&#7843;n ghi Đã xóa s&#7869; b&#7883; xóa vãnh vi&#7877;n. Hành Đ&#7897;ng này không th&#7875; hoàn tác.</string>
+    <string name="recycle_bin_empty_action">D&#7885;n</string>
+    <string name="recycle_bin_restore">Khôi ph&#7909;c</string>
+    <string name="recycle_bin_delete_forever">Xóa vãnh vi&#7877;n</string>
+    <string name="add_record">Thêm b&#7843;n ghi</string>
+    <string name="period_tracking_title">Theo dõi chu k&#7923;</string>
+    <string name="prediction_explanation_title">Gi&#7843;i thích d&#7921; Đoán</string>
+    <string name="reminder_period_desc">Nh&#7855;n thông báo tr&#432;&#7899;c khi b&#7855;t Đ&#7847;u chu k&#7923;</string>
+    <string name="reminder_ovulation_desc">Nh&#7855;n thông báo tr&#432;&#7899;c khi r&#7909;ng tr&#7913;ng</string>
+    <string name="reminder_pms_desc">Nh&#7855;n thông báo v&#7873; tri&#7879;u ch&#7913;ng PMS</string>
+    <string name="cycle_status_title">Tr&#7841;ng thái chu k&#7923;</string>
+    <string name="cycle_day_label">Ngày chu k&#7923;</string>
+    <string name="days_until_label">S&#7889; ngày còn l&#7841;i</string>
+    <string name="period_active_text">K&#7923; kinh Đang di&#7877;n ra</string>
+    <string name="next_period_label">K&#7923; kinh ti&#7871;p theo</string>
+    <string name="not_enough_data">Không Đ&#7911; d&#7919; li&#7879;u</string>
+    <string name="cycle_length_label">Đ&#7897; dài chu k&#7923;</string>
+    <string name="chart_no_data">Không Đ&#7911; d&#7919; li&#7879;u Đ&#7875; hi&#7875;n th&#7883; bi&#7875;u Đ&#7891;</string>
+    <string name="chart_no_pain_data">Ch&#432;a có d&#7919; li&#7879;u Đau</string>
+    <string name="chart_pain_unknown">Không xác Đ&#7883;nh</string>
+    <string name="chart_total_records">T&#7893;ng s&#7889; b&#7843;n ghi</string>
+    <string name="record_for_date">B&#7843;n ghi cho %s</string>
+    <string name="save_record">L&#432;u b&#7843;n ghi</string>
+    <string name="male_health_trend">Xu h&#432;&#7899;ng s&#7913;c kh&#7887;e</string>
+    <string name="male_health_description">Phân tích chu k&#7923; không áp d&#7909;ng cho ng&#432;&#7901;i dùng nam. Hi&#7875;n th&#7883; d&#7919; li&#7879;u s&#7913;c kh&#7887;e chung bên d&#432;&#7899;i.</string>
+    <string name="steps_overview">T&#7893;ng quan b&#432;&#7899;c chân</string>
+    <string name="steps_today">B&#432;&#7899;c chân hôm nay</string>
+    <string name="steps_weekly_avg_label">Trung bình 7 ngày</string>
+    <string name="steps_record_days">S&#7889; ngày Đã ghi</string>
+    <string name="steps_weekly_trend_label">Xu h&#432;&#7899;ng b&#432;&#7899;c chân 7 ngày</string>
+    <string name="steps_title">Theo dõi b&#432;&#7899;c chân</string>
+    <string name="steps_daily_goal">M&#7909;c tiêu hàng ngày</string>
+    <string name="steps_update_goal">C&#7853;p nh&#7853;t m&#7909;c tiêu</string>
+    <string name="steps_this_week">Tu&#7847;n này</string>
+    <string name="steps_total">T&#7893;ng</string>
+    <string name="steps_average">Trung bình</string>
+    <string name="steps_days_label">Ngày</string>
+    <string name="steps_weekly_trend">Xu h&#432;&#7899;ng tu&#7847;n</string>
+    <string name="steps_goal_format">%d b&#432;&#7899;c</string>
+    <string name="steps_weekly_avg_format">Trung bình tu&#7847;n %d b&#432;&#7899;c/ngày</string>
+    <string name="steps_history_title">L&#7883;ch s&#7917; b&#432;&#7899;c chân</string>
+    <string name="steps_tab_week">Tu&#7847;n</string>
+    <string name="steps_tab_month">Tháng</string>
+    <string name="steps_tab_year">N&#259;m</string>
+    <string name="steps_tab_all">T&#7845;t c&#7843;</string>
+    <string name="steps_30d_total">T&#7893;ng 30 ngày</string>
+    <string name="steps_avg">Trung bình ngày</string>
+    <string name="steps_best">Ngày t&#7889;t nh&#7845;t</string>
+    <string name="steps_weekly_label">Chi ti&#7871;t hàng tu&#7847;n</string>
+    <string name="steps_daily_trend">Xu h&#432;&#7899;ng hàng ngày</string>
+    <string name="steps_monthly_label">Chi ti&#7871;t hàng tháng</string>
+    <string name="steps_total_label">T&#7893;ng s&#7889; b&#432;&#7899;c</string>
+    <string name="steps_period_total">T&#7893;ng chu k&#7923;</string>
+    <string name="steps_weekly_avg">Trung bình tu&#7847;n</string>
+    <string name="steps_monthly_avg">Trung bình tháng</string>
+    <string name="steps_best_month">Tháng t&#7889;t nh&#7845;t</string>
+    <string name="steps_tab_day">Ngày</string>
+    <string name="steps_label">B&#432;&#7899;c chân</string>
+    <string name="steps_calories_label">Calo</string>
+    <string name="steps_yearly_label">Chi ti&#7871;t hàng n&#259;m</string>
+    <string name="dashboard_title">B&#7843;ng Đi&#7873;u khi&#7875;n s&#7913;c kh&#7887;e</string>
+    <string name="dashboard_quick_actions">Thao tác nhanh</string>
+    <string name="dashboard_retry">Th&#7917; l&#7841;i</string>
+    <string name="dashboard_insights">Thông tin s&#7913;c kh&#7887;e</string>
+    <string name="dashboard_insights_empty">Ghi l&#7841;i nhi&#7873;u d&#7919; li&#7879;u s&#7913;c kh&#7887;e h&#417;n Đ&#7875; có thông tin cá nhân hóa</string>
+    <string name="dashboard_period_status">Tr&#7841;ng thái chu k&#7923;</string>
+    <string name="dashboard_period_active">K&#7923; kinh Đang di&#7877;n ra</string>
+    <string name="dashboard_follicular_phase">Giai Đo&#7841;n nang noãn</string>
+    <string name="dashboard_no_data">Không có d&#7919; li&#7879;u</string>
+    <string name="dashboard_today_steps">B&#432;&#7899;c chân hôm nay</string>
+    <string name="dashboard_goal_format">M&#7909;c tiêu: %d</string>
+    <string name="dashboard_cycle_day_format">Ngày %1$d</string>
+    <string name="dashboard_record_period">Ghi chu k&#7923;</string>
+    <string name="dashboard_record_steps">Ghi b&#432;&#7899;c chân</string>
+    <string name="dashboard_record_health">Phân tích s&#7913;c kh&#7887;e</string>
+    <string name="gender_welcome">Chào m&#7915;ng Đ&#7871;n v&#7899;i TianshangHealth</string>
+    <string name="gender_instruction">Vui lòng ch&#7885;n gi&#7899;i tính Đ&#7875; theo dõi s&#7913;c kh&#7887;e cá nhân hóa</string>
+    <string name="gender_male">Nam</string>
+    <string name="gender_male_desc">&#7848;n tính n&#259;ng theo dõi chu k&#7923;</string>
+    <string name="gender_female">N&#7919;</string>
+    <string name="gender_female_desc">Hi&#7875;n th&#7883; t&#7845;t c&#7843; tính n&#259;ng bao g&#7891;m theo dõi chu k&#7923;</string>
+    <string name="gender_other">Khác</string>
+    <string name="gender_other_desc">Hi&#7875;n th&#7883; t&#7845;t c&#7843; tính n&#259;ng</string>
+    <string name="gender_footnote">B&#7841;n có th&#7875; thay Đ&#7893;i Đi&#7873;u này sau trong Cài Đ&#7863;t</string>
+    <string name="gender_setting_title">Gi&#7899;i tính</string>
+    <string name="gender_setting_description">Thay Đ&#7893;i gi&#7899;i tính Đ&#7875; Đi&#7873;u ch&#7881;nh mô-Đun tính n&#259;ng</string>
+    <string name="select_gender">Ch&#7885;n gi&#7899;i tính</string>
+    <string name="app_lock_health_data_protected">D&#7919; li&#7879;u s&#7913;c kh&#7887;e c&#7911;a b&#7841;n Đã Đ&#432;&#7907;c b&#7843;o v&#7879;</string>
+    <string name="app_lock_set_password_title">Đ&#7863;t m&#7853;t kh&#7849;u</string>
+    <string name="app_lock_password_label">M&#7853;t kh&#7849;u</string>
+    <string name="app_lock_confirm_password_label">Xác nh&#7853;n m&#7853;t kh&#7849;u</string>
+    <string name="app_lock_enter_password_title">Nh&#7853;p m&#7853;t kh&#7849;u</string>
+    <string name="app_lock_use_biometric">S&#7917; d&#7909;ng sinh tr&#7855;c h&#7885;c</string>
+    <string name="terms_privacy_title">Đi&#7873;u kho&#7843;n D&#7883;ch v&#7909; &amp; Chính sách B&#7843;o m&#7853;t</string>
+    <string name="terms_service_title">Đi&#7873;u kho&#7843;n D&#7883;ch v&#7909;</string>
+    <string name="privacy_policy_title">Chính sách B&#7843;o m&#7853;t</string>
+    <string name="terms_service_declaration">1. Tuyên b&#7889; D&#7883;ch v&#7909;\n\nTianshangHealth là &#7913;ng d&#7909;ng theo dõi s&#7913;c kh&#7887;e toàn di&#7879;n Đ&#7863;t quy&#7873;n riêng t&#432; và b&#7843;o m&#7853;t d&#7919; li&#7879;u lên hàng Đ&#7847;u. T&#7845;t c&#7843; d&#7919; li&#7879;u Đ&#432;&#7907;c l&#432;u tr&#7919; c&#7909;c b&#7897; trên thi&#7871;t b&#7883; v&#7899;i mã hóa m&#7841;nh.\n\n2. Quy&#7873;n riêng t&#432; d&#7919; li&#7879;u\n\nChúng tôi không thu th&#7853;p, t&#7843;i lên ho&#7863;c chia s&#7867; b&#7845;t k&#7923; d&#7919; li&#7879;u s&#7913;c kh&#7887;e cá nhân nào. &#7912;ng d&#7909;ng ho&#7841;t Đ&#7897;ng hoàn toàn ngo&#7841;i tuy&#7871;n mà không c&#7847;n quy&#7873;n m&#7841;ng.\n\n3. Trách nhi&#7879;m ng&#432;&#7901;i dùng\n\nB&#7841;n ch&#7883;u trách nhi&#7879;m v&#7873; tính chính xác c&#7911;a d&#7919; li&#7879;u s&#7913;c kh&#7887;e nh&#7853;p vào. Các d&#7921; Đoán và phân tích Đ&#432;&#7907;c cung c&#7845;p ch&#7881; Đ&#7875; tham kh&#7843;o và không c&#7845;u thành l&#7901;i khuyên y t&#7871;.\n\n4. B&#7843;o m&#7853;t d&#7919; li&#7879;u\n\nD&#7919; li&#7879;u c&#7911;a b&#7841;n Đ&#432;&#7907;c b&#7843;o v&#7879; b&#7859;ng mã hóa SQLCipher AES-256. Khóa mã hóa Đ&#432;&#7907;c qu&#7843;n lý thông qua Android Keystore Đ&#7875; Đ&#7843;m b&#7843;o an toàn &#7903; c&#7845;p Đ&#7897; ph&#7847;n c&#7913;ng.</string>
+    <string name="privacy_policy_body">1. Nguyên t&#7855;c c&#7889;t lõi: B&#7843;o Đ&#7843;m d&#7919; li&#7879;u Đ&#7883;a ph&#432;&#417;ng\n\nT&#7845;t c&#7843; d&#7919; li&#7879;u s&#7913;c kh&#7887;e c&#7911;a b&#7841;n, bao g&#7891;m chu k&#7923; kinh nguy&#7879;t, tri&#7879;u ch&#7913;ng và các ch&#7881; s&#7889; s&#7913;c kh&#7887;e khác, ch&#7881; Đ&#432;&#7907;c l&#432;u tr&#7919; trong c&#417; s&#7903; d&#7919; li&#7879;u Đã mã hóa trên thi&#7871;t b&#7883; c&#7911;a b&#7841;n.\n\n2. Thông tin thu th&#7853;p\n\nChúng tôi ch&#7881; x&#7917; lý thông tin mà b&#7841;n nh&#7853;p th&#7911; công vào &#7913;ng d&#7909;ng. Không có vi&#7879;c thu th&#7853;p d&#7919; li&#7879;u t&#7921; Đ&#7897;ng nào.\n\n3. Mã hóa d&#7919; li&#7879;u\n\nT&#7845;t c&#7843; d&#7919; li&#7879;u nh&#7841;y c&#7843;m Đ&#432;&#7907;c mã hóa b&#7859;ng SQLCipher v&#7899;i AES-256. Khóa mã hóa Đ&#432;&#7907;c l&#432;u tr&#7919; an toàn trong Android Keystore.\n\n4. Không có truy c&#7853;p bên th&#7913; ba\n\nChúng tôi không s&#7917; d&#7909;ng b&#7845;t k&#7923; d&#7883;ch v&#7909; phân tích, qu&#7843;ng cáo ho&#7863;c theo dõi nào c&#7911;a bên th&#7913; ba. D&#7919; li&#7879;u c&#7911;a b&#7841;n không bao gi&#7901; r&#7901;i kh&#7887;i thi&#7871;t b&#7883; c&#7911;a b&#7841;n.\n\n5. Xu&#7845;t d&#7919; li&#7879;u\n\nB&#7841;n có th&#7875; xu&#7845;t d&#7919; li&#7879;u c&#7911;a mình b&#7845;t c&#7913; lúc nào &#7903; các Đ&#7883;nh d&#7841;ng tiêu chu&#7849;n (CSV, sao l&#432;u mã hóa). B&#7841;n có toàn quy&#7873;n ki&#7875;m soát d&#7919; li&#7879;u c&#7911;a mình.\n\n6. Xóa d&#7919; li&#7879;u\n\nB&#7841;n có th&#7875; xóa b&#7845;t k&#7923; ho&#7863;c t&#7845;t c&#7843; d&#7919; li&#7879;u c&#7911;a mình b&#7845;t c&#7913; lúc nào. D&#7919; li&#7879;u Đã xóa s&#7869; b&#7883; lo&#7841;i b&#7887; vãnh vi&#7877;n kh&#7887;i thi&#7871;t b&#7883;.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">L&#7895;i không xác Đ&#7883;nh</string>
+    <string name="error_failed_add_record">Không th&#7875; thêm b&#7843;n ghi</string>
+    <string name="error_failed_update_record">Không th&#7875; c&#7853;p nh&#7853;t b&#7843;n ghi</string>
+    <string name="error_failed_delete_record">Không th&#7875; xóa b&#7843;n ghi</string>
+    <string name="error_failed_record">Ghi th&#7845;t b&#7841;i</string>
+    <string name="error_failed_set_password">Không th&#7875; Đ&#7863;t m&#7853;t kh&#7849;u</string>
+    <string name="error_password_not_set">M&#7853;t kh&#7849;u ch&#432;a Đ&#432;&#7907;c Đ&#7863;t</string>
+    <string name="error_incorrect_password">M&#7853;t kh&#7849;u không Đúng</string>
+    <string name="error_verification_failed">Xác minh th&#7845;t b&#7841;i</string>
+    <string name="error_failed_load_settings">Không th&#7875; t&#7843;i cài Đ&#7863;t</string>
+    <string name="error_failed_update_settings">Không th&#7875; c&#7853;p nh&#7853;t cài Đ&#7863;t</string>
+    <string name="error_failed_save_gender">Không th&#7875; l&#432;u gi&#7899;i tính</string>
+    <string name="error_failed_update_goal">Không th&#7875; c&#7853;p nh&#7853;t m&#7909;c tiêu</string>
+    <string name="error_failed_restore">Không th&#7875; khôi ph&#7909;c b&#7843;n ghi</string>
+    <string name="error_failed_to_delete">Không th&#7875; xóa b&#7843;n ghi</string>
+    <string name="error_failed_empty_bin">Không th&#7875; d&#7885;n thùng rác</string>
+    <string name="loading">Đang t&#7843;i...</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_period">Nh&#7855;c nh&#7903; chu k&#7923;</string>
+    <string name="notification_channel_period_desc">Nh&#7855;c nh&#7903; theo dõi chu k&#7923;</string>
+    <string name="notification_period_title">Nh&#7855;c nh&#7903; theo dõi chu k&#7923;</string>
+    <string name="notification_period_body">Đ&#7915;ng quên ghi l&#7841;i d&#7919; li&#7879;u chu k&#7923; hôm nay!</string>
+    <string name="notification_channel_ovulation">Nh&#7855;c nh&#7903; r&#7909;ng tr&#7913;ng</string>
+    <string name="notification_channel_ovulation_desc">Nh&#7855;c nh&#7903; theo dõi r&#7909;ng tr&#7913;ng</string>
+    <string name="notification_ovulation_title">C&#7917;a s&#7893; r&#7909;ng tr&#7913;ng Đang Đ&#7871;n</string>
+    <string name="notification_ovulation_body">C&#7917;a s&#7893; th&#7909; th&#7905; c&#7911;a b&#7841;n s&#7855;p Đ&#7871;n!</string>
+    <string name="notification_channel_pms">Nh&#7855;c nh&#7903; PMS</string>
+    <string name="notification_channel_pms_desc">Nh&#7855;c nh&#7903; v&#7873; tri&#7879;u ch&#7913;ng PMS</string>
+    <string name="notification_pms_title">Tri&#7879;u ch&#7913;ng PMS d&#7921; ki&#7871;n</string>
+    <string name="notification_pms_body">Các tri&#7879;u ch&#7913;ng PMS có th&#7875; b&#7855;t Đ&#7847;u trong vài ngày. Hãy chăm sóc b&#7843;n thân!</string>
+    <string name="notification_channel_steps">Máy Đ&#7871;m b&#432;&#7899;c</string>
+    <string name="notification_channel_steps_desc">Thông báo d&#7883;ch v&#7909; Đ&#7871;m b&#432;&#7899;c</string>
+    <string name="notification_steps_body">B&#432;&#7899;c chân hôm nay: %d</string>
+
+    <!-- Navigation tab titles -->
+    <string name="nav_dashboard">B&#7843;ng Đi&#7873;u khi&#7875;n</string>
+    <string name="nav_period">Chu k&#7923;</string>
+    <string name="nav_fitness">Th&#7875; d&#7909;c</string>
+    <string name="nav_analysis">Phân tích</string>
+    <string name="nav_profile">H&#7891; s&#417;</string>
+
+    <!-- Backup & CSV strings -->
+    <string name="csv_header">Ngày B&#7855;t Đ&#7847;u,Ngày K&#7871;t thúc,M&#7913;c Đ&#7897; L&#432;&#7907;ng,M&#7913;c Đ&#7897; Đau,Ghi chú</string>
+    <string name="backup_exported_success">Sao l&#432;u Đã xu&#7845;t thành công</string>
+    <string name="import_success_format">Đã nh&#7853;p %d b&#7843;n ghi thành công</string>
+    <string name="csv_exported_success">CSV Đã xu&#7845;t thành công</string>
+    <string name="csv_export_failed">Xu&#7845;t CSV th&#7845;t b&#7841;i</string>
+    <string name="password_export_title">Mã hóa sao l&#432;u</string>
+    <string name="password_import_title">Gi&#7843;i mã sao l&#432;u</string>
+    <string name="password_export_desc">Nh&#7853;p m&#7853;t kh&#7849;u Đ&#7875; mã hóa t&#7879;p sao l&#432;u.</string>
+    <string name="password_import_desc">Nh&#7853;p m&#7853;t kh&#7849;u Đ&#432;&#7907;c s&#7917; d&#7909;ng Đ&#7875; mã hóa t&#7879;p sao l&#432;u này.</string>
+    <string name="password_label">M&#7853;t kh&#7849;u</string>
+    <string name="proceed">Ti&#7871;p t&#7909;c</string>
+    <string name="password_short_error">M&#7853;t kh&#7849;u quá ng&#7855;n</string>
+    <string name="password_mismatch_error">M&#7853;t kh&#7849;u không kh&#7899;p</string>
+
+    <!-- Dashboard insight strings -->
+    <string name="insight_period_active">K&#7923; kinh Đang di&#7877;n ra</string>
+    <string name="insight_follicular_phase">Giai Đo&#7841;n nang noãn</string>
+    <string name="insight_luteal_phase">Giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_cycle_day">Ngày chu k&#7923; %d</string>
+    <string name="insight_steps_stable_title">Ho&#7841;t Đ&#7897;ng &#7893;n Đ&#7883;nh trong su&#7889;t chu k&#7923;</string>
+    <string name="insight_steps_stable_desc">S&#7889; b&#432;&#7899;c Đi c&#7911;a b&#7841;n duy trì Đ&#7873;u Đ&#7863;n qua các giai Đo&#7841;n chu k&#7923;, thói quen t&#7853;p th&#7875; d&#7909;c t&#7889;t.</string>
+    <string name="insight_mood_drop_title">Tâm tr&#7841;ng gi&#7843;m trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_mood_drop_desc">Đi&#7875;m tâm tr&#7841;ng trung bình th&#7845;p h&#417;n trong giai Đo&#7841;n hoàng th&#7875;, hãy xem xét qu&#7843;n lý tâm tr&#7841;ng</string>
+    <string name="insight_mood_rise_title">Tâm tr&#7841;ng t&#7889;t h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_mood_rise_desc">Đi&#7875;m tâm tr&#7841;ng trung bình cao h&#417;n trong giai Đo&#7841;n hoàng th&#7875;, b&#7841;n Đang làm t&#7889;t</string>
+    <string name="insight_sleep_drop_title">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911; gi&#7843;m trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_sleep_drop_desc">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911; gi&#7843;m trong giai Đo&#7841;n hoàng th&#7875;, hãy th&#7917; các bài t&#7853;p th&#432; giãn</string>
+    <string name="insight_sleep_rise_title">Ng&#7911; ngon h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_sleep_rise_desc">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911; cao h&#417;n trong giai Đo&#7841;n hoàng th&#7875;, hãy duy trì thói quen t&#7889;t</string>
+    <string name="insight_stress_period_title">C&#259;ng th&#7869;ng cao h&#417;n trong k&#7923; kinh</string>
+    <string name="insight_stress_period_desc">M&#7913;c Đ&#7897; c&#259;ng th&#7867;ng cao h&#417;n %s Đi&#7875;m trong k&#7923; kinh, hãy xem xét gi&#7843;m ho&#7841;t Đ&#7897;ng m&#7841;nh</string>
+    <string name="insight_mood_today_low_title">Tâm tr&#7841;ng th&#7845;p hôm nay</string>
+    <string name="insight_mood_today_low_desc">Đi&#7875;m tâm tr&#7841;ng c&#7911;a b&#7841;n th&#7845;p hôm nay, hãy th&#7917; làm Đi&#7873;u gì Đó b&#7841;n thích</string>
+    <string name="insight_stress_today_high_title">C&#259;ng th&#7869;ng cao hôm nay</string>
+    <string name="insight_stress_today_high_desc">M&#7913;c Đ&#7897; c&#259;ng th&#7867;ng cao hôm nay, hãy th&#7917; hít th&#7903; sâu ho&#7863;c thi&#7873;n</string>
+    <string name="insight_sleep_last_night_low_title">Ng&#7911; kém t&#7889;i qua</string>
+    <string name="insight_sleep_last_night_low_desc">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911; th&#7845;p t&#7889;i qua, hãy th&#7917; Đi ng&#7911; s&#7899;m t&#7889;i nay</string>
+
+    <!-- Steps insight strings -->
+    <string name="insight_luteal_decrease">Ho&#7841;t Đ&#7897;ng gi&#7843;m Đáng k&#7875; trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_luteal_increase">Ho&#7841;t Đ&#7897;ng t&#259;ng trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_luteal_rest">Ngh&#7881; ng&#417;i thích h&#7907;p trong giai Đo&#7841;n hoàng th&#7875;, các bài t&#7853;p nh&#7865; nhàng nh&#432; yoga Đ&#432;&#7907;c khuyên ngh&#7883;</string>
+    <string name="insight_luteal_nutrition">T&#259;ng ho&#7841;t Đ&#7897;ng tuy&#7879;t v&#7901;i, hãy nh&#7899; duy trì dinh d&#432;&#7905;ng</string>
+    <string name="insight_luteal_activity_low_title">Ho&#7841;t Đ&#7897;ng th&#7845;p h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_luteal_activity_low_desc">S&#7889; b&#432;&#7899;c trong giai Đo&#7841;n hoàng th&#7875; gi&#7843;m %d%% so v&#7899;i giai Đo&#7841;n nang noãn. Nên có ho&#7841;t Đ&#7897;ng nh&#7865; nhàng nh&#432; Đi b&#7897;.</string>
+    <string name="insight_luteal_activity_high_title">Ho&#7841;t Đ&#7897;ng cao h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_luteal_activity_high_desc">S&#7889; b&#432;&#7899;c trong giai Đo&#7841;n hoàng th&#7875; t&#259;ng %d%% so v&#7899;i giai Đo&#7841;n nang noãn. Hãy nh&#7899; ngh&#7881; ng&#417;i và duy trì dinh d&#432;&#7905;ng.</string>
+    <string name="insight_activity_stable_title">Ho&#7841;t Đ&#7897;ng Đ&#7873;u Đ&#7863;n trong su&#7889;t chu k&#7923;</string>
+    <string name="insight_activity_stable_desc">S&#7889; b&#432;&#7899;c duy trì Đ&#7873;u Đ&#7863;n qua các giai Đo&#7841;n chu k&#7923;. Duy trì thói quen t&#7853;p th&#7875; d&#7909;c t&#7889;t.</string>
+    <string name="insight_mood_luteal_drop_title">Tâm tr&#7841;ng gi&#7843;m trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_mood_luteal_drop_desc">Đi&#7875;m tâm tr&#7841;ng trung bình th&#7845;p h&#417;n %s Đi&#7875;m trong giai Đo&#7841;n hoàng th&#7875;. Xem xét qu&#7843;n lý tâm tr&#7841;ng.</string>
+    <string name="insight_mood_luteal_rise_title">Tâm tr&#7841;ng t&#7889;t h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_mood_luteal_rise_desc">Đi&#7875;m tâm tr&#7841;ng trung bình cao h&#417;n %s Đi&#7875;m trong giai Đo&#7841;n hoàng th&#7875;. B&#7841;n Đang làm tuy&#7877;t v&#7901;i!</string>
+    <string name="insight_sleep_luteal_drop_title">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911; gi&#7843;m trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_sleep_luteal_drop_desc">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911; gi&#7843;m %s Đi&#7875;m trong giai Đo&#7841;n hoàng th&#7875;. Th&#7917; các bài t&#7853;p th&#432; giãn tr&#432;&#7899;c khi ng&#7911;.</string>
+    <string name="insight_sleep_luteal_rise_title">Ng&#7911; ngon h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_sleep_luteal_rise_desc">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911; cao h&#417;n %s Đi&#7875;m trong giai Đo&#7841;n hoàng th&#7875;. Duy trì thói quen t&#7889;t.</string>
+
+    <!-- Prediction engine strings -->
+    <string name="prediction_not_enough_data">Không Đ&#7911; d&#7919; li&#7879;u Đ&#7875; d&#7921; Đoán</string>
+
+    <!-- Recycled bin -->
+    <string name="recycle_bin_refresh">Làm m&#7899;i</string>
+    <string name="recycle_bin_empty_title_short">D&#7885;n thùng rác</string>
+    <string name="recycle_bin_period_format">K&#7923; kinh: %1$s</string>
+    <string name="recycle_bin_to_format">Đ&#7871;n %1$s</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_set_password">Đ&#7863;t m&#7853;t kh&#7849;u</string>
+    <string name="app_lock_confirm_password">Xác nh&#7853;n m&#7853;t kh&#7849;u</string>
+    <string name="app_lock_set_password_btn">Đ&#7863;t m&#7853;t kh&#7849;u</string>
+    <string name="app_lock_unlock_btn">M&#7903; khóa</string>
+    <string name="app_lock_enter_password">Nh&#7853;p m&#7853;t kh&#7849;u</string>
+
+    <!-- Calendar navigation arrows -->
+    <string name="calendar_prev">&#8592;</string>
+    <string name="calendar_next">&#8594;</string>
+
+    <!-- Stats labels (used in Charts.kt) -->
+    <string name="stats_total_records">T&#7893;ng s&#7889; b&#7843;n ghi</string>
+    <string name="stats_total_cycles">T&#7893;ng s&#7889; chu k&#7923;</string>
+    <string name="stats_avg_cycle">Chu k&#7923; trung bình</string>
+    <string name="stats_avg_period">K&#7923; kinh trung bình</string>
+    <string name="stats_regularity_text">Đ&#7873;u Đ&#7863;n</string>
+    <string name="stats_cycle_num">Chu k&#7923; %d</string>
+    <string name="stats_days_suffix">%d ngày</string>
+    <string name="stats_avg_format">Trung bình: %d ngày</string>
+    <string name="stats_no_data">Không có d&#7919; li&#7879;u</string>
+    <string name="weight_format">Cân n&#7863;ng: %.1f kg</string>
+    <string name="bmi_format">BMI %.1f</string>
+    <string name="height_cm_format">%.0f cm</string>
+    <string name="bmi_current_value">%.1f</string>
+    <string name="backup_aes_description">Các b&#7843;n sao l&#432;u Đ&#432;&#7907;c mã hóa b&#7859;ng AES-256-GCM s&#7917; d&#7909;ng m&#7853;t kh&#7849;u c&#7911;a b&#7841;n.</string>
+    <string name="steps_of_goal">trên m&#7909;c tiêu %d</string>
+
+    <!-- HSL Color Engine -->
+    <string name="hsl_format">M: %1$d° B: %2$d%% S: %3$d%%</string>
+
+    <!-- Preset color names -->
+    <string name="color_blue">Xanh d&#432;&#417;ng</string>
+    <string name="color_green">Xanh lá</string>
+    <string name="color_purple">Tím</string>
+    <string name="color_orange">Cam</string>
+    <string name="color_teal">Xanh t&#7845;t</string>
+
+    <!-- Step counter notification -->
+    <string name="step_notification_text">Ch&#7841;m Đ&#7875; xem chi ti&#7871;t</string>
+
+    <!-- Exercise Types -->
+    <string name="exercise_running">Ch&#7841;y b&#7897;</string>
+    <string name="exercise_walking">Đi b&#7897;</string>
+    <string name="exercise_cycling">Đi xe Đ&#7841;p</string>
+    <string name="exercise_swimming">B&#417;i l&#7897;i</string>
+    <string name="exercise_yoga">Yoga</string>
+    <string name="exercise_strength">T&#7853;p t&#7841;p</string>
+    <string name="exercise_dance">Nh&#7843;y múa</string>
+    <string name="exercise_pilates">Pilates</string>
+    <string name="exercise_hiit">HIIT</string>
+    <string name="exercise_basketball">Bóng r&#7893;</string>
+    <string name="exercise_football">Bóng Đá</string>
+    <string name="exercise_tennis">Qu&#7847;n v&#7907;t</string>
+    <string name="exercise_badminton">C&#7847;u lông</string>
+    <string name="exercise_table_tennis">Bóng bàn</string>
+    <string name="exercise_skipping">Nh&#7843;y dây</string>
+    <string name="exercise_hiking">Đi b&#7897; Đ&#432;&#7901;ng dài</string>
+    <string name="exercise_other">Khác</string>
+
+    <!-- Fitness UI -->
+    <string name="fitness_weekly_summary">Tu&#7847;n này</string>
+    <string name="fitness_add_workout">Thêm bài t&#7853;p</string>
+    <string name="fitness_select_type">Ch&#7885;n lo&#7841;i bài t&#7853;p</string>
+    <string name="fitness_duration_minutes">Th&#7901;i gian (phút)</string>
+    <string name="fitness_calories_label">Calo</string>
+    <string name="fitness_distance_km">Kho&#7843;ng cách (km)</string>
+    <string name="fitness_today_workouts">Bài t&#7853;p hôm nay</string>
+    <string name="fitness_recent_workouts">Bài t&#7853;p g&#7847;n Đây</string>
+    <string name="fitness_empty">Ch&#432;a có bài t&#7853;p nào.\nCh&#7841;m + Đ&#7875; thêm bài t&#7853;p Đ&#7847;u tiên.</string>
+    <string name="fitness_minutes_format">%d phút</string>
+    <string name="fitness_calories_format">%d kcal</string>
+    <string name="fitness_duration">Th&#7901;i gian</string>
+    <string name="fitness_calories">Calo</string>
+    <string name="fitness_workouts">Bài t&#7853;p</string>
+    <string name="fitness_km_unit">km</string>
+
+    <!-- Battery Optimization -->
+    <string name="steps_battery_title">T&#7855;t t&#7889;i úu hóa pin</string>
+    <string name="steps_battery_desc">T&#7889;i úu hóa pin có th&#7875; d&#7915;ng d&#7883;ch v&#7909; Đ&#7871;m b&#432;&#7899;c và &#7843;nh h&#432;&#7903;ng Đ&#7871;n vi&#7877;c theo dõi b&#432;&#7899;c chân.</string>
+    <string name="steps_battery_action">Đi Đ&#7871;n Cài Đ&#7863;t</string>
+
+    <!-- OEM Guide -->
+    <string name="steps_oem_settings">Cài Đ&#7863;t %s</string>
+    <string name="steps_auto_start_settings">Cài Đ&#7863;t t&#7921; Đ&#7897;ng kh&#7903;i Đ&#7897;ng</string>
+    <string name="steps_battery_settings">Cài Đ&#7863;t pin</string>
+
+    <!-- Energy Summary -->
+    <string name="energy_summary_title">T&#7893;ng quan n&#259;ng l&#432;&#7907;ng</string>
+    <string name="energy_today">Hôm nay</string>
+    <string name="energy_this_week">Tu&#7847;n này</string>
+    <string name="energy_steps">B&#432;&#7899;c chân</string>
+    <string name="energy_workouts">Bài t&#7853;p</string>
+    <string name="energy_total">T&#7893;ng</string>
+    <string name="energy_workouts_summary">%1$d bài t&#7853;p \u00B7 %2$d phút</string>
+
+    <!-- Body Metrics -->
+    <string name="body_metrics_title">Ch&#7881; s&#7889; c&#417; th&#7875;</string>
+    <string name="body_metrics_height">Chi&#7873;u cao (cm)</string>
+    <string name="body_metrics_weight">Cân n&#7863;ng (kg)</string>
+    <string name="body_metrics_saved">Đã l&#432;u ch&#7881; s&#7889; c&#417; th&#7875;</string>
+    <string name="body_metrics_height_error">Vui lòng nh&#7853;p chi&#7873;u cao h&#7907;p l&#7879; (80-250cm)</string>
+    <string name="body_metrics_weight_error">Vui lòng nh&#7853;p cân n&#7863;ng h&#7907;p l&#7879; (15-350kg)</string>
+
+    <!-- Nutrition -->
+    <string name="nutrition_title">Dinh d&#432;&#7905;ng</string>
+    <string name="nav_nutrition">Dinh d&#432;&#7905;ng</string>
+    <string name="nutrition_add_meal">Thêm b&#7919;a ăn</string>
+    <string name="nutrition_meal_type">Lo&#7841;i b&#7919;a ăn</string>
+    <string name="nutrition_food_name">Tên th&#7921;c ph&#7849;m</string>
+    <string name="nutrition_calories">Calo</string>
+    <string name="nutrition_protein">Đ&#7841;m (g)</string>
+    <string name="nutrition_carbs">Carb (g)</string>
+    <string name="nutrition_fat">Ch&#7845;t béo (g)</string>
+    <string name="nutrition_serving_size">Kh&#7849;u ph&#7847;n ăn</string>
+    <string name="nutrition_macros">Ch&#7845;t dinh d&#432;&#7905;ng Đa l&#432;&#7907;ng</string>
+    <string name="macro_protein_prefix">P: %s</string>
+    <string name="macro_carbs_prefix">C: %s</string>
+    <string name="macro_fat_prefix">F: %s</string>
+    <string name="nutrition_daily_summary">Dinh d&#432;&#7905;ng hàng ngày</string>
+    <string name="nutrition_today_meals">B&#7919;a ăn hôm nay</string>
+    <string name="nutrition_meals">b&#7919;a ăn</string>
+    <string name="nutrition_weekly_trend">Xu h&#432;&#7899;ng tu&#7847;n</string>
+    <string name="nutrition_empty">Ch&#432;a có b&#7919;a ăn nào.\nCh&#7841;m + Đ&#7875; thêm b&#7919;a ăn Đ&#7847;u tiên.</string>
+    <string name="nutrition_error_food_name">Vui lòng nh&#7853;p tên th&#7921;c ph&#7849;m</string>
+
+    <!-- Meal Types -->
+    <string name="meal_breakfast">B&#7919;a sáng</string>
+    <string name="meal_lunch">B&#7919;a tr&#432;a</string>
+    <string name="meal_dinner">B&#7919;a t&#7889;i</string>
+    <string name="meal_snack">B&#7919;a ph&#7909;</string>
+
+    <!-- Water Intake -->
+    <string name="nutrition_water">N&#432;&#7899;c</string>
+
+    <!-- Nutrition Insights -->
+    <string name="insight_nutrition_luteal_low_title">L&#432;&#7907;ng calo th&#7845;p h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_nutrition_luteal_low_desc">Calo gi&#7843;m %.0f kcal trong giai Đo&#7841;n hoàng th&#7875;. C&#7889; g&#7855;ng duy trì ch&#7871; Đ&#7897; ăn cân b&#7865;ng.</string>
+    <string name="insight_nutrition_luteal_high_title">L&#432;&#7907;ng calo cao h&#417;n trong giai Đo&#7841;n hoàng th&#7875;</string>
+    <string name="insight_nutrition_luteal_high_desc">Calo t&#259;ng %.0f kcal trong giai Đo&#7841;n hoàng th&#7875;. Đi&#7873;u này bình th&#432;&#7901;ng, hãy l&#7855;ng nghe c&#417; th&#7875; b&#7841;n.</string>
+    <string name="insight_nutrition_stable_title">L&#432;&#7907;ng calo &#7893;n Đ&#7883;nh</string>
+    <string name="insight_nutrition_stable_desc">L&#432;&#7907;ng calo c&#7911;a b&#7841;n duy trì Đ&#7873;u Đ&#7863;n qua các giai Đo&#7841;n chu k&#7923;. Làm t&#7889;t l&#7855;m!</string>
+
+    <!-- App lock strings -->
+    <string name="app_lock_forgot_pin">Quên PIN?</string>
+    <string name="app_lock_change_pin">Đ&#7893;i PIN</string>
+    <string name="app_lock_current_pin">PIN hi&#7879;n t&#7841;i</string>
+    <string name="app_lock_new_pin_label">PIN m&#7899;i</string>
+    <string name="app_lock_recovery_title">Đ&#7863;t l&#7841;i khóa &#7913;ng d&#7909;ng</string>
+    <string name="app_lock_recovery_desc">Xác minh danh tính Đ&#7875; Đ&#7863;t l&#7841;i khóa &#7913;ng d&#7909;ng</string>
+    <string name="lock_30s">30 giây</string>
+    <string name="lock_1min">1 phút</string>
+    <string name="lock_5min">5 phút</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="nav_sleep">Ng&#7911;</string>
+    <string name="sleep_title">Theo dõi gi&#7845;c ng&#7911;</string>
+    <string name="sleep_record_title">Ghi l&#7841;i gi&#7845;c ng&#7911;</string>
+    <string name="sleep_hours">Gi&#7901; ng&#7911;</string>
+    <string name="sleep_deep_hours">Ng&#7911; sâu</string>
+    <string name="sleep_quality">Ch&#7845;t l&#432;&#7907;ng gi&#7845;c ng&#7911;</string>
+    <string name="sleep_quality_format">%d sao</string>
+    <string name="sleep_history">L&#7883;ch s&#7917; gi&#7845;c ng&#7911;</string>
+    <string name="sleep_no_data">Ch&#432;a có d&#7919; li&#7879;u gi&#7845;c ng&#7911;</string>
+    <string name="sleep_today_status">Gi&#7845;c ng&#7911; hôm nay</string>
+    <string name="sleep_hours_format">%s gi&#7901;</string>
+    <string name="sleep_deep_hours_format">Sâu: %s gi&#7901;</string>
+
+    <!-- Cycle nutrition guidance strings -->
+    <string name="phase_menstrual">Kinh nguy&#7879;t</string>
+    <string name="phase_follicular">Nang noãn</string>
+    <string name="phase_ovulatory">R&#7909;ng tr&#7913;ng</string>
+    <string name="phase_luteal">Hoàng th&#7875;</string>
+    <string name="nutrition_cycle_guidance">H&#432;&#7899;ng d&#7851;n dinh d&#432;&#7905;ng theo chu k&#7923;</string>
+    <string name="nutrition_focus_nutrients">Dinh d&#432;&#7905;ng chính</string>
+    <string name="nutrition_recommended_foods">Th&#7921;c ph&#7849;m khuyên ngh&#7883;</string>
+    <string name="nutrition_limit_foods">H&#7841;n ch&#7871;</string>
+
+    <plurals name="days_count">
+        <item quantity="one">%d ngày</item>
+        <item quantity="other">%d ngày</item>
+    </plurals>
+    <!-- OEM Setup Guides -->
+    <string name="oem_xiaomi_display">Xiaomi (MIUI/HyperOS)</string>
+    <string name="oem_xiaomi_battery">Settings → Battery → Power Saving → Select App → Set to "No Restrictions"</string>
+    <string name="oem_xiaomi_autostart">Settings → Apps → Permissions → Auto-start → Enable this app
+Or: Security Center → Permissions → Auto-start → Enable</string>
+    <string name="oem_xiaomi_lock">Open recent apps → Swipe down app card → Tap lock icon</string>
+
+    <string name="oem_huawei_display">Huawei (EMUI/HarmonyOS)</string>
+    <string name="oem_huawei_battery">Settings → Battery → Launch → Disable "Auto-manage" → Manually enable "Auto-launch", "Secondary launch", "Run in background"</string>
+    <string name="oem_huawei_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_huawei_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_honor_display">Honor (MagicOS)</string>
+    <string name="oem_honor_battery">Settings → Battery → Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_autostart">Settings → Apps → App Launch → Disable "Auto-manage" → Enable all</string>
+    <string name="oem_honor_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_oppo_display">OPPO (ColorOS)</string>
+    <string name="oem_oppo_battery">Settings → Battery → App Battery Management → Select App → Enable "Allow Background Activity"</string>
+    <string name="oem_oppo_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oppo_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_vivo_display">vivo (OriginOS)</string>
+    <string name="oem_vivo_battery">Settings → Battery → Background Power Consumption → Select App → Enable "Allow Background Running"</string>
+    <string name="oem_vivo_autostart">Settings → More Settings → Apps → Auto-start → Enable this app</string>
+    <string name="oem_vivo_lock">Open recent apps → Tap menu in top-right corner of app → Select "Lock"</string>
+
+    <string name="oem_samsung_display">Samsung (OneUI)</string>
+    <string name="oem_samsung_battery">Settings → Battery → Background Usage Limits → Add this app to "Never Sleeping Apps" list</string>
+    <string name="oem_samsung_autostart">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
+
+    <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
+
+    <string name="oem_realme_display">realme (RealmeUI)</string>
+    <string name="oem_realme_battery">Settings → Battery → Power Saving Settings → App Battery Management → Enable "Allow Background Activity"</string>
+    <string name="oem_realme_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
+    <string name="oem_realme_lock">Open recent apps → Swipe down app → Tap lock icon</string>
+
+    <string name="oem_other_display">Other Device</string>
+    <string name="oem_other_battery">Settings → Apps → Select App → Battery → Select "Unrestricted"</string>
+    <string name="oem_other_autostart" />
+    <string name="oem_other_lock">Open recent apps → Lock app</string>
+    <!-- Phase Full Names -->
+    <string name="phase_menstrual_full">Menstrual Phase</string>
+    <string name="phase_follicular_full">Follicular Phase</string>
+    <string name="phase_ovulatory_full">Ovulatory Phase</string>
+    <string name="phase_luteal_full">Luteal Phase</string>
+    <string name="phase_day_range">(Day %s)</string>
+
+    <!-- Fitness Cycle Recommendations -->
+    <string name="fitness_recommended">Recommended</string>
+    <string name="fitness_avoid">Avoid</string>
+    <string name="fitness_avoid_overtraining">Over-training — listen to your body</string>
+
+    <string name="fitness_advice_menstrual">Focus on rest and recovery. Light stretching and foam rolling can help relieve tension.</string>
+    <string name="fitness_advice_follicular">Your energy is rising! This is the best phase for challenging workouts and new PRs.</string>
+    <string name="fitness_advice_ovulatory">You are at peak physical performance! Take advantage but do not forget to warm up properly.</string>
+    <string name="fitness_advice_luteal">Energy declines as progesterone rises. Prioritize sleep, hydration, and stress relief.</string>
+    <string name="unit_kj_format">%.0f kJ</string>
+    <string name="unit_grams_decimal_format">%.1f g</string>
+    <string name="error_valid_duration">Vui lòng nhập thời gian hợp lệ</string>
+    <string name="nutrition_water_format">%d / %d ml</string>
+    <string name="nutrition_add_water">+%dml</string>
+    <string name="number_ten_thousands_format">%.1fk</string>
+    <string name="date_format_month_day">M/d</string>
+    <string name="workout_calories_format">· %d kcal (%d kJ)</string>
+
+
+    <string name="clear">Xoá</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="exact_date_mode">Ngày chính xác</string>
+    <string name="profile_dob_not_set">Chưa đặt</string>
+    <string name="profile_dob_title">Date of Birth</string>
+    <string name="year_only_mode">Chỉ năm</string>
+    <string name="year_picker_title">Chọn năm sinh</string>
+
+    <!-- Analysis section strings -->
+    <string name="analysis_no_data">Không đủ dữ liệu. Hãy ghi lại dữ liệu sức khỏe trước.</string>
+    <string name="insufficient_data">Không đủ dữ liệu</string>
+    <string name="analysis_section_suggestions">Gợi ý Thông minh</string>
+    <string name="analysis_section_nutrition">Phân tích Dinh dưỡng</string>
+    <string name="analysis_section_calorie_balance">Cân bằng Calo</string>
+    <string name="analysis_section_exercise">Phân tích Tập luyện</string>
+    <string name="analysis_section_sleep">Phân tích Giấc ngủ</string>
+    <string name="analysis_section_phase">Tương quan Chu kỳ</string>
+    <string name="analysis_avg_daily_calories">Trung bình Ngày</string>
+    <string name="analysis_protein">Đạm</string>
+    <string name="analysis_carbs">Carb</string>
+    <string name="analysis_fat">Béo</string>
+    <string name="analysis_nutrient_ratio">Tỷ lệ Dinh dưỡng</string>
+    <string name="analysis_avg_water_format">Nước TB: %.0f ml</string>
+    <string name="analysis_avg_intake">Lượng vào TB</string>
+    <string name="analysis_exercise_burned">Đốt cháy khi Tập</string>
+    <string name="analysis_weekly_total_minutes">Tổng Tuần</string>
+    <string name="analysis_daily_avg_minutes">TB Ngày</string>
+    <string name="analysis_calories_burned">Calo Đã đốt</string>
+    <string name="analysis_exercise_type_distribution">Phân bố Loại Tập</string>
+    <string name="analysis_avg_sleep_hours">TB Thời lượng</string>
+    <string name="analysis_quality_score">Điểm Chất lượng</string>
+    <string name="analysis_daily_sleep_hours">Giờ Ngủ Hàng ngày</string>
+    <string name="analysis_mood">Tâm trạng</string>
+    <string name="analysis_stress">Căng thẳng</string>
+    <string name="analysis_daily_net_calories">Calo Ròng Hàng ngày (kèm năng lượng nghỉ)</string>
+
+    <!-- Pattern insight strings -->
+    <string name="pattern_exhaustion_title">Phát hiện Kiệt sức</string>
+    <string name="pattern_exhaustion_desc">Ngủ ít, căng thẳng cao, tâm trạng thấp cho thấy nguy cơ kiệt sức. Cân nhắc nghỉ ngơi.</string>
+    <string name="pattern_overtraining_title">Nguy cơ Tập quá sức</string>
+    <string name="pattern_overtraining_desc">Khối lượng tập cao với thâm hụt calo và ngủ ít. Cẩn thận chấn thương.</string>
+    <string name="pattern_sedentary_mood_title">Ít Vận động + Tâm trạng Thấp</string>
+    <string name="pattern_sedentary_mood_desc">Số bước rất thấp kèm tâm trạng thấp. Đi bộ ngắn có thể giúp ích.</string>
+    <string name="pattern_dehydration_stress_title">Mất nước + Căng thẳng</string>
+    <string name="pattern_dehydration_stress_desc">Lượng nước thấp và căng thẳng cao. Cấp nước giúp tăng cường sức chịu đựng.</string>
+    <string name="pattern_positive_loop_title">Vòng lặp Sức khỏe Tích cực</string>
+    <string name="pattern_positive_loop_desc">Ngủ ngon, hoạt động cao, tâm trạng tích cực củng cố lẫn nhau. Tiếp tục phát huy!</string>
+
+    <!-- Smart suggestion strings -->
+    <string name="suggestion_low_calorie_title">Lượng Calo Thấp</string>
+    <string name="suggestion_low_calorie_desc">Lượng vào hàng ngày %.0f kcal dưới mức khuyến nghị 1800 kcal. Cân nhắc thêm carb phức hợp và chất béo lành mạnh.</string>
+    <string name="suggestion_high_calorie_title">Lượng Calo Cao</string>
+    <string name="suggestion_high_calorie_desc">Lượng vào hàng ngày %.0f kcal vượt 2500 kcal. Cân nhắc giảm đồ ăn vặt và tăng rau xanh.</string>
+    <string name="suggestion_low_protein_title">Lượng Đạm Thấp</string>
+    <string name="suggestion_low_protein_desc">Đạm hàng ngày %.0f g dưới mức khuyến nghị 50 g. Cân nhắc trứng, cá và đậu phụ.</string>
+    <string name="suggestion_low_water_title">Lượng Nước Thấp</string>
+    <string name="suggestion_low_water_desc">Nước hàng ngày %.0f ml dưới khuyến nghị. Mục tiêu 1500-2000 ml mỗi ngày.</string>
+    <string name="suggestion_high_surplus_title">Thặng dư Calo Cao</string>
+    <string name="suggestion_high_surplus_desc">Thặng dư hàng ngày %.0f kcal. Nếu mục tiêu giảm cân, hãy tăng tập luyện.</string>
+    <string name="suggestion_high_deficit_title">Thâm hụt Calo Lớn</string>
+    <string name="suggestion_high_deficit_desc">Thâm hụt hàng ngày %.0f kcal. Đảm bảo đáp ứng nhu cầu chuyển hóa cơ bản.</string>
+    <string name="suggestion_balanced_title">Calo Cân bằng</string>
+    <string name="suggestion_balanced_desc">Lượng vào và tiêu hao cân bằng tốt. Tiếp tục phát huy!</string>
+    <string name="suggestion_low_exercise_title">Ít Tập luyện</string>
+    <string name="suggestion_low_exercise_desc">Tập hàng tuần %d phút dưới khuyến nghị 150 phút của WHO.</string>
+    <string name="suggestion_exercise_met_title">Đạt Mục tiêu Tập</string>
+    <string name="suggestion_exercise_met_desc">Tập hàng tuần %d phút đáp ứng khuyến nghị của WHO!</string>
+    <string name="suggestion_exercise_variety_title">Cần Đa dạng Tập luyện</string>
+    <string name="suggestion_exercise_variety_desc">Thử các loại tập khác nhau (cardio + sức mạnh + linh hoạt) để rèn luyện toàn diện.</string>
+    <string name="suggestion_low_sleep_title">Ngủ Ít</string>
+    <string name="suggestion_low_sleep_desc">Ngủ hàng ngày %.1f giờ dưới khuyến nghị 7-9 giờ. Thử lịch trình đều đặn.</string>
+    <string name="suggestion_high_sleep_title">Ngủ Quá nhiều</string>
+    <string name="suggestion_high_sleep_desc">Ngủ hàng ngày %.1f giờ vượt 9 giờ. Ngủ dài có thể báo hiệu mệt mỏi.</string>
+    <string name="suggestion_low_deep_sleep_title">Ngủ Sâu Thấp</string>
+    <string name="suggestion_low_deep_sleep_desc">Tỷ lệ ngủ sâu chỉ %.0f%%. Tránh caffeine trước khi ngủ và giữ phòng tối.</string>
+    <string name="suggestion_low_sleep_quality_title">Chất lượng Giấc ngủ Thấp</string>
+    <string name="suggestion_low_sleep_quality_desc">Điểm chất lượng giấc ngủ %.1f/5. Thử thiền hoặc tắm nước ấm trước khi ngủ.</string>
+    <string name="suggestion_luteal_sleep_title">Thay đổi Giấc ngủ Giai đoạn Hoàng thể</string>
+    <string name="suggestion_luteal_sleep_desc">Giấc ngủ giai đoạn hoàng thể giảm %.1f giờ so với nang noãn. Thay đổi nội tiết bình thường.</string>
+
+    <!-- Nutrition cycle guidance strings -->
+    <string name="nutrition_menstrual_advice">Tập trung vào thực phẩm giàu sắt để bù máu. Magie giúp giảm chuột rút. Uống đủ nước.</string>
+    <string name="nutrition_menstrual_nutrients">Sắt · Magie · Omega-3 · Vitamin B12</string>
+    <string name="nutrition_menstrual_foods">Rau Lá Xanh · Thịt Đỏ · Cá Béo · Sô-cô-la Đen · Các Loại Hạt</string>
+    <string name="nutrition_menstrual_limit">Đồ Ăn Mặn · Caffeine · Sữa</string>
+    <string name="nutrition_follicular_advice">Trao đổi năng lượng đang tăng. Thời điểm tốt cho bữa ăn nhẹ, giàu dinh dưỡng. Hỗ trợ sức khỏe đường ruột với men vi sinh.</string>
+    <string name="nutrition_follicular_nutrients">Chất Xơ · Vitamin C · Men Vi Sinh · Folate</string>
+    <string name="nutrition_follicular_foods">Quả Mọng · Trái Cây Họ Cam · Sữa Chua · Yến Mạch · Bông Cải Xanh</string>
+    <string name="nutrition_follicular_limit">Thực Phẩm Chế Biến · Đường Dư</string>
+    <string name="nutrition_ovulatory_advice">Estrogen đạt đỉnh trong giai đoạn này. Hỗ trợ giải độc gan với thực phẩm giàu chất chống oxy hóa. Chế độ ăn chống viêm được khuyến nghị.</string>
+    <string name="nutrition_ovulatory_nutrients">Chất Chống Oxy Hóa · Vitamin C · Kẽm · Vitamin E</string>
+    <string name="nutrition_ovulatory_foods">Ớt Chuông · Hạt Hướng Dương · Thịt Gia Cầm Nạc · Bơ · Trà Xanh</string>
+    <string name="nutrition_ovulatory_limit">Rượu · Đồ Chiên</string>
+    <string name="nutrition_luteal_advice">Progesterone tăng, có thể làm tăng cảm giác thèm ăn. Carb phức hợp giúp tăng serotonin. Hạn chế caffeine và muối để giảm triệu chứng PMS.</string>
+    <string name="nutrition_luteal_nutrients">Vitamin B · Carb Phức Hợp · Magie · Canxi · Vitamin B6</string>
+    <string name="nutrition_luteal_foods">Ngũ Cốc Nguyên Hạt · Chuối · Rau Lá Xanh · Các Loại Đậu · Sô-cô-la Đen</string>
+    <string name="nutrition_luteal_limit">Đường · Caffeine · Đồ Ăn Mặn</string>
+
+    <!-- Sleep tracking strings -->
+    <string name="sleep_auto_calculated">Tự động: %d giờ</string>
+    <string name="sleep_bedtime_btn">Đi ngủ</string>
+    <string name="sleep_elapsed">%dh %dm đã trôi qua</string>
+    <string name="sleep_sleeping">Đang ngủ...</string>
+    <string name="sleep_waketime_btn">Thức dậy</string>
+    <string name="sleep_trend_legend">● %1$s — %2$s    ▲ Giờ Ngủ   ▐ Điểm Chất lượng</string>
+    <string name="sleep_luteal_worse">Chất lượng Giấc ngủ Giai đoạn Hoàng thể Giảm</string>
+    <string name="sleep_luteal_better">Chất lượng Giấc ngủ Giai đoạn Hoàng thể Cải thiện</string>
+    <string name="sleep_luteal_comparison_worse">Ngủ TB hoàng thể %.1fh, nang noãn %.1fh, giảm %.1fh</string>
+    <string name="sleep_luteal_comparison_better">Ngủ TB hoàng thể %.1fh, nang noãn %.1fh, cải thiện %.1fh</string>
+
+    <!-- PDF report strings -->
+    <string name="export_report">Xuất Báo cáo PDF</string>
+    <string name="report_title">Báo cáo Sức khỏe</string>
+    <string name="report_description">Tạo báo cáo sức khỏe toàn diện dựa trên dữ liệu đã ghi. Báo cáo được tạo cục bộ trên thiết bị và có thể chia sẻ dưới dạng PDF.</string>
+    <string name="report_period">Kỳ Báo cáo: 30 Ngày Qua</string>
+    <string name="report_includes">Bao gồm: Ghi chép chu kỳ, bước chân, giấc ngủ, dinh dưỡng và thông tin sức khỏe</string>
+    <string name="report_generate">Tạo Báo cáo</string>
+    <string name="report_generating">Đang tạo báo cáo PDF...</string>
+    <string name="report_success">Đã tạo báo cáo thành công!</string>
+    <string name="report_share">Chia sẻ Báo cáo Sức khỏe</string>
+    <string name="report_share_button">Chia sẻ</string>
+    <string name="report_generate_new">Tạo Mới</string>
+    <string name="report_error">Lỗi: %s</string>
+    <string name="report_privacy_title">Thông báo Quyền riêng tư</string>
+    <string name="report_privacy_body">Tất cả báo cáo được tạo cục bộ trên thiết bị của bạn. Không có dữ liệu sức khỏe nào được tải lên máy chủ hay dịch vụ đám mây. Dữ liệu của bạn hoàn toàn nằm trong kiểm soát của bạn.</string>
+    <string name="report_period_format">%1$s ~ %2$s</string>
+    <string name="pdf_health_report">Báo cáo Sức khỏe</string>
+    <string name="pdf_generated">Đã tạo: %s</string>
+    <string name="pdf_user_info">Người dùng: %1$s | Giới tính: %2$s</string>
+    <string name="pdf_report_period">Kỳ Báo cáo: %s</string>
+    <string name="pdf_period_summary">Tóm tắt Chu kỳ</string>
+    <string name="pdf_no_period_records">Không có ghi chép chu kỳ trong kỳ đã chọn.</string>
+    <string name="pdf_total_cycles">Tổng Chu kỳ: %d</string>
+    <string name="pdf_avg_cycle_length">Độ dài Chu kỳ TB: %d ngày</string>
+    <string name="pdf_avg_pain">Mức Đau TB: %.1f / 3</string>
+    <string name="pdf_recent_records">Ghi chép Gần đây</string>
+    <string name="pdf_start_date">Ngày Bắt đầu</string>
+    <string name="pdf_end_date">Ngày Kết thúc</string>
+    <string name="pdf_flow">Lượng</string>
+    <string name="pdf_pain">Đau</string>
+    <string name="pdf_ongoing">Đang diễn ra</string>
+    <string name="pdf_flow_light">Nhẹ</string>
+    <string name="pdf_flow_medium">Trung bình</string>
+    <string name="pdf_flow_heavy">Nặng</string>
+    <string name="pdf_pain_none">Không</string>
+    <string name="pdf_pain_mild">Nhẹ</string>
+    <string name="pdf_pain_moderate">Vừa phải</string>
+    <string name="pdf_pain_severe">Nặng</string>
+    <string name="pdf_activity_summary">Tóm tắt Hoạt động</string>
+    <string name="pdf_no_step_data">Không có dữ liệu bước chân.</string>
+    <string name="pdf_avg_daily_steps">Bước Chân TB Hàng ngày: %,d</string>
+    <string name="pdf_total_steps">Tổng Bước: %,d</string>
+    <string name="pdf_max_steps">Bước Cao nhất Hàng ngày: %,d</string>
+    <string name="pdf_total_exercise">Tổng Tập luyện: %d phút</string>
+    <string name="pdf_sleep_summary">Tóm tắt Giấc ngủ</string>
+    <string name="pdf_no_sleep_data">Không có dữ liệu giấc ngủ.</string>
+    <string name="pdf_avg_sleep">Ngủ TB: %.1f giờ</string>
+    <string name="pdf_avg_sleep_quality">Chất lượng Ngủ TB: %.1f / 5</string>
+    <string name="pdf_avg_deep_sleep">Ngủ Sâu TB: %.1f giờ</string>
+    <string name="pdf_nutrition_summary">Tóm tắt Dinh dưỡng</string>
+    <string name="pdf_no_nutrition_data">Không có dữ liệu dinh dưỡng.</string>
+    <string name="pdf_avg_calories">Calo TB Hàng ngày: %.0f kcal</string>
+    <string name="pdf_avg_water">Nước Uống TB: %.0f ml</string>
+    <string name="pdf_avg_protein">Đạm TB: %.0f g</string>
+    <string name="pdf_footer">Báo cáo này được tạo cục bộ trên thiết bị của bạn. Không có dữ liệu nào rời khỏi điện thoại.</string>
+    <string name="pdf_page">Trang %d</string>
+    <string name="pdf_app_name">TianshangHealth - Quyền riêng tư Trước hết</string>
+
+    <!-- Navigation strings -->
+    <string name="previous">Trước</string>
+    <string name="next">Tiếp</string>
+
+    <!-- Chart strings -->
+    <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
+
+    <!-- Error strings -->
+    <string name="error_onboarding_required">Vui lòng hoàn tất thiết lập người dùng trước</string>
+    <string name="error_load_failed">Tải thất bại</string>
+    <string name="error_failed_generate_report">Không thể tạo báo cáo</string>
+
+    <!-- Energy balance strings -->
+    <string name="nutrition_energy_balance">Cân bằng Năng lượng</string>
+    <string name="nutrition_resting_energy">Nghỉ ngơi</string>
+    <string name="nutrition_exercise_energy">Tập luyện</string>
+    <string name="nutrition_total_expenditure">Tổng Tiêu hao</string>
+    <string name="nutrition_calorie_balance">Cân bằng</string>
+
+
+    <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
+    <string name="prediction_tflite_result">TFLite %1$s predicted next period in %2$d days (based on %3$d-day average cycle, confidence %4$d%%).</string>
+    <string name="prediction_fallback_with_engine">Fallback: predicted based on %1$d-day average cycle (from %2$s).</string>
+    <string name="prediction_fallback_simple_average">Fallback: predicted based on %1$d-day average cycle (simple average).</string>
+    <string name="mood_model_not_registered">Mood model not registered</string>
+    <string name="mood_model_not_available">Mood model not available</string>
+    <string name="mood_inference_null">Inference returned null</string>
+    <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
+
+</resources>
