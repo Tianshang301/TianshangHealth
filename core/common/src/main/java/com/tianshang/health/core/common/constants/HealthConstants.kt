@@ -4,7 +4,6 @@ object HealthConstants {
     const val DEFAULT_STEPS_GOAL = 6000
     const val MIN_STEPS_GOAL = 1000
     const val MAX_STEPS_GOAL = 20000
-    const val STEPS_FORMAT_TEN_THOUSANDS_THRESHOLD = 10000
     const val STEP_TO_KCAL_BASE_FACTOR = 0.04f
     const val STRIDE_LENGTH_COEFFICIENT = 0.414f
     const val WALKING_KCAL_PER_KG_KM = 0.7f
@@ -72,6 +71,7 @@ object HealthConstants {
     const val DEFAULT_OVULATION_DAYS_BEFORE = 2
     const val DEFAULT_PMS_DAYS_BEFORE = 5
     const val STEP_DEBOUNCE_MS = 250L
+    const val MAX_STEPS_PER_INTERVAL = 30_000L
     const val BODY_TEMPERATURE_MIN_C = 35.0f
     const val BODY_TEMPERATURE_MAX_C = 42.0f
     const val BMI_UNDERWEIGHT_MAX = 18.5f

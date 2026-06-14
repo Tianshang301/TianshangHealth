@@ -515,6 +515,12 @@
     <string name="steps_battery_title">关闭电池优化</string>
     <string name="steps_battery_desc">电池优化可能会停止计步服务，影响步数统计。</string>
     <string name="steps_battery_action">前往设置</string>
+    <string name="steps_permission_title">Activity Recognition Permission</string>
+    <string name="steps_permission_rationale">TianshangHealth needs access to activity recognition to count your steps in the background.</string>
+    <string name="steps_permission_button_grant">Grant Permission</string>
+    <string name="steps_permission_button_settings">Open Settings</string>
+    <string name="steps_permission_denied_message">Permission denied. Step counting will not work.</string>
+
 
     <!-- OEM引导 -->
     <string name="steps_oem_settings">%s设置</string>

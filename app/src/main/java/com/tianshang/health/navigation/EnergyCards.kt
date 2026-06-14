@@ -22,7 +22,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
-import com.tianshang.health.core.common.constants.HealthConstants
+import com.tianshang.health.core.common.util.NumberFormatUtils
 import com.tianshang.health.core.database.entity.DailySteps
 import com.tianshang.health.feature.fitness.util.CalorieCalculator
 import java.time.LocalDate
@@ -68,7 +68,7 @@ internal fun WeeklyStepsChart(steps: List<DailySteps>) {
                         )
                     }
                     Text(
-                        text = "${dailySteps.count}",
+                        text = NumberFormatUtils.formatCompactNumber(dailySteps.count),
                         style = MaterialTheme.typography.bodySmall,
                         modifier = Modifier.weight(0.2f)
                     )
@@ -122,7 +122,7 @@ internal fun EnergySummaryCard(
                     Spacer(modifier = Modifier.height(8.dp))
                     EnergyRow(
                         label = stringResource(R.string.energy_steps),
-                        value = formatNumber(todaySteps),
+                        value = NumberFormatUtils.formatCompactNumber(todaySteps),
                         kcal = todayStepsCalories
                     )
                     EnergyRow(
@@ -161,7 +161,7 @@ internal fun EnergySummaryCard(
                     Spacer(modifier = Modifier.height(8.dp))
                     EnergyRow(
                         label = stringResource(R.string.energy_steps),
-                        value = formatNumber(weeklySteps),
+                        value = NumberFormatUtils.formatCompactNumber(weeklySteps),
                         kcal = weeklyStepsCalories
                     )
                     EnergyRow(
@@ -234,17 +234,5 @@ private fun EnergyRow(
             )
         }
         Spacer(modifier = Modifier.height(6.dp))
-    }
-}
-
-@Composable
-private fun formatNumber(value: Int): String {
-    val tenThousandsFormat = stringResource(R.string.number_ten_thousands_format)
-    return if (value >= HealthConstants.STEPS_FORMAT_TEN_THOUSANDS_THRESHOLD) {
-        String.format(tenThousandsFormat, value / HealthConstants.STEPS_FORMAT_TEN_THOUSANDS_THRESHOLD.toDouble())
-    } else if (value >= 1000) {
-        String.format("%.1fk", value / 1000.0)
-    } else {
-        "$value"
     }
 }

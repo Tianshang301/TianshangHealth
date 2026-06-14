@@ -514,6 +514,12 @@
     <string name="steps_battery_title">Desativar otimização de bateria</string>
     <string name="steps_battery_desc">A otimização de bateria pode parar o serviço de contagem de passos.</string>
     <string name="steps_battery_action">Ir para Configurações</string>
+    <string name="steps_permission_title">Activity Recognition Permission</string>
+    <string name="steps_permission_rationale">TianshangHealth needs access to activity recognition to count your steps in the background.</string>
+    <string name="steps_permission_button_grant">Grant Permission</string>
+    <string name="steps_permission_button_settings">Open Settings</string>
+    <string name="steps_permission_denied_message">Permission denied. Step counting will not work.</string>
+
 
     <!-- OEM Guide -->
     <string name="steps_oem_settings">Configurações %s</string>
@@ -648,7 +654,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="oem_samsung_lock">Open recent apps → Long press app icon → Tap lock icon</string>
 
     <string name="oem_oneplus_display">OnePlus (OxygenOS)</string>
-    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don't Optimize"</string>
+    <string name="oem_oneplus_battery">Settings → Battery → Battery Optimization → Select "All Apps" → Search this app → Set to "Don\'t Optimize"</string>
     <string name="oem_oneplus_autostart">Settings → App Management → Select App → Enable "Auto-start"</string>
     <string name="oem_oneplus_lock">Open recent apps → Long press app window → Tap lock icon in top-right corner</string>
 

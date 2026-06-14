@@ -34,7 +34,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
-import com.tianshang.health.core.common.constants.HealthConstants
+import com.tianshang.health.core.common.util.NumberFormatUtils
 import com.tianshang.health.core.database.entity.DailySteps
 import java.time.DayOfWeek
 import java.time.LocalDate
@@ -354,7 +354,7 @@ private fun SingleRecordCard(steps: Int, kcal: Float) {
         ) {
             StatColumn(
                 label = stringResource(R.string.steps_label),
-                value = formatSteps(steps)
+                value = NumberFormatUtils.formatCompactNumber(steps)
             )
             StatColumn(
                 label = stringResource(R.string.steps_calories_label),
@@ -432,7 +432,7 @@ private fun <T> LabeledBarChart(
                         trackColor = MaterialTheme.colorScheme.surfaceVariant,
                     )
                     Text(
-                        text = formatSteps(value),
+                        text = NumberFormatUtils.formatCompactNumber(value),
                         style = MaterialTheme.typography.bodySmall,
                         modifier = Modifier.width(48.dp),
                         textAlign = TextAlign.End,
@@ -441,17 +441,5 @@ private fun <T> LabeledBarChart(
                 }
             }
         }
-    }
-}
-
-@Composable
-private fun formatSteps(steps: Int): String {
-    val tenThousandsFormat = stringResource(R.string.number_ten_thousands_format)
-    return if (steps >= HealthConstants.STEPS_FORMAT_TEN_THOUSANDS_THRESHOLD) {
-        String.format(tenThousandsFormat, steps / HealthConstants.STEPS_FORMAT_TEN_THOUSANDS_THRESHOLD.toDouble())
-    } else if (steps >= 1000) {
-        String.format("%.1fk", steps / 1000.0)
-    } else {
-        "$steps"
     }
 }

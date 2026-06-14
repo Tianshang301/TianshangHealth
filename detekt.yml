@@ -65,7 +65,7 @@ naming:
     enumEntryPattern: '^[A-Z][_a-zA-Z0-9]*'
   FunctionNaming:
     active: true
-    functionPattern: '^([a-z$][a-zA-Z$0-9]*)|(`.*`)$'
+    functionPattern: '^([a-z$][a-zA-Z$0-9]*)|([A-Z][a-zA-Z$0-9]*)|(`.*`)$'
   FunctionParameterNaming:
     active: true
     parameterPattern: '[a-z][A-Za-z0-9]*'

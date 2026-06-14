@@ -2,8 +2,10 @@ package com.tianshang.health.feature.steps.viewmodel
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import android.os.PowerManager
+import android.provider.Settings
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.tianshang.health.core.common.R
@@ -13,6 +15,7 @@ import com.tianshang.health.core.database.entity.DailySteps
 import com.tianshang.health.feature.steps.data.repository.StepsRepository
 import com.tianshang.health.feature.steps.service.StepCounterService
 import com.tianshang.health.feature.steps.service.StepSyncWorker
+import com.tianshang.health.feature.steps.util.ActivityRecognitionPermissionHelper
 import com.tianshang.health.feature.steps.util.OemType
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -32,7 +35,8 @@ data class StepsState(
     val totalStepsThisWeek: Int = 0,
     val isServiceRunning: Boolean = false,
     val isBatteryOptimizationDisabled: Boolean = false,
-    val oemType: OemType = OemType.OTHER
+    val oemType: OemType = OemType.OTHER,
+    val hasActivityRecognitionPermission: Boolean = true
 )
 
 sealed class StepsUiState {
@@ -64,8 +68,12 @@ class StepsViewModel @Inject constructor(
             try {
                 stepsRepository.initialize()
                 collectSteps()
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = StepsUiState.Error(e.message ?: stringResolver.getString(R.string.error_unknown))
+            } catch (e: kotlinx.coroutines.CancellationException) {
+                throw e
+            } catch (e: Exception) {
+                _uiState.value = StepsUiState.Error(
+                    e.message ?: stringResolver.getString(R.string.error_unknown)
+                )
             }
         }
     }
@@ -81,6 +89,7 @@ class StepsViewModel @Inject constructor(
             true
         }
         val oemType = OemType.detect()
+        val hasPermission = ActivityRecognitionPermissionHelper.hasPermission(context)
 
         combine(
             stepsRepository.observeTodaySteps(),
@@ -103,7 +112,8 @@ class StepsViewModel @Inject constructor(
                 totalStepsThisWeek = totalStepsThisWeek,
                 isServiceRunning = true,
                 isBatteryOptimizationDisabled = isBatteryOptimizationDisabled,
-                oemType = oemType
+                oemType = oemType,
+                hasActivityRecognitionPermission = hasPermission
             )
         }.collect { state ->
             _uiState.value = StepsUiState.Success(state)
@@ -118,8 +128,8 @@ class StepsViewModel @Inject constructor(
     fun requestDisableBatteryOptimization() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             val intent = Intent(
-                android.provider.Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
-                android.net.Uri.parse("package:${context.packageName}")
+                Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
+                Uri.parse("package:${context.packageName}")
             ).apply {
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
@@ -141,9 +151,25 @@ class StepsViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 stepsRepository.updateGoal(goal)
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = StepsUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_goal))
+            } catch (e: kotlinx.coroutines.CancellationException) {
+                throw e
+            } catch (e: Exception) {
+                _uiState.value = StepsUiState.Error(
+                    e.message ?: stringResolver.getString(R.string.error_failed_update_goal)
+                )
             }
+        }
+    }
+
+    fun onPermissionResult(isGranted: Boolean) {
+        if (isGranted) {
+            startStepCounter()
+            refresh()
+        } else {
+            val current = (_uiState.value as? StepsUiState.Success)?.stepsState ?: return
+            _uiState.value = StepsUiState.Success(
+                current.copy(hasActivityRecognitionPermission = false)
+            )
         }
     }
 

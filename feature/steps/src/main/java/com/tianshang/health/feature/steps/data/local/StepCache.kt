@@ -38,4 +38,13 @@ object StepCache {
         val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
         prefs.edit().putLong(PREF_KEY_LAST_SENSOR_BASELINE, steps).apply()
     }
+
+    fun resetAfterReboot(context: Context, newSensorValue: Long) {
+        val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
+        prefs.edit()
+            .putLong(PREF_KEY_LAST_SENSOR_BASELINE, newSensorValue)
+            .putLong(PREF_KEY_TOTAL_STEPS, newSensorValue)
+            .putLong(PREF_KEY_LAST_RECORDED_TOTAL, newSensorValue)
+            .apply()
+    }
 }

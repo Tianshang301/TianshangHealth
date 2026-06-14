@@ -19,6 +19,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.util.NumberFormatUtils
 import com.tianshang.health.core.database.entity.DailySteps
 
 @Composable
@@ -79,13 +80,13 @@ private fun StepsOverviewCard(
             ) {
                 StatItem(
                     label = stringResource(R.string.steps_today),
-                    value = "${todaySteps?.count ?: 0}",
-                    goal = todaySteps?.goal?.let { "/ $it" }
+                    value = NumberFormatUtils.formatCompactNumber(todaySteps?.count ?: 0),
+                    goal = todaySteps?.goal?.let { "/ ${NumberFormatUtils.formatCompactNumber(it)}" }
                 )
                 StatItem(
                     label = stringResource(R.string.steps_weekly_avg_label),
                     value = if (recentSteps.isNotEmpty()) {
-                        "${recentSteps.map { it.count }.average().toInt()}"
+                        NumberFormatUtils.formatCompactNumber(recentSteps.map { it.count }.average().toInt())
                     } else {
                         "--"
                     }
@@ -182,7 +183,7 @@ private fun SimpleBarChart(
                 )
 
                 Text(
-                    text = "$value",
+                    text = NumberFormatUtils.formatCompactNumber(value),
                     style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.width(40.dp),
                     color = MaterialTheme.colorScheme.onSurfaceVariant

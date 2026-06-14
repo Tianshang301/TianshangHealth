@@ -8,8 +8,10 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
+import com.tianshang.health.core.common.constants.HealthConstants
 import com.tianshang.health.feature.steps.data.local.StepCache
 import com.tianshang.health.feature.steps.data.repository.StepsRepository
+import com.tianshang.health.feature.steps.util.ActivityRecognitionPermissionHelper
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import java.util.concurrent.TimeUnit
@@ -46,6 +48,10 @@ class StepSyncWorker @AssistedInject constructor(
 
     override suspend fun doWork(): Result {
         return try {
+            if (!ActivityRecognitionPermissionHelper.hasPermission(applicationContext)) {
+                return Result.success()
+            }
+
             // Health check: restart service if not running
             if (!isServiceRunning()) {
                 StepCounterService.startService(applicationContext)
@@ -59,8 +65,12 @@ class StepSyncWorker @AssistedInject constructor(
 
             if (currentTotal > lastRecorded) {
                 val missedSteps = currentTotal - lastRecorded
-                stepsRepository.addSteps(missedSteps.toInt())
-                StepCache.setLastRecordedTotal(applicationContext, currentTotal)
+                if (missedSteps > HealthConstants.MAX_STEPS_PER_INTERVAL) {
+                    StepCache.setLastRecordedTotal(applicationContext, currentTotal)
+                } else {
+                    stepsRepository.addSteps(missedSteps.toInt())
+                    StepCache.setLastRecordedTotal(applicationContext, currentTotal)
+                }
             }
 
             Result.success()

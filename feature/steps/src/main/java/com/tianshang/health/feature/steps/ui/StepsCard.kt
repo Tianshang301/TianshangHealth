@@ -25,6 +25,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.components.CompactNumberText
+import com.tianshang.health.core.common.util.NumberFormatUtils
 
 @Composable
 fun StepsCard(
@@ -80,8 +82,8 @@ fun StepsCard(
                 verticalAlignment = Alignment.Bottom
             ) {
                 Column {
-                    Text(
-                        text = "$todaySteps",
+                    CompactNumberText(
+                        value = todaySteps,
                         style = MaterialTheme.typography.headlineLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.primary
@@ -113,7 +115,10 @@ fun StepsCard(
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = stringResource(R.string.steps_weekly_avg_format, weeklyAverage.toInt()),
+                text = stringResource(
+                    R.string.steps_weekly_avg_format,
+                    NumberFormatUtils.formatCompactNumber(weeklyAverage.toInt())
+                ),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )

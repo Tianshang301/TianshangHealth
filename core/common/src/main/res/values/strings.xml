@@ -266,7 +266,7 @@
     <string name="steps_days_label">Days</string>
     <string name="steps_weekly_trend">Weekly Trend</string>
     <string name="steps_goal_format">%d steps</string>
-    <string name="steps_weekly_avg_format">Weekly avg %d steps/day</string>
+    <string name="steps_weekly_avg_format">Weekly avg %s steps/day</string>
     <string name="steps_history_title">Step History</string>
     <string name="steps_tab_week">Week</string>
     <string name="steps_tab_month">Month</string>
@@ -518,6 +518,11 @@
     <!-- Battery Optimization -->
     <string name="steps_battery_title">Disable Battery Optimization</string>
     <string name="steps_battery_desc">Battery optimization may stop the step counting service and affect step tracking.</string>
+    <string name="steps_permission_title">Activity Recognition Permission</string>
+    <string name="steps_permission_rationale">TianshangHealth needs access to activity recognition to count your steps in the background.</string>
+    <string name="steps_permission_button_grant">Grant Permission</string>
+    <string name="steps_permission_button_settings">Open Settings</string>
+    <string name="steps_permission_denied_message">Permission denied. Step counting will not work.</string>
     <string name="steps_battery_action">Go to Settings</string>
 
     <!-- OEM Guide -->
@@ -857,7 +862,6 @@
     <string name="error_valid_duration">Please enter a valid duration</string>
     <string name="nutrition_water_format">%d / %d ml</string>
     <string name="nutrition_add_water">+%dml</string>
-    <string name="number_ten_thousands_format">%.1fk</string>
     <string name="date_format_month_day">M/d</string>
     <string name="workout_calories_format">\u00B7 %d kcal (%d kJ)</string>
     <string name="previous">Previous</string>

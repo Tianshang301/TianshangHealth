@@ -41,6 +41,7 @@ dependencies {
     implementation libs.core.ktx
     implementation libs.lifecycle.runtime
     implementation libs.lifecycle.service
+    implementation libs.activity.compose
     implementation platform(libs.compose.bom)
     implementation libs.compose.ui
     implementation libs.compose.ui.graphics
@@ -70,4 +71,5 @@ dependencies {
     testImplementation libs.junit
     testImplementation libs.mockk
     testImplementation libs.coroutines.test
+    testImplementation libs.robolectric
 }

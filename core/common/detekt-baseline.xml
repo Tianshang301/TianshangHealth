@@ -58,7 +58,6 @@
     <ID>MaximumLineLength:HslColorEngine.kt$HslColorEngine$ </ID>
     <ID>TooManyFunctions:ValidationUtils.kt$ValidationUtils</ID>
     <ID>UnderscoresInNumericLiterals:AppConstants.kt$AppConstants$30000L</ID>
-    <ID>UnderscoresInNumericLiterals:HealthConstants.kt$HealthConstants$10000</ID>
     <ID>UnderscoresInNumericLiterals:HealthConstants.kt$HealthConstants$10000f</ID>
     <ID>UnderscoresInNumericLiterals:HealthConstants.kt$HealthConstants$20000</ID>
     <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$((b - r) / delta)</ID>

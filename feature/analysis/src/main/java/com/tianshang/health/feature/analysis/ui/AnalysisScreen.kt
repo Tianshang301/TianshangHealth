@@ -18,6 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.util.NumberFormatUtils
 import com.tianshang.health.feature.analysis.domain.AnalysisUiState
 import com.tianshang.health.feature.analysis.ui.charts.DonutChart
 import com.tianshang.health.feature.analysis.ui.charts.DonutSlice
@@ -392,7 +393,11 @@ private fun PhaseSection(comparisons: List<com.tianshang.health.feature.analysis
                         stringResource(R.string.unit_hours_format, phase.sleepAvg),
                         Modifier.weight(1f)
                     )
-                    StatItem(stringResource(R.string.steps_label), "%.0f".format(phase.stepsAvg), Modifier.weight(1f))
+                    StatItem(
+                        stringResource(R.string.steps_label),
+                        NumberFormatUtils.formatCompactNumber(phase.stepsAvg),
+                        Modifier.weight(1f)
+                    )
                     StatItem(stringResource(R.string.analysis_mood), "%.1f".format(phase.moodAvg), Modifier.weight(1f))
                     StatItem(
                         stringResource(R.string.analysis_stress),

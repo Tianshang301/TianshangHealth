@@ -23,6 +23,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.components.CompactNumberText
 
 @Composable
 fun StepsOverviewCard(
@@ -69,8 +70,8 @@ fun StepsOverviewCard(
                 verticalAlignment = Alignment.Bottom
             ) {
                 Column {
-                    Text(
-                        text = "$todaySteps",
+                    CompactNumberText(
+                        value = todaySteps,
                         style = MaterialTheme.typography.headlineLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.primary
