@@ -263,7 +263,7 @@
     <string name="steps_days_label">天数</string>
     <string name="steps_weekly_trend">周趋势</string>
     <string name="steps_goal_format">%d步</string>
-    <string name="steps_weekly_avg_format">周均%d步/天</string>
+    <string name="steps_weekly_avg_format">周均%s步/天</string>
     <string name="steps_history_title">步数历史</string>
     <string name="steps_tab_week">周</string>
     <string name="steps_tab_month">月</string>

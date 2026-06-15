@@ -262,7 +262,7 @@
     <string name="steps_days_label">日数</string>
     <string name="steps_weekly_trend">週間トレンド</string>
     <string name="steps_goal_format">%d歩</string>
-    <string name="steps_weekly_avg_format">週平均%d歩/日</string>
+    <string name="steps_weekly_avg_format">週平均%s歩/日</string>
     <string name="steps_history_title">歩数履歴</string>
     <string name="steps_tab_week">週</string>
     <string name="steps_tab_month">月</string>

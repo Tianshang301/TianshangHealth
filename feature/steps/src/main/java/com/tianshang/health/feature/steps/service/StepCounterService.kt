@@ -70,8 +70,16 @@ class StepCounterService : LifecycleService(), SensorEventListener {
 
     override fun onCreate() {
         super.onCreate()
+        Log.d(TAG, "onCreate")
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         stepCounter = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+        // Start foreground ASAP — Android 14+ requires startForeground() within
+        // a very short window after startForegroundService(), before any I/O.
+        startForeground(
+            STEP_NOTIFICATION_ID,
+            StepNotificationHelper.createNotification(this, 0)
+        )
+        Log.d(TAG, "onCreate: startForeground called")
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -88,23 +96,23 @@ class StepCounterService : LifecycleService(), SensorEventListener {
             ACTION_START -> {
                 if (!isRunning) {
                     isRunning = true
+
+                    // startForeground() already called in onCreate()
                     lifecycleScope.launch {
                         try {
                             acquireWakeLock()
                             stepsRepository.initialize()
                             restoreBaseline()
-                            startForeground(
-                                STEP_NOTIFICATION_ID,
-                                StepNotificationHelper.createNotification(
-                                    this@StepCounterService,
-                                    stepsRepository.getCurrentTodaySteps()
-                                )
-                            )
                             startStepCounting()
+                            StepNotificationHelper.updateNotification(
+                                this@StepCounterService,
+                                stepsRepository.getCurrentTodaySteps()
+                            )
                         } catch (e: kotlinx.coroutines.CancellationException) {
                             throw e
                         } catch (e: Exception) {
                             Log.e(TAG, "Failed to start service", e)
+                            stopForeground(STOP_FOREGROUND_REMOVE)
                             stopSelf()
                         }
                     }

@@ -262,7 +262,7 @@
     <string name="steps_days_label">Días</string>
     <string name="steps_weekly_trend">Tendencia semanal</string>
     <string name="steps_goal_format">%d pasos</string>
-    <string name="steps_weekly_avg_format">Promedio semanal %d pasos/día</string>
+    <string name="steps_weekly_avg_format">Promedio semanal %s pasos/día</string>
     <string name="steps_history_title">Historial de pasos</string>
     <string name="steps_tab_week">Semana</string>
     <string name="steps_tab_month">Mes</string>

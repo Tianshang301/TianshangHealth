@@ -262,7 +262,7 @@
     <string name="steps_days_label">Jours</string>
     <string name="steps_weekly_trend">Tendance hebdo</string>
     <string name="steps_goal_format">%d pas</string>
-    <string name="steps_weekly_avg_format">Moyenne hebdo %d pas/jour</string>
+    <string name="steps_weekly_avg_format">Moyenne hebdo %s pas/jour</string>
     <string name="steps_history_title">Historique des pas</string>
     <string name="steps_tab_week">Semaine</string>
     <string name="steps_tab_month">Mois</string>

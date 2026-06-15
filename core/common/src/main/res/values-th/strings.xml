@@ -262,7 +262,7 @@
     <string name="steps_days_label">วัน</string>
     <string name="steps_weekly_trend">แนวโน้มรายสัปดาห์</string>
     <string name="steps_goal_format">%d ก้าว</string>
-    <string name="steps_weekly_avg_format">ค่าเฉลี่ยรายสัปดาห์ %d ก้าว/วัน</string>
+    <string name="steps_weekly_avg_format">ค่าเฉลี่ยรายสัปดาห์ %s ก้าว/วัน</string>
     <string name="steps_history_title">ประวัติก้าว</string>
     <string name="steps_tab_week">สัปดาห์</string>
     <string name="steps_tab_month">เดือน</string>

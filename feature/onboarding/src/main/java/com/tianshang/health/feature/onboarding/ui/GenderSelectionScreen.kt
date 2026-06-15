@@ -52,7 +52,6 @@ fun GenderSelectionScreen(
                 GenderSelectionContent(
                     onGenderSelected = { gender ->
                         viewModel.selectGender(gender)
-                        onGenderSelected()
                     }
                 )
             }

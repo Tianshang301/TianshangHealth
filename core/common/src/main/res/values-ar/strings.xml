@@ -262,7 +262,7 @@
     <string name="steps_days_label">أيام</string>
     <string name="steps_weekly_trend">الاتجاه الأسبوعي</string>
     <string name="steps_goal_format">%d خطوة</string>
-    <string name="steps_weekly_avg_format">المتوسط الأسبوعي %d خطوة/يوم</string>
+    <string name="steps_weekly_avg_format">المتوسط الأسبوعي %s خطوة/يوم</string>
     <string name="steps_history_title">سجل الخطوات</string>
     <string name="steps_tab_week">أسبوع</string>
     <string name="steps_tab_month">شهر</string>

@@ -262,7 +262,7 @@
     <string name="steps_days_label">Gun</string>
     <string name="steps_weekly_trend">Haftalik Egilim</string>
     <string name="steps_goal_format">%d adim</string>
-    <string name="steps_weekly_avg_format">Haftalik ort. %d adim/gun</string>
+    <string name="steps_weekly_avg_format">Haftalik ort. %s adim/gun</string>
     <string name="steps_history_title">Adim Gecmisi</string>
     <string name="steps_tab_week">Hafta</string>
     <string name="steps_tab_month">Ay</string>

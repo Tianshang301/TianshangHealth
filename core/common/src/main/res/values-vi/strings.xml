@@ -262,7 +262,7 @@
     <string name="steps_days_label">Ngày</string>
     <string name="steps_weekly_trend">Xu h&#432;&#7899;ng tu&#7847;n</string>
     <string name="steps_goal_format">%d b&#432;&#7899;c</string>
-    <string name="steps_weekly_avg_format">Trung bình tu&#7847;n %d b&#432;&#7899;c/ngày</string>
+    <string name="steps_weekly_avg_format">Trung bình tu&#7847;n %s b&#432;&#7899;c/ngày</string>
     <string name="steps_history_title">L&#7883;ch s&#7917; b&#432;&#7899;c chân</string>
     <string name="steps_tab_week">Tu&#7847;n</string>
     <string name="steps_tab_month">Tháng</string>

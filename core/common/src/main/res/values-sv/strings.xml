@@ -262,7 +262,7 @@
     <string name="steps_days_label">Dagar</string>
     <string name="steps_weekly_trend">Veckotendens</string>
     <string name="steps_goal_format">%d steg</string>
-    <string name="steps_weekly_avg_format">Veckogenomsnitt %d steg/dag</string>
+    <string name="steps_weekly_avg_format">Veckogenomsnitt %s steg/dag</string>
     <string name="steps_history_title">Steghistorik</string>
     <string name="steps_tab_week">Vecka</string>
     <string name="steps_tab_month">Manad</string>

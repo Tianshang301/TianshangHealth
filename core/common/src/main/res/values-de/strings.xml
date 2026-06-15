@@ -262,7 +262,7 @@
     <string name="steps_days_label">Tage</string>
     <string name="steps_weekly_trend">Wöchentlicher Trend</string>
     <string name="steps_goal_format">%d Schritte</string>
-    <string name="steps_weekly_avg_format">Wöchentlicher Durchschnitt %d Schritte/Tag</string>
+    <string name="steps_weekly_avg_format">Wöchentlicher Durchschnitt %s Schritte/Tag</string>
     <string name="steps_history_title">Schrittverlauf</string>
     <string name="steps_tab_week">Woche</string>
     <string name="steps_tab_month">Monat</string>

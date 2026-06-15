@@ -262,7 +262,7 @@
     <string name="steps_days_label">Hari</string>
     <string name="steps_weekly_trend">Tren Mingguan</string>
     <string name="steps_goal_format">%d langkah</string>
-    <string name="steps_weekly_avg_format">Rata-rata mingguan %d langkah/hari</string>
+    <string name="steps_weekly_avg_format">Rata-rata mingguan %s langkah/hari</string>
     <string name="steps_history_title">Riwayat Langkah</string>
     <string name="steps_tab_week">Minggu</string>
     <string name="steps_tab_month">Bulan</string>

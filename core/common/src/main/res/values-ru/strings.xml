@@ -262,7 +262,7 @@
     <string name="steps_days_label">Дни</string>
     <string name="steps_weekly_trend">Недельная тенденция</string>
     <string name="steps_goal_format">%d шагов</string>
-    <string name="steps_weekly_avg_format">В среднем %d шагов/день</string>
+    <string name="steps_weekly_avg_format">В среднем %s шагов/день</string>
     <string name="steps_history_title">История шагов</string>
     <string name="steps_tab_week">Неделя</string>
     <string name="steps_tab_month">Месяц</string>

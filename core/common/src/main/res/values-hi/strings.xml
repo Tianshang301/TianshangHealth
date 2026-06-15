@@ -262,7 +262,7 @@
     <string name="steps_days_label">दिन</string>
     <string name="steps_weekly_trend">साप्ताहिक प्रवृत्ति</string>
     <string name="steps_goal_format">%d कदम</string>
-    <string name="steps_weekly_avg_format">साप्ताहिक औसत %d कदम/दिन</string>
+    <string name="steps_weekly_avg_format">साप्ताहिक औसत %s कदम/दिन</string>
     <string name="steps_history_title">कदम इतिहास</string>
     <string name="steps_tab_week">सप्ताह</string>
     <string name="steps_tab_month">महीना</string>

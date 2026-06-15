@@ -262,7 +262,7 @@
     <string name="steps_days_label">Dagen</string>
     <string name="steps_weekly_trend">Wekelijkse Trend</string>
     <string name="steps_goal_format">%d stappen</string>
-    <string name="steps_weekly_avg_format">Wekelijks gem. %d stappen/dag</string>
+    <string name="steps_weekly_avg_format">Wekelijks gem. %s stappen/dag</string>
     <string name="steps_history_title">Stappengeschiedenis</string>
     <string name="steps_tab_week">Week</string>
     <string name="steps_tab_month">Maand</string>

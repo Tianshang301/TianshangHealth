@@ -262,7 +262,7 @@
     <string name="steps_days_label">Дні</string>
     <string name="steps_weekly_trend">Тижнева тенденція</string>
     <string name="steps_goal_format">%d кроків</string>
-    <string name="steps_weekly_avg_format">Тижневе середнє %d кроків/день</string>
+    <string name="steps_weekly_avg_format">Тижневе середнє %s кроків/день</string>
     <string name="steps_history_title">Історія кроків</string>
     <string name="steps_tab_week">Тиждень</string>
     <string name="steps_tab_month">Місяць</string>

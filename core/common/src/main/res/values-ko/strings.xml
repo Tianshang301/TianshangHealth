@@ -262,7 +262,7 @@
     <string name="steps_days_label">일수</string>
     <string name="steps_weekly_trend">주간 추이</string>
     <string name="steps_goal_format">%d걸음</string>
-    <string name="steps_weekly_avg_format">주간 평균 %d걸음/일</string>
+    <string name="steps_weekly_avg_format">주간 평균 %s걸음/일</string>
     <string name="steps_history_title">걸음 수 기록</string>
     <string name="steps_tab_week">주</string>
     <string name="steps_tab_month">월</string>

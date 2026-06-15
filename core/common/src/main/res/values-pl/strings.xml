@@ -262,7 +262,7 @@
     <string name="steps_days_label">Dni</string>
     <string name="steps_weekly_trend">Trend Tygodniowy</string>
     <string name="steps_goal_format">%d kroków</string>
-    <string name="steps_weekly_avg_format">Średnia tygodniowa %d kroków/dzień</string>
+    <string name="steps_weekly_avg_format">Średnia tygodniowa %s kroków/dzień</string>
     <string name="steps_history_title">Historia Kroków</string>
     <string name="steps_tab_week">Tydzień</string>
     <string name="steps_tab_month">Miesiąc</string>
