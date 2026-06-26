@@ -21,7 +21,7 @@
   <a href="./readme/README.ar.md">العربية</a>
 </p>
 
-# TianshangHealth
+# TianshangHealth(天殇·悦康)
 
 > **Privacy-first, fully offline Android health companion.**
 > Combines menstrual tracking, fitness, sleep, nutrition, and step counting into one encrypted local database — with on-device AI-powered cross-dimensional insights.
@@ -41,34 +41,34 @@
 
 ## Features
 
-| Domain | Capabilities |
-|--------|-------------|
-| **Period Tracking** | Calendar view, cycle prediction engine (IQR filtering + exponential decay), symptom logging, reminders |
-| **Steps** | Hardware step counter foreground service + accelerometer fallback, WorkManager sync, cycle-phase step insights |
-| **Fitness** | 17 exercise types, MET-based calorie calculator, cycle-aware workout recommendations |
-| **Sleep** | Manual sleep logging, quality scoring, Canvas trend chart |
-| **Nutrition** | Meal logging (breakfast/lunch/dinner/snack), macro tracking, water intake |
-| **Analysis** | Cross-dimensional analytics engine, health suggestions, medical report export, TFLite prediction enhancement |
-| **Security** | PIN (Argon2id) + biometric lock, encrypted ZIP backup/restore, screenshot protection on sensitive screens |
+| Domain              | Capabilities                                                                                                   |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Period Tracking** | Calendar view, cycle prediction engine (IQR filtering + exponential decay), symptom logging, reminders         |
+| **Steps**           | Hardware step counter foreground service + accelerometer fallback, WorkManager sync, cycle-phase step insights |
+| **Fitness**         | 17 exercise types, MET-based calorie calculator, cycle-aware workout recommendations                           |
+| **Sleep**           | Manual sleep logging, quality scoring, Canvas trend chart                                                      |
+| **Nutrition**       | Meal logging (breakfast/lunch/dinner/snack), macro tracking, water intake                                      |
+| **Analysis**        | Cross-dimensional analytics engine, health suggestions, medical report export, TFLite prediction enhancement   |
+| **Security**        | PIN (Argon2id) + biometric lock, encrypted ZIP backup/restore, screenshot protection on sensitive screens      |
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology | Version |
-|-------|-----------|---------|
-| Language | Kotlin | 1.9.24 |
-| Build | Gradle + Android Gradle Plugin | 8.9 / 8.6.0 |
-| UI | Jetpack Compose (Material 3) | BOM 2024.09.00 |
-| Architecture | MVVM + Repository + StateFlow | — |
-| DI | Hilt (KSP) | 2.51.1 |
-| Navigation | Navigation Compose | 2.7.6 |
-| Database | Room + SQLCipher | 2.6.1 / 4.5.4 |
-| Background | WorkManager | 2.9.0 |
-| Crypto | Android Keystore + Bouncy Castle (Argon2id) | — / 1.78 |
-| Charts | MPAndroidChart + Vico | v3.1.0 / 1.13.1 |
-| ML | TensorFlow Lite (LINEAR + LSTM models; both run on-device) | 2.17.0 |
-| Static Analysis | Detekt | 1.23.6 |
+| Layer           | Technology                                                 | Version         |
+| --------------- | ---------------------------------------------------------- | --------------- |
+| Language        | Kotlin                                                     | 1.9.24          |
+| Build           | Gradle + Android Gradle Plugin                             | 8.9 / 8.6.0     |
+| UI              | Jetpack Compose (Material 3)                               | BOM 2024.09.00  |
+| Architecture    | MVVM + Repository + StateFlow                              | —               |
+| DI              | Hilt (KSP)                                                 | 2.51.1          |
+| Navigation      | Navigation Compose                                         | 2.7.6           |
+| Database        | Room + SQLCipher                                           | 2.6.1 / 4.5.4   |
+| Background      | WorkManager                                                | 2.9.0           |
+| Crypto          | Android Keystore + Bouncy Castle (Argon2id)                | — / 1.78        |
+| Charts          | MPAndroidChart + Vico                                      | v3.1.0 / 1.13.1 |
+| ML              | TensorFlow Lite (LINEAR + LSTM models; both run on-device) | 2.17.0          |
+| Static Analysis | Detekt                                                     | 1.23.6          |
 
 ---
 
@@ -120,6 +120,7 @@ feature/
 ```
 
 The APK will be located at:
+
 ```
 app/build/outputs/apk/debug/app-debug.apk
 ```
@@ -129,6 +130,7 @@ app/build/outputs/apk/debug/app-debug.apk
 ```bash
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
+
 ### Build Release APK
 
 Release builds require signing configuration in `local.properties`:
@@ -166,20 +168,24 @@ python check_release_security.py
 ## Quality & Testing
 
 - **Detekt**: Zero-tolerance static analysis (`maxIssues: 0`).
+  
   ```bash
   ./gradlew detektAll
   ```
 - **Unit tests** (~300 tests, 31 files, 15/15 ViewModel coverage, 19 instrumentation tests):
+  
   ```bash
   ./gradlew test
   ./gradlew :feature:analysis:connectedAndroidTest
   ```
 - **Instrumentation tests** (19 TFLite model tests on device):
+  
   ```bash
   ./gradlew :feature:period:connectedAndroidTest
   ./gradlew :feature:analysis:connectedAndroidTest
   ```
 - **String validation**:
+  
   ```bash
   python check_strings.py
   python check_string_resources.py
