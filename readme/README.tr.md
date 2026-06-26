@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/İngilizce</a> |
   <a href="./README.zh-CN.md">简体中文/Çince (basitleştirilmiş)</a> |
   <a href="./README.ja.md">日本語/Japonca</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/Arapça</a>
 </p>
 
-# TianshangHealth
+# TianshangHealth(天殇·悦康)
 
 > **Gizlilik odaklı, tamamen çevrimdışı Android sağlık asistanı.**
 > Adet döngüsü takibi, fitness, uyku, beslenme ve adım sayımını tek bir şifrelenmiş yerel veritabanında birleştirir — cihaz üzerinde yapay zeka destekli çok boyutlu analizlerle.

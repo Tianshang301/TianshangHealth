@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/Engelska</a> |
   <a href="./README.zh-CN.md">简体中文/Kinesiska (förenklad)</a> |
   <a href="./README.ja.md">日本語/Japanska</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/Arabiska</a>
 </p>
 
-# TianshangHealth
+# TianshangHealth(天殇·悦康)
 
 > **Integritetsfokuserad, helt offline Android-hälsoassistent.**
 > Kombinerar menstruationscykelspårning, fitness, sömn, nutrition och stegräkning i en krypterad lokal databas — med tvärdimensionella insikter drivna av AI på enheten.

@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/阿拉伯语</a>
 </p>
 
-# 天殇健康（TianshangHealth）
+# 天殇·悦康（TianshangHealth）
 
 > **隐私优先、完全离线的 Android 综合健康管理应用。**
 > 将经期追踪、运动健身、睡眠监测、营养管理、步数统计等健康维度整合到统一的本地加密数据库中，并通过设备端 AI 提供跨维度健康洞察。
@@ -41,34 +41,34 @@
 
 ## 功能模块
 
-| 健康维度 | 主要能力 |
-|---------|---------|
-| **经期追踪** | 日历视图、周期预测引擎（IQR 过滤 + 指数衰减）、症状记录、提醒 |
+| 健康维度     | 主要能力                                        |
+| -------- | ------------------------------------------- |
+| **经期追踪** | 日历视图、周期预测引擎（IQR 过滤 + 指数衰减）、症状记录、提醒          |
 | **步数统计** | 硬件计步器前台服务 + 加速度计兜底、WorkManager 同步、经期-步数关联洞察 |
-| **运动健身** | 17 种运动类型、MET 卡路里计算、经期阶段性运动建议 |
-| **睡眠监测** | 手动睡眠记录、睡眠质量评分、Canvas 趋势图 |
-| **营养管理** | 饮食记录（早/午/晚/加餐）、宏量营养素追踪、饮水量统计 |
-| **分析洞察** | 跨维度统计引擎、健康建议、医疗报告导出、TFLite 预测增强 |
+| **运动健身** | 17 种运动类型、MET 卡路里计算、经期阶段性运动建议                |
+| **睡眠监测** | 手动睡眠记录、睡眠质量评分、Canvas 趋势图                    |
+| **营养管理** | 饮食记录（早/午/晚/加餐）、宏量营养素追踪、饮水量统计                |
+| **分析洞察** | 跨维度统计引擎、健康建议、医疗报告导出、TFLite 预测增强             |
 | **安全隐私** | PIN（Argon2id）+ 生物识别锁定、加密 ZIP 备份/恢复、敏感页面截图保护 |
 
 ---
 
 ## 技术栈
 
-| 层级 | 技术 | 版本 |
-|-----|------|------|
-| 语言 | Kotlin | 1.9.24 |
-| 构建 | Gradle + Android Gradle Plugin | 8.9 / 8.6.0 |
-| UI | Jetpack Compose (Material 3) | BOM 2024.09.00 |
-| 架构 | MVVM + Repository + StateFlow | — |
-| 依赖注入 | Hilt (KSP) | 2.51.1 |
-| 导航 | Navigation Compose | 2.7.6 |
-| 数据库 | Room + SQLCipher | 2.6.1 / 4.5.4 |
-| 后台任务 | WorkManager | 2.9.0 |
-| 加密 | Android Keystore + Bouncy Castle (Argon2id) | — / 1.78 |
-| 图表 | MPAndroidChart + Vico | v3.1.0 / 1.13.1 |
-| 本地 AI | TensorFlow Lite | 2.14.0 |
-| 静态分析 | Detekt | 1.23.6 |
+| 层级    | 技术                                          | 版本              |
+| ----- | ------------------------------------------- | --------------- |
+| 语言    | Kotlin                                      | 1.9.24          |
+| 构建    | Gradle + Android Gradle Plugin              | 8.9 / 8.6.0     |
+| UI    | Jetpack Compose (Material 3)                | BOM 2024.09.00  |
+| 架构    | MVVM + Repository + StateFlow               | —               |
+| 依赖注入  | Hilt (KSP)                                  | 2.51.1          |
+| 导航    | Navigation Compose                          | 2.7.6           |
+| 数据库   | Room + SQLCipher                            | 2.6.1 / 4.5.4   |
+| 后台任务  | WorkManager                                 | 2.9.0           |
+| 加密    | Android Keystore + Bouncy Castle (Argon2id) | — / 1.78        |
+| 图表    | MPAndroidChart + Vico                       | v3.1.0 / 1.13.1 |
+| 本地 AI | TensorFlow Lite                             | 2.14.0          |
+| 静态分析  | Detekt                                      | 1.23.6          |
 
 ---
 
@@ -120,6 +120,7 @@ feature/                # 功能模块
 ```
 
 APK 输出路径：
+
 ```
 app/build/outputs/apk/debug/app-debug.apk
 ```
@@ -148,6 +149,7 @@ RELEASE_KEY_PASSWORD=your-key-password
 ```
 
 生成的签名 APK 文件名：
+
 ```
 app/build/outputs/apk/release/TianshangHealth-v1.0.0.apk
 ```
@@ -163,19 +165,23 @@ python check_release_security.py
 ## 质量与测试
 
 - **Detekt**：零容忍静态分析（`maxIssues: 0`）。
+  
   ```bash
   ./gradlew detektAll
   ```
 - **单元测试**：
+  
   ```bash
   ./gradlew test
   ```
 - **Instrumentation 测试**：
+  
   ```bash
   ./gradlew :feature:period:connectedAndroidTest
   ./gradlew :feature:analysis:connectedAndroidTest
   ```
 - **字符串资源校验**：
+  
   ```bash
   python check_strings.py
   python check_string_resources.py

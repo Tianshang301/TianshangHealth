@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/Inggris</a> |
   <a href="./README.zh-CN.md">简体中文/Mandarin (Sederhana)</a> |
   <a href="./README.ja.md">日本語/Jepang</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/Arab</a>
 </p>
 
-# TianshangHealth
+# TianshangHealth(天殇·悦康)
 
 > **Pendamping kesehatan Android yang sepenuhnya offline dan mengutamakan privasi.**
 > Menggabungkan pelacakan siklus menstruasi, kebugaran, tidur, nutrisi, dan penghitungan langkah ke dalam satu database lokal terenkripsi — dengan analisis lintas dimensi berbasis AI di perangkat.

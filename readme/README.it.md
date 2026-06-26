@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/Inglese</a> |
   <a href="./README.zh-CN.md">简体中文/Cinese (semplificato)</a> |
   <a href="./README.ja.md">日本語/Giapponese</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/Arabo</a>
 </p>
 
-# TianshangHealth
+# TianshangHealth(天殇·悦康)
 
 > **Compagno sanitario Android completamente offline incentrato sulla privacy.**
 > Combina monitoraggio del ciclo, fitness, sonno, alimentazione e conteggio passi in un unico database locale crittografato — con analisi multidimensionali basate su intelligenza artificiale locale.

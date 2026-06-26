@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/영어</a> |
   <a href="./README.zh-CN.md">简体中文/중국어(간체)</a> |
   <a href="./README.ja.md">日本語/일본어</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/아랍어</a>
 </p>
 
-# 천상 건강（TianshangHealth）
+# TianshangHealth(天殇·悦康)
 
 > **프라이버시 중심, 완전 오프라인 Android 통합 건강 관리 앱입니다.**
 > 생리 주기 추적, 운송, 수면, 영양, 걸음 수 통계 등 건강 차원을 하나의 암호화된 로컬 데이터베이스에 통합하고, 온디바이스 AI로 다차원 건강 인사이트를 제공합니다.

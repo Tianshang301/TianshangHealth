@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/英語</a> |
   <a href="./README.zh-CN.md">简体中文/簡体中国語</a> |
   <a href="./README.ko.md">한국어/韓国語</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/アラビア語</a>
 </p>
 
-# 天殇健康（TianshangHealth）
+# TianshangHealth(天殇·悦康)
 
 > **プライバシー重視、完全オフラインの Android 統合健康管理アプリ。**
 > 生理周期追跡、運動、睡眠、栄養、歩数カウントなどの健康データを1つの暗号化されたローカルデータベースに統合し、オンデバイス AI による多次元健康インサイトを提供します。

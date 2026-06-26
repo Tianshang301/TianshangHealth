@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/Inggeris</a> |
   <a href="./README.zh-CN.md">简体中文/Cina (Ringkas)</a> |
   <a href="./README.ja.md">日本語/Jepun</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/Arab</a>
 </p>
 
-# TianshangHealth
+# TianshangHealth(天殇·悦康)
 
 > **Rakan kesihatan Android luar talian sepenuhnya yang mengutamakan privasi.**
 > Menggabungkan penjejakan kitaran haid, kecergasan, tidur, pemakanan, dan pengiraan langkah ke dalam satu pangkalan data setempat yang disulitkan — dengan cerapan merentas dimensi berasaskan AI pada peranti.

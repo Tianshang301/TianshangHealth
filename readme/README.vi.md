@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
   <a href="../README.md">English/Tiếng Anh</a> |
   <a href="./README.zh-CN.md">简体中文/Tiếng Trung (Giản thể)</a> |
   <a href="./README.ja.md">日本語/Tiếng Nhật</a> |
@@ -21,7 +21,7 @@
   <a href="./README.ar.md">العربية/Tiếng Ả Rập</a>
 </p>
 
-# TianshangHealth
+# TianshangHealth(天殇·悦康)
 
 > **Người bạn đồng hành sức khỏe Android hoàn toàn ngoại tuyến, ưu tiên quyền riêng tư.**
 > Kết hợp theo dõi chu kỳ kinh nguyệt, thể dục, giấc ngủ, dinh dưỡng và đếm bước chân vào một cơ sở dữ liệu cục bộ được mã hóa duy nhất — với phân tích đa chiều bằng AI trên thiết bị.
