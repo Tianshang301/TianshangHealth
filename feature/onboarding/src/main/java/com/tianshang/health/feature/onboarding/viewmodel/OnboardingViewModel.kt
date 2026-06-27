@@ -39,6 +39,11 @@ class OnboardingViewModel @Inject constructor(
     private val _uiState = MutableStateFlow<OnboardingUiState>(OnboardingUiState.Loading)
     val uiState: StateFlow<OnboardingUiState> = _uiState.asStateFlow()
 
+    companion object {
+        private const val KEY_ONBOARDING_COMPLETED = "c3s6t9"
+        private const val KEY_USER_GENDER = "g5h1j7"
+    }
+
     private val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
 
     init {
@@ -48,7 +53,7 @@ class OnboardingViewModel @Inject constructor(
     private fun checkOnboardingStatus() {
         viewModelScope.launch {
             try {
-                val isCompleted = prefs.getBoolean("onboarding_completed", false)
+                val isCompleted = prefs.getBoolean(KEY_ONBOARDING_COMPLETED, false)
 
                 if (isCompleted) {
                     _uiState.value = OnboardingUiState.Success(
@@ -83,8 +88,8 @@ class OnboardingViewModel @Inject constructor(
 
                 // Save onboarding completed status
                 prefs.edit()
-                    .putBoolean("onboarding_completed", true)
-                    .putString("user_gender", gender.value)
+                    .putBoolean(KEY_ONBOARDING_COMPLETED, true)
+                    .putString(KEY_USER_GENDER, gender.value)
                     .apply()
 
                 _uiState.value = OnboardingUiState.Success(
@@ -101,7 +106,7 @@ class OnboardingViewModel @Inject constructor(
     }
 
     fun getUserGender(): Gender {
-        val genderValue = prefs.getString("user_gender", Gender.FEMALE.value) ?: Gender.FEMALE.value
+        val genderValue = prefs.getString(KEY_USER_GENDER, Gender.FEMALE.value) ?: Gender.FEMALE.value
         return Gender.fromValue(genderValue)
     }
 }

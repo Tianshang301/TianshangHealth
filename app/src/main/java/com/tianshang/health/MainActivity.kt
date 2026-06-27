@@ -29,10 +29,19 @@ import java.util.Locale
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        private const val KEY_APP_LANGUAGE = "l4m8n2"
+        private const val KEY_THEME_HUE = "h2u4e6"
+        private const val KEY_THEME_SATURATION = "s1a3t5"
+        private const val KEY_THEME_LIGHTNESS = "l7i9g2"
+        private const val KEY_USE_CUSTOM_THEME = "c8u2s4"
+    }
+
     override fun attachBaseContext(newBase: Context) {
         val langCode = try {
             val prefs = KeystoreManager.getEncryptedSharedPreferences(newBase)
-            prefs.getString("app_language", "zh") ?: "zh"
+            prefs.getString(KEY_APP_LANGUAGE, "zh") ?: "zh"
         } catch (_: Exception) {
             "zh"
         }
@@ -74,12 +83,12 @@ class MainActivity : AppCompatActivity() {
         WallpaperManager.initialize(this)
 
         val prefs = KeystoreManager.getEncryptedSharedPreferences(this)
-        val useCustomTheme = prefs.getBoolean("use_custom_theme", false)
+        val useCustomTheme = prefs.getBoolean(KEY_USE_CUSTOM_THEME, false)
         if (useCustomTheme) {
             ThemeConfigHolder.update(
-                prefs.getFloat("theme_hue", 340f),
-                prefs.getFloat("theme_saturation", 0.6f),
-                prefs.getFloat("theme_lightness", 0.7f)
+                prefs.getFloat(KEY_THEME_HUE, 340f),
+                prefs.getFloat(KEY_THEME_SATURATION, 0.6f),
+                prefs.getFloat(KEY_THEME_LIGHTNESS, 0.7f)
             )
         }
 

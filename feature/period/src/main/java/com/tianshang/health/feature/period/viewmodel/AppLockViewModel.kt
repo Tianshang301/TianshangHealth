@@ -235,8 +235,8 @@ class AppLockViewModel @Inject constructor(
                 hash.fill(0)
                 val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
                 prefs.edit()
-                    .putString("password_salt", saltHex)
-                    .putString("password_hash", hashHex)
+                    .putString(PREF_PASSWORD_SALT, saltHex)
+                    .putString(PREF_PASSWORD_HASH, hashHex)
                     .apply()
                 _state.value = _state.value.copy(
                     isPasswordSet = true,
@@ -261,8 +261,8 @@ class AppLockViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
-                val saltHex = prefs.getString("password_salt", null)
-                val hashHex = prefs.getString("password_hash", null)
+                val saltHex = prefs.getString(PREF_PASSWORD_SALT, null)
+                val hashHex = prefs.getString(PREF_PASSWORD_HASH, null)
                 if (saltHex == null || hashHex == null) {
                     _state.value = _state.value.copy(
                         error = stringResolver.getString(R.string.error_password_not_set)
@@ -286,7 +286,7 @@ class AppLockViewModel @Inject constructor(
                         error = stringResolver.getString(R.string.error_incorrect_password)
                     )
                 }
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
                 _state.value = _state.value.copy(
                     enteredPin = "",
                     error = stringResolver.getString(R.string.error_verification_failed)
@@ -299,8 +299,8 @@ class AppLockViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
-                val saltHex = prefs.getString("password_salt", null)
-                val hashHex = prefs.getString("password_hash", null)
+                val saltHex = prefs.getString(PREF_PASSWORD_SALT, null)
+                val hashHex = prefs.getString(PREF_PASSWORD_HASH, null)
                 if (saltHex == null || hashHex == null) {
                     _state.value = _state.value.copy(
                         error = stringResolver.getString(R.string.error_password_not_set)

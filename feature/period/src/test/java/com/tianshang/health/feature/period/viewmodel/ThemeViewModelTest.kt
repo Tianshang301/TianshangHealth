@@ -35,16 +35,16 @@ class ThemeViewModelTest {
 
         mockkObject(KeystoreManager)
         every { KeystoreManager.getEncryptedSharedPreferences(context) } returns sharedPrefs
-        every { sharedPrefs.getFloat("theme_hue", 340f) } returns 340f
-        every { sharedPrefs.getFloat("theme_saturation", 0.6f) } returns 0.6f
-        every { sharedPrefs.getFloat("theme_lightness", 0.7f) } returns 0.7f
-        every { sharedPrefs.getBoolean("use_custom_theme", false) } returns false
+        every { sharedPrefs.getFloat("h2u4e6", 340f) } returns 340f
+        every { sharedPrefs.getFloat("s1a3t5", 0.6f) } returns 0.6f
+        every { sharedPrefs.getFloat("l7i9g2", 0.7f) } returns 0.7f
+        every { sharedPrefs.getBoolean("c8u2s4", false) } returns false
         every { sharedPrefs.edit() } returns editor
         every { editor.putFloat(any(), any()) } returns editor
         every { editor.putBoolean(any(), any()) } returns editor
         every { editor.apply() } returns Unit
 
-        every { context.getSharedPreferences("wallpaper_prefs", Context.MODE_PRIVATE) } returns wallpaperPrefs
+        every { context.getSharedPreferences("w9p2r5", Context.MODE_PRIVATE) } returns wallpaperPrefs
         every { wallpaperPrefs.getBoolean(any(), any()) } returns false
         every { wallpaperPrefs.getInt(any(), any()) } returns 0
         every { wallpaperPrefs.getFloat(any(), any()) } returns 0f
@@ -72,7 +72,7 @@ class ThemeViewModelTest {
     fun setHue_updates_state_and_prefs() {
         viewModel.setHue(180f)
         assert(viewModel.hue.value == 180f)
-        verify { editor.putFloat("theme_hue", 180f) }
+        verify { editor.putFloat("h2u4e6", 180f) }
     }
 
     @Test
@@ -87,6 +87,6 @@ class ThemeViewModelTest {
     fun toggleCustomTheme_updates_state() {
         viewModel.toggleCustomTheme(true)
         assert(viewModel.useCustomTheme.value)
-        verify { editor.putBoolean("use_custom_theme", true) }
+        verify { editor.putBoolean("c8u2s4", true) }
     }
 }

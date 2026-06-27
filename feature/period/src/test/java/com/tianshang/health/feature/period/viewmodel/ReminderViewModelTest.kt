@@ -40,18 +40,18 @@ class ReminderViewModelTest {
 
         mockkObject(KeystoreManager)
         every { KeystoreManager.getEncryptedSharedPreferences(context) } returns prefs
-        every { prefs.getBoolean("period_reminder_enabled", false) } returns false
+        every { prefs.getBoolean("p1r3e5", false) } returns false
         every {
-            prefs.getInt("period_reminder_hour", HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR)
+            prefs.getInt("p2r4h6", HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR)
         } returns HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR
-        every { prefs.getInt("period_reminder_minute", 0) } returns 0
-        every { prefs.getBoolean("ovulation_reminder_enabled", false) } returns false
+        every { prefs.getInt("p3r5m7", 0) } returns 0
+        every { prefs.getBoolean("o1v2e4", false) } returns false
         every {
-            prefs.getInt("ovulation_days_before", HealthConstants.DEFAULT_OVULATION_DAYS_BEFORE)
+            prefs.getInt("o2v3d6", HealthConstants.DEFAULT_OVULATION_DAYS_BEFORE)
         } returns HealthConstants.DEFAULT_OVULATION_DAYS_BEFORE
-        every { prefs.getBoolean("pms_reminder_enabled", false) } returns false
+        every { prefs.getBoolean("p4m1e3", false) } returns false
         every {
-            prefs.getInt("pms_days_before", HealthConstants.DEFAULT_PMS_DAYS_BEFORE)
+            prefs.getInt("p5m2d7", HealthConstants.DEFAULT_PMS_DAYS_BEFORE)
         } returns HealthConstants.DEFAULT_PMS_DAYS_BEFORE
         every { prefs.edit() } returns prefsEditor
         every { prefsEditor.putBoolean(any(), any()) } returns prefsEditor
@@ -92,10 +92,10 @@ class ReminderViewModelTest {
     @Test
     fun togglePeriodReminder_saves_and_schedules_worker() = runTest {
         every {
-            prefs.getInt("period_reminder_hour", HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR)
+            prefs.getInt("p2r4h6", HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR)
         } returns HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR
-        every { prefs.getInt("period_reminder_minute", 0) } returns 0
-        every { prefs.getBoolean("period_reminder_enabled", false) } returnsMany listOf(false, true)
+        every { prefs.getInt("p3r5m7", 0) } returns 0
+        every { prefs.getBoolean("p1r3e5", false) } returnsMany listOf(false, true)
 
         viewModel.togglePeriodReminder(true)
 
@@ -104,7 +104,7 @@ class ReminderViewModelTest {
 
     @Test
     fun togglePeriodReminder_cancels_worker_when_disabled() = runTest {
-        every { prefs.getBoolean("period_reminder_enabled", false) } returnsMany listOf(true, false)
+        every { prefs.getBoolean("p1r3e5", false) } returnsMany listOf(true, false)
 
         viewModel.togglePeriodReminder(false)
 
@@ -113,7 +113,7 @@ class ReminderViewModelTest {
 
     @Test
     fun toggleOvulationReminder_schedules_worker() = runTest {
-        every { prefs.getBoolean("ovulation_reminder_enabled", false) } returnsMany listOf(false, true)
+        every { prefs.getBoolean("o1v2e4", false) } returnsMany listOf(false, true)
 
         viewModel.toggleOvulationReminder(true)
 
@@ -122,7 +122,7 @@ class ReminderViewModelTest {
 
     @Test
     fun togglePmsReminder_schedules_worker() = runTest {
-        every { prefs.getBoolean("pms_reminder_enabled", false) } returnsMany listOf(false, true)
+        every { prefs.getBoolean("p4m1e3", false) } returnsMany listOf(false, true)
 
         viewModel.togglePmsReminder(true)
 
@@ -131,9 +131,9 @@ class ReminderViewModelTest {
 
     @Test
     fun setPeriodReminderTime_updates_and_reschedules() = runTest {
-        every { prefs.getBoolean("period_reminder_enabled", false) } returns true
-        every { prefs.getInt("period_reminder_hour", HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR) } returns 14
-        every { prefs.getInt("period_reminder_minute", 0) } returns 30
+        every { prefs.getBoolean("p1r3e5", false) } returns true
+        every { prefs.getInt("p2r4h6", HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR) } returns 14
+        every { prefs.getInt("p3r5m7", 0) } returns 30
 
         viewModel.setPeriodReminderTime(14, 30)
 

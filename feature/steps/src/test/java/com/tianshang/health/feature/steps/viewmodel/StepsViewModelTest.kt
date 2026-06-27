@@ -2,6 +2,7 @@ package com.tianshang.health.feature.steps.viewmodel
 
 import android.content.Context
 import android.os.PowerManager
+import com.tianshang.health.core.common.R
 import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.feature.steps.data.repository.StepsRepository
 import com.tianshang.health.feature.steps.service.StepCounterService
@@ -46,6 +47,8 @@ class StepsViewModelTest {
 
         coEvery { stepsRepository.initialize() } returns Unit
         coEvery { stepsRepository.updateGoal(any()) } returns Unit
+        every { stringResolver.getString(R.string.error_unknown) } returns "Unknown error"
+        every { stringResolver.getString(R.string.error_failed_update_goal) } returns "Failed to update goal"
 
         viewModel = StepsViewModel(context, stringResolver, stepsRepository)
     }

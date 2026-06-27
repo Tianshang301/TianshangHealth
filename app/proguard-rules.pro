@@ -51,10 +51,13 @@
 -dontwarn com.google.errorprone.annotations.Immutable
 -dontwarn com.google.errorprone.annotations.RestrictedApi
 
-# Strip debug logs in release builds
+# Strip all logs in release builds
 -assumenosideeffects class android.util.Log {
     public static int d(...);
     public static int v(...);
+    public static int w(...);
+    public static int e(...);
+    public static int i(...);
 }
 
 # Keep backup data classes for Gson deserialization

@@ -24,8 +24,13 @@ object Argon2Hasher {
             .build()
 
         val hash = ByteArray(HASH_LENGTH)
-        generator.init(params)
-        generator.generateBytes(password.toByteArray(), hash)
+        val passwordBytes = password.toByteArray()
+        try {
+            generator.init(params)
+            generator.generateBytes(passwordBytes, hash)
+        } finally {
+            passwordBytes.fill(0)
+        }
 
         return hash
     }

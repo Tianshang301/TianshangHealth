@@ -116,7 +116,7 @@ class DashboardViewModel @Inject constructor(
                     _uiState.value = DashboardUiState.Success(state)
                 }
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = DashboardUiState.Error(e.message ?: stringResolver.getString(R.string.error_unknown))
+                _uiState.value = DashboardUiState.Error(stringResolver.getString(R.string.error_unknown))
             }
         }
     }

@@ -69,7 +69,6 @@ ui.xml
 window_dump.xml
 
 # Local / temp
-local.properties.example
 dumptmp/
 
 # Dev tools

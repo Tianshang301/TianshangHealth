@@ -13,6 +13,10 @@ import javax.inject.Inject
 @HiltAndroidApp
 class TianshangHealthApplication : Application(), Configuration.Provider {
 
+    companion object {
+        private const val KEY_APP_LANGUAGE = "l4m8n2"
+    }
+
     @Inject
     lateinit var workerFactory: HiltWorkerFactory
 
@@ -37,7 +41,7 @@ class TianshangHealthApplication : Application(), Configuration.Provider {
 
     private fun applySavedLanguage() {
         val prefs = KeystoreManager.getEncryptedSharedPreferences(this)
-        val langCode = prefs.getString("app_language", "zh") ?: "zh"
+        val langCode = prefs.getString(KEY_APP_LANGUAGE, "zh") ?: "zh"
         val localeTag = mapOf(
             "zh" to "zh", "en" to "en", "ja" to "ja", "ko" to "ko",
             "fr" to "fr", "es" to "es", "de" to "de", "ru" to "ru",

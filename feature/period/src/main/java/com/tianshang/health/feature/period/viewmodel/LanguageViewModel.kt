@@ -26,10 +26,14 @@ class LanguageViewModel @Inject constructor(
     @ApplicationContext private val context: android.content.Context
 ) : ViewModel() {
 
+    companion object {
+        private const val KEY_APP_LANGUAGE = "l4m8n2"
+    }
+
     private val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
 
     private val _selectedLanguage = MutableStateFlow(
-        prefs.getString("app_language", "zh") ?: "zh"
+        prefs.getString(KEY_APP_LANGUAGE, "zh") ?: "zh"
     )
     val selectedLanguage: StateFlow<String> = _selectedLanguage.asStateFlow()
 
@@ -62,7 +66,7 @@ class LanguageViewModel @Inject constructor(
 
     fun setLanguage(languageCode: String) {
         _selectedLanguage.value = languageCode
-        prefs.edit().putString("app_language", languageCode).apply()
+        prefs.edit().putString(KEY_APP_LANGUAGE, languageCode).apply()
 
         val localeTag = mapOf(
             "zh" to "zh", "en" to "en", "ja" to "ja", "ko" to "ko",

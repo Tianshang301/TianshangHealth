@@ -26,18 +26,25 @@ class ThemeViewModel @Inject constructor(
     private val stringResolver: StringResolver
 ) : ViewModel() {
 
+    companion object {
+        private const val KEY_THEME_HUE = "h2u4e6"
+        private const val KEY_THEME_SATURATION = "s1a3t5"
+        private const val KEY_THEME_LIGHTNESS = "l7i9g2"
+        private const val KEY_USE_CUSTOM_THEME = "c8u2s4"
+    }
+
     private val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
 
-    private val _hue = MutableStateFlow(prefs.getFloat("theme_hue", 340f))
+    private val _hue = MutableStateFlow(prefs.getFloat(KEY_THEME_HUE, 340f))
     val hue: StateFlow<Float> = _hue.asStateFlow()
 
-    private val _saturation = MutableStateFlow(prefs.getFloat("theme_saturation", 0.6f))
+    private val _saturation = MutableStateFlow(prefs.getFloat(KEY_THEME_SATURATION, 0.6f))
     val saturation: StateFlow<Float> = _saturation.asStateFlow()
 
-    private val _lightness = MutableStateFlow(prefs.getFloat("theme_lightness", 0.7f))
+    private val _lightness = MutableStateFlow(prefs.getFloat(KEY_THEME_LIGHTNESS, 0.7f))
     val lightness: StateFlow<Float> = _lightness.asStateFlow()
 
-    private val _useCustomTheme = MutableStateFlow(prefs.getBoolean("use_custom_theme", false))
+    private val _useCustomTheme = MutableStateFlow(prefs.getBoolean(KEY_USE_CUSTOM_THEME, false))
     val useCustomTheme: StateFlow<Boolean> = _useCustomTheme.asStateFlow()
 
     private val _wallpaperConfig = MutableStateFlow(WallpaperManager.loadConfig(context))
@@ -57,19 +64,19 @@ class ThemeViewModel @Inject constructor(
 
     fun setHue(value: Float) {
         _hue.value = value
-        prefs.edit().putFloat("theme_hue", value).apply()
+        prefs.edit().putFloat(KEY_THEME_HUE, value).apply()
         syncThemeConfig()
     }
 
     fun setSaturation(value: Float) {
         _saturation.value = value
-        prefs.edit().putFloat("theme_saturation", value).apply()
+        prefs.edit().putFloat(KEY_THEME_SATURATION, value).apply()
         syncThemeConfig()
     }
 
     fun setLightness(value: Float) {
         _lightness.value = value
-        prefs.edit().putFloat("theme_lightness", value).apply()
+        prefs.edit().putFloat(KEY_THEME_LIGHTNESS, value).apply()
         syncThemeConfig()
     }
 
@@ -77,13 +84,13 @@ class ThemeViewModel @Inject constructor(
         setHue(hue)
         setSaturation(saturation)
         setLightness(lightness)
-        prefs.edit().putBoolean("use_custom_theme", true).apply()
+        prefs.edit().putBoolean(KEY_USE_CUSTOM_THEME, true).apply()
         _useCustomTheme.value = true
         syncThemeConfig()
     }
 
     fun toggleCustomTheme(enabled: Boolean) {
-        prefs.edit().putBoolean("use_custom_theme", enabled).apply()
+        prefs.edit().putBoolean(KEY_USE_CUSTOM_THEME, enabled).apply()
         _useCustomTheme.value = enabled
         syncThemeConfig()
     }

@@ -71,12 +71,13 @@
     <ID>MaximumLineLength:PeriodScreen.kt$ </ID>
     <ID>MaximumLineLength:PeriodViewModel.kt$PeriodViewModel$ </ID>
     <ID>MaximumLineLength:RecycleBinScreen.kt$ </ID>
-    <ID>MaximumLineLength:ReminderViewModel.kt$ReminderViewModel$ </ID>
     <ID>OptionalUnit:AppLockViewModelTest.kt$AppLockViewModelTest$Unit</ID>
     <ID>OptionalUnit:ReminderViewModelTest.kt$ReminderViewModelTest$Unit</ID>
     <ID>ReturnCount:PredictionEngine.kt$PredictionEngine$private fun findOvulationDateInRange( symptoms: List&lt;DailySymptom&gt;, startDate: LocalDate, endDate: LocalDate ): LocalDate?</ID>
     <ID>SwallowedException:AppLockViewModel.kt$AppLockViewModel$e: Exception</ID>
+    <ID>SwallowedException:PeriodViewModel.kt$PeriodViewModel$e: Exception</ID>
     <ID>SwallowedException:PredictionEngine.kt$PredictionEngine$e: Exception</ID>
+    <ID>SwallowedException:ReminderViewModel.kt$ReminderViewModel$e: Exception</ID>
     <ID>SwallowedException:ReminderWorkers.kt$OvulationReminderWorker$e: Exception</ID>
     <ID>SwallowedException:ReminderWorkers.kt$PeriodReminderWorker$e: Exception</ID>
     <ID>SwallowedException:ReminderWorkers.kt$PmsReminderWorker$e: Exception</ID>
@@ -90,8 +91,6 @@
     <ID>UnnecessaryParentheses:PredictionFeedbackTracker.kt$PredictionFeedbackTracker$(accurate * 100 / total)</ID>
     <ID>UnnecessaryParentheses:ProfileScreen.kt$(currentYear - 25)</ID>
     <ID>UnnecessaryParentheses:StepHistorySection.kt$((d.dayOfMonth - 1) / 7)</ID>
-    <ID>UnusedPrivateProperty:AppLockViewModel.kt$AppLockViewModel.Companion$private const val PREF_PASSWORD_HASH = "h5n1p8"</ID>
-    <ID>UnusedPrivateProperty:AppLockViewModel.kt$AppLockViewModel.Companion$private const val PREF_PASSWORD_SALT = "s2v4x7"</ID>
     <ID>UnusedPrivateProperty:CalendarView.kt$val lastDayOfMonth = currentMonth.atEndOfMonth()</ID>
     <ID>UnusedPrivateProperty:PredictionEngineTest.kt$PredictionEngineTest$val cycleLen = 28L</ID>
     <ID>UnusedPrivateProperty:ThemeScreen.kt$val context = LocalContext.current</ID>

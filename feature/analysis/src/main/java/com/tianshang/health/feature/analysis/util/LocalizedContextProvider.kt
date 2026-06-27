@@ -7,7 +7,7 @@ import java.util.Locale
 
 object LocalizedContextProvider {
 
-    private const val PREF_LANGUAGE_KEY = "app_language"
+    private const val PREF_LANGUAGE_KEY = "l4m8n2"
     private const val DEFAULT_LANGUAGE = "zh"
 
     private val localeMapping = mapOf(

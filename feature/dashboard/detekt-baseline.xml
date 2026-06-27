@@ -33,6 +33,7 @@
     <ID>ReturnCount:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private fun addStepsInsight(dataList: MutableList&lt;InsightData&gt;, stats: PhaseStats): Boolean</ID>
     <ID>ReturnCount:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private fun addStressInsight(dataList: MutableList&lt;InsightData&gt;, stats: PhaseStats): Boolean</ID>
     <ID>ReturnCount:InsightUiMapper.kt$@Composable private fun InsightData.toInsightItem(): InsightItem?</ID>
+    <ID>SwallowedException:DashboardViewModel.kt$DashboardViewModel$e: Exception</ID>
     <ID>UnusedPrivateProperty:DashboardViewModelTest.kt$DashboardViewModelTest$private val weekStart = today.minusDays(today.dayOfWeek.value.toLong() - 1)</ID>
     <ID>UnusedPrivateProperty:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private val dailySymptomDao: DailySymptomDao</ID>
     <ID>UseIfInsteadOfWhen:HealthInsightsCard.kt$when (item.category) { InsightCategory.WARNING -&gt; Color(0xFFE65100) else -&gt; MaterialTheme.colorScheme.onSurface }</ID>

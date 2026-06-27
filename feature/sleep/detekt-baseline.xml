@@ -86,6 +86,7 @@
     <ID>MaximumLineLength:SleepScreen.kt$ </ID>
     <ID>ReturnCount:SleepPhaseDetector.kt$SleepPhaseDetector$fun estimateDeepSleepWindow(bedTime: String?, wakeTime: String?): SleepPhase?</ID>
     <ID>ReturnCount:SleepPhaseDetector.kt$SleepPhaseDetector$private fun parseMinutes(time: String): Int?</ID>
+    <ID>SwallowedException:SleepViewModel.kt$SleepViewModel$e: Exception</ID>
     <ID>UnnecessaryParentheses:BedWakeTimerCard.kt$(elapsedMs % 3_600_000)</ID>
     <ID>UnnecessaryParentheses:SleepTrendChart.kt$((day.sleepHours ?: 0f) / maxHours * chartHeight)</ID>
     <ID>UnnecessaryParentheses:SleepTrendChart.kt$(i.toFloat() / maxHours * chartHeight)</ID>

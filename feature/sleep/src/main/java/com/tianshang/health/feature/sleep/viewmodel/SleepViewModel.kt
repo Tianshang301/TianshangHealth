@@ -3,6 +3,8 @@ package com.tianshang.health.feature.sleep.viewmodel
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.core.database.entity.DailyHealth
 import com.tianshang.health.feature.sleep.data.repository.SleepRepository
 import com.tianshang.health.feature.sleep.data.repository.SleepRepository.SleepConsistencyScore
@@ -41,6 +43,7 @@ data class SleepState(
 
 @HiltViewModel
 class SleepViewModel @Inject constructor(
+    private val stringResolver: StringResolver,
     private val repository: SleepRepository
 ) : ViewModel() {
 
@@ -82,7 +85,7 @@ class SleepViewModel @Inject constructor(
                     )
                 }
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _state.update { it.copy(isLoading = false, error = e.message) }
+                _state.update { it.copy(isLoading = false, error = stringResolver.getString(R.string.error_unknown)) }
             }
         }
     }
@@ -175,7 +178,7 @@ class SleepViewModel @Inject constructor(
                     )
                 }
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _state.update { it.copy(isSaving = false, error = e.message) }
+                _state.update { it.copy(isSaving = false, error = stringResolver.getString(R.string.error_unknown)) }
             }
         }
     }

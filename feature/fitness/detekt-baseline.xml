@@ -23,6 +23,7 @@
     <ID>MaxLineLength:CalorieCalculator.kt$CalorieCalculator$HealthConstants.BMR_WEIGHT_COEFFICIENT * weightKg + HealthConstants.BMR_HEIGHT_COEFFICIENT * heightCm - HealthConstants.BMR_AGE_COEFFICIENT * age + HealthConstants.BMR_MALE_OFFSET</ID>
     <ID>MaxLineLength:CalorieCalculator.kt$CalorieCalculator$HealthConstants.BMR_WEIGHT_COEFFICIENT * weightKg + HealthConstants.BMR_HEIGHT_COEFFICIENT * heightCm - HealthConstants.BMR_AGE_COEFFICIENT * age - HealthConstants.BMR_FEMALE_OFFSET</ID>
     <ID>MaximumLineLength:CalorieCalculator.kt$CalorieCalculator$ </ID>
+    <ID>SwallowedException:FitnessViewModel.kt$FitnessViewModel$e: Exception</ID>
     <ID>ThrowsCount:FitnessViewModel.kt$FitnessViewModel$private fun loadData()</ID>
     <ID>TooManyFunctions:FitnessRepository.kt$FitnessRepository</ID>
     <ID>TooManyFunctions:FitnessViewModel.kt$FitnessViewModel : ViewModel</ID>

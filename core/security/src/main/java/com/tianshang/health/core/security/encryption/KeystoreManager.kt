@@ -63,6 +63,10 @@ object KeystoreManager {
 
     private fun migrateOldPreferences(context: Context) {
         try {
+            val keyStore = KeyStore.getInstance(ANDROID_KEYSTORE)
+            keyStore.load(null)
+            if (!keyStore.containsAlias(OLD_KEY_ALIAS)) return
+
             val oldMasterKey = MasterKey.Builder(context, OLD_KEY_ALIAS)
                 .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
                 .build()
@@ -94,10 +98,17 @@ object KeystoreManager {
                     }
                 }
                 editor.apply()
+                // Verify migration by checking a marker key exists in new prefs
+                if (newPrefs.all.isNotEmpty()) {
+                    oldPrefs.edit().clear().apply()
+                    keyStore.deleteEntry(OLD_KEY_ALIAS)
+                }
+            } else {
+                oldPrefs.edit().clear().apply()
+                keyStore.deleteEntry(OLD_KEY_ALIAS)
             }
-            oldPrefs.edit().clear().apply()
         } catch (_: Exception) {
-            // Migration failed — fresh start
+            // Migration failed — old data preserved, will retry next launch
         }
     }
 

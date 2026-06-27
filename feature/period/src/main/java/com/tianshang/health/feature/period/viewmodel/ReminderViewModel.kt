@@ -43,6 +43,16 @@ class ReminderViewModel @Inject constructor(
     private val _uiState = MutableStateFlow<ReminderUiState>(ReminderUiState.Loading)
     val uiState: StateFlow<ReminderUiState> = _uiState.asStateFlow()
 
+    companion object {
+        private const val KEY_PERIOD_REMINDER_ENABLED = "p1r3e5"
+        private const val KEY_PERIOD_REMINDER_HOUR = "p2r4h6"
+        private const val KEY_PERIOD_REMINDER_MINUTE = "p3r5m7"
+        private const val KEY_OVULATION_REMINDER_ENABLED = "o1v2e4"
+        private const val KEY_OVULATION_DAYS_BEFORE = "o2v3d6"
+        private const val KEY_PMS_REMINDER_ENABLED = "p4m1e3"
+        private const val KEY_PMS_DAYS_BEFORE = "p5m2d7"
+    }
+
     private val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
 
     init {
@@ -53,23 +63,23 @@ class ReminderViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val settings = ReminderSettings(
-                    periodReminderEnabled = prefs.getBoolean("period_reminder_enabled", false),
+                    periodReminderEnabled = prefs.getBoolean(KEY_PERIOD_REMINDER_ENABLED, false),
                     periodReminderHour = prefs.getInt(
-                        "period_reminder_hour",
+                        KEY_PERIOD_REMINDER_HOUR,
                         HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR
                     ),
-                    periodReminderMinute = prefs.getInt("period_reminder_minute", 0),
-                    ovulationReminderEnabled = prefs.getBoolean("ovulation_reminder_enabled", false),
+                    periodReminderMinute = prefs.getInt(KEY_PERIOD_REMINDER_MINUTE, 0),
+                    ovulationReminderEnabled = prefs.getBoolean(KEY_OVULATION_REMINDER_ENABLED, false),
                     ovulationDaysBefore = prefs.getInt(
-                        "ovulation_days_before",
+                        KEY_OVULATION_DAYS_BEFORE,
                         HealthConstants.DEFAULT_OVULATION_DAYS_BEFORE
                     ),
-                    pmsReminderEnabled = prefs.getBoolean("pms_reminder_enabled", false),
-                    pmsDaysBefore = prefs.getInt("pms_days_before", HealthConstants.DEFAULT_PMS_DAYS_BEFORE)
+                    pmsReminderEnabled = prefs.getBoolean(KEY_PMS_REMINDER_ENABLED, false),
+                    pmsDaysBefore = prefs.getInt(KEY_PMS_DAYS_BEFORE, HealthConstants.DEFAULT_PMS_DAYS_BEFORE)
                 )
                 _uiState.value = ReminderUiState.Success(settings)
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = ReminderUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_load_settings))
+                _uiState.value = ReminderUiState.Error(stringResolver.getString(R.string.error_failed_load_settings))
             }
         }
     }
@@ -77,11 +87,11 @@ class ReminderViewModel @Inject constructor(
     fun togglePeriodReminder(enabled: Boolean) {
         viewModelScope.launch {
             try {
-                prefs.edit().putBoolean("period_reminder_enabled", enabled).apply()
+                prefs.edit().putBoolean(KEY_PERIOD_REMINDER_ENABLED, enabled).apply()
 
                 if (enabled) {
-                    val hour = prefs.getInt("period_reminder_hour", HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR)
-                    val minute = prefs.getInt("period_reminder_minute", 0)
+                    val hour = prefs.getInt(KEY_PERIOD_REMINDER_HOUR, HealthConstants.DEFAULT_PERIOD_REMINDER_HOUR)
+                    val minute = prefs.getInt(KEY_PERIOD_REMINDER_MINUTE, 0)
                     PeriodReminderWorker.scheduleReminder(context, hour, minute)
                 } else {
                     PeriodReminderWorker.cancelReminder(context)
@@ -89,7 +99,7 @@ class ReminderViewModel @Inject constructor(
 
                 loadSettings()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = ReminderUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_settings))
+                _uiState.value = ReminderUiState.Error(stringResolver.getString(R.string.error_failed_update_settings))
             }
         }
     }
@@ -98,17 +108,17 @@ class ReminderViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 prefs.edit()
-                    .putInt("period_reminder_hour", hour)
-                    .putInt("period_reminder_minute", minute)
+                    .putInt(KEY_PERIOD_REMINDER_HOUR, hour)
+                    .putInt(KEY_PERIOD_REMINDER_MINUTE, minute)
                     .apply()
 
-                if (prefs.getBoolean("period_reminder_enabled", false)) {
+                if (prefs.getBoolean(KEY_PERIOD_REMINDER_ENABLED, false)) {
                     PeriodReminderWorker.scheduleReminder(context, hour, minute)
                 }
 
                 loadSettings()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = ReminderUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_settings))
+                _uiState.value = ReminderUiState.Error(stringResolver.getString(R.string.error_failed_update_settings))
             }
         }
     }
@@ -116,7 +126,7 @@ class ReminderViewModel @Inject constructor(
     fun toggleOvulationReminder(enabled: Boolean) {
         viewModelScope.launch {
             try {
-                prefs.edit().putBoolean("ovulation_reminder_enabled", enabled).apply()
+                prefs.edit().putBoolean(KEY_OVULATION_REMINDER_ENABLED, enabled).apply()
 
                 if (enabled) {
                     OvulationReminderWorker.scheduleReminder(context)
@@ -126,7 +136,7 @@ class ReminderViewModel @Inject constructor(
 
                 loadSettings()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = ReminderUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_settings))
+                _uiState.value = ReminderUiState.Error(stringResolver.getString(R.string.error_failed_update_settings))
             }
         }
     }
@@ -134,15 +144,15 @@ class ReminderViewModel @Inject constructor(
     fun setOvulationDaysBefore(days: Int) {
         viewModelScope.launch {
             try {
-                prefs.edit().putInt("ovulation_days_before", days).apply()
+                prefs.edit().putInt(KEY_OVULATION_DAYS_BEFORE, days).apply()
 
-                if (prefs.getBoolean("ovulation_reminder_enabled", false)) {
+                if (prefs.getBoolean(KEY_OVULATION_REMINDER_ENABLED, false)) {
                     OvulationReminderWorker.scheduleReminder(context)
                 }
 
                 loadSettings()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = ReminderUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_settings))
+                _uiState.value = ReminderUiState.Error(stringResolver.getString(R.string.error_failed_update_settings))
             }
         }
     }
@@ -150,7 +160,7 @@ class ReminderViewModel @Inject constructor(
     fun togglePmsReminder(enabled: Boolean) {
         viewModelScope.launch {
             try {
-                prefs.edit().putBoolean("pms_reminder_enabled", enabled).apply()
+                prefs.edit().putBoolean(KEY_PMS_REMINDER_ENABLED, enabled).apply()
 
                 if (enabled) {
                     PmsReminderWorker.scheduleReminder(context)
@@ -160,7 +170,7 @@ class ReminderViewModel @Inject constructor(
 
                 loadSettings()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = ReminderUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_settings))
+                _uiState.value = ReminderUiState.Error(stringResolver.getString(R.string.error_failed_update_settings))
             }
         }
     }
@@ -168,15 +178,15 @@ class ReminderViewModel @Inject constructor(
     fun setPmsDaysBefore(days: Int) {
         viewModelScope.launch {
             try {
-                prefs.edit().putInt("pms_days_before", days).apply()
+                prefs.edit().putInt(KEY_PMS_DAYS_BEFORE, days).apply()
 
-                if (prefs.getBoolean("pms_reminder_enabled", false)) {
+                if (prefs.getBoolean(KEY_PMS_REMINDER_ENABLED, false)) {
                     PmsReminderWorker.scheduleReminder(context)
                 }
 
                 loadSettings()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = ReminderUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_settings))
+                _uiState.value = ReminderUiState.Error(stringResolver.getString(R.string.error_failed_update_settings))
             }
         }
     }

@@ -72,7 +72,7 @@ class StepsViewModel @Inject constructor(
                 throw e
             } catch (e: Exception) {
                 _uiState.value = StepsUiState.Error(
-                    e.message ?: stringResolver.getString(R.string.error_unknown)
+                    stringResolver.getString(R.string.error_unknown)
                 )
             }
         }
@@ -155,7 +155,7 @@ class StepsViewModel @Inject constructor(
                 throw e
             } catch (e: Exception) {
                 _uiState.value = StepsUiState.Error(
-                    e.message ?: stringResolver.getString(R.string.error_failed_update_goal)
+                    stringResolver.getString(R.string.error_failed_update_goal)
                 )
             }
         }

@@ -37,7 +37,7 @@ class LanguageViewModelTest {
         mockkStatic(AppCompatDelegate::class)
 
         every { KeystoreManager.getEncryptedSharedPreferences(context) } returns sharedPrefs
-        every { sharedPrefs.getString("app_language", "zh") } returns "zh"
+        every { sharedPrefs.getString("l4m8n2", "zh") } returns "zh"
         every { sharedPrefs.edit() } returns editor
         every { editor.putString(any(), any()) } returns editor
         every { editor.apply() } returns Unit
@@ -60,7 +60,7 @@ class LanguageViewModelTest {
     fun setLanguage_updates_state_and_prefs() {
         viewModel.setLanguage("en")
         assert(viewModel.selectedLanguage.value == "en")
-        verify { editor.putString("app_language", "en") }
+        verify { editor.putString("l4m8n2", "en") }
     }
 
     @Test

@@ -5,10 +5,10 @@ import com.tianshang.health.core.security.encryption.KeystoreManager
 
 object StepCache {
 
-    private const val PREF_KEY_TOTAL_STEPS = "total_steps"
-    private const val PREF_KEY_LAST_RECORDED_TOTAL = "last_recorded_total"
-    private const val PREF_KEY_LAST_SENSOR_BASELINE = "last_sensor_baseline"
-    private const val PREF_KEY_LAST_SYNCED_SENSOR_VALUE = "last_synced_sensor_value"
+    private const val PREF_KEY_TOTAL_STEPS = "t1s2t4"
+    private const val PREF_KEY_LAST_RECORDED_TOTAL = "l2r4t6"
+    private const val PREF_KEY_LAST_SENSOR_BASELINE = "l3s5b7"
+    private const val PREF_KEY_LAST_SYNCED_SENSOR_VALUE = "l4s6v8"
 
     fun getCachedTotalSteps(context: Context): Long {
         val prefs = KeystoreManager.getEncryptedSharedPreferences(context)

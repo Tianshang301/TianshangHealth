@@ -39,7 +39,7 @@ class OnboardingViewModelTest {
 
         mockkObject(KeystoreManager)
         every { KeystoreManager.getEncryptedSharedPreferences(context) } returns prefs
-        every { prefs.getBoolean("onboarding_completed", false) } returns false
+        every { prefs.getBoolean("c3s6t9", false) } returns false
         every { prefs.edit() } returns mockk {
             every { putBoolean(any(), any()) } returns this
             every { putString(any(), any()) } returns this

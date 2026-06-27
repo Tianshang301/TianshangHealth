@@ -21,14 +21,22 @@ android {
 
     signingConfigs {
         release {
-            def localProperties = new Properties()
-            def localPropertiesFile = rootProject.file('local.properties')
-            if (localPropertiesFile.exists()) {
-                localProperties.load(new FileInputStream(localPropertiesFile))
+            // Priority: Environment variables > local.properties
+            def ksPass = System.getenv('KEYSTORE_PASSWORD')
+            def kAlias = System.getenv('KEY_ALIAS')
+            def kPass = System.getenv('KEY_PASSWORD')
+
+            if (!ksPass || !kAlias || !kPass) {
+                def localProperties = new Properties()
+                def localPropertiesFile = rootProject.file('local.properties')
+                if (localPropertiesFile.exists()) {
+                    localProperties.load(new FileInputStream(localPropertiesFile))
+                }
+                ksPass = ksPass ?: localProperties.getProperty('KEYSTORE_PASSWORD')
+                kAlias = kAlias ?: localProperties.getProperty('KEY_ALIAS')
+                kPass = kPass ?: localProperties.getProperty('KEY_PASSWORD')
             }
-            def ksPass = localProperties.getProperty('KEYSTORE_PASSWORD')
-            def kAlias = localProperties.getProperty('KEY_ALIAS')
-            def kPass = localProperties.getProperty('KEY_PASSWORD')
+
             if (ksPass && kAlias && kPass) {
                 storeFile file('tianshang-health-release.jks')
                 storePassword ksPass

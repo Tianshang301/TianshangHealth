@@ -98,7 +98,7 @@ class FitnessViewModel @Inject constructor(
                     }
                 }
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _state.update { it.copy(isLoading = false, error = e.message) }
+                _state.update { it.copy(isLoading = false, error = stringResolver.getString(R.string.error_unknown)) }
             }
         }
 
@@ -140,7 +140,7 @@ class FitnessViewModel @Inject constructor(
                     )
                 }
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _state.update { it.copy(isLoading = false, error = e.message) }
+                _state.update { it.copy(isLoading = false, error = stringResolver.getString(R.string.error_unknown)) }
             }
         }
 
@@ -282,7 +282,7 @@ class FitnessViewModel @Inject constructor(
                     )
                 }
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _addState.update { it.copy(isSaving = false, error = e.message) }
+                _addState.update { it.copy(isSaving = false, error = stringResolver.getString(R.string.error_unknown)) }
             }
         }
     }
@@ -346,7 +346,7 @@ class FitnessViewModel @Inject constructor(
                     refreshBodyMetrics()
                 }
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _state.update { it.copy(error = e.message) }
+                _state.update { it.copy(error = stringResolver.getString(R.string.error_unknown)) }
             }
         }
     }
@@ -402,7 +402,7 @@ class FitnessViewModel @Inject constructor(
                 refreshWeeklyStats()
                 refreshCombinedStats()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _state.update { it.copy(error = e.message) }
+                _state.update { it.copy(error = stringResolver.getString(R.string.error_failed_delete)) }
             }
         }
     }

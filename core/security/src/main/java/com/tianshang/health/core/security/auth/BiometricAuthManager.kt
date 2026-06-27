@@ -9,6 +9,8 @@ import com.tianshang.health.core.security.encryption.KeystoreManager
 
 object BiometricAuthManager {
 
+    private const val PREF_KEY_BIOMETRIC = "b8e2f5"
+
     fun canAuthenticate(context: Context): Boolean {
         val biometricManager = BiometricManager.from(context)
         return biometricManager.canAuthenticate(
@@ -60,12 +62,12 @@ object BiometricAuthManager {
 
     fun isBiometricEnabled(context: Context): Boolean {
         val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
-        return prefs.getBoolean("biometric_enabled", false)
+        return prefs.getBoolean(PREF_KEY_BIOMETRIC, false)
     }
 
     fun setBiometricEnabled(context: Context, enabled: Boolean) {
         val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
-        prefs.edit().putBoolean("biometric_enabled", enabled).apply()
+        prefs.edit().putBoolean(PREF_KEY_BIOMETRIC, enabled).apply()
     }
 
     fun authenticateForRecovery(

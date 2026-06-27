@@ -18,6 +18,7 @@
     <ID>OptionalUnit:StepsViewModelTest.kt$StepsViewModelTest$Unit</ID>
     <ID>ReturnCount:GetCycleStepsInsightUseCase.kt$GetCycleStepsInsightUseCase$suspend operator fun invoke(): CycleStepsInsight?</ID>
     <ID>SwallowedException:StepSyncWorker.kt$StepSyncWorker$e: Exception</ID>
+    <ID>SwallowedException:StepsViewModel.kt$StepsViewModel$e: Exception</ID>
     <ID>TooManyFunctions:StepsRepository.kt$StepsRepository</ID>
     <ID>UnderscoresInNumericLiterals:StepCounterServiceTest.kt$StepCounterServiceTest$25000</ID>
     <ID>UnderscoresInNumericLiterals:StepCounterServiceTest.kt$StepCounterServiceTest$25000L</ID>

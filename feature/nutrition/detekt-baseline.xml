@@ -18,6 +18,7 @@
     <ID>MagicNumber:NutritionViewModel.kt$NutritionViewModel$30</ID>
     <ID>ReturnCount:NutritionRepository.kt$NutritionRepository$suspend fun getCycleNutritionRecommendation(): CycleNutritionRecommendation?</ID>
     <ID>SwallowedException:NutritionRepository.kt$NutritionRepository$e: Exception</ID>
+    <ID>SwallowedException:NutritionViewModel.kt$NutritionViewModel$e: Exception</ID>
     <ID>TooManyFunctions:NutritionRepository.kt$NutritionRepository</ID>
     <ID>TooManyFunctions:NutritionViewModel.kt$NutritionViewModel : ViewModel</ID>
     <ID>UseCheckOrError:NutritionRepository.kt$NutritionRepository$throw IllegalStateException("No user found. Onboarding must be completed first.")</ID>

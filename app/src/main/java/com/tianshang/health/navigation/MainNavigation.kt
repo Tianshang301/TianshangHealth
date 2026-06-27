@@ -69,6 +69,9 @@ import com.tianshang.health.feature.sleep.ui.SleepScreen
 import java.io.File
 import com.tianshang.health.feature.period.ui.AnalysisScreen as PeriodAnalysisScreen
 
+private const val KEY_ONBOARDING_COMPLETED = "c3s6t9"
+private const val KEY_USER_GENDER = "g5h1j7"
+
 sealed class Screen(
     val route: String,
     val titleResId: Int,
@@ -108,19 +111,19 @@ fun MainNavigation(
 
     val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
 
-    val isOnboardingCompleted = prefs.getBoolean("onboarding_completed", false)
+    val isOnboardingCompleted = prefs.getBoolean(KEY_ONBOARDING_COMPLETED, false)
 
     var userGender by remember { mutableStateOf(Gender.FEMALE) }
 
     LaunchedEffect(prefs) {
-        val genderValue = prefs.getString("user_gender", Gender.FEMALE.value) ?: Gender.FEMALE.value
+        val genderValue = prefs.getString(KEY_USER_GENDER, Gender.FEMALE.value) ?: Gender.FEMALE.value
         userGender = Gender.fromValue(genderValue)
     }
 
     DisposableEffect(prefs) {
         val listener = SharedPreferences.OnSharedPreferenceChangeListener { sharedPrefs, key ->
-            if (key == "user_gender" || key == "b2p5q8r1") {
-                val genderValue = sharedPrefs.getString("user_gender", Gender.FEMALE.value)
+            if (key == KEY_USER_GENDER || key == "b2p5q8r1") {
+                val genderValue = sharedPrefs.getString(KEY_USER_GENDER, Gender.FEMALE.value)
                     ?: Gender.FEMALE.value
                 userGender = Gender.fromValue(genderValue)
             }

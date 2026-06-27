@@ -113,15 +113,16 @@ object WallpaperManager {
         }
     }
 
-    private const val PREFS_KEY_TYPE = "wallpaper_type"
-    private const val PREFS_KEY_PRESET = "wallpaper_preset"
-    private const val PREFS_KEY_GRADIENT_START = "wallpaper_gradient_start"
-    private const val PREFS_KEY_GRADIENT_END = "wallpaper_gradient_end"
-    private const val PREFS_KEY_GRADIENT_ANGLE = "wallpaper_gradient_angle"
-    private const val PREFS_KEY_IMAGE_URI = "wallpaper_image_uri"
-    private const val PREFS_KEY_OPACITY = "wallpaper_opacity"
-    private const val PREFS_KEY_BLUR = "wallpaper_blur"
-    private const val PREFS_KEY_ENABLED = "wallpaper_enabled"
+    private const val PREFS_FILE = "w9p2r5"
+    private const val PREFS_KEY_TYPE = "w1t3"
+    private const val PREFS_KEY_PRESET = "w2p4"
+    private const val PREFS_KEY_GRADIENT_START = "w3g5"
+    private const val PREFS_KEY_GRADIENT_END = "w4g6"
+    private const val PREFS_KEY_GRADIENT_ANGLE = "w5a7"
+    private const val PREFS_KEY_IMAGE_URI = "w6i8"
+    private const val PREFS_KEY_OPACITY = "w7o9"
+    private const val PREFS_KEY_BLUR = "w8b1"
+    private const val PREFS_KEY_ENABLED = "w9e2"
 
     private val _configFlow = MutableStateFlow(WallpaperConfig())
     val configFlow: StateFlow<WallpaperConfig> = _configFlow.asStateFlow()
@@ -131,7 +132,7 @@ object WallpaperManager {
     }
 
     fun saveConfig(context: Context, config: WallpaperConfig) {
-        val prefs = context.getSharedPreferences("wallpaper_prefs", Context.MODE_PRIVATE)
+        val prefs = context.getSharedPreferences(PREFS_FILE, Context.MODE_PRIVATE)
         prefs.edit().apply {
             putInt(PREFS_KEY_TYPE, config.type.value)
             putInt(PREFS_KEY_PRESET, config.presetIndex)
@@ -151,7 +152,7 @@ object WallpaperManager {
     }
 
     fun loadConfig(context: Context): WallpaperConfig {
-        val prefs = context.getSharedPreferences("wallpaper_prefs", Context.MODE_PRIVATE)
+        val prefs = context.getSharedPreferences(PREFS_FILE, Context.MODE_PRIVATE)
         val enabled = prefs.getBoolean(PREFS_KEY_ENABLED, false)
         if (!enabled) return WallpaperConfig()
 

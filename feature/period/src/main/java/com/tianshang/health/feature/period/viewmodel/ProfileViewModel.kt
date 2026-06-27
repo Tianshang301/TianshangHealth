@@ -44,6 +44,10 @@ class ProfileViewModel @Inject constructor(
         _showGenderDialog.value = !_showGenderDialog.value
     }
 
+    companion object {
+        private const val KEY_USER_GENDER = "g5h1j7"
+    }
+
     fun updateGender(gender: User.Gender) {
         viewModelScope.launch {
             val user = userRepository.getOrCreateDefault()
@@ -51,7 +55,7 @@ class ProfileViewModel @Inject constructor(
             val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
             prefs.edit()
                 .putString("b2p5q8r1", gender.value)
-                .putString("user_gender", gender.value)
+                .putString(KEY_USER_GENDER, gender.value)
                 .apply()
             _showGenderDialog.value = false
             _genderChanged.trySend(Unit)

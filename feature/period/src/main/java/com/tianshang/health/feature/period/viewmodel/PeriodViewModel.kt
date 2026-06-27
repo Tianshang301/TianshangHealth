@@ -187,7 +187,7 @@ class PeriodViewModel @Inject constructor(
 
                 _uiState.value = PeriodUiState.Success(periodState)
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = PeriodUiState.Error(e.message ?: stringResolver.getString(R.string.error_unknown))
+                _uiState.value = PeriodUiState.Error(stringResolver.getString(R.string.error_unknown))
             }
         }
     }
@@ -239,7 +239,7 @@ class PeriodViewModel @Inject constructor(
                 periodRecordRepository.insert(record)
                 loadData()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = PeriodUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_add_record))
+                _uiState.value = PeriodUiState.Error(stringResolver.getString(R.string.error_failed_add_record))
             }
         }
     }
@@ -250,7 +250,7 @@ class PeriodViewModel @Inject constructor(
                 periodRecordRepository.update(record)
                 loadData()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = PeriodUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_update_record))
+                _uiState.value = PeriodUiState.Error(stringResolver.getString(R.string.error_failed_update_record))
             }
         }
     }
@@ -261,7 +261,7 @@ class PeriodViewModel @Inject constructor(
                 periodRecordRepository.deleteById(recordId)
                 loadData()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = PeriodUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_delete_record))
+                _uiState.value = PeriodUiState.Error(stringResolver.getString(R.string.error_failed_delete_record))
             }
         }
     }
@@ -290,7 +290,7 @@ class PeriodViewModel @Inject constructor(
 
                 loadData()
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = PeriodUiState.Error(e.message ?: stringResolver.getString(R.string.error_failed_record))
+                _uiState.value = PeriodUiState.Error(stringResolver.getString(R.string.error_failed_record))
             }
         }
     }
