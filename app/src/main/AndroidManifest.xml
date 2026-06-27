@@ -42,9 +42,9 @@
 
         <activity
             android:name="com.canhub.cropper.CropImageActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.TianshangHealth.Cropper"
-            tools:replace="android:theme" />
+            tools:replace="android:exported,android:theme" />
         
         <provider
             android:name="androidx.core.content.FileProvider"

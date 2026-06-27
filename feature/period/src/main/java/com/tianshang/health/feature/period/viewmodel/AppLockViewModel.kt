@@ -21,7 +21,9 @@ data class AppLockState(
     val isPasswordSet: Boolean = false,
     val enteredPin: String = "",
     val mode: LockMode = LockMode.UNLOCK,
-    val error: String? = null
+    val error: String? = null,
+    val failedAttempts: Int = 0,
+    val lockoutUntil: Long = 0L
 )
 
 enum class LockMode {
@@ -39,6 +41,15 @@ class AppLockViewModel @Inject constructor(
     private val stringResolver: StringResolver
 ) : ViewModel() {
 
+    companion object {
+        private const val MAX_ATTEMPTS_BEFORE_LOCKOUT = 5
+        private const val LOCKOUT_BASE_SECONDS = 30L
+        private const val PREF_FAILED_ATTEMPTS = "f3a7b9"
+        private const val PREF_LOCKOUT_UNTIL = "l2c5d8"
+        private const val PREF_PASSWORD_HASH = "h5n1p8"
+        private const val PREF_PASSWORD_SALT = "s2v4x7"
+    }
+
     private val _state = MutableStateFlow(AppLockState())
     val state: StateFlow<AppLockState> = _state.asStateFlow()
 
@@ -46,6 +57,12 @@ class AppLockViewModel @Inject constructor(
 
     init {
         checkPasswordStatus()
+        loadLockoutState()
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        pendingNewPin = ""
     }
 
     private fun checkPasswordStatus() {
@@ -54,6 +71,48 @@ class AppLockViewModel @Inject constructor(
             isPasswordSet = hasPassword,
             mode = if (hasPassword) LockMode.UNLOCK else LockMode.CREATE
         )
+    }
+
+    private fun loadLockoutState() {
+        val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
+        val failed = prefs.getInt(PREF_FAILED_ATTEMPTS, 0)
+        val lockoutUntil = prefs.getLong(PREF_LOCKOUT_UNTIL, 0L)
+        _state.value = _state.value.copy(failedAttempts = failed, lockoutUntil = lockoutUntil)
+    }
+
+    private fun persistLockoutState(failed: Int, lockoutUntil: Long) {
+        val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
+        prefs.edit()
+            .putInt(PREF_FAILED_ATTEMPTS, failed)
+            .putLong(PREF_LOCKOUT_UNTIL, lockoutUntil)
+            .apply()
+    }
+
+    private fun isCurrentlyLockedOut(): Boolean {
+        return System.currentTimeMillis() < _state.value.lockoutUntil
+    }
+
+    private fun getLockoutRemainingSeconds(): Long {
+        val remaining = (_state.value.lockoutUntil - System.currentTimeMillis()) / 1000
+        return remaining.coerceAtLeast(0)
+    }
+
+    private fun recordFailedAttempt() {
+        val newFailed = _state.value.failedAttempts + 1
+        val lockoutUntil = if (newFailed >= MAX_ATTEMPTS_BEFORE_LOCKOUT) {
+            val exponent = (newFailed - MAX_ATTEMPTS_BEFORE_LOCKOUT).coerceAtMost(4)
+            val delaySeconds = LOCKOUT_BASE_SECONDS * (1L shl exponent)
+            System.currentTimeMillis() + delaySeconds * 1000
+        } else {
+            0L
+        }
+        _state.value = _state.value.copy(failedAttempts = newFailed, lockoutUntil = lockoutUntil)
+        persistLockoutState(newFailed, lockoutUntil)
+    }
+
+    private fun resetFailedAttempts() {
+        _state.value = _state.value.copy(failedAttempts = 0, lockoutUntil = 0L)
+        persistLockoutState(0, 0L)
     }
 
     fun onDigit(digit: Char) {
@@ -83,6 +142,14 @@ class AppLockViewModel @Inject constructor(
         if (pin.length < 4) {
             _state.value = _state.value.copy(
                 error = stringResolver.getString(R.string.pin_length_error, 4)
+            )
+            return
+        }
+        if (_state.value.mode == LockMode.UNLOCK && isCurrentlyLockedOut()) {
+            val remaining = getLockoutRemainingSeconds()
+            _state.value = _state.value.copy(
+                enteredPin = "",
+                error = stringResolver.getString(R.string.pin_lockout_error, remaining)
             )
             return
         }
@@ -124,12 +191,17 @@ class AppLockViewModel @Inject constructor(
 
     fun onRecoverySuccess() {
         pendingNewPin = ""
+        resetFailedAttempts()
         _state.value = _state.value.copy(
             enteredPin = "",
             mode = LockMode.CREATE,
             error = null,
             isPasswordSet = false
         )
+    }
+
+    fun canUseBiometricRecovery(): Boolean {
+        return _state.value.failedAttempts >= 3
     }
 
     fun startChangePin() {
@@ -157,10 +229,14 @@ class AppLockViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val (salt, hash) = Argon2Hasher.hashPassword(password)
+                val saltHex = bytesToHex(salt)
+                val hashHex = bytesToHex(hash)
+                salt.fill(0)
+                hash.fill(0)
                 val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
                 prefs.edit()
-                    .putString("password_salt", bytesToHex(salt))
-                    .putString("password_hash", bytesToHex(hash))
+                    .putString("password_salt", saltHex)
+                    .putString("password_hash", hashHex)
                     .apply()
                 _state.value = _state.value.copy(
                     isPasswordSet = true,
@@ -196,6 +272,7 @@ class AppLockViewModel @Inject constructor(
                 val salt = hexToBytes(saltHex)
                 val expectedHash = hexToBytes(hashHex)
                 if (Argon2Hasher.verify(password, salt, expectedHash)) {
+                    resetFailedAttempts()
                     AppLockManager.unlock()
                     _state.value = _state.value.copy(
                         isAuthenticated = true,
@@ -203,6 +280,7 @@ class AppLockViewModel @Inject constructor(
                         error = null
                     )
                 } else {
+                    recordFailedAttempt()
                     _state.value = _state.value.copy(
                         enteredPin = "",
                         error = stringResolver.getString(R.string.error_incorrect_password)

@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Hasło nie może być puste</string>
     <string name="pin_mismatch_error">Hasła nie są zgodne</string>
     <string name="pin_length_error">Hasło musi mieć co najmniej %d znaków</string>
+    <string name="pin_lockout_error">Zbyt wiele prób. Spróbuj ponownie za %d sekund.</string>
     <string name="calendar_title">Kalendarz</string>
     <string name="current_cycle_day">Dzień %d cyklu</string>
     <string name="days_until_next_period">Następna miesiączka za %d dni</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Czas trwania</string>
+    <string name="sleep_quality_regularity">Regularność</string>
+    <string name="sleep_quality_deep_sleep">Głęboki sen</string>
+    <string name="sleep_quality_continuity">Ciągłość</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Niedowaga</string>
     <string name="bmi_category_normal">Prawidłowa</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">Według chińskiego standardu BMI</string>
     <string name="backup_success">Kopia zapasowa udana</string>
     <string name="backup_fail">Kopia zapasowa nieudana</string>
+    <string name="backup_wrong_password">Nieprawidłowe hasło lub uszkodzony plik</string>
+    <string name="backup_invalid_file">Nieprawidłowy format pliku kopii zapasowej</string>
     <string name="restore_success">Przywracanie udane</string>
     <string name="restore_fail">Przywracanie nieudane</string>
     <string name="export_success">Eksport udany</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">Nieznany błąd</string>
+    <string name="error_failed_delete">Usuwanie nie powiodło się</string>
     <string name="error_failed_add_record">Nie udało się dodać rekordu</string>
     <string name="error_failed_update_record">Nie udało się zaktualizować rekordu</string>
     <string name="error_failed_delete_record">Nie udało się usunąć rekordu</string>
@@ -698,6 +706,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Wyczyść</string>
     <string name="edit">Edytuj</string>
     <string name="exact_date_mode">Dokładna data</string>
+    <string name="toggle_exact_number">Przełącz dokładną liczbę</string>
     <string name="profile_dob_not_set">Nie ustawiono</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Tylko rok</string>

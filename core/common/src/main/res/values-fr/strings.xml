@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Le mot de passe ne peut pas être vide</string>
     <string name="pin_mismatch_error">Les mots de passe ne correspondent pas</string>
     <string name="pin_length_error">Le mot de passe doit comporter au moins %d caractères</string>
+    <string name="pin_lockout_error">Trop de tentatives. Réessayez dans %d secondes.</string>
     <string name="calendar_title">Calendrier</string>
     <string name="current_cycle_day">Jour %d du cycle</string>
     <string name="days_until_next_period">Prochaines règles dans %d jours</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Durée</string>
+    <string name="sleep_quality_regularity">Régularité</string>
+    <string name="sleep_quality_deep_sleep">Sommeil profond</string>
+    <string name="sleep_quality_continuity">Continuité</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Insuffisance pondérale</string>
     <string name="bmi_category_normal">Normal</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">Basé sur la norme chinoise IMC</string>
     <string name="backup_success">Sauvegarde réussie</string>
     <string name="backup_fail">Échec de la sauvegarde</string>
+    <string name="backup_wrong_password">Mot de passe incorrect ou fichier corrompu</string>
+    <string name="backup_invalid_file">Format de fichier de sauvegarde invalide</string>
     <string name="restore_success">Restauration réussie</string>
     <string name="restore_fail">Échec de la restauration</string>
     <string name="export_success">Exportation réussie</string>
@@ -322,6 +329,7 @@
     <string name="terms_service_declaration">1. Déclaration de service\n\nTianshangSanté est une application de suivi de santé complète qui privilégie la confidentialité et la sécurité des données. Toutes les données sont stockées localement avec un chiffrement fort.\n\n2. Confidentialité des données\n\nNous ne collectons, téléchargeons ni partageons aucune de vos données de santé. L\'application fonctionne hors ligne sans permissions réseau.\n\n3. Responsabilité de l\'utilisateur\n\nVous êtes responsable de l\'exactitude des données saisies. Les prévisions sont fournies à titre indicatif uniquement.\n\n4. Sécurité des données\n\nVos données sont protégées par chiffrement SQLCipher AES-256. La clé est gérée via Android Keystore.</string>
     <string name="privacy_policy_body">1. Principe fondamental : données localisées\n\nToutes vos données de santé sont stockées uniquement dans la base chiffrée sur votre appareil.\n\n2. Informations collectées\n\nNous traitons uniquement les informations que vous saisissez manuellement.\n\n3. Chiffrement des données\n\nToutes les données sensibles sont chiffrées avec SQLCipher AES-256.\n\n4. Aucun accès tiers\n\nNous n\'utilisons aucun service tiers d\'analyse, publicité ou suivi.\n\n5. Exportation des données\n\nVous pouvez exporter vos données à tout moment (CSV, sauvegarde chiffrée).\n\n6. Suppression des données\n\nVous pouvez supprimer tout ou partie de vos données à tout moment.</string>
     <string name="error_unknown">Erreur inconnue</string>
+    <string name="error_failed_delete">Échec de la suppression</string>
     <string name="error_failed_add_record">Échec d\'ajout</string>
     <string name="error_failed_update_record">Échec de mise à jour</string>
     <string name="error_failed_delete_record">Échec de suppression</string>
@@ -641,6 +649,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Effacer</string>
     <string name="edit">Modifier</string>
     <string name="exact_date_mode">Date exacte</string>
+    <string name="toggle_exact_number">Afficher le nombre exact</string>
     <string name="profile_dob_not_set">Non défini</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Année seulement</string>

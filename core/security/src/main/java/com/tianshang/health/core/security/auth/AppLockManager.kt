@@ -9,11 +9,11 @@ import java.lang.ref.WeakReference
 
 object AppLockManager {
 
-    private const val PREF_LOCK_ENABLED = "lock_enabled"
-    private const val PREF_LOCK_DELAY = "lock_delay_ms"
-    private const val PREF_LOCK_TIMESTAMP = "lock_background_timestamp"
-    private const val PREF_PASSWORD_HASH = "password_hash"
-    private const val PREF_PASSWORD_SALT = "password_salt"
+    private const val PREF_LOCK_ENABLED = "l7k2m9"
+    private const val PREF_LOCK_DELAY = "d4e7g0"
+    private const val PREF_LOCK_TIMESTAMP = "t8r3w6"
+    private const val PREF_PASSWORD_HASH = "h5n1p8"
+    private const val PREF_PASSWORD_SALT = "s2v4x7"
 
     private val _isLocked = MutableStateFlow(false)
     val isLocked: StateFlow<Boolean> = _isLocked.asStateFlow()
@@ -57,7 +57,11 @@ object AppLockManager {
 
     fun disable() {
         checkInit()
-        prefs().edit().putBoolean(PREF_LOCK_ENABLED, false).apply()
+        prefs().edit()
+            .putBoolean(PREF_LOCK_ENABLED, false)
+            .remove(PREF_PASSWORD_HASH)
+            .remove(PREF_PASSWORD_SALT)
+            .apply()
         _isEnabled.value = false
         _isLocked.value = false
     }

@@ -1,11 +1,14 @@
 package com.tianshang.health.feature.period.viewmodel
 
+import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.core.database.entity.PeriodRecord
 import com.tianshang.health.core.database.entity.User
 import com.tianshang.health.core.database.repository.PeriodRecordRepository
 import com.tianshang.health.core.database.repository.UserRepository
 import io.mockk.coEvery
 import io.mockk.coVerify
+import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -22,6 +25,7 @@ class RecycleBinViewModelTest {
 
     private val periodRecordRepository: PeriodRecordRepository = mockk()
     private val userRepository: UserRepository = mockk()
+    private val stringResolver: StringResolver = mockk()
     private val testDispatcher = UnconfinedTestDispatcher()
 
     private lateinit var viewModel: RecycleBinViewModel
@@ -40,8 +44,12 @@ class RecycleBinViewModelTest {
         coEvery { periodRecordRepository.getDeletedRecordsList(testUser.id) } returns testRecords
         coEvery { periodRecordRepository.restore(any()) } returns Unit
         coEvery { periodRecordRepository.deleteById(any()) } returns Unit
+        every { stringResolver.getString(R.string.error_unknown) } returns "Unknown error"
+        every { stringResolver.getString(R.string.error_failed_restore) } returns "Failed to restore"
+        every { stringResolver.getString(R.string.error_failed_delete) } returns "Failed to delete"
+        every { stringResolver.getString(R.string.error_failed_empty_bin) } returns "Failed to empty bin"
 
-        viewModel = RecycleBinViewModel(periodRecordRepository, userRepository)
+        viewModel = RecycleBinViewModel(periodRecordRepository, userRepository, stringResolver)
     }
 
     @After
@@ -61,19 +69,19 @@ class RecycleBinViewModelTest {
     @Test
     fun loadDeletedRecords_setsError_whenNoUser() {
         coEvery { userRepository.getOrCreateDefault() } throws RuntimeException("User not found")
-        val errorViewModel = RecycleBinViewModel(periodRecordRepository, userRepository)
+        val errorViewModel = RecycleBinViewModel(periodRecordRepository, userRepository, stringResolver)
         val state = errorViewModel.uiState.value
         assert(state is RecycleBinUiState.Error)
-        assert((state as RecycleBinUiState.Error).message == "User not found")
+        assert((state as RecycleBinUiState.Error).message == "Unknown error")
     }
 
     @Test
     fun loadDeletedRecords_setsError_whenRepositoryFails() {
         coEvery { periodRecordRepository.getDeletedRecordsList(any()) } throws RuntimeException("DB error")
-        val errorViewModel = RecycleBinViewModel(periodRecordRepository, userRepository)
+        val errorViewModel = RecycleBinViewModel(periodRecordRepository, userRepository, stringResolver)
         val state = errorViewModel.uiState.value
         assert(state is RecycleBinUiState.Error)
-        assert((state as RecycleBinUiState.Error).message == "DB error")
+        assert((state as RecycleBinUiState.Error).message == "Unknown error")
     }
 
     @Test
@@ -107,6 +115,6 @@ class RecycleBinViewModelTest {
         viewModel.emptyBin()
         val state = viewModel.uiState.value
         assert(state is RecycleBinUiState.Error)
-        assert((state as RecycleBinUiState.Error).message == "Delete failed")
+        assert((state as RecycleBinUiState.Error).message == "Failed to empty bin")
     }
 }

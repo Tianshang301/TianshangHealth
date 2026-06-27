@@ -10,8 +10,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import com.tianshang.health.core.common.R
 import com.tianshang.health.core.common.util.NumberFormatUtils
 import java.util.Locale
 
@@ -37,7 +39,7 @@ fun CompactNumberText(
         fontWeight = fontWeight,
         color = color,
         modifier = modifier.clickable(
-            onClickLabel = "Toggle exact number",
+            onClickLabel = stringResource(R.string.toggle_exact_number),
             onClick = { showExact = !showExact }
         )
     )

@@ -1,5 +1,6 @@
 package com.tianshang.health.feature.sleep.ui
 
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -531,22 +532,22 @@ private fun SleepQualityGauge(index: SleepQualityIndex) {
                 }
             }
             Spacer(modifier = Modifier.height(8.dp))
-            QualitySubBar(label = "Duration", score = index.durationAdequacy, weight = 40)
-            QualitySubBar(label = "Regularity", score = index.regularity, weight = 25)
-            QualitySubBar(label = "Deep Sleep", score = index.deepSleepRatio, weight = 20)
-            QualitySubBar(label = "Continuity", score = index.continuity, weight = 15)
+            QualitySubBar(labelRes = R.string.sleep_quality_duration, score = index.durationAdequacy, weight = 40)
+            QualitySubBar(labelRes = R.string.sleep_quality_regularity, score = index.regularity, weight = 25)
+            QualitySubBar(labelRes = R.string.sleep_quality_deep_sleep, score = index.deepSleepRatio, weight = 20)
+            QualitySubBar(labelRes = R.string.sleep_quality_continuity, score = index.continuity, weight = 15)
         }
     }
 }
 
 @Composable
-private fun QualitySubBar(label: String, score: Int, weight: Int) {
+private fun QualitySubBar(@StringRes labelRes: Int, score: Int, weight: Int) {
     Row(
         modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
-            text = "$label ($weight%)",
+            text = "${stringResource(labelRes)} ($weight%)",
             style = MaterialTheme.typography.bodySmall,
             modifier = Modifier.width(120.dp)
         )

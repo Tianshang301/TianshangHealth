@@ -6,7 +6,7 @@ import java.security.SecureRandom
 
 object SqlCipherManager {
 
-    private const val PREF_KEY_DB_PASSWORD = "db_password"
+    private const val PREF_KEY_DB_PASSWORD = "k3x8m2w5"
     private const val PASSWORD_LENGTH = 32
     private const val CHARSET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
 
@@ -26,7 +26,12 @@ object SqlCipherManager {
 
     fun getSupportFactory(context: Context): SupportFactory {
         val password = getDatabasePassword(context)
-        return SupportFactory(password.toByteArray())
+        val bytes = password.toByteArray()
+        try {
+            return SupportFactory(bytes)
+        } finally {
+            bytes.fill(0)
+        }
     }
 
     private fun generateRandomPassword(): String {

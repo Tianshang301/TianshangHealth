@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Losenordet far inte vara tomt</string>
     <string name="pin_mismatch_error">Losenorden matchar inte</string>
     <string name="pin_length_error">Losenordet maste vara minst %d tecken</string>
+    <string name="pin_lockout_error">För många försök. Försök igen om %d sekunder.</string>
     <string name="calendar_title">Kalender</string>
     <string name="current_cycle_day">Dag %d av cykel</string>
     <string name="days_until_next_period">Nasta menstruation om %d dagar</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Varaktighet</string>
+    <string name="sleep_quality_regularity">Regelbundenhet</string>
+    <string name="sleep_quality_deep_sleep">Djupsömnläge</string>
+    <string name="sleep_quality_continuity">Kontinuitet</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Undervikt</string>
     <string name="bmi_category_normal">Normal</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">Baserat pa kinesisk BMI-standard</string>
     <string name="backup_success">Sakerhetskopiering lyckades</string>
     <string name="backup_fail">Sakerhetskopiering misslyckades</string>
+    <string name="backup_wrong_password">Felaktigt lösenord eller skadad fil</string>
+    <string name="backup_invalid_file">Ogiltigt säkerhetskopieringsformat</string>
     <string name="restore_success">Aterstallning lyckades</string>
     <string name="restore_fail">Aterstallning misslyckades</string>
     <string name="export_success">Export lyckades</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">Okant fel</string>
+    <string name="error_failed_delete">Borttagning misslyckades</string>
     <string name="error_failed_add_record">Det gick inte att lagga till post</string>
     <string name="error_failed_update_record">Det gick inte att uppdatera post</string>
     <string name="error_failed_delete_record">Det gick inte att ta bort post</string>
@@ -696,6 +704,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Rensa</string>
     <string name="edit">Redigera</string>
     <string name="exact_date_mode">Exakt datum</string>
+    <string name="toggle_exact_number">Växla exakt tal</string>
     <string name="profile_dob_not_set">Inte angivet</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Endast år</string>

@@ -15,6 +15,7 @@
     <string name="pin_empty_error">รหัสผ่านต้องไม่เว้นว่าง</string>
     <string name="pin_mismatch_error">รหัสผ่านไม่ตรงกัน</string>
     <string name="pin_length_error">รหัสผ่านต้องมีอย่างน้อย %d ตัวอักษร</string>
+    <string name="pin_lockout_error">พยายามมากเกินไป ลองอีกครั้งใน %d วินาที</string>
     <string name="calendar_title">ปฏิทิน</string>
     <string name="current_cycle_day">วันที่ %d ของรอบ</string>
     <string name="days_until_next_period">ประจำเดือนครั้งต่อไปใน %d วัน</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">ระยะเวลา</string>
+    <string name="sleep_quality_regularity">ความสม่ำเสมอ</string>
+    <string name="sleep_quality_deep_sleep">หลับลึก</string>
+    <string name="sleep_quality_continuity">ความต่อเนื่อง</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">น้ำหนักต่ำกว่าเกณฑ์</string>
     <string name="bmi_category_normal">ปกติ</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">ตามมาตรฐาน BMI ของจีน</string>
     <string name="backup_success">สำรองข้อมูลสำเร็จ</string>
     <string name="backup_fail">สำรองข้อมูลล้มเหลว</string>
+    <string name="backup_wrong_password">รหัสผ่านไม่ถูกต้องหรือไฟล์เสียหาย</string>
+    <string name="backup_invalid_file">รูปแบบไฟล์สำรองไม่ถูกต้อง</string>
     <string name="restore_success">กู้คืนสำเร็จ</string>
     <string name="restore_fail">กู้คืนล้มเหลว</string>
     <string name="export_success">ส่งออกสำเร็จ</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">ข้อผิดพลาดที่ไม่ทราบสาเหตุ</string>
+    <string name="error_failed_delete">ลบไม่สำเร็จ</string>
     <string name="error_failed_add_record">ไม่สามารถเพิ่มบันทึก</string>
     <string name="error_failed_update_record">ไม่สามารถอัปเดตบันทึก</string>
     <string name="error_failed_delete_record">ไม่สามารถลบบันทึก</string>
@@ -695,6 +703,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">ล้าง</string>
     <string name="edit">แก้ไข</string>
     <string name="exact_date_mode">วันที่แน่นอน</string>
+    <string name="toggle_exact_number">สลับตัวเลขที่แน่นอน</string>
     <string name="profile_dob_not_set">ไม่ได้ตั้งค่า</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">เฉพาะปี</string>

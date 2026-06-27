@@ -52,7 +52,12 @@ class AppLockViewModelTest {
         coEvery { Argon2Hasher.hashPassword(any()) } returns (ByteArray(16) { 1 } to ByteArray(32) { 2 })
 
         every { prefs.edit() } returns prefsEditor
+        every { prefs.getString(any(), any()) } returns null
+        every { prefs.getInt(any(), any()) } returns 0
+        every { prefs.getLong(any(), any()) } returns 0L
         every { prefsEditor.putString(any(), any()) } returns prefsEditor
+        every { prefsEditor.putInt(any(), any()) } returns prefsEditor
+        every { prefsEditor.putLong(any(), any()) } returns prefsEditor
         every { prefsEditor.apply() } returns Unit
         every { prefsEditor.putBoolean(any(), any()) } returns prefsEditor
 
@@ -62,6 +67,7 @@ class AppLockViewModelTest {
         every { stringResolver.getString(R.string.error_incorrect_password) } returns "Incorrect password"
         every { stringResolver.getString(R.string.error_verification_failed) } returns "Verification failed"
         every { stringResolver.getString(R.string.error_password_not_set) } returns "Password not set"
+        every { stringResolver.getString(R.string.pin_lockout_error, any()) } returns "Too many attempts"
 
         viewModel = AppLockViewModel(context, stringResolver)
     }

@@ -15,6 +15,7 @@
     <string name="pin_empty_error">M&#7853;t kh&#7849;u không Đ&#432;&#7907;c Đ&#7875; tr&#7889;ng</string>
     <string name="pin_mismatch_error">M&#7853;t kh&#7849;u không kh&#7899;p</string>
     <string name="pin_length_error">M&#7853;t kh&#7849;u ph&#7843;i có ít nh&#7845;t %d ký t&#7921;</string>
+    <string name="pin_lockout_error">Quá nhiều lần thử. Thử lại sau %d giây.</string>
     <string name="calendar_title">L&#7883;ch</string>
     <string name="current_cycle_day">Ngày %d c&#7911;a chu k&#7923;</string>
     <string name="days_until_next_period">K&#7923; ti&#7871;p theo trong %d ngày</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Thời lượng</string>
+    <string name="sleep_quality_regularity">Tính đều đặn</string>
+    <string name="sleep_quality_deep_sleep">Giấc ngủ sâu</string>
+    <string name="sleep_quality_continuity">Tính liên tục</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Thi&#7871;u cân</string>
     <string name="bmi_category_normal">Bình th&#432;&#7901;ng</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">D&#7921;a trên tiêu chu&#7849;n BMI Trung Qu&#7889;c</string>
     <string name="backup_success">Sao l&#432;u thành công</string>
     <string name="backup_fail">Sao l&#432;u th&#7845;t b&#7841;i</string>
+    <string name="backup_wrong_password">Sai mật khẩu hoặc tệp bị hỏng</string>
+    <string name="backup_invalid_file">Định dạng tệp sao lưu không hợp lệ</string>
     <string name="restore_success">Ph&#7909;c h&#7891;i thành công</string>
     <string name="restore_fail">Ph&#7909;c h&#7891;i th&#7845;t b&#7841;i</string>
     <string name="export_success">Xu&#7845;t thành công</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">L&#7895;i không xác Đ&#7883;nh</string>
+    <string name="error_failed_delete">Xóa thất bại</string>
     <string name="error_failed_add_record">Không th&#7875; thêm b&#7843;n ghi</string>
     <string name="error_failed_update_record">Không th&#7875; c&#7853;p nh&#7853;t b&#7843;n ghi</string>
     <string name="error_failed_delete_record">Không th&#7875; xóa b&#7843;n ghi</string>
@@ -696,6 +704,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Xoá</string>
     <string name="edit">Chỉnh sửa</string>
     <string name="exact_date_mode">Ngày chính xác</string>
+    <string name="toggle_exact_number">Chuyển đổi số chính xác</string>
     <string name="profile_dob_not_set">Chưa đặt</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Chỉ năm</string>

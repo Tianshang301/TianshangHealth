@@ -59,6 +59,9 @@
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$6f</ID>
     <ID>MagicNumber:ScrollEdgeEffect.kt$0xFF1C1B1F</ID>
     <ID>MagicNumber:ScrollEdgeEffect.kt$0xFFFFFBFE</ID>
+    <ID>MagicNumber:SwipeableGlassNavigationBar.kt$1.015f</ID>
+    <ID>MagicNumber:SwipeableGlassNavigationBar.kt$12f</ID>
+    <ID>MagicNumber:SwipeableGlassNavigationBar.kt$8f</ID>
     <ID>MagicNumber:ValidationUtils.kt$ValidationUtils$100</ID>
     <ID>MagicNumber:WallpaperManager.kt$WallpaperManager$0.12f</ID>
     <ID>MagicNumber:WallpaperManager.kt$WallpaperManager$0.5f</ID>
@@ -66,6 +69,7 @@
     <ID>MagicNumber:WallpaperManager.kt$WallpaperManager$45f</ID>
     <ID>MagicNumber:WallpaperManager.kt$WallpaperManager.WallpaperConfig$0xFFB3E5FC</ID>
     <ID>MagicNumber:WallpaperManager.kt$WallpaperManager.WallpaperConfig$0xFFE1BEE7</ID>
+    <ID>MatchingDeclarationName:SwipeableGlassNavigationBar.kt$TabItem</ID>
     <ID>MaximumLineLength:HslColorEngine.kt$HslColorEngine$ </ID>
     <ID>TooManyFunctions:ValidationUtils.kt$ValidationUtils</ID>
     <ID>UnderscoresInNumericLiterals:AppConstants.kt$AppConstants$30000L</ID>

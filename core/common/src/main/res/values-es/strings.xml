@@ -15,6 +15,7 @@
     <string name="pin_empty_error">La contraseña no puede estar vacía</string>
     <string name="pin_mismatch_error">Las contraseñas no coinciden</string>
     <string name="pin_length_error">La contraseña debe tener al menos %d caracteres</string>
+    <string name="pin_lockout_error">Demasiados intentos. Inténtalo de nuevo en %d segundos.</string>
     <string name="calendar_title">Calendario</string>
     <string name="current_cycle_day">Día %d del ciclo</string>
     <string name="days_until_next_period">Próximo período en %d días</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Duración</string>
+    <string name="sleep_quality_regularity">Regularidad</string>
+    <string name="sleep_quality_deep_sleep">Sueño profundo</string>
+    <string name="sleep_quality_continuity">Continuidad</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Bajo peso</string>
     <string name="bmi_category_normal">Normal</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">Basado en estándar chino de IMC</string>
     <string name="backup_success">Copia exitosa</string>
     <string name="backup_fail">Error de copia</string>
+    <string name="backup_wrong_password">Contraseña incorrecta o archivo dañado</string>
+    <string name="backup_invalid_file">Formato de archivo de copia de seguridad no válido</string>
     <string name="restore_success">Restauración exitosa</string>
     <string name="restore_fail">Error de restauración</string>
     <string name="export_success">Exportación exitosa</string>
@@ -322,6 +329,7 @@
     <string name="terms_service_declaration">1. Declaración de servicio\n\nTianshangSalud es una app de salud que prioriza la privacidad. Todos los datos están cifrados localmente.\n\n2. Privacidad\n\nNo recopilamos ni compartimos sus datos. La app funciona completamente offline.\n\n3. Responsabilidad\n\nUsted es responsable de la precisión de sus datos.\n\n4. Seguridad\n\nDatos protegidos con cifrado SQLCipher AES-256.</string>
     <string name="privacy_policy_body">1. Datos localizados\n\nSus datos se almacenan solo en su dispositivo.\n\n2. Información recopilada\n\nSolo procesamos información que usted ingresa manualmente.\n\n3. Cifrado\n\nDatos cifrados con SQLCipher AES-256.\n\n4. Sin terceros\n\nSin servicios de análisis o publicidad.\n\n5. Exportación\n\nPuede exportar sus datos en cualquier momento.\n\n6. Eliminación\n\nPuede eliminar sus datos en cualquier momento.</string>
     <string name="error_unknown">Error desconocido</string>
+    <string name="error_failed_delete">Error al eliminar</string>
     <string name="error_failed_add_record">Error al añadir</string>
     <string name="error_failed_update_record">Error al actualizar</string>
     <string name="error_failed_delete_record">Error al eliminar</string>
@@ -641,6 +649,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Limpiar</string>
     <string name="edit">Editar</string>
     <string name="exact_date_mode">Fecha exacta</string>
+    <string name="toggle_exact_number">Alternar número exacto</string>
     <string name="profile_dob_not_set">No establecido</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Solo año</string>

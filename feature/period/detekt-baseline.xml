@@ -2,7 +2,11 @@
 <SmellBaseline>
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
+    <ID>CyclomaticComplexMethod:BmiScreen.kt$@Composable private fun BmiOverviewCard( currentBmi: Float?, category: BmiCategory?, heightCm: Float?, onHeightSave: (Float) -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:EncryptedBackupManager.kt$EncryptedBackupManager$private fun validateBackupData(data: BackupData)</ID>
     <ID>CyclomaticComplexMethod:ProfileScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ProfileScreen( viewModel: ProfileViewModel = androidx.hilt.navigation.compose.hiltViewModel(), onNavigateToTheme: () -&gt; Unit = {}, onNavigateToLanguage: () -&gt; Unit = {}, onNavigateToBackup: () -&gt; Unit = {}, onNavigateToRecycleBin: () -&gt; Unit = {}, onNavigateToBmi: () -&gt; Unit = {}, onNavigateToAppLock: () -&gt; Unit = {} )</ID>
+    <ID>ExpressionBodySyntax:AppLockViewModel.kt$AppLockViewModel$return System.currentTimeMillis() &lt; _state.value.lockoutUntil</ID>
+    <ID>ExpressionBodySyntax:AppLockViewModel.kt$AppLockViewModel$return _state.value.failedAttempts &gt;= 3</ID>
     <ID>ExpressionBodySyntax:AppLockViewModel.kt$AppLockViewModel$return bytes.joinToString("") { "%02x".format(it) }</ID>
     <ID>ExpressionBodySyntax:BmiViewModel.kt$BmiViewModel.Companion$return BmiCategory.entries.firstOrNull { bmi &gt;= it.min &amp;&amp; bmi &lt; it.max } ?: BmiCategory.NORMAL</ID>
     <ID>ExpressionBodySyntax:PredictionEngine.kt$CervicalMucusType.Companion$return entries.find { it.value == value }</ID>
@@ -21,7 +25,9 @@
     <ID>MagicNumber:AppLockSettingsScreen.kt$300_000L</ID>
     <ID>MagicNumber:AppLockSettingsScreen.kt$30_000L</ID>
     <ID>MagicNumber:AppLockSettingsScreen.kt$60_000L</ID>
+    <ID>MagicNumber:AppLockViewModel.kt$AppLockViewModel$1000</ID>
     <ID>MagicNumber:AppLockViewModel.kt$AppLockViewModel$16</ID>
+    <ID>MagicNumber:AppLockViewModel.kt$AppLockViewModel$3</ID>
     <ID>MagicNumber:AppLockViewModel.kt$AppLockViewModel$4</ID>
     <ID>MagicNumber:AppLockViewModel.kt$AppLockViewModel$6</ID>
     <ID>MagicNumber:CalendarView.kt$6</ID>
@@ -33,6 +39,7 @@
     <ID>MagicNumber:Charts.kt$0.5f</ID>
     <ID>MagicNumber:Charts.kt$3</ID>
     <ID>MagicNumber:Charts.kt$6</ID>
+    <ID>MagicNumber:EncryptedBackupManager.kt$EncryptedBackupManager$10</ID>
     <ID>MagicNumber:MaleHealthPlaceholder.kt$5</ID>
     <ID>MagicNumber:MaleHealthPlaceholder.kt$7</ID>
     <ID>MagicNumber:PeriodViewModel.kt$PeriodViewModel$100_000f</ID>
@@ -75,12 +82,16 @@
     <ID>SwallowedException:ReminderWorkers.kt$PmsReminderWorker$e: Exception</ID>
     <ID>TooManyFunctions:AppLockViewModel.kt$AppLockViewModel : ViewModel</ID>
     <ID>UnderscoresInNumericLiterals:AppLockSettingsViewModelTest.kt$AppLockSettingsViewModelTest$30000L</ID>
+    <ID>UnderscoresInNumericLiterals:EncryptedBackupManager.kt$EncryptedBackupManager$10000f</ID>
+    <ID>UnderscoresInNumericLiterals:EncryptedBackupManager.kt$EncryptedBackupManager.Companion$10000</ID>
     <ID>UnderscoresInNumericLiterals:EncryptedBackupManager.kt$EncryptedBackupManager.Companion$100000</ID>
     <ID>UnderscoresInNumericLiterals:PeriodViewModelTest.kt$PeriodViewModelTest$10000</ID>
     <ID>UnnecessaryParentheses:BmiViewModel.kt$BmiViewModel$(height / HealthConstants.CM_PER_METER)</ID>
     <ID>UnnecessaryParentheses:PredictionFeedbackTracker.kt$PredictionFeedbackTracker$(accurate * 100 / total)</ID>
     <ID>UnnecessaryParentheses:ProfileScreen.kt$(currentYear - 25)</ID>
     <ID>UnnecessaryParentheses:StepHistorySection.kt$((d.dayOfMonth - 1) / 7)</ID>
+    <ID>UnusedPrivateProperty:AppLockViewModel.kt$AppLockViewModel.Companion$private const val PREF_PASSWORD_HASH = "h5n1p8"</ID>
+    <ID>UnusedPrivateProperty:AppLockViewModel.kt$AppLockViewModel.Companion$private const val PREF_PASSWORD_SALT = "s2v4x7"</ID>
     <ID>UnusedPrivateProperty:CalendarView.kt$val lastDayOfMonth = currentMonth.atEndOfMonth()</ID>
     <ID>UnusedPrivateProperty:PredictionEngineTest.kt$PredictionEngineTest$val cycleLen = 28L</ID>
     <ID>UnusedPrivateProperty:ThemeScreen.kt$val context = LocalContext.current</ID>
@@ -88,6 +99,8 @@
     <ID>UseCheckOrError:BackupViewModel.kt$BackupViewModel$throw IllegalStateException("Cannot open file for writing")</ID>
     <ID>UseCheckOrError:BmiViewModel.kt$BmiViewModel$throw IllegalStateException("No user")</ID>
     <ID>UseCheckOrError:EncryptedBackupManager.kt$EncryptedBackupManager$throw IllegalStateException("No user found")</ID>
+    <ID>UseRequire:EncryptedBackupManager.kt$EncryptedBackupManager$throw IllegalArgumentException("Backup file too large")</ID>
     <ID>UseRequire:EncryptedBackupManager.kt$EncryptedBackupManager$throw IllegalArgumentException("Invalid backup file")</ID>
+    <ID>UseRequire:EncryptedBackupManager.kt$EncryptedBackupManager$throw IllegalArgumentException("Unsupported backup version: ${data.version}")</ID>
   </CurrentIssues>
 </SmellBaseline>

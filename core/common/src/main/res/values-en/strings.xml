@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Password cannot be empty</string>
     <string name="pin_mismatch_error">Passwords do not match</string>
     <string name="pin_length_error">Password must be at least %d characters</string>
+    <string name="pin_lockout_error">Too many attempts. Try again in %d seconds.</string>
     <string name="calendar_title">Calendar</string>
     <string name="current_cycle_day">Day %d of cycle</string>
     <string name="days_until_next_period">Next period in %d days</string>
@@ -164,6 +165,8 @@
     <string name="bmi_standard_note">Based on Chinese BMI standard</string>
     <string name="backup_success">Backup successful</string>
     <string name="backup_fail">Backup failed</string>
+    <string name="backup_wrong_password">Incorrect password or corrupted file</string>
+    <string name="backup_invalid_file">Invalid backup file format</string>
     <string name="restore_success">Restore successful</string>
     <string name="restore_fail">Restore failed</string>
     <string name="export_success">Export successful</string>

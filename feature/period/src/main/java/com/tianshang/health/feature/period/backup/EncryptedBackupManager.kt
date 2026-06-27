@@ -39,6 +39,9 @@ class EncryptedBackupManager @Inject constructor(
         private const val KEY_LENGTH = 256
         private const val ITERATIONS = 100000
         private const val BACKUP_MAGIC = "TSHBACKUP"
+        private const val MAX_BACKUP_SIZE_BYTES = 50 * 1024 * 1024 // 50 MB
+        private const val MAX_STRING_FIELD_LENGTH = 10000
+        private const val CURRENT_BACKUP_VERSION = 1
     }
 
     suspend fun exportBackup(password: String, outputStream: OutputStream) {
@@ -85,6 +88,9 @@ class EncryptedBackupManager @Inject constructor(
             val iv = ByteArray(IV_LENGTH_BYTE)
             stream.read(iv)
             val ciphertext = stream.readBytes()
+            if (ciphertext.size > MAX_BACKUP_SIZE_BYTES) {
+                throw IllegalArgumentException("Backup file too large")
+            }
             Triple(salt, iv, ciphertext)
         }
 
@@ -96,6 +102,7 @@ class EncryptedBackupManager @Inject constructor(
         val json = String(jsonBytes, Charsets.UTF_8)
 
         val data = gson.fromJson(json, BackupData::class.java)
+        validateBackupData(data)
 
         return database.withTransaction {
             var count = 0
@@ -134,5 +141,30 @@ class EncryptedBackupManager @Inject constructor(
         val spec = PBEKeySpec(password.toCharArray(), salt, ITERATIONS, KEY_LENGTH)
         val factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256")
         return factory.generateSecret(spec)
+    }
+
+    private fun validateBackupData(data: BackupData) {
+        if (data.version > CURRENT_BACKUP_VERSION) {
+            throw IllegalArgumentException("Unsupported backup version: ${data.version}")
+        }
+        for (record in data.periodRecords) {
+            require(record.flowLevel in 0..5) { "Invalid flowLevel: ${record.flowLevel}" }
+            require(record.painLevel in 0..10) { "Invalid painLevel: ${record.painLevel}" }
+            require(record.startDate.length <= 10) { "Invalid date length" }
+            record.endDate?.let { require(it.length <= 10) { "Invalid date length" } }
+            record.notes?.let { require(it.length <= MAX_STRING_FIELD_LENGTH) { "Notes too long" } }
+        }
+        for (health in data.dailyHealth) {
+            health.sleepHours?.let { require(it in 0f..24f) { "Invalid sleepHours: $it" } }
+            health.weightKg?.let { require(it in 1f..500f) { "Invalid weight" } }
+            health.heartRateResting?.let { require(it in 20..300) { "Invalid heartRate" } }
+            health.moodScore?.let { require(it in 1..5) { "Invalid moodScore" } }
+            health.stressLevel?.let { require(it in 1..5) { "Invalid stressLevel" } }
+            health.waterIntake?.let { require(it in 0f..10000f) { "Invalid waterIntake" } }
+            health.caloriesIntake?.let { require(it in 0f..10000f) { "Invalid caloriesIntake" } }
+        }
+        for (symptom in data.dailySymptoms) {
+            symptom.notes?.let { require(it.length <= MAX_STRING_FIELD_LENGTH) { "Symptom notes too long" } }
+        }
     }
 }

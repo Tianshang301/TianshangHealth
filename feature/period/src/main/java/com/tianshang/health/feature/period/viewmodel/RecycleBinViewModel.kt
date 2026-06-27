@@ -2,6 +2,8 @@ package com.tianshang.health.feature.period.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.core.database.entity.PeriodRecord
 import com.tianshang.health.core.database.repository.PeriodRecordRepository
 import com.tianshang.health.core.database.repository.UserRepository
@@ -21,7 +23,8 @@ sealed class RecycleBinUiState {
 @HiltViewModel
 class RecycleBinViewModel @Inject constructor(
     private val periodRecordRepository: PeriodRecordRepository,
-    private val userRepository: UserRepository
+    private val userRepository: UserRepository,
+    private val stringResolver: StringResolver
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<RecycleBinUiState>(RecycleBinUiState.Loading)
@@ -44,8 +47,8 @@ class RecycleBinViewModel @Inject constructor(
                 currentUserId = user.id
                 val records = periodRecordRepository.getDeletedRecordsList(currentUserId)
                 _uiState.value = RecycleBinUiState.Success(records)
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = RecycleBinUiState.Error(e.message ?: "Unknown error")
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
+                _uiState.value = RecycleBinUiState.Error(stringResolver.getString(R.string.error_unknown))
             }
         }
     }
@@ -56,8 +59,8 @@ class RecycleBinViewModel @Inject constructor(
                 _isProcessing.value = true
                 periodRecordRepository.restore(recordId)
                 loadDeletedRecords()
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = RecycleBinUiState.Error(e.message ?: "Failed to restore")
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
+                _uiState.value = RecycleBinUiState.Error(stringResolver.getString(R.string.error_failed_restore))
             } finally {
                 _isProcessing.value = false
             }
@@ -70,8 +73,8 @@ class RecycleBinViewModel @Inject constructor(
                 _isProcessing.value = true
                 periodRecordRepository.deleteById(recordId)
                 loadDeletedRecords()
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = RecycleBinUiState.Error(e.message ?: "Failed to delete")
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
+                _uiState.value = RecycleBinUiState.Error(stringResolver.getString(R.string.error_failed_delete))
             } finally {
                 _isProcessing.value = false
             }
@@ -85,8 +88,8 @@ class RecycleBinViewModel @Inject constructor(
                 val records = periodRecordRepository.getDeletedRecordsList(currentUserId)
                 records.forEach { periodRecordRepository.deleteById(it.id) }
                 loadDeletedRecords()
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = RecycleBinUiState.Error(e.message ?: "Failed to empty bin")
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
+                _uiState.value = RecycleBinUiState.Error(stringResolver.getString(R.string.error_failed_empty_bin))
             } finally {
                 _isProcessing.value = false
             }

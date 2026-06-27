@@ -210,7 +210,7 @@ private fun BmiOverviewCard(
                     }
                     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
                         Text(
-                            text = category?.label ?: "--",
+                            text = category?.let { stringResource(it.labelResId) } ?: "--",
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.Bold
                         )
@@ -277,7 +277,7 @@ private fun BmiRecordCard(
                     fontWeight = FontWeight.Bold
                 )
                 Text(
-                    text = record.category.label,
+                    text = stringResource(record.category.labelResId),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

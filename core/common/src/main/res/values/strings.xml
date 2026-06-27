@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Password cannot be empty</string>
     <string name="pin_mismatch_error">Passwords do not match</string>
     <string name="pin_length_error">Password must be at least %d characters</string>
+    <string name="pin_lockout_error">Too many attempts. Try again in %d seconds.</string>
     <string name="calendar_title">Calendar</string>
     <string name="current_cycle_day">Day %d of cycle</string>
     <string name="days_until_next_period">Next period in %d days</string>
@@ -168,6 +169,8 @@
     <string name="bmi_standard_note">Based on Chinese BMI standard</string>
     <string name="backup_success">Backup successful</string>
     <string name="backup_fail">Backup failed</string>
+    <string name="backup_wrong_password">Incorrect password or corrupted file</string>
+    <string name="backup_invalid_file">Invalid backup file format</string>
     <string name="restore_success">Restore successful</string>
     <string name="restore_fail">Restore failed</string>
     <string name="export_success">Export successful</string>
@@ -328,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">Unknown error</string>
+    <string name="error_failed_delete">Failed to delete</string>
     <string name="error_failed_add_record">Failed to add record</string>
     <string name="error_failed_update_record">Failed to update record</string>
     <string name="error_failed_delete_record">Failed to delete record</string>
@@ -629,6 +633,7 @@
     <string name="clear">Clear</string>
     <string name="edit">Edit</string>
     <string name="exact_date_mode">Exact Date</string>
+    <string name="toggle_exact_number">Toggle exact number</string>
     <string name="profile_dob_not_set">Not set</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Year Only</string>
@@ -654,6 +659,10 @@
     <string name="sleep_consistency_waketime">Wake Time</string>
     <string name="sleep_consistency_duration">Duration</string>
     <string name="sleep_quality_index">Sleep Quality Index</string>
+    <string name="sleep_quality_duration">Duration</string>
+    <string name="sleep_quality_regularity">Regularity</string>
+    <string name="sleep_quality_deep_sleep">Deep Sleep</string>
+    <string name="sleep_quality_continuity">Continuity</string>
     <string name="sleep_insight_title">Sleep Insights</string>
 
     <string name="pattern_exhaustion_title">Physical Exhaustion Detected</string>

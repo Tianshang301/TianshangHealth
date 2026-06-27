@@ -21,6 +21,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.time.LocalDate
+import java.util.concurrent.atomic.AtomicInteger
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -60,6 +61,8 @@ class StepCounterService : LifecycleService(), SensorEventListener {
     private var stepCounter: Sensor? = null
     private var lastStepCount = -1L
     private var lastRecordedDate = ""
+
+    @Volatile
     private var isRunning = false
     private var wakeLock: PowerManager.WakeLock? = null
 
@@ -67,7 +70,7 @@ class StepCounterService : LifecycleService(), SensorEventListener {
     private var accelerometerListener: SensorEventListener? = null
 
     @Volatile
-    private var pendingAccelSteps = 0
+    private var pendingAccelSteps = AtomicInteger(0)
     private var accelStepJob: Job? = null
 
     override fun onCreate() {
@@ -299,7 +302,7 @@ class StepCounterService : LifecycleService(), SensorEventListener {
     }
 
     private fun onStepDetected() {
-        pendingAccelSteps++
+        pendingAccelSteps.incrementAndGet()
         accelStepJob?.cancel()
         accelStepJob = lifecycleScope.launch {
             delay(HEARTBEAT_INTERVAL_MS)
@@ -308,9 +311,8 @@ class StepCounterService : LifecycleService(), SensorEventListener {
     }
 
     private suspend fun flushPendingSteps() {
-        val steps = pendingAccelSteps
+        val steps = pendingAccelSteps.getAndSet(0)
         if (steps > 0) {
-            pendingAccelSteps = 0
             try {
                 stepsRepository.addSteps(steps)
                 StepNotificationHelper.updateNotification(

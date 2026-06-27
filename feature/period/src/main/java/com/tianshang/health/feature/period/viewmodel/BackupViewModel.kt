@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import javax.crypto.AEADBadTagException
 import javax.inject.Inject
 
 sealed class BackupUiState {
@@ -41,8 +42,8 @@ class BackupViewModel @Inject constructor(
                     ?: throw IllegalStateException("Cannot open file for writing")
                 backupManager.exportBackup(password, outputStream)
                 _uiState.value = BackupUiState.Success(stringResolver.getString(R.string.backup_exported_success))
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = BackupUiState.Error(e.message ?: stringResolver.getString(R.string.backup_fail))
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
+                _uiState.value = BackupUiState.Error(stringResolver.getString(R.string.backup_fail))
             }
         }
     }
@@ -55,8 +56,12 @@ class BackupViewModel @Inject constructor(
                     ?: throw IllegalStateException("Cannot open file for reading")
                 val count = backupManager.importBackup(password, inputStream)
                 _uiState.value = BackupUiState.Success(stringResolver.getString(R.string.import_success_format, count))
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = BackupUiState.Error(e.message ?: stringResolver.getString(R.string.restore_fail))
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: AEADBadTagException) {
+                _uiState.value = BackupUiState.Error(stringResolver.getString(R.string.backup_wrong_password))
+            } catch (_: IllegalArgumentException) {
+                _uiState.value = BackupUiState.Error(stringResolver.getString(R.string.backup_invalid_file))
+            } catch (_: Exception) {
+                _uiState.value = BackupUiState.Error(stringResolver.getString(R.string.restore_fail))
             }
         }
     }
@@ -78,8 +83,8 @@ class BackupViewModel @Inject constructor(
                 }
 
                 _uiState.value = BackupUiState.Success(stringResolver.getString(R.string.csv_exported_success))
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = BackupUiState.Error(e.message ?: stringResolver.getString(R.string.csv_export_failed))
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
+                _uiState.value = BackupUiState.Error(stringResolver.getString(R.string.csv_export_failed))
             }
         }
     }

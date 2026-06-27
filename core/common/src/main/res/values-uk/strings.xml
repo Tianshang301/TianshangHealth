@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Пароль не може бути порожнім</string>
     <string name="pin_mismatch_error">Паролі не співпадають</string>
     <string name="pin_length_error">Пароль має містити щонайменше %d символів</string>
+    <string name="pin_lockout_error">Забагато спроб. Спробуйте знову через %d секунд.</string>
     <string name="calendar_title">Календар</string>
     <string name="current_cycle_day">День %d циклу</string>
     <string name="days_until_next_period">Наступна менструація через %d днів</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Тривалість</string>
+    <string name="sleep_quality_regularity">Регулярність</string>
+    <string name="sleep_quality_deep_sleep">Глибокий сон</string>
+    <string name="sleep_quality_continuity">Безперервність</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Недостатня вага</string>
     <string name="bmi_category_normal">Норма</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">На основі китайського стандарту ІМТ</string>
     <string name="backup_success">Резервне копіювання успішне</string>
     <string name="backup_fail">Резервне копіювання не вдалося</string>
+    <string name="backup_wrong_password">Невірний пароль або пошкоджений файл</string>
+    <string name="backup_invalid_file">Невірний формат файлу резервної копії</string>
     <string name="restore_success">Відновлення успішне</string>
     <string name="restore_fail">Відновлення не вдалося</string>
     <string name="export_success">Експорт успішний</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">Невідома помилка</string>
+    <string name="error_failed_delete">Помилка видалення</string>
     <string name="error_failed_add_record">Не вдалося додати запис</string>
     <string name="error_failed_update_record">Не вдалося оновити запис</string>
     <string name="error_failed_delete_record">Не вдалося видалити запис</string>
@@ -698,6 +706,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Очистити</string>
     <string name="edit">Редагувати</string>
     <string name="exact_date_mode">Точна дата</string>
+    <string name="toggle_exact_number">Показати точне число</string>
     <string name="profile_dob_not_set">Не встановлено</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Тільки рік</string>

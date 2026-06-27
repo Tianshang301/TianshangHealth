@@ -15,6 +15,7 @@
     <string name="pin_empty_error">كلمة المرور لا يمكن أن تكون فارغة</string>
     <string name="pin_mismatch_error">كلمتا المرور غير متطابقتين</string>
     <string name="pin_length_error">يجب أن تتكون كلمة المرور من %d أحرف على الأقل</string>
+    <string name="pin_lockout_error">محاولات كثيرة جداً. حاول مرة أخرى بعد %d ثانية.</string>
     <string name="calendar_title">التقويم</string>
     <string name="current_cycle_day">اليوم %d من الدورة</string>
     <string name="days_until_next_period">الدورة القادمة بعد %d يوم</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">المدة</string>
+    <string name="sleep_quality_regularity">الانتظام</string>
+    <string name="sleep_quality_deep_sleep">النوم العميق</string>
+    <string name="sleep_quality_continuity">الاستمرارية</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">نقص وزن</string>
     <string name="bmi_category_normal">طبيعي</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">بناءً على المعيار الصيني لمؤشر كتلة الجسم</string>
     <string name="backup_success">تم النسخ الاحتياطي بنجاح</string>
     <string name="backup_fail">فشل النسخ الاحتياطي</string>
+    <string name="backup_wrong_password">كلمة المرور غير صحيحة أو الملف تالف</string>
+    <string name="backup_invalid_file">تنسيق ملف النسخة الاحتياطية غير صالح</string>
     <string name="restore_success">تمت الاستعادة بنجاح</string>
     <string name="restore_fail">فشلت الاستعادة</string>
     <string name="export_success">تم التصدير بنجاح</string>
@@ -323,6 +330,7 @@
     <string name="privacy_policy_body">1. المبدأ الأساسي: توطين البيانات\n\nجميع بياناتك الصحية، بما في ذلك الدورات الشهرية والأعراض والمقاييس الصحية الأخرى، يتم تخزينها فقط في قاعدة البيانات المشفرة على جهازك.\n\n2. المعلومات التي يتم جمعها\n\nنقوم فقط بمعالجة المعلومات التي تدخلها يدوياً في التطبيق. لا يتم جمع بيانات تلقائي.\n\n3. تشفير البيانات\n\nيتم تشفير جميع البيانات الحساسة باستخدام SQLCipher مع AES-256. يتم تخزين مفتاح التشفير بشكل آمن في Android Keystore.\n\n4. لا وصول لأطراف ثالثة\n\nنحن لا نستخدم أي خدمات تحليلات أو إعلانات أو تتبع من أطراف ثالثة. بياناتك لا تغادر جهازك أبداً.\n\n5. تصدير البيانات\n\nيمكنك تصدير بياناتك في أي وقت بتنسيقات قياسية (CSV، نسخ احتياطي مشفر). لديك السيطرة الكاملة على بياناتك.\n\n6. حذف البيانات\n\nيمكنك حذف أي أو كل بياناتك في أي وقت. يتم إزالة البيانات المحذوفة بشكل دائم من الجهاز.</string>
     <!-- Error messages -->
     <string name="error_unknown">خطأ غير معروف</string>
+    <string name="error_failed_delete">فشل الحذف</string>
     <string name="error_failed_add_record">فشل إضافة السجل</string>
     <string name="error_failed_update_record">فشل تحديث السجل</string>
     <string name="error_failed_delete_record">فشل حذف السجل</string>
@@ -697,6 +705,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">مسح</string>
     <string name="edit">تعديل</string>
     <string name="exact_date_mode">تاريخ محدد</string>
+    <string name="toggle_exact_number">تبديل الرقم الدقيق</string>
     <string name="profile_dob_not_set">غير مضبوط</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">السنة فقط</string>

@@ -15,6 +15,7 @@
     <string name="pin_empty_error">密码不能为空</string>
     <string name="pin_mismatch_error">两次密码不一致</string>
     <string name="pin_length_error">密码长度至少为%d位</string>
+    <string name="pin_lockout_error">尝试次数过多，请在 %d 秒后重试。</string>
     <string name="calendar_title">日历</string>
     <string name="current_cycle_day">周期第%d天</string>
     <string name="days_until_next_period">距下次经期还有%d天</string>
@@ -157,6 +158,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">时长</string>
+    <string name="sleep_quality_regularity">规律性</string>
+    <string name="sleep_quality_deep_sleep">深睡</string>
+    <string name="sleep_quality_continuity">连续性</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">偏瘦</string>
     <string name="bmi_category_normal">正常</string>
@@ -165,6 +170,8 @@
     <string name="bmi_standard_note">基于中国BMI标准</string>
     <string name="backup_success">备份成功</string>
     <string name="backup_fail">备份失败</string>
+    <string name="backup_wrong_password">密码错误或文件已损坏</string>
+    <string name="backup_invalid_file">无效的备份文件格式</string>
     <string name="restore_success">恢复成功</string>
     <string name="restore_fail">恢复失败</string>
     <string name="export_success">导出成功</string>
@@ -325,6 +332,7 @@
 
     <!-- 错误消息 -->
     <string name="error_unknown">未知错误</string>
+    <string name="error_failed_delete">删除失败</string>
     <string name="error_failed_add_record">添加记录失败</string>
     <string name="error_failed_update_record">更新记录失败</string>
     <string name="error_failed_delete_record">删除记录失败</string>
@@ -696,6 +704,7 @@
     <string name="clear">清除</string>
     <string name="edit">编辑</string>
     <string name="exact_date_mode">精确日期</string>
+    <string name="toggle_exact_number">切换精确数值</string>
     <string name="profile_dob_not_set">未设置</string>
     <string name="year_only_mode">仅年份</string>
     <string name="year_picker_title">选择出生年份</string>

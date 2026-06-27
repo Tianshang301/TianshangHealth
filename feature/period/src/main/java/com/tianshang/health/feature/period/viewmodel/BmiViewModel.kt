@@ -1,8 +1,11 @@
 package com.tianshang.health.feature.period.viewmodel
 
+import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.tianshang.health.core.common.R
 import com.tianshang.health.core.common.constants.HealthConstants
+import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.core.database.dao.DailyHealthDao
 import com.tianshang.health.core.database.entity.DailyHealth
 import com.tianshang.health.core.database.entity.User
@@ -22,11 +25,11 @@ data class BmiRecord(
     val category: BmiCategory
 )
 
-enum class BmiCategory(val label: String, val min: Float, val max: Float) {
-    UNDERWEIGHT("Underweight", 0f, HealthConstants.BMI_UNDERWEIGHT_MAX),
-    NORMAL("Normal", HealthConstants.BMI_UNDERWEIGHT_MAX, HealthConstants.BMI_NORMAL_MAX),
-    OVERWEIGHT("Overweight", HealthConstants.BMI_NORMAL_MAX, HealthConstants.BMI_OVERWEIGHT_MAX),
-    OBESE("Obese", HealthConstants.BMI_OVERWEIGHT_MAX, Float.MAX_VALUE)
+enum class BmiCategory(@StringRes val labelResId: Int, val min: Float, val max: Float) {
+    UNDERWEIGHT(R.string.bmi_category_underweight, 0f, HealthConstants.BMI_UNDERWEIGHT_MAX),
+    NORMAL(R.string.bmi_category_normal, HealthConstants.BMI_UNDERWEIGHT_MAX, HealthConstants.BMI_NORMAL_MAX),
+    OVERWEIGHT(R.string.bmi_category_overweight, HealthConstants.BMI_NORMAL_MAX, HealthConstants.BMI_OVERWEIGHT_MAX),
+    OBESE(R.string.bmi_category_obese, HealthConstants.BMI_OVERWEIGHT_MAX, Float.MAX_VALUE)
 }
 
 sealed class BmiUiState {
@@ -43,7 +46,8 @@ sealed class BmiUiState {
 @HiltViewModel
 class BmiViewModel @Inject constructor(
     private val userRepository: UserRepository,
-    private val dailyHealthDao: DailyHealthDao
+    private val dailyHealthDao: DailyHealthDao,
+    private val stringResolver: StringResolver
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<BmiUiState>(BmiUiState.Loading)
@@ -88,8 +92,8 @@ class BmiViewModel @Inject constructor(
                     heightCm = user.heightCm,
                     records = bmiRecords
                 )
-            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
-                _uiState.value = BmiUiState.Error(e.message ?: "Unknown error")
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (_: Exception) {
+                _uiState.value = BmiUiState.Error(stringResolver.getString(R.string.error_unknown))
             }
         }
     }

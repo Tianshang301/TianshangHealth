@@ -15,6 +15,7 @@
     <string name="pin_empty_error">La password non può essere vuota</string>
     <string name="pin_mismatch_error">Le password non corrispondono</string>
     <string name="pin_length_error">La password deve contenere almeno %d caratteri</string>
+    <string name="pin_lockout_error">Troppi tentativi. Riprova tra %d secondi.</string>
     <string name="calendar_title">Calendario</string>
     <string name="current_cycle_day">Giorno %d del ciclo</string>
     <string name="days_until_next_period">Prossimo ciclo tra %d giorni</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Durata</string>
+    <string name="sleep_quality_regularity">Regolarità</string>
+    <string name="sleep_quality_deep_sleep">Sonno profondo</string>
+    <string name="sleep_quality_continuity">Continuità</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Sottopeso</string>
     <string name="bmi_category_normal">Normale</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">Basato sullo standard BMI cinese</string>
     <string name="backup_success">Backup riuscito</string>
     <string name="backup_fail">Backup fallito</string>
+    <string name="backup_wrong_password">Password errata o file danneggiato</string>
+    <string name="backup_invalid_file">Formato file di backup non valido</string>
     <string name="restore_success">Ripristino riuscito</string>
     <string name="restore_fail">Ripristino fallito</string>
     <string name="export_success">Esportazione riuscita</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">Errore sconosciuto</string>
+    <string name="error_failed_delete">Eliminazione fallita</string>
     <string name="error_failed_add_record">Impossibile aggiungere il record</string>
     <string name="error_failed_update_record">Impossibile aggiornare il record</string>
     <string name="error_failed_delete_record">Impossibile eliminare il record</string>
@@ -696,6 +704,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Cancella</string>
     <string name="edit">Modifica</string>
     <string name="exact_date_mode">Data esatta</string>
+    <string name="toggle_exact_number">Mostra numero esatto</string>
     <string name="profile_dob_not_set">Non impostato</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Solo anno</string>

@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Пароль не может быть пустым</string>
     <string name="pin_mismatch_error">Пароли не совпадают</string>
     <string name="pin_length_error">Пароль должен содержать не менее %d символов</string>
+    <string name="pin_lockout_error">Слишком много попыток. Попробуйте снова через %d секунд.</string>
     <string name="calendar_title">Календарь</string>
     <string name="current_cycle_day">День %d цикла</string>
     <string name="days_until_next_period">Следующие через %d дн.</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Длительность</string>
+    <string name="sleep_quality_regularity">Регулярность</string>
+    <string name="sleep_quality_deep_sleep">Глубокий сон</string>
+    <string name="sleep_quality_continuity">Непрерывность</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Недостаточный вес</string>
     <string name="bmi_category_normal">Норма</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">На основе китайского стандарта ИМТ</string>
     <string name="backup_success">Резервирование успешно</string>
     <string name="backup_fail">Ошибка резервирования</string>
+    <string name="backup_wrong_password">Неверный пароль или поврежденный файл</string>
+    <string name="backup_invalid_file">Неверный формат файла резервной копии</string>
     <string name="restore_success">Восстановление успешно</string>
     <string name="restore_fail">Ошибка восстановления</string>
     <string name="export_success">Экспорт успешен</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_failed_delete">Ошибка удаления</string>
     <string name="error_failed_add_record">Не удалось добавить запись</string>
     <string name="error_failed_update_record">Не удалось обновить запись</string>
     <string name="error_failed_delete_record">Не удалось удалить запись</string>
@@ -697,6 +705,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Очистить</string>
     <string name="edit">Редактировать</string>
     <string name="exact_date_mode">Точная дата</string>
+    <string name="toggle_exact_number">Показать точное число</string>
     <string name="profile_dob_not_set">Не задано</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Только год</string>

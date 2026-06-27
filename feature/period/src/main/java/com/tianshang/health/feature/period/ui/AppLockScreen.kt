@@ -171,11 +171,16 @@ fun AppLockScreen(
                             onSuccess = { viewModel.onRecoverySuccess() },
                             onError = { /* no-op */ }
                         )
-                    }
+                    },
+                    enabled = viewModel.canUseBiometricRecovery()
                 ) {
                     Text(
                         text = stringResource(R.string.app_lock_forgot_pin),
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        color = if (viewModel.canUseBiometricRecovery()) {
+                            MaterialTheme.colorScheme.onSurfaceVariant
+                        } else {
+                            MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.38f)
+                        },
                         style = MaterialTheme.typography.bodySmall
                     )
                 }

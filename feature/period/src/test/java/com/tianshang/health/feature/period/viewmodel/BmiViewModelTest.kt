@@ -1,11 +1,14 @@
 package com.tianshang.health.feature.period.viewmodel
 
+import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.core.database.dao.DailyHealthDao
 import com.tianshang.health.core.database.entity.DailyHealth
 import com.tianshang.health.core.database.entity.User
 import com.tianshang.health.core.database.repository.UserRepository
 import io.mockk.coEvery
 import io.mockk.coVerify
+import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -27,6 +30,7 @@ class BmiViewModelTest {
 
     private val userRepository: UserRepository = mockk()
     private val dailyHealthDao: DailyHealthDao = mockk()
+    private val stringResolver: StringResolver = mockk()
     private val testDispatcher = UnconfinedTestDispatcher()
     private lateinit var viewModel: BmiViewModel
 
@@ -41,6 +45,7 @@ class BmiViewModelTest {
         coEvery { userRepository.updateHeight(any(), any()) } returns Unit
         coEvery { dailyHealthDao.insert(any()) } returns 1L
         coEvery { dailyHealthDao.update(any()) } returns Unit
+        every { stringResolver.getString(R.string.error_unknown) } returns "Unknown error"
     }
 
     @After
@@ -52,7 +57,7 @@ class BmiViewModelTest {
     fun `initialState loadsData success withRecords`() {
         coEvery { dailyHealthDao.getByUserIdList(testUser.id) } returns listOf(testHealth)
 
-        viewModel = BmiViewModel(userRepository, dailyHealthDao)
+        viewModel = BmiViewModel(userRepository, dailyHealthDao, stringResolver)
 
         val state = viewModel.uiState.value
         assertTrue(state is BmiUiState.Success)
@@ -68,7 +73,7 @@ class BmiViewModelTest {
     fun `initState loadsData success withNoRecords`() {
         coEvery { dailyHealthDao.getByUserIdList(testUser.id) } returns emptyList()
 
-        viewModel = BmiViewModel(userRepository, dailyHealthDao)
+        viewModel = BmiViewModel(userRepository, dailyHealthDao, stringResolver)
 
         val state = viewModel.uiState.value
         assertTrue(state is BmiUiState.Success)
@@ -84,7 +89,7 @@ class BmiViewModelTest {
     fun `loadData setsError whenNoUser`() {
         coEvery { userRepository.getOrCreateDefault() } throws IllegalStateException("No user")
 
-        viewModel = BmiViewModel(userRepository, dailyHealthDao)
+        viewModel = BmiViewModel(userRepository, dailyHealthDao, stringResolver)
 
         val state = viewModel.uiState.value
         assertTrue(state is BmiUiState.Error)
@@ -93,7 +98,7 @@ class BmiViewModelTest {
     @Test
     fun `saveHeight updatesUserAndRefreshes`() = runTest {
         coEvery { dailyHealthDao.getByUserIdList(testUser.id) } returns emptyList()
-        viewModel = BmiViewModel(userRepository, dailyHealthDao)
+        viewModel = BmiViewModel(userRepository, dailyHealthDao, stringResolver)
 
         viewModel.saveHeight(170f)
 
@@ -105,7 +110,7 @@ class BmiViewModelTest {
     fun `addWeightRecord insertsNew whenNoExistingRecord`() = runTest {
         val date = LocalDate.of(2026, 6, 2)
         coEvery { dailyHealthDao.getByUserIdList(testUser.id) } returns emptyList()
-        viewModel = BmiViewModel(userRepository, dailyHealthDao)
+        viewModel = BmiViewModel(userRepository, dailyHealthDao, stringResolver)
 
         coEvery { dailyHealthDao.getByDate(testUser.id, date.toString()) } returns null
         viewModel.addWeightRecord(70f, date)
@@ -118,7 +123,7 @@ class BmiViewModelTest {
         val date = LocalDate.of(2026, 6, 1)
         val existing = DailyHealth(id = 5, userId = 1, date = "2026-06-01", weightKg = 65f)
         coEvery { dailyHealthDao.getByUserIdList(testUser.id) } returns emptyList()
-        viewModel = BmiViewModel(userRepository, dailyHealthDao)
+        viewModel = BmiViewModel(userRepository, dailyHealthDao, stringResolver)
 
         coEvery { dailyHealthDao.getByDate(testUser.id, date.toString()) } returns existing
         viewModel.addWeightRecord(68f, date)

@@ -15,6 +15,7 @@
     <string name="pin_empty_error">Kata laluan tidak boleh kosong</string>
     <string name="pin_mismatch_error">Kata laluan tidak sepadan</string>
     <string name="pin_length_error">Kata laluan mesti sekurang-kurangnya %d aksara</string>
+    <string name="pin_lockout_error">Terlalu banyak percubaan. Cuba lagi dalam %d saat.</string>
     <string name="calendar_title">Kalendar</string>
     <string name="current_cycle_day">Hari %d kitaran</string>
     <string name="days_until_next_period">Haid seterusnya dalam %d hari</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">Tempoh</string>
+    <string name="sleep_quality_regularity">Keteraturan</string>
+    <string name="sleep_quality_deep_sleep">Tidur Nyenyak</string>
+    <string name="sleep_quality_continuity">Kesinambungan</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">Kurang Berat</string>
     <string name="bmi_category_normal">Normal</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">Berdasarkan standard BMI China</string>
     <string name="backup_success">Sandaran berjaya</string>
     <string name="backup_fail">Sandaran gagal</string>
+    <string name="backup_wrong_password">Kata laluan salah atau rosak fail</string>
+    <string name="backup_invalid_file">Format fail sandaran tidak sah</string>
     <string name="restore_success">Pemulihan berjaya</string>
     <string name="restore_fail">Pemulihan gagal</string>
     <string name="export_success">Eksport berjaya</string>
@@ -324,6 +331,7 @@
 
     <!-- Error messages -->
     <string name="error_unknown">Ralat tidak diketahui</string>
+    <string name="error_failed_delete">Gagal dipadam</string>
     <string name="error_failed_add_record">Gagal menambah rekod</string>
     <string name="error_failed_update_record">Gagal mengemas kini rekod</string>
     <string name="error_failed_delete_record">Gagal memadam rekod</string>
@@ -696,6 +704,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">Padam</string>
     <string name="edit">Sunting</string>
     <string name="exact_date_mode">Tarikh tepat</string>
+    <string name="toggle_exact_number">Togol nombor tepat</string>
     <string name="profile_dob_not_set">Belum ditetapkan</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">Hanya tahun</string>

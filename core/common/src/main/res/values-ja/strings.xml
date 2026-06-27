@@ -15,6 +15,7 @@
     <string name="pin_empty_error">パスワードを入力してください</string>
     <string name="pin_mismatch_error">パスワードが一致しません</string>
     <string name="pin_length_error">パスワードは%d文字以上必要です</string>
+    <string name="pin_lockout_error">試行回数が多すぎます。%d 秒後に再試行してください。</string>
     <string name="calendar_title">カレンダー</string>
     <string name="current_cycle_day">周期%d日目</string>
     <string name="days_until_next_period">次の生理まであと%d日</string>
@@ -156,6 +157,10 @@
     <string name="unit_minutes_int_format">%d min</string>
     <string name="unit_minutes_float_format">%.0f min</string>
     <string name="unit_sleep_quality_format">%.1f/5</string>
+    <string name="sleep_quality_duration">睡眠時間</string>
+    <string name="sleep_quality_regularity">規則性</string>
+    <string name="sleep_quality_deep_sleep">深睡眠</string>
+    <string name="sleep_quality_continuity">連続性</string>
     <string name="unit_net_kcal_format">%+.0f kcal</string>
     <string name="bmi_category_underweight">低体重</string>
     <string name="bmi_category_normal">正常</string>
@@ -164,6 +169,8 @@
     <string name="bmi_standard_note">中国BMI基準に基づく</string>
     <string name="backup_success">バックアップ成功</string>
     <string name="backup_fail">バックアップ失敗</string>
+    <string name="backup_wrong_password">パスワードが間違っているか、ファイルが破損しています</string>
+    <string name="backup_invalid_file">無効なバックアップファイル形式</string>
     <string name="restore_success">復元成功</string>
     <string name="restore_fail">復元失敗</string>
     <string name="export_success">エクスポート成功</string>
@@ -322,6 +329,7 @@
     <string name="terms_service_declaration">1. サービス宣言\n\n天殇Healthは、ユーザーのプライバシーとデータセキュリティを最優先する包括的な健康追跡アプリケーションです。すべてのデータは強力な暗号化によりデバイスにローカル保存されます。\n\n2. データプライバシー\n\nお客様の個人健康データを収集、アップロード、共有することはありません。アプリケーションはネットワーク権限なしで完全にオフラインで動作します。\n\n3. ユーザーの責任\n\n入力する健康データの正確性についてはお客様が責任を負います。提供される予測および分析は参考用であり、医学的アドバイスを構成するものではありません。\n\n4. データセキュリティ\n\nお客様のデータはSQLCipher AES-256暗号化によって保護されています。暗号鍵はAndroid Keystoreを通じて管理され、ハードウェアレベルのセキュリティを実現します。</string>
     <string name="privacy_policy_body">1. 基本原則：データのローカライズ\n\n月経周期、症状、その他の健康指標を含むすべての健康データは、デバイス上の暗号化データベースにのみ保存されます。\n\n2. 収集される情報\n\nお客様がアプリケーションに手動で入力した情報のみを処理します。自動データ収集は行われません。\n\n3. データ暗号化\n\nすべての機密データはSQLCipher AES-256暗号化を使用して暗号化されます。暗号鍵はAndroid Keystoreに安全に保存されます。\n\n4. 第三者へのアクセスなし\n\n当社はサードパーティの分析、広告、追跡サービスを使用しません。お客様のデータがデバイスから送信されることはありません。\n\n5. データエクスポート\n\nいつでも標準形式（CSV、暗号化バックアップ）でデータをエクスポートできます。お客様はデータを完全に管理できます。\n\n6. データ削除\n\nいつでもデータの一部または全部を削除できます。削除されたデータはデバイスから完全に削除されます。</string>
     <string name="error_unknown">不明なエラー</string>
+    <string name="error_failed_delete">削除に失敗しました</string>
     <string name="error_failed_add_record">記録の追加に失敗しました</string>
     <string name="error_failed_update_record">記録の更新に失敗しました</string>
     <string name="error_failed_delete_record">記録の削除に失敗しました</string>
@@ -640,6 +648,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="clear">クリア</string>
     <string name="edit">編集</string>
     <string name="exact_date_mode">正確な日付</string>
+    <string name="toggle_exact_number">正確な数値を表示</string>
     <string name="profile_dob_not_set">未設定</string>
     <string name="profile_dob_title">Date of Birth</string>
     <string name="year_only_mode">年のみ</string>
