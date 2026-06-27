@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Warunki Usługi</string>
@@ -886,6 +886,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Nie udało się wygenerować raportu</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -897,4 +898,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Tapeta</string>
+    <string name="wallpaper_customize">Niestandardowa tapeta</string>
+    <string name="wallpaper_none">Brak</string>
+    <string name="wallpaper_presets">Gotowe tapety</string>
+    <string name="wallpaper_gradient">Niestandardowy gradient</string>
+    <string name="wallpaper_from_gallery">Z galerii</string>
+    <string name="wallpaper_opacity">Nieprzezroczystość</string>
+    <string name="wallpaper_blur">Rozmycie</string>
+    <string name="wallpaper_gradient_start">Kolor początkowy</string>
+    <string name="wallpaper_gradient_end">Kolor końcowy</string>
+    <string name="wallpaper_gradient_angle">Kąt</string>
+    <string name="wallpaper_preset_soft_gradient">Delikatny gradient</string>
+    <string name="wallpaper_preset_warm_glow">Ciepły blask</string>
+    <string name="wallpaper_preset_cool_breeze">Chłodna bryza</string>
+    <string name="wallpaper_preset_nature_leaves">Naturalne liście</string>
+    <string name="wallpaper_preset_geometric">Geometryczny</string>
+    <string name="wallpaper_preset_starry">Gwiaździsty</string>
+    <string name="wallpaper_select_image">Wybierz obraz</string>
+    <string name="wallpaper_crop_title">Przytnij tapetę</string>
+    <string name="wallpaper_image_selected">Obraz tapety ustawiony</string>
+    <string name="wallpaper_remove">Usuń tapetę</string>
+    <string name="wallpaper_description">Dostosuj tło aplikacji za pomocą gotowych ustawień, gradientów lub własnych obrazów</string>
+    <string name="analysis_section_health_overview">Przegląd zdrowia</string>
+    <string name="analysis_composite_score">Wynik ogólny</string>
+    <string name="analysis_trends">Tendencje</string>
 </resources>

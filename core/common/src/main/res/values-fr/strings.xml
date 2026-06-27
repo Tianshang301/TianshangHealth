@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangSanté</string>
     <string name="terms_title">Conditions d\'utilisation</string>
@@ -806,6 +806,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s : %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Échec de la génération du rapport</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
     <string name="plurals">%d jours</string>
 
 
@@ -818,4 +819,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Fond d\'écran</string>
+    <string name="wallpaper_customize">Fond d\'écran personnalisé</string>
+    <string name="wallpaper_none">Aucun</string>
+    <string name="wallpaper_presets">Fonds d\'écran prédéfinis</string>
+    <string name="wallpaper_gradient">Dégradé personnalisé</string>
+    <string name="wallpaper_from_gallery">Depuis la galerie</string>
+    <string name="wallpaper_opacity">Opacité</string>
+    <string name="wallpaper_blur">Flou</string>
+    <string name="wallpaper_gradient_start">Couleur de début</string>
+    <string name="wallpaper_gradient_end">Couleur de fin</string>
+    <string name="wallpaper_gradient_angle">Angle</string>
+    <string name="wallpaper_preset_soft_gradient">Dégradé doux</string>
+    <string name="wallpaper_preset_warm_glow">Lueur chaude</string>
+    <string name="wallpaper_preset_cool_breeze">Brise fraîche</string>
+    <string name="wallpaper_preset_nature_leaves">Feuilles naturelles</string>
+    <string name="wallpaper_preset_geometric">Géométrique</string>
+    <string name="wallpaper_preset_starry">Étoilé</string>
+    <string name="wallpaper_select_image">Choisir une image</string>
+    <string name="wallpaper_crop_title">Recadrer le fond d\'écran</string>
+    <string name="wallpaper_image_selected">Image de fond définie</string>
+    <string name="wallpaper_remove">Supprimer le fond d\'écran</string>
+    <string name="wallpaper_description">Personnalisez l\'arrière-plan de l\'application avec des préréglages, des dégradés ou vos propres images</string>
+    <string name="analysis_section_health_overview">Aperçu de santé</string>
+    <string name="analysis_composite_score">Score composite</string>
+    <string name="analysis_trends">Tendances</string>
 </resources>

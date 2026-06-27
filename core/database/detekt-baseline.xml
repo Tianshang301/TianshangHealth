@@ -2,6 +2,7 @@
 <SmellBaseline>
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
+    <ID>ComplexCondition:DailyHealthDao.kt$DailyHealthDao$calories &gt; 0f || protein &gt; 0f || carbs &gt; 0f || fat &gt; 0f</ID>
     <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.dailyHealthDao()</ID>
     <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.dailySymptomDao()</ID>
     <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.mealDao()</ID>
@@ -11,6 +12,7 @@
     <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.userDao()</ID>
     <ID>ExpressionBodySyntax:DatabaseModule.kt$DatabaseModule$return database.workoutDao()</ID>
     <ID>ExpressionBodySyntax:User.kt$User.Gender.Companion$return entries.find { it.value == value } ?: FEMALE</ID>
+    <ID>LongParameterList:DailyHealthDao.kt$DailyHealthDao$( userId: Long, date: String, sleepHours: Float?, deepSleepHours: Float?, sleepQuality: Int?, bedTime: String?, wakeTime: String?, sleepLatency: Int?, wakeCount: Int? )</ID>
     <ID>MaxLineLength:PeriodRecordDao.kt$PeriodRecordDao$"SELECT * FROM period_records WHERE userId = :userId AND isDeleted = 0 AND startDate &lt;= :date AND (endDate IS NULL OR endDate &gt;= :date) LIMIT 1"</ID>
     <ID>MaxLineLength:PredictionLogDao.kt$PredictionLogDao$"SELECT * FROM prediction_logs WHERE userId = :userId AND tfliteModelUsed IS NOT NULL AND actualStartDate IS NULL ORDER BY createdAt DESC LIMIT 1"</ID>
     <ID>MaxLineLength:WorkoutDao.kt$WorkoutDao$"SELECT caloriesBurned FROM workout_records WHERE userId = :userId AND date &gt;= :startDate AND date &lt;= :endDate AND caloriesBurned IS NOT NULL ORDER BY date"</ID>
@@ -22,7 +24,6 @@
     <ID>MaximumLineLength:PeriodRecordDao.kt$PeriodRecordDao$ </ID>
     <ID>MaximumLineLength:PredictionLogDao.kt$PredictionLogDao$ </ID>
     <ID>MaximumLineLength:StepsDao.kt$StepsDao$ </ID>
-    <ID>MaximumLineLength:TianshangDatabase.kt$TianshangDatabase.Companion.&lt;no name provided&gt;$ </ID>
     <ID>MaximumLineLength:WorkoutDao.kt$WorkoutDao$ </ID>
     <ID>TooManyFunctions:DailyHealthDao.kt$DailyHealthDao</ID>
     <ID>TooManyFunctions:MealDao.kt$MealDao</ID>

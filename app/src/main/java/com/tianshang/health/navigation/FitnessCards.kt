@@ -13,8 +13,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.MonitorWeight
 import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -29,6 +27,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.GlassCard
+import com.tianshang.health.core.common.ui.glass.GlassVariant
 import com.tianshang.health.core.database.entity.WorkoutRecord
 import com.tianshang.health.feature.fitness.util.CalorieCalculator
 import com.tianshang.health.feature.fitness.util.ExerciseType
@@ -53,11 +53,10 @@ internal fun BodyMetricsCard(
         null
     }
 
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.tertiaryContainer
-        )
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -152,11 +151,10 @@ internal fun WorkoutItem(
         workout.date
     }
 
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
-        )
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Row(
             modifier = Modifier.fillMaxWidth().padding(12.dp),

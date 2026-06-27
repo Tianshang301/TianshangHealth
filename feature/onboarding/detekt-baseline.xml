@@ -2,11 +2,6 @@
 <SmellBaseline>
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
-    <ID>FunctionNaming:GenderSelectionScreen.kt$@Composable fun GenderSelectionScreen( onGenderSelected: () -&gt; Unit, viewModel: OnboardingViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:GenderSelectionScreen.kt$@Composable private fun ErrorContent(message: String)</ID>
-    <ID>FunctionNaming:GenderSelectionScreen.kt$@Composable private fun GenderOption( icon: ImageVector, label: String, description: String, onClick: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:GenderSelectionScreen.kt$@Composable private fun GenderSelectionContent( onGenderSelected: (Gender) -&gt; Unit )</ID>
-    <ID>FunctionNaming:GenderSelectionScreen.kt$@Composable private fun LoadingContent()</ID>
     <ID>MaximumLineLength:OnboardingViewModel.kt$OnboardingViewModel$ </ID>
   </CurrentIssues>
 </SmellBaseline>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Termini di Servizio</string>
@@ -861,6 +861,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Impossibile generare il report</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
     <string name="plurals">%d giorni</string>
 
 
@@ -873,4 +874,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Sfondo</string>
+    <string name="wallpaper_customize">Sfondo personalizzato</string>
+    <string name="wallpaper_none">Nessuno</string>
+    <string name="wallpaper_presets">Sfondi preimpostati</string>
+    <string name="wallpaper_gradient">Gradiente personalizzato</string>
+    <string name="wallpaper_from_gallery">Dalla galleria</string>
+    <string name="wallpaper_opacity">Opacità</string>
+    <string name="wallpaper_blur">Sfocatura</string>
+    <string name="wallpaper_gradient_start">Colore iniziale</string>
+    <string name="wallpaper_gradient_end">Colore finale</string>
+    <string name="wallpaper_gradient_angle">Angolo</string>
+    <string name="wallpaper_preset_soft_gradient">Gradiente morbido</string>
+    <string name="wallpaper_preset_warm_glow">Bagliore caldo</string>
+    <string name="wallpaper_preset_cool_breeze">Brezza fresca</string>
+    <string name="wallpaper_preset_nature_leaves">Foglie naturali</string>
+    <string name="wallpaper_preset_geometric">Geometrico</string>
+    <string name="wallpaper_preset_starry">Stellato</string>
+    <string name="wallpaper_select_image">Seleziona immagine</string>
+    <string name="wallpaper_crop_title">Ritaglia sfondo</string>
+    <string name="wallpaper_image_selected">Immagine dello sfondo impostata</string>
+    <string name="wallpaper_remove">Rimuovi sfondo</string>
+    <string name="wallpaper_description">Personalizza lo sfondo dell\'app con preimpostazioni, gradienti o le tue immagini</string>
+    <string name="analysis_section_health_overview">Panoramica salute</string>
+    <string name="analysis_composite_score">Punteggio composito</string>
+    <string name="analysis_trends">Tendenze</string>
 </resources>

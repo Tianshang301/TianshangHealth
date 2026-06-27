@@ -10,8 +10,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.WaterDrop
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LinearProgressIndicator
@@ -28,6 +26,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
 import com.tianshang.health.core.common.constants.HealthConstants
+import com.tianshang.health.core.common.ui.glass.GlassCard
+import com.tianshang.health.core.common.ui.glass.GlassVariant
 import com.tianshang.health.feature.nutrition.viewmodel.NutritionState
 
 @Composable
@@ -35,11 +35,10 @@ fun DailyNutritionSummary(
     state: NutritionState,
     onAddWater: (Float) -> Unit = {}
 ) {
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer
-        )
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(
             modifier = Modifier
@@ -215,11 +214,10 @@ fun EnergyBalanceSection(state: NutritionState) {
         MaterialTheme.colorScheme.tertiary
     }
 
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
-        )
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(
             modifier = Modifier

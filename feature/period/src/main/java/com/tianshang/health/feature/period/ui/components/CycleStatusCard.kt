@@ -12,7 +12,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.WaterDrop
 import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -24,6 +23,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.GlassCard
+import com.tianshang.health.core.common.ui.glass.GlassVariant
 import com.tianshang.health.core.common.ui.theme.FertileGreen
 import com.tianshang.health.core.common.ui.theme.OvulationBlue
 import com.tianshang.health.core.common.ui.theme.PeriodRed
@@ -35,11 +36,10 @@ fun CycleStatusCard(
     isPeriodActive: Boolean,
     modifier: Modifier = Modifier
 ) {
-    Card(
-        modifier = modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer
-        )
+    GlassCard(
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp,
+        modifier = modifier.fillMaxWidth()
     ) {
         Column(
             modifier = Modifier

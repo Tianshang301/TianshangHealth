@@ -38,6 +38,9 @@ object NumberFormatUtils {
 
     @Suppress("MagicNumber")
     private fun formatCjkCompactNumber(value: Long, locale: Locale): String {
+        if (value < TEN_THOUSAND) {
+            return String.format(locale, "%,d", value)
+        }
         val tenThousands = value / TEN_THOUSAND.toDouble()
         val formatted = formatWithOptionalDecimal(tenThousands)
         return if (locale.language == Locale.KOREAN.language) {

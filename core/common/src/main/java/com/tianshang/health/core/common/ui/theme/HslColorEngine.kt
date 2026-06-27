@@ -110,6 +110,25 @@ object HslColorEngine {
         return SchemePair(light, dark)
     }
 
+    data class GlassScheme(
+        val lightSurfaceStart: Color,
+        val lightSurfaceEnd: Color,
+        val darkSurfaceStart: Color,
+        val darkSurfaceEnd: Color,
+        val tintHighlight: Color,
+    )
+
+    fun generateGlassScheme(hue: Float, saturation: Float, lightness: Float): GlassScheme {
+        val tintHighlight = toColor(hue, saturation, lightness)
+        return GlassScheme(
+            lightSurfaceStart = Color(0xCCFFFFFF),
+            lightSurfaceEnd = Color(0xB3F5F5F5),
+            darkSurfaceStart = Color(0xCC2A2A2E),
+            darkSurfaceEnd = Color(0xB31C1B1F),
+            tintHighlight = tintHighlight,
+        )
+    }
+
     data class SchemePair(val light: androidx.compose.material3.ColorScheme, val dark: androidx.compose.material3.ColorScheme)
 
     val PRESETS = listOf(

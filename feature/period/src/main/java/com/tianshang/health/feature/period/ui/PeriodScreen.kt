@@ -16,7 +16,6 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -30,10 +29,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.EdgePosition
+import com.tianshang.health.core.common.ui.glass.GlassFAB
+import com.tianshang.health.core.common.ui.glass.ScrollEdgeEffect
 import com.tianshang.health.core.period.api.Confidence
 import com.tianshang.health.feature.period.ui.components.CalendarView
 import com.tianshang.health.feature.period.ui.components.CycleStatusCard
@@ -52,8 +55,9 @@ fun PeriodScreen(
     var showRecordForm by remember { mutableStateOf(false) }
 
     Scaffold(
+        containerColor = Color.Transparent,
         floatingActionButton = {
-            FloatingActionButton(
+            GlassFAB(
                 onClick = { showRecordForm = !showRecordForm }
             ) {
                 Icon(
@@ -70,102 +74,108 @@ fun PeriodScreen(
             is PeriodUiState.Success -> {
                 val periodState = state.periodState
 
-                Column(
+                Box(
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(paddingValues)
-                        .verticalScroll(rememberScrollState())
-                        .padding(16.dp)
                 ) {
-                    // Title
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .verticalScroll(rememberScrollState())
+                            .padding(16.dp)
                     ) {
-                        Text(
-                            text = stringResource(R.string.period_tracking_title),
-                            style = MaterialTheme.typography.headlineMedium,
-                            fontWeight = MaterialTheme.typography.headlineMedium.fontWeight
+                        // Title
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = stringResource(R.string.period_tracking_title),
+                                style = MaterialTheme.typography.headlineMedium,
+                                fontWeight = MaterialTheme.typography.headlineMedium.fontWeight
+                            )
+                            IconButton(onClick = onNavigateToReminders) {
+                                Icon(
+                                    imageVector = Icons.Default.Notifications,
+                                    contentDescription = stringResource(R.string.reminder_title)
+                                )
+                            }
+                        }
+
+                        Spacer(modifier = Modifier.height(16.dp))
+
+                        // Cycle status card
+                        CycleStatusCard(
+                            currentCycleDay = periodState.currentCycleDay,
+                            daysUntilNextPeriod = periodState.daysUntilNextPeriod,
+                            isPeriodActive = viewModel.isPeriodActive()
                         )
-                        IconButton(onClick = onNavigateToReminders) {
-                            Icon(
-                                imageVector = Icons.Default.Notifications,
-                                contentDescription = stringResource(R.string.reminder_title)
+
+                        Spacer(modifier = Modifier.height(16.dp))
+
+                        // Calendar view
+                        CalendarView(
+                            selectedDate = selectedDate,
+                            onDateSelected = { viewModel.selectDate(it) },
+                            periodRecords = periodState.records,
+                            ovulationDate = periodState.prediction?.ovulationDate,
+                            fertileWindowStart = periodState.prediction?.fertileWindowStart,
+                            fertileWindowEnd = periodState.prediction?.fertileWindowEnd
+                        )
+
+                        Spacer(modifier = Modifier.height(16.dp))
+
+                        // Prediction card
+                        if (periodState.prediction != null) {
+                            PredictionCard(
+                                nextPeriodDate = periodState.prediction.nextPeriodStart.toString(),
+                                ovulationDate = periodState.prediction.ovulationDate.toString(),
+                                fertileWindow = "${periodState.prediction.fertileWindowStart} - ${periodState.prediction.fertileWindowEnd}",
+                                cycleLength = periodState.prediction.cycleLength,
+                                confidence = when (periodState.prediction.confidence) {
+                                    Confidence.HIGH -> stringResource(R.string.confidence_high)
+                                    Confidence.MEDIUM -> stringResource(R.string.confidence_medium)
+                                    Confidence.LOW -> stringResource(R.string.confidence_low)
+                                    Confidence.INSUFFICIENT_DATA -> stringResource(R.string.confidence_insufficient)
+                                },
+                                cycleCount = periodState.records.size
+                            )
+
+                            Spacer(modifier = Modifier.height(16.dp))
+                        }
+
+                        // Record form
+                        if (showRecordForm) {
+                            RecordForm(
+                                selectedDate = selectedDate,
+                                onSave = { date, flowLevel, painLevel, notes ->
+                                    viewModel.addPeriodRecord(date, null, flowLevel, painLevel, notes)
+                                    showRecordForm = false
+                                }
+                            )
+
+                            Spacer(modifier = Modifier.height(16.dp))
+                        }
+
+                        // Quick record button
+                        Button(
+                            onClick = { viewModel.startRecording() },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text(
+                                text = if (viewModel.isPeriodActive()) {
+                                    stringResource(
+                                        R.string.end_period
+                                    )
+                                } else {
+                                    stringResource(R.string.start_period)
+                                }
                             )
                         }
                     }
-
-                    Spacer(modifier = Modifier.height(16.dp))
-
-                    // Cycle status card
-                    CycleStatusCard(
-                        currentCycleDay = periodState.currentCycleDay,
-                        daysUntilNextPeriod = periodState.daysUntilNextPeriod,
-                        isPeriodActive = viewModel.isPeriodActive()
-                    )
-
-                    Spacer(modifier = Modifier.height(16.dp))
-
-                    // Calendar view
-                    CalendarView(
-                        selectedDate = selectedDate,
-                        onDateSelected = { viewModel.selectDate(it) },
-                        periodRecords = periodState.records,
-                        ovulationDate = periodState.prediction?.ovulationDate,
-                        fertileWindowStart = periodState.prediction?.fertileWindowStart,
-                        fertileWindowEnd = periodState.prediction?.fertileWindowEnd
-                    )
-
-                    Spacer(modifier = Modifier.height(16.dp))
-
-                    // Prediction card
-                    if (periodState.prediction != null) {
-                        PredictionCard(
-                            nextPeriodDate = periodState.prediction.nextPeriodStart.toString(),
-                            ovulationDate = periodState.prediction.ovulationDate.toString(),
-                            fertileWindow = "${periodState.prediction.fertileWindowStart} - ${periodState.prediction.fertileWindowEnd}",
-                            cycleLength = periodState.prediction.cycleLength,
-                            confidence = when (periodState.prediction.confidence) {
-                                Confidence.HIGH -> stringResource(R.string.confidence_high)
-                                Confidence.MEDIUM -> stringResource(R.string.confidence_medium)
-                                Confidence.LOW -> stringResource(R.string.confidence_low)
-                                Confidence.INSUFFICIENT_DATA -> stringResource(R.string.confidence_insufficient)
-                            },
-                            cycleCount = periodState.records.size
-                        )
-
-                        Spacer(modifier = Modifier.height(16.dp))
-                    }
-
-                    // Record form
-                    if (showRecordForm) {
-                        RecordForm(
-                            selectedDate = selectedDate,
-                            onSave = { date, flowLevel, painLevel, notes ->
-                                viewModel.addPeriodRecord(date, null, flowLevel, painLevel, notes)
-                                showRecordForm = false
-                            }
-                        )
-
-                        Spacer(modifier = Modifier.height(16.dp))
-                    }
-
-                    // Quick record button
-                    Button(
-                        onClick = { viewModel.startRecording() },
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Text(
-                            text = if (viewModel.isPeriodActive()) {
-                                stringResource(
-                                    R.string.end_period
-                                )
-                            } else {
-                                stringResource(R.string.start_period)
-                            }
-                        )
-                    }
+                    ScrollEdgeEffect(position = EdgePosition.Bottom)
                 }
             }
             is PeriodUiState.Error -> {

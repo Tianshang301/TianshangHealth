@@ -15,7 +15,6 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
@@ -23,8 +22,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -36,12 +33,17 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.EdgePosition
+import com.tianshang.health.core.common.ui.glass.GlassFAB
+import com.tianshang.health.core.common.ui.glass.GlassTopAppBar
+import com.tianshang.health.core.common.ui.glass.ScrollEdgeEffect
 import com.tianshang.health.feature.fitness.ui.AddWorkoutContent
 import com.tianshang.health.feature.fitness.ui.CycleFitnessRecommendationCard
 import com.tianshang.health.feature.fitness.viewmodel.FitnessViewModel
@@ -83,17 +85,15 @@ fun ExerciseScreen(
     }
 
     Scaffold(
+        containerColor = Color.Transparent,
         snackbarHost = { SnackbarHost(snackbarHostState) },
         topBar = {
-            TopAppBar(
-                title = { Text(stringResource(R.string.nav_fitness)) },
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.surface
-                )
+            GlassTopAppBar(
+                title = stringResource(R.string.nav_fitness)
             )
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = { showAddSheet = true }) {
+            GlassFAB(onClick = { showAddSheet = true }) {
                 Icon(Icons.Default.Add, contentDescription = stringResource(R.string.fitness_add_workout))
             }
         }
@@ -129,139 +129,145 @@ fun ExerciseScreen(
             is StepsUiState.Success -> {
                 val stepsState = (stepsUiState as StepsUiState.Success).stepsState
 
-                LazyColumn(
+                Box(
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(innerPadding)
-                        .padding(horizontal = 16.dp),
-                    verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    if (!stepsState.isBatteryOptimizationDisabled) {
-                        item {
-                            BatteryOptimizationCard(
-                                onDisable = { stepsViewModel.requestDisableBatteryOptimization() }
-                            )
-                        }
-                    }
-
-                    if (stepsState.oemType != OemType.OTHER) {
-                        item {
-                            OemGuideCard(
-                                oemType = stepsState.oemType,
-                                onOpenBatterySettings = { stepsViewModel.openOemBatterySettings() },
-                                onOpenAutoStartSettings = { stepsViewModel.openOemAutoStartSettings() }
-                            )
-                        }
-                    }
-
-                    item {
-                        StepsCard(
-                            todaySteps = stepsState.todaySteps,
-                            todayGoal = stepsState.todayGoal,
-                            weeklyAverage = stepsState.weeklyAverage,
-                            onClick = onNavigateToPeriodAnalysis
-                        )
-                    }
-
-                    item {
-                        EnergySummaryCard(
-                            todaySteps = stepsState.todaySteps,
-                            todayStepsCalories = fitnessState.todayStepsCalories,
-                            todayWorkoutCalories = fitnessState.totalCaloriesToday,
-                            todayCombinedCalories = fitnessState.combinedDailyCalories,
-                            weeklySteps = fitnessState.totalStepsThisWeek,
-                            weeklyStepsCalories = fitnessState.weeklyStepsCalories,
-                            weeklyWorkoutCalories = fitnessState.totalCaloriesThisWeek,
-                            weeklyWorkoutCount = fitnessState.workoutCountThisWeek,
-                            weeklyDurationMinutes = fitnessState.totalDurationThisWeek
-                        )
-                    }
-
-                    if (fitnessState.cycleFitnessResult.hasData) {
-                        item {
-                            CycleFitnessRecommendationCard(
-                                recommendation = fitnessState.cycleFitnessResult.recommendation!!
-                            )
-                        }
-                    }
-
-                    item {
-                        GoalAdjustmentCard(
-                            todayGoal = stepsState.todayGoal,
-                            onUpdateGoal = { stepsViewModel.updateGoal(it) }
-                        )
-                    }
-
-                    if (stepsState.weeklySteps.isNotEmpty()) {
-                        item {
-                            WeeklyStepsChart(steps = stepsState.weeklySteps)
-                        }
-                    }
-
-                    item {
-                        BodyMetricsCard(
-                            heightInput = fitnessState.heightInput,
-                            weightInput = fitnessState.weightInput,
-                            heightInputError = fitnessState.heightInputError,
-                            weightInputError = fitnessState.weightInputError,
-                            onHeightChanged = { fitnessViewModel.updateHeightInput(it) },
-                            onWeightChanged = { fitnessViewModel.updateWeightInput(it) },
-                            onSave = { fitnessViewModel.saveBodyMetrics() }
-                        )
-                    }
-
-                    if (fitnessState.todayWorkouts.isNotEmpty()) {
-                        item {
-                            Spacer(modifier = Modifier.height(4.dp))
-                            Text(
-                                text = stringResource(R.string.fitness_today_workouts),
-                                style = MaterialTheme.typography.titleMedium,
-                                fontWeight = FontWeight.Bold
-                            )
-                        }
-                        items(fitnessState.todayWorkouts, key = { it.id }) { workout ->
-                            WorkoutItem(
-                                workout = workout,
-                                onDelete = { fitnessViewModel.deleteWorkout(workout) }
-                            )
-                        }
-                    }
-
-                    if (fitnessState.recentWorkouts.isNotEmpty()) {
-                        item {
-                            Spacer(modifier = Modifier.height(4.dp))
-                            Text(
-                                text = stringResource(R.string.fitness_recent_workouts),
-                                style = MaterialTheme.typography.titleMedium,
-                                fontWeight = FontWeight.Bold
-                            )
-                        }
-                        items(fitnessState.recentWorkouts, key = { it.id }) { workout ->
-                            WorkoutItem(
-                                workout = workout,
-                                onDelete = { fitnessViewModel.deleteWorkout(workout) }
-                            )
-                        }
-                    }
-
-                    if (fitnessState.todayWorkouts.isEmpty() && fitnessState.recentWorkouts.isEmpty()) {
-                        item {
-                            Box(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .padding(vertical = 24.dp),
-                                contentAlignment = Alignment.Center
-                            ) {
-                                Text(
-                                    text = stringResource(R.string.fitness_empty),
-                                    style = MaterialTheme.typography.bodyLarge,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    LazyColumn(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(horizontal = 16.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        if (!stepsState.isBatteryOptimizationDisabled) {
+                            item {
+                                BatteryOptimizationCard(
+                                    onDisable = { stepsViewModel.requestDisableBatteryOptimization() }
                                 )
                             }
                         }
-                    }
 
-                    item { Spacer(modifier = Modifier.height(80.dp)) }
+                        if (stepsState.oemType != OemType.OTHER) {
+                            item {
+                                OemGuideCard(
+                                    oemType = stepsState.oemType,
+                                    onOpenBatterySettings = { stepsViewModel.openOemBatterySettings() },
+                                    onOpenAutoStartSettings = { stepsViewModel.openOemAutoStartSettings() }
+                                )
+                            }
+                        }
+
+                        item {
+                            StepsCard(
+                                todaySteps = stepsState.todaySteps,
+                                todayGoal = stepsState.todayGoal,
+                                weeklyAverage = stepsState.weeklyAverage,
+                                onClick = onNavigateToPeriodAnalysis
+                            )
+                        }
+
+                        item {
+                            EnergySummaryCard(
+                                todaySteps = stepsState.todaySteps,
+                                todayStepsCalories = fitnessState.todayStepsCalories,
+                                todayWorkoutCalories = fitnessState.totalCaloriesToday,
+                                todayCombinedCalories = fitnessState.combinedDailyCalories,
+                                weeklySteps = fitnessState.totalStepsThisWeek,
+                                weeklyStepsCalories = fitnessState.weeklyStepsCalories,
+                                weeklyWorkoutCalories = fitnessState.totalCaloriesThisWeek,
+                                weeklyWorkoutCount = fitnessState.workoutCountThisWeek,
+                                weeklyDurationMinutes = fitnessState.totalDurationThisWeek
+                            )
+                        }
+
+                        if (fitnessState.cycleFitnessResult.hasData) {
+                            item {
+                                CycleFitnessRecommendationCard(
+                                    recommendation = fitnessState.cycleFitnessResult.recommendation!!
+                                )
+                            }
+                        }
+
+                        item {
+                            GoalAdjustmentCard(
+                                todayGoal = stepsState.todayGoal,
+                                onUpdateGoal = { stepsViewModel.updateGoal(it) }
+                            )
+                        }
+
+                        if (stepsState.weeklySteps.isNotEmpty()) {
+                            item {
+                                WeeklyStepsChart(steps = stepsState.weeklySteps)
+                            }
+                        }
+
+                        item {
+                            BodyMetricsCard(
+                                heightInput = fitnessState.heightInput,
+                                weightInput = fitnessState.weightInput,
+                                heightInputError = fitnessState.heightInputError,
+                                weightInputError = fitnessState.weightInputError,
+                                onHeightChanged = { fitnessViewModel.updateHeightInput(it) },
+                                onWeightChanged = { fitnessViewModel.updateWeightInput(it) },
+                                onSave = { fitnessViewModel.saveBodyMetrics() }
+                            )
+                        }
+
+                        if (fitnessState.todayWorkouts.isNotEmpty()) {
+                            item {
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    text = stringResource(R.string.fitness_today_workouts),
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+                            items(fitnessState.todayWorkouts, key = { it.id }) { workout ->
+                                WorkoutItem(
+                                    workout = workout,
+                                    onDelete = { fitnessViewModel.deleteWorkout(workout) }
+                                )
+                            }
+                        }
+
+                        if (fitnessState.recentWorkouts.isNotEmpty()) {
+                            item {
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    text = stringResource(R.string.fitness_recent_workouts),
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+                            items(fitnessState.recentWorkouts, key = { it.id }) { workout ->
+                                WorkoutItem(
+                                    workout = workout,
+                                    onDelete = { fitnessViewModel.deleteWorkout(workout) }
+                                )
+                            }
+                        }
+
+                        if (fitnessState.todayWorkouts.isEmpty() && fitnessState.recentWorkouts.isEmpty()) {
+                            item {
+                                Box(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(vertical = 24.dp),
+                                    contentAlignment = Alignment.Center
+                                ) {
+                                    Text(
+                                        text = stringResource(R.string.fitness_empty),
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                }
+                            }
+                        }
+
+                        item { Spacer(modifier = Modifier.height(80.dp)) }
+                    }
+                    ScrollEdgeEffect(position = EdgePosition.Bottom)
                 }
             }
         }

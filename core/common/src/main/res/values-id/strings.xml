@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Ketentuan Layanan</string>
@@ -872,6 +872,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="error_onboarding_required">Silakan selesaikan pengaturan pengguna terlebih dahulu</string>
     <string name="error_load_failed">Gagal memuat</string>
     <string name="error_failed_generate_report">Gagal membuat laporan</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
     <!-- Energy balance strings -->
     <string name="nutrition_energy_balance">Keseimbangan Energi</string>
@@ -890,4 +891,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Wallpaper</string>
+    <string name="wallpaper_customize">Wallpaper kustom</string>
+    <string name="wallpaper_none">Tidak ada</string>
+    <string name="wallpaper_presets">Wallpaper prasetel</string>
+    <string name="wallpaper_gradient">Gradien kustom</string>
+    <string name="wallpaper_from_gallery">Dari galeri</string>
+    <string name="wallpaper_opacity">Opacity</string>
+    <string name="wallpaper_blur">Buram</string>
+    <string name="wallpaper_gradient_start">Warna awal</string>
+    <string name="wallpaper_gradient_end">Warna akhir</string>
+    <string name="wallpaper_gradient_angle">Sudut</string>
+    <string name="wallpaper_preset_soft_gradient">Gradien lembut</string>
+    <string name="wallpaper_preset_warm_glow">Cahaya hangat</string>
+    <string name="wallpaper_preset_cool_breeze">Angin sejuk</string>
+    <string name="wallpaper_preset_nature_leaves">Daun alami</string>
+    <string name="wallpaper_preset_geometric">Geometris</string>
+    <string name="wallpaper_preset_starry">Berbintang</string>
+    <string name="wallpaper_select_image">Pilih gambar</string>
+    <string name="wallpaper_crop_title">Potong wallpaper</string>
+    <string name="wallpaper_image_selected">Gambar wallpaper telah diatur</string>
+    <string name="wallpaper_remove">Hapus wallpaper</string>
+    <string name="wallpaper_description">Sesuaikan latar belakang aplikasi dengan prasetel, gradien, atau gambar Anda sendiri</string>
+    <string name="analysis_section_health_overview">Ikhtisar Kesehatan</string>
+    <string name="analysis_composite_score">Skor Komposit</string>
+    <string name="analysis_trends">Tren</string>
 </resources>

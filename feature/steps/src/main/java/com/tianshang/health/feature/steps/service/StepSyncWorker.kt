@@ -59,17 +59,22 @@ class StepSyncWorker @AssistedInject constructor(
 
             stepsRepository.initialize()
 
-            // Read cached total steps
+            // Read cached total steps and last synced sensor value
             val currentTotal = StepCache.getCachedTotalSteps(applicationContext)
-            val lastRecorded = StepCache.getLastRecordedTotal(applicationContext)
+            val lastSynced = StepCache.getLastSyncedSensorValue(applicationContext)
 
-            if (currentTotal > lastRecorded) {
-                val missedSteps = currentTotal - lastRecorded
+            if (currentTotal > lastSynced) {
+                val missedSteps = currentTotal - lastSynced
                 if (missedSteps > HealthConstants.MAX_STEPS_PER_INTERVAL) {
+                    // Abnormal delta — skip adding but update markers to prevent retry
+                    StepCache.setLastSyncedSensorValue(applicationContext, currentTotal)
                     StepCache.setLastRecordedTotal(applicationContext, currentTotal)
-                } else {
+                } else if (missedSteps > 0) {
+                    // Update cache markers FIRST to prevent Service from double-adding
+                    StepCache.setLastSyncedSensorValue(applicationContext, currentTotal)
+                    StepCache.setLastRecordedTotal(applicationContext, currentTotal)
+                    // Then write to DB
                     stepsRepository.addSteps(missedSteps.toInt())
-                    StepCache.setLastRecordedTotal(applicationContext, currentTotal)
                 }
             }
 

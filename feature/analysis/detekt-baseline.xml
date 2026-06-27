@@ -2,11 +2,15 @@
 <SmellBaseline>
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
+    <ID>CyclomaticComplexMethod:AnalysisScreen.kt$@Composable private fun HealthOverviewCard(report: CrossDimensionReport)</ID>
+    <ID>CyclomaticComplexMethod:AnalysisScreen.kt$@Composable private fun TrendRow(trends: List&lt;DimensionTrend&gt;)</ID>
+    <ID>CyclomaticComplexMethod:AnalysisViewModel.kt$AnalysisViewModel$private fun loadData()</ID>
     <ID>CyclomaticComplexMethod:AnalyticsEngine.kt$AnalyticsEngine$fun computeNutrition(records: List&lt;DailyHealth&gt;): WeeklyNutrition</ID>
     <ID>CyclomaticComplexMethod:CrossDimensionEngine.kt$CrossDimensionEngine$fun detectCompoundPatterns(records: List&lt;DailyHealth&gt;): List&lt;CompoundPattern&gt;</ID>
     <ID>CyclomaticComplexMethod:MedicalReportGenerator.kt$MedicalReportGenerator$private fun drawPeriodSummary( canvas: Canvas, data: HealthReportData, startY: Float, ensureSpace: (Float) -&gt; Boolean ): Float</ID>
     <ID>CyclomaticComplexMethod:MoodPredictor.kt$MoodPredictor$fun extractFeatures( today: DailyHealth, yesterday: DailyHealth?, cyclePhase: CyclePhase, dayOfCycle: Float ): FloatArray</ID>
     <ID>CyclomaticComplexMethod:SuggestionEngine.kt$SuggestionEngine$fun generate(data: AnalysisData): List&lt;Suggestion&gt;</ID>
+    <ID>CyclomaticComplexMethod:TrendAnalyzer.kt$TrendAnalyzer$fun computeTrends( currentRecords: List&lt;DailyHealth&gt;, previousRecords: List&lt;DailyHealth&gt; ): List&lt;DimensionTrend&gt;</ID>
     <ID>ExpressionBodySyntax:FeatureExtractor.kt$FeatureExtractor$return if (std != 0f) (value - mean) / std else 0f</ID>
     <ID>ExpressionBodySyntax:FeatureExtractor.kt$FeatureExtractor$return normalizedValue * outputStd + outputMean</ID>
     <ID>ExpressionBodySyntax:PredictionLogger.kt$PredictionLogger$return predictionLogDao.getMeanAbsoluteError(userId)</ID>
@@ -15,31 +19,23 @@
     <ID>ExpressionBodySyntax:TFLiteModule.kt$TFLiteModule$return MoodPredictor(tFLiteManager, stringResolver)</ID>
     <ID>ExpressionBodySyntax:TFLiteModule.kt$TFLiteModule$return PredictionEnhancer(tFLiteManager, featureExtractor, stringResolver)</ID>
     <ID>ExpressionBodySyntax:TFLiteModule.kt$TFLiteModule$return TFLiteManager(context)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable fun AnalysisScreen( onNavigateToReport: () -&gt; Unit = {}, viewModel: AnalysisViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun AnalysisContent( data: com.tianshang.health.feature.analysis.domain.AnalysisData, isFemale: Boolean, onNavigateToReport: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun CalorieBalanceSection(balance: com.tianshang.health.feature.analysis.domain.CalorieBalance)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun ErrorContent(message: String, onRetry: () -&gt; Unit)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun ExerciseSection(exercise: com.tianshang.health.feature.analysis.domain.WeeklyExercise)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun LoadingContent()</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun NutritionSection(nutrition: com.tianshang.health.feature.analysis.domain.WeeklyNutrition)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun PhaseSection(comparisons: List&lt;com.tianshang.health.feature.analysis.domain.PhaseComparison&gt;)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun SectionHeader(icon: ImageVector, title: String)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun SleepSection(sleep: com.tianshang.health.feature.analysis.domain.WeeklySleep)</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun StatItem( label: String, value: String, modifier: Modifier = Modifier, valueColor: androidx.compose.ui.graphics.Color = androidx.compose.ui.graphics.Color.Unspecified )</ID>
-    <ID>FunctionNaming:DonutChart.kt$@Composable fun DonutChart( slices: List&lt;DonutSlice&gt;, centerLabel: String, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:DonutChart.kt$@Composable fun SimpleBarChart( data: List&lt;DailyValue&gt;, color: Color, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:ReportScreen.kt$@Composable fun ReportScreen( viewModel: ReportViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:SuggestionCard.kt$@Composable fun SuggestionCard( suggestion: Suggestion, modifier: Modifier = Modifier )</ID>
     <ID>LongMethod:ReportScreen.kt$@Composable fun ReportScreen( viewModel: ReportViewModel = hiltViewModel() )</ID>
     <ID>LongMethod:SuggestionEngine.kt$SuggestionEngine$fun generate(data: AnalysisData): List&lt;Suggestion&gt;</ID>
     <ID>LongParameterList:MoodPredictorTest.kt$MoodPredictorTest$( steps: Int? = 8000, exerciseMinutes: Int? = 30, sleepHours: Float? = 7.5f, deepSleepHours: Float? = 1.5f, sleepQuality: Int? = 3, caloriesIntake: Float? = 2000f, waterIntake: Float? = 1500f, heartRateResting: Int? = 72, moodScore: Int? = 3, stressLevel: Int? = 3 )</ID>
     <ID>LoopWithTooManyJumpStatements:CrossDimensionEngine.kt$CrossDimensionEngine$for</ID>
     <ID>MagicNumber:AnalysisScreen.kt$0xFF1E88E5</ID>
     <ID>MagicNumber:AnalysisScreen.kt$0xFF43A047</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFF4CAF50</ID>
     <ID>MagicNumber:AnalysisScreen.kt$0xFF5C6BC0</ID>
     <ID>MagicNumber:AnalysisScreen.kt$0xFF8E24AA</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFF9E9E9E</ID>
     <ID>MagicNumber:AnalysisScreen.kt$0xFFE53935</ID>
     <ID>MagicNumber:AnalysisScreen.kt$0xFFFB8C00</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFFFF5252</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$0xFFFFC107</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$4</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$60</ID>
+    <ID>MagicNumber:AnalysisScreen.kt$80</ID>
     <ID>MagicNumber:AnalysisViewModel.kt$AnalysisViewModel$14</ID>
     <ID>MagicNumber:AnalysisViewModel.kt$AnalysisViewModel$7</ID>
     <ID>MagicNumber:AnalyticsEngine.kt$AnalyticsEngine$5</ID>
@@ -96,6 +92,8 @@
     <ID>MagicNumber:SuggestionEngine.kt$SuggestionEngine$100</ID>
     <ID>MagicNumber:SuggestionEngine.kt$SuggestionEngine$300</ID>
     <ID>MagicNumber:TFLiteManager.kt$TFLiteManager$4</ID>
+    <ID>MagicNumber:TrendAnalyzer.kt$TrendAnalyzer$0.05f</ID>
+    <ID>MagicNumber:TrendAnalyzer.kt$TrendAnalyzer$7</ID>
     <ID>MatchingDeclarationName:DonutChart.kt$DonutSlice</ID>
     <ID>MaxLineLength:AnalysisViewModel.kt$AnalysisViewModel$follicularDateRange = Pair(lastPeriodStart.format(DateTimeFormatter.ISO_LOCAL_DATE), follicularEnd.format(DateTimeFormatter.ISO_LOCAL_DATE))</ID>
     <ID>MaxLineLength:AnalysisViewModel.kt$AnalysisViewModel$lutealDateRange = Pair(lutealStart.format(DateTimeFormatter.ISO_LOCAL_DATE), lutealEnd.format(DateTimeFormatter.ISO_LOCAL_DATE))</ID>

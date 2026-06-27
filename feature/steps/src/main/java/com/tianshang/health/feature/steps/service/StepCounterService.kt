@@ -20,6 +20,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.time.LocalDate
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -58,6 +59,7 @@ class StepCounterService : LifecycleService(), SensorEventListener {
     private lateinit var sensorManager: SensorManager
     private var stepCounter: Sensor? = null
     private var lastStepCount = -1L
+    private var lastRecordedDate = ""
     private var isRunning = false
     private var wakeLock: PowerManager.WakeLock? = null
 
@@ -140,6 +142,7 @@ class StepCounterService : LifecycleService(), SensorEventListener {
             cachedTotal > 0 -> cachedTotal
             else -> -1L
         }
+        lastRecordedDate = LocalDate.now().toString()
     }
 
     private fun acquireWakeLock() {
@@ -200,30 +203,55 @@ class StepCounterService : LifecycleService(), SensorEventListener {
         if (event == null) return
 
         val totalSteps = event.values[0].toLong()
+        val currentDate = LocalDate.now().toString()
 
         when {
             lastStepCount < 0 -> {
                 lastStepCount = totalSteps
+                lastRecordedDate = currentDate
                 StepCache.setLastSensorBaseline(this, totalSteps)
+                StepCache.setCachedTotalSteps(this, totalSteps)
+                StepCache.setLastRecordedTotal(this, totalSteps)
+                StepCache.setLastSyncedSensorValue(this, totalSteps)
             }
             totalSteps < lastStepCount -> {
+                // Reboot detected
                 lastStepCount = totalSteps
+                lastRecordedDate = currentDate
                 StepCache.resetAfterReboot(this, totalSteps)
             }
             else -> {
                 val newSteps = totalSteps - lastStepCount
+
+                // Date boundary: if the date changed since last recording,
+                // reset baseline to avoid attributing multi-day steps to today
+                if (lastRecordedDate.isNotEmpty() && lastRecordedDate != currentDate) {
+                    lastStepCount = totalSteps
+                    lastRecordedDate = currentDate
+                    StepCache.setLastSensorBaseline(this, totalSteps)
+                    StepCache.setCachedTotalSteps(this, totalSteps)
+                    StepCache.setLastRecordedTotal(this, totalSteps)
+                    StepCache.setLastSyncedSensorValue(this, totalSteps)
+                    Log.d(TAG, "Date boundary crossed ($lastRecordedDate → $currentDate), baseline reset")
+                    return
+                }
+
                 if (newSteps > HealthConstants.MAX_STEPS_PER_INTERVAL) {
                     Log.w(TAG, "Stale baseline detected: delta=$newSteps, re-baselining")
                     lastStepCount = totalSteps
+                    lastRecordedDate = currentDate
                     StepCache.resetAfterReboot(this, totalSteps)
                 } else if (newSteps > 0) {
                     lastStepCount = totalSteps
+                    lastRecordedDate = currentDate
                     StepCache.setLastSensorBaseline(this, totalSteps)
                     StepCache.setCachedTotalSteps(this, totalSteps)
 
                     lifecycleScope.launch {
                         try {
                             stepsRepository.addSteps(newSteps.toInt())
+                            StepCache.setLastRecordedTotal(this@StepCounterService, totalSteps)
+                            StepCache.setLastSyncedSensorValue(this@StepCounterService, totalSteps)
                             StepNotificationHelper.updateNotification(
                                 this@StepCounterService,
                                 stepsRepository.getCurrentTodaySteps()

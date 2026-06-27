@@ -48,40 +48,29 @@ class StepsRepositoryTest {
     }
 
     @Test
-    fun addSteps_increments_counter_and_updates_existing() = runTest {
+    fun addSteps_increments_counter_and_delegates_to_dao() = runTest {
         coEvery { userRepository.getOrCreateDefault() } returns testUser
-        coEvery { stepsDao.getByDate(1, today) } returns DailySteps(userId = 1, date = today, count = 100)
-        coEvery { stepsDao.addSteps(any(), any(), any(), any()) } returns Unit
+        coEvery { stepsDao.insertOrAddSteps(any(), any(), any()) } returns Unit
 
         repository.initialize()
         repository.addSteps(50)
 
-        assert(repository.getCurrentTodaySteps() == 150)
-        coVerify { stepsDao.addSteps(eq(1), eq(today), eq(50), any()) }
+        assert(repository.getCurrentTodaySteps() == 50)
+        coVerify { stepsDao.insertOrAddSteps(eq(1), eq(today), eq(50)) }
     }
 
     @Test
-    fun addSteps_creates_new_entry_when_none_exists() = runTest {
+    fun addSteps_accumulates_multiple_calls() = runTest {
         coEvery { userRepository.getOrCreateDefault() } returns testUser
-        coEvery { stepsDao.getByDate(1, today) } returns null
-        coEvery { stepsDao.insert(any<DailySteps>()) } returns 1L
-
-        repository.initialize()
-        repository.addSteps(200)
-
-        coVerify { stepsDao.insert(match { it.count == 200 }) }
-    }
-
-    @Test
-    fun addSteps_updates_existing_entry() = runTest {
-        coEvery { userRepository.getOrCreateDefault() } returns testUser
-        coEvery { stepsDao.getByDate(1, today) } returns DailySteps(userId = 1, date = today, count = 300)
-        coEvery { stepsDao.addSteps(any(), any(), any(), any()) } returns Unit
+        coEvery { stepsDao.insertOrAddSteps(any(), any(), any()) } returns Unit
 
         repository.initialize()
         repository.addSteps(100)
+        repository.addSteps(50)
+        repository.addSteps(25)
 
-        coVerify { stepsDao.addSteps(eq(1), eq(today), eq(100), any()) }
+        assert(repository.getCurrentTodaySteps() == 175)
+        coVerify(exactly = 3) { stepsDao.insertOrAddSteps(any(), any(), any()) }
     }
 
     @Test

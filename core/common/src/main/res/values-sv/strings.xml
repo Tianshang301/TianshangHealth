@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Anvandarvillkor</string>
@@ -884,6 +884,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Det gick inte att skapa rapporten</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -895,4 +896,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Bakgrund</string>
+    <string name="wallpaper_customize">Anpassad bakgrund</string>
+    <string name="wallpaper_none">Ingen</string>
+    <string name="wallpaper_presets">Förinställda bakgrunder</string>
+    <string name="wallpaper_gradient">Anpassad gradient</string>
+    <string name="wallpaper_from_gallery">Från galleri</string>
+    <string name="wallpaper_opacity">Opacitet</string>
+    <string name="wallpaper_blur">Oskärpa</string>
+    <string name="wallpaper_gradient_start">Startfärg</string>
+    <string name="wallpaper_gradient_end">Slutfärg</string>
+    <string name="wallpaper_gradient_angle">Vinkel</string>
+    <string name="wallpaper_preset_soft_gradient">Mjuk gradient</string>
+    <string name="wallpaper_preset_warm_glow">Varm glöd</string>
+    <string name="wallpaper_preset_cool_breeze">Sval bris</string>
+    <string name="wallpaper_preset_nature_leaves">Naturliga löv</string>
+    <string name="wallpaper_preset_geometric">Geometrisk</string>
+    <string name="wallpaper_preset_starry">Stjärnklar</string>
+    <string name="wallpaper_select_image">Välj bild</string>
+    <string name="wallpaper_crop_title">Beskär bakgrund</string>
+    <string name="wallpaper_image_selected">Bakgrundsbild inställd</string>
+    <string name="wallpaper_remove">Ta bort bakgrund</string>
+    <string name="wallpaper_description">Anpassa appbakgrunden med förinställningar, gradienter eller dina egna bilder</string>
+    <string name="analysis_section_health_overview">Hälsoöversikt</string>
+    <string name="analysis_composite_score">Sammansatt poäng</string>
+    <string name="analysis_trends">Trender</string>
 </resources>

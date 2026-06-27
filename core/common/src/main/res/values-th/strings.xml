@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">ข้อกำหนดในการให้บริการ</string>
@@ -874,6 +874,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">ไม่สามารถสร้างรายงาน</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -885,4 +886,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">วอลเปเปอร์</string>
+    <string name="wallpaper_customize">วอลเปเปอร์แบบกำหนดเอง</string>
+    <string name="wallpaper_none">ไม่มี</string>
+    <string name="wallpaper_presets">วอลเปเปอร์ที่ตั้งไว้</string>
+    <string name="wallpaper_gradient">เกรเดียนต์แบบกำหนดเอง</string>
+    <string name="wallpaper_from_gallery">จากแกลเลอรี</string>
+    <string name="wallpaper_opacity">ความทึบ</string>
+    <string name="wallpaper_blur">เบลอ</string>
+    <string name="wallpaper_gradient_start">สีเริ่มต้น</string>
+    <string name="wallpaper_gradient_end">สีสิ้นสุด</string>
+    <string name="wallpaper_gradient_angle">มุม</string>
+    <string name="wallpaper_preset_soft_gradient">เกรเดียนต์นุ่มนวล</string>
+    <string name="wallpaper_preset_warm_glow">แสงอบอุ่น</string>
+    <string name="wallpaper_preset_cool_breeze">ลมเย็น</string>
+    <string name="wallpaper_preset_nature_leaves">ใบไม้ธรรมชาติ</string>
+    <string name="wallpaper_preset_geometric">เรขาคณิต</string>
+    <string name="wallpaper_preset_starry">เต็มไปด้วยดวงดาว</string>
+    <string name="wallpaper_select_image">เลือกรูปภาพ</string>
+    <string name="wallpaper_crop_title">ครอบตัดวอลเปเปอร์</string>
+    <string name="wallpaper_image_selected">ตั้งรูปวอลเปเปอร์แล้ว</string>
+    <string name="wallpaper_remove">ลบวอลเปเปอร์</string>
+    <string name="wallpaper_description">ปรับแต่งพื้นหลังแอปด้วยชุดสีที่ตั้งไว้ เกรเดียนต์ หรือรูปภาพของคุณเอง</string>
+    <string name="analysis_section_health_overview">ภาพรวมสุขภาพ</string>
+    <string name="analysis_composite_score">คะแนนรวม</string>
+    <string name="analysis_trends">แนวโน้ม</string>
 </resources>

@@ -34,16 +34,7 @@ object DatabaseModule {
             TianshangDatabase.DATABASE_NAME
         )
             .openHelperFactory(factory)
-            .addMigrations(
-                TianshangDatabase.MIGRATION_2_3,
-                TianshangDatabase.MIGRATION_3_4,
-                TianshangDatabase.MIGRATION_4_5,
-                TianshangDatabase.MIGRATION_5_6,
-                TianshangDatabase.MIGRATION_6_7,
-                TianshangDatabase.MIGRATION_7_8,
-                TianshangDatabase.MIGRATION_8_9,
-                TianshangDatabase.MIGRATION_9_10
-            )
+            .fallbackToDestructiveMigration()
             .build()
     }
 

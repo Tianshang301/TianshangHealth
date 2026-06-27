@@ -3,16 +3,6 @@
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
     <ID>CyclomaticComplexMethod:InsightUiMapper.kt$@Composable private fun InsightData.toInsightItem(): InsightItem?</ID>
-    <ID>FunctionNaming:DashboardScreen.kt$@Composable fun DashboardScreen( onNavigateToPeriod: () -&gt; Unit = {}, onNavigateToSteps: () -&gt; Unit = {}, onNavigateToHealthData: () -&gt; Unit = {}, onNavigateToNutrition: () -&gt; Unit = {}, onNavigateToSleep: () -&gt; Unit = {}, viewModel: DashboardViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:DashboardScreen.kt$@Composable private fun DashboardContent( state: com.tianshang.health.feature.dashboard.viewmodel.DashboardState, onNavigateToPeriod: () -&gt; Unit, onNavigateToSteps: () -&gt; Unit, onNavigateToHealthData: () -&gt; Unit, onNavigateToNutrition: () -&gt; Unit, onNavigateToSleep: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:DashboardScreen.kt$@Composable private fun ErrorContent( message: String, onRetry: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:DashboardScreen.kt$@Composable private fun LoadingContent()</ID>
-    <ID>FunctionNaming:HealthInsightsCard.kt$@Composable fun HealthInsightsCard( insights: InsightResult, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:HealthInsightsCard.kt$@Composable private fun InsightRow(item: InsightItem)</ID>
-    <ID>FunctionNaming:PeriodStatusCard.kt$@Composable fun PeriodStatusCard( currentCycleDay: Int?, isPeriodActive: Boolean, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:QuickActionsCard.kt$@Composable fun QuickActionsCard( showPeriodAction: Boolean, onRecordPeriod: () -&gt; Unit, onRecordSteps: () -&gt; Unit, onRecordHealth: () -&gt; Unit, onRecordNutrition: () -&gt; Unit, onRecordSleep: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:QuickActionsCard.kt$@Composable private fun ActionButton( label: String, icon: @Composable () -&gt; Unit, onClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:StepsOverviewCard.kt$@Composable fun StepsOverviewCard( todaySteps: Int, goal: Int, modifier: Modifier = Modifier )</ID>
     <ID>LongMethod:InsightUiMapper.kt$@Composable private fun InsightData.toInsightItem(): InsightItem?</ID>
     <ID>MagicNumber:DashboardViewModel.kt$DashboardViewModel$5</ID>
     <ID>MagicNumber:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$4</ID>
@@ -24,6 +14,16 @@
     <ID>MagicNumber:InsightUiMapper.kt$1.3f</ID>
     <ID>MagicNumber:InsightUiMapper.kt$100</ID>
     <ID>MagicNumber:InsightUiMapper.kt$100f</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFF0B5F7E</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFF2C3E6B</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFF8E44AD</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFFC0392B</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFFD35400</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFFE0F2F9</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFFE8EEF8</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFFF5E4F0</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFFFDE2E2</ID>
+    <ID>MagicNumber:QuickActionsCard.kt$0xFFFEF3E2</ID>
     <ID>MaxLineLength:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$private suspend</ID>
     <ID>MaximumLineLength:DashboardViewModelTest.kt$DashboardViewModelTest$ </ID>
     <ID>MaximumLineLength:GetHealthInsightsUseCase.kt$GetHealthInsightsUseCase$ </ID>

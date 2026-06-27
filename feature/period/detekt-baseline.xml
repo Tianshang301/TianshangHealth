@@ -7,75 +7,15 @@
     <ID>ExpressionBodySyntax:BmiViewModel.kt$BmiViewModel.Companion$return BmiCategory.entries.firstOrNull { bmi &gt;= it.min &amp;&amp; bmi &lt; it.max } ?: BmiCategory.NORMAL</ID>
     <ID>ExpressionBodySyntax:PredictionEngine.kt$CervicalMucusType.Companion$return entries.find { it.value == value }</ID>
     <ID>ExpressionBodySyntax:PredictionEngine.kt$OvulationTestResult.Companion$return entries.find { it.value == value }</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable fun AnalysisScreen( viewModel: PeriodViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun ErrorContent( message: String, onRetry: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:AnalysisScreen.kt$@Composable private fun LoadingContent()</ID>
-    <ID>FunctionNaming:AppLockScreen.kt$@Composable fun AppLockScreen( onAuthenticated: () -&gt; Unit, onCancel: () -&gt; Unit = {}, modifier: Modifier = Modifier, initialMode: LockMode? = null, viewModel: AppLockViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:AppLockScreen.kt$@Composable private fun KeyButton( text: String, onClick: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:AppLockScreen.kt$@Composable private fun PinDots(length: Int, maxLength: Int)</ID>
-    <ID>FunctionNaming:AppLockScreen.kt$@Composable private fun PinKeypad( onDigit: (Char) -&gt; Unit, onDelete: () -&gt; Unit, onConfirm: () -&gt; Unit, showConfirm: Boolean )</ID>
-    <ID>FunctionNaming:AppLockSettingsScreen.kt$@Composable private fun DelayOption( label: String, selected: Boolean, onClick: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:AppLockSettingsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun AppLockSettingsScreen( onBack: () -&gt; Unit, viewModel: AppLockSettingsViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:BackupScreen.kt$@Composable fun BackupScreen( viewModel: BackupViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:BackupScreen.kt$@Composable private fun BackupCard( icon: ImageVector, title: String, description: String, actionLabel: String, isLoading: Boolean, onClick: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:BmiScreen.kt$@Composable fun BmiScreen( viewModel: BmiViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:BmiScreen.kt$@Composable private fun AddWeightDialog( onDismiss: () -&gt; Unit, onConfirm: (Float) -&gt; Unit )</ID>
-    <ID>FunctionNaming:BmiScreen.kt$@Composable private fun BmiOverviewCard( currentBmi: Float?, category: BmiCategory?, heightCm: Float?, onHeightSave: (Float) -&gt; Unit )</ID>
-    <ID>FunctionNaming:BmiScreen.kt$@Composable private fun BmiRecordCard( record: com.tianshang.health.feature.period.viewmodel.BmiRecord )</ID>
-    <ID>FunctionNaming:CalendarView.kt$@Composable fun CalendarView( selectedDate: LocalDate, onDateSelected: (LocalDate) -&gt; Unit, periodRecords: List&lt;PeriodRecord&gt;, ovulationDate: LocalDate?, fertileWindowStart: LocalDate?, fertileWindowEnd: LocalDate?, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:CalendarView.kt$@Composable private fun CalendarDay( date: LocalDate, isPeriod: Boolean, isOvulation: Boolean, isFertile: Boolean, isSelected: Boolean, isToday: Boolean, onClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:Charts.kt$@Composable fun CycleLengthChart( records: List&lt;PeriodRecord&gt;, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:Charts.kt$@Composable fun PainTrendChart( records: List&lt;PeriodRecord&gt;, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:Charts.kt$@Composable fun StatisticsSummary( records: List&lt;PeriodRecord&gt;, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:Charts.kt$@Composable private fun StatRow(label: String, value: String)</ID>
-    <ID>FunctionNaming:CycleStatusCard.kt$@Composable fun CycleStatusCard( currentCycleDay: Int?, daysUntilNextPeriod: Int?, isPeriodActive: Boolean, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:CycleStatusCard.kt$@Composable fun PredictionCard( nextPeriodDate: String?, ovulationDate: String?, fertileWindow: String?, cycleLength: Int?, confidence: String?, cycleCount: Int, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:CycleStatusCard.kt$@Composable private fun CycleInfoItem( icon: @Composable () -&gt; Unit, value: String, label: String )</ID>
-    <ID>FunctionNaming:CycleStatusCard.kt$@Composable private fun PredictionRow( label: String, value: String, color: Color )</ID>
-    <ID>FunctionNaming:LanguageScreen.kt$@Composable fun LanguageScreen( viewModel: LanguageViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:MaleHealthPlaceholder.kt$@Composable fun MaleHealthPlaceholder( todaySteps: DailySteps?, recentSteps: List&lt;DailySteps&gt; )</ID>
-    <ID>FunctionNaming:MaleHealthPlaceholder.kt$@Composable private fun SimpleBarChart( data: List&lt;Int&gt;, labels: List&lt;String&gt; )</ID>
-    <ID>FunctionNaming:MaleHealthPlaceholder.kt$@Composable private fun StatItem( label: String, value: String, goal: String? = null )</ID>
-    <ID>FunctionNaming:MaleHealthPlaceholder.kt$@Composable private fun StepsOverviewCard( todaySteps: DailySteps?, recentSteps: List&lt;DailySteps&gt; )</ID>
-    <ID>FunctionNaming:PeriodScreen.kt$@Composable fun PeriodScreen( onNavigateToReminders: () -&gt; Unit = {}, viewModel: PeriodViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:PeriodScreen.kt$@Composable private fun ErrorContent( message: String, onRetry: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:PeriodScreen.kt$@Composable private fun LoadingContent()</ID>
-    <ID>FunctionNaming:ProfileComponents.kt$@Composable fun SettingsCard( icon: ImageVector, title: String, description: String, content: @Composable () -&gt; Unit )</ID>
-    <ID>FunctionNaming:ProfileScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ProfileScreen( viewModel: ProfileViewModel = androidx.hilt.navigation.compose.hiltViewModel(), onNavigateToTheme: () -&gt; Unit = {}, onNavigateToLanguage: () -&gt; Unit = {}, onNavigateToBackup: () -&gt; Unit = {}, onNavigateToRecycleBin: () -&gt; Unit = {}, onNavigateToBmi: () -&gt; Unit = {}, onNavigateToAppLock: () -&gt; Unit = {} )</ID>
-    <ID>FunctionNaming:ProfileSecuritySection.kt$@Composable fun ProfileSecuritySection( onNavigateToAppLock: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:RecordForm.kt$@Composable private fun FlowLevelChip( label: String, level: Int, selectedLevel: Int, onSelect: (Int) -&gt; Unit )</ID>
-    <ID>FunctionNaming:RecordForm.kt$@Composable private fun PainLevelChip( label: String, level: Int, selectedLevel: Int, onSelect: (Int) -&gt; Unit )</ID>
-    <ID>FunctionNaming:RecordForm.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun RecordForm( selectedDate: LocalDate, onSave: (LocalDate, Int?, Int?, String?) -&gt; Unit, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:RecycleBinScreen.kt$@Composable fun RecycleBinScreen( viewModel: RecycleBinViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:RecycleBinScreen.kt$@Composable private fun DeletedRecordCard( record: PeriodRecord, onRestore: () -&gt; Unit, onPermanentlyDelete: () -&gt; Unit, isProcessing: Boolean )</ID>
-    <ID>FunctionNaming:RemindersScreen.kt$@Composable fun RemindersScreen( viewModel: ReminderViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:RemindersScreen.kt$@Composable private fun DaysBeforeRow( label: String, value: Int, onValueChange: (Int) -&gt; Unit )</ID>
-    <ID>FunctionNaming:RemindersScreen.kt$@Composable private fun ErrorContent( message: String, onRetry: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:RemindersScreen.kt$@Composable private fun LoadingContent()</ID>
-    <ID>FunctionNaming:RemindersScreen.kt$@Composable private fun ReminderCard( title: String, description: String, enabled: Boolean, onToggle: (Boolean) -&gt; Unit, content: @Composable () -&gt; Unit )</ID>
-    <ID>FunctionNaming:RemindersScreen.kt$@Composable private fun TimePickerRow( label: String, hour: Int, minute: Int, onTimeChange: (Int, Int) -&gt; Unit )</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable fun StepHistorySection( allSteps: List&lt;DailySteps&gt;, stepsToKcal: (Int) -&gt; Float )</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun &lt;T&gt; LabeledBarChart( label: String, data: List&lt;Pair&lt;T, Int&gt;&gt;, labelFormatter: (T) -&gt; String )</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun AllTab(stepsByDate: Map&lt;String, Int&gt;, stepsToKcal: (Int) -&gt; Float)</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun DayTab(stepsByDate: Map&lt;String, Int&gt;, stepsToKcal: (Int) -&gt; Float)</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun MonthTab(stepsByDate: Map&lt;String, Int&gt;, stepsToKcal: (Int) -&gt; Float)</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun NavigatorRow( label: String, onPrev: () -&gt; Unit, onNext: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun SingleRecordCard(steps: Int, kcal: Float)</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun StatColumn(label: String, value: String)</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun WeekTab(stepsByDate: Map&lt;String, Int&gt;, stepsToKcal: (Int) -&gt; Float)</ID>
-    <ID>FunctionNaming:StepHistorySection.kt$@Composable private fun YearTab(stepsByDate: Map&lt;String, Int&gt;, stepsToKcal: (Int) -&gt; Float)</ID>
-    <ID>FunctionNaming:TermsScreen.kt$@Composable fun TermsScreen( onAccept: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:ThemeScreen.kt$@Composable fun ThemeScreen( viewModel: ThemeViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:ThemeScreen.kt$@Composable private fun HslSlider( label: String, value: Float, valueRange: ClosedFloatingPointRange&lt;Float&gt;, onValueChange: (Float) -&gt; Unit )</ID>
-    <ID>FunctionNaming:YearPickerSheet.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun YearPickerBottomSheet( visible: Boolean, onDismiss: () -&gt; Unit, onConfirm: (Int) -&gt; Unit, initialYear: Int, minYear: Int = 1900, maxYear: Int )</ID>
     <ID>ImplicitDefaultLocale:BmiScreen.kt$String.format("%.1f", currentBmi)</ID>
     <ID>ImplicitDefaultLocale:RemindersScreen.kt$String.format("%02d", hour)</ID>
     <ID>ImplicitDefaultLocale:RemindersScreen.kt$String.format("%02d", minute)</ID>
-    <ID>ImplicitDefaultLocale:StepHistorySection.kt$String.format("%.1fk", steps / 1000.0)</ID>
     <ID>LongMethod:AppLockScreen.kt$@Composable fun AppLockScreen( onAuthenticated: () -&gt; Unit, onCancel: () -&gt; Unit = {}, modifier: Modifier = Modifier, initialMode: LockMode? = null, viewModel: AppLockViewModel = hiltViewModel() )</ID>
     <ID>LongMethod:AppLockSettingsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun AppLockSettingsScreen( onBack: () -&gt; Unit, viewModel: AppLockSettingsViewModel = hiltViewModel() )</ID>
     <ID>LongMethod:BackupScreen.kt$@Composable fun BackupScreen( viewModel: BackupViewModel = hiltViewModel() )</ID>
+    <ID>LongMethod:PeriodScreen.kt$@Composable fun PeriodScreen( onNavigateToReminders: () -&gt; Unit = {}, viewModel: PeriodViewModel = hiltViewModel() )</ID>
     <ID>LongMethod:ProfileScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ProfileScreen( viewModel: ProfileViewModel = androidx.hilt.navigation.compose.hiltViewModel(), onNavigateToTheme: () -&gt; Unit = {}, onNavigateToLanguage: () -&gt; Unit = {}, onNavigateToBackup: () -&gt; Unit = {}, onNavigateToRecycleBin: () -&gt; Unit = {}, onNavigateToBmi: () -&gt; Unit = {}, onNavigateToAppLock: () -&gt; Unit = {} )</ID>
+    <ID>LongMethod:ThemeScreen.kt$@Composable fun ThemeScreen( viewModel: ThemeViewModel = hiltViewModel() )</ID>
     <ID>LongParameterList:CalendarView.kt$( date: LocalDate, isPeriod: Boolean, isOvulation: Boolean, isFertile: Boolean, isSelected: Boolean, isToday: Boolean, onClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
     <ID>MagicNumber:AppLockScreen.kt$0.6f</ID>
     <ID>MagicNumber:AppLockSettingsScreen.kt$300_000L</ID>
@@ -112,8 +52,6 @@
     <ID>MagicNumber:ReminderWorkers.kt$OvulationReminderWorker.Companion$24</ID>
     <ID>MagicNumber:ReminderWorkers.kt$PeriodReminderWorker.Companion$24</ID>
     <ID>MagicNumber:ReminderWorkers.kt$PmsReminderWorker.Companion$24</ID>
-    <ID>MagicNumber:StepHistorySection.kt$1000</ID>
-    <ID>MagicNumber:StepHistorySection.kt$1000.0</ID>
     <ID>MagicNumber:StepHistorySection.kt$4</ID>
     <ID>MagicNumber:StepHistorySection.kt$5</ID>
     <ID>MagicNumber:StepHistorySection.kt$6</ID>
@@ -121,6 +59,7 @@
     <ID>MagicNumber:TermsScreen.kt$5000</ID>
     <ID>MagicNumber:ThemeScreen.kt$100</ID>
     <ID>MagicNumber:ThemeScreen.kt$3</ID>
+    <ID>MagicNumber:ThemeScreen.kt$6</ID>
     <ID>MaximumLineLength:BmiViewModel.kt$BmiViewModel$ </ID>
     <ID>MaximumLineLength:PeriodScreen.kt$ </ID>
     <ID>MaximumLineLength:PeriodViewModel.kt$PeriodViewModel$ </ID>
@@ -144,6 +83,7 @@
     <ID>UnnecessaryParentheses:StepHistorySection.kt$((d.dayOfMonth - 1) / 7)</ID>
     <ID>UnusedPrivateProperty:CalendarView.kt$val lastDayOfMonth = currentMonth.atEndOfMonth()</ID>
     <ID>UnusedPrivateProperty:PredictionEngineTest.kt$PredictionEngineTest$val cycleLen = 28L</ID>
+    <ID>UnusedPrivateProperty:ThemeScreen.kt$val context = LocalContext.current</ID>
     <ID>UseCheckOrError:BackupViewModel.kt$BackupViewModel$throw IllegalStateException("Cannot open file for reading")</ID>
     <ID>UseCheckOrError:BackupViewModel.kt$BackupViewModel$throw IllegalStateException("Cannot open file for writing")</ID>
     <ID>UseCheckOrError:BmiViewModel.kt$BmiViewModel$throw IllegalStateException("No user")</ID>

@@ -32,6 +32,11 @@ class NumberFormatUtilsTest {
     }
 
     @Test
+    fun `formatCompactNumber zh-CN below ten thousand returns exact number`() {
+        assertEquals("5,000", NumberFormatUtils.formatCompactNumber(5000, Locale.SIMPLIFIED_CHINESE))
+    }
+
+    @Test
     fun `formatCompactNumber zh-CN at ten thousand returns wan`() {
         assertEquals("1万", NumberFormatUtils.formatCompactNumber(10_000, Locale.SIMPLIFIED_CHINESE))
     }

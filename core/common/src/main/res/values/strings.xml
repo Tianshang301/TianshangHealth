@@ -639,6 +639,22 @@
     <string name="sleep_elapsed">%dh %dm elapsed</string>
     <string name="sleep_sleeping">Sleeping...</string>
     <string name="sleep_waketime_btn">Wake up</string>
+    <string name="sleep_schedule">Sleep Schedule</string>
+    <string name="sleep_manual_input">Manual Input</string>
+    <string name="sleep_timer_mode">Timer Mode</string>
+    <string name="sleep_bedtime_hint">HH:mm</string>
+    <string name="sleep_waketime_hint">HH:mm</string>
+    <string name="sleep_latency">Latency (min)</string>
+    <string name="sleep_wake_count">Wake-ups</string>
+    <string name="sleep_consistency_title">Sleep Consistency</string>
+    <string name="sleep_consistency_excellent">Excellent</string>
+    <string name="sleep_consistency_fair">Good</string>
+    <string name="sleep_consistency_poor">Irregular</string>
+    <string name="sleep_consistency_bedtime">Bedtime</string>
+    <string name="sleep_consistency_waketime">Wake Time</string>
+    <string name="sleep_consistency_duration">Duration</string>
+    <string name="sleep_quality_index">Sleep Quality Index</string>
+    <string name="sleep_insight_title">Sleep Insights</string>
 
     <string name="pattern_exhaustion_title">Physical Exhaustion Detected</string>
     <string name="pattern_exhaustion_desc">Low sleep, high stress, and low mood suggest burnout risk. Consider rest days.</string>
@@ -653,6 +669,9 @@
 
     <!-- Analysis Center -->
     <string name="analysis_section_suggestions">Smart Suggestions</string>
+    <string name="analysis_section_health_overview">Health Overview</string>
+    <string name="analysis_composite_score">Composite Score</string>
+    <string name="analysis_trends">Trends</string>
     <string name="analysis_section_nutrition">Nutrition Analysis</string>
     <string name="analysis_section_calorie_balance">Calorie Balance</string>
     <string name="analysis_section_exercise">Exercise Analysis</string>
@@ -869,6 +888,7 @@
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Failed to generate report</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
     <plurals name="days_count">
         <item quantity="one">%d day</item>
@@ -884,4 +904,27 @@
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Wallpaper</string>
+    <string name="wallpaper_customize">Custom Wallpaper</string>
+    <string name="wallpaper_none">None</string>
+    <string name="wallpaper_presets">Preset Wallpapers</string>
+    <string name="wallpaper_gradient">Custom Gradient</string>
+    <string name="wallpaper_from_gallery">From Gallery</string>
+    <string name="wallpaper_opacity">Opacity</string>
+    <string name="wallpaper_blur">Blur</string>
+    <string name="wallpaper_gradient_start">Start Color</string>
+    <string name="wallpaper_gradient_end">End Color</string>
+    <string name="wallpaper_gradient_angle">Angle</string>
+    <string name="wallpaper_preset_soft_gradient">Soft Gradient</string>
+    <string name="wallpaper_preset_warm_glow">Warm Glow</string>
+    <string name="wallpaper_preset_cool_breeze">Cool Breeze</string>
+    <string name="wallpaper_preset_nature_leaves">Nature Leaves</string>
+    <string name="wallpaper_preset_geometric">Geometric</string>
+    <string name="wallpaper_preset_starry">Starry</string>
+    <string name="wallpaper_select_image">Select Image</string>
+    <string name="wallpaper_crop_title">Crop Wallpaper</string>
+    <string name="wallpaper_image_selected">Wallpaper image set</string>
+    <string name="wallpaper_remove">Remove Wallpaper</string>
+    <string name="wallpaper_description">Customize your app background with presets, gradients, or your own images</string>
 </resources>

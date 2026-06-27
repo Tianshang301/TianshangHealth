@@ -10,8 +10,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DirectionsWalk
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -24,6 +22,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
 import com.tianshang.health.core.common.ui.components.CompactNumberText
+import com.tianshang.health.core.common.ui.glass.GlassCard
+import com.tianshang.health.core.common.ui.glass.GlassVariant
 
 @Composable
 fun StepsOverviewCard(
@@ -33,11 +33,10 @@ fun StepsOverviewCard(
 ) {
     val progress = if (goal > 0) (todaySteps.toFloat() / goal).coerceIn(0f, 1f) else 0f
 
-    Card(
-        modifier = modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer
-        )
+    GlassCard(
+        modifier = modifier,
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(
             modifier = Modifier

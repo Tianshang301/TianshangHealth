@@ -18,8 +18,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.EdgePosition
+import com.tianshang.health.core.common.ui.glass.GlassCard
+import com.tianshang.health.core.common.ui.glass.GlassVariant
+import com.tianshang.health.core.common.ui.glass.ScrollEdgeEffect
 import com.tianshang.health.core.common.util.NumberFormatUtils
 import com.tianshang.health.feature.analysis.domain.AnalysisUiState
+import com.tianshang.health.feature.analysis.domain.CrossDimensionReport
+import com.tianshang.health.feature.analysis.domain.DimensionTrend
+import com.tianshang.health.feature.analysis.domain.PatternSeverity
 import com.tianshang.health.feature.analysis.ui.charts.DonutChart
 import com.tianshang.health.feature.analysis.ui.charts.DonutSlice
 import com.tianshang.health.feature.analysis.ui.charts.SimpleBarChart
@@ -46,98 +53,117 @@ private fun AnalysisContent(
     isFemale: Boolean,
     onNavigateToReport: () -> Unit
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState())
-            .padding(16.dp)
-    ) {
-        Text(
-            text = stringResource(R.string.analysis_title),
-            style = MaterialTheme.typography.headlineMedium,
-            fontWeight = FontWeight.Bold
-        )
-        Spacer(modifier = Modifier.height(16.dp))
-
-        if (data.suggestions.isNotEmpty()) {
-            SectionHeader(icon = Icons.Default.Lightbulb, title = stringResource(R.string.analysis_section_suggestions))
-            Spacer(modifier = Modifier.height(8.dp))
-            data.suggestions.forEach { suggestion ->
-                SuggestionCard(suggestion = suggestion)
-                Spacer(modifier = Modifier.height(6.dp))
-            }
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-
-        data.nutrition?.let { nutrition ->
-            SectionHeader(icon = Icons.Default.LocalDining, title = stringResource(R.string.analysis_section_nutrition))
-            Spacer(modifier = Modifier.height(8.dp))
-            NutritionSection(nutrition)
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-
-        data.calorieBalance?.let { balance ->
-            SectionHeader(
-                icon = Icons.Default.LocalFireDepartment,
-                title = stringResource(R.string.analysis_section_calorie_balance)
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            CalorieBalanceSection(balance)
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-
-        data.exercise?.let { exercise ->
-            SectionHeader(
-                icon = Icons.Default.DirectionsRun,
-                title = stringResource(R.string.analysis_section_exercise)
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            ExerciseSection(exercise)
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-
-        data.sleep?.let { sleep ->
-            SectionHeader(icon = Icons.Default.Bedtime, title = stringResource(R.string.analysis_section_sleep))
-            Spacer(modifier = Modifier.height(8.dp))
-            SleepSection(sleep)
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-
-        if (data.phaseComparisons.isNotEmpty() && isFemale) {
-            SectionHeader(
-                icon = Icons.Default.EnergySavingsLeaf,
-                title = stringResource(R.string.analysis_section_phase)
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            PhaseSection(data.phaseComparisons)
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-
-        if (data.nutrition == null && data.sleep == null && data.exercise == null) {
-            Box(
-                modifier = Modifier.fillMaxWidth().padding(32.dp),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = stringResource(R.string.analysis_no_data),
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-            }
-        }
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Button(
-            onClick = onNavigateToReport,
-            modifier = Modifier.fillMaxWidth()
+    Box(modifier = Modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp)
         ) {
-            Icon(Icons.Default.Analytics, contentDescription = null)
-            Spacer(modifier = Modifier.width(8.dp))
-            Text(stringResource(R.string.export_report))
-        }
+            Text(
+                text = stringResource(R.string.analysis_title),
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(modifier = Modifier.height(16.dp))
 
-        Spacer(modifier = Modifier.height(32.dp))
+            if (data.suggestions.isNotEmpty()) {
+                SectionHeader(
+                    icon = Icons.Default.Lightbulb,
+                    title = stringResource(R.string.analysis_section_suggestions)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                data.suggestions.forEach { suggestion ->
+                    SuggestionCard(suggestion = suggestion)
+                    Spacer(modifier = Modifier.height(6.dp))
+                }
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            data.nutrition?.let { nutrition ->
+                SectionHeader(
+                    icon = Icons.Default.LocalDining,
+                    title = stringResource(R.string.analysis_section_nutrition)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                NutritionSection(nutrition)
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            data.calorieBalance?.let { balance ->
+                SectionHeader(
+                    icon = Icons.Default.LocalFireDepartment,
+                    title = stringResource(R.string.analysis_section_calorie_balance)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                CalorieBalanceSection(balance)
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            data.exercise?.let { exercise ->
+                SectionHeader(
+                    icon = Icons.Default.DirectionsRun,
+                    title = stringResource(R.string.analysis_section_exercise)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                ExerciseSection(exercise)
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            data.sleep?.let { sleep ->
+                SectionHeader(icon = Icons.Default.Bedtime, title = stringResource(R.string.analysis_section_sleep))
+                Spacer(modifier = Modifier.height(8.dp))
+                SleepSection(sleep)
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            data.crossDimensionReport?.let { report ->
+                SectionHeader(
+                    icon = Icons.Default.Favorite,
+                    title = stringResource(R.string.analysis_section_health_overview)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                HealthOverviewCard(report)
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            if (data.phaseComparisons.isNotEmpty() && isFemale) {
+                SectionHeader(
+                    icon = Icons.Default.EnergySavingsLeaf,
+                    title = stringResource(R.string.analysis_section_phase)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                PhaseSection(data.phaseComparisons)
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            if (data.nutrition == null && data.sleep == null && data.exercise == null) {
+                Box(
+                    modifier = Modifier.fillMaxWidth().padding(32.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = stringResource(R.string.analysis_no_data),
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Button(
+                onClick = onNavigateToReport,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Icon(Icons.Default.Analytics, contentDescription = null)
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(stringResource(R.string.export_report))
+            }
+
+            Spacer(modifier = Modifier.height(32.dp))
+        }
+        ScrollEdgeEffect(position = EdgePosition.Bottom)
     }
 }
 
@@ -160,9 +186,10 @@ private fun SectionHeader(icon: ImageVector, title: String) {
 
 @Composable
 private fun NutritionSection(nutrition: com.tianshang.health.feature.analysis.domain.WeeklyNutrition) {
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(modifier = Modifier.padding(12.dp)) {
             Row(modifier = Modifier.fillMaxWidth()) {
@@ -219,9 +246,10 @@ private fun NutritionSection(nutrition: com.tianshang.health.feature.analysis.do
 
 @Composable
 private fun CalorieBalanceSection(balance: com.tianshang.health.feature.analysis.domain.CalorieBalance) {
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(modifier = Modifier.padding(12.dp)) {
             Row(modifier = Modifier.fillMaxWidth()) {
@@ -283,9 +311,10 @@ private fun CalorieBalanceSection(balance: com.tianshang.health.feature.analysis
 
 @Composable
 private fun ExerciseSection(exercise: com.tianshang.health.feature.analysis.domain.WeeklyExercise) {
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(modifier = Modifier.padding(12.dp)) {
             Row(modifier = Modifier.fillMaxWidth()) {
@@ -333,10 +362,214 @@ private fun ExerciseSection(exercise: com.tianshang.health.feature.analysis.doma
 }
 
 @Composable
-private fun SleepSection(sleep: com.tianshang.health.feature.analysis.domain.WeeklySleep) {
-    Card(
+private fun HealthOverviewCard(report: CrossDimensionReport) {
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
+    ) {
+        Column(modifier = Modifier.padding(12.dp)) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = stringResource(R.string.analysis_composite_score),
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.Bold
+                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    val scoreColor = when {
+                        report.healthScore.overallScore >= 80 -> Color(0xFF4CAF50)
+                        report.healthScore.overallScore >= 60 -> Color(0xFFFFC107)
+                        else -> Color(0xFFFF5252)
+                    }
+                    Text(
+                        text = "${report.healthScore.overallScore}",
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = scoreColor
+                    )
+                    Spacer(modifier = Modifier.width(4.dp))
+                    Text(
+                        text = when {
+                            report.healthScore.overallScore >= 80 -> stringResource(
+                                R.string.sleep_consistency_excellent
+                            )
+                            report.healthScore.overallScore >= 60 -> stringResource(R.string.sleep_consistency_fair)
+                            else -> stringResource(R.string.sleep_consistency_poor)
+                        },
+                        style = MaterialTheme.typography.bodySmall,
+                        color = scoreColor
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Row(modifier = Modifier.fillMaxWidth()) {
+                DimensionScoreItem(
+                    label = stringResource(R.string.nav_sleep),
+                    score = report.healthScore.sleepScore,
+                    modifier = Modifier.weight(1f)
+                )
+                DimensionScoreItem(
+                    label = stringResource(R.string.nutrition_calories),
+                    score = report.healthScore.nutritionScore,
+                    modifier = Modifier.weight(1f)
+                )
+                DimensionScoreItem(
+                    label = stringResource(R.string.steps_label),
+                    score = report.healthScore.activityScore,
+                    modifier = Modifier.weight(1f)
+                )
+                DimensionScoreItem(
+                    label = stringResource(R.string.analysis_mood),
+                    score = report.healthScore.moodScore,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+
+            if (report.trends.isNotEmpty()) {
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(
+                    text = stringResource(R.string.analysis_trends),
+                    style = MaterialTheme.typography.labelLarge,
+                    fontWeight = FontWeight.Medium
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                TrendRow(trends = report.trends)
+            }
+
+            if (report.patterns.isNotEmpty()) {
+                Spacer(modifier = Modifier.height(8.dp))
+                report.patterns.forEach { pattern ->
+                    val patternColor = when (pattern.severity) {
+                        PatternSeverity.ALERT -> Color(0xFFFF5252)
+                        PatternSeverity.WARNING -> Color(0xFFFFC107)
+                        PatternSeverity.INFO -> Color(0xFF4CAF50)
+                    }
+                    Row(
+                        modifier = Modifier.padding(vertical = 2.dp),
+                        verticalAlignment = Alignment.Top
+                    ) {
+                        Icon(
+                            imageVector = when (pattern.severity) {
+                                PatternSeverity.ALERT -> Icons.Default.Warning
+                                PatternSeverity.WARNING -> Icons.Default.Info
+                                PatternSeverity.INFO -> Icons.Default.CheckCircle
+                            },
+                            contentDescription = null,
+                            tint = patternColor,
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = stringResource(pattern.titleResId),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = patternColor
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun DimensionScoreItem(label: String, score: Int, modifier: Modifier = Modifier) {
+    val color = when {
+        score >= 80 -> Color(0xFF4CAF50)
+        score >= 60 -> Color(0xFFFFC107)
+        else -> Color(0xFFFF5252)
+    }
+    Column(
+        modifier = modifier,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Box(
+            modifier = Modifier.size(48.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            CircularProgressIndicator(
+                progress = { score / 100f },
+                modifier = Modifier.fillMaxSize(),
+                color = color,
+                trackColor = MaterialTheme.colorScheme.surfaceVariant,
+                strokeWidth = 4.dp
+            )
+            Text(
+                text = "$score",
+                style = MaterialTheme.typography.labelMedium,
+                fontWeight = FontWeight.Bold,
+                color = color
+            )
+        }
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = label,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            maxLines = 1
+        )
+    }
+}
+
+@Composable
+private fun TrendRow(trends: List<DimensionTrend>) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        trends.take(4).forEach { trend ->
+            val trendLabel = when (trend.dimension) {
+                "sleep" -> stringResource(R.string.nav_sleep)
+                "steps" -> stringResource(R.string.steps_label)
+                "exercise" -> stringResource(R.string.nav_fitness)
+                "mood" -> stringResource(R.string.analysis_mood)
+                "stress" -> stringResource(R.string.analysis_stress)
+                "water" -> stringResource(R.string.nutrition_water)
+                "calories" -> stringResource(R.string.nutrition_calories)
+                else -> trend.dimension
+            }
+            val arrow = when (trend.direction) {
+                DimensionTrend.Direction.IMPROVING -> "\u2191"
+                DimensionTrend.Direction.DECLINING -> "\u2193"
+                DimensionTrend.Direction.STABLE -> "\u2192"
+            }
+            val trendColor = when (trend.direction) {
+                DimensionTrend.Direction.IMPROVING -> Color(0xFF4CAF50)
+                DimensionTrend.Direction.DECLINING -> Color(0xFFFF5252)
+                DimensionTrend.Direction.STABLE -> Color(0xFF9E9E9E)
+            }
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    text = arrow,
+                    fontSize = MaterialTheme.typography.titleLarge.fontSize,
+                    color = trendColor
+                )
+                Text(
+                    text = trendLabel,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun SleepSection(sleep: com.tianshang.health.feature.analysis.domain.WeeklySleep) {
+    GlassCard(
+        modifier = Modifier.fillMaxWidth(),
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(modifier = Modifier.padding(12.dp)) {
             Row(modifier = Modifier.fillMaxWidth()) {
@@ -374,9 +607,10 @@ private fun SleepSection(sleep: com.tianshang.health.feature.analysis.domain.Wee
 
 @Composable
 private fun PhaseSection(comparisons: List<com.tianshang.health.feature.analysis.domain.PhaseComparison>) {
-    Card(
+    GlassCard(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(modifier = Modifier.padding(12.dp)) {
             comparisons.forEach { phase ->

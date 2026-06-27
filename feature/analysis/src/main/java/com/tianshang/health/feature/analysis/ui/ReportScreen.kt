@@ -15,7 +15,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -32,14 +32,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.GlassCard
+import com.tianshang.health.core.common.ui.glass.GlassVariant
 import com.tianshang.health.feature.analysis.viewmodel.ReportUiState
 import com.tianshang.health.feature.analysis.viewmodel.ReportViewModel
+import com.tianshang.health.feature.analysis.viewmodel.ReportViewModel.ReportSection
 
 @Composable
 fun ReportScreen(
     viewModel: ReportViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val selectedSections by viewModel.selectedSections.collectAsState()
     val context = LocalContext.current
 
     Column(
@@ -64,11 +68,10 @@ fun ReportScreen(
         Spacer(modifier = Modifier.height(8.dp))
 
         // Report period selection
-        Card(
+        GlassCard(
             modifier = Modifier.fillMaxWidth(),
-            colors = CardDefaults.cardColors(
-                containerColor = MaterialTheme.colorScheme.primaryContainer
-            )
+            variant = GlassVariant.Regular,
+            cornerRadius = 28.dp
         ) {
             Column(
                 modifier = Modifier.padding(16.dp),
@@ -88,12 +91,49 @@ fun ReportScreen(
             }
         }
 
+        // Section selection
+        Card(modifier = Modifier.fillMaxWidth()) {
+            Column(modifier = Modifier.padding(16.dp)) {
+                Text(
+                    text = stringResource(R.string.report_includes),
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.Bold
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                val sections = viewModel.availableSections
+                sections.forEach { section ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Checkbox(
+                            checked = section in selectedSections,
+                            onCheckedChange = { viewModel.toggleSection(section) }
+                        )
+                        Text(
+                            text = stringResource(
+                                when (section) {
+                                    ReportSection.PERIOD -> R.string.pdf_period_summary
+                                    ReportSection.ACTIVITY -> R.string.pdf_activity_summary
+                                    ReportSection.SLEEP -> R.string.pdf_sleep_summary
+                                    ReportSection.NUTRITION -> R.string.pdf_nutrition_summary
+                                }
+                            ),
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+                    }
+                }
+            }
+        }
+
         // Action buttons
         when (val state = uiState) {
             is ReportUiState.Idle -> {
+                val hasSelection = selectedSections.isNotEmpty()
                 Button(
                     onClick = { viewModel.generateReport(30) },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    enabled = hasSelection
                 ) {
                     Text(stringResource(R.string.report_generate))
                 }
@@ -171,11 +211,10 @@ fun ReportScreen(
         Spacer(modifier = Modifier.height(16.dp))
 
         // Privacy notice
-        Card(
+        GlassCard(
             modifier = Modifier.fillMaxWidth(),
-            colors = CardDefaults.cardColors(
-                containerColor = MaterialTheme.colorScheme.secondaryContainer
-            )
+            variant = GlassVariant.Regular,
+            cornerRadius = 28.dp
         ) {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text(

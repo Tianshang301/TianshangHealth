@@ -38,6 +38,12 @@ data class DailyHealth(
     val deepSleepHours: Float? = null,
     val sleepQuality: Int? = null, // 1-5
 
+    // Sleep schedule data
+    val bedTime: String? = null, // HH:mm 24h format
+    val wakeTime: String? = null, // HH:mm 24h format
+    val sleepLatency: Int? = null, // minutes to fall asleep
+    val wakeCount: Int? = null, // nighttime wake count
+
     // Nutrition data
     val caloriesIntake: Float? = null,
     val waterIntake: Float? = null, // in ml

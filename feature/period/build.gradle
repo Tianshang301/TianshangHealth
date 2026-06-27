@@ -71,6 +71,7 @@ dependencies {
 
     implementation libs.mpandroidchart
     implementation libs.wheelpicker
+    implementation libs.image.cropper
     
     debugImplementation libs.compose.ui.tooling
     debugImplementation libs.compose.ui.test.manifest

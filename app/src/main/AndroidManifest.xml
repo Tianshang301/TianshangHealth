@@ -39,6 +39,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TianshangHealth.Cropper"
+            tools:replace="android:theme" />
         
         <provider
             android:name="androidx.core.content.FileProvider"

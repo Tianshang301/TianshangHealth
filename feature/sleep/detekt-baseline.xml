@@ -2,20 +2,77 @@
 <SmellBaseline>
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
+    <ID>CyclomaticComplexMethod:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$private fun scoreContinuity(latencies: List&lt;Int?&gt;, wakeCounts: List&lt;Int?&gt;): Int</ID>
+    <ID>CyclomaticComplexMethod:SleepRepository.kt$SleepRepository$suspend fun getSleepConsistency(days: Int = 14): SleepConsistencyScore?</ID>
     <ID>CyclomaticComplexMethod:SleepTrendChart.kt$@Composable fun SleepTrendChart( data: List&lt;DailyHealth&gt;, modifier: Modifier = Modifier )</ID>
     <ID>ExpressionBodySyntax:SleepTrendChart.kt$return if (isRtl) chartWidth - (stepX * index) else stepX * index</ID>
-    <ID>FunctionNaming:BedWakeTimerCard.kt$@Composable fun BedWakeTimerCard( bedTime: Long?, wakeTime: Long?, onBedTimeClick: () -&gt; Unit, onWakeTimeClick: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:SleepScreen.kt$@Composable private fun SleepHistoryItem(sleep: DailyHealth)</ID>
-    <ID>FunctionNaming:SleepScreen.kt$@Composable private fun SleepInputCard( hoursInput: String, deepHoursInput: String, qualityInput: Int?, onHoursChanged: (String) -&gt; Unit, onDeepHoursChanged: (String) -&gt; Unit, onQualityChanged: (Int) -&gt; Unit, onSave: () -&gt; Unit, isSaving: Boolean )</ID>
-    <ID>FunctionNaming:SleepScreen.kt$@Composable private fun TodaySleepCard(sleep: DailyHealth)</ID>
-    <ID>FunctionNaming:SleepScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SleepScreen( viewModel: SleepViewModel = hiltViewModel() )</ID>
-    <ID>FunctionNaming:SleepTrendChart.kt$@Composable fun SleepCycleCorrelationCard( follicularAvgSleep: Float?, lutealAvgSleep: Float?, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:SleepTrendChart.kt$@Composable fun SleepTrendChart( data: List&lt;DailyHealth&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:SleepScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SleepScreen( viewModel: SleepViewModel = hiltViewModel() )</ID>
+    <ID>LongParameterList:BedWakeTimerCard.kt$( bedTimeStr: String, wakeTimeStr: String, sleepLatencyStr: String, wakeCountStr: String, onBedTimeStrChanged: (String) -&gt; Unit, onWakeTimeStrChanged: (String) -&gt; Unit, onSleepLatencyChanged: (String) -&gt; Unit, onWakeCountChanged: (String) -&gt; Unit )</ID>
+    <ID>LongParameterList:BedWakeTimerCard.kt$( mode: BedWakeMode, onModeToggle: () -&gt; Unit, bedTime: Long?, wakeTime: Long?, onBedTimeClick: () -&gt; Unit, onWakeTimeClick: () -&gt; Unit, bedTimeStr: String = "", wakeTimeStr: String = "", sleepLatencyStr: String = "", wakeCountStr: String = "", onBedTimeStrChanged: (String) -&gt; Unit = {}, onWakeTimeStrChanged: (String) -&gt; Unit = {}, onSleepLatencyChanged: (String) -&gt; Unit = {}, onWakeCountChanged: (String) -&gt; Unit = {}, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:SleepRepository.kt$SleepRepository$( date: String, sleepHours: Float?, deepSleepHours: Float?, sleepQuality: Int?, bedTime: String? = null, wakeTime: String? = null, sleepLatency: Int? = null, wakeCount: Int? = null )</ID>
     <ID>LongParameterList:SleepScreen.kt$( hoursInput: String, deepHoursInput: String, qualityInput: Int?, onHoursChanged: (String) -&gt; Unit, onDeepHoursChanged: (String) -&gt; Unit, onQualityChanged: (Int) -&gt; Unit, onSave: () -&gt; Unit, isSaving: Boolean )</ID>
+    <ID>LongParameterList:SleepScreen.kt$( mode: BedWakeMode, onModeToggle: () -&gt; Unit, bedTimeStr: String, wakeTimeStr: String, sleepLatencyStr: String, wakeCountStr: String, onBedTimeStrChanged: (String) -&gt; Unit, onWakeTimeStrChanged: (String) -&gt; Unit, onSleepLatencyChanged: (String) -&gt; Unit, onWakeCountChanged: (String) -&gt; Unit, timerBedTime: Long?, timerWakeTime: Long?, onTimerBedTimeClick: () -&gt; Unit, onTimerWakeTimeClick: () -&gt; Unit )</ID>
     <ID>MagicNumber:BedWakeTimerCard.kt$3_600_000</ID>
     <ID>MagicNumber:BedWakeTimerCard.kt$3_600_000f</ID>
     <ID>MagicNumber:BedWakeTimerCard.kt$60_000</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$0.15</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$0.25</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$0.5f</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$100</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$14</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$1440f</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$3.0</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$30f</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$50</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$60</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$60f</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$7</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$720f</ID>
+    <ID>MagicNumber:SleepInsightEngine.kt$SleepInsightEngine$80</ID>
+    <ID>MagicNumber:SleepPhaseDetector.kt$SleepPhaseDetector$0.25f</ID>
+    <ID>MagicNumber:SleepPhaseDetector.kt$SleepPhaseDetector$0.65f</ID>
+    <ID>MagicNumber:SleepPhaseDetector.kt$SleepPhaseDetector$180</ID>
+    <ID>MagicNumber:SleepPhaseDetector.kt$SleepPhaseDetector$24</ID>
+    <ID>MagicNumber:SleepPhaseDetector.kt$SleepPhaseDetector$60</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.10f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.15f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.1875f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.25f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.2f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.3125f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.4f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$0.5f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$100</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$100f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$15</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$15f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$20</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$3</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$30</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$30f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$3f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$40</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$50</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$50f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$60</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$60f</ID>
+    <ID>MagicNumber:SleepQualityAnalyzer.kt$SleepQualityAnalyzer$70</ID>
+    <ID>MagicNumber:SleepRepository.kt$SleepRepository$0.2f</ID>
+    <ID>MagicNumber:SleepRepository.kt$SleepRepository$0.4f</ID>
+    <ID>MagicNumber:SleepRepository.kt$SleepRepository$100f</ID>
+    <ID>MagicNumber:SleepRepository.kt$SleepRepository$3</ID>
+    <ID>MagicNumber:SleepRepository.kt$SleepRepository$50f</ID>
+    <ID>MagicNumber:SleepRepository.kt$SleepRepository$60</ID>
+    <ID>MagicNumber:SleepScreen.kt$0xFF4CAF50</ID>
+    <ID>MagicNumber:SleepScreen.kt$0xFFFF5252</ID>
+    <ID>MagicNumber:SleepScreen.kt$0xFFFFC107</ID>
+    <ID>MagicNumber:SleepScreen.kt$100f</ID>
+    <ID>MagicNumber:SleepScreen.kt$3_600_000f</ID>
     <ID>MagicNumber:SleepScreen.kt$5</ID>
+    <ID>MagicNumber:SleepScreen.kt$60</ID>
+    <ID>MagicNumber:SleepScreen.kt$60f</ID>
+    <ID>MagicNumber:SleepScreen.kt$80</ID>
+    <ID>MagicNumber:SleepScreen.kt$80f</ID>
     <ID>MagicNumber:SleepTrendChart.kt$0.3f</ID>
     <ID>MagicNumber:SleepTrendChart.kt$0xFF4CAF50</ID>
     <ID>MagicNumber:SleepTrendChart.kt$0xFFFF5252</ID>
@@ -23,7 +80,12 @@
     <ID>MagicNumber:SleepTrendChart.kt$16f</ID>
     <ID>MagicNumber:SleepTrendChart.kt$4</ID>
     <ID>MagicNumber:SleepTrendChart.kt$7</ID>
+    <ID>MagicNumber:SleepViewModel.kt$SleepViewModel$14</ID>
     <ID>MagicNumber:SleepViewModel.kt$SleepViewModel$7</ID>
+    <ID>MatchingDeclarationName:BedWakeTimerCard.kt$BedWakeMode</ID>
+    <ID>MaximumLineLength:SleepScreen.kt$ </ID>
+    <ID>ReturnCount:SleepPhaseDetector.kt$SleepPhaseDetector$fun estimateDeepSleepWindow(bedTime: String?, wakeTime: String?): SleepPhase?</ID>
+    <ID>ReturnCount:SleepPhaseDetector.kt$SleepPhaseDetector$private fun parseMinutes(time: String): Int?</ID>
     <ID>UnnecessaryParentheses:BedWakeTimerCard.kt$(elapsedMs % 3_600_000)</ID>
     <ID>UnnecessaryParentheses:SleepTrendChart.kt$((day.sleepHours ?: 0f) / maxHours * chartHeight)</ID>
     <ID>UnnecessaryParentheses:SleepTrendChart.kt$(i.toFloat() / maxHours * chartHeight)</ID>

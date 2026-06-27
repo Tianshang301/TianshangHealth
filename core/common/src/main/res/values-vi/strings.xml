@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Đi&#7873;u kho&#7843;n D&#7883;ch v&#7909;</string>
@@ -872,6 +872,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="error_onboarding_required">Vui lòng hoàn tất thiết lập người dùng trước</string>
     <string name="error_load_failed">Tải thất bại</string>
     <string name="error_failed_generate_report">Không thể tạo báo cáo</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
     <!-- Energy balance strings -->
     <string name="nutrition_energy_balance">Cân bằng Năng lượng</string>
@@ -890,4 +891,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Hình nền</string>
+    <string name="wallpaper_customize">Hình nền tùy chỉnh</string>
+    <string name="wallpaper_none">Không</string>
+    <string name="wallpaper_presets">Hình nền cài sẵn</string>
+    <string name="wallpaper_gradient">Chuyển màu tùy chỉnh</string>
+    <string name="wallpaper_from_gallery">Từ thư viện</string>
+    <string name="wallpaper_opacity">Độ mờ</string>
+    <string name="wallpaper_blur">Làm mờ</string>
+    <string name="wallpaper_gradient_start">Màu bắt đầu</string>
+    <string name="wallpaper_gradient_end">Màu kết thúc</string>
+    <string name="wallpaper_gradient_angle">Góc</string>
+    <string name="wallpaper_preset_soft_gradient">Chuyển màu nhẹ nhàng</string>
+    <string name="wallpaper_preset_warm_glow">Ánh sáng ấm áp</string>
+    <string name="wallpaper_preset_cool_breeze">Gió mát</string>
+    <string name="wallpaper_preset_nature_leaves">Lá cây tự nhiên</string>
+    <string name="wallpaper_preset_geometric">Hình học</string>
+    <string name="wallpaper_preset_starry">Đầy sao</string>
+    <string name="wallpaper_select_image">Chọn ảnh</string>
+    <string name="wallpaper_crop_title">Cắt hình nền</string>
+    <string name="wallpaper_image_selected">Đã đặt ảnh nền</string>
+    <string name="wallpaper_remove">Xóa hình nền</string>
+    <string name="wallpaper_description">Tùy chỉnh nền ứng dụng với các mẫu có sẵn, chuyển màu hoặc ảnh của riêng bạn</string>
+    <string name="analysis_section_health_overview">Tổng quan sức khỏe</string>
+    <string name="analysis_composite_score">Điểm tổng hợp</string>
+    <string name="analysis_trends">Xu hướng</string>
 </resources>

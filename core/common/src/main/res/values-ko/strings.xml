@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">천상건강</string>
     <string name="terms_title">이용약관</string>
@@ -817,6 +817,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="error_onboarding_required">먼저 사용자 설정을 완료해주세요</string>
     <string name="error_load_failed">로딩에 실패했습니다</string>
     <string name="error_failed_generate_report">보고서 생성에 실패했습니다</string>
+    <string name="error_failed_save_wallpaper">배경화면 이미지 저장에 실패했습니다</string>
 
     <!-- Navigation & Utility -->
     <string name="previous">이전</string>
@@ -835,4 +836,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">배경화면</string>
+    <string name="wallpaper_customize">맞춤 배경화면</string>
+    <string name="wallpaper_none">없음</string>
+    <string name="wallpaper_presets">프리셋 배경화면</string>
+    <string name="wallpaper_gradient">사용자 정의 그라데이션</string>
+    <string name="wallpaper_from_gallery">갤러리에서</string>
+    <string name="wallpaper_opacity">투명도</string>
+    <string name="wallpaper_blur">흐림</string>
+    <string name="wallpaper_gradient_start">시작 색상</string>
+    <string name="wallpaper_gradient_end">끝 색상</string>
+    <string name="wallpaper_gradient_angle">각도</string>
+    <string name="wallpaper_preset_soft_gradient">부드러운 그라데이션</string>
+    <string name="wallpaper_preset_warm_glow">따뜻한 빛</string>
+    <string name="wallpaper_preset_cool_breeze">시원한 바람</string>
+    <string name="wallpaper_preset_nature_leaves">자연의 잎</string>
+    <string name="wallpaper_preset_geometric">기하학</string>
+    <string name="wallpaper_preset_starry">별빛</string>
+    <string name="wallpaper_select_image">이미지 선택</string>
+    <string name="wallpaper_crop_title">배경화면 자르기</string>
+    <string name="wallpaper_image_selected">배경화면 이미지가 설정되었습니다</string>
+    <string name="wallpaper_remove">배경화면 제거</string>
+    <string name="wallpaper_description">프리셋, 그라데이션 또는 이미지로 앱 배경을 꾸미세요</string>
+    <string name="analysis_section_health_overview">건강 개요</string>
+    <string name="analysis_composite_score">종합 점수</string>
+    <string name="analysis_trends">추세</string>
 </resources>

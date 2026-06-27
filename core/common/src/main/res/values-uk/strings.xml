@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Умови надання послуг</string>
@@ -889,6 +889,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Не вдалося створити звіт</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -900,4 +901,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Шпалери</string>
+    <string name="wallpaper_customize">Користувацькі шпалери</string>
+    <string name="wallpaper_none">Немає</string>
+    <string name="wallpaper_presets">Готові шпалери</string>
+    <string name="wallpaper_gradient">Користувацький градієнт</string>
+    <string name="wallpaper_from_gallery">З галереї</string>
+    <string name="wallpaper_opacity">Непрозорість</string>
+    <string name="wallpaper_blur">Розмиття</string>
+    <string name="wallpaper_gradient_start">Початковий колір</string>
+    <string name="wallpaper_gradient_end">Кінцевий колір</string>
+    <string name="wallpaper_gradient_angle">Кут</string>
+    <string name="wallpaper_preset_soft_gradient">М\'який градієнт</string>
+    <string name="wallpaper_preset_warm_glow">Тепле сяйво</string>
+    <string name="wallpaper_preset_cool_breeze">Прохолодний вітерець</string>
+    <string name="wallpaper_preset_nature_leaves">Природне листя</string>
+    <string name="wallpaper_preset_geometric">Геометричний</string>
+    <string name="wallpaper_preset_starry">Зоряний</string>
+    <string name="wallpaper_select_image">Вибрати зображення</string>
+    <string name="wallpaper_crop_title">Обрізати шпалери</string>
+    <string name="wallpaper_image_selected">Зображення шпалер встановлено</string>
+    <string name="wallpaper_remove">Видалити шпалери</string>
+    <string name="wallpaper_description">Налаштуйте фон додатку за допомогою готових шаблонів, градієнтів або власних зображень</string>
+    <string name="analysis_section_health_overview">Огляд здоровʼя</string>
+    <string name="analysis_composite_score">Загальний бал</string>
+    <string name="analysis_trends">Тенденції</string>
 </resources>

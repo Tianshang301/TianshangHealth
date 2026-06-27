@@ -61,52 +61,140 @@ class SleepRepositoryTest {
     }
 
     @Test
-    fun saveSleep_updates_existing_record() = runTest {
-        val existing = DailyHealth(userId = 1, date = today, sleepHours = 6f, deepSleepHours = 1.5f, sleepQuality = 3)
-        coEvery { dailyHealthDao.getByDate(1, today) } returns existing
-        coEvery { dailyHealthDao.update(any<DailyHealth>()) } returns Unit
+    fun saveSleep_delegates_to_dao() = runTest {
+        coEvery {
+            dailyHealthDao.insertOrUpdateSleep(any(), any(), any(), any(), any(), any(), any(), any(), any())
+        } returns Unit
 
         repository.saveSleep(today, sleepHours = 8f, deepSleepHours = 2f, sleepQuality = 5)
 
         coVerify {
-            dailyHealthDao.update(
-                match {
-                    it.sleepHours == 8f && it.deepSleepHours == 2f && it.sleepQuality == 5
-                }
+            dailyHealthDao.insertOrUpdateSleep(
+                eq(
+                    1L
+                ),
+                eq(today), eq(8f), eq(2f), eq(5), any(), any(), any(), any()
             )
         }
     }
 
     @Test
-    fun saveSleep_inserts_when_no_existing_record() = runTest {
-        coEvery { dailyHealthDao.getByDate(1, today) } returns null
-        coEvery { dailyHealthDao.insert(any<DailyHealth>()) } returns 1L
+    fun saveSleep_passes_bedTime_wakeTime_to_dao() = runTest {
+        coEvery {
+            dailyHealthDao.insertOrUpdateSleep(any(), any(), any(), any(), any(), any(), any(), any(), any())
+        } returns Unit
 
-        repository.saveSleep(today, sleepHours = 7.5f, deepSleepHours = 2f, sleepQuality = 4)
+        repository.saveSleep(
+            today,
+            sleepHours = 7f,
+            deepSleepHours = 2f,
+            sleepQuality = 4,
+            bedTime = "23:00",
+            wakeTime = "07:00",
+            sleepLatency = 15,
+            wakeCount = 1
+        )
 
         coVerify {
-            dailyHealthDao.insert(
-                match {
-                    it.sleepHours == 7.5f && it.deepSleepHours == 2f && it.sleepQuality == 4
-                }
+            dailyHealthDao.insertOrUpdateSleep(
+                eq(1L), eq(today), eq(7f), eq(2f), eq(4),
+                eq("23:00"), eq("07:00"), eq(15), eq(1)
             )
         }
     }
 
     @Test
-    fun saveSleep_partial_update_keeps_existing_values() = runTest {
-        val existing = DailyHealth(userId = 1, date = today, sleepHours = 6f, deepSleepHours = 1.5f, sleepQuality = 3)
-        coEvery { dailyHealthDao.getByDate(1, today) } returns existing
-        coEvery { dailyHealthDao.update(any<DailyHealth>()) } returns Unit
+    fun saveSleep_handles_partial_null_params() = runTest {
+        coEvery {
+            dailyHealthDao.insertOrUpdateSleep(any(), any(), any(), any(), any(), any(), any(), any(), any())
+        } returns Unit
 
-        repository.saveSleep(today, sleepHours = null, deepSleepHours = null, sleepQuality = 5)
+        repository.saveSleep(
+            today,
+            sleepHours = null,
+            deepSleepHours = null,
+            sleepQuality = 5,
+            bedTime = "22:30"
+        )
 
         coVerify {
-            dailyHealthDao.update(
-                match {
-                    it.sleepHours == 6f && it.deepSleepHours == 1.5f && it.sleepQuality == 5
-                }
+            dailyHealthDao.insertOrUpdateSleep(
+                eq(1L), eq(today), any(), any(), eq(5),
+                eq("22:30"), any(), any(), any()
             )
         }
+    }
+
+    @Test
+    fun getSleepConsistency_returns_null_with_insufficient_data() = runTest {
+        val records = listOf(
+            DailyHealth(userId = 1, date = LocalDate.now().minusDays(1).toString(), sleepHours = 7f, bedTime = "23:00"),
+            DailyHealth(userId = 1, date = today, sleepHours = 8f, bedTime = "22:30")
+        )
+        coEvery { dailyHealthDao.getByDateRange(any(), any(), any()) } returns records
+
+        val result = repository.getSleepConsistency(2)
+
+        assert(result == null)
+    }
+
+    @Test
+    fun getSleepConsistency_returns_high_score_with_consistent_data() = runTest {
+        val records = listOf(
+            DailyHealth(
+                userId = 1,
+                date = LocalDate.now().minusDays(4).toString(),
+                sleepHours = 7.5f,
+                bedTime = "23:00",
+                wakeTime = "06:30"
+            ),
+            DailyHealth(
+                userId = 1,
+                date = LocalDate.now().minusDays(3).toString(),
+                sleepHours = 7f,
+                bedTime = "23:15",
+                wakeTime = "06:15"
+            ),
+            DailyHealth(
+                userId = 1,
+                date = LocalDate.now().minusDays(2).toString(),
+                sleepHours = 8f,
+                bedTime = "23:00",
+                wakeTime = "07:00"
+            ),
+            DailyHealth(
+                userId = 1,
+                date = LocalDate.now().minusDays(1).toString(),
+                sleepHours = 7.8f,
+                bedTime = "22:45",
+                wakeTime = "06:45"
+            ),
+            DailyHealth(
+                userId = 1,
+                date = today,
+                sleepHours = 7.2f,
+                bedTime = "23:00",
+                wakeTime = "06:30"
+            )
+        )
+        coEvery { dailyHealthDao.getByDateRange(any(), any(), any()) } returns records
+
+        val result = repository.getSleepConsistency(7)
+
+        assert(result != null)
+        assert(result!!.overallScore > 70f)
+    }
+
+    @Test
+    fun getDateRange_returns_data_from_dao() = runTest {
+        val records = listOf(
+            DailyHealth(userId = 1, date = "2026-06-01", sleepHours = 7f),
+            DailyHealth(userId = 1, date = "2026-06-02", sleepHours = 8f)
+        )
+        coEvery { dailyHealthDao.getByDateRange(1, "2026-06-01", "2026-06-02") } returns records
+
+        val result = repository.getDateRange("2026-06-01", "2026-06-02")
+
+        assert(result.size == 2)
     }
 }

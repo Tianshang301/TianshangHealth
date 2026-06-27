@@ -32,6 +32,7 @@ mockk = "1.13.12"
 coroutines-test = "1.8.1"
 robolectric = "4.13"
 tensorflow-lite = "2.17.0"
+image-cropper = "4.6.0"
 detekt = "1.23.6"
 
 [libraries]
@@ -107,8 +108,9 @@ splashscreen = { group = "androidx.core", name = "core-splashscreen", version.re
 
 # TensorFlow Lite
 tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflow-lite" }
-tensorflow-lite-select-tf-ops = { group = "org.tensorflow", name = "tensorflow-lite-select-tf-ops", version.ref = "tensorflow-lite" }
 
+# Image Cropper
+image-cropper = { group = "com.vanniktech", name = "android-image-cropper", version.ref = "image-cropper" }
 # Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }

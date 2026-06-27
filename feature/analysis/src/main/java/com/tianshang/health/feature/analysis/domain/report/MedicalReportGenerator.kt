@@ -84,7 +84,11 @@ class MedicalReportGenerator(private val context: Context) {
         val reportPeriod: String,
         val periodRecords: List<PeriodRecord>,
         val dailyHealthData: List<DailyHealth>,
-        val generatedAt: String = LocalDate.now().toString()
+        val generatedAt: String = LocalDate.now().toString(),
+        val includePeriod: Boolean = true,
+        val includeActivity: Boolean = true,
+        val includeSleep: Boolean = true,
+        val includeNutrition: Boolean = true
     )
 
     private data class PageContext(
@@ -133,11 +137,19 @@ class MedicalReportGenerator(private val context: Context) {
                 return false
             }
 
-            // Draw sections
-            currentY = drawPeriodSummary(canvas, data, currentY, ::ensureSpace)
-            currentY = drawActivitySummary(canvas, data, currentY, ::ensureSpace)
-            currentY = drawSleepSummary(canvas, data, currentY, ::ensureSpace)
-            currentY = drawNutritionSummary(canvas, data, currentY, ::ensureSpace)
+            // Draw sections (only selected ones)
+            if (data.includePeriod) {
+                currentY = drawPeriodSummary(canvas, data, currentY, ::ensureSpace)
+            }
+            if (data.includeActivity) {
+                currentY = drawActivitySummary(canvas, data, currentY, ::ensureSpace)
+            }
+            if (data.includeSleep) {
+                currentY = drawSleepSummary(canvas, data, currentY, ::ensureSpace)
+            }
+            if (data.includeNutrition) {
+                currentY = drawNutritionSummary(canvas, data, currentY, ::ensureSpace)
+            }
 
             // Final footer
             drawFooter(canvas, pageNumber)

@@ -5,6 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Transaction
 import androidx.room.Update
 import com.tianshang.health.core.database.entity.DailySteps
 import kotlinx.coroutines.flow.Flow
@@ -71,4 +72,14 @@ interface StepsDao {
 
     @Query("DELETE FROM daily_steps WHERE id = :stepsId")
     suspend fun deleteById(stepsId: Long)
+
+    @Transaction
+    suspend fun insertOrAddSteps(userId: Long, date: String, count: Int) {
+        val existing = getByDate(userId, date)
+        if (existing != null) {
+            addSteps(userId, date, count)
+        } else {
+            insert(DailySteps(userId = userId, date = date, count = count))
+        }
+    }
 }

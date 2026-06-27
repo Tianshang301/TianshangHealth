@@ -3,20 +3,22 @@ package com.tianshang.health
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.ProcessLifecycleOwner
+import com.tianshang.health.core.common.ui.theme.ThemeConfigHolder
+import com.tianshang.health.core.common.ui.theme.WallpaperManager
 import com.tianshang.health.core.security.auth.AppLockManager
 import com.tianshang.health.core.security.auth.ScreenshotProtectionManager
 import com.tianshang.health.core.security.encryption.KeystoreManager
@@ -50,6 +52,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_SECURE,
+            WindowManager.LayoutParams.FLAG_SECURE
+        )
+
         AppLockManager.init(this)
         ScreenshotProtectionManager.init(this)
         ScreenshotProtectionManager.registerActivity(this)
@@ -64,36 +71,35 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
+        WallpaperManager.initialize(this)
+
         val prefs = KeystoreManager.getEncryptedSharedPreferences(this)
         val useCustomTheme = prefs.getBoolean("use_custom_theme", false)
+        if (useCustomTheme) {
+            ThemeConfigHolder.update(
+                prefs.getFloat("theme_hue", 340f),
+                prefs.getFloat("theme_saturation", 0.6f),
+                prefs.getFloat("theme_lightness", 0.7f)
+            )
+        }
 
         setContent {
-            val customHue by remember {
-                mutableStateOf(
-                    if (useCustomTheme) prefs.getFloat("theme_hue", 340f) else null
-                )
-            }
-            val customSat by remember {
-                mutableStateOf(
-                    if (useCustomTheme) prefs.getFloat("theme_saturation", 0.6f) else null
-                )
-            }
-            val customLit by remember {
-                mutableStateOf(
-                    if (useCustomTheme) prefs.getFloat("theme_lightness", 0.7f) else null
-                )
-            }
+            val customHue by ThemeConfigHolder.customHue.collectAsState()
+            val customSat by ThemeConfigHolder.customSaturation.collectAsState()
+            val customLit by ThemeConfigHolder.customLightness.collectAsState()
+            val wallpaperConfig by WallpaperManager.configFlow.collectAsState()
 
             TianshangHealthTheme(
                 customHue = customHue,
                 customSaturation = customSat,
-                customLightness = customLit
+                customLightness = customLit,
+                wallpaperConfig = wallpaperConfig
             ) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MainNavigation()
+                    MainNavigation(wallpaperConfig = wallpaperConfig)
                 }
             }
         }

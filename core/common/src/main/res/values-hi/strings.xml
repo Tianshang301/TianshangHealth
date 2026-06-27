@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">सेवा की शर्तें</string>
@@ -875,6 +875,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">रिपोर्ट बनाने में विफल</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -886,4 +887,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">वॉलपेपर</string>
+    <string name="wallpaper_customize">कस्टम वॉलपेपर</string>
+    <string name="wallpaper_none">कोई नहीं</string>
+    <string name="wallpaper_presets">प्रीसेट वॉलपेपर</string>
+    <string name="wallpaper_gradient">कस्टम ग्रेडिएंट</string>
+    <string name="wallpaper_from_gallery">गैलरी से</string>
+    <string name="wallpaper_opacity">अपारदर्शिता</string>
+    <string name="wallpaper_blur">धुंधलापन</string>
+    <string name="wallpaper_gradient_start">प्रारंभिक रंग</string>
+    <string name="wallpaper_gradient_end">अंतिम रंग</string>
+    <string name="wallpaper_gradient_angle">कोण</string>
+    <string name="wallpaper_preset_soft_gradient">नरम ग्रेडिएंट</string>
+    <string name="wallpaper_preset_warm_glow">गर्म चमक</string>
+    <string name="wallpaper_preset_cool_breeze">ठंडी हवा</string>
+    <string name="wallpaper_preset_nature_leaves">प्राकृतिक पत्तियां</string>
+    <string name="wallpaper_preset_geometric">ज्यामितीय</string>
+    <string name="wallpaper_preset_starry">तारों भरा</string>
+    <string name="wallpaper_select_image">छवि चुनें</string>
+    <string name="wallpaper_crop_title">वॉलपेपर क्रॉप करें</string>
+    <string name="wallpaper_image_selected">वॉलपेपर छवि सेट की गई</string>
+    <string name="wallpaper_remove">वॉलपेपर हटाएं</string>
+    <string name="wallpaper_description">प्रीसेट, ग्रेडिएंट या अपनी खुद की छवियों से ऐप बैकग्राउंड को कस्टमाइज़ करें</string>
+    <string name="analysis_section_health_overview">स्वास्थ्य अवलोकन</string>
+    <string name="analysis_composite_score">समग्र स्कोर</string>
+    <string name="analysis_trends">रुझान</string>
 </resources>

@@ -73,10 +73,9 @@ class DashboardViewModel @Inject constructor(
 
                 combine(
                     userRepository.getAll(),
-                    stepsRepository.observeTodaySteps(),
                     stepsRepository.getTodaySteps(),
                     stepsRepository.getStepsByDateRange(weekStart, today)
-                ) { users, count, todaySteps, weeklySteps ->
+                ) { users, todaySteps, weeklySteps ->
                     val user = if (users.isNotEmpty()) users.first() else userRepository.getOrCreateDefault()
                     val userGender = Gender.fromValue(user.gender)
 
@@ -104,7 +103,7 @@ class DashboardViewModel @Inject constructor(
 
                     DashboardState(
                         userGender = userGender,
-                        todaySteps = count,
+                        todaySteps = todaySteps?.count ?: 0,
                         stepsGoal = todaySteps?.goal ?: HealthConstants.DEFAULT_STEPS_GOAL,
                         weeklySteps = weeklySteps,
                         recentPeriodRecords = recentPeriodRecords,

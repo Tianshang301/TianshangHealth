@@ -2,6 +2,9 @@
 <SmellBaseline>
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
+    <ID>ExpressionBodySyntax:AdaptiveTint.kt$AdaptiveTint$return tintFor(tintColor, isDark).copy(alpha = alpha)</ID>
+    <ID>ExpressionBodySyntax:ConcentricShape.kt$return ConcentricShape(parentRadius, padding)</ID>
+    <ID>ExpressionBodySyntax:ConcentricShape.kt$return RoundedCornerShape((parentRadius - padding).coerceAtLeast(0f))</ID>
     <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return ChronoUnit.DAYS.between(startDate, endDate)</ID>
     <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return LocalDate.parse(dateString, displayFormatter)</ID>
     <ID>ExpressionBodySyntax:DateUtils.kt$DateUtils$return date == LocalDate.now()</ID>
@@ -15,6 +18,7 @@
     <ID>ExpressionBodySyntax:Extensions.kt$return this == other</ID>
     <ID>ExpressionBodySyntax:Extensions.kt$return this.format(DateTimeFormatter.ofPattern("yyyy-MM"))</ID>
     <ID>ExpressionBodySyntax:Extensions.kt$return this.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))</ID>
+    <ID>ExpressionBodySyntax:GlassTheme.kt$GlassTheme$return if (isSystemInDarkTheme()) darkColors else lightColors</ID>
     <ID>ExpressionBodySyntax:HslColorEngine.kt$HslColorEngine$return toColor(Hsl(hue, saturation, lightness))</ID>
     <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return !date.isAfter(LocalDate.now())</ID>
     <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return gender in listOf("male", "female", "other")</ID>
@@ -25,11 +29,6 @@
     <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return limit &gt; 0 &amp;&amp; limit &lt;= maxLimit</ID>
     <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return name.isNotBlank() &amp;&amp; name.length &lt;= 100</ID>
     <ID>ExpressionBodySyntax:ValidationUtils.kt$ValidationUtils$return type.isNotBlank()</ID>
-    <ID>FunctionNaming:CommonComponents.kt$@Composable fun EmptyContent( message: String, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:CommonComponents.kt$@Composable fun ErrorContent( message: String, onRetry: () -&gt; Unit, modifier: Modifier = Modifier, retryText: String = stringResource(R.string.retry) )</ID>
-    <ID>FunctionNaming:CommonComponents.kt$@Composable fun LoadingContent( modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:StatCard.kt$@Composable fun StatCard( title: String, value: String, subtitle: String? = null, icon: ImageVector? = null, iconTint: Color = MaterialTheme.colorScheme.primary, containerColor: Color = MaterialTheme.colorScheme.surfaceVariant, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:StatCard.kt$@Composable fun StatItem( label: String, value: String, modifier: Modifier = Modifier )</ID>
     <ID>MagicNumber:CyclePhase.kt$CyclePhase.Companion$4</ID>
     <ID>MagicNumber:Extensions.kt$3</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.5f</ID>
@@ -37,6 +36,10 @@
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.7f</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.85f</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0.8f</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xB31C1B1F</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xB3F5F5F5</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xCC2A2A2E</ID>
+    <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xCCFFFFFF</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFF1C1B1F</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFF49454F</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$0xFF79747E</ID>
@@ -54,7 +57,15 @@
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$4f</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$60f</ID>
     <ID>MagicNumber:HslColorEngine.kt$HslColorEngine$6f</ID>
+    <ID>MagicNumber:ScrollEdgeEffect.kt$0xFF1C1B1F</ID>
+    <ID>MagicNumber:ScrollEdgeEffect.kt$0xFFFFFBFE</ID>
     <ID>MagicNumber:ValidationUtils.kt$ValidationUtils$100</ID>
+    <ID>MagicNumber:WallpaperManager.kt$WallpaperManager$0.12f</ID>
+    <ID>MagicNumber:WallpaperManager.kt$WallpaperManager$0.5f</ID>
+    <ID>MagicNumber:WallpaperManager.kt$WallpaperManager$180f</ID>
+    <ID>MagicNumber:WallpaperManager.kt$WallpaperManager$45f</ID>
+    <ID>MagicNumber:WallpaperManager.kt$WallpaperManager.WallpaperConfig$0xFFB3E5FC</ID>
+    <ID>MagicNumber:WallpaperManager.kt$WallpaperManager.WallpaperConfig$0xFFE1BEE7</ID>
     <ID>MaximumLineLength:HslColorEngine.kt$HslColorEngine$ </ID>
     <ID>TooManyFunctions:ValidationUtils.kt$ValidationUtils</ID>
     <ID>UnderscoresInNumericLiterals:AppConstants.kt$AppConstants$30000L</ID>
@@ -67,5 +78,8 @@
     <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$(g + m)</ID>
     <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$(h / 60f)</ID>
     <ID>UnnecessaryParentheses:HslColorEngine.kt$HslColorEngine$(r + m)</ID>
+    <ID>UnusedParameter:GlassFAB.kt$containerColor: Color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f)</ID>
+    <ID>UnusedParameter:GlassSurface.kt$cornerRadius: Dp = 28.dp</ID>
+    <ID>UnusedPrivateMember:WallpaperManager.kt$WallpaperManager$private fun updateConfigFlow(context: Context)</ID>
   </CurrentIssues>
 </SmellBaseline>

@@ -6,32 +6,27 @@
     <ID>EmptyFunctionBlock:StepCounterService.kt$StepCounterService${ }</ID>
     <ID>EmptyFunctionBlock:StepCounterService.kt$StepCounterService.&lt;no name provided&gt;${ }</ID>
     <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getAverageSteps(currentUserId, startDate.toString(), endDate.toString()) ?: 0f</ID>
-    <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getByDateRange(currentUserId, startDate.toString(), endDate.toString())</ID>
-    <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getByDateRangeFlow(currentUserId, startDate.toString(), endDate.toString())</ID>
     <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getByUserId(currentUserId)</ID>
-    <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getRecent(currentUserId, days)</ID>
-    <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getRecentFlow(currentUserId, days)</ID>
     <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getTotalSteps(currentUserId, startDate.toString(), endDate.toString()) ?: 0</ID>
     <ID>ExpressionBodySyntax:StepsRepository.kt$StepsRepository$return stepsDao.getTotalStepsAllTime(currentUserId) ?: 0</ID>
     <ID>Filename:OemUtils.kt$com.tianshang.health.feature.steps.util.OemUtils.kt</ID>
-    <ID>FunctionNaming:StepsCard.kt$@Composable fun StepsCard( todaySteps: Int, todayGoal: Int, weeklyAverage: Float, onClick: (() -&gt; Unit)? = null, modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:StepsScreen.kt$@Composable fun StepsScreen()</ID>
     <ID>LateinitUsage:StepCounterService.kt$StepCounterService$@Inject lateinit var stepsRepository: StepsRepository</ID>
     <ID>LateinitUsage:StepCounterService.kt$StepCounterService$private lateinit var sensorManager: SensorManager</ID>
-    <ID>MagicNumber:StepCounterService.kt$StepCounterService$1000</ID>
-    <ID>MagicNumber:StepCounterService.kt$StepCounterService.Companion$1002</ID>
-    <ID>MagicNumber:StepCounterService.kt$StepCounterService.Companion$5000</ID>
     <ID>MagicNumber:StepSyncWorker.kt$StepSyncWorker.Companion$15</ID>
     <ID>MatchingDeclarationName:OemUtils.kt$OemType</ID>
     <ID>MaximumLineLength:OemUtils.kt$OemType$ </ID>
-    <ID>MaximumLineLength:StepsViewModel.kt$StepsViewModel$ </ID>
     <ID>OptionalUnit:StepsViewModelTest.kt$StepsViewModelTest$Unit</ID>
     <ID>ReturnCount:GetCycleStepsInsightUseCase.kt$GetCycleStepsInsightUseCase$suspend operator fun invoke(): CycleStepsInsight?</ID>
     <ID>SwallowedException:StepSyncWorker.kt$StepSyncWorker$e: Exception</ID>
     <ID>TooManyFunctions:StepsRepository.kt$StepsRepository</ID>
+    <ID>UnderscoresInNumericLiterals:StepCounterServiceTest.kt$StepCounterServiceTest$25000</ID>
+    <ID>UnderscoresInNumericLiterals:StepCounterServiceTest.kt$StepCounterServiceTest$25000L</ID>
+    <ID>UnderscoresInNumericLiterals:StepCounterServiceTest.kt$StepCounterServiceTest$29000L</ID>
+    <ID>UnderscoresInNumericLiterals:StepSyncWorkerTest.kt$StepSyncWorkerTest$25000L</ID>
+    <ID>UnderscoresInNumericLiterals:StepSyncWorkerTest.kt$StepSyncWorkerTest$29000</ID>
+    <ID>UnderscoresInNumericLiterals:StepSyncWorkerTest.kt$StepSyncWorkerTest$29000L</ID>
     <ID>UnderscoresInNumericLiterals:StepsRepositoryTest.kt$StepsRepositoryTest$10000</ID>
     <ID>UnderscoresInNumericLiterals:StepsRepositoryTest.kt$StepsRepositoryTest$100000</ID>
     <ID>UnderscoresInNumericLiterals:StepsRepositoryTest.kt$StepsRepositoryTest$35000</ID>
-    <ID>UnnecessaryParentheses:StepCounterService.kt$StepCounterService.&lt;no name provided&gt;$(window.average().toFloat())</ID>
   </CurrentIssues>
 </SmellBaseline>

@@ -12,6 +12,7 @@ import com.tianshang.health.feature.analysis.domain.AnalysisData
 import com.tianshang.health.feature.analysis.domain.AnalysisUiState
 import com.tianshang.health.feature.analysis.domain.AnalyticsEngine
 import com.tianshang.health.feature.analysis.domain.SuggestionEngine
+import com.tianshang.health.feature.analysis.domain.TrendAnalyzer
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -53,13 +54,15 @@ class AnalysisViewModel @Inject constructor(
                 val isFemale = User.Gender.fromValue(user.gender) != User.Gender.MALE
 
                 val today = LocalDate.now()
-                val dateRange = (0..13).map { today.minusDays(it.toLong()) }
+                val dateRange = (0..27).map { today.minusDays(it.toLong()) }
                 val startDate = dateRange.last().format(DateTimeFormatter.ISO_LOCAL_DATE)
                 val endDate = today.format(DateTimeFormatter.ISO_LOCAL_DATE)
 
                 val records = dailyHealthDao.getByDateRange(currentUserId, startDate, endDate)
                 val last7 = if (records.size > 7) records.takeLast(7) else records
-                val last14 = records
+                val last14 = if (records.size > 14) records.takeLast(14) else records
+                val previous7 = if (records.size > 14) records.dropLast(7).takeLast(7) else emptyList()
+                val fullHistory = records
 
                 val nutrition = AnalyticsEngine.computeNutrition(last7)
                 val sleep = AnalyticsEngine.computeSleep(last7)
@@ -90,13 +93,20 @@ class AnalysisViewModel @Inject constructor(
                     }
                 }
 
+                val crossDimensionReport = TrendAnalyzer.computeCrossDimensionReport(
+                    currentRecords = last14,
+                    previousRecords = previous7,
+                    fullHistory = fullHistory
+                )
+
                 val analysisData = AnalysisData(
                     nutrition = if (nutrition.avgCalories > 0) nutrition else null,
                     sleep = if (sleep.avgHours > 0) sleep else null,
                     exercise = if (exercise.totalMinutes > 0) exercise else null,
                     calorieBalance = if (calorieBalance.avgCaloriesIn > 0 || calorieBalance.avgCaloriesBurned > 0) calorieBalance else null,
                     phaseComparisons = phaseComparisons,
-                    suggestions = emptyList()
+                    suggestions = emptyList(),
+                    crossDimensionReport = crossDimensionReport
                 )
 
                 val suggestions = SuggestionEngine.generate(analysisData)

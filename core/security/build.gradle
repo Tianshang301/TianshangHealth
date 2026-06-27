@@ -34,7 +34,7 @@ dependencies {
     implementation libs.datastore.preferences
     
     testImplementation libs.junit
-    testImplementation "org.robolectric:robolectric:4.11.1"
+    testImplementation libs.robolectric
     testImplementation libs.coroutines.test
     testImplementation libs.mockk
 }

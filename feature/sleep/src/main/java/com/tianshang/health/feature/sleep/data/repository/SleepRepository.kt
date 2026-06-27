@@ -40,37 +40,81 @@ class SleepRepository @Inject constructor(
         return dailyHealthDao.getByDateRange(userId, startDate.toString(), today.toString())
     }
 
+    suspend fun getDateRange(startDate: String, endDate: String): List<DailyHealth> {
+        val userId = requireUserId()
+        return dailyHealthDao.getByDateRange(userId, startDate, endDate)
+    }
+
     suspend fun saveSleep(
         date: String,
         sleepHours: Float?,
         deepSleepHours: Float?,
-        sleepQuality: Int?
+        sleepQuality: Int?,
+        bedTime: String? = null,
+        wakeTime: String? = null,
+        sleepLatency: Int? = null,
+        wakeCount: Int? = null
     ) {
         require(ValidationUtils.isValidDateString(date)) { "Invalid date: $date" }
         require(ValidationUtils.isValidNonNegative(sleepHours)) { "Invalid sleepHours: $sleepHours" }
         require(ValidationUtils.isValidNonNegative(deepSleepHours)) { "Invalid deepSleepHours: $deepSleepHours" }
         require(ValidationUtils.isValidSleepQuality(sleepQuality)) { "Invalid sleepQuality: $sleepQuality" }
         val userId = requireUserId()
-        val existing = dailyHealthDao.getByDate(userId, date)
-        if (existing != null) {
-            dailyHealthDao.update(
-                existing.copy(
-                    sleepHours = sleepHours ?: existing.sleepHours,
-                    deepSleepHours = deepSleepHours ?: existing.deepSleepHours,
-                    sleepQuality = sleepQuality ?: existing.sleepQuality,
-                    updatedAt = System.currentTimeMillis()
-                )
-            )
-        } else {
-            dailyHealthDao.insert(
-                DailyHealth(
-                    userId = userId,
-                    date = date,
-                    sleepHours = sleepHours,
-                    deepSleepHours = deepSleepHours,
-                    sleepQuality = sleepQuality
-                )
-            )
+        dailyHealthDao.insertOrUpdateSleep(
+            userId, date,
+            sleepHours, deepSleepHours, sleepQuality,
+            bedTime, wakeTime, sleepLatency, wakeCount
+        )
+    }
+
+    data class SleepConsistencyScore(
+        val bedCV: Float?,
+        val wakeCV: Float?,
+        val durationCV: Float?,
+        val overallScore: Float
+    )
+
+    suspend fun getSleepConsistency(days: Int = 14): SleepConsistencyScore? {
+        val records = getRecentDays(days).filter {
+            it.bedTime != null || it.wakeTime != null
         }
+        if (records.size < 3) return null
+
+        fun minutesSinceMidnight(time: String?): Float? {
+            if (time == null) return null
+            val parts = time.split(":")
+            if (parts.size != 2) return null
+            return parts[0].toFloatOrNull()?.let { h ->
+                parts[1].toFloatOrNull()?.let { m -> h * 60 + m }
+            }
+        }
+
+        val bedMinutes = records.mapNotNull { minutesSinceMidnight(it.bedTime) }
+        val wakeMinutes = records.mapNotNull { minutesSinceMidnight(it.wakeTime) }
+        val durations = records.mapNotNull { it.sleepHours }
+
+        fun coefficientOfVariation(values: List<Float>): Float? {
+            if (values.size < 3) return null
+            val mean = values.average().toFloat()
+            if (mean == 0f) return null
+            val variance = values.map { (it - mean) * (it - mean) }.average().toFloat()
+            return kotlin.math.sqrt(variance) / mean
+        }
+
+        val bedCV = coefficientOfVariation(bedMinutes)
+        val wakeCV = coefficientOfVariation(wakeMinutes)
+        val durationCV = coefficientOfVariation(durations)
+
+        val bedScore = bedCV?.let { (1f - it.coerceIn(0f, 1f)) * 100f } ?: 50f
+        val wakeScore = wakeCV?.let { (1f - it.coerceIn(0f, 1f)) * 100f } ?: 50f
+        val durationScore = durationCV?.let { (1f - it.coerceIn(0f, 1f)) * 100f } ?: 50f
+        val overall = bedScore * 0.4f + wakeScore * 0.4f + durationScore * 0.2f
+
+        return SleepConsistencyScore(
+            bedCV = bedCV,
+            wakeCV = wakeCV,
+            durationCV = durationCV,
+            overallScore = overall.coerceIn(0f, 100f)
+        )
     }
 }

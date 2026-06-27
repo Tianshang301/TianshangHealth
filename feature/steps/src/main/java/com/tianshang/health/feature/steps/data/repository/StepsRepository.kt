@@ -79,18 +79,7 @@ class StepsRepository @Inject constructor(
         require(ValidationUtils.isValidStepCount(count)) { "Invalid step count: $count" }
         _todaySteps.value += count
         val today = LocalDate.now().toString()
-        val existing = stepsDao.getByDate(currentUserId, today)
-
-        if (existing != null) {
-            stepsDao.addSteps(currentUserId, today, count)
-        } else {
-            val newEntry = DailySteps(
-                userId = currentUserId,
-                date = today,
-                count = count
-            )
-            stepsDao.insert(newEntry)
-        }
+        stepsDao.insertOrAddSteps(currentUserId, today, count)
     }
 
     suspend fun updateGoal(goal: Int) {

@@ -4,8 +4,6 @@
   <CurrentIssues>
     <ID>ExpressionBodySyntax:CalorieCalculator.kt$CalorieCalculator$return kcal * KCAL_TO_KJ</ID>
     <ID>ExpressionBodySyntax:ExerciseType.kt$ExerciseType.Companion$return entries.find { it.value == value } ?: OTHER</ID>
-    <ID>FunctionNaming:AddWorkoutSheet.kt$@OptIn(ExperimentalLayoutApi::class, ExperimentalMaterial3Api::class) @Composable fun AddWorkoutContent( state: AddWorkoutState, onTypeSelected: (ExerciseType) -&gt; Unit, onDurationChanged: (String) -&gt; Unit, onCaloriesChanged: (String) -&gt; Unit, onDistanceChanged: (String) -&gt; Unit, onNotesChanged: (String) -&gt; Unit, onSave: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
-    <ID>FunctionNaming:CycleFitnessRecommendationCard.kt$@OptIn(ExperimentalLayoutApi::class) @Composable fun CycleFitnessRecommendationCard( recommendation: CycleFitnessRecommendation )</ID>
     <ID>ImplicitDefaultLocale:CalorieCalculator.kt$CalorieCalculator$String.format("%.0f", kcal)</ID>
     <ID>ImplicitDefaultLocale:CalorieCalculator.kt$CalorieCalculator$String.format("%.0f", kcalToKj(kcal))</ID>
     <ID>ImplicitDefaultLocale:FitnessViewModel.kt$FitnessViewModel$String.format("%.0f", kcal)</ID>

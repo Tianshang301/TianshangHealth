@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">تيانشانغ الصحة</string>
     <string name="terms_title">شروط الخدمة</string>
@@ -876,6 +876,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">فشل إنشاء التقرير</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -887,4 +888,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">خلفية</string>
+    <string name="wallpaper_customize">خلفية مخصصة</string>
+    <string name="wallpaper_none">بدون</string>
+    <string name="wallpaper_presets">خلفيات محددة مسبقاً</string>
+    <string name="wallpaper_gradient">تدرج مخصص</string>
+    <string name="wallpaper_from_gallery">من المعرض</string>
+    <string name="wallpaper_opacity">الشفافية</string>
+    <string name="wallpaper_blur">ضبابية</string>
+    <string name="wallpaper_gradient_start">لون البداية</string>
+    <string name="wallpaper_gradient_end">لون النهاية</string>
+    <string name="wallpaper_gradient_angle">الزاوية</string>
+    <string name="wallpaper_preset_soft_gradient">تدرج ناعم</string>
+    <string name="wallpaper_preset_warm_glow">وهج دافئ</string>
+    <string name="wallpaper_preset_cool_breeze">نسيم بارد</string>
+    <string name="wallpaper_preset_nature_leaves">أوراق طبيعية</string>
+    <string name="wallpaper_preset_geometric">هندسي</string>
+    <string name="wallpaper_preset_starry">مرصع بالنجوم</string>
+    <string name="wallpaper_select_image">اختيار صورة</string>
+    <string name="wallpaper_crop_title">قص الخلفية</string>
+    <string name="wallpaper_image_selected">تم تعيين صورة الخلفية</string>
+    <string name="wallpaper_remove">إزالة الخلفية</string>
+    <string name="wallpaper_description">تخصيص خلفية التطبيق باستخدام الإعدادات المسبقة أو التدرجات أو صورك الخاصة</string>
+    <string name="analysis_section_health_overview">نظرة عامة على الصحة</string>
+    <string name="analysis_composite_score">النتيجة المركبة</string>
+    <string name="analysis_trends">الاتجاهات</string>
 </resources>

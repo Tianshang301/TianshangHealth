@@ -875,6 +875,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Failed to generate report</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -886,4 +887,29 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Wallpaper</string>
+    <string name="wallpaper_customize">Custom Wallpaper</string>
+    <string name="wallpaper_none">None</string>
+    <string name="wallpaper_presets">Preset Wallpapers</string>
+    <string name="wallpaper_gradient">Custom Gradient</string>
+    <string name="wallpaper_from_gallery">From Gallery</string>
+    <string name="wallpaper_opacity">Opacity</string>
+    <string name="wallpaper_blur">Blur</string>
+    <string name="wallpaper_gradient_start">Start Color</string>
+    <string name="wallpaper_gradient_end">End Color</string>
+    <string name="wallpaper_gradient_angle">Angle</string>
+    <string name="wallpaper_preset_soft_gradient">Soft Gradient</string>
+    <string name="wallpaper_preset_warm_glow">Warm Glow</string>
+    <string name="wallpaper_preset_cool_breeze">Cool Breeze</string>
+    <string name="wallpaper_preset_nature_leaves">Nature Leaves</string>
+    <string name="wallpaper_preset_geometric">Geometric</string>
+    <string name="wallpaper_preset_starry">Starry</string>
+    <string name="wallpaper_select_image">Select Image</string>
+    <string name="wallpaper_image_selected">Wallpaper image set</string>
+    <string name="wallpaper_remove">Remove Wallpaper</string>
+    <string name="wallpaper_description">Customize your app background with presets, gradients, or your own images</string>
+    <string name="analysis_section_health_overview">Health Overview</string>
+    <string name="analysis_composite_score">Composite Score</string>
+    <string name="analysis_trends">Trends</string>
 </resources>

@@ -884,6 +884,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Rapport genereren mislukt</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -895,4 +896,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Achtergrond</string>
+    <string name="wallpaper_customize">Aangepaste achtergrond</string>
+    <string name="wallpaper_none">Geen</string>
+    <string name="wallpaper_presets">Vooringestelde achtergronden</string>
+    <string name="wallpaper_gradient">Aangepast verloop</string>
+    <string name="wallpaper_from_gallery">Uit galerij</string>
+    <string name="wallpaper_opacity">Dekking</string>
+    <string name="wallpaper_blur">Vervaging</string>
+    <string name="wallpaper_gradient_start">Startkleur</string>
+    <string name="wallpaper_gradient_end">Eindkleur</string>
+    <string name="wallpaper_gradient_angle">Hoek</string>
+    <string name="wallpaper_preset_soft_gradient">Zacht verloop</string>
+    <string name="wallpaper_preset_warm_glow">Warme gloed</string>
+    <string name="wallpaper_preset_cool_breeze">Koele bries</string>
+    <string name="wallpaper_preset_nature_leaves">Natuurlijke bladeren</string>
+    <string name="wallpaper_preset_geometric">Geometrisch</string>
+    <string name="wallpaper_preset_starry">Sterrenhemel</string>
+    <string name="wallpaper_select_image">Afbeelding selecteren</string>
+    <string name="wallpaper_crop_title">Achtergrond bijsnijden</string>
+    <string name="wallpaper_image_selected">Achtergrondafbeelding ingesteld</string>
+    <string name="wallpaper_remove">Achtergrond verwijderen</string>
+    <string name="wallpaper_description">Pas de app-achtergrond aan met voorinstellingen, verlopen of uw eigen afbeeldingen</string>
+    <string name="analysis_section_health_overview">Gezondheidsoverzicht</string>
+    <string name="analysis_composite_score">Samenstellende score</string>
+    <string name="analysis_trends">Trends</string>
 </resources>

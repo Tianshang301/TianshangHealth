@@ -103,7 +103,8 @@ data class AnalysisData(
     val exercise: WeeklyExercise? = null,
     val calorieBalance: CalorieBalance? = null,
     val phaseComparisons: List<PhaseComparison> = emptyList(),
-    val suggestions: List<Suggestion> = emptyList()
+    val suggestions: List<Suggestion> = emptyList(),
+    val crossDimensionReport: CrossDimensionReport? = null
 )
 
 sealed class AnalysisUiState {

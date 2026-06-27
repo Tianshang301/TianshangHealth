@@ -24,6 +24,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.EdgePosition
+import com.tianshang.health.core.common.ui.glass.ScrollEdgeEffect
 import com.tianshang.health.feature.dashboard.ui.components.HealthInsightsCard
 import com.tianshang.health.feature.dashboard.ui.components.PeriodStatusCard
 import com.tianshang.health.feature.dashboard.ui.components.QuickActionsCard
@@ -75,62 +77,65 @@ private fun DashboardContent(
     onNavigateToNutrition: () -> Unit,
     onNavigateToSleep: () -> Unit
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState())
-            .padding(16.dp)
-    ) {
-        Text(
-            text = stringResource(R.string.dashboard_title),
-            style = MaterialTheme.typography.headlineMedium,
-            fontWeight = FontWeight.Bold
-        )
+    Box(modifier = Modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp)
+        ) {
+            Text(
+                text = stringResource(R.string.dashboard_title),
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold
+            )
 
-        Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
-        // Steps Overview
-        StepsOverviewCard(
-            todaySteps = state.todaySteps,
-            goal = state.stepsGoal,
-            modifier = Modifier.clickable { onNavigateToSteps() }
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        // Period Status (only for female/other users)
-        if (state.userGender != Gender.MALE) {
-            PeriodStatusCard(
-                currentCycleDay = state.currentCycleDay,
-                isPeriodActive = state.isPeriodActive,
-                modifier = Modifier.clickable { onNavigateToPeriod() }
+            // Steps Overview
+            StepsOverviewCard(
+                todaySteps = state.todaySteps,
+                goal = state.stepsGoal,
+                modifier = Modifier.clickable { onNavigateToSteps() }
             )
 
             Spacer(modifier = Modifier.height(12.dp))
+
+            // Period Status (only for female/other users)
+            if (state.userGender != Gender.MALE) {
+                PeriodStatusCard(
+                    currentCycleDay = state.currentCycleDay,
+                    isPeriodActive = state.isPeriodActive,
+                    modifier = Modifier.clickable { onNavigateToPeriod() }
+                )
+
+                Spacer(modifier = Modifier.height(12.dp))
+            }
+
+            // Health Insights
+            HealthInsightsCard(insights = state.insights)
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Quick Actions
+            Text(
+                text = stringResource(R.string.dashboard_quick_actions),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            QuickActionsCard(
+                showPeriodAction = state.userGender != Gender.MALE,
+                onRecordPeriod = onNavigateToPeriod,
+                onRecordSteps = onNavigateToSteps,
+                onRecordHealth = onNavigateToHealthData,
+                onRecordNutrition = onNavigateToNutrition,
+                onRecordSleep = onNavigateToSleep
+            )
         }
-
-        // Health Insights
-        HealthInsightsCard(insights = state.insights)
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        // Quick Actions
-        Text(
-            text = stringResource(R.string.dashboard_quick_actions),
-            style = MaterialTheme.typography.titleMedium,
-            fontWeight = FontWeight.Bold
-        )
-
-        Spacer(modifier = Modifier.height(8.dp))
-
-        QuickActionsCard(
-            showPeriodAction = state.userGender != Gender.MALE,
-            onRecordPeriod = onNavigateToPeriod,
-            onRecordSteps = onNavigateToSteps,
-            onRecordHealth = onNavigateToHealthData,
-            onRecordNutrition = onNavigateToNutrition,
-            onRecordSleep = onNavigateToSleep
-        )
+        ScrollEdgeEffect(position = EdgePosition.Bottom)
     }
 }
 

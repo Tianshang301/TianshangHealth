@@ -42,7 +42,6 @@ dependencies {
     implementation libs.compose.material3
     implementation libs.compose.material.icons
     
-    implementation libs.datastore.preferences
     implementation libs.gson
     implementation libs.commons.csv
     implementation libs.coil.compose

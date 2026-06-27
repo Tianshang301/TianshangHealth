@@ -2,6 +2,7 @@ package com.tianshang.health.feature.period.viewmodel
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.core.security.encryption.KeystoreManager
 import io.mockk.every
 import io.mockk.mockk
@@ -21,7 +22,9 @@ class ThemeViewModelTest {
 
     private val context: Context = mockk()
     private val sharedPrefs: SharedPreferences = mockk()
+    private val wallpaperPrefs: SharedPreferences = mockk()
     private val editor: SharedPreferences.Editor = mockk()
+    private val stringResolver: StringResolver = mockk()
 
     private lateinit var viewModel: ThemeViewModel
     private val testDispatcher = UnconfinedTestDispatcher()
@@ -41,7 +44,15 @@ class ThemeViewModelTest {
         every { editor.putBoolean(any(), any()) } returns editor
         every { editor.apply() } returns Unit
 
-        viewModel = ThemeViewModel(context)
+        every { context.getSharedPreferences("wallpaper_prefs", Context.MODE_PRIVATE) } returns wallpaperPrefs
+        every { wallpaperPrefs.getBoolean(any(), any()) } returns false
+        every { wallpaperPrefs.getInt(any(), any()) } returns 0
+        every { wallpaperPrefs.getFloat(any(), any()) } returns 0f
+        every { wallpaperPrefs.getString(any(), any()) } returns ""
+
+        every { stringResolver.getString(any()) } returns "error"
+
+        viewModel = ThemeViewModel(context, stringResolver)
     }
 
     @After

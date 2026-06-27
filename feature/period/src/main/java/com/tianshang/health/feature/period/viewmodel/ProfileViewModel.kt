@@ -49,7 +49,10 @@ class ProfileViewModel @Inject constructor(
             val user = userRepository.getOrCreateDefault()
             userRepository.updateGender(user.id, gender)
             val prefs = KeystoreManager.getEncryptedSharedPreferences(context)
-            prefs.edit().putString("b2p5q8r1", gender.value).apply()
+            prefs.edit()
+                .putString("b2p5q8r1", gender.value)
+                .putString("user_gender", gender.value)
+                .apply()
             _showGenderDialog.value = false
             _genderChanged.trySend(Unit)
         }

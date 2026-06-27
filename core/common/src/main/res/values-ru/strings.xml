@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Условия использования</string>
@@ -888,6 +888,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Не удалось создать отчёт</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -899,4 +900,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Обои</string>
+    <string name="wallpaper_customize">Пользовательские обои</string>
+    <string name="wallpaper_none">Нет</string>
+    <string name="wallpaper_presets">Готовые обои</string>
+    <string name="wallpaper_gradient">Пользовательский градиент</string>
+    <string name="wallpaper_from_gallery">Из галереи</string>
+    <string name="wallpaper_opacity">Прозрачность</string>
+    <string name="wallpaper_blur">Размытие</string>
+    <string name="wallpaper_gradient_start">Начальный цвет</string>
+    <string name="wallpaper_gradient_end">Конечный цвет</string>
+    <string name="wallpaper_gradient_angle">Угол</string>
+    <string name="wallpaper_preset_soft_gradient">Мягкий градиент</string>
+    <string name="wallpaper_preset_warm_glow">Тёплое свечение</string>
+    <string name="wallpaper_preset_cool_breeze">Прохладный ветерок</string>
+    <string name="wallpaper_preset_nature_leaves">Природные листья</string>
+    <string name="wallpaper_preset_geometric">Геометрический</string>
+    <string name="wallpaper_preset_starry">Звёздный</string>
+    <string name="wallpaper_select_image">Выбрать изображение</string>
+    <string name="wallpaper_crop_title">Обрезать обои</string>
+    <string name="wallpaper_image_selected">Изображение обоев установлено</string>
+    <string name="wallpaper_remove">Удалить обои</string>
+    <string name="wallpaper_description">Настройте фон приложения с помощью готовых шаблонов, градиентов или собственных изображений</string>
+    <string name="analysis_section_health_overview">Обзор здоровья</string>
+    <string name="analysis_composite_score">Общий балл</string>
+    <string name="analysis_trends">Тенденции</string>
 </resources>

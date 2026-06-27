@@ -24,6 +24,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.tianshang.health.core.common.R
+import com.tianshang.health.core.common.ui.glass.GlassCard
+import com.tianshang.health.core.common.ui.glass.GlassVariant
 import com.tianshang.health.feature.dashboard.domain.InsightCategory
 import com.tianshang.health.feature.dashboard.domain.InsightItem
 import com.tianshang.health.feature.dashboard.domain.InsightResult
@@ -35,11 +37,10 @@ fun HealthInsightsCard(
 ) {
     val items = mapInsightDataToItems(insights.data)
 
-    Card(
-        modifier = modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.tertiaryContainer
-        )
+    GlassCard(
+        modifier = modifier,
+        variant = GlassVariant.Regular,
+        cornerRadius = 28.dp
     ) {
         Column(
             modifier = Modifier

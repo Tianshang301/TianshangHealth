@@ -40,15 +40,14 @@ class NutritionRepositoryTest {
         coEvery { mealDao.getDailyProtein(1, testDate) } returns 20f
         coEvery { mealDao.getDailyCarbs(1, testDate) } returns 60f
         coEvery { mealDao.getDailyFat(1, testDate) } returns 10f
-        coEvery { dailyHealthDao.getByDate(1, testDate) } returns null
-        coEvery { dailyHealthDao.insert(any<DailyHealth>()) } returns 1L
+        coEvery { dailyHealthDao.insertOrUpdateNutrition(any(), any(), any(), any(), any(), any()) } returns Unit
 
         repository.initialize()
         val id = repository.addMeal("breakfast", "Oatmeal", 250f, date = testDate)
 
         assert(id == 1L)
         coVerify { mealDao.insert(any<MealRecord>()) }
-        coVerify { dailyHealthDao.insert(any<DailyHealth>()) }
+        coVerify { dailyHealthDao.insertOrUpdateNutrition(any(), any(), any(), any(), any(), any()) }
     }
 
     @Test
@@ -59,7 +58,7 @@ class NutritionRepositoryTest {
         try {
             repository.addMeal("breakfast", "Oatmeal", date = testDate)
             assert(false) { "Expected exception" }
-        } catch (e: IllegalStateException) {
+        } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: IllegalStateException) {
             assert(e.message?.contains("No user found") == true)
         }
     }
@@ -108,15 +107,13 @@ class NutritionRepositoryTest {
 
     @Test
     fun `addWater increments water intake`() = runTest {
-        val existingHealth = DailyHealth(userId = 1, date = testDate, waterIntake = 500f)
-        coEvery { dailyHealthDao.getByDate(1, testDate) } returns existingHealth
-        coEvery { dailyHealthDao.update(any<DailyHealth>()) } returns Unit
+        coEvery { dailyHealthDao.addWaterAtomic(1, testDate, 250f) } returns 750f
 
         repository.initialize()
         val newTotal = repository.addWater(250f, testDate)
 
         assert(newTotal == 750f)
-        coVerify { dailyHealthDao.update(match { it.waterIntake == 750f }) }
+        coVerify { dailyHealthDao.addWaterAtomic(eq(1), eq(testDate), eq(250f)) }
     }
 
     @Test
@@ -128,7 +125,7 @@ class NutritionRepositoryTest {
         coEvery { mealDao.getDailyProtein(1, testDate) } returns 0f
         coEvery { mealDao.getDailyCarbs(1, testDate) } returns 0f
         coEvery { mealDao.getDailyFat(1, testDate) } returns 0f
-        coEvery { dailyHealthDao.getByDate(1, testDate) } returns null
+        coEvery { dailyHealthDao.insertOrUpdateNutrition(any(), any(), any(), any(), any(), any()) } returns Unit
 
         repository.initialize()
         repository.deleteMeal(meal)

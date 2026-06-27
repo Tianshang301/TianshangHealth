@@ -328,7 +328,7 @@
     <string name="stats_total_records">Total Records</string>
     <string name="step_notification_text">Tap for details</string>
     <string name="steps_of_goal">of %d goal</string>
-    <string name="steps_weekly_avg_format">Weekly avg %d steps/day</string>
+    <string name="steps_weekly_avg_format">Weekly avg %s steps/day</string>
     <string name="terms_service_declaration">1. Service Declaration\n\nTianshangHealth is a comprehensive health tracking application that prioritizes user privacy and data security. All data is stored locally on your device with strong encryption.\n\n2. Data Privacy\n\nWe do not collect, upload, or share any of your personal health data. The application operates completely offline with zero network permissions.\n\n3. User Responsibility\n\nYou are responsible for the accuracy of the health data you enter. The predictions and analyses provided are for reference only and do not constitute medical advice.\n\n4. Data Security\n\nYour data is protected with SQLCipher AES-256 encryption. The encryption key is managed through Android Keystore for hardware-level security.</string>
     <string name="terms_service_title">Terms of Service</string>
 </resources>

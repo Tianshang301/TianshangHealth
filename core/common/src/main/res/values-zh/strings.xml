@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">天殇·悦康</string>
     <string name="terms_title">服务条款</string>
@@ -745,6 +745,7 @@
     <string name="report_privacy_body">所有报告均在您的设备本地生成。任何健康数据均不会上传至任何服务器或云服务。您的数据完全由您自己掌控。</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">生成报告失败</string>
+    <string name="error_failed_save_wallpaper">保存壁纸图片失败</string>
 
     <!-- 营养 -->
     <string name="nutrition_energy_balance">能量平衡</string>
@@ -885,4 +886,30 @@
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">壁纸</string>
+    <string name="wallpaper_customize">自定义壁纸</string>
+    <string name="wallpaper_none">无</string>
+    <string name="wallpaper_presets">预设壁纸</string>
+    <string name="wallpaper_gradient">自定义渐变</string>
+    <string name="wallpaper_from_gallery">从图库选择</string>
+    <string name="wallpaper_opacity">透明度</string>
+    <string name="wallpaper_blur">模糊</string>
+    <string name="wallpaper_gradient_start">起始颜色</string>
+    <string name="wallpaper_gradient_end">结束颜色</string>
+    <string name="wallpaper_gradient_angle">角度</string>
+    <string name="wallpaper_preset_soft_gradient">柔和渐变</string>
+    <string name="wallpaper_preset_warm_glow">暖色光辉</string>
+    <string name="wallpaper_preset_cool_breeze">清凉微风</string>
+    <string name="wallpaper_preset_nature_leaves">自然绿叶</string>
+    <string name="wallpaper_preset_geometric">几何图案</string>
+    <string name="wallpaper_preset_starry">星空</string>
+    <string name="wallpaper_select_image">选择图片</string>
+    <string name="wallpaper_crop_title">裁剪壁纸</string>
+    <string name="wallpaper_image_selected">壁纸图片已设置</string>
+    <string name="wallpaper_remove">移除壁纸</string>
+    <string name="wallpaper_description">使用预设、渐变或自定义图片来定制应用背景</string>
+    <string name="analysis_section_health_overview">健康概览</string>
+    <string name="analysis_composite_score">综合评分</string>
+    <string name="analysis_trends">趋势</string>
 </resources>

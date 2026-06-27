@@ -45,8 +45,6 @@
 -keep class org.tensorflow.lite.** { *; }
 -keep class org.tensorflow.lite.nnapi.** { *; }
 -keep class org.tensorflow.lite.gpu.** { *; }
--keep class org.tensorflow.lite.flex.** { *; }
-
 # Tink - missing error-prone annotations (compile-time only)
 -dontwarn com.google.errorprone.annotations.CanIgnoreReturnValue
 -dontwarn com.google.errorprone.annotations.CheckReturnValue

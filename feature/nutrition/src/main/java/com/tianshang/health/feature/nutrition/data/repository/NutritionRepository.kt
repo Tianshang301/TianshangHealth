@@ -9,7 +9,6 @@ import com.tianshang.health.core.database.dao.DailyHealthDao
 import com.tianshang.health.core.database.dao.MealDao
 import com.tianshang.health.core.database.dao.PeriodRecordDao
 import com.tianshang.health.core.database.dao.UserDao
-import com.tianshang.health.core.database.entity.DailyHealth
 import com.tianshang.health.core.database.entity.MealRecord
 import com.tianshang.health.core.database.entity.User
 import kotlinx.coroutines.flow.Flow
@@ -223,27 +222,14 @@ class NutritionRepository @Inject constructor(
         require(ValidationUtils.isValidWaterIntake(ml)) { "Invalid water intake: $ml" }
         require(ValidationUtils.isValidDateString(date)) { "Invalid date: $date" }
         val userId = requireUserId()
-        val existing = dailyHealthDao.getByDate(userId, date)
-        if (existing != null) {
-            dailyHealthDao.update(existing.copy(waterIntake = ml, updatedAt = System.currentTimeMillis()))
-        } else {
-            dailyHealthDao.insert(
-                DailyHealth(
-                    userId = userId,
-                    date = date,
-                    waterIntake = ml
-                )
-            )
-        }
+        dailyHealthDao.insertOrUpdateWaterIntake(userId, date, ml)
     }
 
     suspend fun addWater(ml: Float = 250f, date: String = LocalDate.now().toString()): Float {
         require(ValidationUtils.isValidNonNegative(ml)) { "Invalid water amount: $ml" }
         require(ValidationUtils.isValidDateString(date)) { "Invalid date: $date" }
-        val current = getDailyWaterIntake(date)
-        val newTotal = current + ml
-        updateWaterIntake(newTotal, date)
-        return newTotal
+        val userId = requireUserId()
+        return dailyHealthDao.addWaterAtomic(userId, date, ml)
     }
 
     private suspend fun syncDailyHealth(date: String) {
@@ -253,30 +239,7 @@ class NutritionRepository @Inject constructor(
             val protein = mealDao.getDailyProtein(userId, date) ?: 0f
             val carbs = mealDao.getDailyCarbs(userId, date) ?: 0f
             val fat = mealDao.getDailyFat(userId, date) ?: 0f
-
-            val existing = dailyHealthDao.getByDate(userId, date)
-            if (existing != null) {
-                dailyHealthDao.update(
-                    existing.copy(
-                        caloriesIntake = if (calories > 0f) calories else existing.caloriesIntake,
-                        proteinGrams = if (protein > 0f) protein else existing.proteinGrams,
-                        carbsGrams = if (carbs > 0f) carbs else existing.carbsGrams,
-                        fatGrams = if (fat > 0f) fat else existing.fatGrams,
-                        updatedAt = System.currentTimeMillis()
-                    )
-                )
-            } else if (calories > 0f || protein > 0f || carbs > 0f || fat > 0f) {
-                dailyHealthDao.insert(
-                    DailyHealth(
-                        userId = userId,
-                        date = date,
-                        caloriesIntake = if (calories > 0f) calories else null,
-                        proteinGrams = if (protein > 0f) protein else null,
-                        carbsGrams = if (carbs > 0f) carbs else null,
-                        fatGrams = if (fat > 0f) fat else null
-                    )
-                )
-            }
+            dailyHealthDao.insertOrUpdateNutrition(userId, date, calories, protein, carbs, fat)
         } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
             Log.e("NutritionRepository", "Failed to save meal record", e)
         }

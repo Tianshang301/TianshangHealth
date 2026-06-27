@@ -8,6 +8,7 @@ import com.tianshang.health.core.common.constants.HealthConstants
 import com.tianshang.health.core.common.util.StringResolver
 import com.tianshang.health.core.database.dao.DailyHealthDao
 import com.tianshang.health.core.database.dao.PeriodRecordDao
+import com.tianshang.health.core.database.entity.User
 import com.tianshang.health.core.database.repository.UserRepository
 import com.tianshang.health.feature.analysis.domain.report.MedicalReportGenerator
 import com.tianshang.health.feature.analysis.util.LocalizedContextProvider
@@ -28,8 +29,48 @@ class ReportViewModel @Inject constructor(
     private val dailyHealthDao: DailyHealthDao
 ) : ViewModel() {
 
+    enum class ReportSection {
+        PERIOD, ACTIVITY, SLEEP, NUTRITION
+    }
+
     private val _uiState = MutableStateFlow<ReportUiState>(ReportUiState.Idle)
     val uiState: StateFlow<ReportUiState> = _uiState
+
+    private val _isFemale = MutableStateFlow(true)
+    val isFemale: StateFlow<Boolean> = _isFemale
+
+    private val _selectedSections = MutableStateFlow(
+        setOf(
+            ReportSection.PERIOD,
+            ReportSection.ACTIVITY,
+            ReportSection.SLEEP,
+            ReportSection.NUTRITION
+        )
+    )
+    val selectedSections: StateFlow<Set<ReportSection>> = _selectedSections
+
+    val availableSections: List<ReportSection> get() = if (_isFemale.value) {
+        ReportSection.entries
+    } else {
+        ReportSection.entries - ReportSection.PERIOD
+    }
+
+    init {
+        viewModelScope.launch {
+            val user = userRepository.getOrCreateDefault()
+            val female = User.Gender.fromValue(user.gender) != User.Gender.MALE
+            _isFemale.value = female
+            if (!female) {
+                _selectedSections.value = _selectedSections.value - ReportSection.PERIOD
+            }
+        }
+    }
+
+    fun toggleSection(section: ReportSection) {
+        _selectedSections.value = _selectedSections.value.let { current ->
+            if (section in current) current - section else current + section
+        }
+    }
 
     fun generateReport(days: Int = HealthConstants.REPORT_DEFAULT_DAYS) {
         viewModelScope.launch {
@@ -38,19 +79,28 @@ class ReportViewModel @Inject constructor(
                 val user = userRepository.getOrCreateDefault()
                 val endDate = LocalDate.now()
                 val startDate = endDate.minusDays(days.toLong())
+                val sections = _selectedSections.value
 
-                val periodRecords = periodRecordDao.getByUserIdList(user.id)
-                    .filter { !it.isDeleted }
-                    .filter {
-                        val recordDate = LocalDate.parse(it.startDate)
-                        recordDate >= startDate && recordDate <= endDate
-                    }
+                val periodRecords = if (ReportSection.PERIOD in sections) {
+                    periodRecordDao.getByUserIdList(user.id)
+                        .filter { !it.isDeleted }
+                        .filter {
+                            val recordDate = LocalDate.parse(it.startDate)
+                            recordDate >= startDate && recordDate <= endDate
+                        }
+                } else {
+                    emptyList()
+                }
 
-                val healthData = dailyHealthDao.getByDateRange(
-                    user.id,
-                    startDate.toString(),
-                    endDate.toString()
-                )
+                val healthData = if (sections.any { it != ReportSection.PERIOD }) {
+                    dailyHealthDao.getByDateRange(
+                        user.id,
+                        startDate.toString(),
+                        endDate.toString()
+                    )
+                } else {
+                    emptyList()
+                }
 
                 val localizedContext = LocalizedContextProvider.getLocalizedContext(context)
                 val generator = MedicalReportGenerator(localizedContext)
@@ -59,7 +109,11 @@ class ReportViewModel @Inject constructor(
                     gender = user.gender,
                     reportPeriod = "$startDate ~ $endDate",
                     periodRecords = periodRecords,
-                    dailyHealthData = healthData
+                    dailyHealthData = healthData,
+                    includePeriod = ReportSection.PERIOD in sections,
+                    includeActivity = ReportSection.ACTIVITY in sections,
+                    includeSleep = ReportSection.SLEEP in sections,
+                    includeNutrition = ReportSection.NUTRITION in sections
                 )
 
                 val uri = generator.generateReport(reportData)

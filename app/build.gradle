@@ -13,8 +13,8 @@ android {
         applicationId "com.tianshang.health"
         minSdk 24
         targetSdk 35
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -91,6 +91,7 @@ dependencies {
     implementation project(':feature:nutrition')
     implementation project(':feature:sleep')
     implementation project(':feature:analysis')
+    implementation project(':core:period-api')
     
     implementation libs.core.ktx
     implementation libs.appcompat
@@ -117,6 +118,9 @@ dependencies {
     
     // Splash Screen
     implementation libs.splashscreen
+
+    // Image loading (wallpaper)
+    implementation libs.coil.compose
 
     // TensorFlow Lite — 移除 select-tf-ops，LSTM 模型暂未兼容 TFLite 2.14.0 运行时
     // 仅使用 LINEAR 模型（不需要 Flex delegate）

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TianshangHealth</string>
     <string name="terms_title">Kullanim Kosullari</string>
@@ -887,6 +887,7 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="chart_donut_legend_format">%1$s: %2$d%%</string>
     <string name="report_period_format">%1$s ~ %2$s</string>
     <string name="error_failed_generate_report">Rapor oluşturma başarısız</string>
+    <string name="error_failed_save_wallpaper">Failed to save wallpaper image</string>
 
 
     <string name="prediction_insufficient_cycles">Insufficient cycles for prediction (need at least %1$d).</string>
@@ -898,4 +899,30 @@ Or: Security Center → Permissions → Auto-start → Enable</string>
     <string name="mood_inference_null">Inference returned null</string>
     <string name="mood_tflite_result">TFLite %1$s predicted mood=%2$d, stress=%3$d</string>
 
+    <!-- Wallpaper / Background -->
+    <string name="wallpaper">Duvar kağıdı</string>
+    <string name="wallpaper_customize">Özel duvar kağıdı</string>
+    <string name="wallpaper_none">Yok</string>
+    <string name="wallpaper_presets">Hazır duvar kağıtları</string>
+    <string name="wallpaper_gradient">Özel gradyan</string>
+    <string name="wallpaper_from_gallery">Galeriden</string>
+    <string name="wallpaper_opacity">Opaklık</string>
+    <string name="wallpaper_blur">Bulanıklık</string>
+    <string name="wallpaper_gradient_start">Başlangıç rengi</string>
+    <string name="wallpaper_gradient_end">Bitiş rengi</string>
+    <string name="wallpaper_gradient_angle">Açı</string>
+    <string name="wallpaper_preset_soft_gradient">Yumuşak gradyan</string>
+    <string name="wallpaper_preset_warm_glow">Sıcak parıltı</string>
+    <string name="wallpaper_preset_cool_breeze">Serin esinti</string>
+    <string name="wallpaper_preset_nature_leaves">Doğal yapraklar</string>
+    <string name="wallpaper_preset_geometric">Geometrik</string>
+    <string name="wallpaper_preset_starry">Yıldızlı</string>
+    <string name="wallpaper_select_image">Görsel seç</string>
+    <string name="wallpaper_crop_title">Duvar kağıdını kırp</string>
+    <string name="wallpaper_image_selected">Duvar kağıdı görseli ayarlandı</string>
+    <string name="wallpaper_remove">Duvar kağıdını kaldır</string>
+    <string name="wallpaper_description">Uygulama arka planını hazır ayarlar, gradyanlar veya kendi görsellerinizle özelleştirin</string>
+    <string name="analysis_section_health_overview">Sağlık Genel Bakış</string>
+    <string name="analysis_composite_score">Toplam Puan</string>
+    <string name="analysis_trends">Eğilimler</string>
 </resources>
